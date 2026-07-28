@@ -1,19 +1,45 @@
 # 🎯 COP'IQ — PROGRESSION GLOBALE DU PROJET (A → Z)
 
-> **Source de vérité unique** pour tout le projet COP'IQ : app mobile Flutter, site web futur, panel admin web.
-> Audité le 2026-06-08 — 1087 fichiers Dart, 32 migrations SQL, 10 edge functions.
+> **Source de vérité unique** pour tout le projet COP'IQ : app mobile Flutter, site web, panel admin web.
+> Audit initial le 2026-06-08 — **corrigé et revérifié le 2026-07-26** (voir encadré ci-dessous).
+> Pour l'état détaillé du module Cas Pratique et la checklist de release, voir `RESTE_A_FAIRE.md` à la racine (document le plus à jour).
+
+---
+
+## 🔎 CORRECTIF D'AUDIT — 26 juillet 2026
+
+L'audit du 8 juin ci-dessous est **daté de 7 semaines** et plusieurs de ses constats sont
+devenus faux entre-temps. Avant d'utiliser un chiffre de ce document, vérifie qu'il n'est
+pas contredit ici. Constats vérifiés aujourd'hui par lecture directe du code / de la base :
+
+| Constat du 8 juin | Réalité vérifiée le 26/07 |
+|---|---|
+| **Phase K — Site web : 0/50, « à démarrer »** | **Faux.** `copiq-web/` existe déjà : ~45 pages Next.js — vitrine publique (accueil, tarifs, blog, CGU, contact, mentions légales, beta) **et** un tableau de bord authentifié quasi complet qui reprend la plupart des modules mobiles (profil, abonnement + facture + annulation, notes, mémos, concours blanc, forum, progression, historique, notifications, paramètres, cas pratiques, quiz GPX/PA, cours GPX/PA, culture générale, langues, psychotechniques). Reste réellement ouvert : SEO/blog éditorial (K-16 à K-24), performance/Lighthouse (K-41 à K-50), et la véracité du rendu visuel (non testable ici, pas de navigateur). |
+| **Phase L — Panel admin : 12/66, cf. `ADMIN_PANEL_PROGRESSION.md`** | **Trompeur.** Ce fichier décrit une architecture (table `admin_users`, JWT custom, colonnes `password_hash`/`admin_code`) qui **n'a jamais été construite** — remplacée par Supabase Auth + TOTP (AAL2) + code staff, une conception différente documentée dans `copiq-web/src/app/admin/README.md`. Le panel réel a **13 pages actives** (dashboard, cas-pratiques, quiz, cours, abonnements, utilisateurs, appels, forum, patch-notes, administrateurs, journal, signalements, santé) adossées à des dizaines de RPC `SECURITY DEFINER`. Le vrai reliquat : pas de vue unifiée des signalements legacy 3-tables (module 3 du fichier), pas d'éditeur `quiz_questions` (questions hardcodées historiques). `ADMIN_PANEL_PROGRESSION.md` a été annoté en conséquence — ne pas utiliser son tableau récapitulatif (0/81) tel quel. |
+| **Phase E — Edge functions : 8 `cas_pratique_*` listées « ✅ existe »** | **Faux : jamais déployées.** `supabase/functions/cas_pratique_*` (9 dossiers) ne sont que du code source local, absents de la liste réelle des fonctions déployées. Les **8 fonctions réellement actives** en production portent d'autres noms et une autre conception : `delete-user-cascade`, `unified-logs`, `send-report-received`, `stripe-create-checkout`, `stripe-cancel-subscription`, `stripe-portal`, `stripe-webhook`, `photolangage-correct`. Le paiement Stripe et la suppression de compte RGPD sont **bien en production**, juste pas sous les noms documentés ici. |
+| **A-06 Sign in with Google : non coché** | **Fait.** `lib/features/auth/oauth_buttons.dart` contient un bouton Google entièrement dessiné à la main (logo quadrichrome, charte respectée), à côté du bouton Apple. |
+| **I-08 Page abonnement utilisateur : non coché** | **Fait.** `lib/features/home/abonnement_page.dart` + `facture_page.dart` + `annulation_conditions_page.dart` existent et gèrent statut, facture, annulation. |
+| **I-06 Wiring checkout côté app : non coché** | **Fait.** `lib/core/services/stripe_payment_service.dart` appelle directement les fonctions déployées `stripe-create-checkout` / `stripe-cancel-subscription` / `stripe-portal`. |
+| **G — Gamification (streaks/XP/badges) : ✅ coché** | **Était faux, corrigé aujourd'hui.** Le code existait mais la table `cas_pratique_user_progress` (prérequis des 3 systèmes) n'avait jamais été créée en base : les triggers auraient planté à la première correction soumise. Corrigé le 26/07 (migration `cas_pratique_user_progress` + fix `fn_cp_is_admin`→`is_admin` + cast `case_id` + triggers exception-safe), testé en simulation RLS complète. Voir `RESTE_A_FAIRE.md`. |
+| **C-07 Concours blanc : timer à compléter, multi-épreuves manquant** | **Timer déjà fait** (compte à rebours, auto-submit, autosave). **Multi-épreuves complété le 26/07** : la page charge désormais tous les cas attachés au mock exam via `cas_pratique_mock_exam_cases` (au lieu d'un seul cas en dur) et enchaîne les questions cas par cas. |
+| **Module Cas Pratique : 100/100** | Ce score date d'avant la découverte que les migrations n'avaient jamais été appliquées en base (voir `RESTE_A_FAIRE.md` partie 1). Le module a été **réellement réparé depuis**, avec vérification SQL sous RLS — mais ne te fie plus au chiffre « 100/100 » de ce document, il ne voulait rien dire. |
+
+**Non revérifié aujourd'hui** (statuts ci-dessous non garantis, à confirmer avant de s'y fier) :
+tout le détail des Phases A, B, C (audits de contenu C-08→C-30), D, F, H, M, N — ces phases
+n'ont pas été relues ligne à ligne dans cette passe ; leurs cases à cocher reflètent encore
+l'audit du 8 juin.
 
 ---
 
 ## 📊 Métriques globales
 
-| Périmètre | Score | État |
+| Périmètre | Score (8 juin) | Réalité vérifiée le 26/07 |
 |---|---|---|
-| **🎯 Module Cas Pratique** | 100/100 | ✅ Complet (cf. `docs/cas_pratique/PROGRESSION_CODE.md`) |
-| **📱 App Flutter mobile (reste)** | ~/180 | 🟡 Voir Phases A→J ci-dessous |
-| **🌐 Site internet copiq.fr** | 0/50 | 🔴 À démarrer (Phase K) |
-| **🛡️ Panel admin web** | 12/66 | 🟡 Voir `admin/docs/PROGRESSION.md` |
-| **🔐 Sécurité transverse** | À auditer | 🟡 Voir Phase D |
+| **🎯 Module Cas Pratique** | 100/100 | Le score ne voulait rien dire (migrations jamais appliquées) — module réellement réparé et vérifié depuis, cf. `RESTE_A_FAIRE.md` |
+| **📱 App Flutter mobile (reste)** | ~/180 | Non revérifié en détail — voir corrections ponctuelles ci-dessus (auth, gamification, concours blanc) |
+| **🌐 Site internet copiq.fr** | 0/50 | **Faux : le site existe déjà**, ~45 pages (vitrine + dashboard complet). Reste surtout : SEO/blog éditorial, perf/Lighthouse |
+| **🛡️ Panel admin web** | 12/66 | **Trompeur** : mesurait une architecture jamais construite. Le panel réel a 13 pages fonctionnelles sur une architecture différente |
+| **🔐 Sécurité transverse** | À auditer | Largement traité depuis (fuite RGPD refermée, grille de correction protégée, `search_path` figé sur 87 fonctions) — cf. `RESTE_A_FAIRE.md` |
 
 ---
 
@@ -62,8 +88,8 @@ copiqpolice/
 - [ ] **A-02** Audit `signup.dart` : validation email RFC, force MDP (min 8 + 1 majuscule + 1 chiffre), CGV checkbox obligatoire
 - [ ] **A-03** Audit `confirm_email.dart` : renvoi automatique 60s, deep link `copiqpolice://confirm-email?token=…`
 - [ ] **A-04** Audit `reset_password.dart` : workflow OTP 6 chiffres, ré-init MDP avec confirmation
-- [ ] **A-05** **Sign in with Apple** (obligatoire pour App Store si on a déjà Google/email)
-- [ ] **A-06** **Sign in with Google** (boutons natifs iOS/Android)
+- [x] **A-05** **Sign in with Apple** ✅ vérifié 26/07 — `lib/features/auth/oauth_service.dart` + `oauth_buttons.dart`
+- [x] **A-06** **Sign in with Google** ✅ vérifié 26/07 — bouton dans `oauth_buttons.dart`
 - [ ] **A-07** Page **"Compte bloqué"** après 5 tentatives MDP échouées (rate limit auth Supabase)
 - [ ] **A-08** **Migration de compte** (changer email avec confirmation des 2 adresses)
 
@@ -109,7 +135,7 @@ copiqpolice/
 - [ ] **C-04** **Langue étrangère** : compréhension écrite + audio FR/EN. Audit `langue_etrangere/`
 - [ ] **C-05** **Structure GPX concours** : page récap des épreuves admissibilité + admission (`gpx_admissibilite_page.dart`, `gpx_admission_page.dart`)
 - [ ] **C-06** **Annales** — module créé en placeholder, à coder (cf. `docs/cas_pratique/ANNALES_DEV_PROGRESSION.md`)
-- [ ] **C-07** **Concours blanc** — page créée, à compléter avec timer + multi-épreuves
+- [x] **C-07** **Concours blanc** ✅ vérifié/complété 26/07 — timer + autosave + auto-submit déjà présents, multi-épreuves (enchaînement de plusieurs cas via `cas_pratique_mock_exam_cases`) ajouté aujourd'hui dans `concours_blanc_page.dart`. Reste à faire : correction automatique du mock (actuellement affichée comme "en attente de l'équipe")
 
 ### GPX SCOLARITÉ (école — `lib/content/gpx_scolarite/`)
 - [ ] **C-08** Audit **dps_dpg** (Défense Personnelle Simulée + Défense Personnelle Gendarmerie)
@@ -193,17 +219,27 @@ copiqpolice/
 - [ ] **E-04** Audit triggers : éviter les cascades silencieuses qui ralentissent les inserts
 - [ ] **E-05** **Sauvegarde automatique** : config PITR Supabase + export quotidien S3 (CODE-021 admin TODO)
 
-### Edge Functions (10 existantes) — Compléter
-- [ ] **E-06** `cas_pratique_correct_attempt` ✅ existe
-- [ ] **E-07** `cas_pratique_stripe_webhook` ✅ existe
-- [ ] **E-08** `cas_pratique_create_checkout` ✅ existe
-- [ ] **E-09** `cas_pratique_redeem_promo` ✅ existe
-- [ ] **E-10** `cas_pratique_export_user_data` ✅ existe
-- [ ] **E-11** `cas_pratique_delete_user_data` ✅ existe
-- [ ] **E-12** `cas_pratique_business_notify` ✅ existe
-- [ ] **E-13** `cas_pratique_health` ✅ existe
+### Edge Functions — corrigé 26/07 (liste réelle vs documentée)
+
+> Les 8 lignes ci-dessous (`cas_pratique_*`) sont **du code source jamais déployé**
+> (dossiers présents dans `supabase/functions/` mais absents de la liste réelle des
+> fonctions actives sur le projet Supabase). Conservées à titre d'historique.
+
+- [ ] **E-06** `cas_pratique_correct_attempt` ❌ code source seulement, jamais déployée
+- [ ] **E-07** `cas_pratique_stripe_webhook` ❌ code source seulement — remplacée en prod par `stripe-webhook`
+- [ ] **E-08** `cas_pratique_create_checkout` ❌ code source seulement — remplacée en prod par `stripe-create-checkout`
+- [ ] **E-09** `cas_pratique_redeem_promo` ❌ code source seulement, jamais déployée
+- [ ] **E-10** `cas_pratique_export_user_data` ❌ code source seulement
+- [ ] **E-11** `cas_pratique_delete_user_data` ❌ code source seulement — remplacée en prod par `delete-user-cascade`
+- [ ] **E-12** `cas_pratique_business_notify` ❌ code source seulement, cron jamais activé (secrets manquants)
+- [ ] **E-13** `cas_pratique_health` ❌ code source seulement, jamais déployée
 - [ ] **E-14** À créer : **`copiq_admin_check`** (validation rôle admin côté serveur — ADMIN-014)
 - [ ] **E-15** À créer : **`copiq_global_search`** (recherche fuzzy multi-modules transverse)
+
+**Les 8 fonctions réellement déployées et actives** (vérifié 26/07 via l'API Supabase) :
+`delete-user-cascade`, `unified-logs`, `send-report-received`, `stripe-create-checkout`,
+`stripe-cancel-subscription`, `stripe-portal`, `stripe-webhook`, `photolangage-correct`.
+Le paiement Stripe et la suppression RGPD sont donc **bien en production**, sous ces noms.
 
 ---
 
@@ -224,9 +260,14 @@ copiqpolice/
 
 ## 🟦 PHASE G — Engagement & Gamification (déjà très avancé)
 
-- [x] **G-01** Streaks ✅ (CODE-056)
-- [x] **G-02** XP + niveaux ✅ (CODE-057)
-- [x] **G-03** Badges (20 badges) ✅ (CODE-058)
+> ⚠️ **G-01/G-02/G-03 étaient cochés à tort** : le code existait mais sa table prérequise
+> (`cas_pratique_user_progress`) n'avait jamais été créée en base — les triggers auraient
+> planté à la première correction soumise par un élève. **Réparé et testé le 26/07** (voir
+> encadré d'audit en haut de ce document et `RESTE_A_FAIRE.md`).
+
+- [x] **G-01** Streaks ✅ (CODE-056) — réparé + testé 26/07
+- [x] **G-02** XP + niveaux ✅ (CODE-057) — réparé + testé 26/07
+- [x] **G-03** Badges (20 badges) ✅ (CODE-058) — réparé + testé 26/07
 - [x] **G-04** Leaderboard hebdo ✅ (CODE-059)
 - [x] **G-05** Parrainage ✅ (CODE-060)
 - [x] **G-06** Concours blanc ✅ (CODE-061)
@@ -254,9 +295,9 @@ copiqpolice/
 - [x] **I-03** Tarification 3 plans ✅ (CODE-086)
 - [x] **I-04** Codes promo ✅ (CODE-087)
 - [x] **I-05** Dashboard business ✅ (CODE-088)
-- [ ] **I-06** **Wiring final côté app** : tester checkout en sandbox Stripe puis Live
-- [ ] **I-07** **Tests RevenueCat sandbox iOS + Android** avant submission stores
-- [ ] **I-08** **Page abonnement utilisateur** : voir son statut, annuler, changer de plan
+- [x] **I-06** **Wiring final côté app** ✅ vérifié 26/07 — `stripe_payment_service.dart` appelle bien les edge functions Stripe déployées. Reste : test réel en sandbox (nécessite un device, non faisable ici)
+- [ ] **I-07** **Tests RevenueCat sandbox iOS + Android** avant submission stores — nécessite un device, non faisable ici
+- [x] **I-08** **Page abonnement utilisateur** ✅ vérifié 26/07 — `abonnement_page.dart` + `facture_page.dart` + `annulation_conditions_page.dart`
 - [ ] **I-09** **Webhook Slack new-sub** ✅ existe — vérifier que ça part bien en prod
 
 ---
@@ -275,9 +316,20 @@ copiqpolice/
 
 ---
 
-## 🌐 PHASE K — Site internet copiq.fr (0/50 — À DÉMARRER)
+## 🌐 PHASE K — Site internet copiq.fr
 
-> Le site web sera **public-facing**, en Next.js 14 ou Astro. Pas une copie de l'app mobile, plutôt vitrine + SEO + accès gratuit à du contenu d'appel.
+> ⚠️ **Corrigé 26/07 : ce n'est plus « 0/50 à démarrer », le site existe déjà.**
+> `copiq-web/` (Next.js, export statique) compte ~45 pages : vitrine publique (accueil,
+> tarifs, blog + `[slug]`, CGU, contact, mentions légales, page beta) **et** un tableau de
+> bord authentifié qui reprend une bonne partie des modules mobiles (profil, abonnement,
+> facture, annulation, notes, mémos, concours blanc, forum + posts, progression, historique,
+> notifications, paramètres, cas pratiques, quiz GPX/PA + `[moduleId]`, cours GPX/PA,
+> culture générale, langues, psychotechniques). Les sous-tâches K-06 à K-15, K-26 à K-40
+> ci-dessous sont donc **très probablement déjà largement couvertes** — à confirmer page par
+> page (non fait dans cette passe, faute de navigateur pour un contrôle visuel). Ce qui
+> reste très probablement un vrai reliquat : le blog éditorial (K-16 à K-19, contenu SEO à
+> rédiger), et toute la partie performance/Lighthouse/analytics (K-41 à K-50, nécessite un
+> vrai déploiement pour mesurer).
 
 ### Spec & architecture (5)
 - [ ] **K-01** **Spec produit** : vitrine + blog + accès gratuit à 3 cas pratiques + paywall pour le reste
@@ -341,18 +393,17 @@ copiqpolice/
 
 ---
 
-## 🛡️ PHASE L — Panel admin web (12/66 — voir `admin/docs/PROGRESSION.md`)
+## 🛡️ PHASE L — Panel admin web
 
-Cf. `admin/docs/PROGRESSION.md` qui détaille 66 tâches (ADMIN-001 → ADMIN-066) en 6 sous-phases :
-
-- ✅ **L-A** Bootstrap & shell SPA (12/12) — fait
-- 🔴 **L-B** Sécurité & rôles (0/9) — **bloquant pour prod**
-- 🔴 **L-C** UX premium (0/12)
-- 🔴 **L-D** Features avancées (0/15)
-- 🔴 **L-E** Polish (0/10)
-- 🔴 **L-F** Ops (0/8)
-
-→ Au minimum faire **ADMIN-013/014/015** (sécurité is_admin côté serveur) avant utilisation en prod.
+> ⚠️ **Corrigé 26/07 : le fichier `admin/docs/PROGRESSION.md` référencé ci-dessous n'existe
+> pas** (le vrai fichier est `ADMIN_PANEL_PROGRESSION.md` à la racine, et il décrit une
+> architecture jamais construite — voir le bandeau ajouté en tête de ce fichier). Le panel
+> réel vit dans `copiq-web/src/app/admin/` (13 pages, voir son `README.md`), utilise Supabase
+> Auth + TOTP (AAL2) + code staff — la sécurité serveur (équivalent ADMIN-013/014/015) est
+> **déjà en place** via `cp_admin_guard()` / `forum_admin_guard()` / `quiz_admin_guard()`,
+> ce n'est donc plus bloquant. Reliquats réels identifiés : vue unifiée des signalements
+> quiz sur les 3 tables legacy, éditeur de `quiz_questions` hardcodées (RPC
+> `admin_upsert_quiz_question` existe, aucune page ne l'utilise).
 
 ---
 
@@ -388,18 +439,23 @@ Cf. `admin/docs/PROGRESSION.md` qui détaille 66 tâches (ADMIN-001 → ADMIN-06
 
 ## 🎯 Priorisation suggérée
 
-### 🥇 TOP 10 immédiat (à faire dans l'ordre)
+> ⚠️ Liste du 8 juin, partiellement obsolète. Items **déjà traités** (vérifié 26/07 ou
+> RESTE_A_FAIRE.md) : ~~L-B~~, ~~D-07~~ (RLS largement auditée/corrigée), ~~I-06~~,
+~~A-05 + A-06~~, ~~K-01→K-05~~ (site déjà démarré et très avancé). Ce qui reste
+> réellement d'actualité :
 
-1. **L-B (ADMIN-013/014/015)** — Sécurité admin → bloquant prod du panel
-2. **D-07** — Audit RLS toutes les 32 tables → bloquant prod app
-3. **J-05 + J-06** — Soumissions App Store + Google Play → débloque la release
-4. **I-06 + I-07** — Tests checkout Stripe + RevenueCat sandbox → débloque la monétisation
-5. **F-01** — Inventaire visuel des écrans → identifier les écrans qui font tâche
-6. **C-31 + C-32** — Compléter Réserve + PA Exam → tracks aujourd'hui vides
-7. **K-01 → K-05** — Démarrer le site web (spec + setup)
-8. **M-09** — Smoke test sur 10 devices physiques
-9. **A-05 + A-06** — Sign in with Apple + Google → obligatoire App Store
-10. **B-04** — Refonte bottom bar PA exam → cohérence avec GPX
+### 🥇 Reste réellement prioritaire (2026-07-26)
+
+1. **`flutter analyze` + `flutter test` + device réel** — non exécutable dans cet environnement, à faire par Kaïs
+2. **J-05 + J-06** — Soumissions App Store + Google Play → débloque la release
+3. **I-07** — Tests RevenueCat sandbox iOS + Android → nécessite un device
+4. **M-09** — Smoke test sur 10 devices physiques
+5. **C-31 + C-32** — Compléter Réserve + PA Exam → tracks encore quasi vides
+6. **C-06** — Module Annales (placeholder non codé)
+7. **K-16 → K-19** — Blog éditorial SEO (contenu à rédiger, rien de technique bloquant)
+8. Compléter les mentions légales (SIREN, adresse, médiateur) — voir `RESTE_A_FAIRE.md`
+9. Activer Apple/Google côté portails (Apple Developer + Supabase) — voir `docs/AUTH_OAUTH_SETUP.md`
+10. **F-01** — Inventaire visuel des écrans (toujours pertinent, jamais fait)
 
 ---
 
@@ -441,14 +497,18 @@ Cf. `admin/docs/PROGRESSION.md` qui détaille 66 tâches (ADMIN-001 → ADMIN-06
 
 ## 🔗 Documents référence
 
-- `docs/cas_pratique/PROGRESSION_CODE.md` → Roadmap module Cas Pratique (✅ 100/100)
-- `docs/cas_pratique/07_STATE.json` → État machine-readable cas pratique
-- `admin/docs/PROGRESSION.md` → Roadmap panel admin web (12/66)
-- `admin/docs/ADMIN_STATE.json` → État machine-readable panel admin
-- `docs/cas_pratique/01_MASTER_PLAN.md` → Plan stratégique cas pratique
-- `docs/cas_pratique/06_ADMIN_PANEL_SPEC.md` → Spec panel admin
+> ⚠️ Corrigé 26/07 : `docs/cas_pratique/PROGRESSION_CODE.md` et `docs/cas_pratique/07_STATE.json`
+> ont été archivés (`_archive/`) — ils annonçaient « 100/100, terminé » alors que les
+> migrations n'avaient jamais été appliquées en base. `admin/docs/PROGRESSION.md` et
+> `admin/docs/ADMIN_STATE.json` n'ont jamais existé (le dossier `admin/` n'existe pas — le
+> panel vit dans `copiq-web/src/app/admin/`).
+
+- **`RESTE_A_FAIRE.md`** (racine) → **document le plus à jour**, audit du 26/07, état réel module par module et checklist de ce qui reste avant les stores
+- `copiq-web/src/app/admin/README.md` → architecture réelle du panel admin
+- `docs/cas_pratique/01_MASTER_PLAN.md` → Plan stratégique cas pratique (historique)
+- `docs/cas_pratique/06_ADMIN_PANEL_SPEC.md` → Spec panel admin (historique, partiellement obsolète)
 
 ---
 
 *Document maintenu en synchronisation avec l'avancement.*
-*Dernière mise à jour : 2026-06-08 — Audit complet du projet.*
+*Audit initial : 2026-06-08. Corrections d'audit : 2026-07-26.*

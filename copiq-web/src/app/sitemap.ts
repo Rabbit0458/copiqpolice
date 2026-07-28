@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/beta`, lastModified: now, priority: 0.4 },
     { url: `${BASE}/cgu`, lastModified: now, priority: 0.3 },
     { url: `${BASE}/privacy`, lastModified: now, priority: 0.3 },
+    { url: `${BASE}/mentions-legales`, lastModified: now, priority: 0.3 },
     { url: `${BASE}/login`, lastModified: now, priority: 0.6 },
     { url: `${BASE}/signup`, lastModified: now, priority: 0.7 },
   ]

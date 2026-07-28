@@ -14,6 +14,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
+import 'package:copiqpolice/features/auth/oauth_buttons.dart';
 import 'package:copiqpolice/core/widgets/app_notifier.dart'
     show AppNotifier;
 
@@ -493,6 +494,13 @@ class _LoginCard extends StatelessWidget {
               onPressed: loading ? null : onSubmit,
               compact: compact,
             ),
+
+            // ── Connexion par fournisseur externe ──────────────────────
+            //  Bloc invisible tant qu'aucun fournisseur n'est active :
+            //  l'ecran reste identique a aujourd'hui. Voir
+            //  lib/features/auth/oauth_service.dart et docs/AUTH_OAUTH_SETUP.md
+            const OAuthButtons(),
+
             SizedBox(height: compact ? 12 : 18),
 
             // ── Séparateur ou ─────────────────────────────────────────

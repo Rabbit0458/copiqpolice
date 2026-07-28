@@ -32,6 +32,7 @@ import 'package:copiqpolice/data/cas_pratique/cas_pratique_repository.dart';
 import 'package:copiqpolice/data/cas_pratique/cas_pratique_repository_impl.dart';
 import 'package:copiqpolice/data/cas_pratique/models/cas_pratique_models.dart';
 import 'package:copiqpolice/core/widgets/app_notifier.dart';
+import 'package:copiqpolice/core/widgets/copiq_report_question_sheet.dart';
 
 class CasPratiqueDynamicPage extends StatefulWidget {
   const CasPratiqueDynamicPage({super.key, this.caseSlug});
@@ -831,6 +832,7 @@ class _IntroPage extends StatelessWidget {
       case CpDifficulty.facile:    return 'Facile';
       case CpDifficulty.difficile: return 'Difficile';
       case CpDifficulty.moyen:     return 'Moyen';
+      case CpDifficulty.expert:    return 'Expert';
     }
   }
 
@@ -839,6 +841,9 @@ class _IntroPage extends StatelessWidget {
       case CpDifficulty.facile:    return CpTokens.success;
       case CpDifficulty.difficile: return CpTokens.danger;
       case CpDifficulty.moyen:     return CpTokens.warning;
+      // Violet dédié : `expert` n'est pas « plus rouge que difficile », c'est
+      // une autre nature de cas (situation évolutive, arbitrage déontologique).
+      case CpDifficulty.expert:    return const Color(0xFF8B5CF6);
     }
   }
 
@@ -1108,8 +1113,10 @@ class _QuestionPage extends StatelessWidget {
                       letterSpacing: 1.0,
                     ),
                   ),
+                  const Spacer(),
+                  _ReportQuestionButton(questionId: question.id),
                   if (isValidated) ...[
-                    const Spacer(),
+                    const SizedBox(width: 6),
                     _ValidatedPill(),
                   ],
                 ],
@@ -1192,6 +1199,49 @@ class _QuestionPage extends StatelessWidget {
                 ),
             ],
           ),
+        ),
+      ),
+    );
+  }
+}
+
+/// Bouton discret permettant de signaler une erreur de contenu (faute de
+/// frappe, énoncé ambigu, grille incorrecte...) sur la question affichée.
+/// Alimente `cas_pratique_question_reports`, consultable depuis le panel
+/// admin avec le `question_id` exact.
+class _ReportQuestionButton extends StatelessWidget {
+  const _ReportQuestionButton({required this.questionId});
+  final String questionId;
+
+  Future<void> _openSheet(BuildContext context) async {
+    final repo = CasPratiqueRepositoryImpl();
+    await CopiqReportQuestionSheet.show(
+      context,
+      onSend: ({required String reportType, required String message}) async {
+        final ok = await repo.reportQuestion(
+          questionId: questionId,
+          reportType: reportType,
+          message: message.isEmpty ? null : message,
+        );
+        if (!ok) throw StateError('report_failed');
+      },
+    );
+    if (context.mounted) {
+      AppNotifier.success(context, title: 'Signalement envoyé, merci !');
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return InkWell(
+      onTap: () => _openSheet(context),
+      borderRadius: BorderRadius.circular(20),
+      child: Padding(
+        padding: const EdgeInsets.all(4),
+        child: Icon(
+          Icons.flag_outlined,
+          size: 16,
+          color: Colors.white.withValues(alpha: 0.55),
         ),
       ),
     );

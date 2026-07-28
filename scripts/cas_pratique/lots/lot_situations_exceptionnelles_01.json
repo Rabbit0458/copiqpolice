@@ -1,0 +1,1556 @@
+[
+  {
+    "slug": "except-inondation-evacuation-quartier",
+    "title": "L'eau monte, certains habitants refusent de partir",
+    "theme_slug": "situations-exceptionnelles",
+    "difficulty": "difficile",
+    "is_free": false,
+    "is_published": true,
+    "status": "published",
+    "year": 2026,
+    "month": "Juillet",
+    "total_points": 15,
+    "estimated_minutes": 30,
+    "situation_text": "Il est 4 heures. Dans un quartier riverain, une crue rapide fait monter le niveau de l'eau de facon visible d'heure en heure. Une evacuation est ordonnee, mais plusieurs habitants refusent de quitter leur domicile, certains invoquant la crainte de laisser leurs biens sans surveillance, d'autres estimant que la montee des eaux ne les atteindra pas. Vous disposez de peu de temps et d'un nombre limite de collegues pour convaincre chaque foyer concerne. Certains logements, en rez-de-chaussee, sont plus immediatement exposes que d'autres situes en etage. La nuit et la montee continue de l'eau compliquent chaque deplacement dans ce quartier.",
+    "questions": [
+      {
+        "position": 1,
+        "max_points": 5,
+        "label": "Comment priorisez-vous vos passages face a ce temps limite et ce nombre d'habitants a convaincre ?",
+        "hint": "Tous les foyers ne courent pas le meme risque dans les memes delais.",
+        "perfect": "Je convaincs et priorise les personnes les plus exposees, cette priorisation restant essentielle compte tenu du temps limite dont je dispose face a cette crue rapide. Je commence par les logements en rez-de-chaussee, immediatement exposes, avant de traiter les etages moins menaces dans l'immediat. Je coordonne cette repartition avec mes collegues pour ne pas dupliquer les passages sur les memes foyers. Je reste attentive a l'evolution de la montee des eaux pour ajuster cette priorisation si necessaire.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Convaincre et prioriser les personnes les plus exposees",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Poids fort du cas.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "priorisation effectuee",
+                  "personnes exposees",
+                  "urgence hierarchisee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Commencer par les logements en rez-de-chaussee immediatement exposes",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Ordre logique de traitement.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "rez-de-chaussee traite",
+                  "exposition immediate",
+                  "ordre respecte"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Coordonner cette repartition avec les collegues pour eviter les doublons",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Efficacite collective.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "repartition coordonnee",
+                  "doublons evites",
+                  "efficacite assuree"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Rester attentive a l'evolution de la crue pour ajuster la priorisation",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Adaptation continue.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "evolution suivie",
+                  "priorisation ajustee",
+                  "vigilance continue"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "max_points": 5,
+        "label": "Comment convainquez-vous un habitant qui refuse de partir pour proteger ses biens ?",
+        "hint": "L'attachement aux biens est comprehensible, mais ne doit pas l'emporter sur sa securite vitale.",
+        "perfect": "Je reconnais cette inquietude legitime pour ses biens, sans la balayer d'un revers de main face a l'urgence. Je lui explique clairement le risque vital reel que represente son maintien sur place, sans dramatiser au-dela de ce que la situation impose. Je propose des solutions concretes et rapides, comme mettre en hauteur les objets les plus precieux avant de partir, si le temps le permet encore. Je reste ferme sur la necessite de cette evacuation si le danger devient imminent, quitte a devoir insister davantage.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Reconnaitre l'inquietude pour ses biens sans la balayer",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Ecoute de la motivation du refus.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "inquietude reconnue",
+                  "ecoute accordee",
+                  "refus compris"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Expliquer clairement le risque vital reel sans dramatiser au-dela",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Communication proportionnee du danger.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "risque explique",
+                  "dramatisation evitee",
+                  "danger precise"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Proposer des solutions concretes et rapides si le temps le permet",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Solution pratique proposee.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "solution proposee",
+                  "objets mis en hauteur",
+                  "temps considere"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Rester ferme si le danger devient imminent",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Fermete finale si necessaire.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "fermete appliquee",
+                  "danger imminent",
+                  "insistance justifiee"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 3,
+        "max_points": 5,
+        "label": "Comment organisez-vous la suite pour ceux qui, malgre tout, refusent obstinement de partir ?",
+        "hint": "Un refus persistant ne doit pas etre simplement acte sans autre suite.",
+        "perfect": "Je consigne precisement l'identite et l'adresse de ceux qui refusent, cette information restant essentielle pour la suite des secours si la situation s'aggravait. Je transmets cette liste a mon centre operationnel, pour un suivi coordonne avec les autres services engages. Je leur laisse un moyen de contact pour qu'ils puissent alerter en cas d'aggravation soudaine. Je reste attentive a repasser verifier ces foyers si le niveau de l'eau continue de monter significativement.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Consigner precisement l'identite et l'adresse de ceux qui refusent",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Traçabilite essentielle pour les secours.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "identite consignee",
+                  "adresse notee",
+                  "refus documente"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Transmettre cette liste au centre operationnel pour un suivi coordonne",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Coordination avec les autres services.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "liste transmise",
+                  "centre informe",
+                  "suivi coordonne"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Laisser un moyen de contact pour une alerte en cas d'aggravation",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Contact laisse pour la suite.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "contact laisse",
+                  "alerte possible",
+                  "aggravation anticipee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Rester attentive a repasser verifier ces foyers si la montee continue",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Suivi actif dans le temps.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "passage prevu",
+                  "verification prevue",
+                  "suivi actif"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "except-decouverte-restes-humains",
+    "title": "Des ossements mis au jour par des travaux",
+    "theme_slug": "situations-exceptionnelles",
+    "difficulty": "difficile",
+    "is_free": false,
+    "is_published": true,
+    "status": "published",
+    "year": 2026,
+    "month": "Juillet",
+    "total_points": 15,
+    "estimated_minutes": 30,
+    "situation_text": "Il est 10 heures. Des ouvriers effectuant des travaux de terrassement sur un terrain vague decouvrent des ossements qu'ils vous signalent immediatement. L'anciennete de ces restes est totalement inconnue, allant d'un enfouissement recent a une sepulture ancienne oubliee. Plusieurs curieux, attires par l'arret du chantier, commencent a s'approcher pour observer. Les ouvriers, encore sous le choc de cette decouverte, attendent vos instructions pour savoir s'ils peuvent reprendre leur activite ailleurs sur le chantier. Aucun element ne permet, a ce stade, de determiner s'il s'agit d'une decouverte relevant d'une enquete judiciaire ou d'un site historique.",
+    "questions": [
+      {
+        "position": 1,
+        "max_points": 5,
+        "label": "Quelle est votre premiere action face a cette decouverte dont l'anciennete est inconnue ?",
+        "hint": "Tant que l'anciennete n'est pas etablie, la prudence maximale s'impose.",
+        "perfect": "Je gele les lieux sans rien deplacer, cette abstention totale restant indispensable quelle que soit l'anciennete finalement etablie de ces restes. J'etablis un perimetre large autour de la zone concernee, sans y penetrer davantage que necessaire pour ce constat initial. Je n'autorise aucune reprise des travaux sur cette zone precise, meme si le reste du chantier peut continuer ailleurs. Je sollicite sans delai les services competents pour determiner la nature exacte de cette decouverte.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Geler les lieux sans rien deplacer",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Poids fort du cas.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "lieux geles",
+                  "deplacement evite",
+                  "abstention totale"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Etablir un perimetre large sans y penetrer davantage que necessaire",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Perimetre proportionne.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "perimetre etabli",
+                  "zone protegee",
+                  "penetration limitee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "N'autoriser aucune reprise des travaux sur cette zone precise",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Preservation stricte de la zone.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "travaux suspendus",
+                  "zone preservee",
+                  "reprise refusee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Solliciter sans delai les services competents",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Expertise rapidement mobilisee.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "services sollicites",
+                  "expertise demandee",
+                  "delai reduit"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "max_points": 5,
+        "label": "Comment gerez-vous les curieux qui s'approchent, attires par l'arret du chantier ?",
+        "hint": "La curiosite naturelle face a une decouverte macabre ne doit pas compromettre la preservation des lieux.",
+        "perfect": "J'ecarte fermement mais courtoisement ces curieux du perimetre etabli, sans leur donner de details sur la nature de cette decouverte. J'explique brievement, sans entrer dans les details, que ce perimetre repond a une necessite de preservation. Je reste attentive a ce qu'aucune photo ou video ne circule de maniere inappropriee, sans pour autant confisquer des telephones sans base legale. Je maintiens ce perimetre jusqu'a l'arrivee des services competents.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Ecarter fermement mais courtoisement ces curieux du perimetre",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Gestion equilibree des curieux.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "curieux ecartes",
+                  "courtoisie maintenue",
+                  "fermete appliquee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Expliquer brievement sans entrer dans les details",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Communication mesuree.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "explication breve",
+                  "details evites",
+                  "communication mesuree"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Rester attentive aux prises de vue sans confisquer sans base legale",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Vigilance sans exces de pouvoir.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "vigilance appliquee",
+                  "confiscation evitee",
+                  "base legale respectee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Maintenir ce perimetre jusqu'a l'arrivee des services competents",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Perimetre tenu jusqu'au relais.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "perimetre maintenu",
+                  "relais attendu",
+                  "tenue assuree"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 3,
+        "max_points": 5,
+        "label": "Comment accompagnez-vous les ouvriers, encore sous le choc de cette decouverte, dans l'attente des services competents ?",
+        "hint": "Ces ouvriers restent des temoins directs dont le recit peut s'averer utile, au-dela du choc qu'ils ressentent.",
+        "perfect": "Je prends le temps de recueillir leur recit precis des circonstances de cette decouverte, pendant que ces details restent frais dans leur memoire. Je reste attentive a leur etat, cette decouverte macabre pouvant les affecter davantage qu'ils ne le laissent paraitre. Je leur explique qu'ils ne peuvent reprendre les travaux sur cette zone precise, tout en les autorisant a travailler ailleurs sur le chantier si cela reste possible. Je recueille leurs coordonnees pour un eventuel complement ulterieur.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Recueillir leur recit precis pendant que les details restent frais",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Temoignage recueilli rapidement.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "recit recueilli",
+                  "details frais",
+                  "circonstances precisees"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Rester attentive a leur etat apres cette decouverte macabre",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Attention au choc subi.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "etat considere",
+                  "choc reconnu",
+                  "attention accordee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Autoriser la reprise ailleurs sur le chantier si possible",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Limitation de l'arret aux seules zones concernees.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "reprise autorisee ailleurs",
+                  "zone limitee",
+                  "activite maintenue"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Recueillir leurs coordonnees pour un complement ulterieur",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Suivi facilite.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "coordonnees recueillies",
+                  "complement possible",
+                  "suivi facilite"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "except-decouverte-nourrisson-abandonne",
+    "title": "Le nouveau-ne est enveloppe dans une serviette, encore tiede",
+    "theme_slug": "situations-exceptionnelles",
+    "difficulty": "expert",
+    "is_free": false,
+    "is_published": true,
+    "status": "published",
+    "year": 2026,
+    "month": "Juillet",
+    "total_points": 15,
+    "estimated_minutes": 35,
+    "situation_text": "Il est 3 heures. Un habitant vous signale avoir trouve, dans le hall de son immeuble, un nouveau-ne enveloppe dans une serviette encore tiede, ce qui suggere un abandon tres recent. L'enfant respire et ne semble pas presenter de blessure visible, mais son etat general reste a evaluer d'urgence. Aucune trace de la mere n'est visible dans les environs immediats, alors que son etat de sante a elle, potentiellement fragilise par un accouchement tres recent, pourrait constituer une urgence tout aussi vitale que celle de ce nouveau-ne. Aucune camera ne couvre ce hall d'immeuble. Vous devez agir sur deux fronts simultanement, sans pouvoir sacrifier l'un a l'autre.",
+    "questions": [
+      {
+        "position": 1,
+        "max_points": 5,
+        "label": "Comment organisez-vous cette double urgence, secourir ce nourrisson et rechercher cette mere potentiellement en danger ?",
+        "hint": "Ces deux urgences vitales doivent etre menees de front, sans que l'une n'attende que l'autre soit traitee.",
+        "perfect": "J'assure le secours au nourrisson et la recherche immediate de la mere, ces deux volets devant etre engages simultanement plutot que successivement. Je sollicite sans delai les secours medicaux pour ce nouveau-ne, sa temperature tiede suggerant une prise en charge tres urgente. Je declenche en parallele une recherche immediate dans l'immeuble et ses abords proches, cette mere pouvant se trouver a proximite immediate en detresse. Je sollicite des renforts pour mener ces deux volets sans que l'un ne retarde l'autre.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Assurer le secours au nourrisson et la recherche immediate de la mere",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Poids fort du cas.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "double urgence geree",
+                  "nourrisson secouru",
+                  "mere recherchee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Solliciter sans delai les secours medicaux pour le nouveau-ne",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Urgence vitale immediate du nourrisson.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "secours medicaux",
+                  "nouveau-ne pris en charge",
+                  "urgence traitee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Declencher en parallele une recherche immediate dans l'immeuble et ses abords",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Recherche simultanee de la mere.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "recherche declenchee",
+                  "immeuble fouille",
+                  "abords verifies"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Solliciter des renforts pour mener les deux volets sans retard",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Renforts mobilises pour la simultaneite.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "renforts sollicites",
+                  "simultaneite assuree",
+                  "retard evite"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "max_points": 5,
+        "label": "Comment menez-vous cette recherche de la mere en tenant compte de sa vulnerabilite potentielle et de sa detresse ?",
+        "hint": "Cette mere, si elle est retrouvee, sera probablement dans un etat physique et psychologique tres fragile.",
+        "perfect": "Je recherche des traces recentes, sang ou autres indices, pouvant orienter cette recherche vers un lieu precis dans l'immeuble ou ses abords. Je m'adresse aux autres habitants presents ou reveilles par cette agitation, sans les alarmer au-dela de ce qui est necessaire pour cette recherche. Je prepare mentalement un accueil non jugeant si cette mere venait a etre retrouvee, son geste relevant probablement d'une detresse extreme plutot que d'une intention criminelle. Je sollicite un avis medical pour elle des qu'elle sera localisee, sa sante restant une urgence vitale potentielle.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Rechercher des traces recentes pouvant orienter vers un lieu precis",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Recherche d'indices orientant l'action.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "traces recherchees",
+                  "indices suivis",
+                  "lieu oriente"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "S'adresser aux autres habitants sans les alarmer au-dela du necessaire",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Communication mesuree avec le voisinage.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "habitants interroges",
+                  "alarme mesuree",
+                  "communication proportionnee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Preparer un accueil non jugeant si la mere est retrouvee",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Posture non jugeante essentielle.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "accueil non jugeant",
+                  "detresse reconnue",
+                  "jugement evite"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Solliciter un avis medical pour elle des sa localisation",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Sante de la mere consideree comme urgence.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "avis medical prevu",
+                  "sante consideree",
+                  "localisation anticipee"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 3,
+        "max_points": 5,
+        "label": "Comment organisez-vous la suite de cette prise en charge, quelle que soit l'issue de la recherche de la mere ?",
+        "hint": "La suite doit rester adaptee que cette mere soit retrouvee ou non dans l'immediat.",
+        "perfect": "Je m'assure que ce nouveau-ne beneficie d'une prise en charge medicale complete et d'un accueil adapte a sa situation d'abandon. Je documente precisement les circonstances de cette decouverte, y compris l'heure et l'etat dans lequel l'enfant a ete trouve. Je transmets ce dossier aux autorites competentes en matiere de protection de l'enfance, cette transmission restant indispensable quelle que soit l'issue de la recherche de la mere. Je poursuis les recherches de cette mere meme au-dela de cette premiere intervention si elle n'a pas ete localisee immediatement.",
+        "points": [
+          {
+            "position": 1,
+            "label": "S'assurer d'une prise en charge medicale complete pour le nouveau-ne",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Prise en charge complete de l'enfant.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "prise en charge medicale",
+                  "enfant accueilli",
+                  "situation adaptee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Documenter precisement les circonstances de cette decouverte",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Traçabilite complete.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "circonstances documentees",
+                  "heure notee",
+                  "etat decrit"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Transmettre ce dossier a la protection de l'enfance",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Transmission indispensable.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "protection de l'enfance",
+                  "dossier transmis",
+                  "suite assuree"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Poursuivre les recherches de la mere au-dela de cette premiere intervention",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Recherche non abandonnee.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "recherches poursuivies",
+                  "mere non oubliee",
+                  "suivi continu"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "except-accident-industriel-fuite-produit",
+    "title": "Un nuage se degage, le vent porte vers les habitations",
+    "theme_slug": "situations-exceptionnelles",
+    "difficulty": "difficile",
+    "is_free": false,
+    "is_published": true,
+    "status": "published",
+    "year": 2026,
+    "month": "Juillet",
+    "total_points": 15,
+    "estimated_minutes": 30,
+    "situation_text": "Il est 7 heures. Dans une zone industrielle, une fuite de produit chimique se declare sur un site, degageant un nuage visible dont le vent porte progressivement la direction vers un secteur d'habitations proches. Vous ne disposez d'aucune formation technique specifique sur la nature exacte de ce produit ni sur sa dangerosite reelle. Le perimetre a etablir doit evoluer en continu avec les changements de direction du vent, rendant toute delimitation fixe rapidement obsolete. La population du secteur concerne n'a, pour l'instant, recu aucune information sur cette situation en cours.",
+    "questions": [
+      {
+        "position": 1,
+        "max_points": 5,
+        "label": "Comment etablissez-vous ce perimetre face a une menace dont la direction evolue avec le vent ?",
+        "hint": "Un perimetre fixe ne suffit pas face a un risque qui se deplace.",
+        "perfect": "J'etablis le perimetre selon le vent et alerte la population, ces deux actions restant indissociables face a cette menace evolutive. Je m'appuie sur les observations disponibles de la direction du vent, ajustant ce perimetre au fil de son evolution plutot que de le figer une fois pour toutes. Je sollicite immediatement les services specialises en risques technologiques, ma competence propre restant limitee sur la nature exacte de ce produit. Je maintiens une distance de securite large, privilegiant la prudence face a cette incertitude technique.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Etablir le perimetre selon le vent et alerter la population",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Poids fort du cas.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "perimetre adapte au vent",
+                  "population alertee",
+                  "double action"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Ajuster ce perimetre au fil de l'evolution du vent",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Adaptation continue necessaire.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "perimetre ajuste",
+                  "evolution suivie",
+                  "adaptation continue"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Solliciter immediatement les services specialises en risques technologiques",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Expertise technique sollicitee.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "services specialises",
+                  "expertise sollicitee",
+                  "competence reconnue limitee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Maintenir une distance de securite large face a l'incertitude",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Prudence maximale face a l'inconnu.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "distance large",
+                  "prudence appliquee",
+                  "incertitude geree"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "max_points": 5,
+        "label": "Comment alertez-vous concretement la population du secteur menace ?",
+        "hint": "Cette population n'a, pour l'instant, recu aucune information : chaque minute compte pour l'en informer.",
+        "perfect": "Je sollicite le declenchement des moyens d'alerte disponibles pour informer rapidement cette population du secteur concerne. Je recommande des consignes simples et claires, comme rester a l'interieur et fermer les ouvertures, en attendant des instructions plus precises des services specialises. Je participe, si necessaire, a une information directe aupres des habitants les plus proches et les plus immediatement exposes. Je reste attentive a ne pas donner d'informations techniques que je ne maitrise pas sur la nature exacte du produit.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Solliciter le declenchement des moyens d'alerte disponibles",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Alerte rapide de la population.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "moyens d'alerte",
+                  "population informee",
+                  "declenchement sollicite"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Recommander des consignes simples et claires en attendant plus de precisions",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Consignes de precaution immediates.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "consignes donnees",
+                  "precaution immediate",
+                  "clarte assuree"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Participer a une information directe aupres des habitants les plus exposes",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Information de proximite pour les plus exposes.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "information directe",
+                  "habitants proches",
+                  "exposition prioritaire"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Ne pas donner d'informations techniques non maitrisees sur le produit",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Prudence sur les informations techniques.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "information technique evitee",
+                  "competence respectee",
+                  "prudence maintenue"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 3,
+        "max_points": 5,
+        "label": "Comment coordonnez-vous votre action avec les services specialises une fois qu'ils arrivent sur place ?",
+        "hint": "Votre role initial de premiere reponse doit s'effacer devant l'expertise qui arrive, sans pour autant disparaitre.",
+        "perfect": "Je transmets a ces services specialises l'ensemble des elements que j'ai pu observer, evolution du vent, perimetre deja etabli, population deja alertee. Je me mets a leur disposition pour la suite de cette gestion, sans chercher a conserver une decision qui releve desormais de leur competence technique. Je continue a assurer la securisation du perimetre pendant qu'ils procedent a leur propre evaluation. Je reste attentive aux instructions qu'ils pourraient me donner pour ajuster mon action.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Transmettre l'ensemble des elements observes aux services specialises",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Transmission complete pour l'expertise.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "elements transmis",
+                  "observations partagees",
+                  "transmission complete"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Se mettre a leur disposition sans conserver une decision technique",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Passage de relais approprie.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "disposition offerte",
+                  "decision cedee",
+                  "relais assure"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Continuer a assurer la securisation du perimetre pendant leur evaluation",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Continuite de la securisation.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "securisation maintenue",
+                  "perimetre assure",
+                  "evaluation en cours"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Rester attentive aux instructions pour ajuster son action",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Adaptation aux instructions specialisees.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "instructions suivies",
+                  "action ajustee",
+                  "coordination assuree"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "except-erreur-d-identite-personne-interpellee",
+    "title": "L'homonymie etait parfaite, la personne a passe la nuit en cellule",
+    "theme_slug": "situations-exceptionnelles",
+    "difficulty": "expert",
+    "is_free": false,
+    "is_published": true,
+    "status": "published",
+    "year": 2026,
+    "month": "Juillet",
+    "total_points": 15,
+    "estimated_minutes": 35,
+    "situation_text": "Il est 14 heures. Vous decouvrez qu'un homme, interpelle la veille sur la base d'une homonymie parfaite avec une personne recherchee, a passe la nuit entiere en cellule avant que cette erreur ne soit finalement decouverte ce matin. Cet homme, totalement etranger aux faits reproches a l'autre individu, va etre libere dans les prochaines minutes. Il est comprehensiblement furieux et choque par cette privation de liberte injustifiee, qui a eu des consequences concretes sur sa vie, absence injustifiee a son travail, inquietude de ses proches sans nouvelles. Vous n'etes pas a l'origine de cette erreur d'identification initiale, mais vous devez gerer cette situation au moment de sa liberation.",
+    "questions": [
+      {
+        "position": 1,
+        "max_points": 5,
+        "label": "Comment gerez-vous ce moment de liberation face a cet homme legitimement en colere ?",
+        "hint": "Cette colere est parfaitement fondee et ne doit pas etre traitee comme une simple difficulte a gerer.",
+        "perfect": "Je reconnais l'erreur et organise la reparation, cette reconnaissance explicite restant indispensable face a une faute institutionnelle aussi grave que celle qu'il a subie. Je ne minimise a aucun moment la gravite de cette privation de liberte injustifiee d'une nuit entiere. Je reste factuelle sur les circonstances de cette erreur d'homonymie, sans chercher a la justifier au-dela de ce qu'elle est reellement. Je le laisse exprimer sa colere sans la minimiser ni m'en offusquer personnellement.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Reconnaitre l'erreur et organiser la reparation",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Poids fort du cas.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "erreur reconnue",
+                  "reparation organisee",
+                  "reconnaissance explicite"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Ne pas minimiser la gravite de cette privation de liberte injustifiee",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Gravite pleinement reconnue.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "gravite reconnue",
+                  "minimisation evitee",
+                  "privation admise"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Rester factuelle sur les circonstances sans les justifier au-dela",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Explication sans justification excessive.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "circonstances expliquees",
+                  "justification limitee",
+                  "factualite maintenue"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Le laisser exprimer sa colere sans la minimiser ni s'en offusquer",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Espace donne a sa colere legitime.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "colere accueillie",
+                  "offuscation evitee",
+                  "espace donne"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "max_points": 5,
+        "label": "Comment l'informez-vous des demarches concretes de reparation qui s'offrent a lui ?",
+        "hint": "Une reconnaissance verbale de l'erreur ne suffit pas : des demarches concretes doivent lui etre indiquees.",
+        "perfect": "Je lui explique les voies de recours et de reparation existantes face a cette erreur, sans minimiser les demarches qu'il devra malgre tout entreprendre. Je lui remets, si possible, une attestation officielle de cette erreur, ce document pouvant lui etre utile aupres de son employeur ou de ses proches. Je reste honnete sur les delais et les limites de ces demarches, sans lui promettre une reparation immediate que je ne peux garantir. Je l'oriente vers les services competents pour l'accompagner dans ces demarches.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Expliquer les voies de recours et de reparation existantes",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Information complete sur les recours.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "voies expliquees",
+                  "recours indique",
+                  "reparation presentee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Remettre une attestation officielle de cette erreur si possible",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Document concret utile.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "attestation remise",
+                  "document officiel",
+                  "preuve fournie"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Rester honnete sur les delais sans promettre une reparation immediate",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Realisme sur les delais.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "delais honnetes",
+                  "promesse evitee",
+                  "realisme assure"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Orienter vers les services competents pour l'accompagner",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Accompagnement dans les demarches.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "services orientes",
+                  "accompagnement propose",
+                  "demarches facilitees"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 3,
+        "max_points": 5,
+        "label": "Comment tirez-vous les enseignements de cette erreur pour la suite du service ?",
+        "hint": "Une erreur de cette gravite merite une remontee qui depasse le seul traitement de ce cas individuel.",
+        "perfect": "Je documente precisement les circonstances ayant conduit a cette erreur d'identification, cette analyse restant necessaire pour eviter sa reproduction. Je transmets ce constat a ma hierarchie, sans chercher a designer un responsable individuel avant que cette analyse ne soit menee serieusement. Je reste factuelle dans ce compte rendu, en me concentrant sur les faits plutot que sur des conjectures. Je m'assure que cet homme dispose de mes coordonnees ou de celles d'un service pour tout complement ulterieur.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Documenter precisement les circonstances ayant conduit a cette erreur",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Analyse necessaire pour eviter la reproduction.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "circonstances documentees",
+                  "erreur analysee",
+                  "reproduction evitee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Transmettre ce constat sans designer de responsable individuel prematurement",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Neutralite avant analyse complete.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "constat transmis",
+                  "responsable non designe",
+                  "analyse differee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Rester factuelle en se concentrant sur les faits plutot que des conjectures",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Rigueur du compte rendu.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "faits rapportes",
+                  "conjectures evitees",
+                  "rigueur assuree"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "S'assurer qu'il dispose de coordonnees pour tout complement ulterieur",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Suivi accessible pour lui.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "coordonnees fournies",
+                  "suivi accessible",
+                  "complement possible"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "except-intervention-personnalite-publique",
+    "title": "Son entourage exige la discretion et propose d'arranger les choses",
+    "theme_slug": "situations-exceptionnelles",
+    "difficulty": "difficile",
+    "is_free": false,
+    "is_published": true,
+    "status": "published",
+    "year": 2026,
+    "month": "Juillet",
+    "total_points": 15,
+    "estimated_minutes": 30,
+    "situation_text": "Il est 23 heures. Vous intervenez dans un hotel pour un trouble signale par le personnel, impliquant une personnalite publique connue du grand public. Son entourage, rapidement present, exige avec insistance la plus grande discretion sur cette intervention et propose ouvertement d'arranger les choses de maniere informelle, sous-entendant une contrepartie financiere ou un service en retour. Cette pression, exprimee avec une assurance tranquille par des personnes habituees a ce type d'arrangement, s'exerce sur vous de maniere feutree mais insistante. Le personnel de l'hotel, lui, attend une reponse claire sur la conduite a tenir face a ce trouble constate.",
+    "questions": [
+      {
+        "position": 1,
+        "max_points": 5,
+        "label": "Comment repondez-vous a cette proposition d'arrangement formulee par l'entourage de cette personnalite ?",
+        "hint": "L'assurance avec laquelle cette proposition est formulee ne la rend pas plus acceptable.",
+        "perfect": "J'applique un traitement strictement identique malgre la notoriette de cette personne, cette egalite de traitement restant un principe absolu quelle que soit la pression exercee. Je refuse clairement et sans ambiguite toute proposition d'arrangement, sans laisser planer le moindre doute sur ma position. Je reste courtoise dans ce refus, sans pour autant ceder d'un pouce sur le fond de cette exigence de traitement de faveur. Je documente precisement cette tentative d'arrangement dans mon compte rendu.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Appliquer un traitement strictement identique malgre la notoriete",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Poids fort du cas.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "traitement identique",
+                  "notoriete ecartee",
+                  "egalite appliquee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Refuser clairement et sans ambiguite toute proposition d'arrangement",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Refus net et sans equivoque.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "refus clair",
+                  "ambiguite evitee",
+                  "arrangement refuse"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Rester courtoise sans ceder sur le fond de cette exigence",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Fermete courtoise.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "courtoisie maintenue",
+                  "fermete assuree",
+                  "exigence rejetee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Documenter precisement cette tentative d'arrangement",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Traçabilite de la pression exercee.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "tentative documentee",
+                  "pression tracee",
+                  "compte rendu complet"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "max_points": 5,
+        "label": "Comment traitez-vous concretement ce trouble signale par le personnel, independamment de cette pression ?",
+        "hint": "Le trouble constate reste la question centrale, quelle que soit l'identite de la personne impliquee.",
+        "perfect": "Je traite ce trouble exactement comme je le ferais pour toute autre personne dans les memes circonstances, sans que la notoriete n'influence mon appreciation des faits. Je recueille les elements aupres du personnel de l'hotel, premier temoin de ce trouble, avec la meme rigueur qu'a l'accoutumee. Je reste factuelle dans mes constatations, sans me laisser impressionner par la posture assuree de cet entourage. J'informe le personnel de la suite reservee a ce trouble, sans les laisser dans l'incertitude face a cette pression qu'ils ont probablement egalement percue.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Traiter ce trouble exactement comme pour toute autre personne",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Traitement equitable des faits.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "trouble traite equitablement",
+                  "notoriete neutralisee",
+                  "faits consideres"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Recueillir les elements aupres du personnel avec la meme rigueur",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Rigueur maintenue dans le recueil.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "elements recueillis",
+                  "personnel interroge",
+                  "rigueur maintenue"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Rester factuelle sans se laisser impressionner par cette posture",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Impassibilite face a la pression.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "factualite maintenue",
+                  "impression evitee",
+                  "posture non subie"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Informer le personnel de la suite reservee a ce trouble",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Personnel rassure sur la suite.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "personnel informe",
+                  "suite expliquee",
+                  "incertitude levee"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 3,
+        "max_points": 5,
+        "label": "Comment rendez-vous compte de cette intervention en tenant compte de cette pression exercee ?",
+        "hint": "Cette pression, exercee par un entourage habitue a ce type de situation, merite d'etre explicitement rapportee.",
+        "perfect": "Je documente precisement les faits constates concernant ce trouble, sans les attenuer ni les amplifier au regard de l'identite de la personne impliquee. Je mentionne explicitement dans mon compte rendu cette tentative d'arrangement formulee par l'entourage, cet element restant pertinent pour la hierarchie. Je reste factuelle sur le deroulement complet de cette intervention, sans y ajouter de commentaire personnel sur cette personnalite. Je transmets ce compte rendu selon la procedure habituelle, sans traitement particulier du seul fait de cette notoriete.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Documenter precisement les faits sans les attenuer ni les amplifier",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Objectivite du compte rendu.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "faits documentes",
+                  "attenuation evitee",
+                  "objectivite assuree"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Mentionner explicitement la tentative d'arrangement dans le compte rendu",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Transparence sur la pression exercee.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "tentative mentionnee",
+                  "pression rapportee",
+                  "transparence assuree"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Rester factuelle sans commentaire personnel sur cette personnalite",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Neutralite du compte rendu.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "commentaire evite",
+                  "neutralite maintenue",
+                  "factualite respectee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Transmettre selon la procedure habituelle sans traitement particulier",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Procedure standard respectee.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "procedure standard",
+                  "traitement egal",
+                  "transmission habituelle"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

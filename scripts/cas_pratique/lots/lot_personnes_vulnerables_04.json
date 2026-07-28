@@ -1,0 +1,1611 @@
+[
+  {
+    "slug": "vuln-personne-precaire-verbalisation-repetee",
+    "title": "Douze procedures pour les memes faits en un an",
+    "theme_slug": "personnes-vulnerables",
+    "difficulty": "moyen",
+    "is_free": false,
+    "is_published": true,
+    "status": "published",
+    "year": 2026,
+    "month": "Juillet",
+    "total_points": 15,
+    "estimated_minutes": 25,
+    "situation_text": "Il est 9 heures. En gare, vous croisez un homme que vous connaissez bien : douze procedures dressees a son encontre en un an, toujours pour les memes faits d'occupation du hall et de sollicitation des voyageurs. Aucune n'a modifie son comportement. Il vous reconnait de loin et baisse la tete, resigne, avant meme que vous n'ayez ouvert la bouche. Un agent de la SNCF, qui vous a appele, attend visiblement une nouvelle verbalisation, comme a chaque fois. En consultant son dossier sur votre terminal, vous retrouvez ce que vous saviez deja : il dort dehors depuis plusieurs mois, et aucun suivi social n'a jamais ete engage malgre la frequence de vos passages aupres de lui. Rien dans son attitude actuelle ne justifie une reponse plus ferme que d'habitude, mais la repetition mecanique de la meme sanction, douze fois en un an sans le moindre effet, interroge serieusement sur son utilite face a une situation qui releve visiblement d'autre chose que d'une volonte de nuire aux usagers.",
+    "questions": [
+      {
+        "position": 1,
+        "max_points": 5,
+        "label": "Face a cette douzieme situation identique, quelle reponse apportez-vous concretement, sur le moment ?",
+        "hint": "Une treizieme verbalisation identique a-t-elle une chance de produire un effet different des douze precedentes ?",
+        "perfect": "Je constate les faits sans reproduire automatiquement la meme sanction que les fois precedentes, dont l'inefficacite est desormais etablie par le dossier lui-meme. J'engage un echange direct avec cet homme sur sa situation reelle : ou il dort, depuis quand, ce qui l'a conduit la. Je recherche activement une orientation sociale adaptee plutot qu'une reponse uniquement penale, en contactant si possible un dispositif d'urgence sociale joignable a cette heure. J'informe l'agent SNCF de la demarche que j'engage, sans le laisser dans l'incertitude apres son signalement. Je consigne cette demarche precisement, pour que le prochain collegue qui croisera cet homme dispose d'un element de suivi et ne reparte pas de zero.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Ne pas reproduire mecaniquement la meme sanction sans evaluer son utilite",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Le dossier lui-meme demontre l'inefficacite de la reponse repetee.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "sanction reevaluee",
+                  "reponse adaptee",
+                  "mecanique interrompue",
+                  "reponse repetee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Engager un echange direct sur la situation reelle de cette personne",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Comprendre la situation avant d'agir.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "echange engage",
+                  "situation comprise",
+                  "dialogue direct"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Rechercher activement une orientation sociale adaptee",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Poids fort : privilegier l'orientation sociale a la reponse automatique.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "orientation sociale",
+                  "dispositif contacte",
+                  "solution sociale",
+                  "aide recherchee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Informer l'agent SNCF de la demarche engagee",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Maintenir la relation partenariale.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "agent informe",
+                  "partenaire tenu au courant"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 5,
+            "label": "Consigner cette demarche pour assurer la continuite du suivi",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Sans trace, le prochain passage repart de zero.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "demarche consignee",
+                  "suivi assure",
+                  "continuite garantie"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "max_points": 5,
+        "label": "L'agent SNCF insiste pour une verbalisation immediate, estimant que la tolerance encourage la repetition des faits. Comment gerez-vous ce desaccord ?",
+        "hint": "Le desaccord porte sur l'efficacite d'une reponse, pas sur la legitimite de son signalement.",
+        "perfect": "J'explique posement mon choix a cet agent sans disqualifier son signalement, parfaitement legitime au regard des faits constates dans le hall. Je rappelle que j'exerce une marge d'appreciation professionnelle et que la repetition de la meme sanction sans effet mesurable justifie d'essayer une autre voie aujourd'hui, sans renoncer a verbaliser si la situation l'exigeait a nouveau demain. Je lui propose une solution concrete et immediate, comme le contact d'un educateur de rue ou du dispositif d'urgence sociale local, pour montrer que ce choix n'est pas de l'inaction. Je maintiens la relation partenariale avec la SNCF en restant disponible pour ses signalements futurs, et je ne cede pas a la pression si mon appreciation de la situation me conduit raisonnablement a agir autrement aujourd'hui.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Expliquer son choix sans disqualifier le signalement de l'agent",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Le signalement reste legitime, seule la reponse differe.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "choix explique",
+                  "signalement legitime",
+                  "desaccord respectueux"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Rappeler sa marge d'appreciation professionnelle sur la reponse a apporter",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "La verbalisation n'est pas automatique.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "marge d'appreciation",
+                  "choix professionnel",
+                  "reponse adaptee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Proposer une solution concrete et immediate a l'agent",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Montrer que ce choix n'est pas de l'inaction.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "solution proposee",
+                  "educateur contacte",
+                  "action concrete"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Maintenir la relation partenariale avec la SNCF",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Preserver la collaboration future.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "relation maintenue",
+                  "partenariat preserve"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 5,
+            "label": "Ne pas ceder a la pression si son appreciation le conduit a agir autrement",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "L'appreciation professionnelle prime sur la pression exterieure.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "pression resistee",
+                  "appreciation maintenue",
+                  "decision assumee"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 3,
+        "max_points": 5,
+        "label": "Comment formalisez-vous cette intervention pour qu'elle serve reellement aux collegues qui croiseront cet homme par la suite ?",
+        "hint": "Un dossier de douze procedures identiques sans aucune note de suivi social n'aide personne.",
+        "perfect": "Je redige une main courante detaillee qui mentionne l'historique de ces douze procedures et la demarche sociale engagee aujourd'hui, pour rompre avec la simple accumulation de sanctions identiques. Je signale cette situation au dispositif social competent, SIAO ou educateurs de rue selon les ressources locales disponibles, plutot que de me contenter d'un simple constat. J'evite tout jugement moral dans mon compte rendu, en restant strictement factuelle sur les elements observes et les demarches entreprises. Je recommande explicitement un suivi coordonne entre les patrouilles qui frequentent ce secteur, pour que cet homme ne redevienne pas un simple numero de procedure supplementaire sans que personne ne s'interroge sur l'absence totale d'effet de la reponse apportee jusqu'ici.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Rediger une main courante detaillee mentionnant l'historique et la demarche engagee",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Coeur du cas : rompre avec l'accumulation sans suivi.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "main courante detaillee",
+                  "historique mentionne",
+                  "demarche tracee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Signaler la situation au dispositif social competent",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Signalement actif plutot que simple constat.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "dispositif social",
+                  "signalement effectue",
+                  "siao contacte"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Rester factuelle sans jugement moral dans le compte rendu",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Objectivite du compte rendu.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "compte rendu factuel",
+                  "jugement evite",
+                  "objectivite maintenue"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Recommander un suivi coordonne entre les patrouilles du secteur",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Continuite entre les passages successifs.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "suivi coordonne",
+                  "patrouilles informees",
+                  "continuite assuree"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "vuln-personne-victime-de-son-entourage-de-quartier",
+    "title": "Les jeunes du hall se servent chez lui et l'appellent leur oncle",
+    "theme_slug": "personnes-vulnerables",
+    "difficulty": "moyen",
+    "is_free": false,
+    "is_published": true,
+    "status": "published",
+    "year": 2026,
+    "month": "Juillet",
+    "total_points": 15,
+    "estimated_minutes": 25,
+    "situation_text": "Il est 20 heures. Un voisin vous appelle, inquiet pour un homme d'une soixantaine d'annees vivant seul au rez-de-chaussee de son immeuble. Depuis plusieurs mois, des jeunes du hall entrent chez lui a toute heure, se servent dans son refrigerateur, utilisent sa television et dorment parfois sur son canape. Quand vous frappez a sa porte, il vous ouvre, visiblement genee que vous questionniez cette situation. Il appelle ces jeunes ses neveux, assure apprecier leur compagnie qui rompt une solitude installee depuis le deces de son epouse, et nie fermement etre exploite. Rien dans son attitude ne suggere une menace ou une contrainte physique ; au contraire, il semble sincerement attache a eux. Mais l'installation de cette relation depuis des mois, l'absence apparente de reciprocite, et la disproportion entre ce qu'il recoit, de la compagnie, et ce qu'il donne selon le voisin, nourriture, argent parfois, acces permanent a son logement, posent une question serieuse que son deni ne suffit pas a clore. Le voisin, present a vos cotes, attend que vous interveniez.",
+    "questions": [
+      {
+        "position": 1,
+        "max_points": 5,
+        "label": "Comment evaluez-vous la nature reelle de cette relation malgre le deni de cet homme ?",
+        "hint": "Un deni sincere n'exclut pas une exploitation dont la victime elle-meme n'a pas conscience.",
+        "perfect": "Je recueille des elements objectifs sur cette relation : frequence des passages, nature exacte de ce qui est pris ou consomme, eventuelle disparition d'objets ou de sommes d'argent, plutot que de m'arreter a son deni immediat. Je ne me contente pas de cette affirmation que tout va bien, sachant qu'une personne isolee peut sincerement valoriser une compagnie meme desequilibree. J'observe la situation sans accuser directement ces jeunes, absents au moment de mon passage, une accusation prematuree pouvant fragiliser davantage cet homme si la relation devait perdurer. Je distingue avec prudence ce qui releve d'une compagnie librement choisie de ce qui pourrait caracteriser une exploitation installee, cette distinction restant determinante pour la suite. Je recueille aussi le temoignage du voisin, utile mais a manier avec la meme prudence que le reste.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Distinguer compagnie choisie et exploitation installee au-dela du deni exprime",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Coeur du cas : caracteriser l'abus malgre la presentation amicale.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "exploitation distinguee",
+                  "compagnie choisie",
+                  "deni depasse",
+                  "relation caracterisee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Recueillir des elements objectifs sur la frequence et la nature des passages",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Elements factuels au-dela des declarations.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "elements objectifs",
+                  "frequence relevee",
+                  "nature precisee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Ne pas accuser directement les jeunes en leur absence",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Prudence necessaire face a une accusation non etayee.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "accusation evitee",
+                  "prudence maintenue",
+                  "absence respectee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Recueillir le temoignage du voisin avec prudence",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Temoignage utile mais a verifier.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "temoignage recueilli",
+                  "voisin entendu",
+                  "prudence appliquee"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "max_points": 5,
+        "label": "Comment menez-vous cet entretien avec cet homme qui affirme n'etre en rien une victime ?",
+        "hint": "Le braquer en disqualifiant ses neveux risque de fermer definitivement la porte a tout suivi.",
+        "perfect": "J'adopte une posture non accusatrice envers lui, cet homme n'ayant commis aucune faute et n'ayant pas a se justifier d'une amitie qu'il valorise sincerement. Je n'invalide pas d'emblee ces neveux qu'il decrit, une disqualification frontale risquant de le braquer et de fermer definitivement la porte a tout suivi futur. Je verifie sa situation materielle avec tact, en evoquant simplement ses depenses recentes sans exiger de justificatifs de facon intrusive. J'evalue discretement sa capacite de discernement au fil de l'echange, sans en faire un interrogatoire. Je lui laisse explicitement la porte ouverte pour en reparler plus tard, en lui indiquant que je repasserai, de sorte qu'il ne se sente ni juge ni abandonne a l'issue de cette visite.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Adopter une posture non accusatrice envers cet homme",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Il n'a commis aucune faute.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "posture bienveillante",
+                  "absence d'accusation",
+                  "homme respecte"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Ne pas disqualifier frontalement ces neveux pour ne pas le braquer",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Une disqualification frontale ferme le dialogue.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "disqualification evitee",
+                  "dialogue preserve",
+                  "neveux non disqualifies"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Verifier sa situation materielle avec tact, sans intrusion",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Verification mesuree.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "situation verifiee",
+                  "tact applique",
+                  "intrusion evitee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Evaluer discretement sa capacite de discernement",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Evaluation sans interrogatoire.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "discernement evalue",
+                  "evaluation discrete"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 5,
+            "label": "Laisser explicitement la porte ouverte pour un futur echange",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Maintenir la confiance pour la suite.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "porte laissee ouverte",
+                  "confiance maintenue",
+                  "suivi propose"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 3,
+        "max_points": 5,
+        "label": "Quelle suite donnez-vous a cette situation en l'absence de plainte et d'infraction clairement caracterisee ?",
+        "hint": "L'absence de plainte ne signifie pas l'absence de suite possible.",
+        "perfect": "Je consigne precisement les elements recueillis lors de cette visite, par une main courante ou un signalement selon leur gravite, pour qu'ils ne se perdent pas. J'oriente cette situation vers le service social ou le CCAS competent pour une evaluation approfondie que je ne peux mener seule en une visite. J'informe le voisin du cadre legal reel, sans lui promettre une intervention immediate que rien ne justifie encore juridiquement en l'etat des elements. Je prevois un passage de controle ulterieur, pour verifier l'evolution de cette relation dans le temps. Je reste attentive a alerter le procureur si des indices plus precis d'abus de faiblesse venaient a se confirmer lors d'un prochain passage ou par le service social saisi.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Consigner precisement les elements recueillis lors de cette visite",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Traçabilite necessaire.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "elements consignes",
+                  "traçabilite assuree",
+                  "signalement redige"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Orienter vers le service social ou le CCAS pour evaluation approfondie",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Coeur du cas : evaluation approfondie necessaire au-dela de la visite ponctuelle.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "service social saisi",
+                  "ccas contacte",
+                  "evaluation approfondie"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Informer le voisin du cadre legal sans promesse d'intervention immediate",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Realisme sur les suites possibles.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "voisin informe",
+                  "cadre legal explique",
+                  "promesse evitee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Prevoir un passage de controle ulterieur",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Suivi dans le temps.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "passage prevu",
+                  "controle ulterieur",
+                  "suivi programme"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "vuln-personne-agee-perdue-la-nuit-en-zone-rurale",
+    "title": "Elle marche sur la departementale en chemise de nuit",
+    "theme_slug": "personnes-vulnerables",
+    "difficulty": "difficile",
+    "is_free": false,
+    "is_published": true,
+    "status": "published",
+    "year": 2026,
+    "month": "Juillet",
+    "total_points": 15,
+    "estimated_minutes": 30,
+    "situation_text": "Il est 23 heures. En patrouille sur une route departementale peu eclairee, en pleine zone rurale, vos phares eclairent une silhouette sur le bas-cote : une femme agee, en chemise de nuit, pieds nus, sans manteau malgre une temperature proche de zero. Elle marche d'un pas hesitant, sans reagir immediatement a l'approche de votre vehicule. Aucun vehicule accidente aux alentours, aucun signalement de disparition encore enregistre dans votre systeme. Quand vous l'abordez lentement, elle cooperere et ne manifeste aucune agressivite, mais elle ne sait pas dire ou elle habite avec precision : elle evoque un nom de hameau qui ne correspond a aucune localite connue dans le secteur. La circulation, bien que faible a cette heure sur cet axe, expose immediatement cette femme a un danger reel, tout comme le froid nocturne qui aggrave rapidement sa situation. Elle semble desorientee, tremble legerement, et vous n'avez pour l'instant aucun element permettant d'identifier son domicile ni la duree pendant laquelle elle marche ainsi.",
+    "questions": [
+      {
+        "position": 1,
+        "max_points": 5,
+        "label": "Quelle est votre action immediate face a ce double danger, la circulation et le froid ?",
+        "hint": "Les deux risques sont concurrents et doivent etre traites dans les toutes premieres secondes.",
+        "perfect": "Je securise immediatement sa position par rapport a la circulation, en la placant a l'ecart de la chaussee et en signalant ma presence aux autres vehicules eventuels. Je la couvre sans delai avec une couverture de survie ou un vetement disponible, la temperature nocturne rendant cette action aussi urgente que la mise en securite routiere. Je l'installe au chaud dans mon vehicule des que possible, plutot que de prolonger les echanges en exterieur. Je ne la laisse a aucun moment seule sur ce bas-cote, meme le temps de contacter mon centre operationnel, ma presence continue restant la meilleure garantie contre une nouvelle errance sur cette route peu sure a cette heure.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Securiser sa position par rapport a la circulation",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Premier risque immediat.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "position securisee",
+                  "circulation geree",
+                  "ecart chaussee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "La couvrir immediatement face au froid",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Poids fort : mise a l'abri thermique immediate.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "mise a l'abri",
+                  "couverture fournie",
+                  "froid traite",
+                  "hypothermie prevenue"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "L'installer au chaud dans le vehicule sans tarder",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Abri effectif rapide.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "vehicule utilise",
+                  "abri effectif",
+                  "installation rapide"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Ne pas la laisser seule a aucun moment",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Presence continue protectrice.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "presence continue",
+                  "personne accompagnee",
+                  "seule jamais laissee"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "max_points": 5,
+        "label": "Elle mentionne un nom de hameau introuvable et parait de plus en plus confuse. Comment identifiez-vous son domicile et declenchez-vous les recherches appropriees ?",
+        "hint": "L'absence d'un nom de lieu exploitable ne signifie pas l'absence de piste.",
+        "perfect": "Je sollicite immediatement mon centre operationnel pour croiser son signalement avec d'eventuels avis de disparition en cours dans le secteur ou les secteurs limitrophes. Je recherche sur elle des indices d'identification, bijoux graves, etiquette de vetement, tout element permettant de remonter jusqu'a son entourage. Je fais appel si necessaire aux services competents voisins si cette zone rurale chevauche plusieurs circonscriptions, la frontiere administrative ne devant pas ralentir cette recherche urgente. J'elargis mentalement le perimetre de recherche a un domicile proche, une errance recente partant rarement de tres loin, et je sollicite l'appui de la mairie locale qui connait souvent les habitants isoles du secteur mieux qu'aucune base de donnees.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Solliciter le centre operationnel pour croiser avec les signalements de disparition",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Coeur du cas : identification rapide du domicile.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "centre operationnel",
+                  "signalement croise",
+                  "disparition recherchee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Rechercher des indices d'identification sur elle",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Identification par indices materiels.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "indices recherches",
+                  "identification tentee",
+                  "elements materiels"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Faire appel aux services competents des secteurs limitrophes si necessaire",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "La frontiere administrative ne doit pas freiner la recherche.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "services limitrophes",
+                  "appui sollicite",
+                  "secteurs voisins"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Solliciter l'appui de la mairie locale connaissant les habitants du secteur",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Connaissance locale precieuse.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "mairie sollicitee",
+                  "connaissance locale",
+                  "habitants identifies"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 3,
+        "max_points": 5,
+        "label": "Comment organisez-vous la suite, soins et transmission, une fois cette femme prise en charge ?",
+        "hint": "La mise en securite immediate n'epuise pas la prise en charge de cette situation.",
+        "perfect": "Je fais intervenir les secours medicaux pour un bilan complet, l'hypothermie et une chute eventuelle avant votre passage restant des risques reels que je ne peux evaluer seule. Je transmets un compte rendu precis et chronologique pour la suite de l'enquete sur l'origine de cette errance nocturne, cette precision restant utile aux services qui prendront le relais. J'alerte les services sociaux et medicaux competents en cas de suspicion de troubles cognitifs, cette errance en tenue de nuit constituant un indice serieux meritant une evaluation specialisee. Je veille a ne jamais la relacher, ni la confier a un tiers non identifie, sans certitude raisonnable sur son etat de sante et sur l'identite de la personne qui la recueillera.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Faire intervenir les secours medicaux pour un bilan complet",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Coeur du cas : risques medicaux non evaluables seule.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "secours medicaux",
+                  "bilan realise",
+                  "hypothermie evaluee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Transmettre un compte rendu precis et chronologique",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Utile pour la suite de l'enquete.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "compte rendu transmis",
+                  "chronologie precisee",
+                  "enquete facilitee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Alerter les services competents en cas de suspicion de troubles cognitifs",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Indice serieux meritant evaluation specialisee.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "troubles suspectes",
+                  "services alertes",
+                  "evaluation specialisee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Ne pas la relacher sans certitude raisonnable sur son etat et son accueil",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Vigilance jusqu'a la prise en charge effective.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "relache evitee",
+                  "prise en charge confirmee",
+                  "accueil verifie"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "vuln-personne-handicapee-mentale-accusee-a-tort",
+    "title": "Il repond oui a toutes les questions qu'on lui pose",
+    "theme_slug": "personnes-vulnerables",
+    "difficulty": "difficile",
+    "is_free": false,
+    "is_published": true,
+    "status": "published",
+    "year": 2026,
+    "month": "Juillet",
+    "total_points": 15,
+    "estimated_minutes": 30,
+    "situation_text": "Il est 15 heures. Dans un commerce de quartier, le gerant vous accuse d'un vol un homme presentant un handicap mental visible, connu du voisinage. Ce gerant subit des vols repetes depuis plusieurs semaines et vous demande fermement que cette personne soit verbalisee comme les autres suspects deja identifies. Vous interrogez cet homme, et vous constatez qu'il acquiesce a chaque question posee, y compris a des questions volontairement contradictoires que vous formulez pour tester la fiabilite de ses reponses : il confirme avoir pris l'objet dans sa poche gauche, puis confirme tout aussi aisement l'avoir pris dans sa poche droite quand vous reformulez differemment. Aucune camera de surveillance ne couvre la zone concernee, aucun temoin fiable ne confirme formellement les faits reproches. Le gerant, agace par cette succession de vols impunis, insiste et hausse le ton, estimant que votre hesitation revient a cautionner ces pertes repetees qu'il subit dans son commerce.",
+    "questions": [
+      {
+        "position": 1,
+        "max_points": 5,
+        "label": "Comment evaluez-vous la fiabilite des declarations recueillies face a cette suggestibilite manifeste ?",
+        "hint": "Deux reponses positives a deux questions contradictoires ne se completent pas, elles s'annulent.",
+        "perfect": "Je repere objectivement cette suggestibilite a travers ces reponses contradictoires, cet element restant determinant pour la suite de mon appreciation. Je ne fonde aucune qualification sur ces seules declarations, dont la valeur probante est manifestement nulle compte tenu de ce test involontaire que je viens de mener. Je recherche des elements materiels independants de sa parole, camera existante meme hors du perimetre initial, temoin fiable, objet effectivement retrouve en sa possession, pour etayer ou ecarter cette accusation. Je reformule mes eventuelles questions restantes de facon strictement neutre et ouverte, sans jamais suggerer la reponse attendue, une precaution indispensable face a une personne aussi influencable.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Ne pas exploiter des declarations obtenues par suggestion",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Coeur du cas : fiabilite nulle des declarations recueillies.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "suggestion evitee",
+                  "declarations non exploitees",
+                  "fiabilite nulle"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Reperer objectivement cette suggestibilite via les reponses contradictoires",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Constat objectif de l'incoherence.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "suggestibilite reperee",
+                  "contradictions constatees",
+                  "incoherence relevee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Rechercher des elements materiels independants de sa parole",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Preuve materielle recherchee.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "elements materiels",
+                  "preuve independante",
+                  "camera recherchee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Reformuler les questions de facon neutre et non suggestive",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Precaution methodologique.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "questions neutres",
+                  "reformulation appliquee",
+                  "suggestion evitee"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "max_points": 5,
+        "label": "Comment gerez-vous ce gerant qui reclame une reponse penale immediate ?",
+        "hint": "Sa colere est comprehensible, elle ne rend pas le dossier plus solide pour autant.",
+        "perfect": "J'explique posement a ce gerant les limites reelles du dossier en l'etat, sans minimiser les vols qu'il subit ni sa legitime exasperation. Je ne cede pas a la pression qu'il exerce malgre la repetition de ces vols anterieurs, une accusation fragile ne devenant pas plus solide sous l'effet de l'insistance. Je lui propose une verification objective concrete, comme le visionnage d'enregistrements existants dans un perimetre elargi ou le rapprochement avec d'autres commercants du secteur. Je lui rappelle, sans le braquer, que la vulnerabilite averee de cette personne impose une prudence procedurale particuliere, une erreur judiciaire envers un homme suggestible ayant des consequences disproportionnees par rapport a l'objet vole.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Expliquer posement les limites du dossier sans minimiser sa plainte",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Fermete et respect combines.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "limites expliquees",
+                  "plainte respectee",
+                  "explication posee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Ne pas ceder a la pression malgre les vols anterieurs repetes",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Pression resistee.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "pression resistee",
+                  "dossier maintenu fragile",
+                  "insistance non suivie"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Proposer une verification objective concrete",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Alternative constructive proposee.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "verification proposee",
+                  "camera envisagee",
+                  "solution concrete"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Rappeler sans le braquer la prudence particuliere imposee par cette vulnerabilite",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Pedagogie envers le commercant.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "vulnerabilite rappelee",
+                  "prudence justifiee",
+                  "gerant informe"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 3,
+        "max_points": 5,
+        "label": "Comment adaptez-vous la suite de cette procedure a la vulnerabilite de cette personne ?",
+        "hint": "Toute suite eventuelle doit tenir compte de cette fragilite des le premier acte.",
+        "perfect": "Je sollicite, si des poursuites devaient malgre tout etre envisagees, la presence d'un tiers de confiance ou d'un representant legal pour tout echange ulterieur avec cette personne. J'oriente le dossier vers une evaluation adaptee a son handicap si la procedure devait se poursuivre, cette precaution restant indispensable compte tenu de sa suggestibilite constatee. Je consigne precisement les conditions exactes dans lesquelles ces declarations ont ete recueillies, y compris le test de contradiction que j'ai moi-meme effectue, pour que ces elements soient connus de quiconque reprendra ce dossier. J'evite toute pression supplementaire lors d'echanges suivants, cette personne restant particulierement vulnerable a toute insistance exterieure.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Solliciter un tiers de confiance ou representant legal pour la suite",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Coeur du cas : protection procedurale adaptee.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "tiers sollicite",
+                  "representant present",
+                  "protection procedurale"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Orienter vers une evaluation adaptee au handicap si la procedure se poursuit",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Evaluation specialisee necessaire.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "evaluation adaptee",
+                  "handicap pris en compte",
+                  "procedure ajustee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Consigner precisement les conditions de recueil des declarations",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Traçabilite des conditions de recueil.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "conditions consignees",
+                  "recueil documente",
+                  "test mentionne"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Eviter toute pression supplementaire lors des echanges suivants",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Vigilance continue.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "pression evitee",
+                  "vigilance maintenue",
+                  "echanges apaises"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "vuln-personne-en-fin-de-droits-detresse-au-guichet",
+    "title": "Il vient au commissariat parce qu'il ne sait plus ou aller",
+    "theme_slug": "personnes-vulnerables",
+    "difficulty": "moyen",
+    "is_free": true,
+    "is_published": true,
+    "status": "published",
+    "year": 2026,
+    "month": "Juillet",
+    "total_points": 15,
+    "estimated_minutes": 25,
+    "situation_text": "Il est 16 heures. A l'accueil du commissariat, un homme se presente sans motif penal identifiable. Il explique, avec des mots simples et beaucoup de gene, qu'il ne sait plus ou aller : ses droits au chomage sont epuises depuis des mois, son versement de RSA vient d'etre suspendu pour un motif administratif qu'il ne comprend pas clairement, et il a pense au commissariat parce que c'est un endroit ouvert a cette heure. Il n'exprime aucune intention de passage a l'acte, ni contre lui-meme ni contre autrui, mais sa detresse est palpable : il n'a pas dormi dans un lit depuis plusieurs jours, son elocution est fatiguee, ses vetements portes depuis longtemps. Rien ne releve d'une urgence medicale immediate identifiable a ce stade, ni d'une infraction quelconque. Derriere lui, la file d'attente a l'accueil s'allonge, plusieurs usagers venus pour des demarches administratives commencant a s'impatienter visiblement.",
+    "questions": [
+      {
+        "position": 1,
+        "max_points": 5,
+        "label": "Comment accueillez-vous cette demande qui ne releve pas directement de vos competences ?",
+        "hint": "L'absence de motif penal ne dispense pas d'une reponse professionnelle a cette detresse exprimee.",
+        "perfect": "Je prends le temps de l'ecouter malgre l'absence de tout motif penal, sa demarche au commissariat traduisant une detresse reelle qui merite une reponse serieuse. Je ne le renvoie a aucun moment sans solution, un simple rappel de competence n'apportant rien a sa situation. J'evalue rapidement l'absence de danger immediat pour lui-meme, sans pour autant minimiser la gravite de sa situation materielle. Je l'installe, si les locaux le permettent, dans un espace plus discret que le hall d'accueil expose au public, cette discretion preservant sa dignite dans un moment deja difficile pour lui.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Ne pas le renvoyer sans orientation concrete",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Coeur du cas : une reponse concrete s'impose malgre l'absence de motif penal.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "orientation donnee",
+                  "renvoi evite",
+                  "solution apportee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Prendre le temps de l'ecouter malgre l'absence de motif penal",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Ecoute serieuse de cette detresse.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "ecoute accordee",
+                  "temps pris",
+                  "detresse entendue"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Evaluer l'absence de danger immediat pour lui-meme",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Evaluation du risque sans le minimiser.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "danger evalue",
+                  "risque apprecie",
+                  "situation consideree"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "L'installer dans un espace plus discret que le hall d'accueil",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Preservation de sa dignite.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "espace discret",
+                  "dignite preservee",
+                  "accueil adapte"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "max_points": 5,
+        "label": "Quelle orientation concrete proposez-vous compte tenu de l'heure et de la file d'attente qui s'allonge derriere lui ?",
+        "hint": "Une orientation vers un dispositif ferme a cette heure n'aide personne.",
+        "perfect": "Je contacte ou lui indique un dispositif d'urgence sociale realiste, comme le 115 ou un accueil de jour, en verifiant concretement ses horaires et sa disponibilite reelle a cette heure plutot que de citer une adresse au hasard. Je gere en parallele la file d'attente qui s'allonge, sans pour autant precipiter cet echange qui merite toute mon attention. J'associe un collegue disponible si necessaire, pour ne pas bloquer entierement l'accueil pendant que je poursuis cette orientation avec lui. Je reste attentive a lui donner une reponse concrete et immediatement utilisable, plutot qu'une simple liste de numeros qu'il n'aura peut-etre pas les moyens d'appeler seul.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Contacter ou indiquer un dispositif d'urgence sociale realiste",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Orientation concrete et utilisable.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "dispositif contacte",
+                  "115 indique",
+                  "orientation realiste"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Verifier les horaires et la disponibilite reelle avant d'orienter",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Eviter une orientation vers un dispositif ferme.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "horaires verifies",
+                  "disponibilite confirmee",
+                  "orientation fiable"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Gerer la file d'attente sans precipiter cet echange",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Equilibre entre les deux exigences.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "file geree",
+                  "echange non precipite",
+                  "equilibre trouve"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Associer un collegue si necessaire pour ne pas bloquer l'accueil",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Organisation collective.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "collegue associe",
+                  "accueil maintenu",
+                  "organisation adaptee"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 3,
+        "max_points": 5,
+        "label": "Comment tracez-vous cette intervention pour que cette personne ne se retrouve pas seule si elle revient ?",
+        "hint": "Sans trace, un collegue du service suivant reparlera avec lui comme si c'etait la premiere fois.",
+        "perfect": "Je consigne cette venue par une main courante, cet element restant utile a la memoire du service meme en l'absence de toute infraction. J'indique les coordonnees du dispositif ou de la structure vers laquelle je l'ai oriente, pour qu'un suivi coherent puisse s'organiser s'il revient. Je reste strictement factuelle, sans aucun jugement sur cette situation de detresse qui n'a rien d'exceptionnel dans son origine. J'informe les collegues du prochain service de cette situation si elle semble susceptible de se reproduire, cette information evitant qu'il ne soit traite chaque fois comme un inconnu par le service.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Consigner cette venue par une main courante",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Coeur du cas : memoire du service preservee.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "main courante redigee",
+                  "venue consignee",
+                  "memoire assuree"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Indiquer les coordonnees de la structure vers laquelle il a ete oriente",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Suivi coherent en cas de retour.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "coordonnees indiquees",
+                  "structure notee",
+                  "suivi facilite"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Rester factuelle sans jugement sur cette situation de detresse",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Neutralite du compte rendu.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "compte rendu factuel",
+                  "jugement evite",
+                  "neutralite maintenue"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Informer les collegues du prochain service si pertinent",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Continuite entre les equipes.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "collegues informes",
+                  "continuite assuree",
+                  "service suivant prevenu"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "vuln-victime-vulnerable-refuse-l-aide-proposee",
+    "title": "Elle remercie poliment et referme la porte a chaque visite",
+    "theme_slug": "personnes-vulnerables",
+    "difficulty": "moyen",
+    "is_free": false,
+    "is_published": true,
+    "status": "published",
+    "year": 2026,
+    "month": "Juillet",
+    "total_points": 15,
+    "estimated_minutes": 25,
+    "situation_text": "Il est 14 heures. Vous effectuez une visite de suivi chez une femme agee signalee par un voisin il y a plusieurs semaines : courrier qui s'accumule dans sa boite aux lettres, volets restant fermes en pleine journee, apparence negligee lors de ses rares sorties. Ce n'est pas votre premiere visite chez elle. A chaque passage, elle vous accueille poliment sur le pas de la porte, vous remercie de votre visite, assure que tout va bien, et referme la porte avant que vous ayez pu proposer la moindre aide concrete, qu'il s'agisse d'une aide a domicile, d'un passage infirmier ou d'un contact avec un proche. Aucune violence n'est constatee, aucune urgence vitale immediate n'est visible a travers l'entrebaillement de la porte lors de cette visite. Mais a travers cette meme entrebaillement, vous remarquez que les signes deja releves au premier signalement, courrier accumule, odeur inhabituelle, semblent s'etre accentues depuis votre derniere visite, quinze jours plus tot.",
+    "questions": [
+      {
+        "position": 1,
+        "max_points": 5,
+        "label": "Comment abordez-vous cette nouvelle visite compte tenu des refus deja essuyes precedemment ?",
+        "hint": "Une insistance excessive peut definitivement fermer une porte qui reste, pour l'instant, entrouverte.",
+        "perfect": "Je maintiens une posture bienveillante malgre la repetition de ces refus, cette constance restant essentielle pour ne pas la lasser de mes visites. Je n'insiste pas au point de la braquer, sachant qu'une pression trop forte pourrait la conduire a ne plus ouvrir sa porte du tout lors des prochains passages. J'observe discretement les elements visibles depuis le seuil, sans chercher a forcer un acces qu'elle ne m'accorde pas. Je lui rappelle simplement ma disponibilite, sans pression ni insistance, pour qu'elle sache que cette proposition reste ouverte le jour ou elle se sentira prete a l'accepter.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Maintenir une posture bienveillante malgre les refus repetes",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Constance necessaire.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "posture bienveillante",
+                  "constance maintenue",
+                  "refus accepte"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Ne pas insister au point de la braquer",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Preserver le contact futur.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "insistance evitee",
+                  "contact preserve",
+                  "porte non fermee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Observer discretement les elements visibles depuis le seuil",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Observation sans intrusion.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "observation discrete",
+                  "seuil respecte",
+                  "elements notes"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Rappeler sa disponibilite sans pression",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Proposition maintenue ouverte.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "disponibilite rappelee",
+                  "proposition ouverte",
+                  "pression absente"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "max_points": 5,
+        "label": "Comment evaluez-vous si la situation s'est reellement degradee par rapport a la visite precedente ?",
+        "hint": "Une impression ne suffit pas, il faut comparer des elements concrets d'une visite a l'autre.",
+        "perfect": "Je compare objectivement les elements visibles a cette visite avec ceux notes lors du passage precedent, quinze jours plus tot : volume du courrier, odeur, apparence generale entr'apercue, plutot que de me fier a une simple impression. J'interroge prudemment le voisin a l'origine du signalement initial, sans en faire pour autant un informateur systematique dont l'exces de vigilance fausserait mon appreciation. Je me garde de conclure hativement en l'absence d'acces a l'interieur du logement, les elements visibles depuis le seuil restant necessairement partiels. J'envisage un avis medical si des signes physiques plus inquietants venaient a apparaitre lors d'un prochain contact direct.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Comparer objectivement les elements visibles avec la visite precedente",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Coeur du cas : comparaison objective indispensable.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "elements compares",
+                  "visite precedente",
+                  "comparaison objective"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Interroger prudemment le voisin sans en faire un informateur systematique",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Source utile mais a moderer.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "voisin interroge",
+                  "prudence appliquee",
+                  "information moderee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Ne pas conclure hativement en l'absence d'acces a l'interieur",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Limites de l'observation depuis le seuil.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "conclusion evitee",
+                  "acces limite",
+                  "prudence maintenue"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Envisager un avis medical si des signes physiques inquietants apparaissent",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Anticipation d'une aggravation.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "avis medical envisage",
+                  "signes physiques",
+                  "aggravation anticipee"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 3,
+        "max_points": 5,
+        "label": "Comment maintenez-vous le lien avec elle tout en signalant cette degradation aux services competents ?",
+        "hint": "Signaler ne signifie pas abandonner, ni forcer une aide qu'elle continue de refuser aujourd'hui.",
+        "perfect": "Je transmets un signalement precis et factuel aux services sociaux ou medicaux competents, malgre l'absence de toute demande de sa part, cette degradation constatee justifiant une alerte independamment de son refus actuel. Je respecte neanmoins ce refus present sans l'abandonner pour autant, ces deux exigences n'etant pas contradictoires. Je prevois un prochain passage rapproche, plutot que d'attendre de nouveau plusieurs semaines, compte tenu de cette evolution defavorable observee. Je reste, autant que possible, la meme interlocutrice lors de ces visites successives, cette continuite restant essentielle pour ne pas rompre la confiance deja construite avec elle au fil de ces passages.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Transmettre un signalement precis malgre l'absence de demande de sa part",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Poids fort : signaler la degradation malgre le refus.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "signalement transmis",
+                  "degradation signalee",
+                  "services alertes"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Respecter son refus actuel sans l'abandonner pour autant",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Maintenir le lien malgre le refus.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "refus respecte",
+                  "lien maintenu",
+                  "personne non abandonnee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Prevoir un prochain passage rapproche compte tenu de cette evolution",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Frequence de suivi adaptee.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "passage rapproche",
+                  "suivi intensifie",
+                  "frequence adaptee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Rester la meme interlocutrice pour preserver la confiance construite",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Continuite relationnelle.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "interlocutrice constante",
+                  "confiance preservee",
+                  "continuite assuree"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

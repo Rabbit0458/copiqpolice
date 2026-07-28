@@ -95,4 +95,14 @@ abstract class CasPratiqueRepository {
 
   // ─── PROGRESSION GLOBALE ──────────────────────────────────────────────
   Future<UserGlobalProgress> getMyProgress();
+
+  // ─── SIGNALEMENT D'ERREUR SUR UNE QUESTION ────────────────────────────
+  /// Signale une erreur de contenu (faute de frappe, énoncé ambigu, grille
+  /// incorrecte...) sur une question précise. Alimente le panel admin via
+  /// `cas_pratique_question_reports` avec le `question_id` exact.
+  Future<bool> reportQuestion({
+    required String questionId,
+    required String reportType,
+    String? message,
+  });
 }

@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { ThemeToggle } from "@/components/ui/theme-toggle"
+import { ConsentLink } from "@/components/cookie-banner"
 
 export default function PublicLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -37,7 +38,7 @@ export default function PublicLayout({ children }: { children: React.ReactNode }
               { title: "COP'IQ", links: [["À propos", "/beta"], ["Blog", "/blog"], ["Forum", "/forum"], ["Contact", "/contact"]] },
               { title: "Préparation", links: [["Policier Adjoint", "/pa/scolarite"], ["Gardien de la Paix", "/gpx/scolarite"], ["Tarifs", "/tarifs"], ["Quiz gratuits", "/signup"]] },
               { title: "Compte", links: [["Se connecter", "/login"], ["S'inscrire", "/signup"], ["Mot de passe oublié", "/forgot-password"]] },
-              { title: "Légal", links: [["Confidentialité", "/privacy"], ["CGU", "/cgu"]] },
+              { title: "Légal", links: [["Confidentialité", "/privacy"], ["CGU", "/cgu"], ["Mentions légales", "/mentions-legales"]] },
             ].map((col) => (
               <div key={col.title}>
                 <div className="font-semibold text-sm text-[var(--on-surface)] mb-3">{col.title}</div>
@@ -55,6 +56,9 @@ export default function PublicLayout({ children }: { children: React.ReactNode }
           </div>
           <div className="border-t border-[var(--outline)] pt-6 flex items-center justify-between flex-wrap gap-4">
             <span className="text-sm text-[var(--on-surface-faint)]">© 2026 COP&apos;IQ — Tous droits réservés</span>
+            {/* Le RGPD impose que le consentement soit retirable aussi
+                facilement qu'il a été donné : ce lien rouvre le bandeau. */}
+            <ConsentLink />
             <span className="text-sm text-[var(--on-surface-faint)]">🚔 Synchronisé avec l&apos;application mobile</span>
           </div>
         </div>

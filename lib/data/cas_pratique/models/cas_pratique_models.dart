@@ -67,11 +67,23 @@ class CpTheme {
 //  CAS
 // ════════════════════════════════════════════════════════════════════════════
 
-enum CpDifficulty { facile, moyen, difficile }
+/// Niveaux de difficulté d'un cas pratique.
+///
+/// `expert` a été ajouté après coup pour les mises en situation évolutives
+/// (informations contradictoires, enjeu déontologique majeur, plusieurs
+/// priorités concurrentes). L'ordre de déclaration est significatif : il sert
+/// au tri croissant dans les filtres, donc `expert` reste en dernier.
+///
+/// ⚠️ Rétrocompatibilité : la base peut encore renvoyer uniquement
+/// `facile|moyen|difficile` pour les cas historiques. `_parseDifficulty`
+/// retombe volontairement sur `moyen` pour toute valeur inconnue, ce qui
+/// garantit qu'un cas mal saisi depuis le panel admin ne casse jamais la liste.
+enum CpDifficulty { facile, moyen, difficile, expert }
 
 CpDifficulty _parseDifficulty(String? s) => switch (s) {
       'facile' => CpDifficulty.facile,
       'difficile' => CpDifficulty.difficile,
+      'expert' => CpDifficulty.expert,
       _ => CpDifficulty.moyen,
     };
 

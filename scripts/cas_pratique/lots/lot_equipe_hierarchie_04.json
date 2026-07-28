@@ -1,0 +1,167 @@
+[
+  {
+    "slug": "equipe-repartition-inequitable-des-taches",
+    "title": "Les mêmes héritent systématiquement des missions ingrates",
+    "theme_slug": "equipe-hierarchie",
+    "difficulty": "facile",
+    "is_free": true,
+    "is_published": true,
+    "status": "published",
+    "year": 2026,
+    "month": "Juillet",
+    "total_points": 15,
+    "estimated_minutes": 20,
+    "situation_text": "Il est 10 heures. Au service, vous constatez que les mêmes collègues héritent systématiquement des missions ingrates lors de la répartition des tâches, cette situation créant progressivement un sentiment d'injustice qui affecte le climat de travail de l'ensemble de cette équipe. Cette configuration, où cette équité interne à l'organisation du service se trouve compromise par cette répartition déséquilibrée, nécessite de signaler cette situation par la voie appropriée sans pour autant créer un clan au sein de cette équipe.\n\nCette situation, caractéristique des tensions qui peuvent naître d'une répartition perçue comme inéquitable des tâches au sein d'un service, impose une action mesurée qui permette de faire remonter ce constat sans opposer les collègues les uns aux autres.\n\nCette configuration nécessite de signaler cette situation par la voie appropriée sans créer un clan, cette exigence restant essentielle pour préserver la cohésion de cette équipe tout en corrigeant cette répartition perçue comme inéquitable.",
+    "questions": [
+      {
+        "position": 1,
+        "max_points": 5,
+        "label": "Comment signalez-vous cette répartition inéquitable des tâches par la voie appropriée ?",
+        "hint": "Ce signalement doit emprunter une voie appropriée, cette exigence restant essentielle pour faire remonter ce constat sans donner à cette démarche une tournure conflictuelle inutile.",
+        "perfect": "Je signale cette situation à mon supérieur hiérarchique direct, cette voie appropriée restant nécessaire pour faire remonter ce constat de manière constructive.\n\nJe reste factuelle sur cette répartition observée, cette précision restant utile pour objectiver ce constat sans exagération ni généralisation abusive.\n\nJe reste attentive à ne pas accuser nommément un responsable de cette répartition, cette réserve restant appropriée pour ne pas envenimer cette situation.\n\nJe reste attentive à proposer des critères de répartition plus équitables, cette proposition restant constructive pour améliorer durablement cette organisation.",
+        "points": [
+          {"position": 1, "label": "Signaler cette situation à son supérieur hiérarchique direct", "weight": 2.0, "is_required": true, "kind": "core", "explanation_md": "Cœur du cas : voie appropriée pour ce signalement.", "groups": [{"position": 1, "keywords": ["supérieur informé", "situation signalée", "voie appropriée"]}]},
+          {"position": 2, "label": "Rester factuelle sur cette répartition observée sans exagération", "weight": 1.5, "is_required": true, "kind": "core", "explanation_md": "Constat objectivé sans généralisation abusive.", "groups": [{"position": 1, "keywords": ["répartition décrite", "constat objectivé", "exagération évitée"]}]},
+          {"position": 3, "label": "Ne pas accuser nommément un responsable de cette répartition", "weight": 1.0, "is_required": true, "kind": "core", "explanation_md": "Réserve évitant d'envenimer la situation.", "groups": [{"position": 1, "keywords": ["accusation évitée", "responsable préservé", "réserve appliquée"]}]},
+          {"position": 4, "label": "Proposer des critères de répartition plus équitables", "weight": 0.5, "is_required": false, "kind": "bonus", "explanation_md": "Proposition constructive pour l'organisation future.", "groups": [{"position": 1, "keywords": ["critères proposés", "répartition améliorée", "organisation future"]}]}
+        ]
+      },
+      {
+        "position": 2,
+        "max_points": 5,
+        "label": "Comment évitez-vous de créer un clan au sein de cette équipe en abordant ce sujet ?",
+        "hint": "Cette réserve doit rester constante, cette exigence restant essentielle pour ne pas opposer les collègues favorisés à ceux défavorisés par cette répartition perçue comme inéquitable.",
+        "perfect": "Je reste attentive à ne pas fédérer un groupe de collègues mécontents contre d'autres membres de cette équipe autour de ce sujet.\n\nJe reste factuelle dans mes échanges sur ce sujet avec mes collègues, cette approche restant appropriée pour ne pas alimenter un sentiment de division au sein de cette équipe.\n\nJe reste attentive à porter ce constat en mon nom propre plutôt qu'au nom d'un groupe constitué, cette individualisation restant appropriée pour cette démarche.\n\nJe reste attentive à valoriser la cohésion de cette équipe malgré ce sujet de tension, cette valorisation restant utile pour préserver le climat collectif.",
+        "points": [
+          {"position": 1, "label": "Ne pas fédérer un groupe de collègues mécontents contre d'autres membres", "weight": 2.0, "is_required": true, "kind": "core", "explanation_md": "Cœur du cas : division évitée au sein de l'équipe.", "groups": [{"position": 1, "keywords": ["groupe non fédéré", "division évitée", "équipe préservée"]}]},
+          {"position": 2, "label": "Rester factuelle dans ses échanges pour ne pas alimenter la division", "weight": 1.5, "is_required": true, "kind": "core", "explanation_md": "Approche appropriée préservant le climat collectif.", "groups": [{"position": 1, "keywords": ["échanges factuels", "division non alimentée", "climat préservé"]}]},
+          {"position": 3, "label": "Porter ce constat en son nom propre plutôt qu'au nom d'un groupe", "weight": 1.0, "is_required": true, "kind": "core", "explanation_md": "Individualisation appropriée de la démarche.", "groups": [{"position": 1, "keywords": ["nom propre", "démarche individuelle", "groupe évité"]}]},
+          {"position": 4, "label": "Valoriser la cohésion de cette équipe malgré ce sujet de tension", "weight": 0.5, "is_required": false, "kind": "bonus", "explanation_md": "Cohésion préservée malgré la tension.", "groups": [{"position": 1, "keywords": ["cohésion valorisée", "tension gérée", "climat collectif"]}]}
+        ]
+      },
+      {
+        "position": 3,
+        "max_points": 5,
+        "label": "Comment contribuez-vous personnellement à une répartition plus équitable des tâches au sein de cette équipe ?",
+        "hint": "Cette contribution personnelle doit rester exemplaire, cette démarche restant utile pour incarner par votre propre comportement l'équité que vous appelez de vos vœux au sein de cette équipe.",
+        "perfect": "Je reste attentive à accepter ma juste part des missions ingrates, cette exemplarité restant utile pour incarner l'équité que j'appelle de mes vœux.\n\nJe reste factuelle sur ma propre contribution à cette répartition des tâches, cette transparence restant appropriée pour ne pas être moi-même à l'origine d'un déséquilibre.\n\nJe reste attentive à proposer mon aide aux collègues surchargés par cette répartition inéquitable, cette solidarité restant utile en attendant une correction plus durable.\n\nJe reste disponible pour participer à une réflexion collective sur les critères de répartition future de ces missions.",
+        "points": [
+          {"position": 1, "label": "Accepter sa juste part des missions ingrates", "weight": 2.0, "is_required": true, "kind": "core", "explanation_md": "Cœur du cas : exemplarité incarnant l'équité recherchée.", "groups": [{"position": 1, "keywords": ["part acceptée", "équité incarnée", "exemplarité appliquée"]}]},
+          {"position": 2, "label": "Rester factuelle sur sa propre contribution à cette répartition", "weight": 1.5, "is_required": true, "kind": "core", "explanation_md": "Transparence évitant d'être à l'origine du déséquilibre.", "groups": [{"position": 1, "keywords": ["contribution précisée", "déséquilibre évité", "transparence assurée"]}]},
+          {"position": 3, "label": "Proposer son aide aux collègues surchargés par cette répartition", "weight": 1.0, "is_required": true, "kind": "core", "explanation_md": "Solidarité en attendant une correction durable.", "groups": [{"position": 1, "keywords": ["aide proposée", "collègues soutenus", "solidarité appliquée"]}]},
+          {"position": 4, "label": "Participer à une réflexion collective sur les critères de répartition future", "weight": 0.5, "is_required": false, "kind": "bonus", "explanation_md": "Réflexion collective pour l'avenir.", "groups": [{"position": 1, "keywords": ["réflexion collective", "critères futurs", "participation assurée"]}]}
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "equipe-desaccord-sur-qualification-des-faits",
+    "title": "Votre collègue et vous ne retenez pas la même analyse",
+    "theme_slug": "equipe-hierarchie",
+    "difficulty": "moyen",
+    "is_free": false,
+    "is_published": true,
+    "status": "published",
+    "year": 2026,
+    "month": "Juillet",
+    "total_points": 15,
+    "estimated_minutes": 25,
+    "situation_text": "Il est 17 heures. Au service, votre collègue et vous ne retenez pas la même analyse concernant la qualification des faits d'une situation que vous avez traitée conjointement, ce débat technique entre pairs restant légitime dans son principe sans qu'aucune faute ne soit imputable à l'un ou à l'autre de vous. Cette configuration, où cette divergence professionnelle de fond nécessite d'être tranchée correctement plutôt que de laisser chacun imposer sa propre analyse, nécessite d'en référer à l'autorité compétente plutôt que d'imposer votre avis personnel sur cette qualification.\n\nCette situation, caractéristique des débats techniques qui peuvent survenir entre pairs sur l'analyse juridique d'une situation traitée conjointement, impose un arbitrage approprié qui permette de trancher cette divergence sans qu'elle ne dégénère en conflit personnel entre vous.\n\nCette configuration nécessite d'en référer à l'autorité compétente plutôt que d'imposer son avis, cette exigence restant essentielle pour trancher correctement cette divergence tout en préservant votre relation professionnelle avec ce collègue.",
+    "questions": [
+      {
+        "position": 1,
+        "max_points": 5,
+        "label": "Comment en référez-vous à l'autorité compétente plutôt que d'imposer votre propre avis sur cette qualification ?",
+        "hint": "Cette démarche doit rester rapide, cette exigence restant essentielle pour trancher correctement cette divergence professionnelle sans qu'aucun de vous n'impose unilatéralement son analyse.",
+        "perfect": "Je propose à mon collègue de solliciter ensemble l'avis de l'autorité compétente sur cette qualification des faits qui nous divise.\n\nJe reste factuelle en exposant mon analyse et ses fondements, cette précision restant utile pour permettre un arbitrage éclairé de cette divergence.\n\nJe reste attentive à présenter également l'analyse de mon collègue de manière loyale, cette objectivité restant nécessaire pour un arbitrage équitable.\n\nJe reste attentive à accepter la décision qui sera rendue par cette autorité compétente, même si elle ne correspond pas à ma propre analyse initiale.",
+        "points": [
+          {"position": 1, "label": "Proposer de solliciter ensemble l'avis de l'autorité compétente", "weight": 2.0, "is_required": true, "kind": "core", "explanation_md": "Cœur du cas : arbitrage sollicité conjointement.", "groups": [{"position": 1, "keywords": ["autorité sollicitée", "avis demandé", "arbitrage conjoint"]}]},
+          {"position": 2, "label": "Exposer factuellement son analyse et ses fondements", "weight": 1.5, "is_required": true, "kind": "core", "explanation_md": "Précision permettant un arbitrage éclairé.", "groups": [{"position": 1, "keywords": ["analyse exposée", "fondements précisés", "arbitrage éclairé"]}]},
+          {"position": 3, "label": "Présenter également l'analyse du collègue de manière loyale", "weight": 1.0, "is_required": true, "kind": "core", "explanation_md": "Objectivité nécessaire pour un arbitrage équitable.", "groups": [{"position": 1, "keywords": ["analyse présentée", "loyauté appliquée", "arbitrage équitable"]}]},
+          {"position": 4, "label": "Accepter la décision rendue même si elle diffère de sa propre analyse", "weight": 0.5, "is_required": false, "kind": "bonus", "explanation_md": "Acceptation de la décision de l'autorité compétente.", "groups": [{"position": 1, "keywords": ["décision acceptée", "analyse différente", "autorité respectée"]}]}
+        ]
+      },
+      {
+        "position": 2,
+        "max_points": 5,
+        "label": "Comment préservez-vous votre relation professionnelle avec ce collègue malgré cette divergence de fond ?",
+        "hint": "Cette préservation doit rester constante, cette exigence restant essentielle pour éviter que ce débat technique légitime ne dégénère en conflit personnel entre vous et ce collègue.",
+        "perfect": "Je reste attentive à distinguer ce débat technique de notre relation personnelle avec ce collègue, cette distinction restant essentielle pour préserver cette relation.\n\nJe reste factuelle et respectueuse dans l'expression de mon désaccord, cette posture restant appropriée pour ne pas transformer ce débat en conflit personnel.\n\nJe reste attentive à valoriser la légitimité de l'analyse de mon collègue même si je ne la partage pas, cette reconnaissance restant utile pour cette relation.\n\nJe reste attentive à poursuivre notre collaboration habituelle malgré cette divergence ponctuelle sur cette qualification des faits.",
+        "points": [
+          {"position": 1, "label": "Distinguer ce débat technique de la relation personnelle", "weight": 2.0, "is_required": true, "kind": "core", "explanation_md": "Cœur du cas : distinction préservant la relation.", "groups": [{"position": 1, "keywords": ["débat distingué", "relation préservée", "distinction appliquée"]}]},
+          {"position": 2, "label": "Rester factuelle et respectueuse dans l'expression de son désaccord", "weight": 1.5, "is_required": true, "kind": "core", "explanation_md": "Posture évitant le conflit personnel.", "groups": [{"position": 1, "keywords": ["désaccord respectueux", "conflit évité", "posture appropriée"]}]},
+          {"position": 3, "label": "Valoriser la légitimité de l'analyse du collègue même sans la partager", "weight": 1.0, "is_required": true, "kind": "core", "explanation_md": "Reconnaissance utile pour la relation.", "groups": [{"position": 1, "keywords": ["légitimité reconnue", "analyse valorisée", "relation entretenue"]}]},
+          {"position": 4, "label": "Poursuivre la collaboration habituelle malgré cette divergence ponctuelle", "weight": 0.5, "is_required": false, "kind": "bonus", "explanation_md": "Collaboration maintenue malgré le désaccord.", "groups": [{"position": 1, "keywords": ["collaboration poursuivie", "divergence ponctuelle", "relation maintenue"]}]}
+        ]
+      },
+      {
+        "position": 3,
+        "max_points": 5,
+        "label": "Comment tirez-vous les enseignements de ce débat technique pour vos analyses futures ?",
+        "hint": "Ces enseignements doivent rester constructifs, cette démarche restant utile pour améliorer la qualité de vos analyses futures grâce à cet échange technique vécu avec ce collègue.",
+        "perfect": "Je reste attentive à retenir les arguments de mon collègue qui pourraient enrichir mes analyses futures sur des situations similaires.\n\nJe reste factuelle sur la décision rendue par l'autorité compétente, cette compréhension restant utile pour affiner ma propre grille d'analyse à l'avenir.\n\nJe reste attentive à échanger régulièrement avec mes collègues sur ce type de qualification, cet échange restant utile pour harmoniser nos pratiques respectives.\n\nJe reste disponible pour proposer, si pertinent, une formation ou un échange collectif sur ce point technique qui a suscité cette divergence.",
+        "points": [
+          {"position": 1, "label": "Retenir les arguments du collègue enrichissant les analyses futures", "weight": 2.0, "is_required": true, "kind": "core", "explanation_md": "Cœur du cas : enrichissement des analyses futures.", "groups": [{"position": 1, "keywords": ["arguments retenus", "analyses enrichies", "situations similaires"]}]},
+          {"position": 2, "label": "Comprendre la décision rendue pour affiner sa grille d'analyse", "weight": 1.5, "is_required": true, "kind": "core", "explanation_md": "Grille d'analyse affinée à l'avenir.", "groups": [{"position": 1, "keywords": ["décision comprise", "grille affinée", "analyse future"]}]},
+          {"position": 3, "label": "Échanger régulièrement avec les collègues sur ce type de qualification", "weight": 1.0, "is_required": true, "kind": "core", "explanation_md": "Harmonisation des pratiques respectives.", "groups": [{"position": 1, "keywords": ["échanges réguliers", "pratiques harmonisées", "qualification partagée"]}]},
+          {"position": 4, "label": "Proposer une formation ou un échange collectif sur ce point technique", "weight": 0.5, "is_required": false, "kind": "bonus", "explanation_md": "Formation collective sur ce point technique.", "groups": [{"position": 1, "keywords": ["formation proposée", "échange collectif", "point technique"]}]}
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "equipe-briefing-incomplet-avant-mission",
+    "title": "Vous partez sans savoir qui coordonne ni sur quelle fréquence",
+    "theme_slug": "equipe-hierarchie",
+    "difficulty": "moyen",
+    "is_free": false,
+    "is_published": true,
+    "status": "published",
+    "year": 2026,
+    "month": "Juillet",
+    "total_points": 15,
+    "estimated_minutes": 25,
+    "situation_text": "Il est 13 heures. Avant un dispositif conséquent, vous constatez que vous partez sans savoir précisément qui coordonne cette opération ni sur quelle fréquence radio vous devez communiquer, ce défaut de préparation en amont créant un cadre flou pour cette mission qui s'annonce pourtant importante. Cette configuration, où ce départ en mission avec un cadre flou pourrait compromettre la coordination effective de ce dispositif, nécessite de poser les questions manquantes avant ce départ plutôt que de vous engager dans l'incertitude de cette organisation défaillante.\n\nCette situation, caractéristique des défauts de préparation qui peuvent affecter le briefing préalable à un dispositif conséquent, impose une clarification immédiate de ces éléments essentiels avant tout engagement sur le terrain.\n\nCette configuration nécessite de poser les questions manquantes avant ce départ, cette exigence restant essentielle pour ne pas vous engager dans une mission dont le cadre organisationnel resterait insuffisamment précisé.",
+    "questions": [
+      {
+        "position": 1,
+        "max_points": 5,
+        "label": "Comment posez-vous les questions manquantes avant ce départ en mission ?",
+        "hint": "Ces questions doivent être posées avant tout engagement sur le terrain, cette rigueur restant essentielle pour ne pas partir dans l'incertitude de cette organisation insuffisamment précisée.",
+        "perfect": "Je pose immédiatement les questions relatives à la coordination et à la fréquence radio de cette mission avant tout départ sur le terrain.\n\nJe reste factuelle dans la formulation de ces questions, cette clarté restant utile pour obtenir des réponses précises et exploitables rapidement.\n\nJe reste attentive à vérifier que l'ensemble de mon équipe dispose des mêmes informations avant ce départ, cette vérification restant nécessaire pour cette coordination.\n\nJe reste attentive à ne pas minimiser l'importance de ces éléments par crainte de retarder ce départ, cette rigueur restant essentielle malgré l'urgence apparente.",
+        "points": [
+          {"position": 1, "label": "Poser immédiatement les questions relatives à la coordination et à la fréquence radio", "weight": 2.0, "is_required": true, "kind": "core", "explanation_md": "Cœur du cas : clarification avant tout départ.", "groups": [{"position": 1, "keywords": ["questions posées", "coordination clarifiée", "fréquence précisée"]}]},
+          {"position": 2, "label": "Rester factuelle dans la formulation de ces questions", "weight": 1.5, "is_required": true, "kind": "core", "explanation_md": "Clarté obtenant des réponses exploitables rapidement.", "groups": [{"position": 1, "keywords": ["questions claires", "réponses précises", "formulation factuelle"]}]},
+          {"position": 3, "label": "Vérifier que toute l'équipe dispose des mêmes informations avant ce départ", "weight": 1.0, "is_required": true, "kind": "core", "explanation_md": "Vérification nécessaire pour la coordination.", "groups": [{"position": 1, "keywords": ["équipe informée", "informations partagées", "coordination assurée"]}]},
+          {"position": 4, "label": "Ne pas minimiser l'importance de ces éléments malgré l'urgence apparente", "weight": 0.5, "is_required": false, "kind": "bonus", "explanation_md": "Rigueur maintenue malgré l'urgence.", "groups": [{"position": 1, "keywords": ["importance maintenue", "urgence relativisée", "rigueur appliquée"]}]}
+        ]
+      },
+      {
+        "position": 2,
+        "max_points": 5,
+        "label": "Comment gérez-vous cette situation si ces éléments ne peuvent être clarifiés avant ce départ contraint ?",
+        "hint": "Cette gestion doit rester prudente, cette adaptation restant nécessaire pour limiter les risques de cette mission si ce cadre organisationnel demeure insuffisamment précisé malgré vos demandes de clarification.",
+        "perfect": "Je reste attentive à identifier les moyens de communication alternatifs disponibles si cette fréquence radio ne peut être précisée avant ce départ.\n\nJe reste factuelle sur les risques que ce défaut de préparation fait peser sur cette mission, cette information restant utile pour ma hiérarchie.\n\nJe reste attentive à convenir avec mon équipe d'un mode de coordination minimal en l'absence d'instructions plus précises.\n\nJe reste attentive à documenter ce défaut de préparation constaté, cette traçabilité restant utile pour la suite de cette procédure.",
+        "points": [
+          {"position": 1, "label": "Identifier des moyens de communication alternatifs disponibles", "weight": 2.0, "is_required": true, "kind": "core", "explanation_md": "Cœur du cas : solution alternative face au flou persistant.", "groups": [{"position": 1, "keywords": ["moyens alternatifs", "communication assurée", "solution trouvée"]}]},
+          {"position": 2, "label": "Rester factuelle sur les risques de ce défaut de préparation", "weight": 1.5, "is_required": true, "kind": "core", "explanation_md": "Information utile pour la hiérarchie.", "groups": [{"position": 1, "keywords": ["risques précisés", "défaut signalé", "hiérarchie informée"]}]},
+          {"position": 3, "label": "Convenir avec l'équipe d'un mode de coordination minimal", "weight": 1.0, "is_required": true, "kind": "core", "explanation_md": "Coordination minimale en l'absence d'instructions précises.", "groups": [{"position": 1, "keywords": ["coordination minimale", "équipe convenue", "instructions absentes"]}]},
+          {"position": 4, "label": "Documenter ce défaut de préparation constaté", "weight": 0.5, "is_required": false, "kind": "bonus", "explanation_md": "Traçabilité pour la suite de la procédure.", "groups": [{"position": 1, "keywords": ["défaut documenté", "préparation constatée", "traçabilité assurée"]}]}
+        ]
+      },
+      {
+        "position": 3,
+        "max_points": 5,
+        "label": "Comment contribuez-vous à améliorer la qualité des briefings futurs suite à ce défaut de préparation constaté ?",
+        "hint": "Cette contribution doit rester constructive, cette démarche restant utile pour prévenir la reproduction future de ce type de défaut de préparation avant des dispositifs similaires.",
+        "perfect": "Je reste attentive à évoquer avec ma hiérarchie, une fois cette mission terminée, l'intérêt d'une checklist systématique avant tout dispositif conséquent.\n\nJe reste factuelle sur ce défaut de préparation vécu, cette description restant utile pour identifier les améliorations possibles de ces briefings futurs.\n\nJe reste attentive à proposer les éléments qui me semblent indispensables à tout briefing préalable à ce type de dispositif.\n\nJe reste disponible pour partager cette expérience avec mes collègues, cette disponibilité restant utile pour sensibiliser l'ensemble de l'équipe à cette exigence de préparation.",
+        "points": [
+          {"position": 1, "label": "Évoquer l'intérêt d'une checklist systématique avant tout dispositif conséquent", "weight": 2.0, "is_required": true, "kind": "core", "explanation_md": "Cœur du cas : amélioration des briefings futurs.", "groups": [{"position": 1, "keywords": ["checklist évoquée", "dispositif conséquent", "briefing amélioré"]}]},
+          {"position": 2, "label": "Décrire factuellement ce défaut de préparation vécu", "weight": 1.5, "is_required": true, "kind": "core", "explanation_md": "Identification des améliorations possibles.", "groups": [{"position": 1, "keywords": ["défaut décrit", "améliorations identifiées", "préparation analysée"]}]},
+          {"position": 3, "label": "Proposer les éléments indispensables à tout briefing préalable", "weight": 1.0, "is_required": true, "kind": "core", "explanation_md": "Éléments essentiels proposés pour l'avenir.", "groups": [{"position": 1, "keywords": ["éléments proposés", "briefing préalable", "dispositif futur"]}]},
+          {"position": 4, "label": "Partager cette expérience avec les collègues pour sensibiliser l'équipe", "weight": 0.5, "is_required": false, "kind": "bonus", "explanation_md": "Sensibilisation de l'équipe à cette exigence.", "groups": [{"position": 1, "keywords": ["expérience partagée", "équipe sensibilisée", "exigence rappelée"]}]}
+        ]
+      }
+    ]
+  }
+]

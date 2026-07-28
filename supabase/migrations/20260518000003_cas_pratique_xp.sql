@@ -85,7 +85,7 @@ DECLARE
     v_corr        record;
     v_attempt     record;
     v_user_id     uuid;
-    v_case_id     uuid;
+    v_case_id     uuid; -- attempts.case_id est stocké en TEXT ; cast explicite requis
     v_n_questions int;
     v_streak      int := 0;
     v_base        int := 0;
@@ -109,7 +109,7 @@ BEGIN
      LIMIT 1;
     IF v_attempt IS NULL THEN RETURN 0; END IF;
     v_user_id := v_attempt.user_id;
-    v_case_id := v_attempt.case_id;
+    v_case_id := v_attempt.case_id::uuid;
 
     -- 1) Base XP = round(percent/100 × 10 × nb_questions)
     SELECT count(*) INTO v_n_questions
@@ -130,7 +130,7 @@ BEGIN
           FROM public.cas_pratique_corrections cc
           JOIN public.cas_pratique_attempts aa ON aa.id = cc.attempt_id
          WHERE aa.user_id = v_user_id
-           AND aa.case_id = v_case_id
+           AND aa.case_id = v_case_id::text
            AND cc.id <> p_correction_id
     ) INTO v_is_first;
     IF v_is_first THEN v_first_try := 25; END IF;
@@ -180,7 +180,11 @@ SECURITY DEFINER
 SET search_path = public
 AS $func$
 BEGIN
-    PERFORM public.fn_cp_award_xp_for_correction(NEW.id);
+    BEGIN
+        PERFORM public.fn_cp_award_xp_for_correction(NEW.id);
+    EXCEPTION WHEN OTHERS THEN
+        RAISE WARNING 'fn_cp_trg_award_xp failed for correction %: %', NEW.id, SQLERRM;
+    END;
     RETURN NEW;
 END;
 $func$;

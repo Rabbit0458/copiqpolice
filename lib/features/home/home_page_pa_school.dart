@@ -403,7 +403,7 @@ class _HomePageGpxSchoolState extends State<HomePagePaSchool>
         return;
       }
       _saveLastOpened(route: route, label: label);
-      final redirectRoute = redirectConfig[route];
+      final redirectRoute = redirectConfigPaSchool[route];
       final target = redirectRoute ?? route;
       await Navigator.of(context).pushNamed(target);
     }
@@ -1145,7 +1145,7 @@ class _HeroCardState extends State<_HeroCard> with TickerProviderStateMixin {
     }
 
     // Fallback direct
-    final redirectRoute = redirectConfig[widget.item.route];
+    final redirectRoute = redirectConfigPaSchool[widget.item.route];
     final targetRoute = redirectRoute ?? widget.item.route;
     final subs = widget.item.subcategories;
 
@@ -4371,9 +4371,9 @@ const Map<PaSchoolProgram, List<CategoryConfig>> paSchoolCategoriesConfig = {
   ],
 };
 
-const Map<String, String> redirectConfig = {
+const Map<String, String> redirectConfigPaSchool = {
   // Généralités
-  '/generalite': '/gpx_scolarité_pages/generalite_pages',
+  '/generalite': '/gpx_scolarite_pages/generalite_pages',
   '/classification_infractions': '/gpx/generalites/classification_infractions',
   '/infraction': '/gpx/generalites/infraction',
   '/tentative_punissable': '/gpx/generalites/tentative_punissable',
@@ -4384,184 +4384,184 @@ const Map<String, String> redirectConfig = {
   '/retention_locaux_police': '/gpx/generalites/retention_locaux_police',
 
   // Cadres juridiques
-  '/cadres_juridiques': '/gpx_scolarité_pages/cadres_juridiques_pages',
+  '/cadres_juridiques': '/gpx_scolarite_pages/cadres_juridiques_pages',
   '/cadres_enquete':
-      '/gpx_scolarité_pages/cadres_juridiques_pages/cadres_enquete',
+      '/gpx_scolarite_pages/cadres_juridiques_pages/cadres_enquete',
   '/enquete_flagrant_delit':
-      '/gpx_scolarité_pages/cadres_juridiques_pages/enquete_flagrant_delit',
+      '/gpx_scolarite_pages/cadres_juridiques_pages/enquete_flagrant_delit',
   '/enquete_preliminaire':
-      '/gpx_scolarité_pages/cadres_juridiques_pages/enquete_preliminaire',
+      '/gpx_scolarite_pages/cadres_juridiques_pages/enquete_preliminaire',
   '/autres_cadres_enquete':
-      '/gpx_scolarité_pages/cadres_juridiques_pages/autres_cadres_enquete',
+      '/gpx_scolarite_pages/cadres_juridiques_pages/autres_cadres_enquete',
   '/commission_rogatoire':
-      '/gpx_scolarité_pages/cadres_juridiques_pages/autres_cadres_enquete', // à définir (Commission Rogatoire)
+      '/gpx_scolarite_pages/cadres_juridiques_pages/autres_cadres_enquete', // à définir (Commission Rogatoire)
   // Procédure pénale (compat /pp/*)
   '/pp/action_publique_autorites_pj':
-      '/gpx_scolarité_pages/procédure_pénale_pages/pp_action_publique_autorites_pj',
+      '/gpx_scolarite_pages/procédure_pénale_pages/pp_action_publique_autorites_pj',
 
   '/pp/nullite_actes_procedure':
-      '/gpx_scolarité_pages/procédure_pénale_pages/pp_nullite_actes_procedure',
+      '/gpx_scolarite_pages/procédure_pénale_pages/pp_nullite_actes_procedure',
 
   '/pp/juridictions_jugement_execution':
-      '/gpx_scolarité_pages/procédure_pénale_pages/pp_juridictions_jugement_execution',
+      '/gpx_scolarite_pages/procédure_pénale_pages/pp_juridictions_jugement_execution',
 
   '/pp/instruction_mandats_controle_detention':
-      '/gpx_scolarité_pages/procédure_pénale_pages/pp_instruction_mandats_controle_detention',
+      '/gpx_scolarite_pages/procédure_pénale_pages/pp_instruction_mandats_controle_detention',
   '/pp/quiz/instruction_preparatoire':
       '/gpx/procedure_penale/quiz/instruction_preparatoire',
 
   // Droit pénal général
-  '/dpg': '/gpx_scolarité_pages/droit_pénale_général_pages',
+  '/dpg': '/gpx_scolarite_pages/droit_pénale_général_pages',
   '/dpg/loi_penale':
-      '/gpx_scolarité_pages/droit_pénale_général_pages/loi_penale',
+      '/gpx_scolarite_pages/droit_pénale_général_pages/loi_penale',
   '/dpg/responsabilite_penale':
-      '/gpx_scolarité_pages/droit_pénale_général_pages/responsabilite_penale',
+      '/gpx_scolarite_pages/droit_pénale_général_pages/responsabilite_penale',
 
   // Sanction
-  '/sanction': '/gpx_scolarité_pages/sanction_pages',
+  '/sanction': '/gpx_scolarite_pages/sanction_pages',
   '/sanction/classification_peines':
-      '/gpx_scolarité_pages/sanction_pages/classification_peines',
+      '/gpx_scolarite_pages/sanction_pages/classification_peines',
   '/sanction/causes_aggravation':
-      '/gpx_scolarité_pages/sanction_pages/causes_aggravation',
+      '/gpx_scolarite_pages/sanction_pages/causes_aggravation',
   '/sanction/pluralite_infractions':
-      '/gpx_scolarité_pages/sanction_pages/pluralite_infractions',
+      '/gpx_scolarite_pages/sanction_pages/pluralite_infractions',
 
   // Contre la personne
-  '/crimes_personne': '/gpx_scolarité_pages/crime_delit_contre_personne_pages',
+  '/crimes_personne': '/gpx_scolarite_pages/crime_delit_contre_personne_pages',
   '/crimes_personne/mise_en_danger':
-      '/gpx_scolarité_pages/crime_delit_contre_personne_pages/mise_en_danger',
+      '/gpx_scolarite_pages/crime_delit_contre_personne_pages/mise_en_danger',
   '/crimes_personne/viol_inceste_agressions':
-      '/gpx_scolarité_pages/crime_delit_contre_personne_pages/viol_inceste_agressions',
+      '/gpx_scolarite_pages/crime_delit_contre_personne_pages/viol_inceste_agressions',
   '/crimes_personne/enlevement_sequestration':
-      '/gpx_scolarité_pages/crime_delit_contre_personne_pages/enlevement_sequestration',
+      '/gpx_scolarite_pages/crime_delit_contre_personne_pages/enlevement_sequestration',
   '/crimes_personne/enregistrement_diffusion_images':
-      '/gpx_scolarité_pages/crime_delit_contre_personne_pages/enregistrement_diffusion_images',
+      '/gpx_scolarite_pages/crime_delit_contre_personne_pages/enregistrement_diffusion_images',
   '/crimes_personne/dignite_personne':
-      '/gpx_scolarité_pages/crime_delit_contre_personne_pages/dignite_personne',
+      '/gpx_scolarite_pages/crime_delit_contre_personne_pages/dignite_personne',
   '/crimes_personne/personnalite':
-      '/gpx_scolarité_pages/crime_delit_contre_personne_pages/personnalite',
+      '/gpx_scolarite_pages/crime_delit_contre_personne_pages/personnalite',
   '/crimes_personne/atteintes_involontaires':
-      '/gpx_scolarité_pages/crime_delit_contre_personne_pages/atteintes_involontaires',
+      '/gpx_scolarite_pages/crime_delit_contre_personne_pages/atteintes_involontaires',
   '/crimes_personne/atteintes_volontaires_vie':
-      '/gpx_scolarité_pages/crime_delit_contre_personne_pages/atteintes_volontaires_vie',
+      '/gpx_scolarite_pages/crime_delit_contre_personne_pages/atteintes_volontaires_vie',
   '/crimes_personne/atteintes_volontaires_integrite':
-      '/gpx_scolarité_pages/crime_delit_contre_personne_pages/atteintes_volontaires_integrite',
+      '/gpx_scolarite_pages/crime_delit_contre_personne_pages/atteintes_volontaires_integrite',
 
   // Mineurs & famille
-  '/mineurs_famille': '/gpx_scolarité_pages/mineurs_famille_pages',
+  '/mineurs_famille': '/gpx_scolarite_pages/mineurs_famille_pages',
   '/mineurs_famille/mise_en_peril':
-      '/gpx_scolarité_pages/mineurs_famille_pages/mise_en_peril',
+      '/gpx_scolarite_pages/mineurs_famille_pages/mise_en_peril',
   '/mineurs_famille/violation_ordonnances_jaf':
-      '/gpx_scolarité_pages/mineurs_famille_pages/violation_ordonnances_jaf',
+      '/gpx_scolarite_pages/mineurs_famille_pages/violation_ordonnances_jaf',
   '/mineurs_famille/autorite_parentale':
-      '/gpx_scolarité_pages/mineurs_famille_pages/autorite_parentale',
+      '/gpx_scolarite_pages/mineurs_famille_pages/autorite_parentale',
   '/mineurs_famille/abandon_famille':
-      '/gpx_scolarité_pages/mineurs_famille_pages/abandon_famille',
+      '/gpx_scolarite_pages/mineurs_famille_pages/abandon_famille',
 
   // Contre la nation
-  '/crimes_nation': '/gpx_scolarité_pages/crime_delit_nation_pages',
+  '/crimes_nation': '/gpx_scolarite_pages/crime_delit_nation_pages',
   '/crimes_nation/association_malfaiteurs':
-      '/gpx_scolarité_pages/crime_delit_nation_pages/association_malfaiteurs',
+      '/gpx_scolarite_pages/crime_delit_nation_pages/association_malfaiteurs',
   '/crimes_nation/abus_autorite':
-      '/gpx_scolarité_pages/crime_delit_nation_pages/abus_autorite',
+      '/gpx_scolarite_pages/crime_delit_nation_pages/abus_autorite',
   '/crimes_nation/atteintes_action_justice':
-      '/gpx_scolarité_pages/crime_delit_nation_pages/atteintes_action_justice',
+      '/gpx_scolarite_pages/crime_delit_nation_pages/atteintes_action_justice',
   '/crimes_nation/atteintes_administration':
-      '/gpx_scolarité_pages/crime_delit_nation_pages/atteintes_administration',
+      '/gpx_scolarite_pages/crime_delit_nation_pages/atteintes_administration',
   '/crimes_nation/faux_usage_faux':
-      '/gpx_scolarité_pages/crime_delit_nation_pages/faux_usage_faux',
+      '/gpx_scolarite_pages/crime_delit_nation_pages/faux_usage_faux',
   '/crimes_nation/probite':
-      '/gpx_scolarité_pages/crime_delit_nation_pages/probite',
+      '/gpx_scolarite_pages/crime_delit_nation_pages/probite',
 
   // Contre les biens
-  '/crimes_biens': '/gpx_scolarité_pages/crime_delit_bien_pages',
+  '/crimes_biens': '/gpx_scolarite_pages/crime_delit_bien_pages',
   '/crimes_biens/recel_non_justification':
-      '/gpx_scolarité_pages/crime_delit_bien_pages/recel_non_justification',
-  '/crimes_biens/vol': '/gpx_scolarité_pages/crime_delit_bien_pages/vol',
-  '/crimes_biens/stad': '/gpx_scolarité_pages/crime_delit_bien_pages/stad',
+      '/gpx_scolarite_pages/crime_delit_bien_pages/recel_non_justification',
+  '/crimes_biens/vol': '/gpx_scolarite_pages/crime_delit_bien_pages/vol',
+  '/crimes_biens/stad': '/gpx_scolarite_pages/crime_delit_bien_pages/stad',
   '/crimes_biens/contrefacons_falsifications':
-      '/gpx_scolarité_pages/crime_delit_bien_pages/contrefacons_falsifications',
+      '/gpx_scolarite_pages/crime_delit_bien_pages/contrefacons_falsifications',
   '/crimes_biens/destructions_degradations':
-      '/gpx_scolarité_pages/crime_delit_bien_pages/destructions_degradations',
+      '/gpx_scolarite_pages/crime_delit_bien_pages/destructions_degradations',
   '/crimes_biens/voisines_du_vol':
-      '/gpx_scolarité_pages/crime_delit_bien_pages/voisines_du_vol',
+      '/gpx_scolarite_pages/crime_delit_bien_pages/voisines_du_vol',
 
   // Circulation
-  '/circulation': '/gpx_scolarité_pages/infraction_circulation_routière_pages',
+  '/circulation': '/gpx_scolarite_pages/infraction_circulation_routière_pages',
   '/circulation/conduite_stupefiants':
-      '/gpx_scolarité_pages/infraction_circulation_routière_pages/conduite_stupefiants',
+      '/gpx_scolarite_pages/infraction_circulation_routière_pages/conduite_stupefiants',
   '/circulation/ivresse':
-      '/gpx_scolarité_pages/infraction_circulation_routière_pages/ivresse',
+      '/gpx_scolarite_pages/infraction_circulation_routière_pages/ivresse',
   '/circulation/etat_alcoolique':
-      '/gpx_scolarité_pages/infraction_circulation_routière_pages/etat_alcoolique',
+      '/gpx_scolarite_pages/infraction_circulation_routière_pages/etat_alcoolique',
   '/circulation/defaut_assurance':
-      '/gpx_scolarité_pages/infraction_circulation_routière_pages/defaut_assurance',
+      '/gpx_scolarite_pages/infraction_circulation_routière_pages/defaut_assurance',
   '/circulation/defaut_permis':
-      '/gpx_scolarité_pages/infraction_circulation_routière_pages/defaut_permis',
+      '/gpx_scolarite_pages/infraction_circulation_routière_pages/defaut_permis',
   '/circulation/delit_fuite':
-      '/gpx_scolarité_pages/infraction_circulation_routière_pages/delit_fuite',
+      '/gpx_scolarite_pages/infraction_circulation_routière_pages/delit_fuite',
   '/circulation/grand_exces_vitesse':
-      '/gpx_scolarité_pages/infraction_circulation_routière_pages/grand_exces_vitesse',
+      '/gpx_scolarite_pages/infraction_circulation_routière_pages/grand_exces_vitesse',
   '/circulation/refus_verifications':
-      '/gpx_scolarité_pages/infraction_circulation_routière_pages/refus_verifications',
+      '/gpx_scolarite_pages/infraction_circulation_routière_pages/refus_verifications',
   '/circulation/refus_obtemperer':
-      '/gpx_scolarité_pages/infraction_circulation_routière_pages/refus_obtemperer',
+      '/gpx_scolarite_pages/infraction_circulation_routière_pages/refus_obtemperer',
   '/circulation/rodeo_motorise':
-      '/gpx_scolarité_pages/infraction_circulation_routière_pages/rodeo_motorise',
+      '/gpx_scolarite_pages/infraction_circulation_routière_pages/rodeo_motorise',
   '/circulation/plaques_inscriptions':
-      '/gpx_scolarité_pages/infraction_circulation_routière_pages/plaques_inscriptions',
+      '/gpx_scolarite_pages/infraction_circulation_routière_pages/plaques_inscriptions',
   '/circulation/incitation_organisation_promotion':
-      '/gpx_scolarité_pages/infraction_circulation_routière_pages/incitation_organisation_promotion',
+      '/gpx_scolarite_pages/infraction_circulation_routière_pages/incitation_organisation_promotion',
 
   // Armes
-  '/armes': '/gpx_scolarité_pages/armes_munitions_pages',
+  '/armes': '/gpx_scolarite_pages/armes_munitions_pages',
   '/armes/classification':
-      '/gpx_scolarité_pages/armes_munitions_pages/armes_classification',
+      '/gpx_scolarite_pages/armes_munitions_pages/armes_classification',
   '/armes/definitions':
-      '/gpx_scolarité_pages/armes_munitions_pages/armes_definitions',
+      '/gpx_scolarite_pages/armes_munitions_pages/armes_definitions',
   '/armes/introduction':
-      '/gpx_scolarité_pages/armes_munitions_pages/armes_introduction',
+      '/gpx_scolarite_pages/armes_munitions_pages/armes_introduction',
   '/armes/acquisition_detention_ab':
-      '/gpx_scolarité_pages/armes_munitions_pages/armes_acquisition_detention_ab',
+      '/gpx_scolarite_pages/armes_munitions_pages/armes_acquisition_detention_ab',
   '/armes/port_transport_cd':
-      '/gpx_scolarité_pages/armes_munitions_pages/armes_port_transport_cd',
+      '/gpx_scolarite_pages/armes_munitions_pages/armes_port_transport_cd',
   '/armes/materiels_guerre_elements':
-      '/gpx_scolarité_pages/armes_munitions_pages/armes_materiels_guerre_elements',
+      '/gpx_scolarite_pages/armes_munitions_pages/armes_materiels_guerre_elements',
   '/armes/regles_acquisition_detention':
-      '/gpx_scolarité_pages/armes_munitions_pages/armes_regles_acquisition_detention',
+      '/gpx_scolarite_pages/armes_munitions_pages/armes_regles_acquisition_detention',
   '/armes/regles_port_transport':
-      '/gpx_scolarité_pages/armes_munitions_pages/armes_regles_port_transport',
+      '/gpx_scolarite_pages/armes_munitions_pages/armes_regles_port_transport',
 
   // Libertés publiques
-  '/libertes': '/gpx_scolarité_pages/libertés_publiques_pages',
+  '/libertes': '/gpx_scolarite_pages/libertés_publiques_pages',
   '/libertes/introduction':
-      '/gpx_scolarité_pages/libertés_publiques_pages/introduction',
+      '/gpx_scolarite_pages/libertés_publiques_pages/introduction',
   '/libertes/garanties_protection':
-      '/gpx_scolarité_pages/libertés_publiques_pages/garanties_protection',
+      '/gpx_scolarite_pages/libertés_publiques_pages/garanties_protection',
   '/libertes/expression_collectives':
-      '/gpx_scolarité_pages/libertés_publiques_pages/expression_collectives',
+      '/gpx_scolarite_pages/libertés_publiques_pages/expression_collectives',
   '/libertes/individuelles_vie_privee':
-      '/gpx_scolarité_pages/libertés_publiques_pages/individuelles_vie_privee',
+      '/gpx_scolarite_pages/libertés_publiques_pages/individuelles_vie_privee',
 
   // Stups
-  '/stup': '/gpx_scolarité_pages/stupéfiants_pages',
-  '/stup/introduction': '/gpx_scolarité_pages/stupéfiants_pages/introduction',
-  '/stup/cession_offre': '/gpx_scolarité_pages/stupéfiants_pages/cession_offre',
+  '/stup': '/gpx_scolarite_pages/stupéfiants_pages',
+  '/stup/introduction': '/gpx_scolarite_pages/stupéfiants_pages/introduction',
+  '/stup/cession_offre': '/gpx_scolarite_pages/stupéfiants_pages/cession_offre',
   '/stup/direction_organisation':
-      '/gpx_scolarité_pages/stupéfiants_pages/direction_organisation',
+      '/gpx_scolarite_pages/stupéfiants_pages/direction_organisation',
   '/stup/facilitation_usage':
-      '/gpx_scolarité_pages/stupéfiants_pages/facilitation_usage',
+      '/gpx_scolarite_pages/stupéfiants_pages/facilitation_usage',
   '/stup/production_fabrication':
-      '/gpx_scolarité_pages/stupéfiants_pages/production_fabrication',
+      '/gpx_scolarite_pages/stupéfiants_pages/production_fabrication',
   '/stup/provocation_majeur':
-      '/gpx_scolarité_pages/stupéfiants_pages/provocation_majeur',
+      '/gpx_scolarite_pages/stupéfiants_pages/provocation_majeur',
   '/stup/blanchiment_produit':
-      '/gpx_scolarité_pages/stupéfiants_pages/blanchiment_produit',
+      '/gpx_scolarite_pages/stupéfiants_pages/blanchiment_produit',
   '/stup/transport_detention_offre':
-      '/gpx_scolarité_pages/stupéfiants_pages/transport_detention_offre',
-  '/stup/import_export': '/gpx_scolarité_pages/stupéfiants_pages/import_export',
+      '/gpx_scolarite_pages/stupéfiants_pages/transport_detention_offre',
+  '/stup/import_export': '/gpx_scolarite_pages/stupéfiants_pages/import_export',
   '/stup/usage_illicite':
-      '/gpx_scolarité_pages/stupéfiants_pages/usage_illicite',
+      '/gpx_scolarite_pages/stupéfiants_pages/usage_illicite',
 };
 
 class _DeckItem {

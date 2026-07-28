@@ -77,7 +77,10 @@ class AppVersionConfig {
       latestVersion: (json['latest_version'] as String?) ?? '1.0.0',
       forceUpdate: (json['force_update'] as bool?) ?? false,
       storeUrl: (json['store_url'] as String?) ?? '',
-      messageFr: (json['message_fr'] as String?) ??
+      // La RPC renvoie `message` ; on accepte aussi `message_fr` pour rester
+      // compatible avec l'ancien format de l'edge function.
+      messageFr: (json['message'] as String?) ??
+          (json['message_fr'] as String?) ??
           "Une nouvelle version de COP'IQ est disponible.",
       checkedAt: json['checked_at'] != null
           ? DateTime.tryParse(json['checked_at'] as String) ?? DateTime.now()
@@ -214,21 +217,34 @@ class AppVersionChecker {
 
   Future<AppVersionConfig?> _fetchFromNetwork() async {
     try {
-      final platform = !kIsWeb && Platform.isIOS ? 'ios' : 'android';
-      // Appel via le client Supabase (gère l'URL de base et les headers apikey)
-      final response = await Supabase.instance.client.functions.invoke(
+      final platform = kIsWeb
+          ? 'web'
+          : (Platform.isIOS ? 'ios' : 'android');
+
+      // ═══════════════════════════════════════════════════════════════════
+      //  Depuis le 2026-07-26, la configuration est lue via la RPC
+      //  `app_minimum_version` plutot que par une edge function.
+      //
+      //  L'edge function decrite dans la documentation n'avait jamais ete
+      //  deployee, et la table de configuration n'existait pas : le force
+      //  update etait totalement inoperant. Impossible de sortir les
+      //  utilisateurs d'une version cassee apres publication sur les stores.
+      //
+      //  Une RPC evite un deploiement separe et garde le controle en base.
+      // ═══════════════════════════════════════════════════════════════════
+      final data = await Supabase.instance.client.rpc(
         'app_minimum_version',
-        method: HttpMethod.get,
-        queryParameters: {'platform': platform},
+        params: {'p_platform': platform},
       );
-      if (response.data == null) return null;
-      final map = response.data is Map
-          ? response.data as Map<String, dynamic>
-          : jsonDecode(response.data.toString()) as Map<String, dynamic>;
+
+      if (data == null) return null;
+      final map = data is Map
+          ? Map<String, dynamic>.from(data)
+          : jsonDecode(data.toString()) as Map<String, dynamic>;
       return AppVersionConfig.fromJson(map);
     } catch (e) {
       debugPrint('[AppVersionChecker] network error: $e');
-      return null;
+      return null; // fail-open : on ne bloque jamais sur une erreur reseau
     }
   }
 }

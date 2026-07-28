@@ -61,5 +61,48 @@
 				<string>cstr6suwn9.skadnetwork</string>
 			</dict>
 		</array>
+		<!-- ================================================================
+		     DEEP LINKS — schema custom copiqpolice://
+		     Ajoute le 2026-07-26.
+
+		     Le service deep_links_service.dart documentait ce schema depuis
+		     des mois sans qu'il soit declare ici : sur iOS, les liens
+		     copiqpolice://... n'ouvraient jamais l'application.
+
+		     Indispensable aussi au retour de connexion OAuth (Sign in with
+		     Apple / Google) : Supabase renvoie vers
+		     copiqpolice://login-callback apres authentification.
+		     ================================================================ -->
+		<key>CFBundleURLTypes</key>
+		<array>
+			<dict>
+				<key>CFBundleTypeRole</key>
+				<string>Editor</string>
+				<key>CFBundleURLName</key>
+				<string>fr.copiq.police</string>
+				<key>CFBundleURLSchemes</key>
+				<array>
+					<string>copiqpolice</string>
+				</array>
+			</dict>
+		</array>
+		<!-- Permet a l'application d'ouvrir des liens externes (CGU, support). -->
+		<key>LSApplicationQueriesSchemes</key>
+		<array>
+			<string>https</string>
+			<string>http</string>
+			<string>mailto</string>
+			<string>tel</string>
+		</array>
+		<!-- ================================================================
+		     Audit du 28/07/2026 (RESTE_A_FAIRE.md, point C.1) — sans ces deux
+		     cles, iOS tue l'application des le premier acces a la phototheque
+		     (ImagePicker, bouton photo du forum) : crash garanti et rejet
+		     App Store automatique.
+		     ================================================================ -->
+		<key>NSPhotoLibraryUsageDescription</key>
+		<string>COP'IQ a besoin d'accéder à vos photos pour vous permettre de joindre une image à vos messages sur le forum.</string>
+		<key>NSPhotoLibraryAddUsageDescription</key>
+		<string>COP'IQ peut enregistrer une image dans votre photothèque, par exemple lors du partage de votre score.</string>
 	</dict>
 </plist>

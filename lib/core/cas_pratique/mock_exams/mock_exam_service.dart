@@ -137,6 +137,28 @@ class MockExamService {
     }
   }
 
+  /// Liste les `case_id` ordonnés (par `position`) attachés à un concours
+  /// blanc, via la table de jointure `cas_pratique_mock_exam_cases`.
+  /// Retourne une liste vide si le mock n'a pas encore de cas configurés.
+  Future<List<String>> listCaseIdsForExam(String mockExamId) async {
+    try {
+      final rows = await _sb
+          .from('cas_pratique_mock_exam_cases')
+          .select('case_id, position')
+          .eq('mock_exam_id', mockExamId)
+          .order('position', ascending: true);
+      return (rows as List)
+          .whereType<Map<String, dynamic>>()
+          .map((r) => r['case_id'] as String)
+          .toList(growable: false);
+    } catch (e) {
+      if (kDebugMode) {
+        debugPrint('[MockExamService] listCaseIdsForExam failed: $e');
+      }
+      return const [];
+    }
+  }
+
   /// Démarre (ou reprend) une tentative.
   Future<MockExamAttempt?> startOrResume(String mockExamId) async {
     try {

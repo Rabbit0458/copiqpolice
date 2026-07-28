@@ -8,6 +8,19 @@ import 'package:copiqpolice/core/widgets/app_notifier.dart' show AppSettingsCont
 import 'package:copiqpolice/content/gpx_exam/cas_pratique/cas_pratique_excercice/case_dynamic_page.dart';
 import 'package:copiqpolice/data/cas_pratique/cas_pratique_repository_impl.dart';
 import 'package:copiqpolice/data/cas_pratique/models/cas_pratique_models.dart';
+import 'package:copiqpolice/features/home/home_page_gpx_exam.dart';
+
+/// Convertit `#RRGGBB` (ou `#AARRGGBB`) en [Color]. Retourne [fallback] si le
+/// theme n'a pas de couleur exploitable — on ne veut jamais crasher la liste
+/// pour une couleur mal saisie depuis le panel admin.
+Color _hexToColor(String? hex, Color fallback) {
+  if (hex == null) return fallback;
+  var h = hex.trim().replaceFirst('#', '');
+  if (h.length == 6) h = 'FF$h';
+  if (h.length != 8) return fallback;
+  final v = int.tryParse(h, radix: 16);
+  return v == null ? fallback : Color(v);
+}
 
 class GpxCasPratiqueListPage extends StatefulWidget {
   const GpxCasPratiqueListPage({super.key});
@@ -18,12 +31,18 @@ class GpxCasPratiqueListPage extends StatefulWidget {
   State<GpxCasPratiqueListPage> createState() => _GpxCasPratiqueListPageState();
 }
 
+// NB : TickerProviderStateMixin (et non Single…) car la page pilote maintenant
+// deux AnimationController : le fond animé et la cascade d'apparition.
 class _GpxCasPratiqueListPageState extends State<GpxCasPratiqueListPage>
-    with SingleTickerProviderStateMixin {
+    with TickerProviderStateMixin {
+  /// Anime le fond en continu.
   late final AnimationController _c = AnimationController(
     vsync: this,
     duration: const Duration(milliseconds: 800),
   )..forward();
+
+  // La cascade d'apparition est gérée carte par carte (_ApparitionCascade),
+  // sans contrôleur partagé : voir le commentaire dans l'itemBuilder.
 
   /// ✅ Empêche les doubles taps / doubles navigations (fixe ! _debugLocked)
   bool _navBusy = false;
@@ -34,19 +53,54 @@ class _GpxCasPratiqueListPageState extends State<GpxCasPratiqueListPage>
   bool _loadingCases = true;
   String? _casesError;
 
+  /// Nombre de cas récupérés par page.
+  ///
+  /// Auparavant la page appelait `listCases(limit: 50)` une seule fois : avec
+  /// un catalogue de 22 cas cela passait inaperçu, mais tout cas au-delà du
+  /// 50ᵉ devenait purement invisible pour l'utilisateur. Le catalogue visant
+  /// 500 cas, la liste charge désormais par pages successives.
+  ///
+  /// 40 est un compromis : assez pour remplir plusieurs écrans d'un coup (donc
+  /// pas de pagination perceptible au scroll normal), assez peu pour que le
+  /// premier affichage reste rapide en réseau mobile dégradé.
+  static const int _pageSize = 40;
+
+  /// Distance (en pixels) avant le bas de liste à partir de laquelle on
+  /// déclenche le chargement de la page suivante. Prendre de l'avance évite
+  /// que l'utilisateur ne voie le spinner en scroll fluide.
+  static const double _loadMoreThreshold = 600;
+
+  final ScrollController _scrollController = ScrollController();
+
+  /// `false` dès qu'une page revient incomplète : inutile de re-solliciter
+  /// Supabase, on a atteint la fin du catalogue.
+  bool _hasMoreCases = true;
+  bool _loadingMoreCases = false;
+
   @override
   void initState() {
     super.initState();
+    _scrollController.addListener(_onScroll);
     _loadCases();
+  }
+
+  void _onScroll() {
+    if (!_scrollController.hasClients) return;
+    final pos = _scrollController.position;
+    if (pos.pixels >= pos.maxScrollExtent - _loadMoreThreshold) {
+      _loadMoreCases();
+    }
   }
 
   Future<void> _loadCases() async {
     try {
-      final cases = await _repo.listCases(limit: 50);
+      final cases = await _repo.listCases(limit: _pageSize);
       if (mounted) {
         setState(() {
           _cases = cases;
           _loadingCases = false;
+          // Une première page incomplète = catalogue plus court qu'une page.
+          _hasMoreCases = cases.length == _pageSize;
         });
       }
     } catch (e) {
@@ -56,6 +110,39 @@ class _GpxCasPratiqueListPageState extends State<GpxCasPratiqueListPage>
           _loadingCases = false;
         });
       }
+    }
+  }
+
+  /// Charge la page suivante et l'ajoute à la liste courante.
+  ///
+  /// Les gardes en tête de méthode sont essentielles : `_onScroll` se déclenche
+  /// à chaque frame de défilement, donc sans `_loadingMoreCases` on lancerait
+  /// des dizaines de requêtes concurrentes pour la même page.
+  Future<void> _loadMoreCases() async {
+    if (_loadingMoreCases || !_hasMoreCases || _loadingCases) return;
+    if (_cases == null) return;
+
+    setState(() => _loadingMoreCases = true);
+
+    try {
+      final next = await _repo.listCases(
+        limit: _pageSize,
+        offset: _cases!.length,
+      );
+      if (!mounted) return;
+      setState(() {
+        // Filet anti-doublon : si deux appels se croisaient malgré les gardes,
+        // un slug déjà présent ne doit pas produire une seconde carte.
+        final seen = _cases!.map((c) => c.slug).toSet();
+        _cases!.addAll(next.where((c) => seen.add(c.slug)));
+        _hasMoreCases = next.length == _pageSize;
+        _loadingMoreCases = false;
+      });
+    } catch (_) {
+      if (!mounted) return;
+      // Un échec de page suivante ne doit pas effacer les cas déjà affichés :
+      // on relâche simplement le verrou, le prochain scroll réessaiera.
+      setState(() => _loadingMoreCases = false);
     }
   }
 
@@ -71,6 +158,11 @@ class _GpxCasPratiqueListPageState extends State<GpxCasPratiqueListPage>
 
   @override
   void dispose() {
+    // Un seul dispose() sur le contrôleur : le rappeler une seconde fois lève
+    // « A ScrollController was used after being disposed » au démontage.
+    _scrollController
+      ..removeListener(_onScroll)
+      ..dispose();
     _c.dispose();
     super.dispose();
   }
@@ -111,13 +203,22 @@ class _GpxCasPratiqueListPageState extends State<GpxCasPratiqueListPage>
 
       final nav = Navigator.of(context, rootNavigator: true);
 
-      if (nav.canPop()) {
-        try {
+      try {
+        if (nav.canPop()) {
           nav.pop();
-        } finally {
-          _navBusy = false;
+        } else {
+          // Cas fréquent : la page a été atteinte par pushReplacement, ou via un
+          // deep link / une notification. La pile est alors vide, `canPop()`
+          // renvoie false et l'ancien code ne faisait STRICTEMENT RIEN — le
+          // bouton « Retour » paraissait mort.
+          // On renvoie donc explicitement vers l'accueil « Préparation au
+          // concours de Gardien de la Paix ».
+          nav.pushNamedAndRemoveUntil(
+            HomePageGpxExam.routeName,
+            (route) => false,
+          );
         }
-      } else {
+      } finally {
         _navBusy = false;
       }
     });
@@ -146,13 +247,21 @@ class _GpxCasPratiqueListPageState extends State<GpxCasPratiqueListPage>
         : (_cases ?? []).asMap().entries.map((e) {
             final idx = e.key;
             final c = e.value;
+            final done = (c.userProgress?.attemptsCount ?? 0) > 0;
+            final best = c.userProgress?.bestScorePercent;
             return _CaseTileData(
               index: idx + 1,
               title: c.title,
               points: c.totalPoints,
               eta: '~ ${c.estimatedMinutes} min',
               slug: c.slug,
-              status: _CaseStatus.ready,
+              themeLabel: c.theme?.label,
+              themeColor: _hexToColor(c.theme?.colorHex, const Color(0xFF1147D9)),
+              difficulty: c.difficulty,
+              status: done ? _CaseStatus.done : _CaseStatus.ready,
+              score15: (done && best != null)
+                  ? (best / 100 * c.totalPoints).round()
+                  : null,
             );
           }).toList();
 
@@ -195,6 +304,14 @@ class _GpxCasPratiqueListPageState extends State<GpxCasPratiqueListPage>
             textTheme: GoogleFonts.montserratTextTheme(theme.textTheme),
             splashFactory: InkSparkle.splashFactory,
           ),
+          // Le bouton retour matériel d'Android doit suivre exactement la même
+          // logique que la pastille « Retour » : sinon l'utilisateur sort de
+          // l'app au lieu de revenir à l'accueil concours.
+          child: PopScope(
+          canPop: false,
+          onPopInvokedWithResult: (didPop, _) {
+            if (!didPop) _goBack();
+          },
           child: Scaffold(
             backgroundColor: bgTop,
             body: Stack(
@@ -285,7 +402,9 @@ class _GpxCasPratiqueListPageState extends State<GpxCasPratiqueListPage>
                                   ),
                                   const SizedBox(height: 2),
                                   Text(
-                                    "Entraînement concours — notation /15",
+                                    cases.isEmpty
+                                        ? "Entraînement concours"
+                                        : "${cases.length} cas · entraînement concours",
                                     textAlign: TextAlign.center,
                                     style: GoogleFonts.montserrat(
                                       color: Colors.white.withValues(alpha: 0.78),
@@ -395,11 +514,30 @@ class _GpxCasPratiqueListPageState extends State<GpxCasPratiqueListPage>
                       else
                       Expanded(
                         child: ListView.separated(
+                          controller: _scrollController,
                           padding: const EdgeInsets.fromLTRB(18, 8, 18, 22),
-                          itemCount: cases.length,
+                          // +1 quand il reste des pages : la dernière ligne est
+                          // l'indicateur de chargement, pas une carte de cas.
+                          itemCount: cases.length + (_hasMoreCases ? 1 : 0),
                           separatorBuilder: (_, __) =>
                               const SizedBox(height: 14),
                           itemBuilder: (context, i) {
+                            if (i >= cases.length) {
+                              return const Padding(
+                                padding: EdgeInsets.symmetric(vertical: 18),
+                                child: Center(
+                                  child: SizedBox(
+                                    height: 26,
+                                    width: 26,
+                                    child: CircularProgressIndicator(
+                                      strokeWidth: 2.4,
+                                      color: Colors.white70,
+                                    ),
+                                  ),
+                                ),
+                              );
+                            }
+
                             final d = cases[i];
 
                             final child = _CaseTile(
@@ -411,26 +549,24 @@ class _GpxCasPratiqueListPageState extends State<GpxCasPratiqueListPage>
 
                             if (reduceMotion) return child;
 
-                            final t = CurvedAnimation(
-                              parent: _c,
-                              curve: Interval(
-                                math.min(0.90, 0.10 + (i * 0.10)),
-                                1.0,
-                                curve: Curves.easeOutCubic,
-                              ),
-                            );
-
-                            return AnimatedBuilder(
-                              animation: t,
-                              builder: (_, __) {
-                                return Opacity(
-                                  opacity: t.value.clamp(0, 1),
-                                  child: Transform.translate(
-                                    offset: Offset(0, (1 - t.value) * 14),
-                                    child: child,
-                                  ),
-                                );
-                              },
+                            // Chaque carte anime la sienne, via un
+                            // TweenAnimationBuilder autonome.
+                            //
+                            // ⚠️ Choix délibéré : NE PAS repasser par un
+                            // AnimationController partagé. Une cascade pilotée
+                            // par un contrôleur unique a un défaut grave — si le
+                            // contrôleur ne démarre pas (ordre d'initialisation,
+                            // rebuild, données arrivées trop tôt ou trop tard),
+                            // l'opacité reste à 0 et **toutes les cartes
+                            // deviennent invisibles** alors que les données sont
+                            // bien là. C'est exactement ce qui s'est produit.
+                            //
+                            // Ici l'état final (opaque, en place) est garanti :
+                            // au pire l'animation ne se joue pas, mais la carte
+                            // s'affiche toujours.
+                            return _ApparitionCascade(
+                              rang: i,
+                              child: child,
                             );
                           },
                         ),
@@ -441,8 +577,54 @@ class _GpxCasPratiqueListPageState extends State<GpxCasPratiqueListPage>
               ],
             ),
           ),
+          ),
         );
       },
+    );
+  }
+}
+
+/// Fait apparaître une carte en fondu + glissement, avec un retard
+/// proportionnel à son rang dans la liste (effet cascade).
+///
+/// Autonome par carte : aucun AnimationController partagé, donc aucun risque
+/// qu'un problème d'ordonnancement laisse la liste entière invisible.
+class _ApparitionCascade extends StatefulWidget {
+  const _ApparitionCascade({required this.rang, required this.child});
+
+  final int rang;
+  final Widget child;
+
+  @override
+  State<_ApparitionCascade> createState() => _ApparitionCascadeState();
+}
+
+class _ApparitionCascadeState extends State<_ApparitionCascade> {
+  bool _pret = false;
+
+  @override
+  void initState() {
+    super.initState();
+    // Retard plafonné : sur une longue liste, la dernière carte ne doit pas
+    // attendre plusieurs secondes.
+    final retard = Duration(milliseconds: math.min(600, widget.rang * 70));
+    Future<void>.delayed(retard, () {
+      if (mounted) setState(() => _pret = true);
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return AnimatedOpacity(
+      opacity: _pret ? 1 : 0,
+      duration: const Duration(milliseconds: 420),
+      curve: Curves.easeOut,
+      child: AnimatedSlide(
+        offset: _pret ? Offset.zero : const Offset(0.06, 0.10),
+        duration: const Duration(milliseconds: 460),
+        curve: Curves.easeOutCubic,
+        child: widget.child,
+      ),
     );
   }
 }
@@ -795,6 +977,14 @@ class _CaseTileData {
   final _CaseStatus status;
   final int? score15;
 
+  /// Libellé du thème (« Procédure pénale »…), piloté depuis le panel admin.
+  final String? themeLabel;
+
+  /// Couleur d'accent de la carte, issue de `cas_pratique_themes.color_hex`.
+  final Color themeColor;
+
+  final CpDifficulty difficulty;
+
   const _CaseTileData({
     required this.index,
     required this.title,
@@ -802,9 +992,27 @@ class _CaseTileData {
     required this.eta,
     required this.slug,
     required this.status,
+    required this.themeColor,
+    required this.difficulty,
+    this.themeLabel,
     this.score15,
   });
 }
+
+/// Couleur + libellé d'une difficulté. Volontairement indépendant du
+/// ColorScheme : ces quatre teintes doivent rester lisibles dans les deux
+/// thèmes et garder la même sémantique (vert = facile → violet = expert).
+///
+/// Le violet de `expert` est choisi hors de la rampe vert/ambre/rouge : ce
+/// niveau ne signale pas « encore plus dangereux », mais une nature de cas
+/// différente (situation évolutive, arbitrage déontologique). Une quatrième
+/// nuance de rouge aurait été indiscernable de `difficile` en usage réel.
+({Color color, String label}) _difficultyStyle(CpDifficulty d) => switch (d) {
+      CpDifficulty.facile => (color: const Color(0xFF22C55E), label: 'Facile'),
+      CpDifficulty.moyen => (color: const Color(0xFFF59E0B), label: 'Moyen'),
+      CpDifficulty.difficile => (color: const Color(0xFFEF4444), label: 'Difficile'),
+      CpDifficulty.expert => (color: const Color(0xFF8B5CF6), label: 'Expert'),
+    };
 
 class _CaseTile extends StatelessWidget {
   const _CaseTile({
@@ -823,86 +1031,189 @@ class _CaseTile extends StatelessWidget {
   Widget build(BuildContext context) {
     final locked = data.status == _CaseStatus.locked;
     final done = data.status == _CaseStatus.done;
-
-    final cardShadow = Colors.black.withValues(alpha: isDark ? 0.35 : 0.10);
+    final accent = data.themeColor;
+    final diff = _difficultyStyle(data.difficulty);
 
     return Opacity(
       opacity: locked ? 0.55 : 1.0,
       child: Material(
         color: cs.surface,
-        borderRadius: BorderRadius.circular(18),
+        borderRadius: BorderRadius.circular(20),
+        clipBehavior: Clip.antiAlias,
         child: InkWell(
           onTap: locked ? null : onTap,
-          borderRadius: BorderRadius.circular(18),
+          splashColor: accent.withValues(alpha: 0.12),
+          highlightColor: accent.withValues(alpha: 0.06),
           child: Ink(
-            padding: const EdgeInsets.fromLTRB(14, 14, 14, 14),
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(18),
-              border: Border.all(color: cs.outlineVariant),
+              borderRadius: BorderRadius.circular(20),
+              // Halo teinté du thème : la carte prend la couleur de sa matière
+              // au lieu du gris uniforme précédent.
+              gradient: LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: [
+                  Color.alphaBlend(
+                    accent.withValues(alpha: isDark ? 0.16 : 0.09),
+                    cs.surface,
+                  ),
+                  cs.surface,
+                ],
+                stops: const [0.0, 0.72],
+              ),
+              // Liseré épais à gauche + contour fin : porté par la décoration
+              // et non par un Container dans un Row en CrossAxisAlignment
+              // .stretch, qui exigeait une hauteur que la Row ne pouvait pas
+              // fournir (contrainte verticale non bornée).
+              border: Border(
+                left: BorderSide(color: accent, width: 5),
+                top: BorderSide(
+                    color: accent.withValues(alpha: isDark ? 0.42 : 0.30),
+                    width: 1.2),
+                right: BorderSide(
+                    color: accent.withValues(alpha: isDark ? 0.42 : 0.30),
+                    width: 1.2),
+                bottom: BorderSide(
+                    color: accent.withValues(alpha: isDark ? 0.42 : 0.30),
+                    width: 1.2),
+              ),
               boxShadow: [
                 BoxShadow(
-                  color: cardShadow,
-                  blurRadius: 18,
+                  color: accent.withValues(alpha: isDark ? 0.22 : 0.14),
+                  blurRadius: 20,
                   offset: const Offset(0, 10),
                 ),
               ],
             ),
-            child: Row(
-              children: [
-                _NumberBadge(index: data.index, status: data.status, cs: cs),
-                const SizedBox(width: 14),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Row(
-                        children: [
-                          Expanded(
-                            child: Text(
-                              data.title,
-                              style: GoogleFonts.montserrat(
-                                color: cs.onSurface,
-                                fontWeight: FontWeight.w900,
-                                fontSize: 16,
-                                letterSpacing: -0.2,
+            child: Padding(
+                    padding: const EdgeInsets.fromLTRB(13, 14, 13, 14),
+                    child: Row(
+                      children: [
+                        _NumberBadge(
+                          index: data.index,
+                          status: data.status,
+                          cs: cs,
+                          accent: accent,
+                        ),
+                        const SizedBox(width: 13),
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              if (data.themeLabel != null) ...[
+                                Text(
+                                  data.themeLabel!.toUpperCase(),
+                                  style: GoogleFonts.montserrat(
+                                    color: accent,
+                                    fontWeight: FontWeight.w900,
+                                    fontSize: 10.2,
+                                    letterSpacing: 0.9,
+                                  ),
+                                ),
+                                const SizedBox(height: 4),
+                              ],
+                              Text(
+                                data.title,
+                                style: GoogleFonts.montserrat(
+                                  color: cs.onSurface,
+                                  fontWeight: FontWeight.w800,
+                                  fontSize: 15.4,
+                                  height: 1.22,
+                                  letterSpacing: -0.3,
+                                ),
                               ),
-                            ),
+                              const SizedBox(height: 10),
+                              Wrap(
+                                spacing: 8,
+                                runSpacing: 8,
+                                crossAxisAlignment: WrapCrossAlignment.center,
+                                children: [
+                                  _Dot(color: diff.color, label: diff.label, cs: cs),
+                                  _MetaChip(
+                                    icon: Icons.stars_rounded,
+                                    label: '${data.points} pts',
+                                    cs: cs,
+                                    accent: accent,
+                                  ),
+                                  _MetaChip(
+                                    icon: Icons.schedule_rounded,
+                                    label: data.eta,
+                                    cs: cs,
+                                    accent: accent,
+                                  ),
+                                  if (done)
+                                    _StatusPillDone(
+                                      score15: data.score15,
+                                      cs: cs,
+                                    ),
+                                  if (locked) _StatusPillLocked(cs: cs),
+                                ],
+                              ),
+                            ],
                           ),
-                          if (done)
-                            _StatusPillDone(score15: data.score15, cs: cs),
-                          if (locked) _StatusPillLocked(cs: cs),
-                        ],
-                      ),
-                      const SizedBox(height: 8),
-                      Row(
-                        children: [
-                          _MetaChip(
-                            icon: Icons.stars_rounded,
-                            label: "${data.points} points",
-                            cs: cs,
+                        ),
+                        const SizedBox(width: 8),
+                        Container(
+                          width: 30,
+                          height: 30,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: accent.withValues(alpha: isDark ? 0.20 : 0.12),
                           ),
-                          const SizedBox(width: 10),
-                          _MetaChip(
-                            icon: Icons.schedule_rounded,
-                            label: data.eta,
-                            cs: cs,
+                          child: Icon(
+                            locked
+                                ? Icons.lock_rounded
+                                : Icons.arrow_forward_rounded,
+                            color: accent,
+                            size: 17,
                           ),
-                        ],
-                      ),
-                    ],
-                  ),
-                ),
-                const SizedBox(width: 10),
-                Icon(
-                  locked ? Icons.lock_rounded : Icons.chevron_right_rounded,
-                  color: cs.onSurface,
-                  size: 24,
-                ),
-              ],
-            ),
+                        ),
+                      ],
+                    ),   // Row interne
+            ),           // Padding
+          ),             // Ink
+        ),               // InkWell
+      ),                 // Material
+    );                   // Opacity
+  }
+}
+
+/// Pastille de difficulté : un point de couleur + un mot. Plus lisible qu'un
+/// badge plein, et ne concurrence pas la couleur du thème.
+class _Dot extends StatelessWidget {
+  const _Dot({required this.color, required this.label, required this.cs});
+
+  final Color color;
+  final String label;
+  final ColorScheme cs;
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Container(
+          width: 8,
+          height: 8,
+          decoration: BoxDecoration(
+            shape: BoxShape.circle,
+            color: color,
+            boxShadow: [
+              BoxShadow(color: color.withValues(alpha: 0.55), blurRadius: 6),
+            ],
           ),
         ),
-      ),
+        const SizedBox(width: 6),
+        Text(
+          label,
+          style: GoogleFonts.montserrat(
+            color: cs.onSurface.withValues(alpha: 0.82),
+            fontWeight: FontWeight.w800,
+            fontSize: 11.8,
+            letterSpacing: -0.1,
+          ),
+        ),
+      ],
     );
   }
 }
@@ -912,90 +1223,109 @@ class _NumberBadge extends StatelessWidget {
     required this.index,
     required this.status,
     required this.cs,
+    required this.accent,
   });
 
   final int index;
   final _CaseStatus status;
   final ColorScheme cs;
 
+  /// Couleur du thème du cas : le badge en hérite pour que chaque matière
+  /// soit identifiable d'un coup d'œil dans la liste.
+  final Color accent;
+
   @override
   Widget build(BuildContext context) {
     Color bg;
-    Color shadow;
     IconData? icon;
 
     switch (status) {
       case _CaseStatus.ready:
-        bg = cs.primary;
-        shadow = cs.primary.withValues(alpha: 0.35);
+        bg = accent;
         icon = null;
         break;
       case _CaseStatus.locked:
         bg = cs.outline;
-        shadow = cs.outline.withValues(alpha: 0.22);
         icon = Icons.lock_rounded;
         break;
       case _CaseStatus.done:
-        bg = cs.tertiary;
-        shadow = cs.tertiary.withValues(alpha: 0.25);
+        bg = const Color(0xFF22C55E);
         icon = Icons.check_rounded;
         break;
     }
 
     return Container(
-      width: 46,
-      height: 46,
+      width: 44,
+      height: 44,
       decoration: BoxDecoration(
-        color: bg,
-        borderRadius: BorderRadius.circular(16),
+        borderRadius: BorderRadius.circular(15),
+        gradient: LinearGradient(
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+          colors: [
+            Color.alphaBlend(Colors.white.withValues(alpha: 0.22), bg),
+            bg,
+          ],
+        ),
         boxShadow: [
-          BoxShadow(color: shadow, blurRadius: 14, offset: const Offset(0, 8)),
+          BoxShadow(
+            color: bg.withValues(alpha: 0.42),
+            blurRadius: 14,
+            offset: const Offset(0, 7),
+          ),
         ],
       ),
       child: Center(
         child: icon == null
             ? Text(
-                "$index",
+                '$index',
                 style: GoogleFonts.montserrat(
-                  color: cs.onPrimary,
+                  color: Colors.white,
                   fontWeight: FontWeight.w900,
-                  fontSize: 18,
-                  letterSpacing: -0.2,
+                  fontSize: 17.5,
+                  letterSpacing: -0.3,
                 ),
               )
-            : Icon(icon, color: cs.onPrimary, size: 20),
+            : Icon(icon, color: Colors.white, size: 20),
       ),
     );
   }
 }
 
 class _MetaChip extends StatelessWidget {
-  const _MetaChip({required this.icon, required this.label, required this.cs});
+  const _MetaChip({
+    required this.icon,
+    required this.label,
+    required this.cs,
+    this.accent,
+  });
 
   final IconData icon;
   final String label;
   final ColorScheme cs;
+  final Color? accent;
 
   @override
   Widget build(BuildContext context) {
+    final tint = accent ?? cs.primary;
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 7),
+      padding: const EdgeInsets.symmetric(horizontal: 9, vertical: 5),
       decoration: BoxDecoration(
-        color: cs.surfaceContainerHighest,
+        color: tint.withValues(alpha: 0.10),
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: cs.outlineVariant),
+        border: Border.all(color: tint.withValues(alpha: 0.24)),
       ),
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Icon(icon, size: 16, color: cs.primary),
-          const SizedBox(width: 6),
+          Icon(icon, size: 13.5, color: tint),
+          const SizedBox(width: 5),
           Text(
             label,
             style: GoogleFonts.montserrat(
-              color: cs.onSurface,
-              fontWeight: FontWeight.w900,
-              fontSize: 12.4,
+              color: cs.onSurface.withValues(alpha: 0.88),
+              fontWeight: FontWeight.w800,
+              fontSize: 11.8,
               letterSpacing: -0.2,
             ),
           ),

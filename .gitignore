@@ -52,3 +52,21 @@ assets/quiz/
 
 # Backups locaux
 *.zip
+
+# Secrets (jamais commiter)
+replicate_token.txt
+*.token
+.env
+.env.local
+docs/.env
+
+# Archives locales (audit 2026-07-26)
+_archive/
+
+# Logs et sorties de generation
+*.log
+erreurs*.txt
+generation_*.txt
+__pycache__/
+lora_dataset/
+lora_dataset.zip

@@ -131,9 +131,14 @@ class _HomeBootstrapState extends State<HomeBootstrap> {
     if (!mounted) return;
 
     // 5) Reserve
+    // ⚠️ Audit du 28/07/2026 (RESTE_A_FAIRE.md, point C.3) : le contenu
+    // Réserve contient encore des placeholders "TODO" non finalisés. Le
+    // grade_picker verrouille déjà ce choix pour les nouveaux comptes, mais
+    // un profil existant avec user_track='reserve' (donnée historique/legacy)
+    // atterrirait quand même ici sans ce garde-fou. On le renvoie vers le
+    // grade_picker pour qu'il choisisse une piste disponible.
     if (decidedTrack == 'reserve') {
-      nav.pushNamedAndRemoveUntil('/reserve', (_) => false);
-      _syncControllersLater(decidedMode, decidedTrack);
+      nav.pushNamedAndRemoveUntil('/grade_picker', (_) => false);
       return;
     }
 

@@ -15,6 +15,7 @@ import 'package:copiqpolice/features/home/home_page.dart'
 
 // ==== Pages existantes ====
 import 'package:copiqpolice/features/home/journal_pa_school.dart';
+import 'package:copiqpolice/features/home/pa_progression_service.dart';
 import 'package:copiqpolice/features/home/favoris_home.dart';
 import 'package:copiqpolice/core/services/favorites.dart';
 import 'package:copiqpolice/features/home/profil_page.dart';
@@ -86,31 +87,6 @@ class _HomePagePaExamState extends State<HomePagePaExam> {
   late final List<CategoryConfig> _cats =
       (categoriesConfigPA[_mode]?[_track] ?? const <CategoryConfig>[]);
 
-  // “À venir”
-  late final List<_MiniSpec> _upcoming = [
-    if (_cats.isNotEmpty)
-      _MiniSpec(
-        title: _cats[0].label,
-        subtitle: _cats[0].badge,
-        image: _cats[0].image,
-        route: _cats[0].route,
-      ),
-    if (_cats.length >= 2)
-      _MiniSpec(
-        title: _cats[1].label,
-        subtitle: _cats[1].badge,
-        image: _cats[1].image,
-        route: _cats[1].route,
-      ),
-    if (_cats.length >= 3)
-      _MiniSpec(
-        title: _cats[2].label,
-        subtitle: _cats[2].badge,
-        image: _cats[2].image,
-        route: _cats[2].route,
-      ),
-  ];
-
   // index de départ : cherche "cadres juridiques"
   late final int _initialDeckIndex = () {
     final i = _cats.indexWhere(
@@ -155,6 +131,12 @@ class _HomePagePaExamState extends State<HomePagePaExam> {
     final redirectRoute = redirectConfigPA[route];
     final target = redirectRoute ?? route;
 
+    // Hub dédié : ouverture directe, sans page de sous-catégories générique.
+    if (directOpenRoutesPA.contains(target)) {
+      Navigator.of(context).pushNamed(target);
+      return;
+    }
+
     if (subs != null && subs.isNotEmpty) {
       Navigator.of(context).push(
         MaterialPageRoute(
@@ -170,6 +152,73 @@ class _HomePagePaExamState extends State<HomePagePaExam> {
   void _goToTab(int index) {
     HapticFeedback.selectionClick();
     setState(() => _currentTab = index);
+  }
+
+  /// Choisit la catégorie PA la plus pertinente pour "reprendre" à partir du
+  /// libellé de la dernière activité (module/quiz). Mapping par mots-clés,
+  /// avec repli sur la 1re catégorie.
+  CategoryConfig? _resolveResumeCategory(PaResumeActivity a) {
+    if (_cats.isEmpty) return null;
+    final hay = '${a.moduleName} ${a.quizName}'.toLowerCase();
+
+    bool has(List<String> kws) => kws.any((k) => hay.contains(k));
+
+    String? wantedRoutePart;
+    if (has(['photolang'])) {
+      wantedRoutePart = 'photolangage';
+    } else if (has([
+      'psycho',
+      'logique',
+      'aptitude',
+      'observation',
+      'raisonnement',
+      'personnalit',
+    ])) {
+      wantedRoutePart = 'tests_psychotechniques';
+    } else if (has([
+      'culture',
+      'connaissance',
+      'institution',
+      'géograph',
+      'geograph',
+      'histoire',
+      'sciences',
+      'droit',
+      'police',
+      'sport',
+    ])) {
+      wantedRoutePart = 'connaissances_generales';
+    } else if (has(['épreuve', 'epreuve', 'tableau', 'médical', 'medical'])) {
+      wantedRoutePart = 'epreuves';
+    }
+
+    if (wantedRoutePart != null) {
+      final match = _cats.where((c) => c.route.contains(wantedRoutePart!));
+      if (match.isNotEmpty) return match.first;
+    }
+    return _cats.first;
+  }
+
+  /// Ouvre la catégorie correspondant à la dernière activité.
+  void _openResume(PaResumeActivity a) {
+    final cat = _resolveResumeCategory(a);
+    if (cat == null) return;
+    _openRouteOrDetails(
+      label: cat.label,
+      route: cat.route,
+      subs: cat.subcategories,
+    );
+  }
+
+  /// Repli "Commence ici" (aucun historique) : ouvre la 1re catégorie.
+  void _openFirstCategory() {
+    if (_cats.isEmpty) return;
+    final cat = _cats.first;
+    _openRouteOrDetails(
+      label: cat.label,
+      route: cat.route,
+      subs: cat.subcategories,
+    );
   }
 
   @override
@@ -348,69 +397,16 @@ class _HomePagePaExamState extends State<HomePagePaExam> {
               ),
             ),
 
-            const SizedBox(height: 22),
+            const SizedBox(height: 26),
 
-            // À venir / Tout voir
+            // ===== Continue ta préparation (progression perso PA) =====
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20),
-              child: Row(
-                children: [
-                  Expanded(
-                    child: Text(
-                      'À venir',
-                      style: theme.textTheme.titleMedium?.copyWith(
-                        fontSize: 16,
-                        fontWeight: FontWeight.w800,
-                      ),
-                    ),
-                  ),
-                  InkWell(
-                    borderRadius: BorderRadius.circular(12),
-                    onTap: () => _goToTab(1),
-                    child: Padding(
-                      padding: const EdgeInsets.all(6.0),
-                      child: Text(
-                        'Tout voir',
-                        style: TextStyle(
-                          fontWeight: FontWeight.w700,
-                          color: _muted(context, .7),
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            const SizedBox(height: 12),
-
-            // Mini-cards
-            SizedBox(
-              height: 230,
-              child: ListView.separated(
-                key: const PageStorageKey('pa-mini-list'),
-                padding: const EdgeInsets.symmetric(horizontal: 20),
-                scrollDirection: Axis.horizontal,
-                physics: const BouncingScrollPhysics(),
-                itemBuilder: (_, i) {
-                  final m = _upcoming[i];
-                  final cat = _cats.firstWhere(
-                    (c) => c.route == m.route,
-                    orElse: () => _cats.first,
-                  );
-                  return _MiniCard(
-                    title: m.title,
-                    subtitle: m.subtitle,
-                    image: m.image,
-                    rating: 4.9,
-                    onTap: () => _openRouteOrDetails(
-                      label: m.title,
-                      route: m.route,
-                      subs: cat.subcategories,
-                    ),
-                  );
-                },
-                separatorBuilder: (_, __) => const SizedBox(width: 14),
-                itemCount: _upcoming.length,
+              child: _ContinuePreparationSection(
+                key: const PageStorageKey('pa-continue-section'),
+                onOpenResume: _openResume,
+                onStart: _openFirstCategory,
+                onSeeAll: () => _goToTab(1),
               ),
             ),
 
@@ -727,6 +723,13 @@ class _HeroCardState extends State<HeroCard> with TickerProviderStateMixin {
     final redirectRoute = redirectConfigPA[widget.item.route];
     final targetRoute = redirectRoute ?? widget.item.route;
     final subs = widget.item.subcategories;
+
+    // Hub dédié : ouverture directe, sans page de sous-catégories générique.
+    if (directOpenRoutesPA.contains(targetRoute)) {
+      Navigator.of(context).pushNamed(targetRoute);
+      return;
+    }
+
     if (subs != null && subs.isNotEmpty) {
       Navigator.of(context).push(
         MaterialPageRoute(
@@ -915,114 +918,285 @@ class _HeroCardState extends State<HeroCard> with TickerProviderStateMixin {
   }
 }
 
-class _MiniCard extends StatelessWidget {
-  final String title, subtitle, image;
-  final double rating;
+// ======================================================================
+//        SECTION "Continue ta préparation" (progression perso PA)
+// ======================================================================
+
+class _ContinuePreparationSection extends StatefulWidget {
+  final void Function(PaResumeActivity resume) onOpenResume;
+  final VoidCallback onStart;
+  final VoidCallback onSeeAll;
+
+  const _ContinuePreparationSection({
+    Key? key,
+    required this.onOpenResume,
+    required this.onStart,
+    required this.onSeeAll,
+  }) : super(key: key);
+
+  @override
+  State<_ContinuePreparationSection> createState() =>
+      _ContinuePreparationSectionState();
+}
+
+class _ContinuePreparationSectionState
+    extends State<_ContinuePreparationSection> {
+  PaProgressSnapshot? _snap;
+  bool _loading = true;
+
+  @override
+  void initState() {
+    super.initState();
+    _load();
+  }
+
+  Future<void> _load() async {
+    final s = await PaProgressionService.instance.fetchSnapshot();
+    if (!mounted) return;
+    setState(() {
+      _snap = s;
+      _loading = false;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final snap = _snap;
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        // En-tête
+        Row(
+          children: [
+            Expanded(
+              child: Text(
+                'Continue ta préparation',
+                style: theme.textTheme.titleMedium?.copyWith(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w800,
+                ),
+              ),
+            ),
+            InkWell(
+              borderRadius: BorderRadius.circular(12),
+              onTap: widget.onSeeAll,
+              child: Padding(
+                padding: const EdgeInsets.all(6.0),
+                child: Text(
+                  'Tout voir',
+                  style: TextStyle(
+                    fontWeight: FontWeight.w700,
+                    color: _muted(context, .7),
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+        const SizedBox(height: 12),
+
+        if (_loading || snap == null)
+          const _ResumeSkeleton()
+        else if (snap.hasActivity)
+          _ResumeCard(
+            resume: snap.resume!,
+            onTap: () => widget.onOpenResume(snap.resume!),
+          )
+        else
+          _StartCard(onTap: widget.onStart),
+
+        const SizedBox(height: 12),
+
+        // Chips streak + objectif du jour
+        if (!_loading && snap != null)
+          Row(
+            children: [
+              Expanded(
+                child: _StatChip(
+                  icon: Icons.local_fire_department_rounded,
+                  iconColor: const Color(0xFFF5A623),
+                  value: '${snap.streakDays}',
+                  label: snap.streakDays <= 1 ? 'jour de suite' : 'jours de suite',
+                ),
+              ),
+              const SizedBox(width: 10),
+              Expanded(
+                child: _StatChip(
+                  icon: snap.goalReached
+                      ? Icons.check_circle_rounded
+                      : Icons.track_changes_rounded,
+                  iconColor: snap.goalReached
+                      ? const Color(0xFF2FB170)
+                      : const Color(0xFF3B82F6),
+                  value: '${snap.doneToday}/${snap.dailyGoal}',
+                  label: 'objectif du jour',
+                ),
+              ),
+            ],
+          )
+        else
+          const _ChipsSkeleton(),
+      ],
+    );
+  }
+}
+
+// ---- Carte "Reprendre" (dernière activité) ---------------------------
+
+class _ResumeCard extends StatelessWidget {
+  final PaResumeActivity resume;
   final VoidCallback onTap;
 
-  const _MiniCard({
-    required this.title,
-    required this.subtitle,
-    required this.image,
-    required this.rating,
-    required this.onTap,
-  });
+  const _ResumeCard({required this.resume, required this.onTap});
 
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final isDark = theme.brightness == Brightness.dark;
+    const anthracite = Color(0xFF2E3137);
 
-    Widget img;
-    try {
-      img = Image.asset(image, fit: BoxFit.cover);
-    } catch (_) {
-      img = Container(color: const Color(0xFF9E9E9E).withValues(alpha: .25));
-    }
+    final hasScore = resume.scorePercent != null && resume.totalQuestions > 0;
+    final pct = (resume.scorePercent ?? 0).clamp(0, 100);
 
     return Material(
       color: theme.cardColor,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(_T.r20),
-      ),
+      borderRadius: BorderRadius.circular(_T.r20),
       elevation: 0,
       child: InkWell(
         onTap: onTap,
         borderRadius: BorderRadius.circular(_T.r20),
         child: Container(
-          width: 240,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(_T.r20),
             boxShadow: const [_T.shadow],
           ),
+          padding: const EdgeInsets.all(14),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              AspectRatio(
-                aspectRatio: 16 / 9,
-                child: ClipRRect(
-                  borderRadius: const BorderRadius.vertical(
-                    top: Radius.circular(20),
+              Row(
+                children: [
+                  // Icône ronde
+                  Container(
+                    width: 52,
+                    height: 52,
+                    decoration: BoxDecoration(
+                      color: (isDark ? Colors.white : _T.ink).withValues(
+                        alpha: isDark ? .10 : .06,
+                      ),
+                      borderRadius: BorderRadius.circular(14),
+                    ),
+                    child: Icon(
+                      Icons.menu_book_rounded,
+                      color: isDark ? Colors.white : _T.ink,
+                      size: 26,
+                    ),
                   ),
-                  child: img,
-                ),
-              ),
-              Flexible(
-                fit: FlexFit.loose,
-                child: ConstrainedBox(
-                  constraints: const BoxConstraints(minHeight: 84),
-                  child: Padding(
-                    padding: const EdgeInsets.fromLTRB(12, 10, 12, 12),
+                  const SizedBox(width: 12),
+                  Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      mainAxisSize: MainAxisSize.min,
                       children: [
                         Text(
-                          title,
-                          maxLines: 1,
-                          overflow: TextOverflow.ellipsis,
-                          style: TextStyle(
-                            fontWeight: FontWeight.w800,
-                            color: isDark ? Colors.white : _T.ink,
-                          ),
-                        ),
-                        const SizedBox(height: 2),
-                        Text(
-                          subtitle,
+                          'Reprendre où tu t’es arrêté',
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,
                           style: TextStyle(
                             fontSize: 12,
+                            fontWeight: FontWeight.w600,
                             color: _muted(context, .7),
                           ),
                         ),
-                        const SizedBox(height: 6),
-                        Row(
-                          children: [
-                            const Icon(
-                              Icons.star_rounded,
-                              color: Colors.amber,
-                              size: 18,
-                            ),
-                            const SizedBox(width: 4),
-                            Text(
-                              '$rating',
-                              style: TextStyle(
-                                fontWeight: FontWeight.w800,
-                                color: theme.textTheme.bodyMedium?.color,
-                                fontSize: 12,
-                              ),
-                            ),
-                            const Spacer(),
-                            Icon(
-                              Icons.arrow_forward_rounded,
-                              size: 20,
-                              color: _muted(context, .8),
-                            ),
-                          ],
+                        const SizedBox(height: 2),
+                        Text(
+                          resume.quizName,
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                          style: GoogleFonts.poppins(
+                            fontSize: 15,
+                            fontWeight: FontWeight.w800,
+                            color: isDark ? Colors.white : _T.ink,
+                          ),
+                        ),
+                        Text(
+                          resume.moduleName,
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                          style: TextStyle(
+                            fontSize: 12,
+                            color: _muted(context, .6),
+                          ),
                         ),
                       ],
                     ),
+                  ),
+                ],
+              ),
+              if (hasScore) ...[
+                const SizedBox(height: 14),
+                Row(
+                  children: [
+                    Text(
+                      'Dernier score',
+                      style: TextStyle(
+                        fontSize: 12,
+                        color: _muted(context, .7),
+                      ),
+                    ),
+                    const Spacer(),
+                    Text(
+                      '$pct%',
+                      style: GoogleFonts.poppins(
+                        fontSize: 12,
+                        fontWeight: FontWeight.w800,
+                        color: isDark ? Colors.white : _T.ink,
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 6),
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(99),
+                  child: LinearProgressIndicator(
+                    value: pct / 100.0,
+                    minHeight: 8,
+                    backgroundColor: (isDark ? Colors.white : Colors.black)
+                        .withValues(alpha: .08),
+                    valueColor: AlwaysStoppedAnimation<Color>(
+                      isDark ? Colors.white : _T.ink,
+                    ),
+                  ),
+                ),
+              ],
+              const SizedBox(height: 14),
+              // CTA Continuer
+              GestureDetector(
+                onTap: onTap,
+                child: Container(
+                  height: 46,
+                  decoration: BoxDecoration(
+                    color: anthracite,
+                    borderRadius: BorderRadius.circular(14),
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: const [
+                      Icon(
+                        Icons.play_arrow_rounded,
+                        color: Colors.white,
+                        size: 22,
+                      ),
+                      SizedBox(width: 6),
+                      Text(
+                        'Continuer',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.w800,
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ),
@@ -1030,6 +1204,230 @@ class _MiniCard extends StatelessWidget {
           ),
         ),
       ),
+    );
+  }
+}
+
+// ---- Carte "Commence ici" (aucun historique) -------------------------
+
+class _StartCard extends StatelessWidget {
+  final VoidCallback onTap;
+  const _StartCard({required this.onTap});
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final isDark = theme.brightness == Brightness.dark;
+    const anthracite = Color(0xFF2E3137);
+
+    return Material(
+      color: theme.cardColor,
+      borderRadius: BorderRadius.circular(_T.r20),
+      elevation: 0,
+      child: InkWell(
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(_T.r20),
+        child: Container(
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(_T.r20),
+            boxShadow: const [_T.shadow],
+          ),
+          padding: const EdgeInsets.all(16),
+          child: Row(
+            children: [
+              Container(
+                width: 52,
+                height: 52,
+                decoration: BoxDecoration(
+                  color: (isDark ? Colors.white : _T.ink).withValues(
+                    alpha: isDark ? .10 : .06,
+                  ),
+                  borderRadius: BorderRadius.circular(14),
+                ),
+                child: Icon(
+                  Icons.rocket_launch_rounded,
+                  color: isDark ? Colors.white : _T.ink,
+                  size: 26,
+                ),
+              ),
+              const SizedBox(width: 12),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Commence ta préparation',
+                      style: GoogleFonts.poppins(
+                        fontSize: 15,
+                        fontWeight: FontWeight.w800,
+                        color: isDark ? Colors.white : _T.ink,
+                      ),
+                    ),
+                    const SizedBox(height: 2),
+                    Text(
+                      'Lance ton premier module concours PA',
+                      style: TextStyle(
+                        fontSize: 12,
+                        color: _muted(context, .7),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              const SizedBox(width: 8),
+              CircleAvatar(
+                radius: 18,
+                backgroundColor: anthracite,
+                child: const Icon(
+                  Icons.arrow_forward_rounded,
+                  size: 18,
+                  color: Colors.white,
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+// ---- Chip de statistique (streak / objectif) -------------------------
+
+class _StatChip extends StatelessWidget {
+  final IconData icon;
+  final Color iconColor;
+  final String value;
+  final String label;
+
+  const _StatChip({
+    required this.icon,
+    required this.iconColor,
+    required this.value,
+    required this.label,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final isDark = theme.brightness == Brightness.dark;
+
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
+      decoration: BoxDecoration(
+        color: theme.cardColor,
+        borderRadius: BorderRadius.circular(_T.r16),
+        boxShadow: const [_T.shadow],
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Row(
+            children: [
+              Icon(icon, size: 20, color: iconColor),
+              const SizedBox(width: 6),
+              Text(
+                value,
+                style: GoogleFonts.poppins(
+                  fontSize: 20,
+                  fontWeight: FontWeight.w900,
+                  color: isDark ? Colors.white : _T.ink,
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 4),
+          Text(
+            label,
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+            style: TextStyle(fontSize: 12, color: _muted(context, .7)),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+// ---- Skeletons de chargement -----------------------------------------
+
+class _ResumeSkeleton extends StatelessWidget {
+  const _ResumeSkeleton();
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    return Container(
+      height: 168,
+      decoration: BoxDecoration(
+        color: theme.cardColor,
+        borderRadius: BorderRadius.circular(_T.r20),
+        boxShadow: const [_T.shadow],
+      ),
+      padding: const EdgeInsets.all(14),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              _bar(52, 52, r: 14, context: context),
+              const SizedBox(width: 12),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    _bar(120, 10, context: context),
+                    const SizedBox(height: 8),
+                    _bar(180, 12, context: context),
+                  ],
+                ),
+              ),
+            ],
+          ),
+          const Spacer(),
+          _bar(double.infinity, 46, r: 14, context: context),
+        ],
+      ),
+    );
+  }
+
+  Widget _bar(
+    double w,
+    double h, {
+    double r = 8,
+    required BuildContext context,
+  }) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    return Container(
+      width: w,
+      height: h,
+      decoration: BoxDecoration(
+        color: (isDark ? Colors.white : Colors.black).withValues(alpha: .06),
+        borderRadius: BorderRadius.circular(r),
+      ),
+    );
+  }
+}
+
+class _ChipsSkeleton extends StatelessWidget {
+  const _ChipsSkeleton();
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    Widget chip() => Expanded(
+      child: Container(
+        height: 64,
+        decoration: BoxDecoration(
+          color: theme.cardColor,
+          borderRadius: BorderRadius.circular(_T.r16),
+          boxShadow: const [_T.shadow],
+        ),
+      ),
+    );
+    return Row(
+      children: [chip(), const SizedBox(width: 10), chip()],
     );
   }
 }
@@ -1188,21 +1586,30 @@ class _CategoryDetailPage extends StatelessWidget {
 
   String _imageFor(String label) {
     final l = label.toLowerCase().trim();
-    if (l.contains('méthodologie')) return 'assets/images/concours_connaissances_generales.jpeg';
-    if (l.contains('fiche') || l.contains('cours')) return 'assets/images/concours_pa_epreuves.jpeg';
-    if (l.contains('qcm') || l.contains('entraînement') || l.contains('entrainement')) return 'assets/images/quiz.jpeg';
+    if (l.contains('méthodologie'))
+      return 'assets/images/concours_connaissances_generales.jpeg';
+    if (l.contains('fiche') || l.contains('cours'))
+      return 'assets/images/concours_pa_epreuves.jpeg';
+    if (l.contains('qcm') ||
+        l.contains('entraînement') ||
+        l.contains('entrainement'))
+      return 'assets/images/quiz.jpeg';
     if (l.contains('exercice')) return 'assets/images/infraction_materiel.jpeg';
     if (l.contains('corrig')) return 'assets/images/concours_photolangage.jpeg';
-    if (l.contains('photolangage')) return 'assets/images/concours_photolangage.jpeg';
+    if (l.contains('photolangage'))
+      return 'assets/images/concours_photolangage.jpeg';
     if (l.contains('tableau')) return 'assets/images/concours_pa_epreuves.jpeg';
-    if (l.contains('analyse')) return 'assets/images/concours_connaissances_generales.jpeg';
-    if (l.contains('aptitude') || l.contains('logique')) return 'assets/images/quiz.jpeg';
+    if (l.contains('analyse'))
+      return 'assets/images/concours_connaissances_generales.jpeg';
+    if (l.contains('aptitude') || l.contains('logique'))
+      return 'assets/images/quiz.jpeg';
     return 'assets/images/concours_pa_epreuves.jpeg';
   }
 
   String _subtitleFor(String label) {
     final l = label.toLowerCase();
-    if (l.contains('méthodologie')) return "Conseils & stratégies pour l'épreuve";
+    if (l.contains('méthodologie'))
+      return "Conseils & stratégies pour l'épreuve";
     if (l.contains('fiche')) return 'Synthèse des points clés';
     if (l.contains('qcm')) return 'Questions à choix multiples';
     if (l.contains('exercice')) return 'Mises en situation pratiques';
@@ -1265,8 +1672,12 @@ class _ModuleCard extends StatelessWidget {
       builder: (context, s, _) {
         final locked = s.isLocked;
         final isDark = Theme.of(context).brightness == Brightness.dark;
-        final Color badgeBg = Colors.white.withValues(alpha: isDark ? 0.14 : 0.10);
-        final Color borderClr = Colors.white.withValues(alpha: isDark ? 0.18 : 0.14);
+        final Color badgeBg = Colors.white.withValues(
+          alpha: isDark ? 0.14 : 0.10,
+        );
+        final Color borderClr = Colors.white.withValues(
+          alpha: isDark ? 0.18 : 0.14,
+        );
 
         return LayoutBuilder(
           builder: (context, c) {
@@ -1296,17 +1707,26 @@ class _ModuleCard extends StatelessWidget {
             );
 
             final double titleH = _measureTextHeight(
-                text: title, style: titleStyle, maxWidth: textMaxWidth);
+              text: title,
+              style: titleStyle,
+              maxWidth: textMaxWidth,
+            );
             final double subH = subtitle.trim().isEmpty
                 ? 0
                 : _measureTextHeight(
-                    text: subtitle, style: subtitleStyle, maxWidth: textMaxWidth);
+                    text: subtitle,
+                    style: subtitleStyle,
+                    maxWidth: textMaxWidth,
+                  );
             final double bottomBlockH = math.max(
-                titleH + (subH > 0 ? (gapTitleSub + subH) : 0), ctaApproxH);
+              titleH + (subH > 0 ? (gapTitleSub + subH) : 0),
+              ctaApproxH,
+            );
             final double computedHeight =
                 pad + badgeHApprox + gapAfterBadge + bottomBlockH + pad;
-            final double cardHeight =
-                computedHeight < _minHeight ? _minHeight : computedHeight;
+            final double cardHeight = computedHeight < _minHeight
+                ? _minHeight
+                : computedHeight;
 
             return GestureDetector(
               onTap: () => _guardedOpen(context),
@@ -1322,10 +1742,12 @@ class _ModuleCard extends StatelessWidget {
                       children: [
                         Hero(
                           tag: 'hero_pa_exam_$tag',
-                          child: Image.asset(imagePath,
-                              fit: BoxFit.cover,
-                              alignment: Alignment.center,
-                              filterQuality: FilterQuality.high),
+                          child: Image.asset(
+                            imagePath,
+                            fit: BoxFit.cover,
+                            alignment: Alignment.center,
+                            filterQuality: FilterQuality.high,
+                          ),
                         ),
                         DecoratedBox(
                           decoration: BoxDecoration(
@@ -1349,25 +1771,31 @@ class _ModuleCard extends StatelessWidget {
                                 alignment: Alignment.topLeft,
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 10, vertical: 6),
+                                    horizontal: 10,
+                                    vertical: 6,
+                                  ),
                                   decoration: BoxDecoration(
                                     color: badgeBg,
                                     borderRadius: BorderRadius.circular(999),
                                     border: Border.all(color: borderClr),
                                   ),
-                                  child: Text('Module',
-                                      style: GoogleFonts.fustat(
-                                          fontWeight: FontWeight.w800,
-                                          fontSize: 12,
-                                          color: Colors.white)),
+                                  child: Text(
+                                    'Module',
+                                    style: GoogleFonts.fustat(
+                                      fontWeight: FontWeight.w800,
+                                      fontSize: 12,
+                                      color: Colors.white,
+                                    ),
+                                  ),
                                 ),
                               ),
                               if (locked)
                                 Align(
                                   alignment: Alignment.topRight,
                                   child: _PremiumBadge(
-                                    onTap: () => Navigator.of(context)
-                                        .pushNamed('/abonnement'),
+                                    onTap: () => Navigator.of(
+                                      context,
+                                    ).pushNamed('/abonnement'),
                                   ),
                                 ),
                               Positioned(
@@ -1378,16 +1806,20 @@ class _ModuleCard extends StatelessWidget {
                                   mainAxisSize: MainAxisSize.min,
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text(title,
-                                        softWrap: true,
-                                        overflow: TextOverflow.visible,
-                                        style: titleStyle),
+                                    Text(
+                                      title,
+                                      softWrap: true,
+                                      overflow: TextOverflow.visible,
+                                      style: titleStyle,
+                                    ),
                                     if (subtitle.trim().isNotEmpty) ...[
                                       const SizedBox(height: gapTitleSub),
-                                      Text(subtitle,
-                                          softWrap: true,
-                                          overflow: TextOverflow.visible,
-                                          style: subtitleStyle),
+                                      Text(
+                                        subtitle,
+                                        softWrap: true,
+                                        overflow: TextOverflow.visible,
+                                        style: subtitleStyle,
+                                      ),
                                     ],
                                   ],
                                 ),
@@ -1396,7 +1828,8 @@ class _ModuleCard extends StatelessWidget {
                                 right: 0,
                                 bottom: 0,
                                 child: _RoundCTA(
-                                    onTap: () => _guardedOpen(context)),
+                                  onTap: () => _guardedOpen(context),
+                                ),
                               ),
                             ],
                           ),
@@ -1426,12 +1859,15 @@ class _PremiumBadge extends StatelessWidget {
         color: Colors.black.withValues(alpha: 0.36),
         borderRadius: BorderRadius.circular(999),
         border: Border.all(
-            color: Colors.white.withValues(alpha: 0.24), width: 1),
+          color: Colors.white.withValues(alpha: 0.24),
+          width: 1,
+        ),
         boxShadow: const [
           BoxShadow(
-              blurRadius: 18,
-              offset: Offset(0, 10),
-              color: Color(0x22000000)),
+            blurRadius: 18,
+            offset: Offset(0, 10),
+            color: Color(0x22000000),
+          ),
         ],
       ),
       child: Row(
@@ -1439,12 +1875,15 @@ class _PremiumBadge extends StatelessWidget {
         children: [
           const Icon(Icons.lock_rounded, size: 14, color: Colors.white),
           const SizedBox(width: 6),
-          Text('Premium',
-              style: GoogleFonts.poppins(
-                  fontSize: 12,
-                  fontWeight: FontWeight.w900,
-                  color: Colors.white,
-                  letterSpacing: .2)),
+          Text(
+            'Premium',
+            style: GoogleFonts.poppins(
+              fontSize: 12,
+              fontWeight: FontWeight.w900,
+              color: Colors.white,
+              letterSpacing: .2,
+            ),
+          ),
         ],
       ),
     );
@@ -1452,9 +1891,10 @@ class _PremiumBadge extends StatelessWidget {
     return Material(
       color: Colors.transparent,
       child: InkWell(
-          onTap: onTap,
-          borderRadius: BorderRadius.circular(999),
-          child: child),
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(999),
+        child: child,
+      ),
     );
   }
 }
@@ -1472,18 +1912,23 @@ class _RoundCTA extends StatelessWidget {
         customBorder: const StadiumBorder(),
         onTap: onTap,
         child: Padding(
-          padding:
-              const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
           child: Row(
             children: [
-              const Icon(Icons.arrow_forward_rounded,
-                  color: Colors.white, size: 22),
+              const Icon(
+                Icons.arrow_forward_rounded,
+                color: Colors.white,
+                size: 22,
+              ),
               const SizedBox(width: 6),
-              Text('Découvrir',
-                  style: GoogleFonts.fustat(
-                      color: Colors.white,
-                      fontWeight: FontWeight.w800,
-                      fontSize: 13)),
+              Text(
+                'Découvrir',
+                style: GoogleFonts.fustat(
+                  color: Colors.white,
+                  fontWeight: FontWeight.w800,
+                  fontSize: 13,
+                ),
+              ),
             ],
           ),
         ),
@@ -1513,6 +1958,15 @@ class _StubPage extends StatelessWidget {
 const Map<String, String> redirectConfigPA = {
   '/pa/cadres_juridiques': '/pa_scolarité_pages/cadres_juridiques',
   '/pa/pp/gav': '/pa_scolarité_pages/procedure_penale/pp_gav',
+};
+
+// Catégories PA ouvertes directement sur leur page dédiée (hub premium),
+// sans passer par la liste générique de sous-catégories (_CategoryDetailPage).
+// Visuellement plus léger : les sous-parties sont présentées dans le hub.
+const Set<String> directOpenRoutesPA = {
+  '/pa_exam/concours/tests_psychotechniques',
+  '/pa_exam/concours/connaissances_generales',
+  '/pa_exam/concours/photolangage',
 };
 
 // Catégories PA – MODE CONCOURS
@@ -1647,66 +2101,10 @@ const Map<UserMode, Map<Track, List<CategoryConfig>>> categoriesConfigPA = {
       // ------------------------------------------------------------------
       // 5. FRANÇAIS
       // ------------------------------------------------------------------
-      CategoryConfig(
-        label: 'Français',
-        badge: 'Langue & grammaire',
-        image: 'assets/images/contre_nation.jpeg',
-        route: '/pa_exam/concours/francais',
-        subcategories: [
-          SubCategoryConfig(
-            label: 'Fiches de cours',
-            // à l’intérieur : liens logiques, accord du participe, pluriel,
-            // adjectifs, mots invariables, temps des verbes, etc.
-            route: '/pa_exam/concours/francais/fiches_de_cours',
-          ),
-          SubCategoryConfig(
-            label: 'Entraînements — QCM',
-            route: '/pa_exam/concours/francais/entrainements_qcm',
-          ),
-          SubCategoryConfig(
-            label: 'Entraînements — Exercices',
-            route: '/pa_exam/concours/francais/entrainements_exercices',
-          ),
-          SubCategoryConfig(
-            label: 'Entraînements — Corrigés',
-            route: '/pa_exam/concours/francais/entrainements_corriges',
-          ),
-        ],
-      ),
 
       // ------------------------------------------------------------------
       // 6. ÉTUDE DE TEXTE
       // ------------------------------------------------------------------
-      CategoryConfig(
-        label: 'Étude de texte',
-        badge: 'Analyse & rédaction',
-        image: 'assets/images/diffusion_images.jpeg',
-        route: '/pa_exam/concours/etude_texte',
-        subcategories: [
-          SubCategoryConfig(
-            label: 'Méthodologie de l’épreuve',
-            route: '/pa_exam/concours/etude_texte/methodologie',
-          ),
-          SubCategoryConfig(
-            label: 'Fiches de cours',
-            // à l’intérieur : sens des mots, préfixes/suffixes, forme de la phrase,
-            // conjugaison, etc.
-            route: '/pa_exam/concours/etude_texte/fiches_de_cours',
-          ),
-          SubCategoryConfig(
-            label: 'Entraînements — QCM',
-            route: '/pa_exam/concours/etude_texte/entrainements_qcm',
-          ),
-          SubCategoryConfig(
-            label: 'Entraînements — Exercices',
-            route: '/pa_exam/concours/etude_texte/entrainements_exercices',
-          ),
-          SubCategoryConfig(
-            label: 'Entraînements — Corrigés',
-            route: '/pa_exam/concours/etude_texte/entrainements_corriges',
-          ),
-        ],
-      ),
     ],
   },
 
@@ -1734,12 +2132,3 @@ class _DeckItem {
   });
 }
 
-class _MiniSpec {
-  final String title, subtitle, image, route;
-  const _MiniSpec({
-    required this.title,
-    required this.subtitle,
-    required this.image,
-    required this.route,
-  });
-}

@@ -1,0 +1,536 @@
+[
+  {
+    "slug": "numerique-chantage-video-intime",
+    "title": "« Si tu ne paies pas ce soir, je l'envoie à ta liste de contacts »",
+    "theme_slug": "numerique",
+    "difficulty": "moyen",
+    "is_free": false,
+    "is_published": true,
+    "status": "published",
+    "year": 2026,
+    "month": "Mars",
+    "total_points": 15,
+    "estimated_minutes": 25,
+    "situation_text": "Il est 21 h 10. Vous êtes de permanence à l'accueil du commissariat. M. VASSEUR, 22 ans, étudiant, se présente seul. Il parle bas, regarde plusieurs fois derrière lui, et met plus d'une minute avant d'expliquer ce qui l'amène.\n\nIl y a quatre jours, il a échangé sur une application de rencontre avec un profil se présentant comme une jeune femme de son âge. La conversation s'est déplacée vers une messagerie, puis vers un appel vidéo au cours duquel il s'est dévêtu. Il a compris depuis que l'appel était enregistré.\n\nDepuis, il reçoit des messages d'un compte inconnu réclamant 800 euros en cryptomonnaie. Le dernier, reçu il y a une heure : « Si tu ne paies pas ce soir, je l'envoie à ta liste de contacts. » Une capture d'écran de sa liste d'amis est jointe au message, ainsi qu'une image extraite de la vidéo.\n\nIl a déjà versé 300 euros avant-hier. Les demandes n'ont pas cessé, elles ont augmenté.\n\nIl vous dit : « Je ne veux pas que mes parents le sachent. Est-ce que je peux juste payer le reste et qu'on n'en parle plus ? Vous allez me demander de montrer la vidéo ? »",
+    "questions": [
+      {
+        "position": 1,
+        "max_points": 5,
+        "label": "Comment accueillez-vous M. VASSEUR et que lui répondez-vous sur son souhait de payer et sur sa crainte d'avoir à montrer la vidéo ?",
+        "hint": "La honte est ici le principal obstacle au dépôt de plainte. Votre posture conditionne tout le reste.",
+        "perfect": "Je commence par le recevoir à l'écart du hall. Un jeune homme qui met une minute à parler et surveille ses arrières n'exposera rien dans un espace ouvert : la confidentialité n'est pas ici un confort, c'est la condition matérielle du recueil.\n\nJ'adopte ensuite une attitude neutre et dépourvue de jugement. Il est victime d'une escroquerie organisée, pas responsable de ce qui lui arrive. Je le lui dis explicitement, car la honte est ce qui fait renoncer la plupart des victimes de ce type de faits, et je lui indique que ce scénario est fréquent et connu de nos services. Je ne fais aucune remarque, aucune plaisanterie, aucun commentaire sur les circonstances de la vidéo, y compris hors de sa présence.\n\nJe réponds clairement à sa question sur la vidéo : je n'ai pas à la visionner, et je ne la lui demande pas. Ce dont j'ai besoin, ce sont les messages de chantage, les identifiants des comptes et les traces des paiements. Cette réponse le soulage d'une crainte qui, laissée sans réponse, l'aurait fait repartir.\n\nSur son souhait de payer, je suis franc sans le culpabiliser. Il a déjà versé 300 euros et les demandes ont augmenté : c'est la logique même de ce type de chantage, le paiement démontre la solvabilité et relance l'exigence. Payer ne met pas fin aux faits, cela les prolonge. Je le lui explique comme un constat, pas comme un reproche sur les 300 euros déjà versés.\n\nEnfin, je ne lui promets ni la suppression de la vidéo ni l'identification rapide de l'auteur. Je lui explique ce que la procédure permet réellement.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Recevoir à l'écart, hors de l'accueil ouvert",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Faits intimes, victime en difficulté à parler : le comptoir est matériellement inadapté au recueil.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["à l'écart", "local", "bureau", "discrétion", "confidentialité", "hors du hall", "pièce"]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Adopter une posture sans jugement et déculpabiliser la victime",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Cœur du cas. La honte fait renoncer ces victimes ; un mot déplacé, même hors de sa présence, est une faute professionnelle.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["sans jugement", "ne pas culpabiliser", "déculpabiliser", "il est victime", "pas de sa faute", "neutralité", "aucune remarque", "bienveillance"]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Répondre qu'il n'y a pas lieu de visionner la vidéo",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Crainte explicitement formulée. Y répondre directement évite qu'il reparte sans déposer plainte.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["pas besoin de la vidéo", "ne pas visionner", "pas nécessaire", "ne pas la demander", "rassurer sur ce point"]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Expliquer que payer relance le chantage au lieu d'y mettre fin",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Les 300 euros déjà versés suivis d'une hausse des demandes en sont la démonstration dans le cas lui-même.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["ne pas payer", "cesser les paiements", "le paiement relance", "les demandes augmentent", "ne pas céder", "sans fin"]
+              }
+            ]
+          },
+          {
+            "position": 5,
+            "label": "Ne promettre ni suppression de la vidéo ni identification rapide",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Comptes à l'étranger, paiements en cryptomonnaie : promettre un résultat serait mentir.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["ne pas promettre", "aucune promesse", "expliquer les limites", "rester honnête", "ne pas garantir"]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "max_points": 5,
+        "label": "Quels éléments recueillez-vous et quels conseils de préservation lui donnez-vous immédiatement ?",
+        "hint": "Certains réflexes spontanés de la victime détruisent les éléments les plus utiles.",
+        "perfect": "Je recueille l'ensemble des éléments numériques encore disponibles. Les messages de chantage, en intégralité et non par extraits choisis, l'identifiant du compte émetteur, le profil d'origine sur l'application de rencontre, la capture de sa liste de contacts jointe à la menace, ainsi que l'horodatage de chaque échange. J'y ajoute les preuves du versement des 300 euros : identifiant de la transaction, adresse du portefeuille destinataire, plateforme utilisée, date et heure. Ces éléments financiers sont souvent les plus exploitables du dossier.\n\nJe lui donne ensuite des consignes de préservation précises, car ses réflexes spontanés sont exactement ce qui détruirait le dossier. Je lui demande de ne pas supprimer la conversation, de ne pas bloquer le compte pour l'instant et de ne pas supprimer son propre compte : effacer ferait disparaître les seuls éléments dont nous disposons. Je lui indique de ne plus répondre et de ne plus rien verser, mais de conserver les messages qui continueraient d'arriver.\n\nJe lui conseille de restreindre temporairement la visibilité de sa liste de contacts et de ses publications, ce qui réduit la portée d'une éventuelle diffusion sans détruire d'éléments.\n\nJe recueille enfin les éléments de contexte utiles : ancienneté du profil, mode d'entrée en contact, langue employée, éventuelles incohérences relevées. Je consigne également le retentissement sur lui, son état à l'accueil faisant partie de mes constatations.\n\nJe l'informe qu'il peut demander sans attendre le retrait des contenus auprès de la plateforme, et je note l'ensemble dans ma procédure.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Recueillir les messages et identifiants de comptes en intégralité",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Les extraits choisis appauvrissent le dossier : c'est la conversation complète et horodatée qui vaut.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["messages", "captures", "conversation complète", "identifiant", "compte", "profil", "horodatage", "pseudo"]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Recueillir les traces des paiements en cryptomonnaie",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Souvent omis alors que la transaction est fréquemment l'élément le plus traçable du dossier.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["transaction", "paiement", "cryptomonnaie", "portefeuille", "plateforme", "300 euros", "virement", "identifiant de transaction"]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Interdire la suppression de la conversation et du compte",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Réflexe spontané le plus destructeur : par honte, la victime efface tout et le dossier devient vide.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["ne rien effacer", "ne pas supprimer", "conserver", "ne pas bloquer", "ne pas supprimer le compte", "préserver"]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Faire cesser les réponses et les versements",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Complément indispensable de la préservation : conserver sans alimenter.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["ne plus répondre", "ne plus payer", "cesser tout contact", "ne pas alimenter", "ne plus verser"]
+              }
+            ]
+          },
+          {
+            "position": 5,
+            "label": "Conseiller la restriction de visibilité et le signalement à la plateforme",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Réduit la portée d'une diffusion sans détruire d'éléments — l'équilibre exact recherché.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["restreindre", "paramètres de confidentialité", "visibilité", "signaler à la plateforme", "demander le retrait", "compte privé"]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 3,
+        "max_points": 5,
+        "label": "M. VASSEUR hésite encore à déposer plainte et vous demande ce qui va se passer ensuite. Que lui expliquez-vous, et vers quoi l'orientez-vous ?",
+        "hint": "Pensez à l'orientation extérieure et à son état, pas seulement à la suite judiciaire.",
+        "perfect": "Je lui explique la suite de manière concrète et sans jargon. Sa plainte sera enregistrée puis transmise au service compétent en matière d'atteintes numériques. Les investigations porteront sur les comptes, les traces techniques et les flux financiers. Je lui précise que ces dossiers impliquent souvent des auteurs opérant depuis l'étranger et en réseau, ce qui allonge les délais : je préfère l'annoncer plutôt qu'il l'apprenne par une absence de nouvelles.\n\nJe lève le malentendu qui le retient. Déposer plainte n'entraîne aucune information de ses parents : il est majeur, la procédure ne les concerne pas. Cette crainte, formulée dès le début de l'entretien, est probablement son principal frein.\n\nJe lui indique aussi qu'il peut demander le retrait des contenus auprès de la plateforme sans attendre l'issue de la procédure, et je lui remets les coordonnées des dispositifs nationaux d'assistance aux victimes d'actes numériques.\n\nJe reste attentif à son état. Une victime de ce type de chantage peut se trouver en grande détresse, en particulier le soir de l'échéance annoncée. Je lui propose les coordonnées d'un service d'aide aux victimes ou d'un psychologue, je m'assure qu'il n'est pas isolé ce soir, et je l'invite à revenir ou à rappeler si la pression reprend.\n\nEnfin, je rends compte à mon chef de service, notamment de l'échéance annoncée pour le soir même, et je m'assure que la procédure est transmise sans délai au service compétent.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Expliquer concrètement la suite donnée à la plainte",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Une victime informée du parcours de son dossier renonce beaucoup moins souvent.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["plainte enregistrée", "service compétent", "investigations", "transmission", "expliquer la procédure", "suites"]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Annoncer honnêtement les délais et la difficulté des investigations",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Auteurs souvent à l'étranger et en réseau. Laisser espérer une résolution rapide est déloyal.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["délais", "étranger", "difficile", "réseau organisé", "sans garantie", "expliquer les limites"]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Lever la crainte concernant l'information de ses parents",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Il est majeur : ses parents ne sont pas informés. C'est le frein qu'il exprime en premier, il faut y répondre.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["majeur", "parents ne seront pas informés", "pas prévenus", "confidentialité", "rassurer", "aucune information à la famille"]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Orienter vers les dispositifs d'aide et le retrait des contenus",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "L'orientation extérieure fait partie de la prise en charge, elle ne s'arrête pas au procès-verbal.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["aide aux victimes", "association", "dispositif d'assistance", "signalement", "retrait des contenus", "plateforme", "orientation"]
+              }
+            ]
+          },
+          {
+            "position": 5,
+            "label": "Évaluer sa détresse et s'assurer qu'il n'est pas isolé",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Point le plus important du cas : l'échéance est annoncée pour le soir même. Ces situations exposent à un passage à l'acte.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["état psychologique", "détresse", "isolement", "ne pas rester seul", "psychologue", "soutien", "proche", "vigilance"]
+              }
+            ]
+          },
+          {
+            "position": 6,
+            "label": "Rendre compte et transmettre sans délai",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "L'échéance du soir même justifie une transmission immédiate plutôt qu'un traitement différé.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["rendre compte", "chef de service", "hiérarchie", "transmettre", "sans délai", "urgence"]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "vulnerables-personne-agee-desorientee-centre-commercial",
+    "title": "Elle cherche sa voiture depuis trois heures et ne sait plus où elle habite",
+    "theme_slug": "personnes-vulnerables",
+    "difficulty": "facile",
+    "is_free": true,
+    "is_published": true,
+    "status": "published",
+    "year": 2026,
+    "month": "Avril",
+    "total_points": 15,
+    "estimated_minutes": 20,
+    "situation_text": "Il est 18 h 45, un vendredi. Le service de sécurité d'un centre commercial vous signale une femme âgée qui erre dans les galeries depuis le milieu de l'après-midi.\n\nÀ votre arrivée, Mme CHEVALIER, environ 80 ans, est assise près d'une fontaine. Elle est correctement vêtue mais porte des chaussons. Elle tient un sac à main et un ticket de caisse daté du jour, à 15 h 20.\n\nElle vous dit chercher sa voiture. Interrogée, elle donne son nom sans difficulté, mais se trompe sur l'année en cours. Elle indique une adresse dans une commune située à quarante kilomètres, puis, quelques minutes plus tard, une autre adresse. Elle mentionne un mari qu'elle doit rejoindre ; l'agent de sécurité vous glisse qu'elle lui a dit plus tôt être veuve.\n\nSon sac contient un porte-monnaie avec 12 euros, un trousseau de clés, aucun téléphone et aucun document d'identité. Une ordonnance à son nom, datée de sept mois, mentionne un traitement pour l'hypertension.\n\nElle est calme mais commence à s'agacer : « Je vais très bien, laissez-moi, mon mari va s'inquiéter. » Le centre commercial ferme dans une heure et quart.",
+    "questions": [
+      {
+        "position": 1,
+        "max_points": 5,
+        "label": "Quelle analyse faites-vous de la situation et quelles sont vos premières préoccupations ?",
+        "hint": "Distinguez ce que vous constatez de ce que vous supposez. Plusieurs hypothèses restent ouvertes.",
+        "perfect": "Je considère être en présence d'une personne âgée vulnérable, en situation de désorientation, et non d'une personne simplement égarée. Plusieurs éléments convergent : la perte des repères temporels, des adresses successives et contradictoires, la mention d'un mari alors qu'elle se serait dite veuve, les chaussons portés à l'extérieur, l'absence de téléphone et de document d'identité. Aucun de ces éléments n'est concluant isolément, mais leur accumulation l'est.\n\nJe reste prudent sur l'interprétation. Une désorientation peut relever d'un trouble cognitif installé, mais aussi d'une cause médicale aiguë et réversible : hypoglycémie, déshydratation, infection, effet ou interruption d'un traitement. L'ordonnance pour l'hypertension datée de sept mois est un indice à ne pas surinterpréter, mais à signaler aux secours. Je ne pose aucun diagnostic, ce n'est pas mon rôle.\n\nMa première préoccupation est son état physique. Elle est sans surveillance depuis au moins 15 h 20 d'après le ticket, soit plus de trois heures : je m'assure qu'elle a bu, mangé, et je recherche des signes de malaise, de chute ou de blessure.\n\nMa deuxième préoccupation est de ne pas la laisser repartir seule. Elle évoque une voiture et une commune à quarante kilomètres : si elle est effectivement venue en conduisant, la question de sa capacité à reprendre le volant se pose immédiatement, pour elle comme pour autrui.\n\nMa troisième préoccupation est le temps. La fermeture du centre dans une heure et quart me prive d'un lieu abrité et de l'appui du service de sécurité : je dois agir sans attendre.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Identifier une personne vulnérable et désorientée, pas une simple égarée",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Qualifier correctement la situation conditionne tout le reste de l'intervention.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["personne vulnérable", "désorientée", "troubles cognitifs", "confusion", "perte de repères", "personne âgée"]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Relever les indices convergents sans en tirer un diagnostic",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Chaussons, adresses contradictoires, erreur sur l'année, absence de papiers : le faisceau compte, pas l'élément isolé.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["chaussons", "adresses contradictoires", "erreur sur l'année", "sans papiers", "sans téléphone", "faisceau d'indices", "constatations"]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Envisager une cause médicale aiguë et réversible",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Erreur fréquente : attribuer d'emblée la confusion à l'âge, en manquant une hypoglycémie ou une infection.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["cause médicale", "malaise", "hypoglycémie", "déshydratation", "traitement", "ne pas attribuer à l'âge", "urgence médicale"]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Vérifier son état physique après plus de trois heures d'errance",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Le ticket de 15 h 20 documente la durée. Boire, manger, chercher trace de chute.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["état physique", "boire", "manger", "chute", "blessure", "fatigue", "santé", "vérifier"]
+              }
+            ]
+          },
+          {
+            "position": 5,
+            "label": "Poser la question du véhicule et de la conduite",
+            "weight": 1.0,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Une personne désorientée au volant est un danger pour elle-même et pour autrui.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["véhicule", "voiture", "conduite", "ne pas la laisser conduire", "danger", "reprendre le volant"]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "max_points": 5,
+        "label": "Elle s'agace et veut partir seule. Comment vous comportez-vous concrètement avec elle ?",
+        "hint": "La contrainte est le dernier recours. L'essentiel se joue dans la manière de communiquer.",
+        "perfect": "J'adapte d'abord ma communication. Je me place face à elle, à sa hauteur, je parle calmement, lentement, avec des phrases courtes. Je me présente à nouveau si nécessaire, sans manifester d'impatience si elle a oublié. Je me tiens à distance respectueuse et j'annonce mes gestes avant de les faire.\n\nJe ne la contredis pas frontalement sur le mari. Lui opposer qu'elle est veuve serait brutal, potentiellement faux dans son vécu du moment, et provoquerait une détresse ou une opposition dont je n'ai pas besoin. Je reste sur du concret et du présent : je lui propose de s'asseoir, de boire quelque chose, je lui explique que je vais l'aider à rentrer chez elle et que nous allons chercher ensemble comment joindre ses proches.\n\nJe ne lui mens pas pour autant. Je ne lui invente pas un rendez-vous avec son mari : je m'appuie sur ce qui est vrai, à savoir que je veux m'assurer qu'elle rentre en sécurité.\n\nJe cherche à obtenir son adhésion plutôt qu'à m'imposer. La contrainte physique n'a de place que si elle veut effectivement partir seule et se met en danger réel, par exemple en s'engageant sur la voie publique ou au volant. Dans cette hypothèse, je m'y oppose de la manière la moins intrusive possible, avec l'appui de mon binôme, et je fais venir les secours sans délai.\n\nJe reste attentif à sa dignité tout du long : elle est agacée parce qu'elle perçoit qu'on la traite comme incapable, devant du public. Je limite l'exposition en la conduisant dans un endroit plus calme.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Adapter la communication : calme, phrases courtes, à sa hauteur",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Technique de base face à une personne désorientée. Un débit rapide aggrave la confusion et l'opposition.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["calmement", "lentement", "phrases courtes", "à sa hauteur", "patience", "répéter sans impatience", "ton rassurant"]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Ne pas la contredire frontalement sur son mari",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Lui asséner qu'elle est veuve provoquerait une détresse inutile. Ramener au présent concret plutôt que corriger.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["ne pas la contredire", "ne pas la brusquer", "ramener au présent", "éviter la confrontation", "sans l'affronter", "ne pas corriger brutalement"]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Ne pas lui mentir pour obtenir sa coopération",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Nuance délicate : ne pas contredire n'autorise pas à inventer. La loyauté reste due à une personne vulnérable.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["ne pas mentir", "rester honnête", "loyauté", "sans tromper", "dire la vérité"]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Rechercher l'adhésion et réserver la contrainte au danger réel",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "La contrainte physique sur une femme de 80 ans est un dernier recours, proportionné et motivé.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["adhésion", "convaincre", "sans contrainte", "dernier recours", "proportionnalité", "l'empêcher de se mettre en danger"]
+              }
+            ]
+          },
+          {
+            "position": 5,
+            "label": "Préserver sa dignité et limiter l'exposition au public",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Son agacement vient largement d'être traitée comme incapable devant témoins.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["dignité", "respect", "à l'écart", "sans l'exposer", "discrétion", "endroit calme", "public"]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 3,
+        "max_points": 5,
+        "label": "Quelles démarches engagez-vous pour la prendre en charge et pour la raccompagner, sachant que le centre ferme bientôt ?",
+        "hint": "Vous ne pouvez ni la laisser partir, ni la garder indéfiniment. Quels relais mobilisez-vous ?",
+        "perfect": "J'engage en parallèle l'identification et la prise en charge médicale, sans attendre que l'une aboutisse pour lancer l'autre.\n\nPour l'identification, j'exploite ce dont je dispose : le nom qu'elle donne, l'ordonnance qui porte son nom et celui d'un médecin, les clés, le ticket de caisse qui situe son passage à 15 h 20 et peut permettre au centre de retrouver le mode de paiement, donc éventuellement une carte bancaire à son nom. Je fais interroger les fichiers de personnes disparues, car une famille peut déjà l'avoir signalée. Je fais également vérifier si un véhicule à son nom se trouve sur le parking, ce qui confirmerait sa venue en voiture.\n\nPour l'aspect médical, je fais intervenir les secours. Après plus de trois heures d'errance, une désorientation d'origine indéterminée et un traitement en cours, un avis médical s'impose : je ne suis pas en mesure d'exclure une cause aiguë, et une évaluation permettra de décider d'une orientation adaptée.\n\nJe rends compte au centre d'information et de commandement dès le début, en signalant la contrainte de fermeture du centre commercial. Cette contrainte de temps doit être connue de ma hiérarchie car elle conditionne le délai dans lequel une solution doit être trouvée.\n\nJe recherche les proches. Si un membre de la famille est identifié et joignable, j'organise une remise en m'assurant qu'elle est faite à une personne légitime, et je m'assure que la personne est en mesure de la prendre en charge. À défaut de famille, et si un avis médical ne conduit pas à une hospitalisation, je sollicite les relais compétents en matière de personnes vulnérables.\n\nEn aucun cas je ne la laisse repartir seule ni ne la dépose devant une adresse non vérifiée. Je rédige un compte rendu détaillé de mes constatations, y compris ses propos contradictoires, car ces éléments seront utiles à la famille comme aux services sociaux.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Exploiter les éléments disponibles pour l'identifier",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Ordonnance, ticket de caisse, clés : le cas fournit plusieurs pistes concrètes, à condition de les voir.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["ordonnance", "médecin", "ticket de caisse", "identifier", "nom", "clés", "carte bancaire", "recherches"]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Faire vérifier les signalements de disparition",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Après trois heures, un proche a pu signaler sa disparition : le rapprochement est immédiat et souvent décisif.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["disparition", "signalement", "fichier", "vérifier", "recherche", "cic"]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Faire intervenir les secours pour un avis médical",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Le policier ne peut exclure une cause médicale aiguë. Sauter cette étape est l'erreur la plus grave du cas.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["secours", "pompiers", "samu", "médecin", "avis médical", "évaluation", "bilan"]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Rechercher les proches et sécuriser la remise",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Remettre une personne vulnérable suppose de vérifier la légitimité et la capacité de celui qui la reçoit.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["famille", "proches", "contacter", "remise", "personne légitime", "s'assurer", "vérifier"]
+              }
+            ]
+          },
+          {
+            "position": 5,
+            "label": "Ne jamais la laisser repartir seule ni à une adresse non vérifiée",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Elle a donné deux adresses contradictoires. La déposer devant l'une d'elles serait un abandon déguisé.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["ne pas la laisser seule", "ne pas la déposer", "adresse non vérifiée", "ne pas l'abandonner", "prise en charge"]
+              }
+            ]
+          },
+          {
+            "position": 6,
+            "label": "Rendre compte et consigner les constatations",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Les propos contradictoires consignés serviront à la famille et aux services sociaux ensuite.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["rendre compte", "cic", "hiérarchie", "compte rendu", "consigner", "constatations", "rapport"]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

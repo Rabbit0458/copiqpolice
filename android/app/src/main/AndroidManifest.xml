@@ -24,6 +24,41 @@
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+
+            <!-- ================================================================
+                 DEEP LINKS — schema custom copiqpolice://
+                 Ajoute le 2026-07-26.
+
+                 Le service lib/core/services/deep_links_service.dart et le
+                 handler cas pratique documentaient ce schema depuis des mois,
+                 mais AUCUN intent-filter ne le declarait : sur Android, les
+                 liens copiqpolice://... n'ouvraient jamais l'application.
+
+                 Ce filtre est egalement indispensable au retour de connexion
+                 OAuth (Sign in with Apple / Google) : Supabase renvoie vers
+                 copiqpolice://login-callback apres authentification.
+                 ================================================================ -->
+            <intent-filter android:autoVerify="false">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="copiqpolice"/>
+            </intent-filter>
+
+            <!-- ================================================================
+                 APP LINKS — https://app.copiq.fr/c/<slug>
+                 Utilise par CpDeepLinksHandler pour le partage de cas pratiques.
+
+                 android:autoVerify="true" suppose que le fichier
+                 /.well-known/assetlinks.json soit publie sur le domaine.
+                 Voir docs/cas_pratique/DEEP_LINKS_NATIVE_CONFIG.md
+                 ================================================================ -->
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https" android:host="app.copiq.fr"/>
+            </intent-filter>
         </activity>
         <!-- Don't delete the meta-data below.
              This is used by the Flutter tool to generate GeneratedPluginRegistrant.java -->

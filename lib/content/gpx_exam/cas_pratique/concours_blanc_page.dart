@@ -54,14 +54,27 @@ class _CasPratiqueConcoursBlancPageState
   String? _mockExamId;
   MockExamAttempt? _attempt;
 
-  /// Cas chargés (en réalité on charge 1 cas pour l'exemple ; pour un mock
-  /// multi-cas, la migration prévoit la jointure cases — à enrichir côté
-  /// repo dans une session dédiée).
-  CaseDetail? _detail;
+  /// Tous les cas attachés au concours blanc (via `cas_pratique_mock_exam_cases`,
+  /// ordonnés par `position`). Un concours blanc multi-épreuves enchaîne les
+  /// questions de chaque cas dans l'ordre, sans retour en arrière.
+  List<CaseDetail> _cases = const [];
+  int _caseIndex = 0;
+  CaseDetail? get _detail => _caseIndex < _cases.length ? _cases[_caseIndex] : null;
+
   final Map<String, TextEditingController> _controllers = {};
   final Map<String, Timer?> _debouncers = {};
   String? _currentQuestionId;
   int _qIndex = 0;
+
+  int get _totalQuestions =>
+      _cases.fold(0, (sum, c) => sum + c.questions.length);
+  int get _globalQuestionNumber {
+    var n = _qIndex;
+    for (var i = 0; i < _caseIndex; i++) {
+      n += _cases[i].questions.length;
+    }
+    return n + 1;
+  }
 
   // Timer global
   Timer? _ticker;
@@ -125,27 +138,45 @@ class _CasPratiqueConcoursBlancPageState
       if (attempt == null) {
         throw StateError('Impossible de démarrer le concours blanc.');
       }
-      // 2) Charge le premier cas attaché au mock — pour la démo on tente de
-      //    récupérer le premier cas du repo (à étendre quand la jointure
-      //    cas_pratique_mock_exam_cases sera exposée via repo).
-      final cases = await _repo.listCases(limit: 1);
-      if (cases.isEmpty) {
-        throw StateError('Aucun cas disponible pour ce concours blanc.');
+      // 2) Charge tous les cas attachés au mock, dans l'ordre (position).
+      //    Fallback sur un seul cas si le mock n'a pas encore été configuré
+      //    avec des entrées dans cas_pratique_mock_exam_cases.
+      final caseIds = await _mockSvc.listCaseIdsForExam(argId);
+      List<CaseDetail> cases;
+      if (caseIds.isNotEmpty) {
+        cases = [];
+        for (final id in caseIds) {
+          cases.add(await _repo.getCaseDetail(id));
+        }
+      } else {
+        final summaries = await _repo.listCases(limit: 1);
+        if (summaries.isEmpty) {
+          throw StateError('Aucun cas disponible pour ce concours blanc.');
+        }
+        cases = [await _repo.getCaseDetail(summaries.first.slug)];
       }
-      final detail = await _repo.getCaseDetail(cases.first.slug);
+      // Exclut défensivement tout cas sans question (ne devrait jamais
+      // arriver côté données publiées, mais évite un crash sur .first).
+      cases = cases.where((c) => c.questions.isNotEmpty).toList(growable: false);
+      if (cases.isEmpty) {
+        throw StateError('Ce concours blanc ne contient aucune question.');
+      }
 
-      // 3) Init controllers + autosave per question
-      for (final q in detail.questions) {
-        final ctrl = TextEditingController();
-        _controllers[q.id] = ctrl;
-        ctrl.addListener(() => _scheduleAutosave(attempt.attemptId, q.id, ctrl));
+      // 3) Init controllers + autosave pour TOUTES les questions de TOUS les cas
+      for (final c in cases) {
+        for (final q in c.questions) {
+          final ctrl = TextEditingController();
+          _controllers[q.id] = ctrl;
+          ctrl.addListener(() => _scheduleAutosave(attempt.attemptId, q.id, ctrl));
+        }
       }
 
       if (!mounted) return;
       setState(() {
         _attempt = attempt;
-        _detail = detail;
-        _currentQuestionId = detail.questions.first.id;
+        _cases = cases;
+        _caseIndex = 0;
+        _currentQuestionId = cases.first.questions.first.id;
         _qIndex = 0;
         _loading = false;
       });
@@ -200,14 +231,21 @@ class _CasPratiqueConcoursBlancPageState
 
   // ─── Navigation entre questions ─────────────────────────────────────────
 
-  bool get _hasNext =>
+  bool get _hasNextQuestionInCase =>
       _detail != null && _qIndex + 1 < _detail!.questions.length;
+  bool get _hasNextCase => _caseIndex + 1 < _cases.length;
+  bool get _hasNext => _hasNextQuestionInCase || _hasNextCase;
 
   void _goNext() {
     if (!_hasNext) return;
     HapticFeedback.selectionClick();
     setState(() {
-      _qIndex++;
+      if (_hasNextQuestionInCase) {
+        _qIndex++;
+      } else {
+        _caseIndex++;
+        _qIndex = 0;
+      }
       _currentQuestionId = _detail!.questions[_qIndex].id;
     });
   }
@@ -320,8 +358,11 @@ class _CasPratiqueConcoursBlancPageState
     if (_loading) return 'Préparation…';
     if (_submitted) return 'Soumis ✓';
     if (_detail != null) {
-      final total = _detail!.questions.length;
-      return 'Question ${_qIndex + 1} / $total';
+      if (_cases.length > 1) {
+        return 'Cas ${_caseIndex + 1} / ${_cases.length} · '
+            'Question $_globalQuestionNumber / $_totalQuestions';
+      }
+      return 'Question ${_qIndex + 1} / ${_detail!.questions.length}';
     }
     return null;
   }
@@ -344,7 +385,10 @@ class _CasPratiqueConcoursBlancPageState
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 Text(
-                  'QUESTION ${_qIndex + 1} / ${detail.questions.length}',
+                  _cases.length > 1
+                      ? 'CAS ${_caseIndex + 1}/${_cases.length} — ${detail.summary.title.toUpperCase()} · '
+                          'QUESTION $_globalQuestionNumber/$_totalQuestions'
+                      : 'QUESTION ${_qIndex + 1} / ${detail.questions.length}',
                   style: GoogleFonts.montserrat(
                     color: Colors.white.withValues(alpha: 0.78),
                     fontWeight: FontWeight.w900,
@@ -401,7 +445,11 @@ class _CasPratiqueConcoursBlancPageState
                         onPressed: (_hasNext && !_submitting) ? _goNext : null,
                         icon: const Icon(Icons.arrow_forward_rounded, size: 18),
                         label: Text(
-                          _hasNext ? 'Question suivante' : 'Dernière question',
+                          !_hasNext
+                              ? 'Dernière question'
+                              : (!_hasNextQuestionInCase
+                                  ? 'Cas suivant'
+                                  : 'Question suivante'),
                           style: GoogleFonts.montserrat(
                             fontWeight: FontWeight.w900,
                             fontSize: 14,

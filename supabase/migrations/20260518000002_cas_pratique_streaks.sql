@@ -49,8 +49,8 @@ DROP POLICY IF EXISTS p_streak_freezes_admin_write ON public.cas_pratique_streak
 CREATE POLICY p_streak_freezes_admin_write
     ON public.cas_pratique_streak_freezes
     FOR ALL TO authenticated
-    USING (public.fn_cp_is_admin())
-    WITH CHECK (public.fn_cp_is_admin());
+    USING (public.is_admin())
+    WITH CHECK (public.is_admin());
 
 -- ─── fn_cp_compute_streak : pure, ne mute rien ─────────────────────────────
 
@@ -209,14 +209,19 @@ AS $func$
 DECLARE
     v_user_id uuid;
 BEGIN
-    -- Récupère le user_id depuis l'attempt liée
-    SELECT user_id INTO v_user_id
-      FROM public.cas_pratique_attempts
-     WHERE id = NEW.attempt_id
-     LIMIT 1;
-    IF v_user_id IS NOT NULL THEN
-        PERFORM public.fn_cp_apply_streak_to_progress(v_user_id);
-    END IF;
+    -- Récupère le user_id depuis l'attempt liée. Protégé par EXCEPTION : une
+    -- anomalie ici ne doit jamais faire échouer l'INSERT sur corrections.
+    BEGIN
+        SELECT user_id INTO v_user_id
+          FROM public.cas_pratique_attempts
+         WHERE id = NEW.attempt_id
+         LIMIT 1;
+        IF v_user_id IS NOT NULL THEN
+            PERFORM public.fn_cp_apply_streak_to_progress(v_user_id);
+        END IF;
+    EXCEPTION WHEN OTHERS THEN
+        RAISE WARNING 'fn_cp_trg_apply_streak failed for correction %: %', NEW.id, SQLERRM;
+    END;
     RETURN NEW;
 END;
 $func$;

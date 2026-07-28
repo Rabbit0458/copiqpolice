@@ -53,8 +53,8 @@ DROP POLICY IF EXISTS p_badges_admin_write ON public.cas_pratique_badges;
 CREATE POLICY p_badges_admin_write
     ON public.cas_pratique_badges
     FOR ALL TO authenticated
-    USING (public.fn_cp_is_admin())
-    WITH CHECK (public.fn_cp_is_admin());
+    USING (public.is_admin())
+    WITH CHECK (public.is_admin());
 
 -- ─── Unlocks par user ──────────────────────────────────────────────────────
 
@@ -84,8 +84,8 @@ DROP POLICY IF EXISTS p_user_badges_admin_write ON public.cas_pratique_user_badg
 CREATE POLICY p_user_badges_admin_write
     ON public.cas_pratique_user_badges
     FOR ALL TO authenticated
-    USING (public.fn_cp_is_admin())
-    WITH CHECK (public.fn_cp_is_admin());
+    USING (public.is_admin())
+    WITH CHECK (public.is_admin());
 
 -- ─── Seed des 20 badges ────────────────────────────────────────────────────
 
@@ -170,7 +170,7 @@ BEGIN
     SELECT count(DISTINCT cc.theme_id)
       INTO v_themes
       FROM public.cas_pratique_attempts a
-      JOIN public.cas_pratique_cases cc ON cc.id = a.case_id
+      JOIN public.cas_pratique_cases cc ON cc.id = a.case_id::uuid -- attempts.case_id est TEXT
      WHERE a.user_id = p_user_id AND a.status = 'completed';
 
     SELECT count(*) INTO v_themes_total FROM public.cas_pratique_themes;
@@ -247,12 +247,16 @@ AS $func$
 DECLARE
     v_user_id uuid;
 BEGIN
-    SELECT user_id INTO v_user_id
-      FROM public.cas_pratique_attempts
-     WHERE id = NEW.attempt_id LIMIT 1;
-    IF v_user_id IS NOT NULL THEN
-        PERFORM public.fn_cp_check_and_unlock_badges(v_user_id);
-    END IF;
+    BEGIN
+        SELECT user_id INTO v_user_id
+          FROM public.cas_pratique_attempts
+         WHERE id = NEW.attempt_id LIMIT 1;
+        IF v_user_id IS NOT NULL THEN
+            PERFORM public.fn_cp_check_and_unlock_badges(v_user_id);
+        END IF;
+    EXCEPTION WHEN OTHERS THEN
+        RAISE WARNING 'fn_cp_trg_check_badges failed for correction %: %', NEW.id, SQLERRM;
+    END;
     RETURN NEW;
 END;
 $func$;

@@ -47,8 +47,8 @@ DROP POLICY IF EXISTS p_mocks_admin_write ON public.cas_pratique_mock_exams;
 CREATE POLICY p_mocks_admin_write
     ON public.cas_pratique_mock_exams
     FOR ALL TO authenticated
-    USING (public.fn_cp_is_admin())
-    WITH CHECK (public.fn_cp_is_admin());
+    USING (public.is_admin())
+    WITH CHECK (public.is_admin());
 
 -- ─── Cas associés au mock (M:N avec position) ──────────────────────────────
 
@@ -77,8 +77,8 @@ DROP POLICY IF EXISTS p_mock_cases_admin_write ON public.cas_pratique_mock_exam_
 CREATE POLICY p_mock_cases_admin_write
     ON public.cas_pratique_mock_exam_cases
     FOR ALL TO authenticated
-    USING (public.fn_cp_is_admin())
-    WITH CHECK (public.fn_cp_is_admin());
+    USING (public.is_admin())
+    WITH CHECK (public.is_admin());
 
 -- ─── Tentatives user ───────────────────────────────────────────────────────
 
@@ -116,8 +116,8 @@ DROP POLICY IF EXISTS p_mock_attempts_admin_write ON public.cas_pratique_mock_ex
 CREATE POLICY p_mock_attempts_admin_write
     ON public.cas_pratique_mock_exam_attempts
     FOR ALL TO authenticated
-    USING (public.fn_cp_is_admin())
-    WITH CHECK (public.fn_cp_is_admin());
+    USING (public.is_admin())
+    WITH CHECK (public.is_admin());
 
 -- ─── Réponses user ─────────────────────────────────────────────────────────
 

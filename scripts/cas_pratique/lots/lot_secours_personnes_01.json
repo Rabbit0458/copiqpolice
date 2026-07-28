@@ -1,0 +1,2592 @@
+[
+  {
+    "slug": "sante-crise-de-panique-lieu-public",
+    "title": "Elle suffoque sur le quai et dit qu'elle va mourir",
+    "theme_slug": "secours-personnes",
+    "difficulty": "facile",
+    "is_free": true,
+    "is_published": true,
+    "status": "published",
+    "year": 2026,
+    "month": "Juillet",
+    "total_points": 15,
+    "estimated_minutes": 20,
+    "situation_text": "Il est 8 heures 30. Sur le quai d'une station de metro bonde, une femme d'une trentaine d'annees est assise a meme le sol, la respiration rapide et bruyante, les mains crispees sur la poitrine. Elle repete qu'elle etouffe et qu'elle va mourir. Aucun temoin n'a assiste a un evenement declencheur particulier : pas de bousculade, pas de malaise physique visible avant cet episode. Un attroupement s'est forme autour d'elle, certains voyageurs s'arretent, d'autres sortent leur telephone pour filmer la scene, ce qui accentue visiblement sa panique. Le prochain train est annonce dans quelques minutes et la station reste bruyante et confinee. Rien dans son discours ne suggere un trouble prealable connu, elle semble simplement submergee par une angoisse soudaine et intense.",
+    "questions": [
+      {
+        "position": 1,
+        "max_points": 5,
+        "label": "Comment intervenez-vous dans l'immediat pour apaiser cette crise ?",
+        "hint": "Le ton et le rythme de votre voix comptent autant que les mots employes.",
+        "perfect": "Je m'accroupis a sa hauteur et je m'adresse a elle d'une voix calme et posee, sans precipitation malgre l'agitation autour de nous. Je la rassure par une voix calme sans dramatiser la situation, en lui rappelant simplement que je suis la et que je reste avec elle. Je l'eloigne, si possible, de l'attroupement qui amplifie sa detresse, vers un endroit plus calme du quai. Je lui propose un exercice de respiration simple, en comptant a voix haute avec elle, plutot que de la questionner sur les causes de cette crise dans l'immediat.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Rassurer par une voix calme sans dramatiser la situation",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Poids fort : apaiser sans dramatiser.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "voix calme",
+                  "rassurance apportee",
+                  "dramatisation evitee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "S'accroupir a sa hauteur pour etablir un contact rassurant",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Posture rassurante.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "hauteur adaptee",
+                  "contact etabli",
+                  "posture rassurante"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "L'eloigner de l'attroupement qui amplifie sa detresse",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Reduction des stimuli exterieurs.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "attroupement eloigne",
+                  "calme recherche",
+                  "stimuli reduits"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Proposer un exercice de respiration simple",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Technique concrete d'apaisement.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "respiration guidee",
+                  "exercice propose",
+                  "rythme compte"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "max_points": 5,
+        "label": "Plusieurs badauds continuent de filmer la scene avec leur telephone. Comment gerez-vous cela sans interrompre votre prise en charge ?",
+        "hint": "Se laisser distraire par les badauds revient a abandonner un instant la personne qui a besoin de vous.",
+        "perfect": "Je demande fermement mais poliment aux personnes qui filment de ranger leur telephone et de s'ecarter, sans quitter cette femme des yeux pendant cette demande. Je ne me laisse pas distraire de ma prise en charge par cette agitation perimetrique, ma priorite restant cette personne en crise. Je cree un perimetre minimal de discretion autour d'elle, meme sommaire, pour preserver sa dignite dans ce moment de grande vulnerabilite. Je reste concentree sur son etat, sans laisser cette gestion annexe prendre le pas sur l'essentiel de mon intervention.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Demander fermement aux badauds de ranger leur telephone",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Preservation de la dignite.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "telephones ranges",
+                  "demande faite",
+                  "badauds ecartes"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Ne pas se laisser distraire de la prise en charge principale",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Coeur du cas : priorite maintenue sur la victime.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "priorite maintenue",
+                  "distraction evitee",
+                  "prise en charge continue"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Creer un perimetre minimal de discretion autour d'elle",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Dignite preservee.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "perimetre cree",
+                  "discretion assuree",
+                  "dignite protegee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Rester concentree sur son etat malgre cette gestion annexe",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Constance de l'attention.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "attention maintenue",
+                  "concentration gardee",
+                  "etat surveille"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 3,
+        "max_points": 5,
+        "label": "Comment organisez-vous la suite de cette prise en charge, evaluation et transmission, sans dramatiser ni banaliser ?",
+        "hint": "Ni poser un diagnostic vous-meme, ni traiter cet episode comme sans importance.",
+        "perfect": "Je sollicite un avis medical du SAMU pour ecarter toute cause physique sous-jacente que je ne peux evaluer moi-meme. Je ne pose a aucun moment de diagnostic a sa place, evitant toute formule du type simple crise d'angoisse qui minimiserait ce qu'elle traverse. Je la rassure sur le caractere non dangereux a court terme de cette crise, tout en prenant sa demande au serieux et en restant a ses cotes jusqu'a l'arrivee des secours. Je consigne cette intervention factuellement, en mentionnant l'absence d'element declencheur objectif identifie.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Solliciter un avis medical pour ecarter une cause physique",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Evaluation professionnelle necessaire.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "avis medical",
+                  "samu sollicite",
+                  "cause physique ecartee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Ne pas poser de diagnostic a sa place",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Limite du role policier.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "diagnostic evite",
+                  "role respecte",
+                  "minimisation evitee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Rester a ses cotes jusqu'a l'arrivee des secours",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Presence continue rassurante.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "presence maintenue",
+                  "secours attendus",
+                  "accompagnement assure"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Consigner factuellement cette intervention",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Traçabilite de l'intervention.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "intervention consignee",
+                  "compte rendu factuel",
+                  "element note"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "sante-propos-incoherents-voie-publique",
+    "title": "Il affirme etre suivi et vous demande de le proteger",
+    "theme_slug": "secours-personnes",
+    "difficulty": "moyen",
+    "is_free": false,
+    "is_published": true,
+    "status": "published",
+    "year": 2026,
+    "month": "Juillet",
+    "total_points": 15,
+    "estimated_minutes": 25,
+    "situation_text": "Il est 14 heures. Sur une place publique animee, un homme d'une quarantaine d'annees vous aborde avec insistance, agite mais sans agressivite envers vous. Il affirme etre suivi depuis plusieurs jours par des personnes qui lui veulent du mal, sans pouvoir les decrire precisement ni citer un fait concret que vous pourriez verifier. Il vous demande de le proteger, repetant cette demande a plusieurs reprises. Son discours est decousu sur les details mais garde une structure coherente dans l'expression de sa peur, ce qui rend difficile de trancher d'emblee entre une menace reelle mal formulee et une perception deformee de la realite. Aucun passant suspect ne se distingue autour de lui, aucune main courante anterieure ne mentionne son nom.",
+    "questions": [
+      {
+        "position": 1,
+        "max_points": 5,
+        "label": "Comment accueillez-vous cette demande sans valider ni contredire frontalement son recit ?",
+        "hint": "Ni le contredire, qui l'enfermerait dans la mefiance, ni le conforter, qui alimenterait sa peur.",
+        "perfect": "J'ecoute son recit sans le valider ni le contredire frontalement, ces deux attitudes risquant egalement de degrader l'echange. Je ne contredis ni ne conforte le delire eventuel, restant sur un terrain factuel et neutre face a ses affirmations. Je reste factuelle sur ce que j'observe reellement autour de nous, sans commenter la vraisemblance de ce qu'il decrit. J'evite les questions fermees qui l'enfermeraient davantage dans son recit, privilegiant des questions ouvertes sur ce qu'il ressent et ce dont il a besoin maintenant.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Ne pas contredire ni conforter le contenu du recit",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Poids fort du cas.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "contradiction evitee",
+                  "confirmation evitee",
+                  "neutralite maintenue"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Rester factuelle sur ce qui est reellement observe",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Ancrage dans le reel.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "observation factuelle",
+                  "realite constatee",
+                  "elements verifies"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Eviter les questions fermees qui l'enfermeraient dans son recit",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Technique d'entretien adaptee.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "questions ouvertes",
+                  "recit non enferme",
+                  "entretien adapte"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Adopter un ton rassurant tout au long de l'echange",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Apaisement general.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "ton rassurant",
+                  "echange apaise",
+                  "climat calme"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "max_points": 5,
+        "label": "Comment evaluez-vous concretement l'existence d'un danger reel derriere cette demande, malgre l'absence d'elements objectifs ?",
+        "hint": "L'absence de preuve immediate ne permet pas d'exclure totalement un fond de verite.",
+        "perfect": "Je verifie discretement les alentours immediats, sans que ce geste alimente sa mefiance ou son sentiment d'etre epie. Je recueille les elements factuels qu'il peut malgre tout fournir, lieux frequentes, description meme partielle, sans exiger une precision qu'il ne peut apporter. Je n'exclus pas d'emblee un fond de verite derriere ce recit, un veritable harcelement pouvant s'accompagner d'un discours desorganise sous l'effet du stress. Je garde une distance de securite professionnelle appropriee, sans que cette prudence transparaisse comme de la mefiance envers lui.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Verifier discretement les alentours sans alimenter sa mefiance",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Verification discrete necessaire.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "alentours verifies",
+                  "discretion maintenue",
+                  "mefiance non alimentee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Recueillir les elements factuels qu'il peut fournir",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Elements exploitables recherches.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "elements recueillis",
+                  "description obtenue",
+                  "faits notes"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Ne pas exclure d'emblee un fond de verite derriere ce recit",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Prudence sur la qualification.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "fond de verite envisage",
+                  "hypothese ouverte",
+                  "exclusion evitee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Garder une distance de securite professionnelle appropriee",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Securite de l'intervention.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "distance gardee",
+                  "securite assuree",
+                  "posture professionnelle"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 3,
+        "max_points": 5,
+        "label": "Quelle suite donnez-vous a cette prise en charge ?",
+        "hint": "Le laisser reparti seul en pleine crise d'angoisse ne resout rien.",
+        "perfect": "Je sollicite une evaluation medicale ou psychiatrique adaptee, la plus proche possible dans le temps compte tenu de son etat d'agitation actuel. J'evite de le laisser seul en pleine crise d'angoisse, restant a ses cotes jusqu'a la prise en charge effective par un professionnel competent. Je transmets avec precision les propos qu'il a tenus, sans les commenter cliniquement ni poser de diagnostic que je ne suis pas habilitee a formuler. J'oriente vers un dispositif adapte a sa situation, en expliquant simplement la demarche pour ne pas ajouter a son anxiete.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Solliciter une evaluation medicale ou psychiatrique adaptee",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Reponse professionnelle adaptee.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "evaluation sollicitee",
+                  "professionnel contacte",
+                  "prise en charge organisee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Ne pas le laisser seul en pleine crise d'angoisse",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Presence protectrice.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "personne accompagnee",
+                  "solitude evitee",
+                  "presence maintenue"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Transmettre precisement les propos tenus sans les commenter cliniquement",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Objectivite de la transmission.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "propos transmis",
+                  "commentaire clinique evite",
+                  "transmission factuelle"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Orienter vers un dispositif adapte en expliquant la demarche",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Pedagogie envers la personne.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "dispositif explique",
+                  "demarche clarifiee",
+                  "anxiete menagee"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "sante-personne-menace-de-se-blesser-avec-un-objet",
+    "title": "Il tient un tesson contre son avant-bras et recule quand vous avancez",
+    "theme_slug": "secours-personnes",
+    "difficulty": "moyen",
+    "is_free": false,
+    "is_published": true,
+    "status": "published",
+    "year": 2026,
+    "month": "Juillet",
+    "total_points": 15,
+    "estimated_minutes": 25,
+    "situation_text": "Il est 19 heures. Au domicile d'un homme signale par un voisin pour des cris repetes, vous le trouvez dans son salon, un tesson de bouteille casse dans la main droite, la pointe appuyee contre son propre avant-bras gauche. Des que vous avancez d'un pas, il recule et presse davantage le tesson contre sa peau, sans pour autant se blesser profondement pour l'instant. Il ne s'exprime que par phrases courtes et hachees, refusant de dire ce qui a declenche cet etat. Aucune arme autre que ce tesson n'est visible dans la piece, aucune tierce personne n'est presente. La distance entre vous reste d'environ trois metres, un canape et une table basse separant l'espace.",
+    "questions": [
+      {
+        "position": 1,
+        "max_points": 5,
+        "label": "Comment gerez-vous cette distance qui se maintient entre vous, chaque approche provoquant un recul et une pression accrue sur cet objet ?",
+        "hint": "Toute approche aggrave, mais l'immobilite totale ne resout rien non plus : le dialogue reste la variable que vous controlez.",
+        "perfect": "Je maintiens la distance et engage le dialogue plutot que de chercher a reduire physiquement cet ecart, chaque tentative d'approche ayant deja provoque un recul et une pression accrue sur le tesson. Je m'exprime d'une voix calme et posee, sans elever le ton malgre la tension de la situation. Je lui pose des questions simples sur ce qu'il ressent maintenant, sans exiger d'explication sur l'origine de cette crise. Je reste attentive a ses moindres reactions, pret a ajuster ma posture si un signe d'apaisement apparait.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Maintenir la distance et engager le dialogue plutot que d'approcher",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Poids fort du cas.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "distance maintenue",
+                  "dialogue engage",
+                  "approche evitee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "S'exprimer d'une voix calme sans elever le ton",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Communication apaisante.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "voix calme",
+                  "ton maitrise",
+                  "communication apaisee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Poser des questions simples sans exiger d'explication immediate",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Ne pas forcer la parole.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "questions simples",
+                  "explication non exigee",
+                  "parole respectee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Rester attentive aux signes d'apaisement pour ajuster sa posture",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Adaptation continue.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "signes observes",
+                  "posture ajustee",
+                  "apaisement recherche"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "max_points": 5,
+        "label": "Comment associez-vous les secours a cette intervention sans precipiter une reaction de sa part ?",
+        "hint": "Un appareil radio ou un vehicule de secours visible trop tot peut etre percu comme une menace supplementaire.",
+        "perfect": "Je sollicite discretement l'intervention des secours medicaux, en veillant a ce que cette demarche reste invisible pour lui autant que possible. Je continue le dialogue pendant que ce renfort s'organise, sans lui laisser percevoir une agitation soudaine autour de la situation. Je prepare, si des collegues arrivent, une repartition claire des roles pour eviter une approche desordonnee qui l'effraierait. Je reste seule interlocutrice verbale aupres de lui, pour ne pas multiplier les voix qui s'adressent a lui simultanement.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Solliciter discretement l'intervention des secours medicaux",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Renfort medical indispensable.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "secours sollicites",
+                  "discretion maintenue",
+                  "renfort organise"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Continuer le dialogue pendant l'organisation du renfort",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Continuite du contact.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "dialogue poursuivi",
+                  "contact maintenu",
+                  "continuite assuree"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Preparer une repartition claire des roles avec d'eventuels collegues",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Coordination de l'intervention.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "roles repartis",
+                  "coordination assuree",
+                  "approche organisee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Rester seule interlocutrice verbale aupres de lui",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Eviter la confusion des voix.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "interlocutrice unique",
+                  "voix multiples evitees",
+                  "confusion evitee"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 3,
+        "max_points": 5,
+        "label": "Comment assurez-vous la suite une fois cette crise apaisee et les secours sur place ?",
+        "hint": "L'apaisement immediat n'epuise pas la necessite d'un suivi.",
+        "perfect": "Je laisse les secours medicaux prendre en charge son evaluation des que la situation le permet, leur transmettant precisement le deroule de cette intervention. Je reste disponible aupres de lui jusqu'a cette prise en charge effective, sans quitter les lieux prematurement. Je documente factuellement cette intervention, y compris les elements observes sur les circonstances ayant precede mon arrivee. Je m'assure, avant de quitter les lieux, qu'un suivi medical est effectivement engage et non simplement propose.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Laisser les secours medicaux prendre en charge son evaluation",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Relais medical approprie.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "secours en charge",
+                  "evaluation medicale",
+                  "relais assure"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Rester disponible jusqu'a la prise en charge effective",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Presence jusqu'au bout.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "disponibilite maintenue",
+                  "presence continue",
+                  "prise en charge attendue"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Documenter factuellement cette intervention",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Traçabilite necessaire.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "intervention documentee",
+                  "faits consignes",
+                  "compte rendu redige"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "S'assurer qu'un suivi medical est effectivement engage avant de partir",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Vigilance jusqu'au relais reel.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "suivi verifie",
+                  "engagement confirme",
+                  "depart securise"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "sante-traitement-interrompu-decompensation",
+    "title": "Sa soeur explique qu'il a arrete son traitement il y a trois semaines",
+    "theme_slug": "secours-personnes",
+    "difficulty": "moyen",
+    "is_free": false,
+    "is_published": true,
+    "status": "published",
+    "year": 2026,
+    "month": "Juillet",
+    "total_points": 15,
+    "estimated_minutes": 25,
+    "situation_text": "Il est 11 heures. Dans un appartement, vous intervenez a la demande de la soeur d'un homme suivi depuis plusieurs annees pour un trouble psychiatrique stabilise. Elle vous explique, inquiete, qu'il a arrete son traitement il y a environ trois semaines de sa propre initiative, et qu'elle observe depuis une degradation progressive de son comportement : isolement accru, propos de plus en plus confus, nuits sans sommeil selon ce qu'elle percoit a travers la porte. L'homme lui-meme, present dans la piece voisine, refuse de vous parler directement et reste enferme dans sa chambre. Aucune violence n'est rapportee, aucun danger immediat n'est visible, mais cette information medicale precise, fournie par un tiers proche et non par la personne elle-meme, pose la question de ce que vous pouvez legitimement en faire.",
+    "questions": [
+      {
+        "position": 1,
+        "max_points": 5,
+        "label": "Comment traitez-vous cette information medicale precise que vous transmet cette soeur inquiete ?",
+        "hint": "Une information medicale reste une information medicale, quelle que soit la source qui vous la transmet.",
+        "perfect": "Je transmets l'information aux soignants sans la commenter, cette precision medicale relevant de leur competence et non de la mienne. Je recueille precisement ce que cette soeur observe depuis trois semaines, sans pour autant transformer son temoignage en diagnostic que je poserais moi-meme. Je reste factuelle dans la maniere de consigner ces elements, en distinguant clairement ce qui releve de son observation de ce qui releve d'un fait que j'ai moi-meme constate. Je la remercie de sa vigilance sans pour autant presumer de la gravite exacte de cette situation avant evaluation.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Transmettre l'information aux soignants sans la commenter",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Poids fort du cas.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "information transmise",
+                  "soignants informes",
+                  "commentaire evite"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Recueillir precisement ce que cette soeur observe depuis trois semaines",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Recueil factuel du temoignage.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "observations recueillies",
+                  "temoignage precise",
+                  "chronologie etablie"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Distinguer clairement observation du tiers et constat direct",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Rigueur dans la traçabilite.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "sources distinguees",
+                  "constat direct",
+                  "rigueur appliquee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Ne pas presumer de la gravite exacte avant evaluation",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Prudence sur la qualification.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "gravite non presumee",
+                  "evaluation attendue",
+                  "prudence maintenue"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "max_points": 5,
+        "label": "Comment tentez-vous d'entrer en contact avec cet homme qui refuse de vous parler directement ?",
+        "hint": "Le forcer a sortir de sa chambre n'est ni possible ni souhaitable en l'absence de danger immediat.",
+        "perfect": "Je m'adresse a lui a travers la porte, calmement, sans exiger qu'il sorte immediatement de sa chambre. Je lui explique simplement la raison de ma presence, sans dramatiser ni minimiser l'inquietude exprimee par sa soeur. Je lui laisse le temps de reagir a son rythme, sans imposer une intrusion que rien ne justifie en l'absence de danger immediat constate. Je reste attentive a tout signe indiquant une aggravation qui justifierait une intervention plus directe.",
+        "points": [
+          {
+            "position": 1,
+            "label": "S'adresser a lui calmement a travers la porte sans exiger qu'il sorte",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Respect de son espace.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "contact tente",
+                  "porte respectee",
+                  "calme maintenu"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Expliquer simplement la raison de sa presence sans dramatiser",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Transparence mesuree.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "raison expliquee",
+                  "dramatisation evitee",
+                  "transparence assuree"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Lui laisser le temps de reagir a son rythme",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Absence d'intrusion injustifiee.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "temps laisse",
+                  "rythme respecte",
+                  "intrusion evitee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Rester attentive a tout signe d'aggravation",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Vigilance continue.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "signes surveilles",
+                  "aggravation guettee",
+                  "vigilance maintenue"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 3,
+        "max_points": 5,
+        "label": "Comment organisez-vous la suite pour cette famille sans se substituer aux soignants ?",
+        "hint": "Votre role s'arrete a l'orientation, pas a la decision therapeutique.",
+        "perfect": "J'oriente cette soeur vers l'equipe soignante qui suit habituellement son frere, cette continuite therapeutique restant la plus pertinente compte tenu du suivi deja existant. Je lui explique les demarches possibles si la situation venait a se degrader davantage, sans pour autant l'alarmer inutilement au stade actuel. Je consigne cette intervention pour qu'un eventuel passage ulterieur beneficie de cet historique. Je reste disponible pour un nouveau passage si l'evolution de la situation le justifiait dans les jours suivants.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Orienter vers l'equipe soignante qui suit habituellement cette personne",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Continuite therapeutique privilegiee.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "equipe soignante",
+                  "suivi existant",
+                  "continuite privilegiee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Expliquer les demarches possibles en cas de degradation sans alarmer inutilement",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Information mesuree.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "demarches expliquees",
+                  "alarme evitee",
+                  "information mesuree"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Consigner cette intervention pour un eventuel suivi ulterieur",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Traçabilite utile.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "intervention consignee",
+                  "historique conserve",
+                  "suivi facilite"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Rester disponible pour un nouveau passage si necessaire",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Disponibilite future.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "disponibilite maintenue",
+                  "passage possible",
+                  "suivi assure"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "sante-famille-demande-hospitalisation-forcee",
+    "title": "La famille vous demande de l'emmener, il refuse categoriquement",
+    "theme_slug": "secours-personnes",
+    "difficulty": "moyen",
+    "is_free": false,
+    "is_published": true,
+    "status": "published",
+    "year": 2026,
+    "month": "Juillet",
+    "total_points": 15,
+    "estimated_minutes": 25,
+    "situation_text": "Il est 16 heures. Dans un pavillon, une famille reunie autour de vous vous presse d'emmener un pere de famille a l'hopital, decrivant plusieurs semaines de comportement inhabituel, propos incoherents par moments, refus de sortir de chez lui. Lui, present dans le salon, refuse categoriquement de vous suivre, affirme aller parfaitement bien et vous demande de quitter les lieux. Aucune violence, aucun geste envers lui-meme ou autrui ne se manifeste devant vous. La famille insiste, estimant que vous avez le pouvoir de l'emmener de force pour son propre bien, et se montre de plus en plus pressante face a ce qu'elle percoit comme votre inaction. Vous n'avez, en l'etat, aucun element medical objectif justifiant une hospitalisation sans son consentement.",
+    "questions": [
+      {
+        "position": 1,
+        "max_points": 5,
+        "label": "Comment expliquez-vous a cette famille le cadre reel de votre intervention face a cette attente ?",
+        "hint": "La famille attend de vous un pouvoir que seul un medecin peut, dans ce cadre, mettre en oeuvre.",
+        "perfect": "J'explique le cadre et fais intervenir un medecin, rappelant calmement a cette famille que je ne dispose pas seule du pouvoir d'emmener cet homme de force en l'absence d'element medical objectif. Je reste factuelle sur ce que j'observe reellement au moment de mon intervention, sans remettre en cause leur inquietude ni la minimiser. Je leur explique la procedure medicale adaptee a ce type de situation, qui necessite une evaluation par un professionnel de sante. Je ne laisse pas cette pression familiale me conduire a une action que le cadre legal ne permet pas en l'etat des elements.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Expliquer le cadre et faire intervenir un medecin",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Poids fort du cas.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "cadre explique",
+                  "medecin sollicite",
+                  "procedure clarifiee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Rester factuelle sur ce qui est reellement observe",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Ancrage factuel.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "observation factuelle",
+                  "constat objectif",
+                  "elements verifies"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Ne pas minimiser l'inquietude de la famille en expliquant les limites",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Respect de l'inquietude exprimee.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "inquietude respectee",
+                  "explication donnee",
+                  "famille entendue"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Ne pas ceder a la pression familiale hors du cadre legal",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Fermete sur le cadre.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "pression resistee",
+                  "cadre respecte",
+                  "action non forcee"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "max_points": 5,
+        "label": "Comment organisez-vous concretement l'intervention d'un avis medical compte tenu de son refus de vous suivre ?",
+        "hint": "Le refus de cet homme de vous suivre n'empeche pas de faire venir un avis medical a lui.",
+        "perfect": "Je sollicite un medecin ou une equipe medicale mobile pour qu'une evaluation puisse avoir lieu a son domicile, plutot que d'exiger un deplacement qu'il refuse. Je reste sur place pour assurer un cadre securise a cette evaluation, sans imposer ma presence directe si cela devait aggraver son refus. Je recueille aupres de la famille les elements precis et recents justifiant cette demande, pour les transmettre utilement a ce professionnel. Je maintiens un dialogue respectueux avec cet homme pendant l'attente, sans chercher a le convaincre a sa place de la necessite de ces soins.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Solliciter une equipe medicale pour une evaluation a domicile",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Adaptation au refus de deplacement.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "evaluation domicile",
+                  "equipe medicale",
+                  "deplacement evite"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Assurer un cadre securise pour cette evaluation",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Securisation de l'intervention.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "cadre securise",
+                  "presence assuree",
+                  "evaluation facilitee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Recueillir aupres de la famille les elements precis et recents",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Information utile au professionnel.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "elements recueillis",
+                  "famille interrogee",
+                  "informations transmises"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Maintenir un dialogue respectueux avec lui pendant l'attente",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Respect maintenu malgre le refus.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "dialogue maintenu",
+                  "respect assure",
+                  "attente geree"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 3,
+        "max_points": 5,
+        "label": "Comment cloturez-vous cette intervention si aucune hospitalisation n'est finalement decidee par le medecin ?",
+        "hint": "L'absence de decision d'hospitalisation ne signifie pas l'absence de suite a donner.",
+        "perfect": "Je m'assure que la decision du medecin, quelle qu'elle soit, est clairement comprise par la famille avant de quitter les lieux. Je documente precisement cette intervention, y compris l'avis medical rendu, pour la memoire du service en cas de nouveau passage. J'informe la famille des recours existants si la situation venait a se degrader dans les jours suivants, sans les laisser demunis face a une decision qu'ils ne partagent peut-etre pas. Je reste factuelle et neutre sur cette decision medicale, qui ne m'appartient pas de commenter.",
+        "points": [
+          {
+            "position": 1,
+            "label": "S'assurer que la decision medicale est clairement comprise par la famille",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Clarte de la communication.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "decision comprise",
+                  "famille informee",
+                  "clarte assuree"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Documenter precisement cette intervention et l'avis medical rendu",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Traçabilite pour la suite.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "intervention documentee",
+                  "avis consigne",
+                  "memoire assuree"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Informer des recours possibles en cas de degradation",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Famille non demunie face a l'avenir.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "recours informes",
+                  "degradation anticipee",
+                  "famille rassuree"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Rester neutre sur cette decision medicale sans la commenter",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Respect du role de chacun.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "neutralite maintenue",
+                  "decision respectee",
+                  "commentaire evite"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "sante-personne-prostree-decouverte",
+    "title": "Assise, immobile, elle ne reagit a aucune parole",
+    "theme_slug": "secours-personnes",
+    "difficulty": "moyen",
+    "is_free": true,
+    "is_published": true,
+    "status": "published",
+    "year": 2026,
+    "month": "Juillet",
+    "total_points": 15,
+    "estimated_minutes": 25,
+    "situation_text": "Il est 6 heures. Dans une cage d'escalier d'immeuble, un habitant vous signale une femme assise sur une marche, immobile depuis, selon lui, au moins une heure. En arrivant, vous constatez qu'elle ne reagit a aucune de vos paroles, ni a l'appel de son prenom, ni au contact leger de votre main sur son epaule. Elle respire normalement, ses yeux restent ouverts mais fixes, sans expression particuliere. Aucune odeur d'alcool, aucune trace de blessure visible, aucun objet ni document permettant de l'identifier a proximite. Aucun temoin n'a assiste a un evenement declencheur, l'habitant qui vous a appele l'a simplement trouvee dans cet etat en descendant les escaliers.",
+    "questions": [
+      {
+        "position": 1,
+        "max_points": 5,
+        "label": "Comment procedez-vous face a cette absence totale de reaction dont la cause reste inconnue ?",
+        "hint": "Sideration psychique, intoxication, trouble neurologique, agression : rien ne permet encore de trancher.",
+        "perfect": "Je ne presume rien et fais evaluer medicalement cette femme sans tarder, cette absence de reaction pouvant recouvrir des causes tres differentes que je ne peux distinguer seule. Je verifie ses fonctions vitales de base, respiration et reactivite, sans chercher a la deplacer ni a la questionner avec insistance. Je recherche discretement des indices materiels autour d'elle pouvant orienter cette evaluation, sans toucher a d'eventuels elements qui mériteraient d'etre preserves. Je sollicite les secours medicaux sans delai compte tenu de cette absence de reaction prolongee.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Ne rien presumer et faire evaluer medicalement sans tarder",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Poids fort du cas.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "evaluation medicale",
+                  "presomption evitee",
+                  "secours sollicites"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Verifier les fonctions vitales de base sans la deplacer",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Premiers gestes appropries.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "fonctions verifiees",
+                  "deplacement evite",
+                  "premiers gestes"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Rechercher discretement des indices materiels autour d'elle",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Elements d'orientation recherches.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "indices recherches",
+                  "elements observes",
+                  "environnement examine"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Solliciter les secours medicaux sans delai",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Rapidite de la reponse.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "secours appeles",
+                  "delai reduit",
+                  "urgence traitee"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "max_points": 5,
+        "label": "Comment tentez-vous d'identifier cette femme en l'absence de tout document ?",
+        "hint": "L'identification peut passer par d'autres voies que les papiers qu'elle ne porte pas sur elle.",
+        "perfect": "Je verifie discretement si elle porte un objet permettant une identification partielle, sans fouiller au-dela de ce qui est visible et accessible sans geste intrusif. J'interroge l'habitant qui vous a signale sa presence pour savoir s'il la reconnait comme residente de l'immeuble. Je consulte, si le temps le permet, les bases disponibles pour un rapprochement avec un eventuel signalement recent. Je transmets aux secours medicaux les elements d'identification, meme partiels, dont je dispose au moment de leur arrivee.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Verifier discretement d'eventuels objets d'identification accessibles",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Identification sans geste intrusif.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "objets verifies",
+                  "identification tentee",
+                  "geste mesure"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Interroger l'habitant sur une eventuelle reconnaissance",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Source d'identification locale.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "habitant interroge",
+                  "reconnaissance recherchee",
+                  "voisinage consulte"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Consulter les bases disponibles pour un rapprochement",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Recherche croisee.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "bases consultees",
+                  "rapprochement tente",
+                  "signalement recherche"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Transmettre aux secours les elements d'identification meme partiels",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Continuite de l'information.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "elements transmis",
+                  "identification partagee",
+                  "continuite assuree"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 3,
+        "max_points": 5,
+        "label": "Comment assurez-vous la suite de cette prise en charge une fois les secours medicaux sur place ?",
+        "hint": "Votre role ne s'arrete pas necessairement a l'arrivee des secours.",
+        "perfect": "Je transmets aux secours medicaux un compte rendu precis de l'etat dans lequel je l'ai trouvee et du temps ecoule avant mon intervention. Je reste disponible pour completer leur evaluation si des elements complementaires s'averaient necessaires. Je documente cette intervention pour la suite de l'enquete eventuelle sur les circonstances ayant conduit a cet etat. Je m'assure, avant de quitter les lieux, qu'une prise en charge medicale effective est bien engagee et non simplement en cours d'evaluation.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Transmettre un compte rendu precis aux secours medicaux",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Information complete pour la suite.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "compte rendu transmis",
+                  "etat decrit",
+                  "temps precise"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Rester disponible pour completer leur evaluation",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Collaboration continue.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "disponibilite maintenue",
+                  "evaluation completee",
+                  "collaboration assuree"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Documenter cette intervention pour une eventuelle enquete",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Traçabilite pour la suite.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "intervention documentee",
+                  "enquete facilitee",
+                  "elements consignes"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "S'assurer qu'une prise en charge medicale effective est engagee avant de partir",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Vigilance jusqu'au bout.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "prise en charge verifiee",
+                  "engagement confirme",
+                  "depart securise"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "sante-danger-immediat-pour-autrui",
+    "title": "Il menace sa voisine qu'il dit etre a l'origine de ses souffrances",
+    "theme_slug": "secours-personnes",
+    "difficulty": "expert",
+    "is_free": false,
+    "is_published": true,
+    "status": "published",
+    "year": 2026,
+    "month": "Juillet",
+    "total_points": 15,
+    "estimated_minutes": 35,
+    "situation_text": "Il est 22 heures. Vous intervenez chez un homme suivi pour un trouble psychiatrique connu des services, qui hurle a travers la porte de son appartement qu'il va s'en prendre a sa voisine du dessus, qu'il designe nommement comme etant a l'origine de souffrances qu'il decrit de facon confuse mais avec une determination inquietante. La voisine en question, alertee par ces cris, se trouve actuellement chez elle, a l'etage superieur, et n'a commis objectivement aucun acte a son encontre. L'homme refuse d'ouvrir sa porte, continue de proferer des menaces precises et repetees, et vous entendez des bruits suggerant qu'il deplace des objets a l'interieur. La situation evolue rapidement, entre un homme manifestement en crise et une victime potentielle clairement identifiee qui n'a commis aucune faute.",
+    "questions": [
+      {
+        "position": 1,
+        "max_points": 5,
+        "label": "Face a cette menace precise visant une personne identifiee, quelle est votre priorite immediate ?",
+        "hint": "Deux personnes sont concernees par cette situation : celle qui menace, et celle qui est menacee.",
+        "perfect": "Je protege le tiers designe en priorite, cette voisine constituant une cible identifiee par des menaces precises et repetees qui ne peuvent etre ignorees. Je fais evacuer ou securiser cette voisine sans delai, en lui demandant de s'eloigner ou de se mettre a l'abri le temps que la situation soit maitrisee. Je maintiens en parallele un contact verbal avec l'homme en crise depuis l'exterieur de son appartement, sans forcer l'entree tant que la menace reste circonscrite a des paroles. Je sollicite immediatement un renfort compte tenu de la gravite de cette double situation.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Proteger le tiers designe en priorite absolue",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Poids fort du cas.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "tiers protege",
+                  "voisine securisee",
+                  "priorite absolue"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Faire evacuer ou securiser cette voisine sans delai",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Mise en securite immediate.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "evacuation organisee",
+                  "mise a l'abri",
+                  "securisation immediate"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Maintenir un contact verbal avec l'homme en crise depuis l'exterieur",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Contact maintenu sans intrusion prematuree.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "contact maintenu",
+                  "porte respectee",
+                  "dialogue engage"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Solliciter immediatement un renfort",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Gravite justifiant un appui.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "renfort sollicite",
+                  "appui demande",
+                  "situation signalee"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "max_points": 5,
+        "label": "Les bruits a l'interieur de l'appartement s'intensifient et les menaces se precisent encore. Comment adaptez-vous votre reponse a cette evolution ?",
+        "hint": "Le passage de la menace verbale a un risque de passage a l'acte imminent change la nature de votre reponse.",
+        "perfect": "Je reevalue en continu le niveau de danger a partir des elements sonores et verbaux disponibles, sans attendre un signe irrefutable pour ajuster ma reponse. Je maintiens la voisine hors de portee, verifiant qu'elle reste effectivement a l'abri et non simplement eloignee en apparence. Je prepare, avec les renforts arrives, une intervention plus directe si les elements confirment un passage a l'acte imminent, sans pour autant precipiter une entree qui aggraverait le risque. Je garde une communication constante avec mon centre operationnel sur l'evolution de la situation.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Reevaluer en continu le niveau de danger",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Adaptation a l'evolution de la menace.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "danger reevalue",
+                  "situation suivie",
+                  "adaptation continue"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Verifier que la voisine reste effectivement a l'abri",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Securite du tiers verifiee.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "abri verifie",
+                  "securite confirmee",
+                  "protection effective"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Preparer une intervention plus directe avec les renforts si necessaire",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Anticipation d'une escalade.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "intervention preparee",
+                  "renforts coordonnes",
+                  "escalade anticipee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Maintenir une communication constante avec le centre operationnel",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Suivi hierarchique de l'evolution.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "communication maintenue",
+                  "centre informe",
+                  "suivi assure"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 3,
+        "max_points": 5,
+        "label": "Comment organisez-vous la suite une fois cette situation maitrisee, pour cet homme comme pour sa voisine ?",
+        "hint": "Les deux personnes concernees ont besoin d'une suite adaptee, pour des raisons differentes.",
+        "perfect": "Je fais evaluer medicalement cet homme sans delai, la nature psychiatrique connue de son trouble rendant cette evaluation indispensable pour la suite. Je m'assure que sa voisine, bien que non blessee physiquement, beneficie d'une prise en charge adaptee compte tenu du choc que ces menaces ont pu provoquer. Je documente precisement cette intervention, la gravite des menaces proferees et l'evolution de la situation, pour la suite judiciaire et le suivi psychiatrique. J'informe les services competents du domicile de cet homme pour un suivi renforce apres cet episode.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Faire evaluer medicalement cet homme sans delai",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Evaluation psychiatrique indispensable.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "evaluation medicale",
+                  "suivi psychiatrique",
+                  "prise en charge organisee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "S'assurer que la voisine beneficie d'une prise en charge adaptee",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Choc de la victime pris en compte.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "voisine accompagnee",
+                  "choc reconnu",
+                  "prise en charge assuree"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Documenter precisement la gravite des menaces et l'evolution de la situation",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Traçabilite pour la suite judiciaire.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "menaces documentees",
+                  "evolution consignee",
+                  "suite judiciaire preparee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Informer les services competents pour un suivi renforce",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Prevention d'une recidive.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "services informes",
+                  "suivi renforce",
+                  "prevention assuree"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "sante-appel-repete-meme-personne",
+    "title": "Cinquieme appel du mois, jamais rien de constate",
+    "theme_slug": "secours-personnes",
+    "difficulty": "moyen",
+    "is_free": false,
+    "is_published": true,
+    "status": "published",
+    "year": 2026,
+    "month": "Juillet",
+    "total_points": 15,
+    "estimated_minutes": 25,
+    "situation_text": "Il est 3 heures. Vous etes envoyee au domicile d'une femme qui a de nouveau appele le numero d'urgence, evoquant une detresse difficile a formuler precisement au telephone. En consultant l'historique avant votre arrivee, vous constatez que c'est le cinquieme appel de sa part ce mois-ci, et qu'aucun des quatre precedents n'a permis de constater d'element concret justifiant une intervention particuliere : pas de danger identifie, pas d'infraction, pas d'urgence medicale caracterisee a chaque fois. Vous ressentez, en montant les escaliers, une certaine lassitude face a ce cinquieme deplacement pour la meme personne en un mois. Elle vous ouvre la porte, visiblement bouleversee, sans toutefois de danger immediat visible autour d'elle.",
+    "questions": [
+      {
+        "position": 1,
+        "max_points": 5,
+        "label": "Comment abordez-vous cette cinquieme intervention malgre la lassitude que cette repetition peut legitimement susciter ?",
+        "hint": "L'absence de constat lors des visites precedentes ne rend pas cette detresse-ci moins reelle.",
+        "perfect": "Je traite cet appel avec le meme serieux qu'au premier appel, cette repetition ne diminuant en rien la realite de la detresse qu'elle exprime ce soir. Je ne laisse transparaitre aucune lassitude dans mon attitude envers elle, malgre ce que je ressens en montant ces escaliers pour la cinquieme fois du mois. J'ecoute attentivement ce qu'elle a a dire cette nuit, sans presumer que cet appel ressemblera necessairement aux quatre precedents. Je prends le temps necessaire pour cette prise en charge, sans la precipiter au motif de cette frequence.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Traiter cet appel avec le meme serieux qu'au premier appel",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Poids fort du cas.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "serieux maintenu",
+                  "banalisation evitee",
+                  "meme traitement"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Ne laisser transparaitre aucune lassitude dans son attitude",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Professionnalisme malgre la fatigue.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "lassitude masquee",
+                  "attitude professionnelle",
+                  "accueil respectueux"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Ecouter attentivement sans presumer de la teneur de cet appel",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Ouverture reelle a ce qui est different.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "ecoute attentive",
+                  "presomption evitee",
+                  "ouverture maintenue"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Prendre le temps necessaire sans precipiter cette prise en charge",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Qualite de l'intervention preservee.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "temps pris",
+                  "precipitation evitee",
+                  "prise en charge soignee"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "max_points": 5,
+        "label": "Comment tentez-vous de comprendre ce qui motive reellement ces appels repetes, au-dela de cette nuit precise ?",
+        "hint": "Cinq appels en un mois sans element constate racontent probablement quelque chose que les interventions ponctuelles n'ont pas su saisir.",
+        "perfect": "Je prends le temps d'echanger avec elle sur ce qui motive, plus largement, ces appels repetes, au-dela de la seule situation de cette nuit. J'evite tout jugement dans la formulation de mes questions, cette repetition pouvant traduire un isolement ou une detresse de fond que les interventions ponctuelles n'ont pas permis de saisir. Je recherche avec elle si un accompagnement social ou medical plus structure pourrait repondre a ce besoin recurrent. Je consulte, si possible, l'historique de ces appels precedents pour identifier un fil conducteur eventuel.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Echanger sur ce qui motive plus largement ces appels repetes",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Comprendre au-dela de l'evenement ponctuel.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "motif explore",
+                  "echange approfondi",
+                  "repetition questionnee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Eviter tout jugement dans la formulation des questions",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Bienveillance necessaire.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "jugement evite",
+                  "questions bienveillantes",
+                  "respect maintenu"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Rechercher un accompagnement social ou medical plus structure",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Reponse de fond recherchee.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "accompagnement recherche",
+                  "reponse structuree",
+                  "besoin identifie"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Consulter l'historique des appels precedents pour un fil conducteur",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Analyse de la recurrence.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "historique consulte",
+                  "fil conducteur",
+                  "recurrence analysee"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 3,
+        "max_points": 5,
+        "label": "Comment transmettez-vous cette situation pour qu'elle beneficie d'un suivi au-dela de cette seule nuit ?",
+        "hint": "Sans coordination, cette femme continuera d'appeler et chaque collegue repartira du meme constat d'absence d'element.",
+        "perfect": "Je consigne cette intervention en faisant explicitement le lien avec les quatre appels precedents, pour que cette recurrence soit visible dans le dossier plutot que dispersee entre plusieurs comptes rendus isoles. J'oriente vers un dispositif d'accompagnement social ou medical adapte a cette situation recurrente. Je recommande un suivi coordonne entre les collegues susceptibles d'intervenir a nouveau chez elle, pour eviter que chaque passage reparte de zero. Je reste factuelle dans mon compte rendu, sans laisser transparaitre le jugement que cette repetition pourrait susciter.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Consigner en faisant explicitement le lien avec les appels precedents",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Coeur du cas : visibilite de la recurrence.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "lien etabli",
+                  "recurrence visible",
+                  "dossier complete"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Orienter vers un dispositif d'accompagnement adapte",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Reponse durable recherchee.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "dispositif propose",
+                  "accompagnement oriente",
+                  "reponse durable"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Recommander un suivi coordonne entre les collegues concernes",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Continuite du suivi.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "suivi coordonne",
+                  "collegues informes",
+                  "continuite assuree"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Rester factuelle sans laisser transparaitre de jugement",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Neutralite du compte rendu.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "compte rendu factuel",
+                  "jugement absent",
+                  "neutralite maintenue"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "sante-adolescent-scarifications-decouvertes",
+    "title": "L'infirmiere scolaire alerte, l'eleve minimise",
+    "theme_slug": "secours-personnes",
+    "difficulty": "difficile",
+    "is_free": false,
+    "is_published": true,
+    "status": "published",
+    "year": 2026,
+    "month": "Juillet",
+    "total_points": 15,
+    "estimated_minutes": 30,
+    "situation_text": "Il est 10 heures. Vous intervenez au lycee a la demande de l'infirmiere scolaire, qui a decouvert des scarifications recentes sur les avant-bras d'une eleve de quinze ans lors d'un soin pour une autre raison. L'infirmiere, inquiete, a immediatement alerte l'etablissement et sollicite votre presence. L'eleve, convoquee dans le bureau infirmier, minimise fortement ce que vous observez, expliquant qu'il s'agit d'un accident sans gravite et refusant d'en dire davantage. Ses parents n'ont pas encore ete informes de cette decouverte. La proviseure, presente, s'interroge sur la conduite a tenir entre le respect de l'intimite de cette mineure et la necessite d'alerter sa famille. Aucun element ne permet de savoir depuis quand ces scarifications ont commence ni si un passage a l'acte plus grave est a craindre.",
+    "questions": [
+      {
+        "position": 1,
+        "max_points": 5,
+        "label": "Comment recueillez-vous la parole de cette adolescente qui minimise ce qui a ete decouvert ?",
+        "hint": "La minimisation d'un adolescent face a une decouverte de ce type est frequente et ne doit pas etre prise pour argent comptant.",
+        "perfect": "J'adopte une posture non intrusive et bienveillante, sans la brusquer ni chercher a lui arracher des aveux sur ce qu'elle prefere taire pour l'instant. Je reste factuelle sur ce qui a ete constate par l'infirmiere, sans dramatiser ni minimiser a mon tour ce que je rapporte. Je lui explique simplement que cette minimisation est comprehensible mais que sa securite reste ma priorite, sans la mettre en position d'accusee. Je privilegie un entretien individuel, sans la presence d'adultes qu'elle ne connait pas intimement, pour favoriser une parole plus libre.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Adopter une posture non intrusive et bienveillante sans la brusquer",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Approche adaptee a l'adolescence.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "posture bienveillante",
+                  "adolescente respectee",
+                  "brusquerie evitee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Rester factuelle sans dramatiser ni minimiser a son tour",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Equilibre du discours tenu.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "discours factuel",
+                  "dramatisation evitee",
+                  "minimisation evitee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Expliquer que sa securite reste la priorite sans la mettre en position d'accusee",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Posture protectrice, non accusatoire.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "securite affirmee",
+                  "accusation evitee",
+                  "posture protectrice"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Privilegier un entretien individuel favorisant une parole libre",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Cadre favorable a la confidence.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "entretien individuel",
+                  "parole facilitee",
+                  "cadre adapte"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "max_points": 5,
+        "label": "Comment assurez-vous le relais medical necessaire face a ces scarifications constatees ?",
+        "hint": "Le relais medical ne se limite pas au constat de l'infirmiere scolaire pour un phenomene de cette nature.",
+        "perfect": "J'assure le relais medical en sollicitant une evaluation par un professionnel specialise, l'infirmiere scolaire ne pouvant a elle seule mesurer l'ensemble des enjeux d'un tel geste chez une adolescente. Je m'assure que cette evaluation intervient dans un delai raisonnable, sans attendre que la situation s'aggrave. Je reste attentive a ne pas transformer cette demarche medicale en sanction, cette adolescente ayant besoin de soin plutot que de reprobation. Je coordonne cette orientation avec l'infirmiere scolaire, deja en lien avec cette eleve.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Assurer le relais medical en sollicitant une evaluation specialisee",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Poids fort partage avec la protection.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "relais medical",
+                  "evaluation specialisee",
+                  "professionnel sollicite"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "S'assurer que cette evaluation intervient dans un delai raisonnable",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Reactivite necessaire.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "delai raisonnable",
+                  "evaluation rapide",
+                  "prise en charge organisee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Ne pas transformer cette demarche medicale en sanction",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Soin plutot que reprobation.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "sanction evitee",
+                  "soin privilegie",
+                  "reprobation absente"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Coordonner cette orientation avec l'infirmiere scolaire",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Continuite avec l'intervenant initial.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "infirmiere coordonnee",
+                  "continuite assuree",
+                  "lien maintenu"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 3,
+        "max_points": 5,
+        "label": "Comment gerez-vous la question de l'information des parents, encore non informes a ce stade ?",
+        "hint": "L'intimite de cette mineure et la necessite d'alerter sa famille ne s'opposent pas necessairement si la demarche est bien menee.",
+        "perfect": "J'assure la protection du mineur en veillant a ce que ses parents soient informes de cette decouverte, cette information restant necessaire compte tenu de son age et de la gravite potentielle du geste. Je prepare, avec l'etablissement, la maniere dont cette information sera transmise pour eviter une reaction familiale qui aggraverait la situation de cette adolescente. J'explique a l'eleve elle-meme que cette information sera donnee, plutot que de la laisser decouvrir cette demarche apres coup. Je reste attentive a ce que cette transmission s'accompagne d'une orientation concrete pour la famille, et non d'une simple annonce sans suite.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Assurer le relais medical et la protection du mineur",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Poids fort du cas.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "protection assuree",
+                  "parents informes",
+                  "mineur protege"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Preparer avec l'etablissement la maniere de transmettre cette information",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Transmission preparee pour eviter une reaction aggravante.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "transmission preparee",
+                  "etablissement associe",
+                  "reaction anticipee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Expliquer a l'eleve elle-meme que cette information sera donnee",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Transparence envers la mineure.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "eleve informee",
+                  "transparence assuree",
+                  "annonce anticipee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "S'assurer que cette transmission s'accompagne d'une orientation concrete pour la famille",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Suite utile pour la famille.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "orientation donnee",
+                  "famille accompagnee",
+                  "suite concrete"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "sante-personne-agressive-en-service-d-urgence",
+    "title": "Le personnel demande son expulsion, il attend depuis six heures",
+    "theme_slug": "secours-personnes",
+    "difficulty": "moyen",
+    "is_free": false,
+    "is_published": true,
+    "status": "published",
+    "year": 2026,
+    "month": "Juillet",
+    "total_points": 15,
+    "estimated_minutes": 25,
+    "situation_text": "Il est 2 heures. Vous etes appelee aux urgences d'un hopital ou un homme attend depuis six heures, hausse le ton et bouscule verbalement le personnel soignant qui lui demande de patienter encore. Le personnel, epuise par cette nuit chargee, vous demande de l'expulser de la salle d'attente. Cet homme n'a commis aucune violence physique, mais son agressivite verbale et son impatience croissante creent une tension palpable avec les autres patients presents. Vous ne savez pas, en arrivant, quelle est la raison exacte de sa venue aux urgences ni la gravite reelle de son etat, l'attente de six heures pouvant elle-meme avoir aggrave une douleur ou une detresse initiale. Il s'adresse a vous des votre arrivee avec la meme agressivite qu'envers le personnel.",
+    "questions": [
+      {
+        "position": 1,
+        "max_points": 5,
+        "label": "Comment intervenez-vous face a cette demande d'expulsion formulee par un personnel epuise ?",
+        "hint": "Le comprehensible epuisement du personnel ne doit pas faire oublier que cet homme est peut-etre lui-meme un patient en souffrance.",
+        "perfect": "J'apaise sans traiter la personne comme un simple perturbateur, cette attente de six heures pouvant elle-meme expliquer, sans l'excuser totalement, cette agressivite verbale. Je m'adresse a lui calmement, en reconnaissant explicitement la longueur de son attente avant toute autre chose. Je ne procede pas a une expulsion immediate sur la seule demande du personnel, sans avoir moi-meme evalue la situation. Je cherche a comprendre la raison de sa venue et l'etat dans lequel il se trouve, plutot que de me limiter a gerer son comportement.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Apaiser sans traiter la personne comme un simple perturbateur",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Poids fort du cas.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "apaisement recherche",
+                  "perturbateur non reduit",
+                  "patient considere"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Reconnaitre explicitement la longueur de son attente",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Validation de son exasperation.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "attente reconnue",
+                  "exasperation validee",
+                  "ecoute manifestee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Ne pas proceder a une expulsion immediate sans evaluation propre",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Evaluation independante necessaire.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "expulsion differee",
+                  "evaluation menee",
+                  "decision autonome"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Chercher a comprendre la raison de sa venue et son etat",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Comprehension de la situation medicale.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "raison comprise",
+                  "etat evalue",
+                  "venue expliquee"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "max_points": 5,
+        "label": "Comment gerez-vous simultanement le personnel soignant epuise et cet homme impatient ?",
+        "hint": "Deux parties legitimement fatiguees de cette situation attendent chacune une reponse de vous.",
+        "perfect": "J'explique au personnel soignant ma demarche, sans les laisser penser que leur demande est ignoree, tout en leur precisant que l'expulsion n'est pas la premiere reponse a apporter ici. Je propose a cet homme une alternative concrete pour patienter plus calmement, comme un endroit plus isole de la salle d'attente commune. Je verifie aupres du personnel une estimation realiste du temps d'attente restant, pour pouvoir la lui communiquer honnetement. Je reste disponible pour intervenir a nouveau si la tension devait remonter, sans pour autant m'installer durablement sur place sans necessite.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Expliquer sa demarche au personnel sans ignorer leur demande",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Relation partenariale preservee.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "personnel informe",
+                  "demande entendue",
+                  "demarche expliquee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Proposer une alternative concrete pour patienter plus calmement",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Solution pratique apportee.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "alternative proposee",
+                  "espace isole",
+                  "patience facilitee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Verifier une estimation realiste du temps d'attente restant",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Information honnete a transmettre.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "estimation verifiee",
+                  "temps precise",
+                  "information honnete"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Rester disponible sans s'installer durablement sans necessite",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Presence proportionnee.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "disponibilite maintenue",
+                  "presence proportionnee",
+                  "intervention mesuree"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 3,
+        "max_points": 5,
+        "label": "Comment cloturez-vous cette intervention une fois la tension retombee ?",
+        "hint": "Une tension retombee ne signifie pas necessairement qu'aucune trace n'est utile.",
+        "perfect": "Je m'assure que le climat reste apaise avant de quitter les lieux, sans partir des le premier signe d'accalmie apparente. Je consigne brievement cette intervention si elle a necessite un temps notable, pour la memoire du service en cas de nouvel appel similaire dans cet etablissement. Je remercie le personnel de leur patience sans pour autant valider une expulsion qui n'aurait pas ete justifiee. Je reste attentive, avant de partir, a ce que cet homme soit toujours pris en charge dans le circuit normal des urgences.",
+        "points": [
+          {
+            "position": 1,
+            "label": "S'assurer que le climat reste apaise avant de quitter les lieux",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Verification avant depart.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "climat verifie",
+                  "apaisement confirme",
+                  "depart securise"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Consigner brievement cette intervention si elle a necessite un temps notable",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Traçabilite proportionnee.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "intervention consignee",
+                  "trace laissee",
+                  "memoire du service"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Remercier le personnel sans valider une expulsion injustifiee",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Relation partenariale preservee jusqu'au bout.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "personnel remercie",
+                  "expulsion non validee",
+                  "relation preservee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Verifier que cet homme reste pris en charge dans le circuit normal",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Suivi jusqu'au bout.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "prise en charge verifiee",
+                  "circuit normal",
+                  "suivi assure"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

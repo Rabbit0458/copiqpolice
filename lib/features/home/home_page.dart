@@ -558,18 +558,40 @@ const Map<UserMode, Map<Track, List<CategoryConfig>>> categoriesConfig = {
 
 // ========================= CONFIG DES REDIRECTIONS =========================
 
-const Map<String, String> redirectConfig = {
+const Map<String, String> redirectConfigHome = {
+  // ═══════════════════════════════════════════════════════════════════════
+  //  CORRECTIF 2026-07-26 — 18 entrees de ce menu pointaient vers des
+  //  routes qui n'existent pas : l'utilisateur tombait sur l'ecran 404.
+  //  Les pages correspondantes EXISTENT, mais sous d'autres noms de route.
+  //  Ces entrees sont donc redirigees vers leur equivalent reel plutot que
+  //  de dupliquer du contenu deja ecrit.
+  //  Les corrections sont signalees par le marqueur « ← 404 corrige ».
+  // ═══════════════════════════════════════════════════════════════════════
+
   // Généralités
   '/generalite': '/gpx_scolarite_pages/generalite_pages',
   '/classification_infractions': '/gpx/generalites/classification_infractions',
   '/infraction': '/gpx/generalites/infraction',
   '/infraction_intro': '/gpx/generalites/infraction_intro',
-  '/tentative_punissable': '/gpx/generalites/tentative_punissable',
-  '/complicite': '/gpx/generalites/complicite',
-  '/legitime_defense': '/gpx/generalites/legitime_defense',
-  '/cadre_legal_armes': '/gpx/generalites/cadre_legal_armes',
-  '/libertes_publiques': '/gpx/generalites/libertes_publiques',
-  '/retention_locaux_police': '/gpx/generalites/retention_locaux_police',
+  '/tentative_punissable': '/gpx/generalites/tentative_intro', // ← 404 corrigé
+  '/complicite': '/gpx/generalites/complicite_intro', // ← 404 corrigé
+  '/legitime_defense': '/gpx/generalites/legitimedefense_intro', // ← 404 corrigé
+  '/cadre_legal_armes': '/gpx/generalites/usagedesarmes_intro', // ← 404 corrigé
+  '/libertes_publiques':
+      '/gpx/generalites/libertespubliques_intro', // ← 404 corrigé
+  '/retention_locaux_police':
+      '/gpx/generalites/retention_locaux_police_intro', // ← 404 corrigé
+
+  // Entrées de menu directes (le menu pousse la route telle quelle lorsqu'elle
+  // n'a pas de clé de redirection ; on ajoute donc aussi les cibles brutes).
+  '/gpx/generalites/tentative_punissable': '/gpx/generalites/tentative_intro',
+  '/gpx/generalites/complicite': '/gpx/generalites/complicite_intro',
+  '/gpx/generalites/legitime_defense': '/gpx/generalites/legitimedefense_intro',
+  '/gpx/generalites/cadre_legal_armes': '/gpx/generalites/usagedesarmes_intro',
+  '/gpx/generalites/libertes_publiques':
+      '/gpx/generalites/libertespubliques_intro',
+  '/gpx/generalites/retention_locaux_police':
+      '/gpx/generalites/retention_locaux_police_intro',
 
   // Cadres juridiques
   '/cadres_juridiques': '/gpx_scolarite_pages/cadres_juridiques_pages',
@@ -582,21 +604,38 @@ const Map<String, String> redirectConfig = {
   '/autres_cadres_enquete':
       '/gpx_scolarite_pages/cadres_juridiques_pages/autres_cadres_enquete',
 
-  // Procédure pénale (compat /pp/*)
-  '/pp/gav': '/gpx_scolarite_pages/procédure_pénale_pages/pp_gav',
-  '/pp/perquisitions':
-      '/gpx_scolarite_pages/procédure_pénale_pages/pp_perquisitions',
-  '/pp/auditions_pv':
-      '/gpx_scolarite_pages/procédure_pénale_pages/pp_auditions_pv',
+  // ─── Procédure pénale ──────────────────────────────────────────────────
+  // ← 404 corrigés : ces 8 routes `pp_*` n'ont jamais existé. Le contenu
+  // correspondant se trouve dans les modules PV/APJ20 et Cadres juridiques.
+  '/pp/gav': '/gpx/pv_apj20/gav_suspect_libre/gav_generalites',
+  '/pp/perquisitions': '/gpx/pv_apj20/perquisition_preliminaire/generalites',
+  '/pp/auditions_pv': '/gpx/pv_apj20/audition_suspect/generalites',
   '/pp/mesures_contrainte':
-      '/gpx_scolarite_pages/procédure_pénale_pages/pp_mesures_contrainte',
+      '/gpx_scolarite_pages/procédure_pénale_pages/pp_mandats_justice',
   '/pp/saisies_scelles':
-      '/gpx_scolarite_pages/procédure_pénale_pages/pp_saisies_scelles',
-  '/pp/controle_identite':
-      '/gpx_scolarite_pages/procédure_pénale_pages/pp_controle_identite',
+      '/gpx/cadres_juridiques/commission_rogatoire/saisies_scelles',
+  '/pp/controle_identite': '/gpx/generalites/controle_identite_intro',
   '/pp/infractions_specifiques':
-      '/gpx_scolarite_pages/procédure_pénale_pages/pp_infractions_specifiques',
-  '/pp/pv_regles': '/gpx_scolarite_pages/procédure_pénale_pages/pp_pv_regles',
+      '/gpx_scolarite_pages/procédure_pénale_pages/pp_instruction_def',
+  '/pp/pv_regles': '/gpx/pv_apj20/introduction/proces_verbaux',
+
+  // Cibles brutes du menu (poussées telles quelles si non redirigées)
+  '/gpx_scolarite_pages/procédure_pénale_pages/pp_gav':
+      '/gpx/pv_apj20/gav_suspect_libre/gav_generalites',
+  '/gpx_scolarite_pages/procédure_pénale_pages/pp_perquisitions':
+      '/gpx/pv_apj20/perquisition_preliminaire/generalites',
+  '/gpx_scolarite_pages/procédure_pénale_pages/pp_auditions_pv':
+      '/gpx/pv_apj20/audition_suspect/generalites',
+  '/gpx_scolarite_pages/procédure_pénale_pages/pp_mesures_contrainte':
+      '/gpx_scolarite_pages/procédure_pénale_pages/pp_mandats_justice',
+  '/gpx_scolarite_pages/procédure_pénale_pages/pp_saisies_scelles':
+      '/gpx/cadres_juridiques/commission_rogatoire/saisies_scelles',
+  '/gpx_scolarite_pages/procédure_pénale_pages/pp_controle_identite':
+      '/gpx/generalites/controle_identite_intro',
+  '/gpx_scolarite_pages/procédure_pénale_pages/pp_infractions_specifiques':
+      '/gpx_scolarite_pages/procédure_pénale_pages/pp_instruction_def',
+  '/gpx_scolarite_pages/procédure_pénale_pages/pp_pv_regles':
+      '/gpx/pv_apj20/introduction/proces_verbaux',
 
   // Droit pénal général
   '/dpg': '/gpx_scolarite_pages/droit_pénale_général_pages',
@@ -720,16 +759,30 @@ const Map<String, String> redirectConfig = {
   '/armes/regles_port_transport':
       '/gpx_scolarite_pages/armes_munitions_pages/armes_regles_port_transport',
 
-  // Libertés publiques
+  // ─── Libertés publiques ────────────────────────────────────────────────
+  // ← 404 corrigés : les 3 pages de cours existent bien, mais sous le
+  // préfixe `/gpx/generalites/libertes_publiques/`.
   '/libertes': '/gpx_scolarite_pages/libertés_publiques_pages',
   '/libertes/introduction':
       '/gpx_scolarite_pages/libertés_publiques_pages/introduction',
   '/libertes/garanties_protection':
-      '/gpx_scolarite_pages/libertés_publiques_pages/garanties_protection',
+      '/gpx/generalites/libertes_publiques/garanties_protection',
   '/libertes/expression_collectives':
-      '/gpx_scolarite_pages/libertés_publiques_pages/expression_collectives',
+      '/gpx/generalites/libertes_publiques/libertes_expression_collectives',
   '/libertes/individuelles_vie_privee':
-      '/gpx_scolarite_pages/libertés_publiques_pages/individuelles_vie_privee',
+      '/gpx/generalites/libertes_publiques/libertes_individuelles_vie_privee',
+
+  // Cibles brutes du menu
+  '/gpx_scolarite_pages/libertés_publiques_pages/garanties_protection':
+      '/gpx/generalites/libertes_publiques/garanties_protection',
+  '/gpx_scolarite_pages/libertés_publiques_pages/expression_collectives':
+      '/gpx/generalites/libertes_publiques/libertes_expression_collectives',
+  '/gpx_scolarite_pages/libertés_publiques_pages/individuelles_vie_privee':
+      '/gpx/generalites/libertes_publiques/libertes_individuelles_vie_privee',
+
+  // ← 404 corrigé : la page existe sous `/gpx/sanction/`.
+  '/gpx_scolarite_pages/sanction_pages/causes_aggravation':
+      '/gpx/sanction/causes_aggravation',
 
   // Stups
   '/stup': '/gpx_scolarite_pages/stupéfiants_pages',
@@ -1841,7 +1894,7 @@ class _TrackChipsAndPages extends StatelessWidget {
 
   void _handleCategoryTap(BuildContext context, _DeckItem item) {
     // Gestion des redirections
-    final redirectRoute = redirectConfig[item.route];
+    final redirectRoute = redirectConfigHome[item.route];
     final targetRoute = redirectRoute ?? item.route;
 
     if (item.subcategories != null && item.subcategories!.isNotEmpty) {
@@ -2355,7 +2408,7 @@ class _HeroCardState extends State<_HeroCard> with TickerProviderStateMixin {
     }
 
     // Gestion des redirections
-    final redirectRoute = redirectConfig[widget.item.route];
+    final redirectRoute = redirectConfigHome[widget.item.route];
     final targetRoute = redirectRoute ?? widget.item.route;
 
     if (widget.item.subcategories != null &&

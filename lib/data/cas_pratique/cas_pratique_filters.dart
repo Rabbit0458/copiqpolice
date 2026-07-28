@@ -114,6 +114,9 @@ class CasPratiqueFilters {
         case 'moyen':
           difficulties.add(CpDifficulty.moyen);
           break;
+        case 'expert':
+          difficulties.add(CpDifficulty.expert);
+          break;
       }
     }
 

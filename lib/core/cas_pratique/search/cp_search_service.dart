@@ -181,6 +181,8 @@ class CpSearchService {
         return 'moyen';
       case CpDifficulty.difficile:
         return 'difficile';
+      case CpDifficulty.expert:
+        return 'expert';
     }
   }
 
@@ -190,6 +192,8 @@ class CpSearchService {
         return CpDifficulty.facile;
       case 'difficile':
         return CpDifficulty.difficile;
+      case 'expert':
+        return CpDifficulty.expert;
       default:
         return CpDifficulty.moyen;
     }

@@ -6,8 +6,8 @@ export default function robots(): MetadataRoute.Robots {
     rules: [
       {
         userAgent: "*",
-        allow: ["/", "/blog/", "/tarifs", "/contact", "/beta", "/cgu", "/privacy"],
-        disallow: ["/dashboard/", "/pa/", "/gpx/", "/forum/", "/concours-blanc/", "/psychotechniques/", "/culture-generale/", "/langues/", "/api/", "/abonnement/", "/profil/", "/parametres/", "/progression/", "/historique/", "/favoris/", "/notifications/"],
+        allow: ["/", "/blog/", "/tarifs", "/contact", "/beta", "/cgu", "/privacy", "/mentions-legales"],
+        disallow: ["/admin/", "/dashboard/", "/pa/", "/gpx/", "/forum/", "/concours-blanc/", "/psychotechniques/", "/culture-generale/", "/langues/", "/api/", "/abonnement/", "/profil/", "/parametres/", "/progression/", "/historique/", "/favoris/", "/notifications/"],
       },
     ],
     sitemap: `${BASE}/sitemap.xml`,

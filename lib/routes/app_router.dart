@@ -166,7 +166,17 @@ class RouteRegistry {
     '/institutions': (_) => const InstitutionPage(),
     '/procedure_penale': (_) => const ProcedurePenalePage(),
     '/picker': (_) => const ModePickerScreen(),
+    // ⚠️ CORRECTIF CRITIQUE (audit 2026-07-26)
+    // HomeBootstrap redirige vers '/mode_picker' et '/grade_picker' quand le
+    // profil de l'utilisateur est incomplet. Ces deux routes n'existaient PAS :
+    // l'utilisateur tombait sur _NotFoundScreen, et comme l'appel se fait en
+    // pushNamedAndRemoveUntil la pile était vidée — il restait bloqué sur le
+    // 404 sans aucun moyen de revenir. Tout nouveau compte était concerné.
+    '/mode_picker': (_) => const ModePickerScreen(),
+    '/grade_picker': (_) => const GradePickerScreen(),
     "/abonnement": (_) => const AbonnementPage(),
+    // Alias historique : plusieurs écrans poussent encore '/subscription'.
+    '/subscription': (_) => const AbonnementPage(),
     "/premium-required": (_) => const PremiumRequiredPage(),
 
     // ================== GPX : Généralités ==================
@@ -219,7 +229,11 @@ class RouteRegistry {
     GpxExamCultureGeneralePage.routeName: (_) =>
         const GpxExamCultureGeneralePage(),
     ResetPasswordPage.routeName: (_) => const ResetPasswordPage(),
-    AttentionVisuellePage.routeName: (_) => const AttentionVisuellePage(),
+    // NOTE : AttentionVisuellePage (lib/content/gpx_exam/psycotechniques/)
+    // portait le meme routeName que AttentionVisuellePageNew
+    // (lib/features/gpx_exam/psychotechniques/, alimentee par Supabase).
+    // C'est cette derniere qui est enregistree plus bas ; l'ancienne entree
+    // a ete retiree pour supprimer le doublon de cle.
     GpxExamConcoursHomePage.routeName: (_) => const GpxExamConcoursHomePage(),
     GpxCasPratiqueCase6Page.routeName: (_) => const GpxCasPratiqueCase6Page(),
     GpxCasPratiqueCase5Page.routeName: (_) => const GpxCasPratiqueCase5Page(),
@@ -232,6 +246,338 @@ class RouteRegistry {
         const GpxCasPratiqueEtapesReussitePage(),
     GpxCasPratiqueEntrainementWelcomePage.routeName: (_) =>
         const GpxCasPratiqueEntrainementWelcomePage(),
+
+    // ─────────────────────────────────────────────────────────────────────
+    //  GPX EXAM — CAS PRATIQUE : pages annexes
+    //  (elles existaient dans lib/ mais n'etaient pas enregistrees ici,
+    //   ce qui renvoyait l'utilisateur sur l'ecran 404 _NotFoundScreen)
+    // ─────────────────────────────────────────────────────────────────────
+    // ═══════════════════════════════════════════════════════════════════
+    //  GPX SCOLARITE — Quiz de fin de module (moteur generique Supabase)
+    //
+    //  Ces 12 quiz etaient references dans les menus mais n'existaient pas :
+    //  l'utilisateur tombait sur l'ecran 404.
+    //
+    //  Ils sont servis par QuizScolariteDynamiquePage, qui lit ses questions
+    //  dans la table `quiz_scolarite_questions`. Aucune question n'est ecrite
+    //  en dur : tout se corrige depuis le panel admin, sans republier
+    //  l'application sur les stores.
+    // ═══════════════════════════════════════════════════════════════════
+    QuizScolariteDynamiquePage.routeName: (_) =>
+        const QuizScolariteDynamiquePage(),
+
+    '/gpx/institution/laicite/quiz': (_) =>
+        const QuizScolariteDynamiquePage(module: 'gpx_institution_laicite'),
+    '/gpx/intervention/accident-circulation/quiz': (_) =>
+        const QuizScolariteDynamiquePage(
+          module: 'gpx_intervention_accident_circulation',
+        ),
+    '/gpx/intervention/animal/quiz': (_) =>
+        const QuizScolariteDynamiquePage(module: 'gpx_intervention_animal'),
+    '/gpx/intervention/debit-boissons/quiz': (_) =>
+        const QuizScolariteDynamiquePage(
+          module: 'gpx_intervention_debit_boissons',
+        ),
+    '/gpx/intervention/etrangers/quiz': (_) =>
+        const QuizScolariteDynamiquePage(module: 'gpx_intervention_etrangers'),
+    '/gpx/intervention/malades-mentaux/quiz': (_) =>
+        const QuizScolariteDynamiquePage(
+          module: 'gpx_intervention_malades_mentaux',
+        ),
+    '/gpx/intervention/mineurs/quiz': (_) =>
+        const QuizScolariteDynamiquePage(module: 'gpx_intervention_mineurs'),
+    '/gpx/intervention/stupefiants/quiz': (_) =>
+        const QuizScolariteDynamiquePage(module: 'gpx_intervention_stupefiants'),
+    '/gpx/intervention/autres/quiz': (_) =>
+        const QuizScolariteDynamiquePage(module: 'gpx_intervention_autres'),
+    '/gpx/memento_circulation/controle_routier/quiz': (_) =>
+        const QuizScolariteDynamiquePage(
+          module: 'gpx_circulation_controle_routier',
+        ),
+    '/gpx/memento_circulation/equipements/quiz': (_) =>
+        const QuizScolariteDynamiquePage(
+          module: 'gpx_circulation_equipements',
+        ),
+    '/gpx/memento_circulation/procedures/quiz': (_) =>
+        const QuizScolariteDynamiquePage(module: 'gpx_circulation_procedures'),
+
+    // ═══════════════════════════════════════════════════════════════════
+    //  GPX SCOLARITE — MODULE « DIMENSION HUMAINE »
+    //
+    //  Le module figurait dans le menu mais n'avait jamais ete code :
+    //  15 entrees renvoyaient sur l'ecran 404.
+    //
+    //  Les 12 fiches de cours sont servies par CoursScolaritePage, qui lit
+    //  son contenu (Markdown, points cles, references legales) dans la
+    //  table `cours_scolarite`. Les 3 quiz utilisent le moteur generique.
+    // ═══════════════════════════════════════════════════════════════════
+    CoursScolaritePage.routeName: (_) => const CoursScolaritePage(),
+
+    // Communication & posture
+    '/gpx/dimension_humaine/communication/dh1_fonctionnement': (_) =>
+        const CoursScolaritePage(
+          courseRoute: '/gpx/dimension_humaine/communication/dh1_fonctionnement',
+        ),
+    '/gpx/dimension_humaine/communication/dh3_strategies_public': (_) =>
+        const CoursScolaritePage(
+          courseRoute:
+              '/gpx/dimension_humaine/communication/dh3_strategies_public',
+        ),
+    '/gpx/dimension_humaine/communication/dh4_coordination_equipes': (_) =>
+        const CoursScolaritePage(
+          courseRoute:
+              '/gpx/dimension_humaine/communication/dh4_coordination_equipes',
+        ),
+    '/gpx/dimension_humaine/communication/adh2_posture_victime': (_) =>
+        const CoursScolaritePage(
+          courseRoute:
+              '/gpx/dimension_humaine/communication/adh2_posture_victime',
+        ),
+    '/gpx/dimension_humaine/communication/s3_2_violences_intrafamiliales': (_) =>
+        const CoursScolaritePage(
+          courseRoute:
+              '/gpx/dimension_humaine/communication/s3_2_violences_intrafamiliales',
+        ),
+    '/gpx/dimension_humaine/communication/quiz': (_) =>
+        const QuizScolariteDynamiquePage(module: 'gpx_dh_communication'),
+
+    // Stress & gestion emotionnelle
+    '/gpx/dimension_humaine/stress/dh2_stress': (_) => const CoursScolaritePage(
+      courseRoute: '/gpx/dimension_humaine/stress/dh2_stress',
+    ),
+    '/gpx/dimension_humaine/stress/dh2_carnet_ressources': (_) =>
+        const CoursScolaritePage(
+          courseRoute: '/gpx/dimension_humaine/stress/dh2_carnet_ressources',
+        ),
+    '/gpx/dimension_humaine/stress/adh9_agressivite': (_) =>
+        const CoursScolaritePage(
+          courseRoute: '/gpx/dimension_humaine/stress/adh9_agressivite',
+        ),
+    '/gpx/dimension_humaine/stress/ac6_conduites_suicidaires': (_) =>
+        const CoursScolaritePage(
+          courseRoute: '/gpx/dimension_humaine/stress/ac6_conduites_suicidaires',
+        ),
+    '/gpx/dimension_humaine/stress/quiz': (_) =>
+        const QuizScolariteDynamiquePage(module: 'gpx_dh_stress'),
+
+    // Ethique au quotidien
+    '/gpx/dimension_humaine/ethique/adh1_facultes_mentales': (_) =>
+        const CoursScolaritePage(
+          courseRoute: '/gpx/dimension_humaine/ethique/adh1_facultes_mentales',
+        ),
+    '/gpx/dimension_humaine/ethique/adh4_violences_sexuelles_sexistes': (_) =>
+        const CoursScolaritePage(
+          courseRoute:
+              '/gpx/dimension_humaine/ethique/adh4_violences_sexuelles_sexistes',
+        ),
+    '/gpx/dimension_humaine/ethique/adh6_confrontation_mort': (_) =>
+        const CoursScolaritePage(
+          courseRoute: '/gpx/dimension_humaine/ethique/adh6_confrontation_mort',
+        ),
+    '/gpx/dimension_humaine/ethique/quiz': (_) =>
+        const QuizScolariteDynamiquePage(module: 'gpx_dh_ethique'),
+
+    // ═══════════════════════════════════════════════════════════════════
+    //  DERNIERS LIENS DE MENU SANS PAGE (audit 2026-07-26)
+    // ═══════════════════════════════════════════════════════════════════
+
+    // PA EXAM — structure du concours (fiches redigees, servies par
+    // CoursScolaritePage). L'equivalent GPX existait deja.
+    '/pa_exam/concours/epreuves/tableau': (_) => const CoursScolaritePage(
+      courseRoute: '/pa_exam/concours/epreuves/tableau',
+    ),
+    '/pa_exam/concours/epreuves/visite_medicale_enquete': (_) =>
+        const CoursScolaritePage(
+          courseRoute: '/pa_exam/concours/epreuves/visite_medicale_enquete',
+        ),
+
+    // GPX EXAM — « Langue & culture generale » pointait vers une route
+    // inexistante ; le quiz correspondant est celui de francais.
+    '/gpx_exam/concours/culture_generale_langue': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      if (user == null) return const SignInPage();
+      return QuizCultureGeneralFrance(
+        uid: user.id,
+        email: user.email ?? '',
+      );
+    },
+
+    // PA SCOLARITE — le quiz existait sous un autre chemin.
+    '/pa/dps_dpg/quiz/quiz_circulation_routiere': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      if (user == null) return const SignInPage();
+      return QuizCirculationRoutierePA(
+        uid: user.id,
+        email: user.email ?? '',
+      );
+    },
+
+    // ─────────────────────────────────────────────────────────────────────
+    //  GPX SCOLARITE — Libertes publiques
+    //  Les 3 pages de cours existaient et etaient importees dans main.dart,
+    //  mais aucune n'etait enregistree : le menu renvoyait sur le 404.
+    // ─────────────────────────────────────────────────────────────────────
+    LibertesExpressionCollectivesPage.routeName: (_) =>
+        const LibertesExpressionCollectivesPage(),
+    GarantiesProtectionLibertesPage.routeName: (_) =>
+        const GarantiesProtectionLibertesPage(),
+    LibertesIndividuellesViePriveePage.routeName: (_) =>
+        const LibertesIndividuellesViePriveePage(),
+
+    // PlaintePage etait poussee par nom depuis procedure_penale_page.dart
+    // sans etre enregistree.
+    PlaintePage.routeName: (_) => const PlaintePage(),
+
+    // Alias : la page declare `/gpx/dps/generalites/quiz/libertes_publiques`
+    // alors que le routeur ne connaissait que `/gpx/generalites/quiz/...`.
+    QuizLibertesPubliquesPage.routeName: (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      if (user == null) return const SignInPage();
+      return QuizLibertesPubliquesPage(
+        uid: user.id,
+        email: user.email ?? '',
+      );
+    },
+
+    CasPratiqueMyAppealsPage.routeName: (_) => const CasPratiqueMyAppealsPage(),
+    CpMemosListPage.routeName: (_) => const CpMemosListPage(),
+    CpMemoReaderPage.routeName: (context) {
+      final args = ModalRoute.of(context)?.settings.arguments;
+      final slug = (args is String)
+          ? args
+          : (args is Map && args['slug'] is String)
+          ? args['slug'] as String
+          : '';
+      return CpMemoReaderPage(slug: slug);
+    },
+    CpNotifPrefsPage.routeName: (_) => const CpNotifPrefsPage(),
+    CpPaywallPage.routeName: (context) {
+      final args = ModalRoute.of(context)?.settings.arguments;
+      final trigger = (args is String)
+          ? args
+          : (args is Map && args['trigger'] is String)
+          ? args['trigger'] as String
+          : null;
+      return CpPaywallPage(trigger: trigger);
+    },
+    CasPratiqueLeaderboardPage.routeName: (_) =>
+        const CasPratiqueLeaderboardPage(),
+    CasPratiqueReferralPage.routeName: (_) => const CasPratiqueReferralPage(),
+    CpPrivacyPage.routeName: (_) => const CpPrivacyPage(),
+    CasPratiqueOnboardingPremiumPage.routeName: (context) {
+      final args = ModalRoute.of(context)?.settings.arguments;
+      String? next;
+      if (args is String) {
+        next = args;
+      } else if (args is Map && args['nextRoute'] is String) {
+        next = args['nextRoute'] as String;
+      }
+      return CasPratiqueOnboardingPremiumPage(nextRoute: next);
+    },
+    CasPratiqueConcoursBlancPage.routeName: (context) {
+      final args = ModalRoute.of(context)?.settings.arguments;
+      String? mockExamId;
+      if (args is String) {
+        mockExamId = args;
+      } else if (args is Map && args['mockExamId'] is String) {
+        mockExamId = args['mockExamId'] as String;
+      }
+      return CasPratiqueConcoursBlancPage(mockExamId: mockExamId);
+    },
+    CasPratiqueShareScorePage.routeName: (context) {
+      final args = ModalRoute.of(context)?.settings.arguments;
+      final map = (args is Map) ? args : const <String, dynamic>{};
+      return CasPratiqueShareScorePage(args: ShareScoreArgs.fromMap(map));
+    },
+
+    // ─────────────────────────────────────────────────────────────────────
+    //  GPX EXAM — TESTS PSYCHOTECHNIQUES (module features/gpx_exam)
+    //  Les 10 pages existaient mais aucune n'etait routee.
+    // ─────────────────────────────────────────────────────────────────────
+    ComprendreEpreuvePsychoPage.routeName: (_) =>
+        const ComprendreEpreuvePsychoPage(),
+    ModeConcoursPsychoPage.routeName: (_) => const ModeConcoursPsychoPage(),
+    CalculMentalPage.routeName: (_) => const CalculMentalPage(),
+    LogiqueVerbalePage.routeName: (_) => const LogiqueVerbalePage(),
+    RaisonnementLogiquePage.routeName: (_) => const RaisonnementLogiquePage(),
+    RaisonnementSpatialPage.routeName: (_) => const RaisonnementSpatialPage(),
+    RotationsSymetriesPage.routeName: (_) => const RotationsSymetriesPage(),
+    ConcentrationPage.routeName: (_) => const ConcentrationPage(),
+    AttentionVisuellePageNew.routeName: (_) => const AttentionVisuellePageNew(),
+    SuitesLogiquesPageNew.routeName: (_) => const SuitesLogiquesPageNew(),
+
+    // ═══════════════════════════════════════════════════════════════
+    //  ROUTES RETABLIES — audit 2026-07-26
+    //  64 pages existantes qui n'etaient pas enregistrees.
+    // ═══════════════════════════════════════════════════════════════
+    // ── GPX SCOLARITE — pages existantes qui n'etaient pas routees (23) ──
+    AutresCadresEnquetePage.routeName: (_) => const AutresCadresEnquetePage(),
+    CadresEnquetePage.routeName: (_) => const CadresEnquetePage(),
+    EnquetePreliminairePage.routeName: (_) => const EnquetePreliminairePage(),
+    ArmesAcquisitionDetentionABPage.routeName: (_) => const ArmesAcquisitionDetentionABPage(),
+    ArmesClassificationPage.routeName: (_) => const ArmesClassificationPage(),
+    ArmesDefinitionsPage.routeName: (_) => const ArmesDefinitionsPage(),
+    ArmesMaterielsGuerreElementsPage.routeName: (_) => const ArmesMaterielsGuerreElementsPage(),
+    ArmesPortTransportCDPage.routeName: (_) => const ArmesPortTransportCDPage(),
+    ArmesReglesAcquisitionDetentionPage.routeName: (_) => const ArmesReglesAcquisitionDetentionPage(),
+    ArmesReglesPortTransportPage.routeName: (_) => const ArmesReglesPortTransportPage(),
+    RecelNonJustificationContenuPage.routeName: (_) => const RecelNonJustificationContenuPage(),
+    VolPage.routeName: (_) => const VolPage(),
+    LibertesPubliquesIntroductionContenuPage.routeName: (_) => const LibertesPubliquesIntroductionContenuPage(),
+    StupefiantsBlanchimentProduitPage.routeName: (_) => const StupefiantsBlanchimentProduitPage(),
+    StupefiantsCessionOffrePage.routeName: (_) => const StupefiantsCessionOffrePage(),
+    StupefiantsDirectionOrganisationPage.routeName: (_) => const StupefiantsDirectionOrganisationPage(),
+    StupefiantsFacilitationUsagePage.routeName: (_) => const StupefiantsFacilitationUsagePage(),
+    StupefiantsImportExportPage.routeName: (_) => const StupefiantsImportExportPage(),
+    StupefiantsIntroductionPage.routeName: (_) => const StupefiantsIntroductionPage(),
+    StupefiantsProductionFabricationPage.routeName: (_) => const StupefiantsProductionFabricationPage(),
+    StupefiantsProvocationMajeurPage.routeName: (_) => const StupefiantsProvocationMajeurPage(),
+    StupefiantsTransportDetentionOffrePage.routeName: (_) => const StupefiantsTransportDetentionOffrePage(),
+    StupefiantsUsageIllicitePage.routeName: (_) => const StupefiantsUsageIllicitePage(),
+
+    // ── PA SCOLARITE — pages existantes qui n'etaient pas routees (41) ──
+    PaCadresEnqueteIntroPage.routeName: (_) => const PaCadresEnqueteIntroPage(),
+    PaCommissionRogatoireIntroPage.routeName: (_) => const PaCommissionRogatoireIntroPage(),
+    PaControleIdentiteContenuPage.routeName: (_) => const PaControleIdentiteContenuPage(),
+    PaCriminaliteOrganiseeContenuPage.routeName: (_) => const PaCriminaliteOrganiseeContenuPage(),
+    PaDisparitionIntroPage.routeName: (_) => const PaDisparitionIntroPage(),
+    PaEnquetePreliminaireIntroPage.routeName: (_) => const PaEnquetePreliminaireIntroPage(),
+    PaFlagrantDelitIntroPage.routeName: (_) => const PaFlagrantDelitIntroPage(),
+    PaMortInconnueIntroPage.routeName: (_) => const PaMortInconnueIntroPage(),
+    PaPersonneBlesseGrievementntroPage.routeName: (_) => const PaPersonneBlesseGrievementntroPage(),
+    PaPersonnesFuiteIntroGpxSchool.routeName: (_) => const PaPersonnesFuiteIntroGpxSchool(),
+    PaConduiteStupefiantsPage.routeName: (_) => const PaConduiteStupefiantsPage(),
+    PaDefautAssurancePage.routeName: (_) => const PaDefautAssurancePage(),
+    PaDefautPermisPage.routeName: (_) => const PaDefautPermisPage(),
+    PaDelitFuitePage.routeName: (_) => const PaDelitFuitePage(),
+    PaEtatAlcooliquePage.routeName: (_) => const PaEtatAlcooliquePage(),
+    PaGrandExcesVitessePage.routeName: (_) => const PaGrandExcesVitessePage(),
+    PaIncitationOrganisationPromotionPage.routeName: (_) => const PaIncitationOrganisationPromotionPage(),
+    PaIvressePage.routeName: (_) => const PaIvressePage(),
+    PaPlaquesInscriptionsPage.routeName: (_) => const PaPlaquesInscriptionsPage(),
+    PaRefusObtempererPage.routeName: (_) => const PaRefusObtempererPage(),
+    PaRefusVerificationsPage.routeName: (_) => const PaRefusVerificationsPage(),
+    PaRodeoMotorisePage.routeName: (_) => const PaRodeoMotorisePage(),
+    PaCharteAccueilPublicVictimesPage.routeName: (_) => const PaCharteAccueilPublicVictimesPage(),
+    PaDemarchesAdministrativesPage.routeName: (_) => const PaDemarchesAdministrativesPage(),
+    PaGpxDoctrineAccueilVictimesVcPage.routeName: (_) => const PaGpxDoctrineAccueilVictimesVcPage(),
+    PaReferentielMariannePage.routeName: (_) => const PaReferentielMariannePage(),
+    PaProtectionLocauxPolicePage.routeName: (_) => const PaProtectionLocauxPolicePage(),
+    PaCodeDeontologieCodeCommentePage.routeName: (_) => const PaCodeDeontologieCodeCommentePage(),
+    PaDroitsObligationsPoliciersPage.routeName: (_) => const PaDroitsObligationsPoliciersPage(),
+    PaEnqueteAdministrativePage.routeName: (_) => const PaEnqueteAdministrativePage(),
+    PaHorsServiceAmarisPage.routeName: (_) => const PaHorsServiceAmarisPage(),
+    PaMarquesExterieuresRespectPage.routeName: (_) => const PaMarquesExterieuresRespectPage(),
+    PaReseauxSociauxPage.routeName: (_) => const PaReseauxSociauxPage(),
+    PaSanctionsRecompensesPage.routeName: (_) => const PaSanctionsRecompensesPage(),
+    PaCompteRenduPage.routeName: (_) => const PaCompteRenduPage(),
+    PaFormalismeRapportPage.routeName: (_) => const PaFormalismeRapportPage(),
+    PaModelesRapportsPage.routeName: (_) => const PaModelesRapportsPage(),
+    PaHistoireReperesPage.routeName: (_) => const PaHistoireReperesPage(),
+    PaCharteLaiciteServicesPublicsPage.routeName: (_) => const PaCharteLaiciteServicesPublicsPage(),
+    PaGpxLaiciteDlpajPage.routeName: (_) => const PaGpxLaiciteDlpajPage(),
+    PaRitesCultesFrancePage.routeName: (_) => const PaRitesCultesFrancePage(),
+
     GPXAdmissionPage.routeName: (_) => const GPXAdmissionPage(),
     GPXAdmissibilitePage.routeName: (_) => const GPXAdmissibilitePage(),
     TableauRecapitulatifEpreuvesGPXPage.routeName: (_) =>
@@ -1199,28 +1545,173 @@ class RouteRegistry {
         const GpxMementoPriseDeNoteMethodologiePage(),
     GpxCasPratiqueCase2Page.routeName: (_) => const GpxCasPratiqueCase2Page(),
 
-    '/gpx_exam/concours/tests_psychotechniques/logique_verbale': (_) {
+    // ══════════════════════════════════════════════════════════════════
+    //  GPX EXAM — Tests psychotechniques : ANCIENNES ROUTES (legacy)
+    //
+    //  Ces 4 routes pointaient vers les quiz hardcodes de
+    //  lib/content/gpx_exam/psycotechniques/. Elles faisaient DOUBLON avec
+    //  le module lib/features/gpx_exam/psychotechniques/ (alimente par
+    //  Supabase : 283 000 questions) vers lequel pointe le menu GPX Exam.
+    //  Comme elles etaient declarees APRES dans la map, elles ecrasaient
+    //  silencieusement les bonnes routes.
+    //
+    //  Elles crashaient en outre lorsque l'utilisateur n'etait pas
+    //  connecte (`user!.id` sur un `currentUser` null).
+    //
+    //  -> `logique_verbale` et `suites_logiques` sont desormais servies par
+    //     le module features. `calcul_rapide` et `attention_concentration`
+    //     sont redirigees vers leurs equivalents features.
+    // ══════════════════════════════════════════════════════════════════
+    '/gpx_exam/concours/tests_psychotechniques/calcul_rapide': (_) =>
+        const CalculMentalPage(),
+    '/gpx_exam/concours/tests_psychotechniques/attention_concentration': (_) =>
+        const ConcentrationPage(),
+
+    // ══════════════════════════════════════════════════════════════════
+    //  PA — Concours | Tests psychotechniques (module indépendant du GPX,
+    //  tracking séparé : track='pa' / module='pa_psychotechnique')
+    // ══════════════════════════════════════════════════════════════════
+    PaTestsPsyHomePage.routeName: (_) => const PaTestsPsyHomePage(),
+    PaTestsPsyAnalysePage.routeName: (_) => const PaTestsPsyAnalysePage(),
+    PaTestsPsyPersonnalitePage.routeName: (_) =>
+        const PaTestsPsyPersonnalitePage(),
+    PaTestsPsyRaisonnementHubPage.routeName: (_) =>
+        const PaTestsPsyRaisonnementHubPage(),
+    PaTestsPsyObservationHubPage.routeName: (_) =>
+        const PaTestsPsyObservationHubPage(),
+    PaTestsPsyQcmHubPage.routeName: (_) => const PaTestsPsyQcmHubPage(),
+    PaTestsPsyExercicesHubPage.routeName: (_) =>
+        const PaTestsPsyExercicesHubPage(),
+    PaTestsPsyCorrigesPage.routeName: (_) => const PaTestsPsyCorrigesPage(),
+    PaTestsPsyRoutes.aptitudeVerbale: (_) {
       final user = Supabase.instance.client.auth.currentUser;
-      return QuizPsycotechniquesVerbal(uid: user!.id, email: user.email!);
+      return PaQuizPsycotechniquesVerbal(uid: user!.id, email: user.email!);
     },
-    '/gpx_exam/concours/tests_psychotechniques/attention_concentration': (_) {
+    PaAttentionVisuellePage.routeName: (_) => const PaAttentionVisuellePage(),
+    PaTestsPsyRoutes.exSuitesLogiques: (_) {
       final user = Supabase.instance.client.auth.currentUser;
-      return QuizPsycotechniquesConcentration(
+      return PaQuizPsycotechniquesSuitesLogiques(
         uid: user!.id,
         email: user.email!,
       );
     },
-    '/gpx_exam/concours/tests_psychotechniques/calcul_rapide': (_) {
+    PaTestsPsyRoutes.exLogiqueVerbale: (_) {
       final user = Supabase.instance.client.auth.currentUser;
-      return QuizPsycotechniquesCalcul(uid: user!.id, email: user.email!);
+      return PaQuizPsycotechniquesVerbal(uid: user!.id, email: user.email!);
     },
-    '/gpx_exam/concours/tests_psychotechniques/suites_logiques': (_) {
+    PaTestsPsyRoutes.exConcentration: (_) {
       final user = Supabase.instance.client.auth.currentUser;
-      return QuizPsycotechniquesSuitesLogiques(
+      return PaQuizPsycotechniquesConcentration(
         uid: user!.id,
         email: user.email!,
       );
     },
+    PaTestsPsyRoutes.exCalcul: (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return PaQuizPsycotechniquesCalcul(uid: user!.id, email: user.email!);
+    },
+    PaTestsPsyRoutes.exRaisonnement: (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return PaQuizPsycotechniquesRaisonnement(
+        uid: user!.id,
+        email: user.email!,
+      );
+    },
+
+    // ══════════════════════════════════════════════════════════════════
+    //  PA — Concours | Connaissances générales (module indépendant du GPX,
+    //  tracking séparé : track='pa' / quiz_name préfixé 'PA - ')
+    // ══════════════════════════════════════════════════════════════════
+    PaConnaissancesGeneralesHomePage.routeName: (_) =>
+        const PaConnaissancesGeneralesHomePage(),
+    PaCgFichesPage.routeName: (_) => const PaCgFichesPage(),
+    PaCgQcmHubPage.routeName: (_) => const PaCgQcmHubPage(),
+    PaCgExercicesHubPage.routeName: (_) => const PaCgExercicesHubPage(),
+    PaCgCorrigesPage.routeName: (_) => const PaCgCorrigesPage(),
+    PaCgRoutes.exHistoire: (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return PaQuizCultureGeneraleHistoireFrance(
+        uid: user!.id,
+        email: user.email!,
+      );
+    },
+    PaCgRoutes.exInstitutions: (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return PaQuizCultureGeneralInstitutionsEuropeenes(
+        uid: user!.id,
+        email: user.email!,
+      );
+    },
+    PaCgRoutes.exActualite: (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return PaQuizCultureGeneraleActualite(uid: user!.id, email: user.email!);
+    },
+    PaCgRoutes.exGeographie: (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return PaQuizCultureGeneraleGeographie(
+        uid: user!.id,
+        email: user.email!,
+      );
+    },
+    PaCgRoutes.exFrancais: (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return PaQuizCultureGeneralFrance(uid: user!.id, email: user.email!);
+    },
+    PaCgRoutes.exSport: (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return PaQuizCultureGeneraleSport(uid: user!.id, email: user.email!);
+    },
+    PaCgRoutes.exSciences: (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return PaQuizCultureGeneraleSciences(uid: user!.id, email: user.email!);
+    },
+    PaCgRoutes.exSante: (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return PaQuizCultureGeneraleSante(uid: user!.id, email: user.email!);
+    },
+    PaCgRoutes.exPolice: (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return PaQuizCultureGeneralePolice(uid: user!.id, email: user.email!);
+    },
+    PaCgRoutes.exMythologie: (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return PaQuizCultureGeneraleMythologie(
+        uid: user!.id,
+        email: user.email!,
+      );
+    },
+    PaCgRoutes.exMusique: (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return PaQuizCultureGeneraleMusique(uid: user!.id, email: user.email!);
+    },
+    PaCgRoutes.exCinema: (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return PaQuizCultureGeneraleCinema(uid: user!.id, email: user.email!);
+    },
+    PaCgRoutes.exDroit: (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return PaQuizCultureGeneraleDroit(uid: user!.id, email: user.email!);
+    },
+    PaCgRoutes.exSecuriteRoutiere: (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return PaQuizCultureGeneraleSecuriteRoutiere(
+        uid: user!.id,
+        email: user.email!,
+      );
+    },
+
+    // ══════════════════════════════════════════════════════════════════
+    //  PA — Concours | Épreuve de photolangage
+    // ══════════════════════════════════════════════════════════════════
+    PaPhotolangageHubPage.routeName: (_) => const PaPhotolangageHubPage(),
+    PaPhotolangageAnalysePage.routeName: (_) =>
+        const PaPhotolangageAnalysePage(),
+    PaPhotolangageEtapesPage.routeName: (_) =>
+        const PaPhotolangageEtapesPage(),
+    PaPhotolangageTrainingListPage.routeName: (_) =>
+        const PaPhotolangageTrainingListPage(),
+    PaPhotolangageHistoryPage.routeName: (_) =>
+        const PaPhotolangageHistoryPage(),
     '/gpx_exam/concours/langue_etrangere/exemples_allemand': (_) {
       final user = Supabase.instance.client.auth.currentUser;
       return QuizLangueEtrangereAllemand(uid: user!.id, email: user.email!);

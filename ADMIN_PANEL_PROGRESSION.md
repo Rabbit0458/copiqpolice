@@ -3,6 +3,31 @@
 > Fichier de référence vivant. Mettre à jour au fur et à mesure des implémentations.
 > Dernière mise à jour : 2026-06-09
 
+> ⚠️ **DOCUMENT PÉRIMÉ — lu et annoté le 2026-07-26.** Ce fichier spécifie une architecture
+> (table `admin_users` autonome, `password_hash`, JWT custom, `admin_code` en clair/hashé,
+> stack Next.js/Nuxt "à définir") qui **n'a jamais été construite**. Le panel réellement
+> livré vit dans `copiq-web/src/app/admin/` (voir `copiq-web/src/app/admin/README.md`) et
+> repose sur une conception différente : authentification **Supabase Auth** existante +
+> **TOTP (Google Authenticator, AAL2)** + code staff, données lues via des fonctions
+> `SECURITY DEFINER` (`cp_admin_guard`, `forum_admin_guard`, `quiz_admin_guard`, etc.),
+> pas de service_role exposé au client, pas de table `admin_users` séparée.
+>
+> Le panel réel a **13 pages actives** : dashboard, cas-pratiques (CRUD + éditeur de grille),
+> quiz, cours, abonnements, utilisateurs, appels, forum, patch-notes, administrateurs,
+> journal d'audit, signalements, santé du contenu.
+>
+> **Le tableau récapitulatif « 0/81 » en bas de ce fichier est donc invalide** — il mesure
+> l'avancement d'un système qui n'existe pas. Les seuls éléments de ce document qui restent
+> un vrai reliquat (à recoder dans l'architecture réelle si besoin un jour) :
+> - Vue unifiée des signalements quiz sur les **3 tables legacy** (`report_question`,
+>   `report_culture_generale`, `tests_psycotechnique_report`) — module 3 ci-dessous. Le panel
+>   actuel gère les signalements « santé du contenu » et cas pratique, pas cette vue unifiée
+>   legacy à onglets.
+> - Éditeur de questions `quiz_questions` hardcodées (module 8) — RPC `admin_upsert_quiz_question`
+>   existe déjà côté base, mais aucune page ne l'utilise.
+>
+> Pour l'état réel et à jour du panel admin, se référer à `RESTE_A_FAIRE.md` (racine).
+
 ---
 
 ## 🗂️ SOMMAIRE DES MODULES

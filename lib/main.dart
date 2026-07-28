@@ -50,6 +50,8 @@ import 'package:copiqpolice/features/onboarding/gpx_school.dart'
 
 // Pages
 import 'package:copiqpolice/features/onboarding/mode_picker.dart';
+// Écran de choix du grade : existait mais n'était routé nulle part (audit 2026-07-26).
+import 'package:copiqpolice/features/onboarding/grade_picker.dart';
 
 // GPX School
 import 'package:copiqpolice/features/home/home_page_gpx_school.dart';
@@ -93,6 +95,11 @@ import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/usage
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/usage_des_armes_contenu_page.dart';
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/libert%C3%A9s_publiques/liberte_publiques_intro_page.dart';
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/libert%C3%A9s_publiques/liberte_publiques_contenu_page.dart';
+// Les 3 fiches ci-dessous existaient mais n'etaient importees nulle part :
+// elles n'ont donc jamais pu etre routees (menu -> ecran 404).
+import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/libert%C3%A9s_publiques/garanties_protection_libertes_page.dart';
+import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/libert%C3%A9s_publiques/libertes_expression_collectives_page.dart';
+import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/libert%C3%A9s_publiques/libertes_individuelles_vie_privee_page.dart';
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_locaux_intro.dart';
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart';
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_judiciaires_page.dart';
@@ -783,8 +790,50 @@ import 'package:copiqpolice/content/gpx_exam/cas_pratique/cas_pratique_excercice
 import 'package:copiqpolice/content/gpx_exam/cas_pratique/cas_pratique_excercice/case_5_page.dart';
 import 'package:copiqpolice/content/gpx_exam/cas_pratique/cas_pratique_excercice/case_6_page.dart';
 import 'package:copiqpolice/content/gpx_exam/cas_pratique/cas_pratique_excercice/case_dynamic_page.dart';
+// Cas pratique — pages annexes (etaient orphelines : aucune route enregistree)
+import 'package:copiqpolice/content/gpx_exam/cas_pratique/my_appeals_page.dart';
+import 'package:copiqpolice/content/gpx_exam/cas_pratique/leaderboard_page.dart';
+import 'package:copiqpolice/content/gpx_exam/cas_pratique/referral_page.dart';
+import 'package:copiqpolice/content/gpx_exam/cas_pratique/share_score_page.dart';
+import 'package:copiqpolice/content/gpx_exam/cas_pratique/concours_blanc_page.dart';
+import 'package:copiqpolice/content/gpx_exam/cas_pratique/cp_privacy_page.dart';
+import 'package:copiqpolice/content/gpx_exam/cas_pratique/cas_pratique_onboarding_premium.dart';
+import 'package:copiqpolice/content/gpx_scolarite/quiz_scolarite_gpx/gpx_quiz_dynamique_page.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/cours_scolarite_page.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/plainte_page.dart';
+import 'package:copiqpolice/features/memos/cp_memos_page.dart';
+import 'package:copiqpolice/content/paywall/cp_paywall_page.dart';
+import 'package:copiqpolice/core/notifications/cp_notif_prefs_page.dart';
 
-import 'package:copiqpolice/content/gpx_exam/psycotechniques/attention_visuelle_page.dart';
+
+// ═══════════════════════════════════════════════════════════════════
+//  PAGES EXISTANTES REMISES DANS LE ROUTEUR (audit 2026-07-26)
+//  Ces pages existaient dans lib/ mais n'etaient reliees a aucune
+//  route : les menus GPX Scolarite / PA Scolarite renvoyaient donc
+//  l'utilisateur sur l'ecran 404 _NotFoundScreen.
+// ═══════════════════════════════════════════════════════════════════
+import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/autres_cadres_enquete_page.dart';
+import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/cadres_enquete_page.dart';
+import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire_page.dart';
+// NB : les pages « libertés publiques » et « stupéfiants » sont deja importees
+// plus haut (lignes ~552 et ~558-567) via des chemins dont les accents sont
+// encodes en URI (stup%C3%A9fiants_pages). Dart resout les deux graphies vers
+// le meme fichier : les reimporter ici produisait 11 duplicate_import.
+
+
+// GPX EXAM — Tests psychotechniques (module features/gpx_exam/psychotechniques)
+import 'package:copiqpolice/features/gpx_exam/psychotechniques/pages/comprendre_epreuve_psycho_page.dart';
+import 'package:copiqpolice/features/gpx_exam/psychotechniques/pages/mode_concours_page.dart';
+import 'package:copiqpolice/features/gpx_exam/psychotechniques/pages/calcul_mental_page.dart';
+import 'package:copiqpolice/features/gpx_exam/psychotechniques/pages/logique_verbale_page.dart';
+import 'package:copiqpolice/features/gpx_exam/psychotechniques/pages/raisonnement_logique_page.dart';
+import 'package:copiqpolice/features/gpx_exam/psychotechniques/pages/raisonnement_spatial_page.dart';
+import 'package:copiqpolice/features/gpx_exam/psychotechniques/pages/rotations_symetries_page.dart';
+import 'package:copiqpolice/features/gpx_exam/psychotechniques/pages/concentration_page.dart';
+import 'package:copiqpolice/features/gpx_exam/psychotechniques/pages/attention_visuelle_page.dart'
+    show AttentionVisuellePageNew;
+import 'package:copiqpolice/features/gpx_exam/psychotechniques/pages/suites_logiques_page.dart'
+    show SuitesLogiquesPageNew;
 
 //═════════════════════════════════════════════════════════════════════
 //  GPX - Concours | Quiz Culture Générale & Langues Étrangères
@@ -806,10 +855,49 @@ import 'package:copiqpolice/content/gpx_exam/culture_generale/quiz_culture_gener
 import 'package:copiqpolice/content/gpx_exam/langue_etrangere/quiz_langue_etrangere_anglais.dart';
 import 'package:copiqpolice/content/gpx_exam/langue_etrangere/quiz_langue_etrangere_espagnol.dart';
 import 'package:copiqpolice/content/gpx_exam/langue_etrangere/quiz_langue_etrangere_allemand.dart';
-import 'package:copiqpolice/content/gpx_exam/psycotechniques/quiz_tests_psycotechniques_suite_logiques.dart';
-import 'package:copiqpolice/content/gpx_exam/psycotechniques/quiz_tests_psycotechniques_concentration.dart';
-import 'package:copiqpolice/content/gpx_exam/psycotechniques/quiz_tests_psycotechniques_calcul.dart';
-import 'package:copiqpolice/content/gpx_exam/psycotechniques/quiz_tests_psycotechniques_suite_verbal.dart';
+
+//═════════════════════════════════════════════════════════════════════
+//  PA - Concours | Tests psychotechniques (module indépendant du GPX)
+//═══════════════════════════════════════════════════════════════════════
+import 'package:copiqpolice/content/pa_exam/psycotechniques/pa_attention_visuelle_page.dart';
+import 'package:copiqpolice/content/pa_exam/psycotechniques/pa_quiz_tests_psycotechniques_suite_logiques.dart';
+import 'package:copiqpolice/content/pa_exam/psycotechniques/pa_quiz_tests_psycotechniques_concentration.dart';
+import 'package:copiqpolice/content/pa_exam/psycotechniques/pa_quiz_tests_psycotechniques_calcul.dart';
+import 'package:copiqpolice/content/pa_exam/psycotechniques/pa_quiz_tests_psycotechniques_raisonnement.dart';
+import 'package:copiqpolice/content/pa_exam/psycotechniques/pa_quiz_tests_psycotechniques_suite_verbal.dart';
+import 'package:copiqpolice/content/pa_exam/psycotechniques/pa_tests_psy_hub_pages.dart';
+import 'package:copiqpolice/content/pa_exam/psycotechniques/pa_tests_psy_analyse_page.dart';
+import 'package:copiqpolice/content/pa_exam/psycotechniques/pa_tests_psy_personnalite_page.dart';
+import 'package:copiqpolice/content/pa_exam/psycotechniques/pa_tests_psy_corriges_page.dart';
+
+//═════════════════════════════════════════════════════════════════════
+//  PA - Concours | Connaissances générales (module indépendant du GPX)
+//═══════════════════════════════════════════════════════════════════════
+import 'package:copiqpolice/content/pa_exam/culture_generale/pa_cg_hub_pages.dart';
+import 'package:copiqpolice/content/pa_exam/culture_generale/pa_cg_corriges_page.dart';
+import 'package:copiqpolice/content/pa_exam/culture_generale/pa_quiz_culture_generale_actualite.dart';
+import 'package:copiqpolice/content/pa_exam/culture_generale/pa_quiz_culture_generale_cinema.dart';
+import 'package:copiqpolice/content/pa_exam/culture_generale/pa_quiz_culture_generale_droit.dart';
+import 'package:copiqpolice/content/pa_exam/culture_generale/pa_quiz_culture_generale_france.dart';
+import 'package:copiqpolice/content/pa_exam/culture_generale/pa_quiz_culture_generale_geographie.dart';
+import 'package:copiqpolice/content/pa_exam/culture_generale/pa_quiz_culture_generale_histoire_france.dart';
+import 'package:copiqpolice/content/pa_exam/culture_generale/pa_quiz_culture_generale_institutions_europeens.dart';
+import 'package:copiqpolice/content/pa_exam/culture_generale/pa_quiz_culture_generale_musique.dart';
+import 'package:copiqpolice/content/pa_exam/culture_generale/pa_quiz_culture_generale_mythologie.dart';
+import 'package:copiqpolice/content/pa_exam/culture_generale/pa_quiz_culture_generale_police.dart';
+import 'package:copiqpolice/content/pa_exam/culture_generale/pa_quiz_culture_generale_sante.dart';
+import 'package:copiqpolice/content/pa_exam/culture_generale/pa_quiz_culture_generale_sciences.dart';
+import 'package:copiqpolice/content/pa_exam/culture_generale/pa_quiz_culture_generale_securite_routiere.dart';
+import 'package:copiqpolice/content/pa_exam/culture_generale/pa_quiz_culture_generale_sport.dart';
+
+//═════════════════════════════════════════════════════════════════════
+//  PA - Concours | Épreuve de photolangage
+//═══════════════════════════════════════════════════════════════════════
+import 'package:copiqpolice/content/pa_exam/photolangage/pa_photolangage_hub_page.dart';
+import 'package:copiqpolice/content/pa_exam/photolangage/pa_photolangage_analyse_page.dart';
+import 'package:copiqpolice/content/pa_exam/photolangage/pa_photolangage_etapes_page.dart';
+import 'package:copiqpolice/content/pa_exam/photolangage/pa_photolangage_training_pages.dart';
+import 'package:copiqpolice/content/pa_exam/photolangage/pa_photolangage_history_page.dart';
 
 //═════════════════════════════════════════════════════════════════════
 //  PA - Scolarité | Organisation PN & Formation Initiale & Circulation
@@ -1386,6 +1474,10 @@ import 'package:copiqpolice/features/home/gpx_exam_culture_generale_page.dart';
 
 // === Services ===
 import 'package:copiqpolice/core/services/app_console_logger.dart';
+// Facade de monitoring (Sentry / Crashlytics). No-op tant qu'aucun SDK n'est
+// branche, mais les call-sites sont en place : activer le monitoring ne
+// demandera aucune modification du code applicatif.
+import 'package:copiqpolice/core/monitoring/sentry_setup.dart';
 import 'package:copiqpolice/core/widgets/app_notifier.dart'
     show AppSettingsController;
 // endregion Imports
@@ -1471,7 +1563,8 @@ class _LoggerRouteObserver extends NavigatorObserver {
 
 // --- 1️⃣ Fonction loader : à garder ---
 Future<void> _installUsernameLoader() async {
-  HomePageGpxSchool.usernameLoader = () async {
+  // Loader "username" (comportement historique GPX) : renvoie le pseudo.
+  Future<String?> usernameLoader() async {
     final supa = Supabase.instance.client;
     final user = supa.auth.currentUser;
     if (user == null) return null;
@@ -1487,15 +1580,53 @@ Future<void> _installUsernameLoader() async {
     }
 
     String? name;
-    name ??= await _try('user_profies', 'user_id');
-    name ??= await _try('user_profies', 'id');
     name ??= await _try('user_profiles', 'user_id');
     name ??= await _try('user_profiles', 'id');
 
     final meta = (user.userMetadata?['username'] as String?)?.trim();
     if (meta != null && meta.isNotEmpty) return meta;
     return name;
-  };
+  }
+
+  // Loader "prénom" (PA exam) : renvoie first_name pour un accueil familier.
+  // Fallback : username, puis metadata.
+  Future<String?> firstNameLoader() async {
+    final supa = Supabase.instance.client;
+    final user = supa.auth.currentUser;
+    if (user == null) return null;
+    final uid = user.id;
+
+    Future<String?> _tryCol(String idCol, String col) async {
+      try {
+        final row = await supa
+            .from('user_profiles')
+            .select(col)
+            .eq(idCol, uid)
+            .maybeSingle();
+        final v = (row?[col] as String?)?.trim();
+        return (v == null || v.isEmpty) ? null : v;
+      } catch (_) {
+        return null;
+      }
+    }
+
+    String? name;
+    name ??= await _tryCol('user_id', 'first_name');
+    name ??= await _tryCol('id', 'first_name');
+    // Fallback pseudo si pas de prénom renseigné
+    name ??= await _tryCol('user_id', 'username');
+    name ??= await _tryCol('id', 'username');
+
+    final metaFirst = (user.userMetadata?['first_name'] as String?)?.trim();
+    if (metaFirst != null && metaFirst.isNotEmpty) return metaFirst;
+    final meta = (user.userMetadata?['username'] as String?)?.trim();
+    if (meta != null && meta.isNotEmpty) return meta;
+    return name;
+  }
+
+  HomePageGpxSchool.usernameLoader = usernameLoader;
+  // ✅ PA exam : accueil personnalisé avec le prénom (first_name).
+  HomePagePaExam.usernameLoader = firstNameLoader;
   await AppConsoleLogger.success('username_loader:installed');
 }
 
@@ -1525,10 +1656,49 @@ Future<void> main() async {
       unawaited(_initBackend());
     },
     (error, stack) {
+      // ═══════════════════════════════════════════════════════════════════
+      //  REMONTEE DES ERREURS FATALES
+      //
+      //  Avant le 2026-07-26, ce handler se contentait d'un `print` en mode
+      //  debug : en production, TOUT crash disparaissait sans laisser la
+      //  moindre trace. Impossible de diagnostiquer quoi que ce soit apres
+      //  le lancement sur les stores.
+      //
+      //  Les erreurs sont desormais envoyees vers :
+      //    1. `AppConsoleLogger` -> table Supabase `app_logs`, consultable
+      //       depuis le panel admin. Operationnel des maintenant.
+      //    2. `AppMonitoring` -> facade Sentry/Crashlytics. Actuellement
+      //       no-op (aucun SDK branche) mais le call-site est en place :
+      //       activer Sentry ne demandera aucune modification ici.
+      //
+      //  `unawaited` : ce callback est synchrone, on ne peut pas l'attendre.
+      // ═══════════════════════════════════════════════════════════════════
       if (kDebugMode) {
         // ignore: avoid_print
         print('$_red[COP\'IQ] [FATAL] $error$_rst');
+        // ignore: avoid_print
+        print('$_red$stack$_rst');
       }
+
+      unawaited(
+        AppMonitoring.captureException(
+          error,
+          stack,
+          hint: 'zone_fatal',
+          tags: const {'origin': 'runZonedGuarded'},
+        ).catchError((_) {}),
+      );
+
+      // Le logger n'existe qu'une fois `_initBackend()` termine : si le crash
+      // survient avant, on ne peut rien persister, d'ou le garde-fou.
+      unawaited(
+        AppConsoleLogger.error(
+          'fatal_zone_error',
+          message: error.toString(),
+          err: error,
+          stack: stack,
+        ).catchError((_) {}),
+      );
     },
   );
 }
@@ -1564,8 +1734,25 @@ Future<void> _initBackend() async {
     FlutterError.onError = (FlutterErrorDetails details) async {
       FlutterError.dumpErrorToConsole(details);
       await AppConsoleLogger.error(
-          'flutter_error: ${details.exceptionAsString()}');
-      await AppConsoleLogger.debug('flutter_stack: ${details.stack}');
+        'flutter_error',
+        message: details.exceptionAsString(),
+        err: details.exception,
+        stack: details.stack,
+        context: {
+          'library': details.library ?? 'flutter',
+          if (details.context != null) 'phase': details.context.toString(),
+        },
+      );
+      // Meme remontee que les erreurs fatales : la facade est no-op
+      // aujourd'hui, mais prete a recevoir Sentry ou Crashlytics.
+      unawaited(
+        AppMonitoring.captureException(
+          details.exception,
+          details.stack,
+          hint: 'flutter_error',
+          tags: {'library': details.library ?? 'flutter'},
+        ).catchError((_) {}),
+      );
     };
 
     if (kDebugMode) {

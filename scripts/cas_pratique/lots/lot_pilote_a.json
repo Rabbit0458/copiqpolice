@@ -1,0 +1,530 @@
+[
+  {
+    "slug": "accueil-plainte-cyberharcelement-mineure",
+    "title": "Une mère veut porter plainte à la place de sa fille de 15 ans",
+    "theme_slug": "accueil-public",
+    "difficulty": "facile",
+    "is_free": true,
+    "is_published": true,
+    "status": "published",
+    "year": 2026,
+    "month": "Janvier",
+    "total_points": 15,
+    "estimated_minutes": 20,
+    "situation_text": "Il est 16 h 30. Vous tenez le poste d'accueil du commissariat. Mme ROUSSEL se présente avec sa fille Chloé, 15 ans, qui reste en retrait, capuche relevée, les yeux baissés.\n\nMme ROUSSEL parle fort et vite. Depuis trois semaines, Chloé reçoit des messages insultants sur un réseau social, ainsi que des appels masqués la nuit. Un groupe de discussion réunissant une trentaine d'élèves de son lycée diffuse des montages photo la ridiculisant. Chloé ne mange plus correctement et a manqué quatre jours de cours.\n\nLa mère pose son téléphone sur le comptoir : « J'ai tout, les captures d'écran, les noms. Je veux porter plainte, moi, sa mère. Elle, elle ne veut rien dire, elle a peur que ça empire. »\n\nChloé intervient pour la première fois, à voix basse : « Je ne veux pas que ça se sache au lycée. Si vous appelez le proviseur, c'est pire. »\n\nTrois autres personnes patientent derrière elles dans le hall. Le téléphone de l'accueil sonne.",
+    "questions": [
+      {
+        "position": 1,
+        "max_points": 5,
+        "label": "Comment organisez-vous concrètement cet accueil dans les premières minutes, compte tenu de la présence de Chloé, de sa mère et des personnes qui patientent ?",
+        "hint": "Pensez à la fois aux conditions matérielles de l'accueil et à la place à donner à chacune des deux personnes.",
+        "perfect": "Je commence par prendre en charge la situation sans la traiter au comptoir. Le hall est un espace ouvert : trois personnes patientent et entendraient l'ensemble des échanges, ce qui est incompatible avec la confidentialité due à une victime, et plus encore avec la crainte exprimée par Chloé que « ça se sache ». Je fais donc appel à un collègue pour tenir l'accueil et le standard, puis j'oriente Mme ROUSSEL et Chloé vers un local permettant un entretien à l'abri des regards.\n\nJ'adapte ensuite ma posture. Je me présente, j'explique ce que nous allons faire et dans quel ordre, en m'adressant directement à Chloé et pas uniquement à sa mère. C'est elle la victime : la laisser en retrait pendant que l'adulte parle à sa place reviendrait à reproduire ce qu'elle subit, c'est-à-dire ne pas avoir voix au chapitre. Je m'assois à sa hauteur, j'utilise un vocabulaire simple, je ne la presse pas.\n\nJe prends le temps d'écouter Mme ROUSSEL, dont l'inquiétude est légitime, tout en recadrant avec tact : je lui explique que j'ai besoin d'entendre Chloé, et je lui propose, si Chloé y consent, un moment d'échange séparé. Je ne promets aucun résultat et je ne minimise rien.\n\nEnfin, je reste attentif à l'état de Chloé : perte d'appétit, absentéisme, repli. Ces éléments ne sont pas des détails de contexte, ce sont des indicateurs de retentissement que je devrai consigner.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Sortir de l'accueil ouvert et garantir la confidentialité de l'entretien",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Le hall est public. Traiter au comptoir une victime mineure qui redoute précisément la publicité des faits est une faute d'accueil, et décourage le dépôt de plainte.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["local", "bureau", "pièce", "à l'écart", "discrétion", "confidentialité", "hors du hall", "salle"]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Faire assurer la continuité de l'accueil et du standard par un collègue",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Quitter le poste sans relais laisserait le hall et le téléphone sans réponse. Le candidat doit montrer qu'il pense au service, pas seulement à son interlocuteur.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["collègue", "renfort", "relais", "binôme", "prévenir", "faire remplacer", "continuité"]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "S'adresser directement à Chloé et lui rendre la parole",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "La victime est la mineure. L'écouter elle-même n'est pas une politesse : c'est la condition pour recueillir des faits exacts et ne pas la déposséder de sa propre plainte.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["s'adresser à elle", "écouter la mineure", "lui parler", "recueillir sa parole", "l'associer", "à sa hauteur", "directement"]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Adapter le vocabulaire et le rythme à une adolescente en souffrance",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Le ton et le débit conditionnent la qualité du recueil. Une mineure en repli ne se livre pas sous la pression.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["vocabulaire simple", "ton calme", "bienveillance", "ne pas brusquer", "prendre le temps", "rassurer", "mise en confiance", "patience"]
+              }
+            ]
+          },
+          {
+            "position": 5,
+            "label": "Accueillir l'inquiétude de la mère sans la laisser parler à la place de sa fille",
+            "weight": 1.0,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Équilibre délicat : la mère est une ressource et une détentrice de preuves, mais son occupation de la parole est un obstacle au recueil.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["écouter la mère", "entretien séparé", "recadrer avec tact", "sans la braquer", "expliquer", "chacune son tour"]
+              }
+            ]
+          },
+          {
+            "position": 6,
+            "label": "Ne promettre aucun résultat et ne pas minimiser les faits",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Promettre une suite judiciaire ou dire « ce n'est pas si grave » sont les deux erreurs symétriques les plus fréquentes à l'accueil.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["ne pas promettre", "aucune promesse", "ne pas minimiser", "ne pas banaliser", "prendre au sérieux", "rester factuel"]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "max_points": 5,
+        "label": "Mme ROUSSEL affirme vouloir porter plainte « à la place » de sa fille. Que lui répondez-vous, et comment traitez-vous la demande ?",
+        "hint": "Interrogez-vous sur qui est la victime, et sur ce qu'un représentant légal peut faire pour un mineur.",
+        "perfect": "Je lui explique clairement, sans la contredire brutalement, que la victime des faits est Chloé. En tant que mère et représentante légale, elle n'est pas exclue de la démarche : elle peut agir pour le compte de sa fille mineure, et sa présence est même utile. Mais cela ne signifie pas que la plainte se ferait sans Chloé ni contre son avis : le recueil des faits suppose d'entendre la personne qui les a subis.\n\nJe ne refuse donc pas la démarche de la mère, je la recadre. Je propose de recueillir la plainte en associant les deux : les déclarations de Chloé sur ce qu'elle a vécu, et l'apport de sa mère sur ce qu'elle a constaté et sur les éléments qu'elle détient.\n\nJe traite ensuite l'objection de Chloé, qui redoute que la situation empire. Je ne lui promets pas le contraire. Je lui explique que le dépôt de plainte ne déclenche pas une annonce publique au lycée, que les investigations obéissent à des règles, et que rien ne sera fait sans qu'elle en soit informée. Je lui indique aussi que l'absence de démarche a rarement fait cesser ce type de faits.\n\nEnfin, je m'assure qu'un refus de sa part ne bloque pas tout : je rappelle qu'en cas de faits concernant un mineur, un signalement reste possible indépendamment de sa volonté, et que je ne peux pas laisser une situation de cette nature sans suite. Je le dis avec ménagement, sans en faire une menace.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Identifier Chloé comme la victime des faits",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Erreur de raisonnement classique : traiter la mère comme plaignante parce que c'est elle qui parle et qui détient les captures d'écran.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["la victime est la mineure", "chloé est la victime", "victime des faits", "c'est elle qui subit"]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Reconnaître le rôle du représentant légal sans écarter la mineure",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "La mère peut agir pour le compte de sa fille mineure. Le point d'équilibre attendu : associer, ne pas substituer.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["représentant légal", "représentante légale", "autorité parentale", "pour le compte de sa fille", "agir pour la mineure", "associer les deux"]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Recueillir malgré tout les déclarations de Chloé",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Sans les déclarations de la victime, la plainte reste une description de seconde main, fragile en procédure.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["entendre chloé", "recueillir ses déclarations", "audition", "sa version", "ce qu'elle a vécu"]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Traiter la crainte que « ça empire » avec honnêteté",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Balayer la crainte d'un « ne vous inquiétez pas » est contre-productif : c'est exactement ce qui pousse les victimes de harcèlement à se taire.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["expliquer", "rassurer sans promettre", "prendre au sérieux sa crainte", "informer des suites", "ne pas la forcer", "expliquer la procédure"]
+              }
+            ]
+          },
+          {
+            "position": 5,
+            "label": "Rappeler qu'un mineur en danger impose une suite, même sans plainte",
+            "weight": 1.0,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Le refus d'une mineure ne rend pas le policier passif. Nuance à formuler avec ménagement, jamais comme un ultimatum.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["signalement", "mineur en danger", "protection de l'enfance", "information", "ne peut rester sans suite", "procureur"]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 3,
+        "max_points": 5,
+        "label": "Quels éléments recueillez-vous et préservez-vous, et vers quoi orientez-vous Chloé et sa mère à l'issue de l'entretien ?",
+        "hint": "Pensez aux supports numériques, au retentissement sur la mineure, et aux relais extérieurs au commissariat.",
+        "perfect": "Je recueille d'abord les éléments matériels que Mme ROUSSEL détient. Les captures d'écran, les messages, les identifiants des comptes et le nom du groupe de discussion sont les supports centraux de ce dossier. Je veille à ce qu'ils soient conservés dans leur forme d'origine : je demande de ne rien effacer, de ne pas quitter le groupe et de ne pas répondre aux messages, car ces manipulations feraient disparaître des éléments. Je les fais joindre à la procédure selon les modalités du service.\n\nJe recueille ensuite les éléments de contexte : chronologie depuis trois semaines, appels masqués nocturnes, nombre approximatif de participants au groupe, personnes identifiées, établissement concerné. Le fait que la plupart des mis en cause soient vraisemblablement mineurs et scolarisés dans le même lycée est une information déterminante pour la suite.\n\nJe consigne le retentissement : perte d'appétit, quatre jours d'absence, repli. Ces constatations ne sont pas anecdotiques, elles caractérisent l'atteinte subie et doivent figurer dans la procédure, avec mes propres constatations sur l'attitude de Chloé pendant l'entretien.\n\nJ'oriente enfin vers l'extérieur. Je remets les coordonnées des dispositifs d'aide aux victimes et des services d'écoute dédiés au harcèlement, je propose un contact avec un intervenant social ou un psychologue, et j'évoque un rapprochement avec l'établissement scolaire — en expliquant à Chloé pourquoi ce lien est utile, plutôt que de le décider dans son dos.\n\nJe rends compte à mon chef de service et je m'assure que la procédure est transmise au service compétent, en signalant qu'il s'agit d'une victime mineure.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Recueillir les supports numériques et faire cesser toute manipulation",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Quitter le groupe, répondre ou effacer détruit les éléments. Le conseil de préservation est le geste professionnel décisif de ce cas.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["captures d'écran", "messages", "preuves", "supports", "conserver", "ne rien effacer", "ne pas répondre", "ne pas quitter le groupe", "préserver"]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Établir la chronologie et identifier les mis en cause",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Trois semaines de faits répétés : la répétition est ce qui structure le dossier, elle doit être documentée.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["chronologie", "dates", "répétition", "identifier", "auteurs", "comptes", "noms", "établissement"]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Consigner le retentissement sur la mineure",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Alimentation, absentéisme, repli : éléments d'appréciation du préjudice, trop souvent omis par les candidats.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["retentissement", "conséquences", "absentéisme", "ne mange plus", "état psychologique", "préjudice", "constatations"]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Orienter vers l'aide aux victimes et un accompagnement adapté",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "L'accueil ne s'arrête pas à la prise de plainte : l'orientation fait partie de la prise en charge.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["aide aux victimes", "association", "psychologue", "intervenant social", "numéro d'écoute", "accompagnement", "orientation"]
+              }
+            ]
+          },
+          {
+            "position": 5,
+            "label": "Envisager le lien avec l'établissement scolaire en l'expliquant à Chloé",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Le lien avec le lycée est utile mais c'est précisément ce que redoute Chloé : il se prépare avec elle, pas contre elle.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["établissement scolaire", "lycée", "proviseur", "chef d'établissement", "expliquer à la mineure", "avec son accord"]
+              }
+            ]
+          },
+          {
+            "position": 6,
+            "label": "Rendre compte et transmettre au service compétent",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Le compte rendu hiérarchique et la transmission sont la clôture obligatoire de toute prise en charge.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["rendre compte", "chef de service", "hiérarchie", "transmettre", "service compétent", "procédure"]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "police-secours-cris-porte-entrouverte",
+    "title": "Des cris signalés, la porte est entrouverte, personne ne répond",
+    "theme_slug": "police-secours",
+    "difficulty": "moyen",
+    "is_free": true,
+    "is_published": true,
+    "status": "published",
+    "year": 2026,
+    "month": "Février",
+    "total_points": 15,
+    "estimated_minutes": 25,
+    "situation_text": "Il est 4 h 50, un dimanche. Vous êtes équipier d'un véhicule de police-secours. Le centre d'information et de commandement vous engage dans un immeuble ancien de quatre étages pour « cris et bruits de chute », appel d'une voisine du dessous qui a raccroché sans donner son nom.\n\nÀ votre arrivée, la porte de l'immeuble est bloquée en position ouverte par un tapis. La minuterie ne fonctionne pas. Au troisième étage, la porte de l'appartement concerné est entrouverte d'une vingtaine de centimètres. Aucune lumière à l'intérieur, aucun bruit.\n\nSur le palier, vous constatez un téléphone portable au sol, écran fissuré, et quelques gouttes de sang sur le carrelage.\n\nVous frappez et vous annoncez à deux reprises. Personne ne répond. Vous entendez alors, depuis l'intérieur, un gémissement bref, puis plus rien.\n\nVous êtes deux. Le renfort le plus proche est annoncé à sept minutes. Votre collègue, qui a pris son service il y a moins d'un mois, vous dit à voix basse : « On entre, non ? »",
+    "questions": [
+      {
+        "position": 1,
+        "max_points": 6,
+        "label": "Quelle est votre décision immédiate et comment la justifiez-vous ? Précisez ce que vous faites dans les instants qui suivent.",
+        "hint": "Deux logiques s'opposent : l'urgence pour la personne et la sécurité de l'équipage. Ne tranchez pas sans argumenter.",
+        "perfect": "Le gémissement entendu change la nature de la situation : il indique une personne vraisemblablement blessée à l'intérieur, hors d'état d'ouvrir ou de répondre. À cela s'ajoutent des indices convergents sur le palier, téléphone brisé et traces de sang, qui écartent l'hypothèse d'un simple différend verbal. J'estime donc être en présence d'un danger actuel pour une personne, ce qui justifie de pénétrer dans les lieux sans attendre les sept minutes de renfort : attendre reviendrait à laisser sans secours une personne dont j'ai la preuve auditive qu'elle est en détresse.\n\nCette décision ne me dispense d'aucune précaution. Avant d'entrer, je rends compte au CIC : je décris précisément ce que je constate, j'annonce ma décision de pénétrer et le motif, je demande le maintien du renfort ainsi que l'engagement des secours médicaux, puisque la présence d'un blessé est probable. Ce compte rendu horodaté est aussi ce qui documentera ma décision par la suite.\n\nJ'organise ensuite la progression avec mon collègue. Je lui donne des consignes explicites plutôt que de le laisser interpréter : qui entre, dans quel ordre, qui surveille l'arrière et le palier, ce que l'on fait si quelqu'un survient. Son ancienneté m'impose d'être directif et clair, sans le mettre en difficulté.\n\nNous entrons en nous annonçant à haute voix, en éclairant, sans nous exposer inutilement dans l'axe de la porte, et en gardant à l'esprit qu'un auteur peut être encore présent. Je progresse en cherchant la personne qui a gémi, tout en évitant de piétiner les traces visibles.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Décider d'entrer, en s'appuyant sur des éléments objectifs de danger",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Le gémissement, le sang et le téléphone brisé constituent un faisceau concordant. Le candidat doit trancher et motiver, pas rester dans l'indécision.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["entrer", "pénétrer", "intervenir", "ne pas attendre", "porter secours"]
+              },
+              {
+                "position": 2,
+                "keywords": ["gémissement", "sang", "téléphone", "danger", "personne en péril", "blessé", "indices", "urgence"]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Rendre compte au CIC avant d'entrer et faire engager les secours",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Rendre compte avant d'agir sécurise l'équipage et documente la décision. La probabilité d'un blessé impose d'engager les secours sans attendre de l'avoir constaté.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["rendre compte", "cic", "radio", "informer", "point de situation"]
+              },
+              {
+                "position": 2,
+                "keywords": ["secours", "pompiers", "samu", "médicalisé", "renfort"]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Donner des consignes explicites au collègue peu expérimenté",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Un collègue d'un mois de service n'improvise pas. Répartir les rôles à voix basse avant d'entrer est un réflexe attendu.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["consignes", "répartir les rôles", "expliquer", "directives", "qui entre", "encadrer", "briefer", "clair"]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "S'annoncer et progresser sans s'exposer inutilement",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "L'urgence n'autorise pas la précipitation : un auteur peut être présent, la configuration est sombre.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["s'annoncer", "police", "à voix haute", "éclairer", "prudence", "ne pas s'exposer", "progression", "auteur peut être présent"]
+              }
+            ]
+          },
+          {
+            "position": 5,
+            "label": "Préserver les traces visibles sur le palier",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Le téléphone et le sang sont des éléments utiles à l'enquête. Les piétiner est irréversible.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["préserver", "ne pas piétiner", "traces", "indices", "ne pas déplacer", "scène"]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "max_points": 5,
+        "label": "Vous découvrez dans le salon une femme d'une trentaine d'années, consciente mais très affaiblie, saignant au cuir chevelu. Elle murmure : « Il est parti, il va revenir. » Quelles sont vos priorités ?",
+        "hint": "Plusieurs urgences coexistent. L'ordre dans lequel vous les traitez fait la qualité de la réponse.",
+        "perfect": "Ma première priorité est la victime. Je m'assure de son état, je lui parle, je la rassure et je la maintiens dans une position adaptée sans la déplacer sans nécessité, un saignement au cuir chevelu pouvant accompagner un traumatisme plus sérieux. Je confirme immédiatement au CIC la présence d'une blessée consciente et je fais accélérer l'arrivée des secours médicaux.\n\nMa deuxième priorité est la sécurité, la mienne comme la sienne. Sa phrase indique que l'auteur a quitté les lieux mais pourrait revenir. Je procède donc à une vérification rapide des pièces de l'appartement pour m'assurer que personne d'autre ne s'y trouve, en particulier un enfant, puis je fais sécuriser l'accès. Je transmets au CIC tout élément de signalement que je peux obtenir, afin que les équipages du secteur puissent le rechercher : identité ou surnom, description, tenue, véhicule, direction de fuite, temps écoulé depuis son départ.\n\nJe recueille ensuite, sans transformer cela en audition, les quelques éléments utiles à l'immédiat : ce qui s'est passé, depuis combien de temps, si l'auteur est connu d'elle, s'il détient une arme, s'il a des clés du logement. Je m'adapte à son état et je m'arrête si elle n'est pas en mesure de répondre.\n\nJe préserve enfin les lieux : je ne range rien, je note la position des objets, et je fais en sorte que le passage des secours perturbe le moins possible la scène. Je note les horaires de chaque étape pour mon compte rendu.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Prendre en charge la victime et faire accélérer les secours médicaux",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "La personne blessée passe avant la recherche de l'auteur. Toute réponse qui inverse cet ordre est pénalisée.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["victime", "état", "secours", "samu", "pompiers", "premiers gestes", "rassurer", "ne pas la déplacer"]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Vérifier l'absence d'autres personnes, notamment d'enfants",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "À 4 h 50, un logement occupé peut abriter des enfants. L'oubli est une erreur fréquente et lourde.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["autres personnes", "enfants", "vérifier les pièces", "reconnaissance", "personne d'autre", "logement"]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Sécuriser les lieux face à un retour annoncé de l'auteur",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "« Il va revenir » est une information opérationnelle immédiate, pas une parole de réconfort à écarter.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["sécuriser", "surveiller l'accès", "protéger", "retour de l'auteur", "renfort", "vigilance"]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Transmettre un signalement exploitable au CIC",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Les premières minutes conditionnent les chances d'interpellation : un signalement tardif ou vague ne sert à rien.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["signalement", "description", "tenue", "véhicule", "direction", "diffuser", "cic", "recherche"]
+              }
+            ]
+          },
+          {
+            "position": 5,
+            "label": "Recueillir l'essentiel sans transformer la scène en audition",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Questions utiles à l'immédiat : auteur connu, arme, clés. Une audition en règle sur une blessée est inadaptée.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["auteur connu", "arme", "clés", "questions essentielles", "adapter à son état", "pas d'audition", "sans la brusquer"]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 3,
+        "max_points": 4,
+        "label": "Sur le trajet retour, votre collègue vous dit qu'il a trouvé la situation « très longue à démarrer » et qu'il serait entré immédiatement, seul, avant même votre décision. Que lui répondez-vous ?",
+        "hint": "Il s'agit d'un cas de communication interne et d'accompagnement, pas d'un reproche à formuler.",
+        "perfect": "Je prends sa remarque au sérieux plutôt que de la balayer : c'est une occasion de formation, et un collègue qui exprime son ressenti est préférable à un collègue qui garde une frustration.\n\nJe lui explique d'abord ce qui a fondé le rythme de notre intervention. Le temps qui lui a paru long correspondait à des actes utiles : identification d'éléments objectifs justifiant l'entrée, compte rendu au CIC, engagement des secours et répartition des rôles. Ce n'est pas de l'attentisme, c'est ce qui a permis d'entrer dans de bonnes conditions et de disposer de secours rapidement pour la victime.\n\nJe lui explique ensuite pourquoi entrer seul aurait été une faute. Une pénétration en solitaire, dans un logement sombre, alors qu'un auteur pouvait être présent, l'expose personnellement et prive son binôme de toute capacité d'appui. Si la situation avait dégénéré, il n'aurait eu ni couverture, ni possibilité de rendre compte, et la victime n'aurait pas été mieux secourue. La sécurité de l'équipage n'est pas une lenteur, c'est ce qui rend l'action possible.\n\nJe valorise ce qui a été bien fait, je lui propose de revenir sur l'intervention avec le chef de service pour en tirer les enseignements, et je reste attentif à son état : une première intervention de ce type peut marquer. Enfin, je consigne les éléments utiles dans mon compte rendu, sans en faire un rapport à charge contre lui.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Accueillir la remarque sans réprimander ni humilier",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Le rabrouer fermerait le dialogue et l'apprentissage. La posture pédagogique fait partie du travail en équipe.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["écouter", "sans le rabrouer", "pédagogie", "expliquer", "dialogue", "sans l'humilier", "prendre au sérieux"]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Expliquer que le temps écoulé correspondait à des actes utiles",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Compte rendu, secours, répartition des rôles : ce n'est pas du temps perdu mais la condition d'une entrée maîtrisée.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["compte rendu", "secours", "répartition des rôles", "préparation", "actes utiles", "pas de l'attentisme"]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Expliquer le danger d'une pénétration en solitaire",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Cœur du cas : entrer seul dans un logement sombre avec auteur possiblement présent, sans appui ni couverture.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["seul", "isolé", "binôme", "sans appui", "danger", "s'exposer", "sécurité de l'équipage", "couverture"]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Proposer un retour d'expérience et rester attentif à son vécu",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Une première intervention avec sang et victime peut marquer durablement un jeune fonctionnaire.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": ["retour d'expérience", "débriefing", "chef de service", "soutien", "état psychologique", "accompagner"]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

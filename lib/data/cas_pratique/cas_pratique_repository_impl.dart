@@ -630,6 +630,25 @@ class CasPratiqueRepositoryImpl implements CasPratiqueRepository {
   @override
   Future<UserGlobalProgress> getMyProgress() =>
       throw UnimplementedError('CODE-016 / CODE-018 — à implémenter');
+
+  @override
+  Future<bool> reportQuestion({
+    required String questionId,
+    required String reportType,
+    String? message,
+  }) async {
+    try {
+      final raw = await _sb.rpc('cp_report_question', params: {
+        'p_question_id': questionId,
+        'p_report_type': reportType,
+        'p_message': message,
+      });
+      final m = raw is Map ? Map<String, dynamic>.from(raw) : <String, dynamic>{};
+      return m['ok'] == true;
+    } catch (_) {
+      return false;
+    }
+  }
 }
 
 /// Agrégateur interne pour `_fetchProgressForCases`.

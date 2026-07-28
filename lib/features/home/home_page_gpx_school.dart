@@ -444,7 +444,7 @@ class _HomePageGpxSchoolState extends State<HomePageGpxSchool>
         return;
       }
       _saveLastOpened(route: route, label: label);
-      final redirectRoute = redirectConfig[route];
+      final redirectRoute = redirectConfigGpxSchool[route];
       final target = redirectRoute ?? route;
       await Navigator.of(context).pushNamed(target);
     }
@@ -1216,7 +1216,7 @@ class _HeroCardState extends State<HeroCard> with TickerProviderStateMixin {
     }
 
     // Fallback direct
-    final redirectRoute = redirectConfig[widget.item.route];
+    final redirectRoute = redirectConfigGpxSchool[widget.item.route];
     final targetRoute = redirectRoute ?? widget.item.route;
     final subs = widget.item.subcategories;
 
@@ -5813,7 +5813,7 @@ const Map<GpxSchoolProgram, List<CategoryConfig>> gpxSchoolCategoriesConfig = {
   ],
 };
 
-const Map<String, String> redirectConfig = {
+const Map<String, String> redirectConfigGpxSchool = {
   // '/gpx/placeholder': '/gpx/ton_vrai_module',
 };
 

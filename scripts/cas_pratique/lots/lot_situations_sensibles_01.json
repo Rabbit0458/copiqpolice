@@ -1,0 +1,1556 @@
+[
+  {
+    "slug": "sensible-colis-abandonne-hall-de-gare",
+    "title": "Une valise seule au pied d'un panneau d'affichage",
+    "theme_slug": "situations-sensibles",
+    "difficulty": "moyen",
+    "is_free": false,
+    "is_published": true,
+    "status": "published",
+    "year": 2026,
+    "month": "Juillet",
+    "total_points": 15,
+    "estimated_minutes": 25,
+    "situation_text": "Il est 8 heures 30. Dans le hall bonde d'une gare, un voyageur vous signale une valise posee seule au pied d'un panneau d'affichage depuis au moins vingt minutes, sans que personne ne semble s'en approcher ni la reclamer. L'affluence est forte a cette heure de pointe, des centaines de voyageurs circulant a proximite immediate de cet objet. Aucun element ne permet de savoir s'il s'agit d'un simple oubli ou d'une situation plus preoccupante. Vous ne connaissez ni le contenu ni le proprietaire de cette valise. Le personnel de la gare, alerte, attend vos instructions pour la conduite a tenir vis-a-vis du flux de voyageurs.",
+    "questions": [
+      {
+        "position": 1,
+        "max_points": 5,
+        "label": "Quelle est votre action immediate face a cet objet abandonne ?",
+        "hint": "Ni la panique ni la manipulation directe ne sont des reponses adaptees.",
+        "perfect": "J'etablis un perimetre et m'abstiens totalement de toute manipulation de cet objet, cette double exigence restant prioritaire des la decouverte. Je maintiens ce perimetre a une distance de securite raisonnable, en tenant compte de l'affluence importante du lieu. Je ne touche a aucun moment cette valise, meme pour verifier une etiquette ou un indice apparent. Je sollicite sans delai les moyens specialises competents pour cette evaluation.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Etablir un perimetre et s'abstenir totalement de manipulation",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Poids fort du cas.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "perimetre etabli",
+                  "manipulation evitee",
+                  "abstention totale"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Maintenir une distance de securite raisonnable compte tenu de l'affluence",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Adaptation au contexte de forte affluence.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "distance adaptee",
+                  "affluence consideree",
+                  "securite assuree"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Ne toucher a aucun moment cet objet",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Regle absolue de non-manipulation.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "objet non touche",
+                  "regle respectee",
+                  "prudence maintenue"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Solliciter sans delai les moyens specialises competents",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Renfort specialise sollicite.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "moyens sollicites",
+                  "specialistes appeles",
+                  "renfort demande"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "max_points": 5,
+        "label": "Comment gerez-vous ce perimetre face a la forte affluence de voyageurs qui continuent de circuler ?",
+        "hint": "Faire respecter un perimetre dans un lieu tres frequente demande une explication claire, pas seulement une autorite affichee.",
+        "perfect": "J'explique clairement aux voyageurs la raison de ce perimetre, sans dramatiser ni alarmer inutilement l'ensemble du hall. Je sollicite le personnel de la gare pour orienter les flux de voyageurs vers d'autres acces disponibles. Je reste ferme sur le respect de ce perimetre, sans ceder a l'impatience de ceux qui souhaiteraient passer malgre tout. Je coordonne cette gestion avec d'eventuels renforts arrivant sur place.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Expliquer clairement la raison du perimetre sans dramatiser",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Communication mesuree essentielle.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "raison expliquee",
+                  "dramatisation evitee",
+                  "communication claire"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Solliciter le personnel de la gare pour orienter les flux",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Collaboration avec le personnel du lieu.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "personnel sollicite",
+                  "flux orientes",
+                  "collaboration assuree"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Rester ferme sur le respect du perimetre malgre l'impatience",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Fermete necessaire.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "fermete maintenue",
+                  "perimetre respecte",
+                  "impatience geree"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Coordonner cette gestion avec les renforts arrivant",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Coordination des renforts.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "renforts coordonnes",
+                  "gestion partagee",
+                  "arrivee anticipee"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 3,
+        "max_points": 5,
+        "label": "Comment rendez-vous compte de cette situation a votre hierarchie et aux services competents ?",
+        "hint": "Un compte rendu precis permet aux services specialises d'evaluer rapidement la situation avant leur arrivee.",
+        "perfect": "Je transmets une description precise de cet objet et de sa position exacte, sans y ajouter d'interpretation personnelle sur son contenu. Je precise le niveau d'affluence du lieu et le temps ecoule depuis la decouverte, ces elements restant utiles pour l'evaluation du risque. Je reste disponible sur place pour orienter les services specialises des leur arrivee. Je documente cette intervention factuellement, sans specification technique qui n'aurait pas sa place dans ce compte rendu.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Transmettre une description precise sans interpretation sur le contenu",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Information factuelle transmise.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "description transmise",
+                  "interpretation evitee",
+                  "objectivite assuree"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Preciser l'affluence et le temps ecoule depuis la decouverte",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Elements utiles pour l'evaluation.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "affluence precisee",
+                  "temps indique",
+                  "elements utiles"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Rester disponible sur place pour orienter les services specialises",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Disponibilite pour l'accueil des specialistes.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "disponibilite maintenue",
+                  "services orientes",
+                  "presence assuree"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Documenter factuellement sans detail technique inapproprie",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Prudence redactionnelle.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "compte rendu factuel",
+                  "detail evite",
+                  "prudence redactionnelle"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "sensible-comportement-inquietant-signale-par-un-proche",
+    "title": "Sa soeur decrit un changement brutal depuis six mois",
+    "theme_slug": "situations-sensibles",
+    "difficulty": "difficile",
+    "is_free": false,
+    "is_published": true,
+    "status": "published",
+    "year": 2026,
+    "month": "Juillet",
+    "total_points": 15,
+    "estimated_minutes": 30,
+    "situation_text": "Il est 15 heures. Au commissariat, une femme se presente, visiblement eprouvee par la demarche, pour signaler un changement brutal de comportement observe chez son frere depuis environ six mois : rupture avec ses anciens amis, discours de plus en plus radical sur des sujets de societe, isolement croissant. Elle ne dispose d'aucun element materiel precis, ni message, ni propos exact rapportable mot pour mot, seulement cette impression d'evolution qu'elle observe depuis plusieurs mois. Elle insiste sur le fait qu'elle ne veut en aucun cas nuire a son frere, mais qu'elle ne peut plus garder ce silence face a ce qu'elle observe. Aucune infraction n'est constituee a ce stade.",
+    "questions": [
+      {
+        "position": 1,
+        "max_points": 5,
+        "label": "Comment recueillez-vous ce signalement familial depourvu d'element materiel precis ?",
+        "hint": "Ce signalement, meme sans preuve, engage un courage certain de sa part et merite d'etre traite avec le meme serieux qu'un element plus tangible.",
+        "perfect": "Je recueille et transmets sans jugement ni stigmatisation, cette demarche courageuse de sa part meritant une ecoute attentive malgre l'absence d'element materiel precis. Je lui pose des questions ouvertes sur ce qu'elle observe concretement, sans chercher a lui faire dire davantage qu'elle n'en sait reellement. Je reste factuelle dans mes questions, sans qualifier prematurement ce qu'elle decrit. Je la rassure sur le cadre confidentiel de cette demarche, sans pour autant lui promettre une issue qu'elle ne maitrise pas.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Recueillir et transmettre sans jugement ni stigmatisation",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Poids fort du cas.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "recueil sans jugement",
+                  "transmission assuree",
+                  "stigmatisation evitee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Poser des questions ouvertes sans lui faire dire davantage",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Recueil respectueux des limites de son observation.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "questions ouvertes",
+                  "limites respectees",
+                  "observation precisee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Rester factuelle sans qualifier prematurement ce qu'elle decrit",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Prudence sur la qualification.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "qualification differee",
+                  "prudence maintenue",
+                  "faits recueillis"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "La rassurer sur le cadre confidentiel sans promettre une issue",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Reassurance mesuree.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "confidentialite rassurante",
+                  "promesse evitee",
+                  "cadre explique"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "max_points": 5,
+        "label": "Comment tenez-vous compte de sa crainte explicite de nuire a son frere en formalisant cette demarche ?",
+        "hint": "Elle porte a la fois le poids de son inquietude et la crainte de trahir un lien familial.",
+        "perfect": "Je reconnais explicitement cette tension qu'elle exprime entre son inquietude et sa loyaute familiale, sans minimiser l'une au profit de l'autre. Je lui explique simplement ce que deviendra concretement ce signalement, sans lui laisser penser qu'il declenchera automatiquement une reponse punitive envers son frere. Je reste attentive a la maniere dont ce signalement sera consigne, en evitant toute formulation qui presenterait son frere comme deja coupable de quoi que ce soit. Je la remercie de cette demarche difficile, sans pour autant en minimiser la gravite des elements qu'elle rapporte.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Reconnaitre la tension entre inquietude et loyaute familiale",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Ecoute de sa position delicate.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "tension reconnue",
+                  "loyaute consideree",
+                  "inquietude entendue"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Expliquer ce que deviendra concretement ce signalement",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Transparence sur la suite.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "suite expliquee",
+                  "transparence assuree",
+                  "reponse punitive nuancee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Consigner sans presenter le frere comme deja coupable",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Neutralite de la formulation.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "formulation neutre",
+                  "culpabilite non presumee",
+                  "consignation prudente"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "La remercier de cette demarche difficile sans minimiser la gravite",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Reconnaissance de la difficulte de la demarche.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "demarche reconnue",
+                  "gravite maintenue",
+                  "remerciement exprime"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 3,
+        "max_points": 5,
+        "label": "Comment orientez-vous ce signalement pour qu'il beneficie d'une evaluation appropriee ?",
+        "hint": "Ce type de signalement necessite une expertise que le premier accueil ne peut a lui seul apporter.",
+        "perfect": "Je transmets ce signalement aux services competents en matiere de prevention, seuls habilites a en evaluer la pertinence au-dela du premier accueil que j'assure. Je consigne precisement les elements rapportes, sans les amplifier ni les minimiser par rapport a ce qu'elle a reellement decrit. Je l'informe qu'elle pourra etre recontactee si des precisions s'averaient necessaires. Je reste factuelle dans ce compte rendu, sans y ajouter d'appreciation personnelle sur la gravite reelle de la situation de son frere.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Transmettre aux services competents en matiere de prevention",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Orientation vers l'expertise appropriee.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "services competents",
+                  "prevention saisie",
+                  "transmission assuree"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Consigner precisement sans amplifier ni minimiser",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Fidelite du signalement.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "elements consignes",
+                  "fidelite assuree",
+                  "amplification evitee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "L'informer qu'elle pourra etre recontactee si necessaire",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Suite du dossier expliquee.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "recontact explique",
+                  "suite indiquee",
+                  "disponibilite mentionnee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Rester factuelle sans appreciation personnelle sur la gravite",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Neutralite du compte rendu.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "compte rendu factuel",
+                  "appreciation evitee",
+                  "neutralite maintenue"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "sensible-menace-recue-par-un-etablissement",
+    "title": "Un message anonyme annonce un passage a l'acte pour la journee",
+    "theme_slug": "situations-sensibles",
+    "difficulty": "difficile",
+    "is_free": false,
+    "is_published": true,
+    "status": "published",
+    "year": 2026,
+    "month": "Juillet",
+    "total_points": 15,
+    "estimated_minutes": 30,
+    "situation_text": "Il est 9 heures. La direction d'un college vous informe avoir recu, quelques minutes plus tot, un message anonyme annoncant un passage a l'acte violent dans l'etablissement au cours de la journee. Le principal, tres inquiet, hesite sur la conduite a tenir et vous demande votre avis sur une eventuelle evacuation immediate de l'ensemble des eleves et du personnel. Vous ne disposez, a ce stade, d'aucun element permettant d'apprecier la credibilite reelle de cette menace : ni source identifiee, ni precedent connu pour cet etablissement. Une evacuation immediate aurait des consequences organisationnelles et psychologiques lourdes pour plusieurs centaines d'eleves, tandis qu'une inaction face a une menace reelle serait tout aussi grave.",
+    "questions": [
+      {
+        "position": 1,
+        "max_points": 5,
+        "label": "Comment repondez-vous a la demande du principal qui attend votre avis immediat sur l'evacuation ?",
+        "hint": "Cette decision ne vous revient pas seul, mais l'urgence impose une reaction immediate.",
+        "perfect": "Je rends compte immediatement sans decider seul, cette decision d'evacuation relevant d'une appreciation qui doit remonter sans delai aux autorites competentes. Je n'ecarte ni ne confirme la credibilite de cette menace au principal, n'ayant pas les elements pour trancher seul cette question. Je transmets sans delai les elements exacts de ce message a ma hierarchie pour une decision rapide et eclairee. Je reste sur place avec le principal en attendant cette decision, sans le laisser seul face a cette incertitude.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Rendre compte immediatement sans decider seul",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Poids fort du cas.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "compte rendu immediat",
+                  "decision non prise seule",
+                  "hierarchie saisie"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "N'ecarter ni confirmer la credibilite sans elements suffisants",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Prudence sur l'appreciation du risque.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "credibilite non tranchee",
+                  "prudence maintenue",
+                  "appreciation differee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Transmettre sans delai les elements exacts du message",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Rapidite de la transmission.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "elements transmis",
+                  "rapidite assuree",
+                  "message rapporte"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Rester sur place avec le principal pendant l'attente de la decision",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Presence rassurante pendant l'attente.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "presence maintenue",
+                  "principal accompagne",
+                  "attente partagee"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "max_points": 5,
+        "label": "Comment recueillez-vous les elements de ce message pour permettre une appreciation rapide de sa credibilite ?",
+        "hint": "La forme et le contenu exact d'un tel message donnent souvent des indices exploitables pour cette appreciation.",
+        "perfect": "Je recueille le contenu exact du message, sans en resumer ni en interpreter les termes a ma facon. Je preserve le support de ce message, quel qu'il soit, dans l'etat ou il a ete recu, pour une exploitation technique ulterieure. J'interroge le principal sur le canal de reception et l'heure precise, ces elements restant utiles pour cette appreciation. Je recherche si un contexte particulier, tension recente ou incident anterieur, pourrait eclairer cette menace.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Recueillir le contenu exact sans le resumer ni l'interpreter",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Fidelite du contenu recueilli.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "contenu exact",
+                  "interpretation evitee",
+                  "fidelite assuree"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Preserver le support du message dans son etat de reception",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Preservation pour exploitation ulterieure.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "support preserve",
+                  "etat conserve",
+                  "exploitation permise"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Interroger sur le canal de reception et l'heure precise",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Elements de contexte technique.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "canal precise",
+                  "heure notee",
+                  "contexte technique"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Rechercher un contexte particulier pouvant eclairer cette menace",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Contexte recherche pour l'appreciation.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "contexte recherche",
+                  "tension recente",
+                  "incident anterieur"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 3,
+        "max_points": 5,
+        "label": "Comment accompagnez-vous cet etablissement en attendant que la decision soit prise ?",
+        "hint": "L'attente d'une decision ne signifie pas l'absence totale d'action sur place.",
+        "perfect": "Je conseille au principal des mesures de precaution immediates et proportionnees en attendant cette decision, sans pour autant prendre a sa place la decision d'evacuation. Je reste attentive au climat au sein de l'etablissement, ce type d'alerte pouvant rapidement generer une panique si elle venait a se diffuser de maniere incontrolee. Je maintiens le contact avec ma hierarchie pour obtenir cette decision dans les meilleurs delais. Je documente cette intervention factuellement, y compris l'heure de chaque etape de cette gestion.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Conseiller des mesures de precaution sans decider a la place du principal",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Conseil sans usurpation de la decision.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "mesures conseillees",
+                  "decision non usurpee",
+                  "precaution proportionnee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Rester attentive au climat pour eviter une panique incontrolee",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Prevention de la panique.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "climat surveille",
+                  "panique evitee",
+                  "diffusion controlee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Maintenir le contact avec la hierarchie pour une decision rapide",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Rapidite de la decision recherchee.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "contact maintenu",
+                  "decision attendue",
+                  "rapidite recherchee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Documenter factuellement chaque etape de cette gestion",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Traçabilite complete de la gestion.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "etapes documentees",
+                  "gestion tracee",
+                  "heures notees"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "sensible-propos-apologie-lors-d-un-controle",
+    "title": "Il tient des propos provocateurs pour vous tester",
+    "theme_slug": "situations-sensibles",
+    "difficulty": "moyen",
+    "is_free": false,
+    "is_published": true,
+    "status": "published",
+    "year": 2026,
+    "month": "Juillet",
+    "total_points": 15,
+    "estimated_minutes": 25,
+    "situation_text": "Il est 17 heures. Lors d'un controle d'identite de routine sur la voie publique, le jeune homme controle tient des propos provocateurs faisant l'apologie d'actes violents, sur un ton qui semble davantage chercher a tester votre reaction qu'a exprimer une adhesion sincere. Il vous observe attentivement pendant qu'il parle, comme s'il guettait votre reponse. Rien dans son comportement ne suggere un passage a l'acte imminent, aucun element materiel ne corrobore ces propos. Vous devez reagir sur le moment, sans pouvoir differer votre reponse a cette provocation apparente.",
+    "questions": [
+      {
+        "position": 1,
+        "max_points": 5,
+        "label": "Comment reagissez-vous a ces propos tenus pendant ce controle ?",
+        "hint": "La reaction attendue par cette personne n'est pas forcement celle qui sert le mieux la suite de cette interaction.",
+        "perfect": "Je consigne exactement les propos tenus sans les interpreter, cette exactitude restant essentielle quelle que soit l'intention reelle derriere cette provocation apparente. Je ne reponds ni par l'indignation ni par la banalisation, ces deux reactions pouvant egalement etre contre-productives. Je poursuis ce controle avec le meme professionnalisme qu'habituellement, sans me laisser deconcentrer par cette provocation. Je reste attentive aux reactions non verbales de cette personne pendant l'echange.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Consigner exactement les propos tenus sans les interpreter",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Poids fort du cas.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "propos consignes",
+                  "interpretation evitee",
+                  "exactitude assuree"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Ne pas repondre par l'indignation ni la banalisation",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Reaction equilibree.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "indignation evitee",
+                  "banalisation evitee",
+                  "reaction equilibree"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Poursuivre le controle avec le meme professionnalisme",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Continuite professionnelle maintenue.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "professionnalisme maintenu",
+                  "controle poursuivi",
+                  "concentration preservee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Rester attentive aux reactions non verbales pendant l'echange",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Observation complementaire.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "reactions observees",
+                  "non verbal note",
+                  "attention maintenue"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "max_points": 5,
+        "label": "Comment distinguez-vous, dans votre appreciation, une provocation d'une adhesion reelle ?",
+        "hint": "Le ton, le contexte et la reaction a vos questions donnent des indices sur la nature de ces propos.",
+        "perfect": "J'observe le contexte global de cette interaction, le fait qu'il me regarde attentivement pendant qu'il parle suggerant une recherche de reaction plutot qu'une conviction assumee sans reserve. Je ne minimise pas pour autant ces propos au seul motif qu'ils pourraient etre une provocation, leur gravite restant la meme quelle que soit l'intention reelle. Je pose, si l'occasion s'y prete, une question neutre pour observer sa reaction sans pour autant l'engager dans un debat. Je garde cette appreciation pour moi, sans la partager avec lui pendant ce controle.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Observer le contexte global suggerant une recherche de reaction",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Analyse contextuelle de l'intention.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "contexte observe",
+                  "intention analysee",
+                  "reaction recherchee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Ne pas minimiser ces propos au seul motif d'une provocation possible",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Gravite maintenue quelle que soit l'intention.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "gravite maintenue",
+                  "minimisation evitee",
+                  "propos consideres serieusement"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Poser une question neutre sans engager de debat",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Observation sans engagement.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "question neutre",
+                  "debat evite",
+                  "observation menee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Garder cette appreciation pour soi sans la partager pendant le controle",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Discretion professionnelle.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "appreciation gardee",
+                  "discretion maintenue",
+                  "partage differe"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 3,
+        "max_points": 5,
+        "label": "Comment cloturez-vous ce controle et en rendez-vous compte ?",
+        "hint": "Meme sans passage a l'acte constate, ces propos meritent une trace precise.",
+        "perfect": "Je termine ce controle selon la procedure habituelle, sans prolonger inutilement l'echange au-dela de ce qui est necessaire. Je consigne precisement ces propos dans mon compte rendu, avec le contexte dans lequel ils ont ete tenus. Je transmets cette information a ma hierarchie, meme en l'absence d'infraction constituee, cette remontee restant utile pour un suivi eventuel. Je reste factuelle dans cette transmission, sans qualifier moi-meme l'intention reelle de cette personne.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Terminer le controle selon la procedure habituelle",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Regularite de la procedure.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "procedure suivie",
+                  "controle termine",
+                  "regularite assuree"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Consigner precisement les propos avec leur contexte",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Traçabilite complete.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "propos consignes",
+                  "contexte precise",
+                  "traçabilite assuree"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Transmettre cette information a la hierarchie meme sans infraction",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Remontee utile malgre l'absence d'infraction.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "hierarchie informee",
+                  "remontee assuree",
+                  "suivi possible"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Rester factuelle sans qualifier l'intention reelle",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Neutralite de la transmission.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "neutralite maintenue",
+                  "intention non qualifiee",
+                  "transmission factuelle"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "sensible-individu-photographie-site-sensible",
+    "title": "Il photographie les acces depuis vingt minutes",
+    "theme_slug": "situations-sensibles",
+    "difficulty": "moyen",
+    "is_free": false,
+    "is_published": true,
+    "status": "published",
+    "year": 2026,
+    "month": "Juillet",
+    "total_points": 15,
+    "estimated_minutes": 25,
+    "situation_text": "Il est 14 heures. Un agent de securite vous signale un individu qui photographie depuis une vingtaine de minutes les differents acces d'un site sensible, changeant regulierement de position pour obtenir des angles varies. Cette attitude pourrait tout aussi bien correspondre a un touriste, un etudiant en architecture ou un simple curieux qu'a une demarche plus preoccupante. L'individu, quand vous l'abordez, se montre cooperatif et explique spontanement s'interesser a l'architecture du batiment, sans que vous puissiez verifier immediatement cette explication. Rien dans son comportement anterieur ne vous est connu.",
+    "questions": [
+      {
+        "position": 1,
+        "max_points": 5,
+        "label": "Comment abordez-vous cette verification sans presumer d'une intention malveillante ?",
+        "hint": "La grande majorite de situations de ce type ont une explication parfaitement anodine.",
+        "perfect": "Je verifie factuellement sans accusation, cette approche restant essentielle face a un comportement qui reste, pour l'instant, un simple signal a verifier plutot qu'un fait etabli. Je l'aborde avec courtoisie, en lui expliquant simplement l'objet de mon controle sans dramatiser la situation. J'ecoute son explication avec la meme attention que je porterais a n'importe quelle autre justification. Je reste factuelle dans mon evaluation, sans laisser transparaitre de suspicion qui ne reposerait sur aucun element objectif.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Verifier factuellement sans accusation",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Poids fort du cas.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "verification factuelle",
+                  "accusation evitee",
+                  "approche neutre"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Aborder avec courtoisie en expliquant l'objet du controle",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Communication courtoise et transparente.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "courtoisie appliquee",
+                  "objet explique",
+                  "transparence assuree"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Ecouter son explication avec la meme attention qu'a toute autre",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Ecoute equitable.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "explication ecoutee",
+                  "attention equitable",
+                  "justification consideree"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Ne pas laisser transparaitre de suspicion sans element objectif",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Neutralite de l'attitude.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "suspicion evitee",
+                  "attitude neutre",
+                  "objectivite maintenue"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "max_points": 5,
+        "label": "Comment verifiez-vous concretement les elements qu'il vous presente ?",
+        "hint": "Une explication cooperative n'exempte pas d'une verification factuelle proportionnee.",
+        "perfect": "Je verifie son identite selon la procedure habituelle, cette etape restant systematique quelle que soit la plausibilite de l'explication donnee. Je recueille des elements sur son activite alleguee, sans exiger une preuve immediate qu'il ne pourrait raisonnablement produire sur place. Je note les circonstances precises de cette verification, y compris l'attitude cooperative constatee. Je reste proportionnee dans l'ampleur de cette verification, sans la prolonger au-dela de ce que la situation justifie reellement.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Verifier son identite selon la procedure habituelle",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Verification systematique.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "identite verifiee",
+                  "procedure suivie",
+                  "verification systematique"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Recueillir des elements sur l'activite alleguee sans exiger de preuve immediate",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Verification proportionnee.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "elements recueillis",
+                  "preuve non exigee",
+                  "verification proportionnee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Noter les circonstances precises y compris l'attitude cooperative",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Traçabilite complete.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "circonstances notees",
+                  "cooperation consignee",
+                  "traçabilite assuree"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Rester proportionnee sans prolonger cette verification inutilement",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Proportionnalite de l'intervention.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "proportionnalite respectee",
+                  "verification limitee",
+                  "duree adaptee"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 3,
+        "max_points": 5,
+        "label": "Comment cloturez-vous cette verification et en rendez-vous compte ?",
+        "hint": "Meme sans element inquietant confirme, ce signal merite d'etre trace pour une eventuelle mise en perspective ulterieure.",
+        "perfect": "Je conclus cette verification en le remerciant de sa cooperation, sans laisser transparaitre de suspicion persistante non justifiee par les elements recueillis. Je consigne cette verification dans un compte rendu factuel, meme en l'absence d'element inquietant confirme, ce signal faible pouvant utilement s'ajouter a d'autres si une recurrence venait a etre constatee ailleurs. Je transmets cette information au service de securite du site pour leur propre vigilance. Je ne conserve aucune appreciation personnelle non etayee dans ce compte rendu.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Conclure en le remerciant sans suspicion persistante non justifiee",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Cloture equitable.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "remerciement exprime",
+                  "suspicion levee",
+                  "cloture equitable"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Consigner cette verification meme sans element inquietant confirme",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Traçabilite du signal faible.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "verification consignee",
+                  "signal trace",
+                  "recurrence anticipee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Transmettre cette information au service de securite du site",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Information partagee pour leur vigilance.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "securite informee",
+                  "vigilance partagee",
+                  "information transmise"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Ne conserver aucune appreciation personnelle non etayee",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Rigueur du compte rendu.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "appreciation ecartee",
+                  "rigueur maintenue",
+                  "compte rendu factuel"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "sensible-signalement-radicalisation-milieu-scolaire",
+    "title": "Un enseignant s'inquiete de propos tenus en classe",
+    "theme_slug": "situations-sensibles",
+    "difficulty": "difficile",
+    "is_free": false,
+    "is_published": true,
+    "status": "published",
+    "year": 2026,
+    "month": "Juillet",
+    "total_points": 15,
+    "estimated_minutes": 30,
+    "situation_text": "Il est 11 heures. Un enseignant de lycee vous contacte, tres inquiet, pour signaler des propos tenus en classe par un eleve de seize ans, evoquant des idees radicales sur des sujets de societe et remettant en cause de maniere insistante certains enseignements. L'enseignant precise ne pas savoir si ces propos relevent d'une provocation adolescente, d'une influence exterieure recente ou d'une conviction plus ancree. Aucun autre signalement ne concerne cet eleve jusqu'a present. La direction de l'etablissement, informee, hesite sur la conduite a tenir, craignant a la fois de stigmatiser cet adolescent sur la base de propos isoles et de negliger un signal qui pourrait s'averer serieux.",
+    "questions": [
+      {
+        "position": 1,
+        "max_points": 5,
+        "label": "Comment traitez-vous ce signalement tout en preservant ce mineur d'une stigmatisation prematuree ?",
+        "hint": "Traiter serieusement ce signalement et eviter de stigmatiser cet adolescent ne sont pas deux objectifs contradictoires.",
+        "perfect": "Je traite le signalement sans stigmatiser le mineur, ces deux exigences pouvant etre tenues ensemble avec la methode appropriee. Je recueille aupres de l'enseignant les propos exacts tenus, sans les amplifier ni les minimiser par rapport a ce qu'il rapporte reellement. Je reste attentive a ne jamais qualifier cet adolescent de radicalise sur la seule base de ces elements, cette qualification n'etant pas la mienne a poser. J'explique a l'enseignant l'importance de cette remontee, tout en le rassurant sur le traitement mesure qui en sera fait.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Traiter le signalement sans stigmatiser le mineur",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Poids fort du cas.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "signalement traite",
+                  "stigmatisation evitee",
+                  "double exigence tenue"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Recueillir les propos exacts sans les amplifier ni les minimiser",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Fidelite du recueil.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "propos recueillis",
+                  "amplification evitee",
+                  "fidelite assuree"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Ne jamais qualifier cet adolescent sur la seule base de ces elements",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Prudence sur la qualification.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "qualification evitee",
+                  "prudence maintenue",
+                  "elements insuffisants reconnus"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Rassurer l'enseignant sur le traitement mesure qui en sera fait",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Reassurance de l'enseignant.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "enseignant rassure",
+                  "traitement mesure",
+                  "confiance maintenue"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "max_points": 5,
+        "label": "Comment orientez-vous ce signalement pour permettre une evaluation adaptee a l'age de cet eleve ?",
+        "hint": "Un mineur de seize ans appelle une approche distincte de celle applicable a un majeur.",
+        "perfect": "Je transmets ce signalement aux services competents en matiere de prevention specialises dans l'accompagnement des mineurs, cette specificite restant essentielle compte tenu de son age. Je recommande une approche associant l'etablissement scolaire, qui connait cet eleve et son contexte, plutot qu'une intervention isolee. J'evoque, si cela est pertinent, l'interet d'un dialogue avec la famille dans le cadre de cette evaluation, sans pour autant l'imposer dans l'immediat. Je reste attentive a ce que cette orientation privilegie l'accompagnement educatif plutot qu'une reponse uniquement repressive.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Transmettre aux services de prevention specialises pour mineurs",
+            "weight": 2.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Specificite de l'approche pour un mineur.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "services specialises",
+                  "mineur pris en compte",
+                  "orientation adaptee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Recommander une approche associant l'etablissement scolaire",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Collaboration avec le contexte connu de l'eleve.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "etablissement associe",
+                  "contexte connu",
+                  "collaboration recommandee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Evoquer l'interet d'un dialogue avec la famille sans l'imposer",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Famille associee avec mesure.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "famille evoquee",
+                  "dialogue propose",
+                  "imposition evitee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Privilegier l'accompagnement educatif plutot qu'une reponse repressive",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Orientation educative privilegiee.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "accompagnement educatif",
+                  "reponse repressive ecartee",
+                  "approche privilegiee"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "position": 3,
+        "max_points": 5,
+        "label": "Comment repondez-vous a la direction de l'etablissement, elle-meme hesitante sur la conduite a tenir ?",
+        "hint": "La direction attend de vous un accompagnement, pas seulement une prise en charge du dossier.",
+        "perfect": "J'explique a la direction le cadre exact de ce qui va etre engage, pour qu'elle ne reste pas dans l'incertitude sur la suite de ce signalement. Je la rassure sur le fait que traiter serieusement ce signal ne signifie pas stigmatiser immediatement cet eleve aux yeux de l'etablissement. Je recommande une certaine discretion au sein de l'etablissement, pour ne pas exposer cet adolescent avant toute evaluation serieuse. Je reste disponible pour un echange ulterieur avec la direction sur l'evolution de ce dossier.",
+        "points": [
+          {
+            "position": 1,
+            "label": "Expliquer a la direction le cadre exact de ce qui sera engage",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Transparence sur la procedure.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "cadre explique",
+                  "direction informee",
+                  "incertitude reduite"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "label": "Rassurer sur le fait que traiter serieusement ne signifie pas stigmatiser",
+            "weight": 1.5,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Distinction expliquee.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "distinction expliquee",
+                  "stigmatisation ecartee",
+                  "serieux affirme"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 3,
+            "label": "Recommander une certaine discretion au sein de l'etablissement",
+            "weight": 1.0,
+            "is_required": true,
+            "kind": "core",
+            "explanation_md": "Protection de l'eleve avant evaluation.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "discretion recommandee",
+                  "eleve protege",
+                  "exposition evitee"
+                ]
+              }
+            ]
+          },
+          {
+            "position": 4,
+            "label": "Rester disponible pour un echange ulterieur avec la direction",
+            "weight": 0.5,
+            "is_required": false,
+            "kind": "bonus",
+            "explanation_md": "Suivi propose.",
+            "groups": [
+              {
+                "position": 1,
+                "keywords": [
+                  "disponibilite maintenue",
+                  "suivi propose",
+                  "echange ulterieur"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

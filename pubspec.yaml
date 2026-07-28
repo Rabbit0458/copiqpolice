@@ -57,6 +57,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.14.4
   flutter_native_splash: ^2.4.6
   http: ^1.2.0
   yaml: ^3.1.2
@@ -99,6 +100,17 @@ flutter:
         - asset: assets/fonts/InstrumentSans-BoldItalic.ttf
           weight: 700
           style: italic
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: assets/app_icon.png
+  adaptive_icon_foreground: assets/app_icon.png
+  adaptive_icon_background: "#000718"
+  # Léger recul pour afficher le logo entier dans le masque circulaire Android.
+  # Le fond reprend la couleur de l'image : la marge reste donc invisible.
+  adaptive_icon_foreground_inset: 10
+  remove_alpha_ios: true
 
 flutter_native_splash:
   # Fond blanc pur sans aucun logo — 1er frame identique à _BootSplash Flutter

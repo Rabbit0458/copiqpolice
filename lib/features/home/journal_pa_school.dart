@@ -27,23 +27,28 @@ class JournalPaSchoolPage extends StatelessWidget {
         ),
         const SizedBox(height: 16),
 
-        // Cartes exemple (pointez vos vraies routes PA)
+        // ⚠️ CORRECTIF (audit 2026-07-26)
+        // Ces deux cartes étaient des placeholders de développement — le
+        // commentaire d'origine disait « pointez vos vraies routes PA ». Elles
+        // visaient '/pa_scolarité_pages/…' avec un é accentué : ces routes
+        // n'ont jamais existé (le registre n'utilise que 'pa_scolarite_pages',
+        // sans accent). Cette page étant l'onglet 1 de l'accueil PA Exam, tout
+        // utilisateur qui tapait dessus tombait sur l'écran 404.
+        // On les branche sur l'accueil PA Scolarité, qui existe et regroupe
+        // réellement ces matières.
         _JournalCard(
           title: 'Cadres juridiques (PA)',
-          route: '/pa_scolarité_pages/cadres_juridiques',
+          route: '/home_pa_school',
           badge: 'Cadres d’enquête',
-          onOpen: () => Navigator.of(
-            context,
-          ).pushNamed('/pa_scolarité_pages/cadres_juridiques'),
+          onOpen: () => Navigator.of(context).pushNamed('/home_pa_school'),
         ),
         const SizedBox(height: 12),
         _JournalCard(
-          title: 'Procédure pénale (PA) — GAV',
-          route: '/pa_scolarité_pages/procedure_penale/pp_gav',
-          badge: 'Cours & cas',
-          onOpen: () => Navigator.of(
-            context,
-          ).pushNamed('/pa_scolarité_pages/procedure_penale/pp_gav'),
+          title: 'Procédure pénale (PA) — Garde à vue',
+          route: '/pa/procedure_penale/quiz/cadres_juridiques_principales',
+          badge: 'Quiz',
+          onOpen: () => Navigator.of(context)
+              .pushNamed('/pa/procedure_penale/quiz/cadres_juridiques_principales'),
         ),
       ],
     );

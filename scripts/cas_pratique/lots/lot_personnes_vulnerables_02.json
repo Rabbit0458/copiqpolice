@@ -1,0 +1,277 @@
+[
+  {
+    "slug": "vuln-personne-etrangere-isolee-sans-recours",
+    "title": "Elle est arrivée il y a deux mois et ne connaît personne",
+    "theme_slug": "personnes-vulnerables",
+    "difficulty": "moyen",
+    "is_free": false,
+    "is_published": true,
+    "status": "published",
+    "year": 2026,
+    "month": "Juillet",
+    "total_points": 15,
+    "estimated_minutes": 25,
+    "situation_text": "Il est 18 heures. Au commissariat, une personne étrangère arrivée en France il y a deux mois se présente à vous dans un isolement social et culturel total, ne connaissant personne sur ce territoire et manifestant une méfiance perceptible envers les institutions qu'elle rencontre. Cette configuration, où cet isolement complet s'accompagne d'une difficulté à faire confiance aux services qu'elle sollicite, nécessite d'orienter cette personne vers des relais adaptés à sa situation tout en instaurant progressivement la confiance nécessaire à cette prise en charge.\n\nCette situation, caractéristique des difficultés que peut rencontrer une personne récemment arrivée sur le territoire et dépourvue de tout réseau social ou familial, impose une approche patiente qui construise cette confiance indispensable avant toute orientation efficace vers ces relais appropriés.\n\nCette configuration nécessite d'orienter vers des relais adaptés et d'instaurer la confiance, cette double exigence restant essentielle pour offrir à cette personne une prise en charge effective malgré cet isolement et cette méfiance institutionnelle initiale.",
+    "questions": [
+      {
+        "position": 1,
+        "max_points": 5,
+        "label": "Comment instaurez-vous progressivement la confiance nécessaire avec cette personne étrangère isolée ?",
+        "hint": "Cette confiance doit se construire progressivement, cette patience restant essentielle pour surmonter la méfiance institutionnelle manifestée par cette personne récemment arrivée sur le territoire.",
+        "perfect": "Je reste patiente et bienveillante dans mon accueil de cette personne, cette approche restant essentielle pour surmonter sa méfiance envers les institutions.\n\nJe reste factuelle et transparente sur mon rôle et les suites possibles de cette rencontre, cette clarté restant utile pour rassurer cette personne isolée.\n\nJe reste attentive à recourir à un interprète si la barrière de la langue complique cet échange, cette facilitation restant nécessaire pour cette communication.\n\nJe reste attentive à ne pas presser cette personne dans ses explications, cette patience restant appropriée compte tenu de cet isolement et de cette méfiance initiale.",
+        "points": [
+          {"position": 1, "label": "Rester patiente et bienveillante pour surmonter cette méfiance institutionnelle", "weight": 2.0, "is_required": true, "kind": "core", "explanation_md": "Cœur du cas : confiance construite progressivement.", "groups": [{"position": 1, "keywords": ["confiance construite", "méfiance surmontée", "bienveillance appliquée"]}]},
+          {"position": 2, "label": "Rester factuelle et transparente sur son rôle et les suites possibles", "weight": 1.5, "is_required": true, "kind": "core", "explanation_md": "Clarté rassurant cette personne isolée.", "groups": [{"position": 1, "keywords": ["rôle expliqué", "transparence assurée", "personne rassurée"]}]},
+          {"position": 3, "label": "Recourir à un interprète si la barrière de la langue le complique", "weight": 1.0, "is_required": true, "kind": "core", "explanation_md": "Facilitation nécessaire pour cette communication.", "groups": [{"position": 1, "keywords": ["interprète sollicité", "langue facilitée", "communication assurée"]}]},
+          {"position": 4, "label": "Ne pas presser cette personne dans ses explications", "weight": 0.5, "is_required": false, "kind": "bonus", "explanation_md": "Patience appropriée face à l'isolement.", "groups": [{"position": 1, "keywords": ["patience appliquée", "explications respectées", "isolement pris en compte"]}]}
+        ]
+      },
+      {
+        "position": 2,
+        "max_points": 5,
+        "label": "Comment orientez-vous cette personne vers des relais adaptés à sa situation d'isolement ?",
+        "hint": "Cette orientation doit rester concrète, cette exigence restant essentielle pour proposer à cette personne des relais effectivement adaptés à cette situation d'isolement social et culturel qu'elle traverse.",
+        "perfect": "J'identifie les relais associatifs et institutionnels adaptés à la situation de cette personne récemment arrivée sur le territoire.\n\nJe reste factuelle sur les modalités concrètes de contact avec ces relais, cette précision restant utile pour faciliter cette orientation effective.\n\nJe reste attentive à m'assurer que cette personne comprend bien l'utilité de ces relais proposés, cette compréhension restant essentielle pour leur efficacité.\n\nJe reste attentive à vérifier, si possible, la mise en relation effective avec ces relais avant de considérer cette orientation comme aboutie.",
+        "points": [
+          {"position": 1, "label": "Identifier les relais associatifs et institutionnels adaptés à sa situation", "weight": 2.0, "is_required": true, "kind": "core", "explanation_md": "Cœur du cas : relais adaptés identifiés.", "groups": [{"position": 1, "keywords": ["relais identifiés", "situation adaptée", "institutions concernées"]}]},
+          {"position": 2, "label": "Préciser factuellement les modalités concrètes de contact avec ces relais", "weight": 1.5, "is_required": true, "kind": "core", "explanation_md": "Orientation effective facilitée.", "groups": [{"position": 1, "keywords": ["modalités précisées", "contact facilité", "orientation effective"]}]},
+          {"position": 3, "label": "S'assurer que cette personne comprend l'utilité de ces relais proposés", "weight": 1.0, "is_required": true, "kind": "core", "explanation_md": "Compréhension essentielle pour l'efficacité.", "groups": [{"position": 1, "keywords": ["utilité comprise", "relais compris", "efficacité assurée"]}]},
+          {"position": 4, "label": "Vérifier la mise en relation effective avant de considérer l'orientation aboutie", "weight": 0.5, "is_required": false, "kind": "bonus", "explanation_md": "Mise en relation confirmée.", "groups": [{"position": 1, "keywords": ["mise en relation", "orientation aboutie", "vérification effectuée"]}]}
+        ]
+      },
+      {
+        "position": 3,
+        "max_points": 5,
+        "label": "Comment traitez-vous la demande initiale de cette personne qui l'a conduite à se présenter au commissariat ?",
+        "hint": "Ce traitement doit rester approprié, cette exigence restant essentielle pour répondre à la demande initiale de cette personne indépendamment de cette orientation complémentaire vers des relais adaptés.",
+        "perfect": "Je traite en premier lieu la demande initiale qui a conduit cette personne à se présenter au commissariat, cette priorité restant appropriée.\n\nJe reste factuelle sur les suites données à cette demande, cette clarté restant utile pour cette personne encore peu familière de ce fonctionnement institutionnel.\n\nJe reste attentive à ne pas la renvoyer sans réponse concrète à sa demande initiale, cette exigence restant essentielle malgré cette orientation complémentaire.\n\nJe reste attentive à documenter cette rencontre pour faciliter un suivi si cette personne devait se représenter ultérieurement.",
+        "points": [
+          {"position": 1, "label": "Traiter en premier lieu la demande initiale ayant motivé cette venue", "weight": 2.0, "is_required": true, "kind": "core", "explanation_md": "Cœur du cas : priorité à la demande initiale.", "groups": [{"position": 1, "keywords": ["demande traitée", "priorité assurée", "venue motivée"]}]},
+          {"position": 2, "label": "Rester factuelle sur les suites données à cette demande", "weight": 1.5, "is_required": true, "kind": "core", "explanation_md": "Clarté pour cette personne peu familière du fonctionnement.", "groups": [{"position": 1, "keywords": ["suites précisées", "clarté assurée", "fonctionnement expliqué"]}]},
+          {"position": 3, "label": "Ne pas la renvoyer sans réponse concrète à sa demande initiale", "weight": 1.0, "is_required": true, "kind": "core", "explanation_md": "Exigence essentielle malgré l'orientation complémentaire.", "groups": [{"position": 1, "keywords": ["réponse concrète", "renvoi évité", "demande satisfaite"]}]},
+          {"position": 4, "label": "Documenter cette rencontre pour faciliter un suivi ultérieur", "weight": 0.5, "is_required": false, "kind": "bonus", "explanation_md": "Suivi facilité en cas de retour.", "groups": [{"position": 1, "keywords": ["rencontre documentée", "suivi facilité", "retour anticipé"]}]}
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "vuln-suspicion-traite-des-etres-humains",
+    "title": "Elles répondent toutes la même chose, mot pour mot",
+    "theme_slug": "personnes-vulnerables",
+    "difficulty": "expert",
+    "is_free": false,
+    "is_published": true,
+    "status": "published",
+    "year": 2026,
+    "month": "Juillet",
+    "total_points": 15,
+    "estimated_minutes": 35,
+    "situation_text": "Il est 16 heures. Dans un salon de manucure, vous constatez que plusieurs employées répondent toutes la même chose, mot pour mot, à vos questions de contrôle, cette uniformité suspecte constituant un indice parmi d'autres d'une exploitation possible derrière cette activité en apparence licite. Cette configuration, où ces victimes potentielles se déclarent pourtant elles-mêmes consentantes à leur situation, nécessite de repérer les indices caractéristiques de cette exploitation et d'isoler ces personnes pour les entendre individuellement, loin de toute pression susceptible de fausser leurs déclarations.\n\nCette situation, caractéristique des réseaux de traite des êtres humains qui peuvent se dissimuler derrière une activité commerciale en apparence conforme, impose un repérage attentif de ces indices caractéristiques ainsi qu'une méthode d'audition qui neutralise l'influence exercée sur ces victimes potentielles.\n\nCette configuration nécessite de repérer les indices et d'isoler les personnes pour les entendre, cette double exigence restant essentielle pour révéler la réalité de cette exploitation malgré ce consentement apparent exprimé par ces victimes potentielles.",
+    "questions": [
+      {
+        "position": 1,
+        "max_points": 5,
+        "label": "Comment repérez-vous les indices caractéristiques de cette exploitation derrière cette activité en apparence licite ?",
+        "hint": "Ce repérage doit rester méthodique, cette rigueur restant essentielle pour identifier les indices caractéristiques d'une exploitation qui se dissimule derrière cette activité commerciale en apparence conforme.",
+        "perfect": "Je repère cette uniformité suspecte des réponses données par ces employées, cet indice restant caractéristique d'un discours potentiellement imposé.\n\nJe reste factuelle en observant d'autres indices matériels, comme les conditions de logement, de rémunération ou de détention de documents d'identité de ces personnes.\n\nJe reste attentive aux comportements non verbaux de ces personnes lors de ce contrôle, ces signaux restant utiles pour compléter cette évaluation.\n\nJe reste attentive à documenter précisément chacun de ces indices constatés, cette traçabilité restant essentielle pour la suite de cette procédure.",
+        "points": [
+          {"position": 1, "label": "Repérer cette uniformité suspecte comme indice d'un discours potentiellement imposé", "weight": 2.0, "is_required": true, "kind": "core", "explanation_md": "Cœur du cas : indice caractéristique identifié.", "groups": [{"position": 1, "keywords": ["uniformité repérée", "discours imposé", "indice identifié"]}]},
+          {"position": 2, "label": "Observer d'autres indices matériels sur logement, rémunération, documents", "weight": 1.5, "is_required": true, "kind": "core", "explanation_md": "Indices matériels complémentaires observés.", "groups": [{"position": 1, "keywords": ["indices matériels", "documents vérifiés", "conditions observées"]}]},
+          {"position": 3, "label": "Rester attentive aux comportements non verbaux de ces personnes", "weight": 1.0, "is_required": true, "kind": "core", "explanation_md": "Signaux complétant cette évaluation.", "groups": [{"position": 1, "keywords": ["comportements observés", "signaux complémentaires", "évaluation complétée"]}]},
+          {"position": 4, "label": "Documenter précisément chacun de ces indices constatés", "weight": 0.5, "is_required": false, "kind": "bonus", "explanation_md": "Traçabilité essentielle pour la procédure.", "groups": [{"position": 1, "keywords": ["indices documentés", "traçabilité assurée", "procédure suivie"]}]}
+        ]
+      },
+      {
+        "position": 2,
+        "max_points": 5,
+        "label": "Comment isolez-vous ces personnes pour les entendre individuellement loin de toute pression ?",
+        "hint": "Cet isolement doit rester méthodique, cette exigence restant essentielle pour neutraliser l'influence potentiellement exercée sur ces victimes lors de leur audition individuelle.",
+        "perfect": "J'organise l'audition individuelle de chacune de ces personnes séparément, cet isolement restant essentiel pour neutraliser toute influence exercée entre elles.\n\nJe reste factuelle dans mes questions posées à chacune de ces personnes, évitant toute question suggestive qui pourrait orienter leurs réponses.\n\nJe reste attentive à écarter physiquement toute personne susceptible d'exercer une pression sur ces employées durant cette audition individuelle.\n\nJe reste attentive à recourir à un interprète indépendant si nécessaire, cette indépendance restant essentielle pour ne pas fausser cette audition.",
+        "points": [
+          {"position": 1, "label": "Organiser l'audition individuelle de chacune de ces personnes séparément", "weight": 2.0, "is_required": true, "kind": "core", "explanation_md": "Cœur du cas : influence neutralisée entre les personnes.", "groups": [{"position": 1, "keywords": ["audition individuelle", "personnes séparées", "influence neutralisée"]}]},
+          {"position": 2, "label": "Poser des questions factuelles évitant toute suggestion", "weight": 1.5, "is_required": true, "kind": "core", "explanation_md": "Questions non suggestives préservant la fiabilité.", "groups": [{"position": 1, "keywords": ["questions factuelles", "suggestion évitée", "fiabilité préservée"]}]},
+          {"position": 3, "label": "Écarter physiquement toute personne susceptible d'exercer une pression", "weight": 1.0, "is_required": true, "kind": "core", "explanation_md": "Pression écartée durant l'audition.", "groups": [{"position": 1, "keywords": ["pression écartée", "personnes éloignées", "audition sécurisée"]}]},
+          {"position": 4, "label": "Recourir à un interprète indépendant si nécessaire", "weight": 0.5, "is_required": false, "kind": "bonus", "explanation_md": "Indépendance essentielle pour cette audition.", "groups": [{"position": 1, "keywords": ["interprète indépendant", "audition fiabilisée", "traduction sécurisée"]}]}
+        ]
+      },
+      {
+        "position": 3,
+        "max_points": 5,
+        "label": "Comment traitez-vous ce consentement apparent exprimé par ces victimes potentielles ?",
+        "hint": "Ce consentement apparent doit être analysé avec prudence, cette exigence restant essentielle pour ne pas se satisfaire d'une déclaration qui pourrait résulter précisément de l'emprise exercée sur ces victimes.",
+        "perfect": "Je reste attentive à ne pas me satisfaire de ce consentement apparent, cette déclaration pouvant précisément résulter de l'emprise exercée sur ces victimes potentielles.\n\nJe reste factuelle en confrontant ce discours de consentement aux éléments matériels objectivement constatés sur les lieux de ce contrôle.\n\nJe reste attentive à transmettre ces éléments aux services spécialisés compétents en matière de traite des êtres humains, cette transmission restant essentielle.\n\nJe reste attentive à ne pas exposer ces personnes à des représailles en révélant prématurément mes soupçons devant d'éventuels complices présents.",
+        "points": [
+          {"position": 1, "label": "Ne pas se satisfaire de ce consentement apparent pouvant résulter d'une emprise", "weight": 2.0, "is_required": true, "kind": "core", "explanation_md": "Cœur du cas : consentement apparent questionné.", "groups": [{"position": 1, "keywords": ["consentement questionné", "emprise suspectée", "vigilance maintenue"]}]},
+          {"position": 2, "label": "Confronter ce discours aux éléments matériels objectivement constatés", "weight": 1.5, "is_required": true, "kind": "core", "explanation_md": "Confrontation objective du discours.", "groups": [{"position": 1, "keywords": ["discours confronté", "éléments matériels", "objectivité assurée"]}]},
+          {"position": 3, "label": "Transmettre ces éléments aux services spécialisés en traite des êtres humains", "weight": 1.0, "is_required": true, "kind": "core", "explanation_md": "Transmission essentielle aux services compétents.", "groups": [{"position": 1, "keywords": ["services spécialisés", "éléments transmis", "traite signalée"]}]},
+          {"position": 4, "label": "Ne pas exposer ces personnes à des représailles en révélant prématurément ses soupçons", "weight": 0.5, "is_required": false, "kind": "bonus", "explanation_md": "Représailles évitées par la discrétion.", "groups": [{"position": 1, "keywords": ["représailles évitées", "soupçons discrets", "complices présents"]}]}
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "vuln-personne-agee-isolee-negligence-familiale",
+    "title": "Le logement est insalubre, la famille dit passer chaque semaine",
+    "theme_slug": "personnes-vulnerables",
+    "difficulty": "difficile",
+    "is_free": false,
+    "is_published": true,
+    "status": "published",
+    "year": 2026,
+    "month": "Juillet",
+    "total_points": 15,
+    "estimated_minutes": 30,
+    "situation_text": "Il est 11 heures. Au domicile d'une personne âgée isolée, vous constatez un logement insalubre alors que la famille affirme y passer chaque semaine pour s'occuper de cette personne, ces versions contradictoires posant la question d'une négligence sans violence caractérisée qui reste néanmoins préjudiciable à cette personne âgée. Cette configuration, où cette maltraitance par omission se distingue des violences actives déjà rencontrées dans d'autres situations, nécessite de constater objectivement l'état de ce logement et de cette personne sans accuser prématurément cette famille sur la base de ces seules apparences.\n\nCette situation, caractéristique des négligences qui peuvent affecter une personne âgée isolée sans qu'aucune violence active ne soit exercée à son encontre, impose une constatation rigoureuse qui établisse objectivement les faits avant toute appréciation définitive sur les responsabilités de cette famille.\n\nCette configuration nécessite de constater objectivement l'état de ce logement sans accuser prématurément cette famille, cette exigence restant essentielle pour établir les faits de cette négligence tout en respectant les droits de chacun jusqu'à leur établissement définitif.",
+    "questions": [
+      {
+        "position": 1,
+        "max_points": 5,
+        "label": "Comment constatez-vous objectivement l'état de ce logement insalubre et de cette personne âgée ?",
+        "hint": "Cette constatation doit rester objective, cette rigueur restant essentielle pour établir factuellement cette situation avant toute appréciation définitive sur les responsabilités de cette famille.",
+        "perfect": "Je décris précisément l'état de ce logement constaté, cette description objective restant essentielle pour cette procédure de constatation.\n\nJe reste factuelle sur l'état physique et psychologique de cette personne âgée, cette observation restant utile pour évaluer l'impact de cette situation sur sa santé.\n\nJe reste attentive à recueillir, si possible, le témoignage de cette personne âgée elle-même sur sa situation vécue au quotidien.\n\nJe reste attentive à documenter cette situation par des éléments matériels appropriés, cette traçabilité restant utile pour la suite de cette procédure.",
+        "points": [
+          {"position": 1, "label": "Décrire précisément l'état de ce logement constaté", "weight": 2.0, "is_required": true, "kind": "core", "explanation_md": "Cœur du cas : description objective de la situation.", "groups": [{"position": 1, "keywords": ["logement décrit", "état constaté", "description objective"]}]},
+          {"position": 2, "label": "Observer factuellement l'état physique et psychologique de cette personne âgée", "weight": 1.5, "is_required": true, "kind": "core", "explanation_md": "Impact sur la santé évalué.", "groups": [{"position": 1, "keywords": ["état observé", "impact évalué", "santé considérée"]}]},
+          {"position": 3, "label": "Recueillir le témoignage de cette personne âgée sur sa situation vécue", "weight": 1.0, "is_required": true, "kind": "core", "explanation_md": "Témoignage direct de la personne concernée.", "groups": [{"position": 1, "keywords": ["témoignage recueilli", "situation vécue", "personne entendue"]}]},
+          {"position": 4, "label": "Documenter cette situation par des éléments matériels appropriés", "weight": 0.5, "is_required": false, "kind": "bonus", "explanation_md": "Traçabilité utile pour la procédure.", "groups": [{"position": 1, "keywords": ["situation documentée", "éléments matériels", "traçabilité assurée"]}]}
+        ]
+      },
+      {
+        "position": 2,
+        "max_points": 5,
+        "label": "Comment évitez-vous d'accuser prématurément cette famille sur la base de ces seules apparences ?",
+        "hint": "Cette réserve doit rester constante, cette exigence restant essentielle pour ne pas conclure prématurément sur les responsabilités de cette famille avant l'établissement complet des faits de cette situation.",
+        "perfect": "Je reste attentive à ne pas conclure prématurément sur la responsabilité de cette famille avant l'établissement complet des faits de cette situation.\n\nJe reste factuelle en recueillant la version de cette famille sur la fréquence réelle de ses visites et sur les raisons de cet état constaté.\n\nJe reste attentive à envisager d'autres explications possibles à cette insalubrité, comme un refus d'aide de cette personne âgée elle-même.\n\nJe reste attentive à transmettre ce dossier aux autorités compétentes qui détermineront les responsabilités exactes de cette situation.",
+        "points": [
+          {"position": 1, "label": "Ne pas conclure prématurément sur la responsabilité de cette famille", "weight": 2.0, "is_required": true, "kind": "core", "explanation_md": "Cœur du cas : réserve avant établissement complet des faits.", "groups": [{"position": 1, "keywords": ["responsabilité différée", "faits établis", "réserve appliquée"]}]},
+          {"position": 2, "label": "Recueillir la version de cette famille sur la fréquence de ses visites", "weight": 1.5, "is_required": true, "kind": "core", "explanation_md": "Version de la famille recueillie.", "groups": [{"position": 1, "keywords": ["version recueillie", "visites précisées", "famille entendue"]}]},
+          {"position": 3, "label": "Envisager d'autres explications possibles à cette insalubrité", "weight": 1.0, "is_required": true, "kind": "core", "explanation_md": "Explications alternatives envisagées.", "groups": [{"position": 1, "keywords": ["explications envisagées", "refus d'aide", "insalubrité expliquée"]}]},
+          {"position": 4, "label": "Transmettre ce dossier aux autorités compétentes pour déterminer les responsabilités", "weight": 0.5, "is_required": false, "kind": "bonus", "explanation_md": "Détermination des responsabilités par l'autorité compétente.", "groups": [{"position": 1, "keywords": ["dossier transmis", "autorités compétentes", "responsabilités déterminées"]}]}
+        ]
+      },
+      {
+        "position": 3,
+        "max_points": 5,
+        "label": "Comment assurez-vous la protection immédiate de cette personne âgée en attendant ces conclusions ?",
+        "hint": "Cette protection immédiate doit rester proportionnée, cette exigence restant essentielle pour préserver la santé de cette personne âgée sans attendre l'issue complète de cette procédure d'établissement des faits.",
+        "perfect": "Je reste attentive à évaluer si cette insalubrité présente un risque immédiat pour la santé de cette personne âgée, cette évaluation restant prioritaire.\n\nJe reste factuelle sur les besoins urgents de cette personne, sollicitant si nécessaire une intervention sociale ou médicale rapide.\n\nJe reste attentive à signaler cette situation aux services sociaux compétents, cette transmission restant nécessaire pour cette protection immédiate.\n\nJe reste disponible pour un suivi de cette situation, cette disponibilité restant utile pour m'assurer de l'amélioration effective des conditions de vie de cette personne.",
+        "points": [
+          {"position": 1, "label": "Évaluer si cette insalubrité présente un risque immédiat pour la santé", "weight": 2.0, "is_required": true, "kind": "core", "explanation_md": "Cœur du cas : évaluation prioritaire du risque immédiat.", "groups": [{"position": 1, "keywords": ["risque évalué", "santé prioritaire", "insalubrité mesurée"]}]},
+          {"position": 2, "label": "Solliciter une intervention sociale ou médicale rapide si nécessaire", "weight": 1.5, "is_required": true, "kind": "core", "explanation_md": "Besoins urgents pris en compte.", "groups": [{"position": 1, "keywords": ["intervention sollicitée", "besoins urgents", "aide rapide"]}]},
+          {"position": 3, "label": "Signaler cette situation aux services sociaux compétents", "weight": 1.0, "is_required": true, "kind": "core", "explanation_md": "Transmission nécessaire pour cette protection immédiate.", "groups": [{"position": 1, "keywords": ["services sociaux", "situation signalée", "protection assurée"]}]},
+          {"position": 4, "label": "Rester disponible pour un suivi de cette situation", "weight": 0.5, "is_required": false, "kind": "bonus", "explanation_md": "Amélioration effective des conditions vérifiée.", "groups": [{"position": 1, "keywords": ["suivi assuré", "conditions améliorées", "disponibilité maintenue"]}]}
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "vuln-personne-en-detresse-refuse-hopital",
+    "title": "Elle dit préférer rester dehors qu'être enfermée",
+    "theme_slug": "personnes-vulnerables",
+    "difficulty": "moyen",
+    "is_free": false,
+    "is_published": true,
+    "status": "published",
+    "year": 2026,
+    "month": "Juillet",
+    "total_points": 15,
+    "estimated_minutes": 25,
+    "situation_text": "Il est 21 heures. Sur la voie publique, une personne en détresse manifeste vous dit préférer rester dehors plutôt que d'être enfermée à l'hôpital, ce refus s'appuyant sur une expérience institutionnelle passée vécue négativement plutôt que sur un simple caprice ou une incapacité de discernement. Cette configuration, où ce refus reste fondé sur une méfiance compréhensible malgré le risque réel que cette situation continue de présenter, nécessite de comprendre précisément le motif de ce refus avant d'insister davantage sur cette hospitalisation qu'elle rejette.\n\nCette situation, caractéristique des refus de prise en charge qui peuvent être motivés par une expérience institutionnelle négative plutôt que par un simple déni de la réalité de sa propre situation, impose une écoute attentive de ces raisons avant toute action qui pourrait s'avérer contre-productive si elle ne tient pas compte de cette méfiance légitime.\n\nCette configuration nécessite de comprendre le motif de ce refus avant d'insister, cette exigence restant essentielle pour adapter votre réponse à cette méfiance institutionnelle plutôt que de la renforcer par une insistance mal comprise.",
+    "questions": [
+      {
+        "position": 1,
+        "max_points": 5,
+        "label": "Comment comprenez-vous le motif de ce refus avant d'insister sur cette hospitalisation ?",
+        "hint": "Cette compréhension doit rester préalable, cette exigence restant essentielle pour adapter votre réponse à cette méfiance institutionnelle plutôt que de la renforcer par une insistance mal comprise.",
+        "perfect": "J'écoute attentivement les raisons de ce refus exprimées par cette personne, cette écoute restant préalable à toute insistance sur cette hospitalisation.\n\nJe reste factuelle en recueillant les éléments de cette expérience institutionnelle passée qui motive cette méfiance actuelle.\n\nJe reste attentive à ne pas minimiser cette expérience négative vécue par cette personne, cette reconnaissance restant utile pour construire une relation de confiance.\n\nJe reste attentive à évaluer si ce refus reste compatible avec un discernement suffisant de cette personne sur sa propre situation.",
+        "points": [
+          {"position": 1, "label": "Écouter attentivement les raisons de ce refus avant d'insister", "weight": 2.0, "is_required": true, "kind": "core", "explanation_md": "Cœur du cas : écoute préalable à toute insistance.", "groups": [{"position": 1, "keywords": ["raisons écoutées", "refus compris", "insistance différée"]}]},
+          {"position": 2, "label": "Recueillir les éléments de cette expérience institutionnelle passée", "weight": 1.5, "is_required": true, "kind": "core", "explanation_md": "Méfiance actuelle expliquée par l'expérience passée.", "groups": [{"position": 1, "keywords": ["expérience recueillie", "méfiance expliquée", "passé pris en compte"]}]},
+          {"position": 3, "label": "Ne pas minimiser cette expérience négative vécue par cette personne", "weight": 1.0, "is_required": true, "kind": "core", "explanation_md": "Reconnaissance construisant la confiance.", "groups": [{"position": 1, "keywords": ["expérience reconnue", "confiance construite", "minimisation évitée"]}]},
+          {"position": 4, "label": "Évaluer si ce refus reste compatible avec un discernement suffisant", "weight": 0.5, "is_required": false, "kind": "bonus", "explanation_md": "Discernement évalué sur sa propre situation.", "groups": [{"position": 1, "keywords": ["discernement évalué", "situation comprise", "refus évalué"]}]}
+        ]
+      },
+      {
+        "position": 2,
+        "max_points": 5,
+        "label": "Comment gérez-vous le risque réel que cette situation continue de présenter malgré ce refus compréhensible ?",
+        "hint": "Cette gestion doit rester proportionnée, cette exigence restant essentielle pour préserver la sécurité de cette personne sans pour autant ignorer la légitimité de sa méfiance envers cette hospitalisation.",
+        "perfect": "Je reste attentive à évaluer précisément la gravité du risque que présente cette situation malgré ce refus exprimé par cette personne.\n\nJe reste factuelle sur les conséquences possibles de ce refus, cette information restant utile pour que cette personne prenne sa décision en toute connaissance de cause.\n\nJe reste attentive à proposer des alternatives à cette hospitalisation complète, comme un suivi ambulatoire, qui pourraient être mieux acceptées.\n\nJe reste attentive à solliciter un avis médical sur la nécessité éventuelle d'une action plus contraignante si ce risque devenait vital.",
+        "points": [
+          {"position": 1, "label": "Évaluer précisément la gravité du risque malgré ce refus exprimé", "weight": 2.0, "is_required": true, "kind": "core", "explanation_md": "Cœur du cas : risque évalué malgré le refus.", "groups": [{"position": 1, "keywords": ["risque évalué", "gravité mesurée", "refus pris en compte"]}]},
+          {"position": 2, "label": "Informer des conséquences possibles de ce refus", "weight": 1.5, "is_required": true, "kind": "core", "explanation_md": "Décision éclairée de la personne.", "groups": [{"position": 1, "keywords": ["conséquences informées", "décision éclairée", "personne informée"]}]},
+          {"position": 3, "label": "Proposer des alternatives à cette hospitalisation complète", "weight": 1.0, "is_required": true, "kind": "core", "explanation_md": "Alternatives mieux acceptées proposées.", "groups": [{"position": 1, "keywords": ["alternative proposée", "suivi ambulatoire", "acceptation facilitée"]}]},
+          {"position": 4, "label": "Solliciter un avis médical si ce risque devenait vital", "weight": 0.5, "is_required": false, "kind": "bonus", "explanation_md": "Action plus contraignante envisagée si nécessaire.", "groups": [{"position": 1, "keywords": ["avis médical", "risque vital", "action envisagée"]}]}
+        ]
+      },
+      {
+        "position": 3,
+        "max_points": 5,
+        "label": "Comment maintenez-vous le lien avec cette personne au-delà de cette intervention immédiate ?",
+        "hint": "Ce lien doit rester maintenu, cette démarche restant utile pour ne pas abandonner cette personne à sa méfiance institutionnelle une fois cette intervention immédiate terminée.",
+        "perfect": "Je reste attentive à laisser à cette personne des informations sur les ressources disponibles si elle changeait d'avis ultérieurement.\n\nJe reste factuelle sur ma disponibilité future si elle souhaitait solliciter à nouveau une aide, cette information restant utile pour maintenir ce lien.\n\nJe reste attentive à documenter cette situation pour faciliter une intervention future si cette personne était de nouveau rencontrée.\n\nJe reste attentive à signaler cette situation aux services sociaux compétents pour un suivi adapté malgré ce refus d'hospitalisation immédiat.",
+        "points": [
+          {"position": 1, "label": "Laisser des informations sur les ressources disponibles pour un changement d'avis futur", "weight": 2.0, "is_required": true, "kind": "core", "explanation_md": "Cœur du cas : lien maintenu pour l'avenir.", "groups": [{"position": 1, "keywords": ["ressources laissées", "changement d'avis", "lien maintenu"]}]},
+          {"position": 2, "label": "Informer de sa disponibilité future pour maintenir ce lien", "weight": 1.5, "is_required": true, "kind": "core", "explanation_md": "Disponibilité future utile pour ce lien.", "groups": [{"position": 1, "keywords": ["disponibilité informée", "lien préservé", "aide future"]}]},
+          {"position": 3, "label": "Documenter cette situation pour faciliter une intervention future", "weight": 1.0, "is_required": true, "kind": "core", "explanation_md": "Intervention future facilitée.", "groups": [{"position": 1, "keywords": ["situation documentée", "intervention facilitée", "rencontre future"]}]},
+          {"position": 4, "label": "Signaler cette situation aux services sociaux pour un suivi adapté", "weight": 0.5, "is_required": false, "kind": "bonus", "explanation_md": "Suivi adapté malgré le refus immédiat.", "groups": [{"position": 1, "keywords": ["services sociaux", "suivi adapté", "refus immédiat"]}]}
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "vuln-enfant-tres-jeune-sans-adulte-rue",
+    "title": "Trois ans, en pyjama, sur le trottoir",
+    "theme_slug": "personnes-vulnerables",
+    "difficulty": "moyen",
+    "is_free": true,
+    "is_published": true,
+    "status": "published",
+    "year": 2026,
+    "month": "Juillet",
+    "total_points": 15,
+    "estimated_minutes": 25,
+    "situation_text": "Il est 7 heures 30. Dans une rue résidentielle, vous découvrez un enfant de trois ans en pyjama seul sur le trottoir sans aucun adulte à proximité, cette situation d'urgence absolue étant aggravée par l'origine inconnue de cet enfant et le danger immédiat que représente la circulation environnante. Cette configuration, où ce très jeune enfant se trouve seul en extérieur dans des circonstances qui restent à éclaircir, nécessite une mise en sécurité immédiate de cet enfant avant toute recherche de l'origine de cette situation ou des adultes responsables de sa garde.\n\nCette situation, caractéristique des dangers immédiats que peut représenter la présence d'un très jeune enfant seul en extérieur sans surveillance adulte, impose une action de protection prioritaire qui ne peut attendre l'établissement complet des circonstances de cette découverte.\n\nCette configuration nécessite une mise en sécurité immédiate avant toute recherche, cette priorité restant essentielle compte tenu de l'âge de cet enfant et du danger immédiat que représente cette situation d'errance non surveillée.",
+    "questions": [
+      {
+        "position": 1,
+        "max_points": 5,
+        "label": "Comment assurez-vous la mise en sécurité immédiate de cet enfant avant toute autre considération ?",
+        "hint": "Cette mise en sécurité doit intervenir sans délai, cette priorité restant essentielle compte tenu du danger immédiat que représente cette situation d'errance non surveillée pour cet enfant de trois ans.",
+        "perfect": "Je mets immédiatement cet enfant en sécurité, l'éloignant sans délai de tout danger lié à la circulation environnante.\n\nJe reste factuelle et rassurante dans mon approche de cet enfant, cette approche restant appropriée compte tenu de son jeune âge et de cette situation inhabituelle.\n\nJe reste attentive à vérifier l'état physique de cet enfant, cette vérification restant essentielle pour détecter tout signe de blessure ou de détresse.\n\nJe reste attentive à ne jamais laisser cet enfant seul, même un court instant, jusqu'à sa prise en charge complète et sécurisée.",
+        "points": [
+          {"position": 1, "label": "Mettre immédiatement cet enfant en sécurité, à l'écart de la circulation", "weight": 2.0, "is_required": true, "kind": "core", "explanation_md": "Cœur du cas : priorité absolue à la sécurité immédiate.", "groups": [{"position": 1, "keywords": ["enfant sécurisé", "circulation évitée", "danger immédiat"]}]},
+          {"position": 2, "label": "Rester factuelle et rassurante dans son approche de cet enfant", "weight": 1.5, "is_required": true, "kind": "core", "explanation_md": "Approche appropriée compte tenu du jeune âge.", "groups": [{"position": 1, "keywords": ["approche rassurante", "jeune âge", "situation inhabituelle"]}]},
+          {"position": 3, "label": "Vérifier l'état physique de cet enfant pour détecter blessure ou détresse", "weight": 1.0, "is_required": true, "kind": "core", "explanation_md": "État physique vérifié en priorité.", "groups": [{"position": 1, "keywords": ["état vérifié", "blessure recherchée", "détresse détectée"]}]},
+          {"position": 4, "label": "Ne jamais laisser cet enfant seul jusqu'à sa prise en charge complète", "weight": 0.5, "is_required": false, "kind": "bonus", "explanation_md": "Surveillance constante jusqu'à la prise en charge.", "groups": [{"position": 1, "keywords": ["surveillance constante", "prise en charge", "enfant accompagné"]}]}
+        ]
+      },
+      {
+        "position": 2,
+        "max_points": 5,
+        "label": "Comment recherchez-vous l'origine de cet enfant et les adultes responsables de sa garde ?",
+        "hint": "Cette recherche doit intervenir après cette mise en sécurité, cette priorité restant respectée pour identifier l'origine de cette situation et les adultes responsables de la garde de cet enfant.",
+        "perfect": "Je sollicite des renforts pour effectuer un porte-à-porte dans ce quartier résidentiel afin d'identifier l'origine de cet enfant.\n\nJe reste factuelle dans mes questions à cet enfant, adaptées à son âge, pour tenter d'obtenir des informations sur son domicile ou sa famille.\n\nJe reste attentive à vérifier les logements les plus proches de l'endroit où cet enfant a été découvert, cette proximité restant un indice pertinent.\n\nJe reste attentive à alerter les services compétents en cas d'absence de réponse rapide, cette transmission restant nécessaire pour la suite de cette recherche.",
+        "points": [
+          {"position": 1, "label": "Solliciter des renforts pour un porte-à-porte dans ce quartier résidentiel", "weight": 2.0, "is_required": true, "kind": "core", "explanation_md": "Cœur du cas : recherche active de l'origine.", "groups": [{"position": 1, "keywords": ["renforts sollicités", "porte-à-porte effectué", "origine recherchée"]}]},
+          {"position": 2, "label": "Poser des questions factuelles adaptées à l'âge de cet enfant", "weight": 1.5, "is_required": true, "kind": "core", "explanation_md": "Informations recherchées adaptées à l'âge.", "groups": [{"position": 1, "keywords": ["questions adaptées", "informations recherchées", "âge respecté"]}]},
+          {"position": 3, "label": "Vérifier les logements les plus proches de cette découverte", "weight": 1.0, "is_required": true, "kind": "core", "explanation_md": "Proximité comme indice pertinent.", "groups": [{"position": 1, "keywords": ["logements vérifiés", "proximité exploitée", "indice pertinent"]}]},
+          {"position": 4, "label": "Alerter les services compétents en cas d'absence de réponse rapide", "weight": 0.5, "is_required": false, "kind": "bonus", "explanation_md": "Transmission nécessaire pour la suite de la recherche.", "groups": [{"position": 1, "keywords": ["services alertés", "recherche poursuivie", "transmission effectuée"]}]}
+        ]
+      },
+      {
+        "position": 3,
+        "max_points": 5,
+        "label": "Comment gérez-vous les suites de cette situation une fois les responsables de cet enfant identifiés ou à défaut ?",
+        "hint": "Cette gestion doit rester adaptée à l'issue de cette recherche, cette exigence restant nécessaire pour assurer une prise en charge appropriée de cet enfant quelle que soit l'issue de cette identification.",
+        "perfect": "Je reste attentive à évaluer les circonstances ayant conduit cet enfant à se trouver seul, cette évaluation restant utile pour déterminer les suites appropriées.\n\nJe reste factuelle dans mon compte rendu de cette situation, cette précision restant utile pour la suite de cette procédure éventuelle.\n\nJe reste attentive à solliciter les services de protection de l'enfance si les circonstances de cette situation le justifient.\n\nJe reste attentive à m'assurer que cet enfant est remis à un adulte responsable en toute sécurité, cette vérification restant essentielle avant de clore cette intervention.",
+        "points": [
+          {"position": 1, "label": "Évaluer les circonstances ayant conduit cet enfant à se trouver seul", "weight": 2.0, "is_required": true, "kind": "core", "explanation_md": "Cœur du cas : circonstances évaluées pour les suites appropriées.", "groups": [{"position": 1, "keywords": ["circonstances évaluées", "suites déterminées", "situation analysée"]}]},
+          {"position": 2, "label": "Rester factuelle dans son compte rendu de cette situation", "weight": 1.5, "is_required": true, "kind": "core", "explanation_md": "Précision utile pour la suite de la procédure.", "groups": [{"position": 1, "keywords": ["compte rendu précis", "procédure suivie", "situation rapportée"]}]},
+          {"position": 3, "label": "Solliciter les services de protection de l'enfance si les circonstances le justifient", "weight": 1.0, "is_required": true, "kind": "core", "explanation_md": "Protection de l'enfance sollicitée si nécessaire.", "groups": [{"position": 1, "keywords": ["protection sollicitée", "enfance concernée", "circonstances justifiées"]}]},
+          {"position": 4, "label": "S'assurer que cet enfant est remis à un adulte responsable en sécurité", "weight": 0.5, "is_required": false, "kind": "bonus", "explanation_md": "Remise sécurisée avant de clore l'intervention.", "groups": [{"position": 1, "keywords": ["remise sécurisée", "adulte responsable", "intervention close"]}]}
+        ]
+      }
+    ]
+  }
+]

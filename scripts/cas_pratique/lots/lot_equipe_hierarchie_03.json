@@ -1,0 +1,277 @@
+[
+  {
+    "slug": "equipe-collegue-en-etat-de-stress-post-intervention",
+    "title": "Il répète la même phrase depuis une heure",
+    "theme_slug": "equipe-hierarchie",
+    "difficulty": "difficile",
+    "is_free": false,
+    "is_published": true,
+    "status": "published",
+    "year": 2026,
+    "month": "Juillet",
+    "total_points": 15,
+    "estimated_minutes": 30,
+    "situation_text": "Il est 4 heures. Au retour d'une intervention difficile, vous constatez que votre collègue répète la même phrase depuis une heure sans parvenir à en sortir, cette détresse manifeste se heurtant à sa réticence à en parler ouvertement lorsque vous tentez de l'aborder sur ce sujet. Cette configuration, où cette souffrance psychologique visible d'un pair s'accompagne d'un refus de verbalisation qui ne facilite pas votre action, nécessite de ne pas le laisser seul face à cette détresse tout en l'orientant progressivement vers un soutien approprié.\n\nCette situation, caractéristique des atteintes à la santé psychologique qui peuvent affecter un collègue après une intervention particulièrement éprouvante, impose une présence attentive et non intrusive qui respecte ce moment de vulnérabilité sans pour autant l'abandonner à lui-même.\n\nCette configuration nécessite de ne pas laisser ce collègue seul et de l'orienter vers un soutien approprié, cette double exigence restant essentielle pour préserver sa santé psychologique au-delà de ce moment de détresse immédiate.",
+    "questions": [
+      {
+        "position": 1,
+        "max_points": 5,
+        "label": "Comment restez-vous présente auprès de ce collègue sans le laisser seul face à cette détresse ?",
+        "hint": "Cette présence doit rester attentive et non intrusive, cette qualité d'écoute restant essentielle pour respecter ce moment de vulnérabilité sans l'aggraver par une insistance excessive.",
+        "perfect": "Je reste physiquement présente auprès de ce collègue, cette présence restant essentielle pour ne pas le laisser seul face à cette détresse manifeste.\n\nJe reste factuelle et calme dans mon attitude, cette posture restant appropriée pour ne pas ajouter à son trouble déjà perceptible.\n\nJe reste attentive à ne pas forcer la parole s'il n'est pas prêt à s'exprimer, cette retenue restant nécessaire pour respecter son rythme propre.\n\nJe reste attentive aux signes qui pourraient indiquer une aggravation de cet état, cette vigilance restant essentielle pour ajuster ma réponse si nécessaire.",
+        "points": [
+          {"position": 1, "label": "Rester physiquement présente auprès de ce collègue", "weight": 2.0, "is_required": true, "kind": "core", "explanation_md": "Cœur du cas : présence essentielle face à cette détresse.", "groups": [{"position": 1, "keywords": ["présence assurée", "collègue accompagné", "détresse constatée"]}]},
+          {"position": 2, "label": "Rester factuelle et calme pour ne pas ajouter à son trouble", "weight": 1.5, "is_required": true, "kind": "core", "explanation_md": "Posture appropriée face au trouble perçu.", "groups": [{"position": 1, "keywords": ["attitude calme", "trouble non aggravé", "posture appropriée"]}]},
+          {"position": 3, "label": "Ne pas forcer la parole s'il n'est pas prêt à s'exprimer", "weight": 1.0, "is_required": true, "kind": "core", "explanation_md": "Retenue respectant le rythme du collègue.", "groups": [{"position": 1, "keywords": ["parole non forcée", "rythme respecté", "retenue appliquée"]}]},
+          {"position": 4, "label": "Rester attentive aux signes d'une aggravation de cet état", "weight": 0.5, "is_required": false, "kind": "bonus", "explanation_md": "Vigilance ajustant la réponse si nécessaire.", "groups": [{"position": 1, "keywords": ["signes surveillés", "aggravation détectée", "réponse ajustée"]}]}
+        ]
+      },
+      {
+        "position": 2,
+        "max_points": 5,
+        "label": "Comment orientez-vous progressivement ce collègue vers un soutien approprié malgré sa réticence à en parler ?",
+        "hint": "Cette orientation doit rester progressive et respectueuse, cette exigence restant essentielle face à cette réticence manifestée par ce collègue à évoquer ouvertement sa détresse.",
+        "perfect": "Je propose progressivement à ce collègue de solliciter un soutien approprié, sans lui imposer cette démarche contre sa volonté immédiate.\n\nJe reste factuelle sur l'existence de dispositifs de soutien psychologique disponibles pour les collègues confrontés à ce type de situation.\n\nJe reste attentive à alerter ma hiérarchie de cette situation, cette information restant nécessaire pour qu'un accompagnement approprié puisse être organisé.\n\nJe reste attentive à respecter son rythme tout en maintenant cette orientation vers un soutien comme un objectif à ne pas abandonner.",
+        "points": [
+          {"position": 1, "label": "Proposer progressivement de solliciter un soutien approprié sans l'imposer", "weight": 2.0, "is_required": true, "kind": "core", "explanation_md": "Cœur du cas : orientation progressive respectant la réticence.", "groups": [{"position": 1, "keywords": ["soutien proposé", "orientation progressive", "volonté respectée"]}]},
+          {"position": 2, "label": "Informer de l'existence de dispositifs de soutien psychologique disponibles", "weight": 1.5, "is_required": true, "kind": "core", "explanation_md": "Information sur les dispositifs existants.", "groups": [{"position": 1, "keywords": ["dispositifs signalés", "soutien psychologique", "information donnée"]}]},
+          {"position": 3, "label": "Alerter la hiérarchie de cette situation pour organiser un accompagnement", "weight": 1.0, "is_required": true, "kind": "core", "explanation_md": "Accompagnement organisé par la hiérarchie.", "groups": [{"position": 1, "keywords": ["hiérarchie alertée", "accompagnement organisé", "situation signalée"]}]},
+          {"position": 4, "label": "Maintenir cette orientation vers un soutien comme objectif non abandonné", "weight": 0.5, "is_required": false, "kind": "bonus", "explanation_md": "Persévérance dans l'orientation vers le soutien.", "groups": [{"position": 1, "keywords": ["objectif maintenu", "orientation persévérante", "soutien recherché"]}]}
+        ]
+      },
+      {
+        "position": 3,
+        "max_points": 5,
+        "label": "Comment gérez-vous la suite de ce service compte tenu de l'état de ce collègue ?",
+        "hint": "Cette gestion doit rester adaptée à son état, cette adaptation restant nécessaire pour préserver la santé de ce collègue tout en assurant la continuité du service en cours.",
+        "perfect": "Je reste attentive à évaluer si ce collègue est en capacité de poursuivre ce service, cette évaluation restant nécessaire pour sa propre sécurité et celle de l'équipe.\n\nJe reste factuelle en rendant compte de cette situation à ma hiérarchie, cette information restant utile pour qu'une décision appropriée soit prise concernant la suite de ce service.\n\nJe reste attentive à proposer un retrait temporaire de ce collègue si son état le justifie, cette proposition restant protectrice envers lui.\n\nJe reste disponible pour prendre de ses nouvelles dans les jours suivants, cette disponibilité restant utile pour m'assurer de son rétablissement progressif.",
+        "points": [
+          {"position": 1, "label": "Évaluer si ce collègue est en capacité de poursuivre ce service", "weight": 2.0, "is_required": true, "kind": "core", "explanation_md": "Cœur du cas : évaluation pour sa sécurité et celle de l'équipe.", "groups": [{"position": 1, "keywords": ["capacité évaluée", "sécurité assurée", "service évalué"]}]},
+          {"position": 2, "label": "Rendre compte de cette situation à la hiérarchie", "weight": 1.5, "is_required": true, "kind": "core", "explanation_md": "Décision appropriée sur la suite du service.", "groups": [{"position": 1, "keywords": ["hiérarchie informée", "décision appropriée", "situation rapportée"]}]},
+          {"position": 3, "label": "Proposer un retrait temporaire si son état le justifie", "weight": 1.0, "is_required": true, "kind": "core", "explanation_md": "Protection du collègue par un retrait temporaire.", "groups": [{"position": 1, "keywords": ["retrait proposé", "état justifié", "protection assurée"]}]},
+          {"position": 4, "label": "Prendre de ses nouvelles dans les jours suivants", "weight": 0.5, "is_required": false, "kind": "bonus", "explanation_md": "Suivi du rétablissement progressif.", "groups": [{"position": 1, "keywords": ["nouvelles prises", "rétablissement suivi", "disponibilité maintenue"]}]}
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "equipe-comportement-dangereux-d-un-equipier",
+    "title": "Sa conduite en intervention met le binôme en danger",
+    "theme_slug": "equipe-hierarchie",
+    "difficulty": "difficile",
+    "is_free": false,
+    "is_published": true,
+    "status": "published",
+    "year": 2026,
+    "month": "Juillet",
+    "total_points": 15,
+    "estimated_minutes": 30,
+    "situation_text": "Il est 19 heures. En véhicule, la conduite de votre équipier met votre binôme en danger de manière répétée au cours de cette intervention, cette situation créant une tension entre la sécurité immédiate qui doit primer et la relation de travail qui vous lie à cet équipier au quotidien. Cette configuration, où ce risque opérationnel ne relève d'aucun manquement déontologique mais d'une pratique dangereuse de conduite, nécessite de faire cesser immédiatement ce comportement dangereux tout en réservant à un moment ultérieur l'échange nécessaire sur cette situation vécue.\n\nCette situation, caractéristique des risques qui peuvent naître du comportement d'un équipier au cours d'une intervention sans que ce comportement ne relève d'une faute déontologique caractérisée, impose une intervention ferme et immédiate qui préserve la sécurité de ce binôme avant tout autre considération.\n\nCette configuration nécessite de faire cesser immédiatement ce comportement dangereux et d'en parler après cette intervention, cette double exigence restant essentielle pour préserver à la fois la sécurité immédiate et la relation de travail future avec cet équipier.",
+    "questions": [
+      {
+        "position": 1,
+        "max_points": 5,
+        "label": "Comment faites-vous cesser immédiatement ce comportement dangereux de votre équipier au volant ?",
+        "hint": "Cette intervention doit rester immédiate, cette rapidité restant essentielle pour préserver la sécurité de ce binôme avant tout autre considération relationnelle.",
+        "perfect": "J'interpelle immédiatement mon équipier sur cette conduite dangereuse, cette fermeté restant essentielle pour préserver la sécurité de ce binôme sans délai.\n\nJe reste factuelle sur le danger constaté par cette conduite, cette précision restant utile pour qu'il prenne conscience immédiatement de ce risque encouru.\n\nJe reste attentive à lui demander explicitement de modifier sa conduite, cette clarté restant nécessaire pour obtenir un changement immédiat de comportement.\n\nJe reste attentive à évaluer si ce danger persiste malgré cette interpellation, cette vigilance restant essentielle pour envisager une action plus ferme si nécessaire.",
+        "points": [
+          {"position": 1, "label": "Interpeller immédiatement son équipier sur cette conduite dangereuse", "weight": 2.0, "is_required": true, "kind": "core", "explanation_md": "Cœur du cas : sécurité du binôme préservée sans délai.", "groups": [{"position": 1, "keywords": ["équipier interpellé", "conduite dangereuse", "sécurité préservée"]}]},
+          {"position": 2, "label": "Rester factuelle sur le danger constaté par cette conduite", "weight": 1.5, "is_required": true, "kind": "core", "explanation_md": "Prise de conscience immédiate du risque.", "groups": [{"position": 1, "keywords": ["danger constaté", "risque signalé", "conscience immédiate"]}]},
+          {"position": 3, "label": "Demander explicitement de modifier sa conduite", "weight": 1.0, "is_required": true, "kind": "core", "explanation_md": "Clarté obtenant un changement immédiat.", "groups": [{"position": 1, "keywords": ["conduite modifiée", "demande explicite", "changement obtenu"]}]},
+          {"position": 4, "label": "Évaluer si ce danger persiste malgré cette interpellation", "weight": 0.5, "is_required": false, "kind": "bonus", "explanation_md": "Vigilance pour une action plus ferme si nécessaire.", "groups": [{"position": 1, "keywords": ["danger réévalué", "persistance vérifiée", "action ajustée"]}]}
+        ]
+      },
+      {
+        "position": 2,
+        "max_points": 5,
+        "label": "Comment poursuivez-vous cette intervention malgré cette tension avec votre équipier ?",
+        "hint": "Cette poursuite doit rester professionnelle, cette exigence restant essentielle pour ne pas compromettre la qualité de cette intervention malgré cette tension née de cet incident de conduite.",
+        "perfect": "Je reste professionnelle dans la poursuite de cette intervention malgré cette tension née de cet incident de conduite avec mon équipier.\n\nJe reste factuelle et concentrée sur les objectifs de cette intervention en cours, cette concentration restant utile pour ne pas laisser cette tension affecter notre action.\n\nJe reste attentive à ne pas envenimer cette situation par des propos ou une attitude qui aggraverait inutilement cette tension.\n\nJe reste attentive à la sécurité de ce binôme tout au long de cette intervention restante, cette vigilance restant essentielle après cet incident constaté.",
+        "points": [
+          {"position": 1, "label": "Rester professionnelle dans la poursuite de cette intervention", "weight": 2.0, "is_required": true, "kind": "core", "explanation_md": "Cœur du cas : professionnalisme malgré la tension.", "groups": [{"position": 1, "keywords": ["professionnalisme maintenu", "intervention poursuivie", "tension gérée"]}]},
+          {"position": 2, "label": "Rester factuelle et concentrée sur les objectifs de cette intervention", "weight": 1.5, "is_required": true, "kind": "core", "explanation_md": "Concentration préservant l'action commune.", "groups": [{"position": 1, "keywords": ["concentration maintenue", "objectifs préservés", "action commune"]}]},
+          {"position": 3, "label": "Ne pas envenimer cette situation par des propos ou une attitude inadaptés", "weight": 1.0, "is_required": true, "kind": "core", "explanation_md": "Tension non aggravée inutilement.", "groups": [{"position": 1, "keywords": ["situation apaisée", "tension non aggravée", "attitude mesurée"]}]},
+          {"position": 4, "label": "Rester attentive à la sécurité du binôme pour le reste de l'intervention", "weight": 0.5, "is_required": false, "kind": "bonus", "explanation_md": "Vigilance maintenue après l'incident constaté.", "groups": [{"position": 1, "keywords": ["sécurité surveillée", "binôme protégé", "vigilance maintenue"]}]}
+        ]
+      },
+      {
+        "position": 3,
+        "max_points": 5,
+        "label": "Comment abordez-vous cette situation avec votre équipier une fois cette intervention terminée ?",
+        "hint": "Cet échange différé doit rester constructif, cette démarche restant utile pour clarifier cette situation avec votre équipier sans compromettre votre relation de travail future.",
+        "perfect": "J'aborde cette situation avec mon équipier une fois cette intervention terminée, ce moment différé restant approprié pour un échange posé sur cet incident.\n\nJe reste factuelle sur le danger constaté durant cette intervention, cette description restant utile sans dramatiser au-delà de la réalité de cet incident.\n\nJe reste attentive à comprendre les raisons de cette conduite dangereuse, cette compréhension restant utile pour prévenir sa reproduction à l'avenir.\n\nJe reste attentive à rendre compte de cet incident à ma hiérarchie si sa gravité ou sa répétition le justifie, cette transparence restant nécessaire pour la sécurité collective.",
+        "points": [
+          {"position": 1, "label": "Aborder cette situation avec l'équipier une fois l'intervention terminée", "weight": 2.0, "is_required": true, "kind": "core", "explanation_md": "Cœur du cas : échange posé différé après l'urgence.", "groups": [{"position": 1, "keywords": ["situation abordée", "échange différé", "moment approprié"]}]},
+          {"position": 2, "label": "Rester factuelle sur le danger constaté sans dramatiser", "weight": 1.5, "is_required": true, "kind": "core", "explanation_md": "Description mesurée de l'incident.", "groups": [{"position": 1, "keywords": ["danger décrit", "dramatisation évitée", "réalité mesurée"]}]},
+          {"position": 3, "label": "Comprendre les raisons de cette conduite dangereuse", "weight": 1.0, "is_required": true, "kind": "core", "explanation_md": "Prévention de la reproduction à l'avenir.", "groups": [{"position": 1, "keywords": ["raisons comprises", "conduite analysée", "reproduction évitée"]}]},
+          {"position": 4, "label": "Rendre compte à la hiérarchie si la gravité ou la répétition le justifie", "weight": 0.5, "is_required": false, "kind": "bonus", "explanation_md": "Transparence pour la sécurité collective.", "groups": [{"position": 1, "keywords": ["hiérarchie informée", "gravité évaluée", "sécurité collective"]}]}
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "equipe-compte-rendu-conteste-par-la-hierarchie",
+    "title": "On vous demande de reformuler un passage que vous jugez exact",
+    "theme_slug": "equipe-hierarchie",
+    "difficulty": "moyen",
+    "is_free": false,
+    "is_published": true,
+    "status": "published",
+    "year": 2026,
+    "month": "Juillet",
+    "total_points": 15,
+    "estimated_minutes": 25,
+    "situation_text": "Il est 15 heures. Au bureau, votre hiérarchie vous demande de reformuler un passage de votre compte rendu que vous jugez pourtant exact, cette demande se situant sur une ligne délicate entre une reformulation légitime de forme et une altération du fond qui ne serait pas acceptable. Cette configuration, où cette demande peut rester légitime sans nécessairement constituer une pression inappropriée sur le contenu de vos constatations, nécessite de distinguer précisément une reformulation de forme acceptable d'une altération de fond qui ne le serait pas.\n\nCette situation, caractéristique des échanges qui peuvent survenir entre un rédacteur et sa hiérarchie sur la formulation d'un compte rendu, impose une vigilance particulière qui permette d'accepter les ajustements légitimes tout en refusant toute altération substantielle de vos constatations factuelles.\n\nCette configuration nécessite de distinguer la reformulation de forme de l'altération de fond, cette distinction restant essentielle pour préserver l'exactitude de vos constatations tout en restant ouverte aux ajustements légitimes demandés par votre hiérarchie.",
+    "questions": [
+      {
+        "position": 1,
+        "max_points": 5,
+        "label": "Comment distinguez-vous cette reformulation de forme légitime d'une éventuelle altération de fond ?",
+        "hint": "Cette distinction doit rester rigoureuse, cette exigence restant essentielle pour identifier précisément si cette demande porte sur la forme de votre rédaction ou sur le fond de vos constatations.",
+        "perfect": "J'examine précisément la demande de reformulation pour identifier si elle porte sur la forme de ma rédaction ou sur le fond de mes constatations.\n\nJe reste factuelle en comparant le sens de ma formulation initiale avec celui de la reformulation proposée par ma hiérarchie.\n\nJe reste attentive à vérifier que cette reformulation ne modifie pas la réalité des faits que j'ai personnellement constatés sur le terrain.\n\nJe reste attentive à solliciter des explications sur les raisons de cette demande, cette compréhension restant utile pour évaluer sa légitimité.",
+        "points": [
+          {"position": 1, "label": "Examiner si la demande porte sur la forme ou sur le fond des constatations", "weight": 2.0, "is_required": true, "kind": "core", "explanation_md": "Cœur du cas : distinction entre forme et fond.", "groups": [{"position": 1, "keywords": ["demande examinée", "forme distinguée", "fond préservé"]}]},
+          {"position": 2, "label": "Comparer le sens de la formulation initiale avec celui de la reformulation proposée", "weight": 1.5, "is_required": true, "kind": "core", "explanation_md": "Comparaison objectivant cette distinction.", "groups": [{"position": 1, "keywords": ["sens comparé", "formulation analysée", "reformulation évaluée"]}]},
+          {"position": 3, "label": "Vérifier que cette reformulation ne modifie pas la réalité des faits constatés", "weight": 1.0, "is_required": true, "kind": "core", "explanation_md": "Réalité des faits préservée.", "groups": [{"position": 1, "keywords": ["faits préservés", "réalité vérifiée", "constatations exactes"]}]},
+          {"position": 4, "label": "Solliciter des explications sur les raisons de cette demande", "weight": 0.5, "is_required": false, "kind": "bonus", "explanation_md": "Compréhension évaluant la légitimité de la demande.", "groups": [{"position": 1, "keywords": ["explications sollicitées", "raisons comprises", "légitimité évaluée"]}]}
+        ]
+      },
+      {
+        "position": 2,
+        "max_points": 5,
+        "label": "Comment acceptez-vous les ajustements de forme légitimes proposés par votre hiérarchie ?",
+        "hint": "Cette ouverture doit rester mesurée, cette exigence restant essentielle pour ne pas rejeter systématiquement toute demande de reformulation qui resterait pourtant légitime dans son principe.",
+        "perfect": "J'accepte les ajustements de forme qui n'altèrent pas le sens de mes constatations, cette ouverture restant appropriée face à une demande légitime.\n\nJe reste factuelle en évaluant chaque proposition de reformulation selon ce même critère de préservation du fond de mes constatations.\n\nJe reste attentive à proposer moi-même une reformulation alternative si celle suggérée me semble s'éloigner de mes constatations initiales.\n\nJe reste attentive à ne pas percevoir systématiquement cette demande comme une remise en cause de mon professionnalisme, cette demande restant souvent légitime.",
+        "points": [
+          {"position": 1, "label": "Accepter les ajustements de forme qui n'altèrent pas le sens des constatations", "weight": 2.0, "is_required": true, "kind": "core", "explanation_md": "Cœur du cas : ouverture face à une demande légitime.", "groups": [{"position": 1, "keywords": ["ajustements acceptés", "sens préservé", "ouverture appliquée"]}]},
+          {"position": 2, "label": "Évaluer chaque proposition selon le critère de préservation du fond", "weight": 1.5, "is_required": true, "kind": "core", "explanation_md": "Évaluation systématique de chaque proposition.", "groups": [{"position": 1, "keywords": ["proposition évaluée", "fond préservé", "critère appliqué"]}]},
+          {"position": 3, "label": "Proposer une reformulation alternative si nécessaire", "weight": 1.0, "is_required": true, "kind": "core", "explanation_md": "Alternative préservant les constatations initiales.", "groups": [{"position": 1, "keywords": ["alternative proposée", "reformulation ajustée", "constatations préservées"]}]},
+          {"position": 4, "label": "Ne pas percevoir systématiquement cette demande comme une remise en cause", "weight": 0.5, "is_required": false, "kind": "bonus", "explanation_md": "Demande souvent légitime dans son principe.", "groups": [{"position": 1, "keywords": ["remise en cause écartée", "demande légitime", "professionnalisme préservé"]}]}
+        ]
+      },
+      {
+        "position": 3,
+        "max_points": 5,
+        "label": "Comment refusez-vous toute altération substantielle de vos constatations si cette demande dépasse une simple reformulation de forme ?",
+        "hint": "Ce refus doit rester ferme mais respectueux, cette exigence restant essentielle pour préserver l'exactitude de vos constatations si cette demande venait à dépasser une simple reformulation de forme.",
+        "perfect": "Je refuse fermement toute altération substantielle de mes constatations si cette demande dépasse une simple reformulation de forme.\n\nJe reste factuelle en expliquant à ma hiérarchie pourquoi cette reformulation modifierait le sens réel de mes constatations effectuées sur le terrain.\n\nJe reste attentive à proposer un compromis de formulation qui respecte à la fois la forme souhaitée et l'exactitude de mes constatations.\n\nJe reste attentive à documenter cet échange si ce désaccord venait à persister, cette traçabilité restant utile pour la suite de cette procédure.",
+        "points": [
+          {"position": 1, "label": "Refuser fermement toute altération substantielle des constatations", "weight": 2.0, "is_required": true, "kind": "core", "explanation_md": "Cœur du cas : fermeté préservant l'exactitude.", "groups": [{"position": 1, "keywords": ["altération refusée", "constatations préservées", "fermeté appliquée"]}]},
+          {"position": 2, "label": "Expliquer pourquoi cette reformulation modifierait le sens réel des constatations", "weight": 1.5, "is_required": true, "kind": "core", "explanation_md": "Explication justifiant ce refus.", "groups": [{"position": 1, "keywords": ["sens expliqué", "modification justifiée", "refus argumenté"]}]},
+          {"position": 3, "label": "Proposer un compromis respectant la forme et l'exactitude", "weight": 1.0, "is_required": true, "kind": "core", "explanation_md": "Compromis préservant les deux exigences.", "groups": [{"position": 1, "keywords": ["compromis proposé", "forme respectée", "exactitude préservée"]}]},
+          {"position": 4, "label": "Documenter cet échange si ce désaccord venait à persister", "weight": 0.5, "is_required": false, "kind": "bonus", "explanation_md": "Traçabilité pour la suite de la procédure.", "groups": [{"position": 1, "keywords": ["échange documenté", "désaccord persistant", "traçabilité assurée"]}]}
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "equipe-mauvaise-coordination-entre-services",
+    "title": "Deux équipages arrivent avec des consignes contradictoires",
+    "theme_slug": "equipe-hierarchie",
+    "difficulty": "moyen",
+    "is_free": false,
+    "is_published": true,
+    "status": "published",
+    "year": 2026,
+    "month": "Juillet",
+    "total_points": 15,
+    "estimated_minutes": 25,
+    "situation_text": "Il est 11 heures. Lors d'une intervention conjointe, deux équipages arrivent sur les lieux avec des consignes contradictoires reçues de leurs autorités respectives, cette confusion se manifestant directement devant le public présent sur cette intervention et compromettant sa cohérence apparente. Cette configuration, où cette coordination inter-services défaillante crée une confusion visible aux yeux de ce public, nécessite de faire trancher cette contradiction par l'autorité compétente sans improviser une solution qui pourrait s'avérer inadaptée.\n\nCette situation, caractéristique des défaillances de coordination qui peuvent survenir entre plusieurs services intervenant conjointement sur une même situation, impose une clarification rapide de cette contradiction avant toute action qui pourrait aggraver cette confusion déjà perceptible.\n\nCette configuration nécessite de faire trancher cette contradiction par l'autorité compétente sans improviser, cette exigence restant essentielle pour préserver la cohérence de cette intervention conjointe malgré cette coordination initialement défaillante.",
+    "questions": [
+      {
+        "position": 1,
+        "max_points": 5,
+        "label": "Comment faites-vous trancher cette contradiction par l'autorité compétente sans improviser une solution ?",
+        "hint": "Cette clarification doit intervenir rapidement, cette rapidité restant essentielle pour éviter toute improvisation qui pourrait s'avérer inadaptée face à cette contradiction constatée entre les deux équipages.",
+        "perfect": "Je sollicite immédiatement l'autorité compétente pour trancher cette contradiction entre les consignes reçues par ces deux équipages.\n\nJe reste factuelle en exposant précisément ces deux consignes contradictoires, cette précision restant utile pour permettre un arbitrage rapide et approprié.\n\nJe reste attentive à ne pas improviser une solution de mon propre chef avant d'obtenir cet arbitrage, cette réserve restant essentielle pour éviter d'aggraver cette confusion.\n\nJe reste attentive à coordonner cette demande avec l'autre équipage, cette concertation restant utile pour présenter une demande cohérente à cette autorité compétente.",
+        "points": [
+          {"position": 1, "label": "Solliciter immédiatement l'autorité compétente pour trancher cette contradiction", "weight": 2.0, "is_required": true, "kind": "core", "explanation_md": "Cœur du cas : arbitrage sollicité sans improvisation.", "groups": [{"position": 1, "keywords": ["autorité sollicitée", "contradiction signalée", "arbitrage demandé"]}]},
+          {"position": 2, "label": "Exposer précisément ces deux consignes contradictoires", "weight": 1.5, "is_required": true, "kind": "core", "explanation_md": "Précision permettant un arbitrage rapide.", "groups": [{"position": 1, "keywords": ["consignes exposées", "contradiction précisée", "arbitrage rapide"]}]},
+          {"position": 3, "label": "Ne pas improviser de solution avant d'obtenir cet arbitrage", "weight": 1.0, "is_required": true, "kind": "core", "explanation_md": "Réserve évitant d'aggraver la confusion.", "groups": [{"position": 1, "keywords": ["improvisation évitée", "arbitrage attendu", "confusion non aggravée"]}]},
+          {"position": 4, "label": "Coordonner cette demande avec l'autre équipage présent", "weight": 0.5, "is_required": false, "kind": "bonus", "explanation_md": "Demande cohérente présentée à l'autorité compétente.", "groups": [{"position": 1, "keywords": ["équipage coordonné", "demande cohérente", "concertation menée"]}]}
+        ]
+      },
+      {
+        "position": 2,
+        "max_points": 5,
+        "label": "Comment gérez-vous cette confusion visible devant le public présent sur cette intervention ?",
+        "hint": "Cette gestion doit rester maîtrisée, cette exigence restant essentielle pour ne pas laisser cette confusion entre équipages compromettre la crédibilité de cette intervention devant ce public présent.",
+        "perfect": "Je reste attentive à ne pas exposer cette contradiction de consignes devant ce public présent sur cette intervention.\n\nJe reste factuelle et posée dans mon comportement face à ce public, cette attitude restant appropriée pour ne pas laisser transparaître cette confusion entre équipages.\n\nJe reste attentive à coordonner avec l'autre équipage une attitude commune et cohérente en attendant cet arbitrage, cette cohérence apparente restant utile.\n\nJe reste attentive à rassurer ce public sur la maîtrise de cette situation malgré cette contradiction en cours de résolution.",
+        "points": [
+          {"position": 1, "label": "Ne pas exposer cette contradiction devant ce public présent", "weight": 2.0, "is_required": true, "kind": "core", "explanation_md": "Cœur du cas : discrétion préservant la crédibilité.", "groups": [{"position": 1, "keywords": ["contradiction non exposée", "public préservé", "discrétion appliquée"]}]},
+          {"position": 2, "label": "Rester factuelle et posée face à ce public", "weight": 1.5, "is_required": true, "kind": "core", "explanation_md": "Confusion non transparente devant le public.", "groups": [{"position": 1, "keywords": ["attitude posée", "confusion masquée", "public observant"]}]},
+          {"position": 3, "label": "Coordonner avec l'autre équipage une attitude commune en attendant l'arbitrage", "weight": 1.0, "is_required": true, "kind": "core", "explanation_md": "Cohérence apparente maintenue.", "groups": [{"position": 1, "keywords": ["attitude commune", "cohérence apparente", "équipage coordonné"]}]},
+          {"position": 4, "label": "Rassurer ce public sur la maîtrise de cette situation", "weight": 0.5, "is_required": false, "kind": "bonus", "explanation_md": "Public rassuré malgré la résolution en cours.", "groups": [{"position": 1, "keywords": ["public rassuré", "maîtrise affichée", "résolution en cours"]}]}
+        ]
+      },
+      {
+        "position": 3,
+        "max_points": 5,
+        "label": "Comment tirez-vous les enseignements de cette défaillance de coordination inter-services pour l'avenir ?",
+        "hint": "Ces enseignements doivent rester constructifs, cette démarche restant utile pour améliorer la coordination future entre services amenés à intervenir conjointement sur ce type de situation.",
+        "perfect": "Je reste attentive à documenter cette situation dans mon compte rendu, cette traçabilité restant utile pour identifier l'origine de cette défaillance de coordination.\n\nJe reste factuelle sur le déroulement de cette contradiction constatée, sans exagérer ni minimiser l'impact de cette confusion inter-services.\n\nJe reste attentive à évoquer avec ma hiérarchie l'intérêt d'améliorer la coordination préalable entre services appelés à intervenir conjointement.\n\nJe reste disponible pour échanger avec l'autre équipage sur cette situation vécue, cet échange restant utile pour une meilleure coordination future entre nos services respectifs.",
+        "points": [
+          {"position": 1, "label": "Documenter cette situation dans son compte rendu", "weight": 2.0, "is_required": true, "kind": "core", "explanation_md": "Cœur du cas : traçabilité identifiant l'origine de la défaillance.", "groups": [{"position": 1, "keywords": ["situation documentée", "défaillance identifiée", "compte rendu établi"]}]},
+          {"position": 2, "label": "Décrire factuellement cette contradiction sans exagération", "weight": 1.5, "is_required": true, "kind": "core", "explanation_md": "Impact mesuré de cette confusion inter-services.", "groups": [{"position": 1, "keywords": ["contradiction décrite", "impact mesuré", "confusion analysée"]}]},
+          {"position": 3, "label": "Évoquer avec la hiérarchie l'intérêt d'améliorer la coordination préalable", "weight": 1.0, "is_required": true, "kind": "core", "explanation_md": "Amélioration de la coordination inter-services.", "groups": [{"position": 1, "keywords": ["coordination évoquée", "amélioration proposée", "services concernés"]}]},
+          {"position": 4, "label": "Échanger avec l'autre équipage sur cette situation vécue", "weight": 0.5, "is_required": false, "kind": "bonus", "explanation_md": "Meilleure coordination future entre services.", "groups": [{"position": 1, "keywords": ["échange mené", "équipage consulté", "coordination future"]}]}
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "equipe-nouvel-arrivant-integration-difficile",
+    "title": "Personne ne lui adresse la parole depuis trois semaines",
+    "theme_slug": "equipe-hierarchie",
+    "difficulty": "facile",
+    "is_free": true,
+    "is_published": true,
+    "status": "published",
+    "year": 2026,
+    "month": "Juillet",
+    "total_points": 15,
+    "estimated_minutes": 20,
+    "situation_text": "Il est 8 heures. Au service, vous constatez qu'un nouvel arrivant au sein de votre équipe fait l'objet d'une mise à l'écart informelle depuis trois semaines, personne ne lui adressant véritablement la parole au-delà des échanges strictement professionnels indispensables. Cette configuration, où cette mise à l'écart informelle peut avoir des effets sur la sécurité collective de cette équipe compte tenu de l'importance de la cohésion pour une action opérationnelle efficace, nécessite de rompre cet isolement même si cela implique d'aller à contre-courant du reste du groupe.\n\nCette situation, caractéristique des difficultés d'intégration qui peuvent affecter un nouvel arrivant au sein d'une équipe déjà constituée, impose une action individuelle qui rétablisse un lien minimal avec ce collègue isolé, indépendamment de l'attitude du reste de l'équipe à son égard.\n\nCette configuration nécessite de rompre cet isolement y compris à contre-courant du groupe, cette exigence restant essentielle pour préserver la cohésion et la sécurité collective de cette équipe à moyen terme.",
+    "questions": [
+      {
+        "position": 1,
+        "max_points": 5,
+        "label": "Comment rompez-vous cet isolement de ce nouvel arrivant y compris à contre-courant du reste du groupe ?",
+        "hint": "Cette action doit rester individuelle et assumée, cette exigence restant essentielle pour rétablir un lien minimal avec ce collègue indépendamment de l'attitude du reste de l'équipe à son égard.",
+        "perfect": "J'adresse spontanément la parole à ce nouvel arrivant, cette initiative restant nécessaire pour rompre cet isolement constaté depuis trois semaines.\n\nJe reste factuelle et naturelle dans mes échanges avec lui, cette approche restant appropriée pour ne pas stigmatiser davantage sa situation d'isolement.\n\nJe reste attentive à l'inclure dans les échanges informels du service, cette inclusion restant utile pour faciliter son intégration progressive au sein de cette équipe.\n\nJe reste attentive à assumer cette initiative même si elle va à contre-courant de l'attitude du reste du groupe à son égard.",
+        "points": [
+          {"position": 1, "label": "Adresser spontanément la parole à ce nouvel arrivant", "weight": 2.0, "is_required": true, "kind": "core", "explanation_md": "Cœur du cas : rupture de cet isolement constaté.", "groups": [{"position": 1, "keywords": ["parole adressée", "isolement rompu", "initiative prise"]}]},
+          {"position": 2, "label": "Rester factuelle et naturelle sans stigmatiser sa situation", "weight": 1.5, "is_required": true, "kind": "core", "explanation_md": "Approche appropriée évitant la stigmatisation.", "groups": [{"position": 1, "keywords": ["approche naturelle", "stigmatisation évitée", "situation respectée"]}]},
+          {"position": 3, "label": "L'inclure dans les échanges informels du service", "weight": 1.0, "is_required": true, "kind": "core", "explanation_md": "Intégration progressive facilitée.", "groups": [{"position": 1, "keywords": ["inclusion assurée", "échanges informels", "intégration facilitée"]}]},
+          {"position": 4, "label": "Assumer cette initiative même à contre-courant du groupe", "weight": 0.5, "is_required": false, "kind": "bonus", "explanation_md": "Initiative assumée malgré l'attitude du groupe.", "groups": [{"position": 1, "keywords": ["initiative assumée", "contre-courant assumé", "groupe non suivi"]}]}
+        ]
+      },
+      {
+        "position": 2,
+        "max_points": 5,
+        "label": "Comment comprenez-vous les raisons de cette mise à l'écart informelle constatée au sein de l'équipe ?",
+        "hint": "Cette compréhension doit rester ouverte, cette démarche restant utile pour identifier les raisons éventuelles de cette mise à l'écart avant d'agir pour la faire cesser durablement.",
+        "perfect": "Je reste attentive à comprendre les raisons éventuelles de cette mise à l'écart, cette compréhension restant utile avant d'agir durablement sur cette situation.\n\nJe reste factuelle en observant les interactions entre ce nouvel arrivant et le reste de l'équipe, cette observation restant utile pour objectiver cette situation.\n\nJe reste attentive à ne pas présumer d'une malveillance du reste de l'équipe, cette réserve restant appropriée avant toute conclusion définitive.\n\nJe reste attentive à échanger avec d'autres collègues sur cette situation, cet échange restant utile pour mieux comprendre l'origine de cet isolement constaté.",
+        "points": [
+          {"position": 1, "label": "Comprendre les raisons éventuelles de cette mise à l'écart", "weight": 2.0, "is_required": true, "kind": "core", "explanation_md": "Cœur du cas : compréhension avant action durable.", "groups": [{"position": 1, "keywords": ["raisons comprises", "mise à l'écart analysée", "compréhension recherchée"]}]},
+          {"position": 2, "label": "Observer les interactions entre ce nouvel arrivant et l'équipe", "weight": 1.5, "is_required": true, "kind": "core", "explanation_md": "Observation objectivant cette situation.", "groups": [{"position": 1, "keywords": ["interactions observées", "situation objectivée", "équipe observée"]}]},
+          {"position": 3, "label": "Ne pas présumer d'une malveillance du reste de l'équipe", "weight": 1.0, "is_required": true, "kind": "core", "explanation_md": "Réserve avant toute conclusion définitive.", "groups": [{"position": 1, "keywords": ["malveillance non présumée", "réserve appliquée", "conclusion différée"]}]},
+          {"position": 4, "label": "Échanger avec d'autres collègues sur cette situation", "weight": 0.5, "is_required": false, "kind": "bonus", "explanation_md": "Compréhension de l'origine de l'isolement.", "groups": [{"position": 1, "keywords": ["collègues consultés", "origine comprise", "échange mené"]}]}
+        ]
+      },
+      {
+        "position": 3,
+        "max_points": 5,
+        "label": "Comment sensibilisez-vous le reste de l'équipe aux effets de cette mise à l'écart sur la cohésion collective ?",
+        "hint": "Cette sensibilisation doit rester constructive, cette démarche restant utile pour rappeler l'importance de la cohésion d'équipe sans stigmatiser les collègues à l'origine de cette mise à l'écart.",
+        "perfect": "Je reste attentive à évoquer avec certains collègues l'importance de la cohésion d'équipe pour la sécurité collective de nos interventions.\n\nJe reste factuelle sur les effets possibles de cette mise à l'écart sur cette cohésion, sans accuser directement les collègues concernés.\n\nJe reste attentive à valoriser les qualités de ce nouvel arrivant auprès du reste de l'équipe, cette valorisation restant utile pour faciliter son intégration.\n\nJe reste disponible pour alerter ma hiérarchie si cette mise à l'écart persistait malgré mes tentatives d'y remédier directement.",
+        "points": [
+          {"position": 1, "label": "Évoquer l'importance de la cohésion d'équipe pour la sécurité collective", "weight": 2.0, "is_required": true, "kind": "core", "explanation_md": "Cœur du cas : cohésion rappelée pour la sécurité collective.", "groups": [{"position": 1, "keywords": ["cohésion évoquée", "sécurité collective", "importance rappelée"]}]},
+          {"position": 2, "label": "Décrire factuellement les effets de cette mise à l'écart sans accuser", "weight": 1.5, "is_required": true, "kind": "core", "explanation_md": "Effets décrits sans accusation directe.", "groups": [{"position": 1, "keywords": ["effets décrits", "accusation évitée", "situation objectivée"]}]},
+          {"position": 3, "label": "Valoriser les qualités de ce nouvel arrivant auprès de l'équipe", "weight": 1.0, "is_required": true, "kind": "core", "explanation_md": "Valorisation facilitant l'intégration.", "groups": [{"position": 1, "keywords": ["qualités valorisées", "intégration facilitée", "nouvel arrivant présenté"]}]},
+          {"position": 4, "label": "Alerter la hiérarchie si cette mise à l'écart persistait", "weight": 0.5, "is_required": false, "kind": "bonus", "explanation_md": "Recours à la hiérarchie en cas de persistance.", "groups": [{"position": 1, "keywords": ["hiérarchie alertée", "persistance constatée", "recours envisagé"]}]}
+        ]
+      }
+    ]
+  }
+]

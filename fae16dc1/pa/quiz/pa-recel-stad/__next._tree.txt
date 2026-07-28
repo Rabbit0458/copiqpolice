@@ -1,0 +1,2 @@
+:HL["/_next/static/chunks/18bc-ah0nwzen.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"(dashboard)","param":null,"prefetchHints":0,"slots":{"children":{"name":"pa","param":null,"prefetchHints":0,"slots":{"children":{"name":"quiz","param":null,"prefetchHints":0,"slots":{"children":{"name":"moduleId","param":{"type":"d","key":"pa-recel-stad","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}}}}}},"staleTime":300,"buildId":"VgPsRLYHm1C1UK9GRj8_L"}

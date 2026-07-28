@@ -2,6 +2,7 @@
 
 import { ThemeProvider } from "next-themes"
 import { Toaster } from "react-hot-toast"
+import { CookieBanner } from "@/components/cookie-banner"
 
 export function Providers({ children }: { children: React.ReactNode }) {
   return (
@@ -32,6 +33,9 @@ export function Providers({ children }: { children: React.ReactNode }) {
           },
         }}
       />
+      {/* Consentement RGPD. Le bandeau ne s'affiche que si aucun choix n'a
+          encore été fait, ou si la politique a changé depuis. */}
+      <CookieBanner />
     </ThemeProvider>
   )
 }

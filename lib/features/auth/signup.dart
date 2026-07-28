@@ -7,6 +7,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:copiqpolice/core/widgets/app_notifier.dart'
     show AppSettingsController, AppNotifier;
+import 'package:copiqpolice/features/auth/oauth_buttons.dart';
 import 'package:copiqpolice/legal/legal_content.dart';
 
 class SignUpPage extends StatefulWidget {
@@ -853,6 +854,20 @@ class _WelcomeStep extends StatelessWidget {
                     ),
                   ),
                 ],
+              ),
+            ),
+
+            // ── Inscription par fournisseur externe ────────────────────
+            //  Bloc invisible tant qu'aucun fournisseur n'est active : cet
+            //  ecran reste identique a aujourd'hui. Apple impose « Sign in
+            //  with Apple » partout ou une inscription est proposee.
+            //  Voir lib/features/auth/oauth_service.dart et
+            //  docs/AUTH_OAUTH_SETUP.md
+            const _FadeSlideIn(
+              delay: Duration(milliseconds: 240),
+              child: Padding(
+                padding: EdgeInsets.symmetric(horizontal: 6),
+                child: OAuthButtons(),
               ),
             ),
           ],

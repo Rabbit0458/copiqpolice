@@ -1,0 +1,274 @@
+[
+  {
+    "slug": "equipe-information-non-communiquee-releve",
+    "title": "L'équipe précédente n'a pas signalé la personne recherchée",
+    "theme_slug": "equipe-hierarchie",
+    "difficulty": "moyen",
+    "is_free": false,
+    "is_published": true,
+    "status": "published",
+    "year": 2026,
+    "month": "Juillet",
+    "total_points": 15,
+    "estimated_minutes": 25,
+    "situation_text": "Il est 13 heures. Lors de votre prise de service, vous découvrez fortuitement qu'une personne recherchée circule sur votre secteur alors que cette information n'a pas été signalée par l'équipe précédente lors de la relève, cette omission créant des conséquences opérationnelles potentiellement significatives compte tenu du temps déjà écoulé depuis cette information non transmise. Cette configuration, où cette transmission incomplète entre équipes successives a pu compromettre l'efficacité de votre action, nécessite d'agir immédiatement sur cette information tout en formalisant cette défaillance de transmission plutôt que de blâmer directement l'équipe précédente.\n\nCette situation, caractéristique des ruptures de continuité qui peuvent survenir entre équipes successives lors d'une relève de service, impose une action rapide sur cette information disponible tardivement ainsi qu'une réflexion sur les modalités de transmission entre équipes.\n\nCette configuration nécessite de formaliser cette transmission défaillante plutôt que de blâmer l'équipe précédente, cette exigence restant essentielle pour améliorer durablement la continuité de l'information entre équipes successives de ce service.",
+    "questions": [
+      {
+        "position": 1,
+        "max_points": 5,
+        "label": "Comment agissez-vous immédiatement sur cette information disponible tardivement concernant cette personne recherchée ?",
+        "hint": "Cette action doit rester immédiate malgré ce retard, cette rapidité restant essentielle pour limiter les conséquences de cette transmission incomplète entre équipes successives.",
+        "perfect": "Je transmets immédiatement cette information à ma hiérarchie et aux services concernés par cette recherche, cette rapidité restant essentielle malgré ce retard déjà pris.\n\nJe reste factuelle sur les éléments dont je dispose concernant cette personne recherchée, cette précision restant utile pour orienter les actions à entreprendre.\n\nJe reste attentive à vérifier si cette personne demeure présente sur mon secteur, cette vérification restant nécessaire pour évaluer la possibilité d'une action immédiate.\n\nJe reste attentive à documenter précisément l'heure à laquelle j'ai pris connaissance de cette information, cette traçabilité restant utile pour la suite de cette procédure.",
+        "points": [
+          {"position": 1, "label": "Transmettre immédiatement cette information à la hiérarchie et aux services concernés", "weight": 2.0, "is_required": true, "kind": "core", "explanation_md": "Cœur du cas : rapidité malgré le retard déjà pris.", "groups": [{"position": 1, "keywords": ["information transmise", "hiérarchie alertée", "rapidité assurée"]}]},
+          {"position": 2, "label": "Rester factuelle sur les éléments disponibles concernant cette personne", "weight": 1.5, "is_required": true, "kind": "core", "explanation_md": "Précision orientant les actions à entreprendre.", "groups": [{"position": 1, "keywords": ["éléments factuels", "personne recherchée", "actions orientées"]}]},
+          {"position": 3, "label": "Vérifier si cette personne demeure présente sur le secteur", "weight": 1.0, "is_required": true, "kind": "core", "explanation_md": "Évaluation d'une action immédiate possible.", "groups": [{"position": 1, "keywords": ["présence vérifiée", "secteur contrôlé", "action immédiate"]}]},
+          {"position": 4, "label": "Documenter précisément l'heure de prise de connaissance de cette information", "weight": 0.5, "is_required": false, "kind": "bonus", "explanation_md": "Traçabilité utile pour la procédure.", "groups": [{"position": 1, "keywords": ["heure documentée", "traçabilité assurée", "procédure suivie"]}]}
+        ]
+      },
+      {
+        "position": 2,
+        "max_points": 5,
+        "label": "Comment évitez-vous de blâmer directement l'équipe précédente pour cette omission constatée ?",
+        "hint": "Cette réserve doit rester constante, cette exigence restant essentielle pour privilégier une approche constructive plutôt qu'un blâme qui n'apporterait rien à la résolution de cette situation.",
+        "perfect": "Je reste attentive à ne pas porter de jugement définitif sur l'équipe précédente avant de connaître les circonstances exactes de cette omission.\n\nJe reste factuelle sur le constat de cette information non transmise, sans intention d'accuser un collègue en particulier de cette défaillance.\n\nJe reste attentive à comprendre les raisons éventuelles de cette omission, cette compréhension restant utile avant toute appréciation de cette situation.\n\nJe reste consciente que cette approche constructive reste plus utile qu'un blâme qui n'améliorerait pas la continuité future de cette transmission.",
+        "points": [
+          {"position": 1, "label": "Ne pas porter de jugement définitif avant de connaître les circonstances", "weight": 2.0, "is_required": true, "kind": "core", "explanation_md": "Cœur du cas : réserve avant toute appréciation.", "groups": [{"position": 1, "keywords": ["jugement différé", "circonstances inconnues", "réserve maintenue"]}]},
+          {"position": 2, "label": "Rester factuelle sur ce constat sans intention d'accuser un collègue précis", "weight": 1.5, "is_required": true, "kind": "core", "explanation_md": "Constat objectivé sans accusation personnelle.", "groups": [{"position": 1, "keywords": ["constat factuel", "accusation évitée", "collègue préservé"]}]},
+          {"position": 3, "label": "Comprendre les raisons éventuelles de cette omission", "weight": 1.0, "is_required": true, "kind": "core", "explanation_md": "Compréhension utile avant toute appréciation.", "groups": [{"position": 1, "keywords": ["raisons comprises", "omission analysée", "appréciation différée"]}]},
+          {"position": 4, "label": "Privilégier une approche constructive plutôt qu'un blâme", "weight": 0.5, "is_required": false, "kind": "bonus", "explanation_md": "Utilité pour la continuité future.", "groups": [{"position": 1, "keywords": ["approche constructive", "blâme évité", "continuité future"]}]}
+        ]
+      },
+      {
+        "position": 3,
+        "max_points": 5,
+        "label": "Comment formalisez-vous cette défaillance de transmission pour améliorer la continuité future entre équipes ?",
+        "hint": "Cette formalisation doit rester constructive, cette démarche restant utile pour prévenir la reproduction future de ce type de rupture de continuité entre équipes successives.",
+        "perfect": "Je rends compte de cette rupture de continuité à ma hiérarchie, cette formalisation restant utile pour identifier les causes de cette omission.\n\nJe reste factuelle sur le déroulement de cette relève, sans exagérer ni minimiser l'impact de cette information non transmise.\n\nJe reste attentive à proposer, si pertinent, une amélioration des modalités de transmission entre équipes successives de ce service.\n\nJe reste disponible pour échanger directement avec l'équipe précédente sur cette omission, cet échange restant utile pour une meilleure compréhension mutuelle future.",
+        "points": [
+          {"position": 1, "label": "Rendre compte de cette rupture de continuité à la hiérarchie", "weight": 2.0, "is_required": true, "kind": "core", "explanation_md": "Cœur du cas : formalisation identifiant les causes.", "groups": [{"position": 1, "keywords": ["compte rendu effectué", "rupture signalée", "causes identifiées"]}]},
+          {"position": 2, "label": "Rester factuelle sur le déroulement de cette relève sans exagération", "weight": 1.5, "is_required": true, "kind": "core", "explanation_md": "Impact ni exagéré ni minimisé.", "groups": [{"position": 1, "keywords": ["déroulement factuel", "impact mesuré", "relève décrite"]}]},
+          {"position": 3, "label": "Proposer une amélioration des modalités de transmission entre équipes", "weight": 1.0, "is_required": true, "kind": "core", "explanation_md": "Prévention de la reproduction future.", "groups": [{"position": 1, "keywords": ["amélioration proposée", "transmission renforcée", "reproduction évitée"]}]},
+          {"position": 4, "label": "Rester disponible pour échanger avec l'équipe précédente sur cette omission", "weight": 0.5, "is_required": false, "kind": "bonus", "explanation_md": "Compréhension mutuelle future.", "groups": [{"position": 1, "keywords": ["échange mené", "équipe précédente", "compréhension mutuelle"]}]}
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "equipe-chef-injoignable-urgence",
+    "title": "Décision à prendre maintenant, personne ne répond",
+    "theme_slug": "equipe-hierarchie",
+    "difficulty": "difficile",
+    "is_free": false,
+    "is_published": true,
+    "status": "published",
+    "year": 2026,
+    "month": "Juillet",
+    "total_points": 15,
+    "estimated_minutes": 30,
+    "situation_text": "Il est 2 heures. En intervention, vous devez prendre une décision urgente qui excède votre niveau habituel de responsabilité, sans pouvoir joindre votre chef de service ni aucun cadre disponible malgré vos tentatives répétées de contact, cette absence hiérarchique vous contraignant à assumer seule cette décision dans l'urgence de cette situation. Cette configuration, où cette autonomie contrainte par l'absence hiérarchique ne relève d'aucun choix de votre part mais d'une nécessité opérationnelle immédiate, nécessite de décider, de tracer cette décision et de rendre compte dès que possible à votre hiérarchie.\n\nCette situation, caractéristique des moments où l'urgence opérationnelle ne permet pas d'attendre une validation hiérarchique autrement indispensable, impose une prise de décision responsable qui reste proportionnée à la gravité de cette situation et aux moyens dont vous disposez effectivement.\n\nCette configuration nécessite de décider, de tracer cette décision et de rendre compte dès que possible, cette triple exigence restant essentielle pour assumer cette autonomie contrainte tout en préservant la responsabilité hiérarchique normale de cette organisation.",
+    "questions": [
+      {
+        "position": 1,
+        "max_points": 5,
+        "label": "Comment prenez-vous cette décision qui excède votre niveau habituel de responsabilité ?",
+        "hint": "Cette décision doit rester proportionnée à la gravité de cette situation, cette exigence restant essentielle face à cette urgence qui ne permet pas d'attendre une validation hiérarchique.",
+        "perfect": "Je prends cette décision en fonction des éléments dont je dispose et de la gravité de cette situation, cette responsabilité m'incombant faute d'alternative disponible.\n\nJe reste factuelle dans l'évaluation de cette situation, cette lucidité restant essentielle pour ne pas prendre une décision disproportionnée par précipitation.\n\nJe reste attentive à solliciter l'avis de mon équipier présent sur cette décision, cette concertation restant utile même en l'absence de cadre disponible.\n\nJe reste consciente que cette décision reste la mienne et que j'en assumerai pleinement la responsabilité devant ma hiérarchie.",
+        "points": [
+          {"position": 1, "label": "Prendre cette décision en fonction des éléments disponibles et de la gravité de la situation", "weight": 2.0, "is_required": true, "kind": "core", "explanation_md": "Cœur du cas : responsabilité assumée faute d'alternative.", "groups": [{"position": 1, "keywords": ["décision prise", "gravité évaluée", "responsabilité assumée"]}]},
+          {"position": 2, "label": "Rester factuelle dans l'évaluation pour éviter une décision disproportionnée", "weight": 1.5, "is_required": true, "kind": "core", "explanation_md": "Lucidité évitant la précipitation.", "groups": [{"position": 1, "keywords": ["évaluation factuelle", "précipitation évitée", "décision proportionnée"]}]},
+          {"position": 3, "label": "Solliciter l'avis de son équipier présent sur cette décision", "weight": 1.0, "is_required": true, "kind": "core", "explanation_md": "Concertation utile malgré l'absence de cadre.", "groups": [{"position": 1, "keywords": ["équipier consulté", "concertation menée", "cadre absent"]}]},
+          {"position": 4, "label": "Assumer pleinement la responsabilité de cette décision devant sa hiérarchie", "weight": 0.5, "is_required": false, "kind": "bonus", "explanation_md": "Responsabilité pleinement assumée.", "groups": [{"position": 1, "keywords": ["responsabilité assumée", "décision assumée", "hiérarchie informée"]}]}
+        ]
+      },
+      {
+        "position": 2,
+        "max_points": 5,
+        "label": "Comment tracez-vous cette décision prise en l'absence de validation hiérarchique ?",
+        "hint": "Cette traçabilité doit rester rigoureuse, cette exigence restant essentielle pour documenter les circonstances exactes de cette décision prise dans l'urgence et en l'absence de cadre disponible.",
+        "perfect": "Je note précisément l'heure et les circonstances de cette décision, cette traçabilité restant essentielle pour documenter cette situation d'urgence rencontrée.\n\nJe reste factuelle sur les tentatives de contact effectuées auprès de ma hiérarchie, cette précision restant utile pour attester de cette absence hiérarchique constatée.\n\nJe reste attentive à consigner les éléments qui ont motivé cette décision, cette explication restant nécessaire pour la compréhension future de ce choix opéré.\n\nJe reste attentive à conserver toute trace matérielle disponible relative à cette situation, cette rigueur restant utile pour la suite de cette procédure.",
+        "points": [
+          {"position": 1, "label": "Noter précisément l'heure et les circonstances de cette décision", "weight": 2.0, "is_required": true, "kind": "core", "explanation_md": "Cœur du cas : documentation de la situation d'urgence.", "groups": [{"position": 1, "keywords": ["heure notée", "circonstances documentées", "urgence tracée"]}]},
+          {"position": 2, "label": "Rester factuelle sur les tentatives de contact effectuées auprès de la hiérarchie", "weight": 1.5, "is_required": true, "kind": "core", "explanation_md": "Attestation de l'absence hiérarchique constatée.", "groups": [{"position": 1, "keywords": ["tentatives documentées", "absence attestée", "contacts précisés"]}]},
+          {"position": 3, "label": "Consigner les éléments ayant motivé cette décision", "weight": 1.0, "is_required": true, "kind": "core", "explanation_md": "Compréhension future de ce choix.", "groups": [{"position": 1, "keywords": ["éléments consignés", "décision motivée", "choix expliqué"]}]},
+          {"position": 4, "label": "Conserver toute trace matérielle disponible relative à cette situation", "weight": 0.5, "is_required": false, "kind": "bonus", "explanation_md": "Rigueur utile pour la procédure.", "groups": [{"position": 1, "keywords": ["trace conservée", "matériel disponible", "rigueur appliquée"]}]}
+        ]
+      },
+      {
+        "position": 3,
+        "max_points": 5,
+        "label": "Comment rendez-vous compte de cette décision à votre hiérarchie dès que possible ?",
+        "hint": "Ce compte rendu doit intervenir dès que ce contact redevient possible, cette rapidité restant essentielle pour informer votre hiérarchie de cette décision prise en son absence.",
+        "perfect": "Je rends compte à ma hiérarchie dès que ce contact redevient possible, cette rapidité restant essentielle pour l'informer de cette décision prise en son absence.\n\nJe reste factuelle et complète dans ce compte rendu, cette exhaustivité restant utile pour permettre une compréhension exacte de cette situation vécue.\n\nJe reste attentive à recueillir les observations de ma hiérarchie sur cette décision prise, cette ouverture restant utile pour ajuster si nécessaire la suite de cette situation.\n\nJe reste disponible pour tirer les enseignements de cette situation avec ma hiérarchie, notamment sur les modalités de contact en cas d'urgence similaire à l'avenir.",
+        "points": [
+          {"position": 1, "label": "Rendre compte à sa hiérarchie dès que ce contact redevient possible", "weight": 2.0, "is_required": true, "kind": "core", "explanation_md": "Cœur du cas : rapidité informant de cette décision.", "groups": [{"position": 1, "keywords": ["compte rendu effectué", "hiérarchie informée", "contact rétabli"]}]},
+          {"position": 2, "label": "Rester factuelle et complète dans ce compte rendu", "weight": 1.5, "is_required": true, "kind": "core", "explanation_md": "Compréhension exacte de la situation vécue.", "groups": [{"position": 1, "keywords": ["compte rendu complet", "situation exacte", "exhaustivité assurée"]}]},
+          {"position": 3, "label": "Recueillir les observations de la hiérarchie sur cette décision prise", "weight": 1.0, "is_required": true, "kind": "core", "explanation_md": "Ajustement possible de la suite de la situation.", "groups": [{"position": 1, "keywords": ["observations recueillies", "décision commentée", "ajustement possible"]}]},
+          {"position": 4, "label": "Tirer les enseignements de cette situation avec la hiérarchie", "weight": 0.5, "is_required": false, "kind": "bonus", "explanation_md": "Amélioration des modalités de contact futures.", "groups": [{"position": 1, "keywords": ["enseignements tirés", "modalités améliorées", "urgence future"]}]}
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "equipe-ordre-incomplet-ambigu",
+    "title": "La consigne peut se comprendre de deux façons opposées",
+    "theme_slug": "equipe-hierarchie",
+    "difficulty": "moyen",
+    "is_free": false,
+    "is_published": true,
+    "status": "published",
+    "year": 2026,
+    "month": "Juillet",
+    "total_points": 15,
+    "estimated_minutes": 25,
+    "situation_text": "Il est 9 heures. Lors d'un briefing, vous recevez une consigne de votre supérieur qui peut se comprendre de deux façons opposées selon l'interprétation retenue, cette ambiguïté ne relevant d'aucune illégalité de cet ordre mais d'un simple défaut de précision dans sa formulation initiale. Cette configuration, où cette ambiguïté de formulation vous place devant le choix d'interpréter cette consigne au risque de vous tromper ou de demander une clarification au risque de retarder cette action, nécessite de faire préciser cette consigne plutôt que de l'interpréter à vos propres risques.\n\nCette situation, caractéristique des ambiguïtés qui peuvent affecter la formulation d'une consigne sans remettre en cause sa légalité de principe, impose une clarification préalable plutôt qu'une interprétation personnelle qui pourrait s'avérer erronée au regard de l'intention réelle de votre supérieur.\n\nCette configuration nécessite de faire préciser cette consigne plutôt que de l'interpréter, cette exigence restant essentielle pour éviter toute action fondée sur une compréhension erronée de l'intention de votre hiérarchie.", "questions": [
+      {
+        "position": 1,
+        "max_points": 5,
+        "label": "Comment faites-vous préciser cette consigne ambiguë plutôt que de l'interpréter à vos propres risques ?",
+        "hint": "Cette clarification doit rester rapide, cette exigence restant essentielle pour éviter tout retard disproportionné tout en évitant une interprétation erronée de cette consigne.",
+        "perfect": "Je sollicite immédiatement mon supérieur pour clarifier cette consigne qui me semble se comprendre de deux façons opposées.\n\nJe reste factuelle en exposant les deux interprétations possibles que je perçois, cette précision restant utile pour lui permettre de trancher rapidement cette ambiguïté.\n\nJe reste attentive à formuler cette demande de clarification de manière constructive, sans remettre en cause la légitimité de cette consigne en tant que telle.\n\nJe reste attentive à obtenir cette clarification avant d'engager toute action qui pourrait s'avérer fondée sur une compréhension erronée de cette consigne.",
+        "points": [
+          {"position": 1, "label": "Solliciter immédiatement son supérieur pour clarifier cette consigne", "weight": 2.0, "is_required": true, "kind": "core", "explanation_md": "Cœur du cas : clarification plutôt qu'interprétation à risque.", "groups": [{"position": 1, "keywords": ["clarification sollicitée", "supérieur consulté", "consigne précisée"]}]},
+          {"position": 2, "label": "Exposer factuellement les deux interprétations possibles perçues", "weight": 1.5, "is_required": true, "kind": "core", "explanation_md": "Précision permettant de trancher rapidement.", "groups": [{"position": 1, "keywords": ["interprétations exposées", "ambiguïté précisée", "décision rapide"]}]},
+          {"position": 3, "label": "Formuler cette demande sans remettre en cause la légitimité de la consigne", "weight": 1.0, "is_required": true, "kind": "core", "explanation_md": "Constructivité sans contestation de légitimité.", "groups": [{"position": 1, "keywords": ["demande constructive", "légitimité préservée", "consigne respectée"]}]},
+          {"position": 4, "label": "Obtenir cette clarification avant d'engager toute action", "weight": 0.5, "is_required": false, "kind": "bonus", "explanation_md": "Action non fondée sur une compréhension erronée.", "groups": [{"position": 1, "keywords": ["clarification obtenue", "action différée", "compréhension assurée"]}]}
+        ]
+      },
+      {
+        "position": 2,
+        "max_points": 5,
+        "label": "Comment gérez-vous le risque de retard associé à cette demande de clarification ?",
+        "hint": "Ce risque de retard doit rester maîtrisé, cette gestion restant nécessaire pour concilier la nécessité de cette clarification avec les contraintes opérationnelles de cette situation en cours.",
+        "perfect": "Je reste attentive à formuler ma demande de clarification de manière la plus rapide possible, cette célérité restant utile pour limiter ce retard potentiel.\n\nJe reste factuelle sur l'urgence éventuelle de cette situation, cette information restant utile pour que mon supérieur puisse répondre avec la réactivité appropriée.\n\nJe reste attentive à engager, si possible, les actions non ambiguës de cette consigne pendant que cette clarification est en cours d'obtention.\n\nJe reste consciente que ce léger retard reste préférable à une action fondée sur une interprétation potentiellement erronée de cette consigne.",
+        "points": [
+          {"position": 1, "label": "Formuler cette demande de la manière la plus rapide possible", "weight": 2.0, "is_required": true, "kind": "core", "explanation_md": "Cœur du cas : célérité limitant le retard potentiel.", "groups": [{"position": 1, "keywords": ["demande rapide", "retard limité", "célérité appliquée"]}]},
+          {"position": 2, "label": "Informer de l'urgence éventuelle de cette situation", "weight": 1.5, "is_required": true, "kind": "core", "explanation_md": "Réactivité appropriée du supérieur sollicité.", "groups": [{"position": 1, "keywords": ["urgence signalée", "réactivité obtenue", "situation informée"]}]},
+          {"position": 3, "label": "Engager les actions non ambiguës pendant l'obtention de cette clarification", "weight": 1.0, "is_required": true, "kind": "core", "explanation_md": "Actions non ambiguës poursuivies en parallèle.", "groups": [{"position": 1, "keywords": ["actions non ambiguës", "clarification en cours", "action parallèle"]}]},
+          {"position": 4, "label": "Considérer ce léger retard préférable à une interprétation erronée", "weight": 0.5, "is_required": false, "kind": "bonus", "explanation_md": "Priorité donnée à la fiabilité de l'action.", "groups": [{"position": 1, "keywords": ["retard préférable", "interprétation erronée évitée", "fiabilité assurée"]}]}
+        ]
+      },
+      {
+        "position": 3,
+        "max_points": 5,
+        "label": "Comment évitez-vous que cette ambiguïté de formulation ne se reproduise à l'avenir avec ce même supérieur ?",
+        "hint": "Cette prévention doit rester constructive, cette démarche restant utile pour améliorer durablement la clarté des consignes transmises par ce supérieur à l'avenir.",
+        "perfect": "Je reste attentive à évoquer avec mon supérieur, une fois cette situation résolue, l'intérêt d'une formulation plus précise pour les consignes futures.\n\nJe reste factuelle sur cette ambiguïté rencontrée, cette description restant utile sans reprocher à mon supérieur cette imprécision initiale.\n\nJe reste attentive à proposer, si pertinent, de reformuler systématiquement les consignes reçues pour vérifier ma propre compréhension.\n\nJe reste disponible pour échanger sur nos pratiques respectives de transmission, cette ouverture restant utile pour prévenir ce type d'ambiguïté à l'avenir.",
+        "points": [
+          {"position": 1, "label": "Évoquer avec ce supérieur l'intérêt d'une formulation plus précise", "weight": 2.0, "is_required": true, "kind": "core", "explanation_md": "Cœur du cas : amélioration des consignes futures.", "groups": [{"position": 1, "keywords": ["formulation évoquée", "précision recherchée", "consignes futures"]}]},
+          {"position": 2, "label": "Décrire cette ambiguïté sans reprocher cette imprécision initiale", "weight": 1.5, "is_required": true, "kind": "core", "explanation_md": "Description factuelle sans reproche.", "groups": [{"position": 1, "keywords": ["ambiguïté décrite", "reproche évité", "imprécision constatée"]}]},
+          {"position": 3, "label": "Proposer de reformuler systématiquement les consignes reçues", "weight": 1.0, "is_required": true, "kind": "core", "explanation_md": "Vérification de sa propre compréhension.", "groups": [{"position": 1, "keywords": ["reformulation proposée", "compréhension vérifiée", "pratique instaurée"]}]},
+          {"position": 4, "label": "Échanger sur les pratiques respectives de transmission", "weight": 0.5, "is_required": false, "kind": "bonus", "explanation_md": "Prévention de l'ambiguïté à l'avenir.", "groups": [{"position": 1, "keywords": ["pratiques échangées", "ambiguïté prévenue", "ouverture maintenue"]}]}
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "equipe-changement-de-mission-en-cours",
+    "title": "Vous êtes redéployés alors qu'une victime vous attend",
+    "theme_slug": "equipe-hierarchie",
+    "difficulty": "moyen",
+    "is_free": true,
+    "is_published": true,
+    "status": "published",
+    "year": 2026,
+    "month": "Juillet",
+    "total_points": 15,
+    "estimated_minutes": 25,
+    "situation_text": "Il est 16 heures. En patrouille, vous recevez l'ordre d'être redéployés vers une nouvelle mission alors qu'une victime vous attend suite à un engagement pris précédemment auprès d'elle, cette situation créant un conflit entre cette priorité hiérarchique nouvellement exprimée et cet engagement personnel pris auprès de cette personne. Cette configuration, où ce nouvel ordre entre en tension avec cet engagement déjà pris, nécessite de signaler cet engagement en cours avant de basculer vers cette nouvelle mission, cette information restant essentielle pour permettre à votre hiérarchie d'arbitrer cette situation en toute connaissance de cause.\n\nCette situation, caractéristique des conflits qui peuvent survenir entre une nouvelle priorité opérationnelle et un engagement déjà pris auprès d'une personne, impose une communication rapide de cet élément avant toute exécution de ce nouvel ordre.\n\nCette configuration nécessite de signaler cet engagement en cours avant de basculer vers cette nouvelle mission, cette exigence restant essentielle pour permettre un arbitrage hiérarchique éclairé de cette situation conflictuelle.", "questions": [
+      {
+        "position": 1,
+        "max_points": 5,
+        "label": "Comment signalez-vous cet engagement en cours avant de basculer vers cette nouvelle mission ?",
+        "hint": "Ce signalement doit intervenir avant toute exécution de ce nouvel ordre, cette rapidité restant essentielle pour permettre à votre hiérarchie d'arbitrer cette situation en toute connaissance de cause.",
+        "perfect": "Je signale immédiatement à ma hiérarchie cet engagement pris auprès de cette victime avant d'exécuter ce nouvel ordre de redéploiement.\n\nJe reste factuelle sur la nature de cet engagement et sur la situation de cette victime, cette précision restant utile pour un arbitrage éclairé de cette situation.\n\nJe reste attentive à ne pas contester ce nouvel ordre en tant que tel, me limitant à signaler cet élément dont ma hiérarchie n'a peut-être pas connaissance.\n\nJe reste attentive à me tenir prête à exécuter la décision qui sera prise par ma hiérarchie une fois cet élément porté à sa connaissance.",
+        "points": [
+          {"position": 1, "label": "Signaler immédiatement cet engagement avant d'exécuter ce nouvel ordre", "weight": 2.0, "is_required": true, "kind": "core", "explanation_md": "Cœur du cas : signalement préalable à toute exécution.", "groups": [{"position": 1, "keywords": ["engagement signalé", "ordre non exécuté", "signalement préalable"]}]},
+          {"position": 2, "label": "Rester factuelle sur la nature de cet engagement et la situation de cette victime", "weight": 1.5, "is_required": true, "kind": "core", "explanation_md": "Précision permettant un arbitrage éclairé.", "groups": [{"position": 1, "keywords": ["engagement précisé", "victime décrite", "arbitrage éclairé"]}]},
+          {"position": 3, "label": "Ne pas contester ce nouvel ordre en se limitant à signaler cet élément", "weight": 1.0, "is_required": true, "kind": "core", "explanation_md": "Signalement sans contestation de l'ordre.", "groups": [{"position": 1, "keywords": ["ordre non contesté", "élément signalé", "signalement limité"]}]},
+          {"position": 4, "label": "Se tenir prête à exécuter la décision prise par la hiérarchie", "weight": 0.5, "is_required": false, "kind": "bonus", "explanation_md": "Disponibilité pour la décision finale.", "groups": [{"position": 1, "keywords": ["décision attendue", "exécution prête", "hiérarchie décisionnaire"]}]}
+        ]
+      },
+      {
+        "position": 2,
+        "max_points": 5,
+        "label": "Comment gérez-vous cette victime qui vous attend en fonction de la décision prise par votre hiérarchie ?",
+        "hint": "Cette gestion doit rester adaptée à la décision finale, cette adaptation restant nécessaire pour préserver la prise en charge appropriée de cette victime quelle que soit l'issue de cet arbitrage.",
+        "perfect": "Je reste attentive à informer cette victime de la situation si je dois effectivement basculer vers cette nouvelle mission, cette transparence restant appropriée envers elle.\n\nJe reste factuelle sur les modalités de prise en charge alternative de cette victime, m'assurant qu'un autre équipage ou dispositif puisse la prendre en charge si je dois m'éloigner.\n\nJe reste attentive à ne pas laisser cette victime sans solution si mon engagement initial ne peut être maintenu, cette vigilance restant essentielle envers elle.\n\nJe reste attentive à revenir vers cette victime dès que possible si la situation le permet, cette disponibilité restant appropriée pour honorer autant que possible cet engagement initial.",
+        "points": [
+          {"position": 1, "label": "Informer cette victime de la situation en cas de basculement effectif", "weight": 2.0, "is_required": true, "kind": "core", "explanation_md": "Cœur du cas : transparence envers cette victime.", "groups": [{"position": 1, "keywords": ["victime informée", "situation expliquée", "transparence assurée"]}]},
+          {"position": 2, "label": "S'assurer d'une prise en charge alternative de cette victime", "weight": 1.5, "is_required": true, "kind": "core", "explanation_md": "Continuité de prise en charge assurée.", "groups": [{"position": 1, "keywords": ["prise en charge alternative", "autre équipage", "continuité assurée"]}]},
+          {"position": 3, "label": "Ne pas laisser cette victime sans solution si l'engagement ne peut être maintenu", "weight": 1.0, "is_required": true, "kind": "core", "explanation_md": "Vigilance essentielle envers cette victime.", "groups": [{"position": 1, "keywords": ["victime non délaissée", "solution assurée", "vigilance maintenue"]}]},
+          {"position": 4, "label": "Revenir vers cette victime dès que possible si la situation le permet", "weight": 0.5, "is_required": false, "kind": "bonus", "explanation_md": "Engagement initial honoré autant que possible.", "groups": [{"position": 1, "keywords": ["retour envisagé", "engagement honoré", "disponibilité maintenue"]}]}
+        ]
+      },
+      {
+        "position": 3,
+        "max_points": 5,
+        "label": "Comment tirez-vous les enseignements de cette situation conflictuelle pour l'avenir ?",
+        "hint": "Ces enseignements doivent rester constructifs, cette démarche restant utile pour améliorer la gestion future de ce type de conflit entre priorité hiérarchique et engagement pris auprès d'une personne.",
+        "perfect": "Je reste attentive à évoquer avec ma hiérarchie, une fois cette situation résolue, l'intérêt de signaler systématiquement les engagements en cours lors de redéploiements futurs.\n\nJe reste factuelle sur cette situation vécue, cette description restant utile pour identifier les améliorations possibles de cette coordination opérationnelle.\n\nJe reste attentive à documenter cette situation dans mon compte rendu, cette traçabilité restant utile pour la compréhension future de ce type de conflit.\n\nJe reste disponible pour proposer une procédure de signalement systématique de ce type d'engagement lors de redéploiements futurs.",
+        "points": [
+          {"position": 1, "label": "Évoquer l'intérêt de signaler systématiquement les engagements en cours", "weight": 2.0, "is_required": true, "kind": "core", "explanation_md": "Cœur du cas : amélioration de la coordination future.", "groups": [{"position": 1, "keywords": ["signalement systématique", "engagements futurs", "coordination améliorée"]}]},
+          {"position": 2, "label": "Décrire factuellement cette situation vécue", "weight": 1.5, "is_required": true, "kind": "core", "explanation_md": "Identification des améliorations possibles.", "groups": [{"position": 1, "keywords": ["situation décrite", "améliorations identifiées", "coordination analysée"]}]},
+          {"position": 3, "label": "Documenter cette situation dans son compte rendu", "weight": 1.0, "is_required": true, "kind": "core", "explanation_md": "Traçabilité pour la compréhension future.", "groups": [{"position": 1, "keywords": ["situation documentée", "compte rendu établi", "traçabilité assurée"]}]},
+          {"position": 4, "label": "Proposer une procédure de signalement systématique pour l'avenir", "weight": 0.5, "is_required": false, "kind": "bonus", "explanation_md": "Procédure préventive pour les redéploiements futurs.", "groups": [{"position": 1, "keywords": ["procédure proposée", "redéploiements futurs", "signalement instauré"]}]}
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "equipe-collegue-blesse-en-intervention",
+    "title": "Il saigne mais veut continuer l'intervention",
+    "theme_slug": "equipe-hierarchie",
+    "difficulty": "difficile",
+    "is_free": false,
+    "is_published": true,
+    "status": "published",
+    "year": 2026,
+    "month": "Juillet",
+    "total_points": 15,
+    "estimated_minutes": 30,
+    "situation_text": "Il est 22 heures. Sur la voie publique, votre collègue est blessé et saigne au cours de cette intervention mais souhaite néanmoins continuer à y participer malgré cette blessure visible, cette volonté affichée entrant en tension avec la nécessité opérationnelle de le faire soigner sans délai. Cette configuration, où cette volonté personnelle de ce collègue contredit une nécessité médicale objective, nécessite d'imposer cette prise en charge médicale malgré son opposition manifestée, cette fermeté restant essentielle pour préserver sa santé et la qualité de cette intervention en cours.\n\nCette situation, caractéristique des moments où un pair blessé refuse par détermination professionnelle de reconnaître la gravité de sa propre blessure, impose une intervention ferme qui préserve sa santé sans pour autant l'humilier devant les tiers présents sur les lieux.\n\nCette configuration nécessite d'imposer cette prise en charge médicale malgré cette opposition, cette exigence restant essentielle pour préserver la santé de ce collègue tout en assurant la continuité appropriée de cette intervention.", "questions": [
+      {
+        "position": 1,
+        "max_points": 5,
+        "label": "Comment imposez-vous cette prise en charge médicale à ce collègue malgré son opposition manifestée ?",
+        "hint": "Cette fermeté doit rester constante malgré cette opposition, cette exigence restant essentielle pour préserver la santé de ce collègue qui minimise la gravité de sa propre blessure.",
+        "perfect": "J'impose fermement cette prise en charge médicale à ce collègue, cette fermeté restant essentielle malgré son opposition et sa volonté de continuer cette intervention.\n\nJe reste factuelle sur la gravité de cette blessure constatée, cette évaluation restant utile pour justifier cette prise en charge médicale immédiate.\n\nJe reste attentive à solliciter les secours appropriés sans délai, cette rapidité restant nécessaire compte tenu de cette blessure qui saigne visiblement.\n\nJe reste attentive à ne pas céder à son insistance à continuer cette intervention, cette fermeté restant essentielle pour préserver sa santé avant tout.",
+        "points": [
+          {"position": 1, "label": "Imposer fermement cette prise en charge médicale malgré son opposition", "weight": 2.0, "is_required": true, "kind": "core", "explanation_md": "Cœur du cas : fermeté préservant la santé de ce collègue.", "groups": [{"position": 1, "keywords": ["prise en charge imposée", "opposition surmontée", "fermeté appliquée"]}]},
+          {"position": 2, "label": "Rester factuelle sur la gravité de cette blessure constatée", "weight": 1.5, "is_required": true, "kind": "core", "explanation_md": "Évaluation justifiant cette prise en charge immédiate.", "groups": [{"position": 1, "keywords": ["blessure évaluée", "gravité constatée", "prise en charge justifiée"]}]},
+          {"position": 3, "label": "Solliciter les secours appropriés sans délai", "weight": 1.0, "is_required": true, "kind": "core", "explanation_md": "Rapidité nécessaire face à cette blessure.", "groups": [{"position": 1, "keywords": ["secours sollicités", "rapidité assurée", "blessure prise en compte"]}]},
+          {"position": 4, "label": "Ne pas céder à son insistance à continuer cette intervention", "weight": 0.5, "is_required": false, "kind": "bonus", "explanation_md": "Santé préservée avant tout.", "groups": [{"position": 1, "keywords": ["insistance écartée", "santé préservée", "fermeté maintenue"]}]}
+        ]
+      },
+      {
+        "position": 2,
+        "max_points": 5,
+        "label": "Comment assurez-vous la continuité de cette intervention malgré le retrait de ce collègue blessé ?",
+        "hint": "Cette continuité doit rester assurée, cette exigence restant nécessaire pour ne pas compromettre la qualité de cette intervention malgré ce retrait imposé de ce collègue blessé.",
+        "perfect": "Je sollicite des renforts pour compenser le retrait de ce collègue de cette intervention, cette action restant nécessaire pour préserver sa continuité.\n\nJe reste factuelle sur la situation opérationnelle restant à gérer, cette évaluation restant utile pour organiser cette continuité malgré cet effectif réduit.\n\nJe reste attentive à rendre compte à ma hiérarchie de cette blessure et de ses conséquences sur cette intervention en cours.\n\nJe reste attentive à accompagner ce collègue vers cette prise en charge médicale si les circonstances le permettent, avant de reprendre cette intervention.",
+        "points": [
+          {"position": 1, "label": "Solliciter des renforts pour compenser le retrait de ce collègue", "weight": 2.0, "is_required": true, "kind": "core", "explanation_md": "Cœur du cas : continuité de l'intervention préservée.", "groups": [{"position": 1, "keywords": ["renforts sollicités", "retrait compensé", "continuité assurée"]}]},
+          {"position": 2, "label": "Évaluer la situation opérationnelle restant à gérer", "weight": 1.5, "is_required": true, "kind": "core", "explanation_md": "Organisation malgré l'effectif réduit.", "groups": [{"position": 1, "keywords": ["situation évaluée", "effectif réduit", "organisation adaptée"]}]},
+          {"position": 3, "label": "Rendre compte à sa hiérarchie de cette blessure et de ses conséquences", "weight": 1.0, "is_required": true, "kind": "core", "explanation_md": "Information de la hiérarchie sur la situation.", "groups": [{"position": 1, "keywords": ["hiérarchie informée", "blessure signalée", "conséquences précisées"]}]},
+          {"position": 4, "label": "Accompagner ce collègue vers cette prise en charge si les circonstances le permettent", "weight": 0.5, "is_required": false, "kind": "bonus", "explanation_md": "Accompagnement avant de reprendre l'intervention.", "groups": [{"position": 1, "keywords": ["collègue accompagné", "prise en charge assurée", "intervention reprise"]}]}
+        ]
+      },
+      {
+        "position": 3,
+        "max_points": 5,
+        "label": "Comment accompagnez-vous ce collègue après cette blessure, une fois cette intervention terminée ?",
+        "hint": "Cet accompagnement doit rester attentif, cette démarche restant utile pour prendre soin de ce collègue au-delà de cette blessure physique constatée durant cette intervention.",
+        "perfect": "Je prends des nouvelles de ce collègue après sa prise en charge médicale, cette attention restant appropriée compte tenu de cette blessure vécue durant cette intervention.\n\nJe reste factuelle et rassurante dans mes échanges avec lui, cette approche restant appropriée pour ne pas dramatiser au-delà de la réalité de cette blessure.\n\nJe reste attentive à valoriser sa détermination professionnelle tout en lui rappelant l'importance de reconnaître ses propres limites physiques.\n\nJe reste disponible pour évoquer avec lui cette situation vécue, cet échange restant utile pour tirer les enseignements de cet épisode difficile.",
+        "points": [
+          {"position": 1, "label": "Prendre des nouvelles de ce collègue après sa prise en charge médicale", "weight": 2.0, "is_required": true, "kind": "core", "explanation_md": "Cœur du cas : attention portée à ce collègue blessé.", "groups": [{"position": 1, "keywords": ["nouvelles prises", "collègue suivi", "attention portée"]}]},
+          {"position": 2, "label": "Rester factuelle et rassurante sans dramatiser au-delà de la réalité", "weight": 1.5, "is_required": true, "kind": "core", "explanation_md": "Mesure appropriée face à cette blessure.", "groups": [{"position": 1, "keywords": ["attitude rassurante", "dramatisation évitée", "réalité mesurée"]}]},
+          {"position": 3, "label": "Valoriser sa détermination tout en rappelant l'importance de ses limites", "weight": 1.0, "is_required": true, "kind": "core", "explanation_md": "Équilibre entre valorisation et vigilance.", "groups": [{"position": 1, "keywords": ["détermination valorisée", "limites rappelées", "équilibre trouvé"]}]},
+          {"position": 4, "label": "Évoquer avec lui cette situation vécue pour en tirer les enseignements", "weight": 0.5, "is_required": false, "kind": "bonus", "explanation_md": "Enseignements tirés de cet épisode difficile.", "groups": [{"position": 1, "keywords": ["situation évoquée", "enseignements tirés", "épisode analysé"]}]}
+        ]
+      }
+    ]
+  }
+]

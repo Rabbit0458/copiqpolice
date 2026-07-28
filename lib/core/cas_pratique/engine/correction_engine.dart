@@ -55,109 +55,89 @@ class CorrectionEngine {
     int timeSpentMs = 0,
   }) async {
     try {
-      // ─── 1. Charger les questions + rubric_points du cas ──────────────────
-      final questionRows = await _sb
-          .from('cas_pratique_questions')
-          .select('id, max_points, position')
-          .eq('case_id', caseId)
-          .order('position', ascending: true);
+      // ═══════════════════════════════════════════════════════════════════
+      //  1. CHARGEMENT DE LA GRILLE DE CORRECTION
+      //
+      //  Jusqu'au 2026-07-26, cette etape faisait quatre lectures directes
+      //  sur `cas_pratique_rubric_points`, `_keyword_groups`, `_keywords` et
+      //  `_synonyms_dictionary`, toutes ouvertes en lecture a n'importe quel
+      //  utilisateur authentifie. Une seule requete suffisait donc a
+      //  recuperer les mots-cles attendus de TOUS les cas — l'epreuve
+      //  perdait tout interet.
+      //
+      //  La grille passe desormais par `cp_get_rubric_for_attempt`, une
+      //  fonction SECURITY DEFINER qui ne renvoie que la grille du cas
+      //  rattache a la tentative, et uniquement si celle-ci appartient a
+      //  l'appelant. Les lectures directes sont maintenant refusees par la
+      //  RLS pour tout le monde sauf les administrateurs.
+      // ═══════════════════════════════════════════════════════════════════
+      final rubricRaw = await _sb.rpc(
+        'cp_get_rubric_for_attempt',
+        params: {'p_attempt_id': attemptId},
+      );
 
-      final List<Map<String, dynamic>> questions =
-          (questionRows as List).whereType<Map<String, dynamic>>().toList();
+      final rubric = (rubricRaw is Map)
+          ? Map<String, dynamic>.from(rubricRaw)
+          : <String, dynamic>{};
 
-      if (questions.isEmpty) {
+      final questionNodes = (rubric['questions'] as List?) ?? const [];
+      if (questionNodes.isEmpty) {
         throw CasPratiqueException.caseNotFound(caseId);
       }
 
-      final qIds = questions.map((q) => q['id'] as String).toList();
-
-      // ─── 2. Charger les rubric_points pour ces questions ──────────────────
-      final pointRows = await _sb
-          .from('cas_pratique_rubric_points')
-          .select('id, question_id, position, label, weight, is_required, kind, explanation_md')
-          .inFilter('question_id', qIds)
-          .order('position', ascending: true);
-
-      final pointsByQuestion = <String, List<EngineRubricPoint>>{};
-      final allPointIds = <String>[];
-      for (final r in (pointRows as List).whereType<Map<String, dynamic>>()) {
-        final qid = r['question_id'] as String;
-        final p = EngineRubricPoint.fromJson(r);
-        pointsByQuestion.putIfAbsent(qid, () => []).add(p);
-        allPointIds.add(p.id);
-      }
-
-      // ─── 3. Charger les keyword_groups ────────────────────────────────────
-      final Map<String, List<EngineKeywordGroup>> groupsByPoint = {};
-      final List<String> allGroupIds = [];
-
-      if (allPointIds.isNotEmpty) {
-        final groupRows = await _sb
-            .from('cas_pratique_keyword_groups')
-            .select('id, point_id, position, description, is_optional')
-            .inFilter('point_id', allPointIds)
-            .order('position', ascending: true);
-
-        final tempGroups = <String, Map<String, dynamic>>{};
-        for (final r in (groupRows as List).whereType<Map<String, dynamic>>()) {
-          tempGroups[r['id'] as String] = {
-            ...r,
-            'keywords': <Map<String, dynamic>>[],
-          };
-          allGroupIds.add(r['id'] as String);
-        }
-
-        // ─── 4. Charger les keywords ────────────────────────────────────────
-        if (allGroupIds.isNotEmpty) {
-          final kwRows = await _sb
-              .from('cas_pratique_keywords')
-              .select('id, group_id, syn_dict_id, value, is_phrase, is_negation, fuzzy_max_dist, position')
-              .inFilter('group_id', allGroupIds)
-              .order('position', ascending: true);
-
-          for (final k in (kwRows as List).whereType<Map<String, dynamic>>()) {
-            final gid = k['group_id'] as String;
-            (tempGroups[gid]?['keywords'] as List).add(k);
-          }
-        }
-
-        for (final tg in tempGroups.values) {
-          final group = EngineKeywordGroup.fromJson(tg);
-          final pid = tg['point_id'] as String;
-          groupsByPoint.putIfAbsent(pid, () => []).add(group);
-        }
-      }
-
-      // ─── 5. Charger le dictionnaire de synonymes (utiles seulement) ──────
-      final synDictIds = <String>{};
-      for (final groups in groupsByPoint.values) {
-        for (final g in groups) {
-          for (final kw in g.keywords) {
-            if (kw.synDictId != null) synDictIds.add(kw.synDictId!);
-          }
-        }
-      }
+      // Dictionnaire de synonymes, limite a ceux reellement utilises.
       final dictById = <String, EngineSynDict>{};
-      if (synDictIds.isNotEmpty) {
-        final dictRows = await _sb
-            .from('cas_pratique_synonyms_dictionary')
-            .select('id, slug, terms')
-            .inFilter('id', synDictIds.toList());
-        for (final r in (dictRows as List).whereType<Map<String, dynamic>>()) {
-          dictById[r['id'] as String] = EngineSynDict.fromJson(r);
+      for (final d in (rubric['synonyms'] as List?) ?? const []) {
+        if (d is Map) {
+          final m = Map<String, dynamic>.from(d);
+          dictById[m['id'] as String] = EngineSynDict.fromJson(m);
         }
       }
 
-      // ─── 6. Construire l'AttemptScoringInput ──────────────────────────────
+      // Aplatissement de l'arbre renvoye par la RPC vers les structures
+      // attendues par le scorer.
+      final pointsByQuestion = <String, List<EngineRubricPoint>>{};
+      final groupsByPoint = <String, List<EngineKeywordGroup>>{};
       final specs = <QuestionScoringSpec>[];
-      for (final q in questions) {
+
+      for (final qn in questionNodes) {
+        if (qn is! Map) continue;
+        final q = Map<String, dynamic>.from(qn);
         final qid = q['id'] as String;
-        specs.add(QuestionScoringSpec(
-          questionId: qid,
-          maxPoints: (q['max_points'] as int?) ?? 5,
-          rubricPoints: pointsByQuestion[qid] ?? const <EngineRubricPoint>[],
-          groupsByPoint: groupsByPoint,
-        ));
+
+        final points = <EngineRubricPoint>[];
+        for (final pn in (q['points'] as List?) ?? const []) {
+          if (pn is! Map) continue;
+          final p = Map<String, dynamic>.from(pn);
+          final point = EngineRubricPoint.fromJson(p);
+          points.add(point);
+
+          final groups = <EngineKeywordGroup>[];
+          for (final gn in (p['groups'] as List?) ?? const []) {
+            if (gn is! Map) continue;
+            final g = Map<String, dynamic>.from(gn);
+            groups.add(
+              EngineKeywordGroup.fromJson({
+                ...g,
+                'keywords': ((g['keywords'] as List?) ?? const [])
+                    .whereType<Map>()
+                    .map((k) => Map<String, dynamic>.from(k))
+                    .toList(),
+              }),
+            );
+          }
+          groupsByPoint[point.id] = groups;
+        }
+
+        pointsByQuestion[qid] = points;
+        specs.add(
+          QuestionScoringSpec(
+            questionId: qid,
+            maxPoints: (q['max_points'] as int?) ?? 5,
+            rubricPoints: points,
+            groupsByPoint: groupsByPoint,
+          ),
+        );
       }
 
       final scorer = AttemptScorer(
