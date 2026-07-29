@@ -1011,6 +1011,17 @@ class RouteRegistry {
     AbandonDeFamillePage.routeName: (_) => const AbandonDeFamillePage(),
     AssociationMalfaiteursPage.routeName: (_) =>
         const AssociationMalfaiteursPage(),
+    // PA — Crimes & délits contre la nation (catégorie dédiée, câblée le
+    // 29/07/2026, séparation stricte PA/GPX)
+    PaAssociationMalfaiteursPage.routeName: (_) =>
+        const PaAssociationMalfaiteursPage(),
+    PaAbusAutoriteParticuliersContenuPage.routeName: (_) =>
+        const PaAbusAutoriteParticuliersContenuPage(),
+    PaAtteintesActionJusticeContenuPage.routeName: (_) =>
+        const PaAtteintesActionJusticeContenuPage(),
+    PaFauxUsageFauxContenuPage.routeName: (_) =>
+        const PaFauxUsageFauxContenuPage(),
+    PaProbiteContenuPage.routeName: (_) => const PaProbiteContenuPage(),
     AtteintesSecretCorrespondancesPage.routeName: (_) =>
         const AtteintesSecretCorrespondancesPage(),
     DiscriminationsAbusAutoritePage.routeName: (_) =>
@@ -1486,6 +1497,14 @@ class RouteRegistry {
         const ReiterationInfractionsPage(),
     ConcoursReelInfractionsPage.routeName: (_) =>
         const ConcoursReelInfractionsPage(),
+    // PA — La sanction (catégorie dédiée, câblée le 29/07/2026,
+    // séparation stricte PA/GPX)
+    PaClassificationPeinesPage.routeName: (_) =>
+        const PaClassificationPeinesPage(),
+    PaCausesAggravationSanctionContenuPage.routeName: (_) =>
+        const PaCausesAggravationSanctionContenuPage(),
+    PaPluraliteInfractionsPage.routeName: (_) =>
+        const PaPluraliteInfractionsPage(),
     MiseEnDangerContenuPage.routeName: (_) => const MiseEnDangerContenuPage(),
     MiseEnDangerDiffusionInformationsPage.routeName: (_) =>
         const MiseEnDangerDiffusionInformationsPage(),

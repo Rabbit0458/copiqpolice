@@ -3801,6 +3801,84 @@ const Map<PaSchoolProgram, List<CategoryConfig>> paSchoolCategoriesConfig = {
     ),
 
     CategoryConfig(
+      label: 'La sanction',
+      badge: 'Peines & sûreté',
+      image: 'assets/images/sanction.jpeg',
+      route: '/pa/dps_dpg/sanctions',
+      subcategories: [
+        SubCategoryConfig(
+          label: 'Classification des peines et mesures de sûreté',
+          route: '/pa/dps_dpg/sanctions/classification_peines',
+        ),
+        SubCategoryConfig(
+          label: 'Causes d’aggravation de la sanction',
+          route: '/pa/dps_dpg/sanctions/causes_aggravation_sanction',
+        ),
+        SubCategoryConfig(
+          label: 'Règles en cas de pluralité d’infractions',
+          route: '/pa/dps_dpg/sanctions/pluralite_infractions',
+        ),
+        SubCategoryConfig(
+          label: 'Quiz — Sanction (récidive, réitération, concours réel)',
+          route: '/pa/sanction/quiz/sanction_page',
+        ),
+      ],
+    ),
+
+    CategoryConfig(
+      label: 'Crimes & délits contre la nation',
+      badge: 'Institutions & justice',
+      image: 'assets/images/contre_nation.jpeg',
+      route: '/pa/dps_dpg/crimes_nation',
+      subcategories: [
+        SubCategoryConfig(
+          label: 'Association de malfaiteurs',
+          route: '/pa/dps_dpg/atteintes_nation_pages/association_malfaiteurs',
+        ),
+        SubCategoryConfig(
+          label: 'Abus d’autorité contre les particuliers',
+          route: '/pa/dps_dpg/atteintes_nation_pages/abus_autorite',
+        ),
+        SubCategoryConfig(
+          label: 'Atteintes à l’action de la justice',
+          route: '/pa/dps_dpg/atteintes_nation_pages/atteintes_action_justice',
+        ),
+        SubCategoryConfig(
+          label: 'Atteintes à l’administration par des particuliers',
+          route: '/pa/dps_dpg/socle_initial/autorite_etat/outrage',
+        ),
+        SubCategoryConfig(
+          label: 'Faux et usage de faux',
+          route: '/pa/dps_dpg/atteintes_nation_pages/faux_usage_faux',
+        ),
+        SubCategoryConfig(
+          label: 'Manquements au devoir de probité',
+          route: '/pa/dps_dpg/atteintes_nation_pages/probite',
+        ),
+        SubCategoryConfig(
+          label: 'Quiz — Abus d’autorité contre les particuliers',
+          route: '/pa/nation/quiz/abus_autorite_particuliers',
+        ),
+        SubCategoryConfig(
+          label: 'Quiz — Atteintes à l’action de la justice',
+          route: '/pa/nation/quiz/atteintes_action_justice',
+        ),
+        SubCategoryConfig(
+          label: 'Quiz — Atteintes à l’administration',
+          route: '/pa/nation/quiz/atteintes_administration',
+        ),
+        SubCategoryConfig(
+          label: 'Quiz — Faux et usage de faux',
+          route: '/pa/nation/quiz/faux_usage_faux',
+        ),
+        SubCategoryConfig(
+          label: 'Quiz — Manquements au devoir de probité',
+          route: '/pa/nation/quiz/probite',
+        ),
+      ],
+    ),
+
+    CategoryConfig(
       label: "Contrôle d'identité",
       badge: 'Socle initial',
       image: 'assets/images/controle_identite.jpeg',
