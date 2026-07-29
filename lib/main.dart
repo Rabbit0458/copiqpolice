@@ -125,6 +125,15 @@ import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/quizz
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/quizz_generalit%C3%A9/quiz_retention_locaux_page.dart';
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/quizz_generalit%C3%A9/quiz_hierarchie_page.dart';
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/quizz_generalit%C3%A9/quiz_generalite_page.dart';
+// PA — pages dédiées "Généralités" / "Hiérarchie" (séparation stricte PA/GPX)
+import 'package:copiqpolice/content/pa_scolarite/dps_dpg/generalite_pages/pa_classification_infractions_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/dps_dpg/generalite_pages/pa_infraction_intro_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/dps_dpg/generalite_pages/pa_tentative_intro_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/dps_dpg/generalite_pages/pa_complicite_intro_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/dps_dpg/generalite_pages/pa_ld_intro_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/dps_dpg/generalite_pages/pa_usage_des_armes_intro_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/dps_dpg/generalite_pages/pa_retention_locaux_intro.dart';
+import 'package:copiqpolice/content/pa_scolarite/dps_dpg/generalite_pages/pa_hierarchie_intro_page.dart';
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/cadres_enquete/cadres_enquete_intro_page.dart';
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/cadres_enquete/cadres_enquete_contenu_page.dart';
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/flagrant_delit/flagrant_delit_intro_page.dart';
@@ -591,8 +600,11 @@ import 'package:copiqpolice/content/gpx_scolarite/institutions_valeurs/laicite/c
 import 'package:copiqpolice/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart';
 import 'package:copiqpolice/content/gpx_scolarite/institutions_valeurs/histoire/histoire_reperes_page.dart';
 import 'package:copiqpolice/content/gpx_scolarite/institutions_valeurs/quiz_institutions_valeurs/quiz_organisation_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/institutions_valeurs_quiz/pa_quiz_organisation_page.dart';
 import 'package:copiqpolice/content/gpx_scolarite/institutions_valeurs/quiz_institutions_valeurs/quiz_deontologie.dart';
 import 'package:copiqpolice/content/gpx_scolarite/institutions_valeurs/quiz_institutions_valeurs/quiz_accueil_public.dart';
+import 'package:copiqpolice/content/pa_scolarite/institutions_valeurs_quiz/pa_quiz_deontologie.dart';
+import 'package:copiqpolice/content/pa_scolarite/institutions_valeurs_quiz/pa_quiz_accueil_public.dart';
 //═══════════════════════════════════════════════════════════════════════
 //  GPX - Scolarité | Mémentos & Procédures
 //═══════════════════════════════════════════════════════════════════════
@@ -911,6 +923,14 @@ import 'package:copiqpolice/content/pa_scolarite/organisation_pn/organigrammes_p
 import 'package:copiqpolice/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart';
 import 'package:copiqpolice/content/pa_scolarite/organisation_pn/regles_emploi_pa_page.dart';
 import 'package:copiqpolice/content/pa_scolarite/organisation_pn/horaires_service_sp_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/organisation_pn/pa_organisation_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/organisation_pn/pa_dgsi_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/organisation_pn/pa_prefecture_police_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/organisation_pn/pa_organigrammes_pn_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/organisation_pn/pa_hierarchie_pn_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart';
 import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/autres_cadres_enquete/autres_cadres_enquete_page.dart' hide PaAutresCadresEnquetePage;
 import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/autres_cadres_enquete_page.dart';
 import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/cadres_enquete/cadres_enquete_contenu_page.dart';

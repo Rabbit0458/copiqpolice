@@ -1,0 +1,502 @@
+[
+  {
+    "label": "Généralités",
+    "route": "/pa/dps_dpg/socle_initial/generalites",
+    "resolved": "NOT_FOUND",
+    "subs": [
+      {
+        "label": "Classification des infractions",
+        "route": "/gpx/generalites/classification_infractions",
+        "resolved": "ClassificationInfractionsPage"
+      },
+      {
+        "label": "L’infraction",
+        "route": "/gpx/generalites/infraction_intro",
+        "resolved": "InfractionIntroPage"
+      },
+      {
+        "label": "La tentative punissable",
+        "route": "/gpx/generalites/tentative_intro",
+        "resolved": "TentativeIntroPage"
+      },
+      {
+        "label": "La complicité",
+        "route": "/gpx/generalites/complicite_intro",
+        "resolved": "CompliciteIntroPage"
+      },
+      {
+        "label": "La légitime défense",
+        "route": "/gpx/generalites/legitimedefense_intro",
+        "resolved": "LegitimeDefenseIntroPage"
+      },
+      {
+        "label": "Cadre légal d’usage des armes",
+        "route": "/gpx/generalites/usagedesarmes_intro",
+        "resolved": "UsageArmesIntroPage"
+      },
+      {
+        "label": "Les libertés publiques",
+        "route": "/gpx/generalites/libertespubliques_intro",
+        "resolved": "LibertesPubliquesIntroPage"
+      },
+      {
+        "label": "Rétention dans les locaux de police",
+        "route": "/gpx/generalites/retention_locaux_police_intro",
+        "resolved": "RetentionLocauxIntroPage"
+      }
+    ]
+  },
+  {
+    "label": "Hiérarchie — fonctions judiciaires",
+    "route": "/pa/dps_dpg/socle_initial/hierarchie",
+    "resolved": "NOT_FOUND",
+    "subs": [
+      {
+        "label": "Hiérarchie des personnels de la Police Nationale",
+        "route": "/gpx/generalites/hierarchie_intro",
+        "resolved": "HierarchieIntroPage"
+      }
+    ]
+  },
+  {
+    "label": "Cadres juridiques",
+    "route": "/pa/dps_dpg/socle_initial/cadres_juridiques",
+    "resolved": "NOT_FOUND",
+    "subs": [
+      {
+        "label": "La commission rogatoire",
+        "route": "/pa/dps_dpg/cadres_juridiques/commission_rogatoire_intro",
+        "resolved": "PaCommissionRogatoireIntroPage"
+      },
+      {
+        "label": "Mort de cause inconnue ou suspecte",
+        "route": "/pa/dps_dpg/cadres_juridiques/mort_inconnue/intro",
+        "resolved": "PaMortInconnueIntroPage"
+      },
+      {
+        "label": "Délinquance & criminalité organisées",
+        "route": "/pa/dps_dpg/cadres_juridiques/criminalite_organisee_contenu",
+        "resolved": "PaCriminaliteOrganiseeContenuPage"
+      },
+      {
+        "label": "Recherche des personnes en fuite",
+        "route": "/pa/dps_dpg/cadres_juridiques/recherche_personnes_fuite/intro",
+        "resolved": "PaPersonnesFuiteIntroGpxSchool"
+      },
+      {
+        "label": "Disparitions inquiétantes",
+        "route": "/pa/dps_dpg/cadres_juridiques/disparitions_inquietantes_intro",
+        "resolved": "PaDisparitionIntroPage"
+      }
+    ]
+  },
+  {
+    "label": "Circulation routière",
+    "route": "/pa/dps_dpg/socle_initial/circulation",
+    "resolved": "NOT_FOUND",
+    "subs": [
+      {
+        "label": "Compétences des agents verbalisateurs",
+        "route": "/pa/dps_dpg/socle_initial/circulation/agents_verbalisateurs",
+        "resolved": "AgentsVerbalisateursCirculationPage"
+      },
+      {
+        "label": "Conduite après usage de stupéfiants",
+        "route": "/pa/dps_dpg/socle_initial/circulation/conduite_stupefiants",
+        "resolved": "PaConduiteStupefiantsPage"
+      },
+      {
+        "label": "Défaut de permis de conduire",
+        "route": "/pa/dps_dpg/socle_initial/circulation/defaut_permis",
+        "resolved": "PaDefautPermisPage"
+      },
+      {
+        "label": "Délit de fuite",
+        "route": "/pa/dps_dpg/socle_initial/circulation/delit_fuite",
+        "resolved": "PaDelitFuitePage"
+      },
+      {
+        "label": "Grand excès de vitesse",
+        "route": "/pa/dps_dpg/socle_initial/circulation/grand_exces_vitesse",
+        "resolved": "PaGrandExcesVitessePage"
+      },
+      {
+        "label": "Refus de vérifications",
+        "route": "/pa/dps_dpg/socle_initial/circulation/refus_verifications",
+        "resolved": "PaRefusVerificationsPage"
+      },
+      {
+        "label": "Rodéo motorisé",
+        "route": "/pa/dps_dpg/socle_initial/circulation/rodeo_motorise",
+        "resolved": "PaRodeoMotorisePage"
+      },
+      {
+        "label": "Plaques & inscriptions (délits liés)",
+        "route": "/pa/dps_dpg/socle_initial/circulation/plaques_inscriptions",
+        "resolved": "PaPlaquesInscriptionsPage"
+      },
+      {
+        "label": "Incitation / organisation / promotion",
+        "route": "/pa/dps_dpg/socle_initial/circulation/incitation_organisation_promotion",
+        "resolved": "PaIncitationOrganisationPromotionPage"
+      },
+      {
+        "label": "Quiz — Infractions à la circulation routière",
+        "route": "/pa/dps_dpg/quiz/quiz_circulation_routiere",
+        "resolved": "final"
+      }
+    ]
+  },
+  {
+    "label": "Organisation judiciaire",
+    "route": "/pa/dps_dpg/socle_initial/organisation_judiciaire",
+    "resolved": "NOT_FOUND",
+    "subs": [
+      {
+        "label": "L’organisation judiciaire",
+        "route": "/pa/dps_dpg/socle_initial/organisation_judiciaire/organisation",
+        "resolved": "PaOrganisationJudiciaireHubPage"
+      },
+      {
+        "label": "La magistrature",
+        "route": "/pa/dps_dpg/socle_initial/organisation_judiciaire/magistrature",
+        "resolved": "JuridictionsPenalesPage"
+      }
+    ]
+  },
+  {
+    "label": "Atteintes aux biens",
+    "route": "/pa/dps_dpg/socle_initial/atteintes_biens",
+    "resolved": "NOT_FOUND",
+    "subs": [
+      {
+        "label": "Le vol",
+        "route": "/pa/dps_dpg/socle_initial/atteintes_biens/vol",
+        "resolved": "PaVolPage"
+      },
+      {
+        "label": "Destructions, dégradations, détériorations",
+        "route": "/pa/dps_dpg/socle_initial/atteintes_biens/destructions",
+        "resolved": "PaDestructionsDegradationsContenuPage"
+      },
+      {
+        "label": "Infractions sans danger pour les personnes",
+        "route": "/pa/dps_dpg/socle_initial/atteintes_biens/sans_danger_personnes",
+        "resolved": "PaSansDangerDommageLegerPage"
+      },
+      {
+        "label": "Infractions dangereuses pour les personnes",
+        "route": "/pa/dps_dpg/socle_initial/atteintes_biens/dangereuses_personnes",
+        "resolved": "PaDestructionsDangereusesPersonnesIntentionnellePage"
+      },
+      {
+        "label": "Tags et graffitis",
+        "route": "/pa/dps_dpg/socle_initial/atteintes_biens/tags_graffitis",
+        "resolved": "PaTagsInscriptionsSignesDessinsPage"
+      }
+    ]
+  },
+  {
+    "label": "Atteintes aux personnes",
+    "route": "/pa/dps_dpg/socle_initial/atteintes_personnes",
+    "resolved": "NOT_FOUND",
+    "subs": [
+      {
+        "label": "Les discriminations",
+        "route": "/pa/dps_dpg/socle_initial/atteintes_personnes/discriminations",
+        "resolved": "PaDiscriminationsPage"
+      },
+      {
+        "label": "Les violences volontaires",
+        "route": "/pa/dps_dpg/socle_initial/atteintes_personnes/violences_volontaires",
+        "resolved": "PaAtteintesVolontairesIntegriteContenuPage"
+      },
+      {
+        "label": "Les violences habituelles",
+        "route": "/pa/dps_dpg/socle_initial/atteintes_personnes/violences_habituelles",
+        "resolved": "PaViolencesHabituellesCoupleExPage"
+      },
+      {
+        "label": "Violences contre les forces de sécurité intérieure",
+        "route": "/pa/dps_dpg/socle_initial/atteintes_personnes/violences_fsi",
+        "resolved": "PaViolencesSurFsiPage"
+      },
+      {
+        "label": "Atteintes volontaires à la vie",
+        "route": "/pa/dps_dpg/socle_initial/atteintes_personnes/atteintes_vie",
+        "resolved": "PaAtteintesVolontairesVieContenuPage"
+      },
+      {
+        "label": "Le viol",
+        "route": "/pa/dps_dpg/socle_initial/atteintes_personnes/viol",
+        "resolved": "PaViolIncesteAgressionsContenuPage"
+      },
+      {
+        "label": "Agressions sexuelles",
+        "route": "/pa/dps_dpg/socle_initial/atteintes_personnes/agressions_sexuelles",
+        "resolved": "PaAgressionsSexuellesAutresQueViolPage"
+      },
+      {
+        "label": "Harcèlement sexuel",
+        "route": "/pa/dps_dpg/socle_initial/atteintes_personnes/harcelement_sexuel",
+        "resolved": "PaHarcelementSexuelPage"
+      },
+      {
+        "label": "Exhibition sexuelle",
+        "route": "/pa/dps_dpg/socle_initial/atteintes_personnes/exhibition",
+        "resolved": "PaExhibitionSexuellePage"
+      },
+      {
+        "label": "Mise en péril des mineurs",
+        "route": "/pa/dps_dpg/socle_initial/atteintes_personnes/mineurs_mise_en_peril",
+        "resolved": "PaMiseEnPerilDesMineursPage"
+      },
+      {
+        "label": "Atteinte à l’intimité d’une personne",
+        "route": "/pa/dps_dpg/socle_initial/atteintes_personnes/atteinte_intimite",
+        "resolved": "PaAtteintePersonnaliteContenuPage"
+      },
+      {
+        "label": "Outrage sexiste et sexuel",
+        "route": "/pa/dps_dpg/socle_initial/atteintes_personnes/outrage_sexiste",
+        "resolved": "PaOutrageSexistePage"
+      }
+    ]
+  },
+  {
+    "label": "Autorité de l’État",
+    "route": "/pa/dps_dpg/socle_initial/autorite_etat",
+    "resolved": "NOT_FOUND",
+    "subs": [
+      {
+        "label": "Refus d’obtempérer",
+        "route": "/pa/dps_dpg/socle_initial/autorite_etat/refus_obtemperer",
+        "resolved": "PaRefusObtempererPage"
+      },
+      {
+        "label": "L’outrage",
+        "route": "/pa/dps_dpg/socle_initial/autorite_etat/outrage",
+        "resolved": "PaAtteintesAdministrationContenuPage"
+      },
+      {
+        "label": "La rébellion",
+        "route": "/pa/dps_dpg/socle_initial/autorite_etat/rebellion",
+        "resolved": "PaRebellionPage"
+      },
+      {
+        "label": "Provocation directe à la rébellion",
+        "route": "/pa/dps_dpg/socle_initial/autorite_etat/provocation_rebellion",
+        "resolved": "PaProvocationDirecteRebellionPage"
+      }
+    ]
+  },
+  {
+    "label": "Généralités",
+    "route": "/pa/dps_dpg/socle_avance/generalites",
+    "resolved": "NOT_FOUND",
+    "subs": [
+      {
+        "label": "Le droit pénal",
+        "route": "/pa/dps_dpg/socle_avance/generalites/droit_penal",
+        "resolved": "PaLoiPenaleContenuPage"
+      },
+      {
+        "label": "Immunités et inviolabilités",
+        "route": "/pa/dps_dpg/socle_avance/generalites/immunites_inviolabilites",
+        "resolved": "PaGPXSchoolEtendueApplicationLoisPage"
+      },
+      {
+        "label": "La responsabilité pénale",
+        "route": "/pa/dps_dpg/socle_avance/generalites/responsabilite_penale",
+        "resolved": "PaResponsabilitePenalePage"
+      }
+    ]
+  },
+  {
+    "label": "Acteurs de la Police Judiciaire",
+    "route": "/pa/dps_dpg/socle_avance/acteurs_pj",
+    "resolved": "NOT_FOUND",
+    "subs": [
+      {
+        "label": "Compétences des OPJ",
+        "route": "/pa/dps_dpg/socle_avance/acteurs_pj/opj",
+        "resolved": "HierarchieOpjPage"
+      },
+      {
+        "label": "Compétences des APJ",
+        "route": "/pa/dps_dpg/socle_avance/acteurs_pj/apj",
+        "resolved": "HierarchieApjPage"
+      },
+      {
+        "label": "Assistants d’enquête",
+        "route": "/pa/dps_dpg/socle_avance/acteurs_pj/assistants_enquete",
+        "resolved": "HierarchieAssistantsEnquetePage"
+      },
+      {
+        "label": "Prérogatives judiciaires (OPJ / APJ / APJA)",
+        "route": "/pa/dps_dpg/socle_avance/acteurs_pj/prerogatives",
+        "resolved": "PaAutoriteInvestiesLoiPage"
+      },
+      {
+        "label": "Le procureur de la République",
+        "route": "/pa/dps_dpg/socle_avance/acteurs_pj/procureur",
+        "resolved": "PaPPOrganisationMinisterePublicContenuPage"
+      },
+      {
+        "label": "Le juge d’instruction",
+        "route": "/pa/dps_dpg/socle_avance/acteurs_pj/juge_instruction",
+        "resolved": "JugeInstructionPage"
+      }
+    ]
+  },
+  {
+    "label": "Atteintes aux biens",
+    "route": "/pa/dps_dpg/socle_avance/atteintes_biens",
+    "resolved": "NOT_FOUND",
+    "subs": [
+      {
+        "label": "L’extorsion",
+        "route": "/pa/dps_dpg/socle_avance/atteintes_biens/extorsion",
+        "resolved": "PaExtorsionPage"
+      },
+      {
+        "label": "L’escroquerie",
+        "route": "/pa/dps_dpg/socle_avance/atteintes_biens/escroquerie",
+        "resolved": "PaEscroqueriePage"
+      },
+      {
+        "label": "L’abus de confiance",
+        "route": "/pa/dps_dpg/socle_avance/atteintes_biens/abus_confiance",
+        "resolved": "PaAbusDeConfiancePage"
+      },
+      {
+        "label": "La filouterie",
+        "route": "/pa/dps_dpg/socle_avance/atteintes_biens/filouterie",
+        "resolved": "PaFilouteriesPage"
+      },
+      {
+        "label": "Le recel",
+        "route": "/pa/dps_dpg/socle_avance/atteintes_biens/recel",
+        "resolved": "PaRecelPage"
+      },
+      {
+        "label": "Abstention volontaire de combattre un sinistre",
+        "route": "/pa/dps_dpg/socle_avance/atteintes_biens/abstention_sinistre",
+        "resolved": "PaAtteintesVolontairesIntegriteContenuPage"
+      }
+    ]
+  },
+  {
+    "label": "Atteintes aux personnes",
+    "route": "/pa/dps_dpg/socle_avance/atteintes_personnes",
+    "resolved": "NOT_FOUND",
+    "subs": [
+      {
+        "label": "Atteintes involontaires à la vie et à l’intégrité",
+        "route": "/pa/dps_dpg/socle_avance/atteintes_personnes/involontaires",
+        "resolved": "PaAtteintesInvolontairesContenuPage"
+      },
+      {
+        "label": "Menaces contre les personnes",
+        "route": "/pa/dps_dpg/socle_avance/atteintes_personnes/menaces",
+        "resolved": "PaMenaceSansConditionPage"
+      },
+      {
+        "label": "Entrave volontaire à l’arrivée des secours",
+        "route": "/pa/dps_dpg/socle_avance/atteintes_personnes/entrave_secours",
+        "resolved": "PaMiseEnDangerContenuPage"
+      },
+      {
+        "label": "Non-obstacle à la commission d’un crime ou délit",
+        "route": "/pa/dps_dpg/socle_avance/atteintes_personnes/non_obstacle",
+        "resolved": "PaNonObstacleCommissionCrimeDelitPage"
+      },
+      {
+        "label": "Non-assistance à personne en péril",
+        "route": "/pa/dps_dpg/socle_avance/atteintes_personnes/non_assistance",
+        "resolved": "PaNonAssistancePersonnePerilPage"
+      },
+      {
+        "label": "Appels téléphoniques malveillants",
+        "route": "/pa/dps_dpg/socle_avance/atteintes_personnes/appels_malveillants",
+        "resolved": "PaAppelsMessagesMalveillantsAgressionsSonoresPage"
+      },
+      {
+        "label": "Risque causé à autrui",
+        "route": "/pa/dps_dpg/socle_avance/atteintes_personnes/risque_autrui",
+        "resolved": "PaRisqueCauseAutruiPage"
+      }
+    ]
+  },
+  {
+    "label": "Délits routiers",
+    "route": "/pa/dps_dpg/socle_avance/delits_routiers",
+    "resolved": "NOT_FOUND",
+    "subs": [
+      {
+        "label": "Rodéo motorisé",
+        "route": "/pa/dps_dpg/socle_avance/delits_routiers/rodeo",
+        "resolved": "PaRodeoMotorisePage"
+      },
+      {
+        "label": "Incitation / organisation / promotion",
+        "route": "/pa/dps_dpg/socle_avance/delits_routiers/incitation",
+        "resolved": "PaIncitationOrganisationPromotionPage"
+      },
+      {
+        "label": "Délit de fuite",
+        "route": "/pa/dps_dpg/socle_avance/delits_routiers/delit_fuite",
+        "resolved": "PaDelitFuitePage"
+      },
+      {
+        "label": "Refus d’obtempérer",
+        "route": "/pa/dps_dpg/socle_avance/delits_routiers/refus_obtemperer",
+        "resolved": "PaRefusObtempererPage"
+      },
+      {
+        "label": "Autres délits routiers (alcool, stup, permis, vérifications…)",
+        "route": "/pa/dps_dpg/socle_avance/delits_routiers/autres",
+        "resolved": "PaEtatAlcooliquePage"
+      }
+    ]
+  },
+  {
+    "label": "Autorité de l’État",
+    "route": "/pa/dps_dpg/socle_avance/autorite_etat",
+    "resolved": "NOT_FOUND",
+    "subs": [
+      {
+        "label": "Menaces envers les dépositaires de l’autorité publique",
+        "route": "/pa/dps_dpg/socle_avance/autorite_etat/menaces",
+        "resolved": "PaMenacesEnversDepositaireAutoritePage"
+      },
+      {
+        "label": "Corruption passive",
+        "route": "/pa/dps_dpg/socle_avance/autorite_etat/corruption_passive",
+        "resolved": "PaCorruptionPage"
+      },
+      {
+        "label": "Corruption active",
+        "route": "/pa/dps_dpg/socle_avance/autorite_etat/corruption_active",
+        "resolved": "PaCorruptionPage"
+      }
+    ]
+  },
+  {
+    "label": "Stupéfiants",
+    "route": "/pa/dps_dpg/socle_avance/stupefiants",
+    "resolved": "NOT_FOUND",
+    "subs": [
+      {
+        "label": "Usage illicite de stupéfiants",
+        "route": "/pa/dps_dpg/socle_avance/stupefiants/usage_illicite",
+        "resolved": "PaStupefiantsUsageIllicitePage"
+      },
+      {
+        "label": "Cession / offre illicites (consommation personnelle)",
+        "route": "/pa/dps_dpg/socle_avance/stupefiants/cession_offre",
+        "resolved": "PaStupefiantsCessionOffrePage"
+      }
+    ]
+  }
+]

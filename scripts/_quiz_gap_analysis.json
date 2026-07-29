@@ -1,0 +1,230 @@
+{
+  "gpx_total_cards": 350,
+  "gpx_quiz_cards": 29,
+  "pa_total_cards": 170,
+  "pa_course_cards": 166,
+  "pa_quiz_cards": 4,
+  "pa_quiz_entries": [
+    {
+      "label": "Quiz — Infractions à la circulation routière",
+      "route": "/pa/dps_dpg/quiz/quiz_circulation_routiere"
+    },
+    {
+      "label": "Quiz — Procédures circulation",
+      "route": "/pa/infraction_circulation_routière_pages/quiz/pa_quiz_circulation_routiere"
+    },
+    {
+      "label": "Quiz — Contrôle routier",
+      "route": "/pa/infraction_circulation_routière_pages/quiz/pa_quiz_circulation_routiere"
+    },
+    {
+      "label": "Quiz — Équipements",
+      "route": "/pa/infraction_circulation_routière_pages/quiz/pa_quiz_circulation_routiere"
+    }
+  ],
+  "matches": [
+    {
+      "gpx_quiz_label": "Quiz — Organisation (global)",
+      "gpx_quiz_route": "/gpx/institution/organisation_pn/quiz",
+      "pa_equivalent_found": true,
+      "pa_label": "Organisation de la Police Nationale",
+      "pa_route": "/pa/institution/organisation_pn"
+    },
+    {
+      "gpx_quiz_label": "Quiz — Déontologie",
+      "gpx_quiz_route": "/gpx/institution/deontologie/quiz",
+      "pa_equivalent_found": true,
+      "pa_label": "Déontologie",
+      "pa_route": "/pa/institution/deontologie"
+    },
+    {
+      "gpx_quiz_label": "Quiz — Accueil du public",
+      "gpx_quiz_route": "/gpx/institution/accueil_public/quiz",
+      "pa_equivalent_found": true,
+      "pa_label": "Accueil du public",
+      "pa_route": "/pa/institution/accueil_public"
+    },
+    {
+      "gpx_quiz_label": "Quiz — Laïcité",
+      "gpx_quiz_route": "/gpx/institution/laicite/quiz",
+      "pa_equivalent_found": true,
+      "pa_label": "Laïcité, police et religions",
+      "pa_route": "/pa/institution/laicite"
+    },
+    {
+      "gpx_quiz_label": "Quiz généralités, classification des infractions, infraction, tentative punissable etc..",
+      "gpx_quiz_route": "/gpx/procedure_penale/quiz/generalité_principales",
+      "pa_equivalent_found": false,
+      "pa_label": null,
+      "pa_route": null
+    },
+    {
+      "gpx_quiz_label": "Quiz cadres juridiques, les cadres d\\",
+      "gpx_quiz_route": "/gpx/procedure_penale/quiz/cadres_juridiques_principales",
+      "pa_equivalent_found": false,
+      "pa_label": null,
+      "pa_route": null
+    },
+    {
+      "gpx_quiz_label": "Quiz instruction préparatoire, mandats & détention provisoire",
+      "gpx_quiz_route": "/gpx/procedure_penale/quiz/instruction_preparatoire",
+      "pa_equivalent_found": false,
+      "pa_label": null,
+      "pa_route": null
+    },
+    {
+      "gpx_quiz_label": "Quiz — Sanction  (récidive, réitération, concours réel)",
+      "gpx_quiz_route": "/gpx/sanction/quiz/sanction_page",
+      "pa_equivalent_found": false,
+      "pa_label": null,
+      "pa_route": null
+    },
+    {
+      "gpx_quiz_label": "Quiz — Crimes & délits contre la personne",
+      "gpx_quiz_route": "/gpx/crimes_personne/quiz/crimes_delits_personne",
+      "pa_equivalent_found": false,
+      "pa_label": null,
+      "pa_route": null
+    },
+    {
+      "gpx_quiz_label": "Quiz — L’abandon de famille",
+      "gpx_quiz_route": "/gpx/mineurs_famille_pages/quiz/quiz_mineurs_famille",
+      "pa_equivalent_found": false,
+      "pa_label": null,
+      "pa_route": null
+    },
+    {
+      "gpx_quiz_label": "Quiz — Crimes & délits contre la nation",
+      "gpx_quiz_route": "/gpx/crime_delit_nation_pages/quiz/quiz_crimes_delits_nation",
+      "pa_equivalent_found": false,
+      "pa_label": null,
+      "pa_route": null
+    },
+    {
+      "gpx_quiz_label": "Quiz — Crimes & délits contre les biens",
+      "gpx_quiz_route": "/gpx/crime_delit_nation_pages/quiz/quiz_crimes_delits_bien",
+      "pa_equivalent_found": false,
+      "pa_label": null,
+      "pa_route": null
+    },
+    {
+      "gpx_quiz_label": "Quiz — Infractions à la circulation routière",
+      "gpx_quiz_route": "/gpx/infraction_circulation_routière_pages/quiz/quiz_circulation_routiere",
+      "pa_equivalent_found": false,
+      "pa_label": null,
+      "pa_route": null
+    },
+    {
+      "gpx_quiz_label": "Quiz — Classification des armes et des munitions",
+      "gpx_quiz_route": "/gpx/armes_munitions_pages/quiz/quiz_armes_munitions_pages",
+      "pa_equivalent_found": false,
+      "pa_label": null,
+      "pa_route": null
+    },
+    {
+      "gpx_quiz_label": "Quiz — Stupéfiants — usage & trafic",
+      "gpx_quiz_route": "/gpx/stupéfiants_pages/quiz/quiz_stupéfiants",
+      "pa_equivalent_found": false,
+      "pa_label": null,
+      "pa_route": null
+    },
+    {
+      "gpx_quiz_label": "Quiz — Procédures circulation",
+      "gpx_quiz_route": "/gpx/memento_circulation/procedures/quiz",
+      "pa_equivalent_found": true,
+      "pa_label": "Procédures circulation routière",
+      "pa_route": "/pa/memento_circulation/procedures"
+    },
+    {
+      "gpx_quiz_label": "Quiz — Contrôle routier",
+      "gpx_quiz_route": "/gpx/memento_circulation/controle_routier/quiz",
+      "pa_equivalent_found": true,
+      "pa_label": "Contrôle routier & pièces",
+      "pa_route": "/pa/memento_circulation/controle_routier"
+    },
+    {
+      "gpx_quiz_label": "Quiz — Équipements",
+      "gpx_quiz_route": "/gpx/memento_circulation/equipements/quiz",
+      "pa_equivalent_found": true,
+      "pa_label": "Équipements véhicules & usagers",
+      "pa_route": "/pa/memento_circulation/equipements"
+    },
+    {
+      "gpx_quiz_label": "Quiz — Étrangers",
+      "gpx_quiz_route": "/gpx/intervention/etrangers/quiz",
+      "pa_equivalent_found": false,
+      "pa_label": null,
+      "pa_route": null
+    },
+    {
+      "gpx_quiz_label": "Quiz — Mineurs",
+      "gpx_quiz_route": "/gpx/intervention/mineurs/quiz",
+      "pa_equivalent_found": false,
+      "pa_label": null,
+      "pa_route": null
+    },
+    {
+      "gpx_quiz_label": "Quiz — Accident",
+      "gpx_quiz_route": "/gpx/intervention/accident-circulation/quiz",
+      "pa_equivalent_found": false,
+      "pa_label": null,
+      "pa_route": null
+    },
+    {
+      "gpx_quiz_label": "Quiz — Stupéfiants",
+      "gpx_quiz_route": "/gpx/intervention/stupefiants/quiz",
+      "pa_equivalent_found": false,
+      "pa_label": null,
+      "pa_route": null
+    },
+    {
+      "gpx_quiz_label": "Quiz — Débit de boissons",
+      "gpx_quiz_route": "/gpx/intervention/debit-boissons/quiz",
+      "pa_equivalent_found": false,
+      "pa_label": null,
+      "pa_route": null
+    },
+    {
+      "gpx_quiz_label": "Quiz — Malades mentaux",
+      "gpx_quiz_route": "/gpx/intervention/malades-mentaux/quiz",
+      "pa_equivalent_found": false,
+      "pa_label": null,
+      "pa_route": null
+    },
+    {
+      "gpx_quiz_label": "Quiz — Animal",
+      "gpx_quiz_route": "/gpx/intervention/animal/quiz",
+      "pa_equivalent_found": false,
+      "pa_label": null,
+      "pa_route": null
+    },
+    {
+      "gpx_quiz_label": "Quiz — Autres interventions",
+      "gpx_quiz_route": "/gpx/intervention/autres/quiz",
+      "pa_equivalent_found": false,
+      "pa_label": null,
+      "pa_route": null
+    },
+    {
+      "gpx_quiz_label": "Quiz — Communication & posture",
+      "gpx_quiz_route": "/gpx/dimension_humaine/communication/quiz",
+      "pa_equivalent_found": false,
+      "pa_label": null,
+      "pa_route": null
+    },
+    {
+      "gpx_quiz_label": "Quiz — Stress & gestion émotionnelle",
+      "gpx_quiz_route": "/gpx/dimension_humaine/stress/quiz",
+      "pa_equivalent_found": false,
+      "pa_label": null,
+      "pa_route": null
+    },
+    {
+      "gpx_quiz_label": "Quiz — Éthique au quotidien",
+      "gpx_quiz_route": "/gpx/dimension_humaine/ethique/quiz",
+      "pa_equivalent_found": false,
+      "pa_label": null,
+      "pa_route": null
+    }
+  ]
+}

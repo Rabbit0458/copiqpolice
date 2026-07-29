@@ -20,10 +20,10 @@ document comme QA manuelle obligatoire — ne pas les considérer validés.
 | Axe | Statut |
 |---|---|
 | Compilation / lint (`flutter analyze`) | ✅ **0 problème** sur 1 673 fichiers Dart (2,39 M lignes) |
-| Routing (boutons → pages) | ⚠️ 0 conflit **actif**, mais **435 pages mortes confirmées** (code jamais exécutable) |
+| Routing (boutons → pages) | ✅ 0 route de menu cassée (vérifié exhaustivement sur PA Scolarité) ; ~359 fichiers `.dart` inutilisés = code mort, pas un trou de contenu — C.4 |
 | Contenu GPX Exam / GPX Scolarité | ✅ Fonctionnellement complet, routé, quiz alimentés |
 | Contenu PA Exam | ✅ Fonctionnellement complet |
-| Contenu PA Scolarité | 🔴 **363 pages rédigées mais mortes** — chantier éditorial, pas technique |
+| Contenu PA Scolarité | ✅ Fonctionnellement complet — sujets partagés avec GPX Scolarité via redirection active, 0 sujet inaccessible (rectifié le 29/07, voir C.4) |
 | Contenu Réserve | ✅ Contenu inachevé mais correctement verrouillé (0 utilisateur exposé, défense en profondeur ajoutée) |
 | Base de données (structure) | ✅ 176 tables, RLS activé partout, cas pratique et signalements sains |
 | Base de données (hygiène des données) | ✅ **Corrigé** — `quiz_questions` dédupliqué (6,35M → 5,54M lignes) |
@@ -39,8 +39,10 @@ cet audit sont désormais corrigés — crash iOS, doublons `quiz_questions`,
 performance RLS, identifiant d'application placeholder (`fr.copiq.police`
 configuré partout), et signature de release Android (keystore dédié généré,
 vérifié par `apksigner` sur un vrai APK release). **Aucun point 🔴 restant
-connu.** Il reste des points 🟠/🟡 non bloquants (PA Scolarité éditorial,
-`multiple_permissive_policies`/index Supabase, permissions à re-valider si
+connu.** Il reste des points 🟠/🟡 non bloquants (nettoyage de code mort
+PA Scolarité — 0 impact utilisateur, rectifié le 29/07 après signalement de
+l'utilisateur, voir C.4 — `multiple_permissive_policies`/index Supabase,
+anonymous sign-ins Supabase à désactiver manuellement, permissions à re-valider si
 l'identifiant venait à changer) et surtout la QA manuelle sur device réel
 (section G/I) — jamais faite dans cet environnement, à ne pas considérer
 comme validée tant qu'elle n'a pas été faite pour de vrai.
@@ -175,27 +177,42 @@ Détails techniques originaux conservés ci-dessous pour référence.
   release, ou supprimer le code mort de navigation dans `grade_picker.dart`
   (lignes 109-115) si la fonctionnalité est abandonnée.
 
-### 🟠 C.4 — 435 pages de PA/GPX Scolarité rédigées mais totalement inaccessibles
+### 🟡 C.4 — ~359 fichiers PA Scolarité non utilisés (CORRIGÉ/RECTIFIÉ le 29/07/2026 — 0 impact utilisateur confirmé)
 
-- **Emplacement** : majoritairement `lib/content/pa_scolarite/**` (363
-  fichiers), le reste dans `lib/content/gpx_scolarite/dps_dpg/**` (67
-  fichiers, ancienne génération avant le passage aux quiz dynamiques
-  Supabase).
-- **Gravité** : Majeure pour PA Scolarité (c'est le seul vrai chantier de
-  contenu restant), mineure pour GPX Scolarité (doublons de l'ancienne
-  architecture, remplacés par le moteur `QuizScolariteDynamiquePage`).
-- **Méthode de vérification** : script d'analyse statique — extraction de
-  toutes les classes déclarant un `routeName` (1 408 trouvées), comparaison
-  avec les clés réellement enregistrées dans `RouteRegistry.routes`
-  (`lib/routes/app_router.dart`), puis recherche de toute autre référence à
-  la classe ailleurs dans le code (menus, listes de cours). 735 classes ne
-  sont pas routées ; 300 sont référencées ailleurs (accessibles autrement,
-  à vérifier au cas par cas) ; **435 n'ont absolument aucune référence** —
-  code mort à 100 %, confirmé automatiquement.
-- **Solution** : soit router ces 435 pages dans `RouteRegistry.routes` (si le
-  contenu est prêt), soit les supprimer si elles sont obsolètes. Étant donné
-  le volume (PA Scolarité), une revue par lot thématique est recommandée
-  plutôt qu'un branchement page par page.
+- **Erreur de mon audit initial, corrigée après un signalement de
+  l'utilisateur** ("normalement ils sont accessibles car quand je suis sur
+  mon émulateur ça fonctionne") : j'avais présenté ces ~359 fichiers comme
+  "pages inaccessibles" / "contenu manquant", en confondant deux choses
+  différentes — l'existence de code mort (vrai) et l'inaccessibilité du
+  contenu pour l'utilisateur (faux).
+- **Ce qui se passe réellement**, vérifié dans
+  `lib/features/home/home_page_pa_school.dart` : la plupart des sujets PA
+  Scolarité sont **volontairement identiques** au contenu GPX Scolarité
+  (droit pénal général, sanctions, atteintes aux personnes/biens,
+  armes...). Le menu PA utilise une table de redirection active
+  (`redirectConfigPaSchool`, consultée dans `_openRouteOrDetails` à chaque
+  tap) qui bascule silencieusement vers la page GPX déjà écrite et routée,
+  au lieu d'utiliser une page PA dédiée. Les fichiers `pa_scolarite/**`
+  correspondants existent mais ne sont simplement jamais appelés — **par
+  design**, pas par bug.
+- **Vérification exhaustive faite** : extraction des 170 routes réellement
+  utilisées par le menu PA Scolarité (`route:` dans `CategoryConfig`/
+  `SubCategoryConfig`), croisées avec `RouteRegistry.routes`. Résultat :
+  **144 routées directement, 26 sont des en-têtes de catégorie** (ont des
+  `subcategories:`, donc — vérifié dans `_openRouteOrDetails` — n'ouvrent
+  jamais directement une page, juste une liste de sous-rubriques). **0
+  route de menu réellement cassée.**
+- **Ce qui reste vrai** : ~359 fichiers `pa_scolarite/**` (+ quelques-uns en
+  GPX Scolarité legacy) sont du code mort au sens strict — jamais importés
+  ni instanciés. C'est un point de propreté de code (poids du dépôt, temps
+  de build), **pas un manque de contenu pour l'utilisateur**.
+- **Gravité reclassée** : 🟡 Amélioration (nettoyage), plus 🟠/🔴.
+- **Solution** : supprimer ces fichiers par lot une fois confirmé, dossier
+  par dossier, qu'aucun n'est le seul point d'entrée d'un sujet réellement
+  distinct du GPX (à vérifier au cas par cas avant suppression en masse,
+  cette vérification round complète n'a été faite que pour le menu PA
+  Scolarité principal, pas pour d'éventuels autres points d'entrée comme la
+  recherche interne).
 
 ### ✅ C.5 — Fichiers legacy à `routeName` dupliqué (37 sur 77 nettoyés le 28/07/2026)
 
@@ -465,7 +482,7 @@ tablette (l'app déclare supporter le paysage sur iPad dans `Info.plist`).
 | 4ter | Build Android signé avec un keystore de release | ✅ Vérifié via `apksigner` — C.10c |
 | 5 | Suppression de compte disponible | ✅ Code présent (`user_page.dart`) |
 | 6 | Politique de confidentialité / CGU liées | ✅ Code présent (`legal_content.dart`, `cp_privacy_page.dart`) |
-| 7 | Toutes les routes de menu aboutissent à une page réelle | ⚠️ 435 confirmées mortes en PA/GPX Scolarité — C.4 |
+| 7 | Toutes les routes de menu aboutissent à une page réelle | ✅ Vérifié exhaustivement sur le menu PA Scolarité (144 directes + 26 en-têtes de catégorie, 0 cassée) — C.4 |
 | 8 | Aucun texte "TODO" visible en production | ✅ Vérifié : Réserve verrouillé, 0 utilisateur exposé — C.3 |
 | 9 | Quiz sans doublons | ✅ `quiz_questions` dédupliqué — C.2 ; `cas_pratique` et `quiz_scolarite` propres |
 | 10 | Signalements admin fonctionnels sur tous les types de contenu | ✅ cas pratique et quiz classiques — C.6 |
@@ -516,8 +533,6 @@ point 🔴 restant connu à ce jour — voir le verdict global en section A.
 
 ### 🟠 Important
 
-3. **Router ou supprimer les 435 pages PA/GPX Scolarité confirmées mortes**
-   (C.4) — décision éditoriale au cas par cas, prioriser PA Scolarité.
 4. ✅ **[FAIT — 28/07/2026]** Brancher les signalements des quiz classiques
    (`report_question`) sur `admin_reports_unified` / `admin_resolve_report`.
    Migration `20260729010000_admin_reports_report_question.sql` appliquée et
@@ -530,8 +545,9 @@ point 🔴 restant connu à ce jour — voir le verdict global en section A.
 6. ✅ **[FAIT — 29/07/2026]** Corriger les 260 policies RLS
    `auth_rls_initplan`. Migration `20260729020000_rls_initplan_perf_fix.sql`
    appliquée ; advisor de performance confirme 0 occurrence restante.
-7. **Vérifier le manifeste Android fusionné** sur un build réel, en
-   particulier `POST_NOTIFICATIONS` (C.10).
+7. ✅ **[FAIT — 29/07/2026]** Vérifier le manifeste Android fusionné sur un
+   build réel (C.10a) — `POST_NOTIFICATIONS` et toutes les permissions
+   attendues confirmées présentes.
 8. ✅ **[FAIT — 28/07/2026]** Nettoyer les fichiers legacy à `routeName`
    dupliqué confirmés 100% morts (37/77, voir C.5). Les 40 restants sont
    réellement utilisés — pas d'action à mener dessus.
@@ -548,15 +564,23 @@ point 🔴 restant connu à ce jour — voir le verdict global en section A.
 14. Nettoyer les 31 `print(` restants vers le logger applicatif.
 15. Trancher les 2 doublons de questions cross-module dans
     `quiz_scolarite_questions` (C.9).
+16. **Nettoyer les ~359 fichiers PA Scolarité confirmés inutilisés** (C.4,
+    rectifié le 29/07/2026 — 0 impact utilisateur, contenu servi via
+    redirection vers l'équivalent GPX déjà routé). Vérifier au cas par cas
+    avant suppression en masse qu'aucun n'est un point d'entrée non couvert
+    par l'audit du menu principal (recherche interne notamment, non
+    vérifiée).
 
 ### 🔵 Évolutions futures
 
-16. Crawl automatisé des menus pour détecter les pages routées mais jamais
-    liées depuis aucun menu (« orphelines » au sens inverse de C.4).
-17. Mettre en place un test de non-régression automatisé sur le routing
+17. Crawl automatisé des menus (y compris recherche interne) pour détecter
+    d'éventuelles pages routées mais jamais liées depuis aucun point d'entrée
+    (« orphelines » au sens inverse de C.4) — l'audit du 29/07 n'a couvert
+    que le menu principal PA Scolarité.
+18. Mettre en place un test de non-régression automatisé sur le routing
     (script similaire à celui utilisé pour cet audit, à intégrer en CI) pour
     empêcher qu'une future page reparte non routée.
-18. Étendre la déduplication `quiz_questions` à une politique d'insertion qui
+19. Étendre la déduplication `quiz_questions` à une politique d'insertion qui
     empêche la réintroduction de doublons (contrainte `UNIQUE(module,
     category, question)` ou vérification applicative avant insert).
 

@@ -1,0 +1,234 @@
+##### GPX #####
+
+[CAT] Généralités  (route=/gpx_scolarite_pages/generalite_pages, resolved=NOT_FOUND)
+   - Classification des infractions  =>  /gpx/generalites/classification_infractions  [ClassificationInfractionsPage]
+   - L\'infraction  =>  /gpx/generalites/infraction_intro  [InfractionIntroPage]
+   - La tentative punissable  =>  /gpx/generalites/tentative_intro  [TentativeIntroPage]
+   - La complicité  =>  /gpx/generalites/complicite_intro  [CompliciteIntroPage]
+   - La légitime défense  =>  /gpx/generalites/legitimedefense_intro  [LegitimeDefenseIntroPage]
+   - Cadre légal d\'usage des armes  =>  /gpx/generalites/usagedesarmes_intro  [UsageArmesIntroPage]
+   - Les libertés publiques  =>  /gpx/generalites/libertespubliques_intro  [LibertesPubliquesIntroPage]
+   - Cas de rétention dans les locaux de police  =>  /gpx/generalites/retention_locaux_police_intro  [RetentionLocauxIntroPage]
+   - La hiérarchie des personnels de la Police Nationale : Fonctions judiciaires  =>  /gpx/generalites/hierarchie_intro  [HierarchieIntroPage]
+   - Quiz généralités, classification des infractions, infraction, tentative punissable etc..  =>  /gpx/procedure_penale/quiz/generalité_principales  [final]
+
+[CAT] Cadres juridiques  (route=/gpx_scolarite_pages/cadres_juridiques_pages, resolved=NOT_FOUND)
+   - Les cadres d\'enquête  =>  /gpx/generalites/cadres_enquete_intro  [CadresEnqueteIntroPage]
+   - L’enquête de flagrant délit  =>  /gpx/generalites/flagrant_delit_intro  [FlagrantDelitIntroPage]
+   - L’enquête préliminaire  =>  /gpx/generalites/enquete_preliminaire_intro  [EnquetePreliminaireIntroPage]
+   - La commission rogatoire  =>  /gpx/generalites/commission_rogatoire_intro  [CommissionRogatoireIntroPage]
+   - Découverte d’une personne grièvement blessée  =>  /gpx/generalites/personne_blessee_intro  [PersonneBlesseGrievementntroPage]
+   - Mort de cause inconnue ou suspecte  =>  /gpx/generalites/mort_inconnue_intro  [MortInconnueIntroductionPage]
+   - Délinquance & criminalité organisées  =>  /gpx/generalites/criminalite_deliquance_intro  [CriminaliteDeliquanceIntroPage]
+   - Recherche des personnes en fuite  =>  /gpx/generalites/personnes_fuite_intro  [PersonnesFuiteIntroPage]
+   - Disparitions inquiétantes  =>  /gpx/cadres_juridiques/disparitions_inquietantes_intro  [DisparitionIntroPage]
+   - Contrôles et vérifications d’identité  =>  /gpx/generalites/flagrant_delit_intro  [FlagrantDelitIntroPage]
+   - Entraide judiciaire internationale  =>  /gpx/generalites/entraide_judiciaire_intro  [EntraideJudiciaireIntroPage]
+   - Quiz cadres juridiques, les cadres d\'enquête, l\'enquête de flagrant délit etc..  =>  /gpx/procedure_penale/quiz/cadres_juridiques_principales  [final]
+
+[CAT] Procédure Pénale  (route=/gpx_scolarite_pages/procédure_pénale_pages, resolved=NOT_FOUND)
+   - Action publique, action civile, autorités & contrôle de la PJ  =>  /gpx_scolarite_pages/procédure_pénale_pages/pp_action_publique_autorites_pj  [PPActionPubliqueAutoritesPJPage]
+   - Nullité des actes de procédure  =>  /gpx_scolarite_pages/procédure_pénale_pages/nullite_intro_page  [NulliteIntroPage]
+   - Juridictions de jugement & exécution des décisions  =>  /gpx_scolarite_pages/procédure_pénale_pages/juridictions_intro  [JuridictionIntroPage]
+   - Instruction préparatoire, mandats, contrôle jud., détention provisoire  =>  /gpx_scolarite_pages/procédure_pénale_pages/pp_instruction_mandats_controle_detention  [InstructionIntroPage]
+   - Quiz instruction préparatoire, mandats & détention provisoire  =>  /gpx/procedure_penale/quiz/instruction_preparatoire  [final]
+
+[CAT] Droit pénal général  (route=/gpx_scolarite_pages/droit_pénale_général_pages, resolved=NOT_FOUND)
+   - De la loi pénale  =>  /gpx_scolarite_pages/droit_pénale_général_pages/loi_penale  [LoiPenaleContenuPage]
+   - De la responsabilité pénale  =>  /gpx_scolarite_pages/droit_pénale_général_pages/responsabilite_penale  [ResponsabilitePenaleContenuPage]
+
+[CAT] La sanction  (route=/gpx_scolarite_pages/sanction_pages, resolved=NOT_FOUND)
+   - Classification des peines et mesures de sûreté  =>  /gpx_scolarite_pages/sanction_pages/classification_peines  [ClassificationPeinesContenuPage]
+   - Causes d’aggravation de la sanction  =>  /gpx_scolarite_pages/sanction_pages/causes_aggravation_sanction  [CausesAggravationSanctionContenuPage]
+   - Règles en cas de pluralité d’infractions  =>  /gpx_scolarite_pages/sanction_pages/pluralite_infractions  [PluraliteInfractionsContenuPage]
+   - Quiz — Sanction  (récidive, réitération, concours réel)  =>  /gpx/sanction/quiz/sanction_page  [final]
+
+[CAT] Crimes & délits contre la personne  (route=/gpx_scolarite_pages/crime_delit_contre_personne_pages, resolved=NOT_FOUND)
+   - La mise en danger de la personne  =>  /gpx_scolarite_pages/crime_delit_contre_personne_pages/mise_en_danger  [MiseEnDangerContenuPage]
+   - Le viol, l’inceste et autres agressions sexuelles  =>  /gpx_scolarite_pages/crime_delit_contre_personne_pages/viol_inceste_agressions/avertissement  [ViolIncesteAgressionsAvertissementPage]
+   - L’enlèvement et la séquestration  =>  /gpx_scolarite_pages/crime_delit_contre_personne_pages/enlevement_sequestration  [EnlevementSequestrationPage]
+   - Enregistrement & diffusion d’images  =>  /gpx_scolarite_pages/crime_delit_contre_personne_pages/enregistrement_diffusion_images  [EnregistrementDiffusionImagesContenuPage]
+   - Atteintes à la dignité de la personne  =>  /gpx_scolarite_pages/crime_delit_contre_personne_pages/dignite_personne  [DignitePersonneContenuPage]
+   - Atteintes à la personnalité  =>  /gpx_scolarite_pages/crime_delit_contre_personne_pages/personnalite  [AtteintePersonnaliteContenuPage]
+   - Atteintes involontaires à la vie et à l’intégrité  =>  /gpx_scolarite_pages/crime_delit_contre_personne_pages/atteintes_involontaires  [AtteintesInvolontairesContenuPage]
+   - Atteintes volontaires à la vie  =>  /gpx_scolarite_pages/crime_delit_contre_personne_pages/atteintes_volontaires_vie  [AtteintesVolontairesVieContenuPage]
+   - Atteintes volontaires à l’intégrité physique  =>  /gpx_scolarite_pages/crime_delit_contre_personne_pages/atteintes_volontaires_integrite  [AtteintesVolontairesIntegriteContenuPage]
+   - Quiz — Crimes & délits contre la personne  =>  /gpx/crimes_personne/quiz/crimes_delits_personne  [final]
+
+[CAT] Atteintes aux mineurs & à la famille  (route=/gpx_scolarite_pages/mineurs_famille_pages, resolved=NOT_FOUND)
+   - La mise en péril des mineurs  =>  /gpx_scolarite_pages/mineurs_famille_pages/mise_en_peril  [MiseEnPerilDesMineursPage]
+   - Violation d’ordonnances JAF (violences)  =>  /gpx_scolarite_pages/mineurs_famille_pages/violation_ordonnances_jaf  [ViolationOrdonnancesJafPage]
+   - Atteintes à l’exercice de l’autorité parentale  =>  /gpx_scolarite_pages/mineurs_famille_pages/autorite_parentale  [AutoriteParentalePage]
+   - L’abandon de famille  =>  /gpx_scolarite_pages/mineurs_famille_pages/abandon_famille  [AbandonFamillePage]
+   - Quiz — L’abandon de famille  =>  /gpx/mineurs_famille_pages/quiz/quiz_mineurs_famille  [final]
+
+[CAT] Crimes & délits contre la nation  (route=/gpx_scolarite_pages/crime_delit_nation_pages, resolved=NOT_FOUND)
+   - Association de malfaiteurs  =>  /gpx_scolarite_pages/crime_delit_nation_pages/association_malfaiteurs  [AssociationMalfaiteursPage]
+   - Abus d’autorité contre les particuliers  =>  /gpx_scolarite_pages/crime_delit_nation_pages/abus_autorite  [AbusAutoriteParticuliersContenuPage]
+   - Atteintes à l’action de la justice  =>  /gpx_scolarite_pages/crime_delit_nation_pages/atteintes_action_justice  [AtteintesActionJusticeContenuPage]
+   - Atteintes à l’administration par des particuliers  =>  /gpx_scolarite_pages/crime_delit_nation_pages/atteintes_administration  [AtteintesAdministrationContenuPage]
+   - Faux et usage de faux  =>  /gpx_scolarite_pages/crime_delit_nation_pages/faux_usage_faux  [FauxUsageFauxContenuPage]
+   - Manquements au devoir de probité  =>  /gpx_scolarite_pages/crime_delit_nation_pages/probite  [ProbiteContenuPage]
+   - Quiz — Crimes & délits contre la nation  =>  /gpx/crime_delit_nation_pages/quiz/quiz_crimes_delits_nation  [final]
+
+[CAT] Crimes & délits contre les biens  (route=/gpx_scolarite_pages/crime_delit_bien_pages, resolved=NOT_FOUND)
+   - Recel & non-justification de ressources  =>  /gpx_scolarite_pages/crime_delit_bien_pages/recel_non_justification  [RecelNonJustificationContenuPage]
+   - Le vol  =>  /gpx_scolarite_pages/crime_delit_bien_pages/vol  [VolPage]
+   - Atteintes aux STAD (informatique)  =>  /gpx_scolarite_pages/crime_delit_bien_pages/stad  [StadContenuPage]
+   - Contrefaçons & falsifications de chèques  =>  /gpx_scolarite_pages/crime_delit_bien_pages/contrefacons_falsifications  [ContrefaconsFalsificationsChequesPage]
+   - Destructions, dégradations, détériorations  =>  /gpx_scolarite_pages/crime_delit_bien_pages/destructions_degradations  [DestructionsDegradationsContenuPage]
+   - Infractions voisines du vol  =>  /gpx_scolarite_pages/crime_delit_bien_pages/voisines_du_vol  [VoisinesDuVolContenuPage]
+   - Quiz — Crimes & délits contre les biens  =>  /gpx/crime_delit_nation_pages/quiz/quiz_crimes_delits_bien  [final]
+
+[CAT] Infractions à la circulation routière  (route=/gpx_scolarite_pages/infraction_circulation_routière_pages, resolved=NOT_FOUND)
+   - Conduite après usage de stupéfiants  =>  /gpx_scolarite_pages/infraction_circulation_routière_pages/conduite_stupefiants  [ConduiteStupefiantsPage]
+   - Conduite en état d’ivresse  =>  /gpx_scolarite_pages/infraction_circulation_routière_pages/ivresse  [IvressePage]
+   - Conduite sous l’empire d’un état alcoolique  =>  /gpx_scolarite_pages/infraction_circulation_routière_pages/etat_alcoolique  [EtatAlcooliquePage]
+   - Défaut d’assurance  =>  /gpx_scolarite_pages/infraction_circulation_routière_pages/defaut_assurance  [DefautAssurancePage]
+   - Défaut de permis de conduire  =>  /gpx_scolarite_pages/infraction_circulation_routière_pages/defaut_permis  [DefautPermisPage]
+   - Délit de fuite  =>  /gpx_scolarite_pages/infraction_circulation_routière_pages/delit_fuite  [DelitFuitePage]
+   - Grand excès de vitesse  =>  /gpx_scolarite_pages/infraction_circulation_routière_pages/grand_exces_vitesse  [GrandExcesVitessePage]
+   - Refus de vérifications  =>  /gpx_scolarite_pages/infraction_circulation_routière_pages/refus_verifications  [RefusVerificationsPage]
+   - Refus d’obtempérer  =>  /gpx_scolarite_pages/infraction_circulation_routière_pages/refus_obtemperer  [RefusObtempererPage]
+   - Rodéo motorisé  =>  /gpx_scolarite_pages/infraction_circulation_routière_pages/rodeo_motorise  [RodeoMotorisePage]
+   - Plaques & inscriptions (délits liés)  =>  /gpx_scolarite_pages/infraction_circulation_routière_pages/plaques_inscriptions  [PlaquesInscriptionsPage]
+   - Incitation / organisation / promotion  =>  /gpx_scolarite_pages/infraction_circulation_routière_pages/incitation_organisation_promotion  [IncitationOrganisationPromotionPage]
+   - Quiz — Infractions à la circulation routière  =>  /gpx/infraction_circulation_routière_pages/quiz/quiz_circulation_routiere  [final]
+
+[CAT] Armes & munitions  (route=/gpx_scolarite_pages/armes_munitions_pages, resolved=NOT_FOUND)
+   - Classification des armes et des munitions  =>  /gpx_scolarite_pages/armes_munitions_pages/armes_classification  [ArmesClassificationPage]
+   - Définitions  =>  /gpx_scolarite_pages/armes_munitions_pages/armes_definitions  [ArmesDefinitionsPage]
+   - Introduction  =>  /gpx_scolarite_pages/armes_munitions_pages/armes_introduction  [ArmesIntroductionPage]
+   - Acquisition/détention cat. A ou B sans autorisation  =>  /gpx_scolarite_pages/armes_munitions_pages/armes_acquisition_detention_ab  [ArmesAcquisitionDetentionABPage]
+   - Port/transport sans motif légitime (cat. C ou D)  =>  /gpx_scolarite_pages/armes_munitions_pages/armes_port_transport_cd  [ArmesPortTransportCDPage]
+   - Régimes matériels de guerre / éléments d’arme  =>  /gpx_scolarite_pages/armes_munitions_pages/armes_materiels_guerre_elements  [ArmesMaterielsGuerreElementsPage]
+   - Règles d’acquisition & détention  =>  /gpx_scolarite_pages/armes_munitions_pages/armes_regles_acquisition_detention  [ArmesReglesAcquisitionDetentionPage]
+   - Règles de port & transport  =>  /gpx_scolarite_pages/armes_munitions_pages/armes_regles_port_transport  [ArmesReglesPortTransportPage]
+   - Quiz — Classification des armes et des munitions  =>  /gpx/armes_munitions_pages/quiz/quiz_armes_munitions_pages  [final]
+
+[CAT] Libertés publiques  (route=/gpx/generalites/libertespubliques_intro, resolved=LibertesPubliquesIntroPage)
+
+[CAT] Stupéfiants — usage & trafic  (route=/gpx_scolarite_pages/stupéfiants_pages, resolved=NOT_FOUND)
+   - Introduction  =>  /gpx_scolarite_pages/stupéfiants_pages/introduction  [StupefiantsIntroductionPage]
+   - Cession/offre illicites pour consommation personnelle  =>  /gpx_scolarite_pages/stupéfiants_pages/cession_offre  [StupefiantsCessionOffrePage]
+   - Direction/organisation d’un trafic  =>  /gpx_scolarite_pages/stupéfiants_pages/direction_organisation  [StupefiantsDirectionOrganisationPage]
+   - Facilitation à l’usage illicite  =>  /gpx_scolarite_pages/stupéfiants_pages/facilitation_usage  [StupefiantsFacilitationUsagePage]
+   - Production/fabrication illicites  =>  /gpx_scolarite_pages/stupéfiants_pages/production_fabrication  [StupefiantsProductionFabricationPage]
+   - Provocation d’un majeur à l’usage ou au trafic  =>  /gpx_scolarite_pages/stupéfiants_pages/provocation_majeur  [StupefiantsProvocationMajeurPage]
+   - Blanchiment du produit du trafic  =>  /gpx_scolarite_pages/stupéfiants_pages/blanchiment_produit  [StupefiantsBlanchimentProduitPage]
+   - Transport/détention/offre/cession/acquisition/emploi  =>  /gpx_scolarite_pages/stupéfiants_pages/transport_detention_offre  [StupefiantsTransportDetentionOffrePage]
+   - Importation/exportation illicites  =>  /gpx_scolarite_pages/stupéfiants_pages/import_export  [StupefiantsImportExportPage]
+   - Usage illicite de stupéfiants  =>  /gpx_scolarite_pages/stupéfiants_pages/usage_illicite  [StupefiantsUsageIllicitePage]
+   - Quiz — Stupéfiants — usage & trafic  =>  /gpx/stupéfiants_pages/quiz/quiz_stupéfiants  [final]
+
+
+##### PA #####
+
+[CAT] Généralités  (route=/pa/dps_dpg/socle_initial/generalites, resolved=NOT_FOUND)
+   - Classification des infractions  =>  /gpx/generalites/classification_infractions  [ClassificationInfractionsPage]
+   - L’infraction  =>  /gpx/generalites/infraction_intro  [InfractionIntroPage]
+   - La tentative punissable  =>  /gpx/generalites/tentative_intro  [TentativeIntroPage]
+   - La complicité  =>  /gpx/generalites/complicite_intro  [CompliciteIntroPage]
+   - La légitime défense  =>  /gpx/generalites/legitimedefense_intro  [LegitimeDefenseIntroPage]
+   - Cadre légal d’usage des armes  =>  /gpx/generalites/usagedesarmes_intro  [UsageArmesIntroPage]
+   - Les libertés publiques  =>  /gpx/generalites/libertespubliques_intro  [LibertesPubliquesIntroPage]
+   - Rétention dans les locaux de police  =>  /gpx/generalites/retention_locaux_police_intro  [RetentionLocauxIntroPage]
+
+[CAT] Hiérarchie — fonctions judiciaires  (route=/pa/dps_dpg/socle_initial/hierarchie, resolved=NOT_FOUND)
+   - Hiérarchie des personnels de la Police Nationale  =>  /gpx/generalites/hierarchie_intro  [HierarchieIntroPage]
+
+[CAT] Cadres juridiques  (route=/pa/dps_dpg/socle_initial/cadres_juridiques, resolved=NOT_FOUND)
+   - La commission rogatoire  =>  /pa/dps_dpg/cadres_juridiques/commission_rogatoire_intro  [PaCommissionRogatoireIntroPage]
+   - Mort de cause inconnue ou suspecte  =>  /pa/dps_dpg/cadres_juridiques/mort_inconnue/intro  [PaMortInconnueIntroPage]
+   - Délinquance & criminalité organisées  =>  /pa/dps_dpg/cadres_juridiques/criminalite_organisee_contenu  [PaCriminaliteOrganiseeContenuPage]
+   - Recherche des personnes en fuite  =>  /pa/dps_dpg/cadres_juridiques/recherche_personnes_fuite/intro  [PaPersonnesFuiteIntroGpxSchool]
+   - Disparitions inquiétantes  =>  /pa/dps_dpg/cadres_juridiques/disparitions_inquietantes_intro  [PaDisparitionIntroPage]
+
+[CAT] Circulation routière  (route=/pa/dps_dpg/socle_initial/circulation, resolved=NOT_FOUND)
+   - Compétences des agents verbalisateurs  =>  /pa/dps_dpg/socle_initial/circulation/agents_verbalisateurs  [AgentsVerbalisateursCirculationPage]
+   - Conduite après usage de stupéfiants  =>  /pa/dps_dpg/socle_initial/circulation/conduite_stupefiants  [PaConduiteStupefiantsPage]
+   - Défaut de permis de conduire  =>  /pa/dps_dpg/socle_initial/circulation/defaut_permis  [PaDefautPermisPage]
+   - Délit de fuite  =>  /pa/dps_dpg/socle_initial/circulation/delit_fuite  [PaDelitFuitePage]
+   - Grand excès de vitesse  =>  /pa/dps_dpg/socle_initial/circulation/grand_exces_vitesse  [PaGrandExcesVitessePage]
+   - Refus de vérifications  =>  /pa/dps_dpg/socle_initial/circulation/refus_verifications  [PaRefusVerificationsPage]
+   - Rodéo motorisé  =>  /pa/dps_dpg/socle_initial/circulation/rodeo_motorise  [PaRodeoMotorisePage]
+   - Plaques & inscriptions (délits liés)  =>  /pa/dps_dpg/socle_initial/circulation/plaques_inscriptions  [PaPlaquesInscriptionsPage]
+   - Incitation / organisation / promotion  =>  /pa/dps_dpg/socle_initial/circulation/incitation_organisation_promotion  [PaIncitationOrganisationPromotionPage]
+   - Quiz — Infractions à la circulation routière  =>  /pa/dps_dpg/quiz/quiz_circulation_routiere  [final]
+
+[CAT] Organisation judiciaire  (route=/pa/dps_dpg/socle_initial/organisation_judiciaire, resolved=NOT_FOUND)
+   - L’organisation judiciaire  =>  /pa/dps_dpg/socle_initial/organisation_judiciaire/organisation  [PaOrganisationJudiciaireHubPage]
+   - La magistrature  =>  /pa/dps_dpg/socle_initial/organisation_judiciaire/magistrature  [JuridictionsPenalesPage]
+
+[CAT] Atteintes aux biens  (route=/pa/dps_dpg/socle_initial/atteintes_biens, resolved=NOT_FOUND)
+   - Le vol  =>  /pa/dps_dpg/socle_initial/atteintes_biens/vol  [PaVolPage]
+   - Destructions, dégradations, détériorations  =>  /pa/dps_dpg/socle_initial/atteintes_biens/destructions  [PaDestructionsDegradationsContenuPage]
+   - Infractions sans danger pour les personnes  =>  /pa/dps_dpg/socle_initial/atteintes_biens/sans_danger_personnes  [PaSansDangerDommageLegerPage]
+   - Infractions dangereuses pour les personnes  =>  /pa/dps_dpg/socle_initial/atteintes_biens/dangereuses_personnes  [PaDestructionsDangereusesPersonnesIntentionnellePage]
+   - Tags et graffitis  =>  /pa/dps_dpg/socle_initial/atteintes_biens/tags_graffitis  [PaTagsInscriptionsSignesDessinsPage]
+
+[CAT] Atteintes aux personnes  (route=/pa/dps_dpg/socle_initial/atteintes_personnes, resolved=NOT_FOUND)
+   - Les discriminations  =>  /pa/dps_dpg/socle_initial/atteintes_personnes/discriminations  [PaDiscriminationsPage]
+   - Les violences volontaires  =>  /pa/dps_dpg/socle_initial/atteintes_personnes/violences_volontaires  [PaAtteintesVolontairesIntegriteContenuPage]
+   - Les violences habituelles  =>  /pa/dps_dpg/socle_initial/atteintes_personnes/violences_habituelles  [PaViolencesHabituellesCoupleExPage]
+   - Violences contre les forces de sécurité intérieure  =>  /pa/dps_dpg/socle_initial/atteintes_personnes/violences_fsi  [PaViolencesSurFsiPage]
+   - Atteintes volontaires à la vie  =>  /pa/dps_dpg/socle_initial/atteintes_personnes/atteintes_vie  [PaAtteintesVolontairesVieContenuPage]
+   - Le viol  =>  /pa/dps_dpg/socle_initial/atteintes_personnes/viol  [PaViolIncesteAgressionsContenuPage]
+   - Agressions sexuelles  =>  /pa/dps_dpg/socle_initial/atteintes_personnes/agressions_sexuelles  [PaAgressionsSexuellesAutresQueViolPage]
+   - Harcèlement sexuel  =>  /pa/dps_dpg/socle_initial/atteintes_personnes/harcelement_sexuel  [PaHarcelementSexuelPage]
+   - Exhibition sexuelle  =>  /pa/dps_dpg/socle_initial/atteintes_personnes/exhibition  [PaExhibitionSexuellePage]
+   - Mise en péril des mineurs  =>  /pa/dps_dpg/socle_initial/atteintes_personnes/mineurs_mise_en_peril  [PaMiseEnPerilDesMineursPage]
+   - Atteinte à l’intimité d’une personne  =>  /pa/dps_dpg/socle_initial/atteintes_personnes/atteinte_intimite  [PaAtteintePersonnaliteContenuPage]
+   - Outrage sexiste et sexuel  =>  /pa/dps_dpg/socle_initial/atteintes_personnes/outrage_sexiste  [PaOutrageSexistePage]
+
+[CAT] Autorité de l’État  (route=/pa/dps_dpg/socle_initial/autorite_etat, resolved=NOT_FOUND)
+   - Refus d’obtempérer  =>  /pa/dps_dpg/socle_initial/autorite_etat/refus_obtemperer  [PaRefusObtempererPage]
+   - L’outrage  =>  /pa/dps_dpg/socle_initial/autorite_etat/outrage  [PaAtteintesAdministrationContenuPage]
+   - La rébellion  =>  /pa/dps_dpg/socle_initial/autorite_etat/rebellion  [PaRebellionPage]
+   - Provocation directe à la rébellion  =>  /pa/dps_dpg/socle_initial/autorite_etat/provocation_rebellion  [PaProvocationDirecteRebellionPage]
+
+[CAT] Généralités  (route=/pa/dps_dpg/socle_avance/generalites, resolved=NOT_FOUND)
+   - Le droit pénal  =>  /pa/dps_dpg/socle_avance/generalites/droit_penal  [PaLoiPenaleContenuPage]
+   - Immunités et inviolabilités  =>  /pa/dps_dpg/socle_avance/generalites/immunites_inviolabilites  [PaGPXSchoolEtendueApplicationLoisPage]
+   - La responsabilité pénale  =>  /pa/dps_dpg/socle_avance/generalites/responsabilite_penale  [PaResponsabilitePenalePage]
+
+[CAT] Acteurs de la Police Judiciaire  (route=/pa/dps_dpg/socle_avance/acteurs_pj, resolved=NOT_FOUND)
+   - Compétences des OPJ  =>  /pa/dps_dpg/socle_avance/acteurs_pj/opj  [HierarchieOpjPage]
+   - Compétences des APJ  =>  /pa/dps_dpg/socle_avance/acteurs_pj/apj  [HierarchieApjPage]
+   - Assistants d’enquête  =>  /pa/dps_dpg/socle_avance/acteurs_pj/assistants_enquete  [HierarchieAssistantsEnquetePage]
+   - Prérogatives judiciaires (OPJ / APJ / APJA)  =>  /pa/dps_dpg/socle_avance/acteurs_pj/prerogatives  [PaAutoriteInvestiesLoiPage]
+   - Le procureur de la République  =>  /pa/dps_dpg/socle_avance/acteurs_pj/procureur  [PaPPOrganisationMinisterePublicContenuPage]
+   - Le juge d’instruction  =>  /pa/dps_dpg/socle_avance/acteurs_pj/juge_instruction  [JugeInstructionPage]
+
+[CAT] Atteintes aux biens  (route=/pa/dps_dpg/socle_avance/atteintes_biens, resolved=NOT_FOUND)
+   - L’extorsion  =>  /pa/dps_dpg/socle_avance/atteintes_biens/extorsion  [PaExtorsionPage]
+   - L’escroquerie  =>  /pa/dps_dpg/socle_avance/atteintes_biens/escroquerie  [PaEscroqueriePage]
+   - L’abus de confiance  =>  /pa/dps_dpg/socle_avance/atteintes_biens/abus_confiance  [PaAbusDeConfiancePage]
+   - La filouterie  =>  /pa/dps_dpg/socle_avance/atteintes_biens/filouterie  [PaFilouteriesPage]
+   - Le recel  =>  /pa/dps_dpg/socle_avance/atteintes_biens/recel  [PaRecelPage]
+   - Abstention volontaire de combattre un sinistre  =>  /pa/dps_dpg/socle_avance/atteintes_biens/abstention_sinistre  [PaAtteintesVolontairesIntegriteContenuPage]
+
+[CAT] Atteintes aux personnes  (route=/pa/dps_dpg/socle_avance/atteintes_personnes, resolved=NOT_FOUND)
+   - Atteintes involontaires à la vie et à l’intégrité  =>  /pa/dps_dpg/socle_avance/atteintes_personnes/involontaires  [PaAtteintesInvolontairesContenuPage]
+   - Menaces contre les personnes  =>  /pa/dps_dpg/socle_avance/atteintes_personnes/menaces  [PaMenaceSansConditionPage]
+   - Entrave volontaire à l’arrivée des secours  =>  /pa/dps_dpg/socle_avance/atteintes_personnes/entrave_secours  [PaMiseEnDangerContenuPage]
+   - Non-obstacle à la commission d’un crime ou délit  =>  /pa/dps_dpg/socle_avance/atteintes_personnes/non_obstacle  [PaNonObstacleCommissionCrimeDelitPage]
+   - Non-assistance à personne en péril  =>  /pa/dps_dpg/socle_avance/atteintes_personnes/non_assistance  [PaNonAssistancePersonnePerilPage]
+   - Appels téléphoniques malveillants  =>  /pa/dps_dpg/socle_avance/atteintes_personnes/appels_malveillants  [PaAppelsMessagesMalveillantsAgressionsSonoresPage]
+   - Risque causé à autrui  =>  /pa/dps_dpg/socle_avance/atteintes_personnes/risque_autrui  [PaRisqueCauseAutruiPage]
+
+[CAT] Délits routiers  (route=/pa/dps_dpg/socle_avance/delits_routiers, resolved=NOT_FOUND)
+   - Rodéo motorisé  =>  /pa/dps_dpg/socle_avance/delits_routiers/rodeo  [PaRodeoMotorisePage]
+   - Incitation / organisation / promotion  =>  /pa/dps_dpg/socle_avance/delits_routiers/incitation  [PaIncitationOrganisationPromotionPage]
+   - Délit de fuite  =>  /pa/dps_dpg/socle_avance/delits_routiers/delit_fuite  [PaDelitFuitePage]
+   - Refus d’obtempérer  =>  /pa/dps_dpg/socle_avance/delits_routiers/refus_obtemperer  [PaRefusObtempererPage]
+   - Autres délits routiers (alcool, stup, permis, vérifications…)  =>  /pa/dps_dpg/socle_avance/delits_routiers/autres  [PaEtatAlcooliquePage]
+
+[CAT] Autorité de l’État  (route=/pa/dps_dpg/socle_avance/autorite_etat, resolved=NOT_FOUND)
+   - Menaces envers les dépositaires de l’autorité publique  =>  /pa/dps_dpg/socle_avance/autorite_etat/menaces  [PaMenacesEnversDepositaireAutoritePage]
+   - Corruption passive  =>  /pa/dps_dpg/socle_avance/autorite_etat/corruption_passive  [PaCorruptionPage]
+   - Corruption active  =>  /pa/dps_dpg/socle_avance/autorite_etat/corruption_active  [PaCorruptionPage]
+
+[CAT] Stupéfiants  (route=/pa/dps_dpg/socle_avance/stupefiants, resolved=NOT_FOUND)
+   - Usage illicite de stupéfiants  =>  /pa/dps_dpg/socle_avance/stupefiants/usage_illicite  [PaStupefiantsUsageIllicitePage]
+   - Cession / offre illicites (consommation personnelle)  =>  /pa/dps_dpg/socle_avance/stupefiants/cession_offre  [PaStupefiantsCessionOffrePage]

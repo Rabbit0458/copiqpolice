@@ -3585,44 +3585,44 @@ const Map<GpxSchoolProgram, List<CategoryConfig>> gpxSchoolCategoriesConfig = {
       label: 'Organisation de la Police Nationale',
       badge: 'Structures & rôles',
       image: 'assets/images/background.jpeg',
-      route: '/pa/institution/organisation_pn',
+      route: '/gpx/institution/organisation_pn',
       subcategories: [
         SubCategoryConfig(
           label: 'Organigramme du Ministère de l’Intérieur',
-          route: '/pa/institution/organisation_pn/organigramme_mi',
+          route: '/gpx/institution/organisation_pn/organigramme_mi',
           image: 'assets/images/organigramme_mi.jpeg',
         ),
         SubCategoryConfig(
           label: 'Organisation & Direction de la Police Nationale',
-          route: '/pa/institution/organisation_pn/organisation',
+          route: '/gpx/institution/organisation_pn/organisation',
         ),
         SubCategoryConfig(
           label: 'Direction générale de la sécurité intérieure',
-          route: '/pa/institution/organisation_pn/dgsi',
+          route: '/gpx/institution/organisation_pn/dgsi',
           image: 'assets/images/dgsi.jpeg',
         ),
         SubCategoryConfig(
           label: 'Préfecture de police',
-          route: '/pa/institution/organisation_pn/prefecture_police',
+          route: '/gpx/institution/organisation_pn/prefecture_police',
           image: 'assets/images/prefecture_police.jpeg',
         ),
         SubCategoryConfig(
           label: 'Organigrammes',
-          route: '/pa/institution/organisation_pn/organigrammes',
+          route: '/gpx/institution/organisation_pn/organigrammes',
         ),
         SubCategoryConfig(
           label: 'Hiérarchie des personnels de la Police Nationale',
-          route: '/pa/institution/organisation_pn/hierarchie',
+          route: '/gpx/institution/organisation_pn/hierarchie',
           image: 'assets/images/hierarchie_police.jpeg',
         ),
         SubCategoryConfig(
           label: 'Règles d’emploi des policiers adjoints',
-          route: '/pa/institution/organisation_pn/regles_emploi_pa',
+          route: '/gpx/institution/organisation_pn/regles_emploi_pa',
           image: 'assets/images/regles_emploi_pa.jpeg',
         ),
         SubCategoryConfig(
           label: 'Horaires de service en sécurité publique',
-          route: '/pa/institution/organisation_pn/horaires_service_sp',
+          route: '/gpx/institution/organisation_pn/horaires_service_sp',
           image: 'assets/images/horaires_service_sp.jpeg',
         ),
         SubCategoryConfig(

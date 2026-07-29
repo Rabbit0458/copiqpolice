@@ -3493,6 +3493,11 @@ const Map<PaSchoolProgram, List<CategoryConfig>> paSchoolCategoriesConfig = {
           route: '/pa/institution/organisation_pn/horaires_service_sp',
           image: 'assets/images/horaires_service_sp.jpeg',
         ),
+        SubCategoryConfig(
+          label: 'Quiz — Organisation de la Police Nationale',
+          route: '/pa/institution/organisation_pn/quiz',
+          image: 'assets/images/quiz.jpeg',
+        ),
       ],
     ),
     CategoryConfig(
@@ -3533,6 +3538,11 @@ const Map<PaSchoolProgram, List<CategoryConfig>> paSchoolCategoriesConfig = {
           label: 'Usage des réseaux sociaux',
           route: '/pa/institution/deontologie/reseaux_sociaux',
           image: 'assets/images/reseaux_sociaux.jpg',
+        ),
+        SubCategoryConfig(
+          label: 'Quiz — Déontologie',
+          route: '/pa/institution/deontologie/quiz',
+          image: 'assets/images/quiz.jpeg',
         ),
       ],
     ),
@@ -3589,6 +3599,11 @@ const Map<PaSchoolProgram, List<CategoryConfig>> paSchoolCategoriesConfig = {
           route: '/pa/institution/accueil_public/protection_locaux',
           image: 'assets/images/protection_locaux.jpeg',
         ),
+        SubCategoryConfig(
+          label: 'Quiz — Accueil du public',
+          route: '/pa/institution/accueil_public/quiz',
+          image: 'assets/images/quiz.jpeg',
+        ),
       ],
     ),
     CategoryConfig(
@@ -3611,6 +3626,11 @@ const Map<PaSchoolProgram, List<CategoryConfig>> paSchoolCategoriesConfig = {
           label: 'Principaux rites & pratiques des cultes en France',
           route: '/pa/institution/laicite/rites_cultes',
           image: 'assets/images/rites_cultes.jpeg',
+        ),
+        SubCategoryConfig(
+          label: 'Quiz — Laïcité',
+          route: '/pa/institution/laicite/quiz',
+          image: 'assets/images/image6.jpg',
         ),
       ],
     ),
@@ -3637,35 +3657,35 @@ const Map<PaSchoolProgram, List<CategoryConfig>> paSchoolCategoriesConfig = {
       subcategories: [
         SubCategoryConfig(
           label: 'Classification des infractions',
-          route: '/gpx/generalites/classification_infractions',
+          route: '/pa/dps_dpg/socle_initial/generalites/classification_infractions',
         ),
         SubCategoryConfig(
           label: 'L’infraction',
-          route: '/gpx/generalites/infraction_intro',
+          route: '/pa/dps_dpg/socle_initial/generalites/infraction_intro',
         ),
         SubCategoryConfig(
           label: 'La tentative punissable',
-          route: '/gpx/generalites/tentative_intro',
+          route: '/pa/dps_dpg/socle_initial/generalites/tentative_intro',
         ),
         SubCategoryConfig(
           label: 'La complicité',
-          route: '/gpx/generalites/complicite_intro',
+          route: '/pa/dps_dpg/socle_initial/generalites/complicite_intro',
         ),
         SubCategoryConfig(
           label: 'La légitime défense',
-          route: '/gpx/generalites/legitimedefense_intro',
+          route: '/pa/dps_dpg/socle_initial/generalites/legitimedefense_intro',
         ),
         SubCategoryConfig(
           label: 'Cadre légal d’usage des armes',
-          route: '/gpx/generalites/usagedesarmes_intro',
+          route: '/pa/dps_dpg/socle_initial/generalites/usagedesarmes_intro',
         ),
         SubCategoryConfig(
           label: 'Les libertés publiques',
-          route: '/gpx/generalites/libertespubliques_intro',
+          route: '/pa/dps_dpg/libertes_publiques_intro',
         ),
         SubCategoryConfig(
           label: 'Rétention dans les locaux de police',
-          route: '/gpx/generalites/retention_locaux_police_intro',
+          route: '/pa/dps_dpg/socle_initial/generalites/retention_locaux_police_intro',
         ),
       ],
     ),
@@ -3678,7 +3698,7 @@ const Map<PaSchoolProgram, List<CategoryConfig>> paSchoolCategoriesConfig = {
       subcategories: [
         SubCategoryConfig(
           label: 'Hiérarchie des personnels de la Police Nationale',
-          route: '/gpx/generalites/hierarchie_intro',
+          route: '/pa/dps_dpg/socle_initial/hierarchie/hierarchie_intro',
         ),
       ],
     ),
@@ -3726,6 +3746,56 @@ const Map<PaSchoolProgram, List<CategoryConfig>> paSchoolCategoriesConfig = {
           label: 'Disparitions inquiétantes',
           route:
               '/pa/dps_dpg/cadres_juridiques/disparitions_inquietantes_intro',
+        ),
+      ],
+    ),
+
+    CategoryConfig(
+      label: 'Armes & munitions',
+      badge: 'Régimes spéciaux',
+      image: 'assets/images/armes_munitions.jpeg',
+      route: '/pa/dps_dpg/socle_initial/armes_munitions',
+      subcategories: [
+        SubCategoryConfig(
+          label: 'Classification des armes et des munitions',
+          route: '/pa/dps_dpg/armes_munitions_pages/armes_classification',
+        ),
+        SubCategoryConfig(
+          label: 'Définitions',
+          route: '/pa/dps_dpg/armes_munitions_pages/armes_definitions',
+        ),
+        SubCategoryConfig(
+          label: 'Introduction',
+          route: '/pa/dps_dpg/armes_munitions_pages/armes_introduction',
+        ),
+        SubCategoryConfig(
+          label: 'Acquisition/détention cat. A ou B sans autorisation',
+          route:
+              '/pa/dps_dpg/armes_munitions_pages/armes_acquisition_detention_ab',
+        ),
+        SubCategoryConfig(
+          label: 'Port/transport sans motif légitime (cat. C ou D)',
+          route: '/pa/dps_dpg/armes_munitions_pages/armes_port_transport_cd',
+        ),
+        SubCategoryConfig(
+          label: 'Régimes matériels de guerre / éléments d’arme',
+          route:
+              '/pa/dps_dpg/armes_munitions_pages/armes_materiels_guerre_elements',
+        ),
+        SubCategoryConfig(
+          label: 'Règles d’acquisition & détention',
+          route:
+              '/pa/dps_dpg/armes_munitions_pages/armes_regles_acquisition_detention',
+        ),
+        SubCategoryConfig(
+          label: 'Règles de port & transport',
+          route:
+              '/pa/dps_dpg/armes_munitions_pages/armes_regles_port_transport',
+        ),
+        SubCategoryConfig(
+          label: 'Quiz — Classification des armes et des munitions',
+          route: '/pa/armes_munitions_pages/quiz/pa_quiz_armes_munitions_pages',
+          image: 'assets/images/quiz.jpeg',
         ),
       ],
     ),
@@ -4244,7 +4314,7 @@ const Map<PaSchoolProgram, List<CategoryConfig>> paSchoolCategoriesConfig = {
         ),
         SubCategoryConfig(
           label: 'Quiz — Procédures circulation',
-          route: '/pa/infraction_circulation_routière_pages/quiz/pa_quiz_circulation_routiere',
+          route: '/pa/memento_circulation/procedures/quiz',
           image: 'assets/images/quiz.jpeg',
         ),
       ],
@@ -4291,7 +4361,7 @@ const Map<PaSchoolProgram, List<CategoryConfig>> paSchoolCategoriesConfig = {
         ),
         SubCategoryConfig(
           label: 'Quiz — Contrôle routier',
-          route: '/pa/infraction_circulation_routière_pages/quiz/pa_quiz_circulation_routiere',
+          route: '/pa/memento_circulation/controle_routier/quiz',
           image: 'assets/images/quiz.jpeg',
         ),
       ],
@@ -4363,7 +4433,7 @@ const Map<PaSchoolProgram, List<CategoryConfig>> paSchoolCategoriesConfig = {
         ),
         SubCategoryConfig(
           label: 'Quiz — Équipements',
-          route: '/pa/infraction_circulation_routière_pages/quiz/pa_quiz_circulation_routiere',
+          route: '/pa/memento_circulation/equipements/quiz',
           image: 'assets/images/quiz.jpeg',
         ),
       ],

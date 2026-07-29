@@ -302,6 +302,26 @@ class RouteRegistry {
         const QuizScolariteDynamiquePage(module: 'gpx_circulation_procedures'),
 
     // ═══════════════════════════════════════════════════════════════════
+    //  PA SCOLARITE — Quiz de parité avec GPX (audit du 29/07/2026)
+    //
+    //  Ces 4 sujets ont un cours PA identique au cours GPX mais n'avaient
+    //  aucun quiz PA dédié — le quiz GPX existait, pas son équivalent PA.
+    //  Contenu dupliqué depuis les modules gpx_* correspondants (décision
+    //  utilisateur : cours identiques, retour utilisateur/quiz doivent
+    //  rester séparés par piste pour un suivi de progression correct).
+    // ═══════════════════════════════════════════════════════════════════
+    '/pa/institution/laicite/quiz': (_) =>
+        const QuizScolariteDynamiquePage(module: 'pa_institution_laicite'),
+    '/pa/memento_circulation/controle_routier/quiz': (_) =>
+        const QuizScolariteDynamiquePage(
+          module: 'pa_circulation_controle_routier',
+        ),
+    '/pa/memento_circulation/equipements/quiz': (_) =>
+        const QuizScolariteDynamiquePage(module: 'pa_circulation_equipements'),
+    '/pa/memento_circulation/procedures/quiz': (_) =>
+        const QuizScolariteDynamiquePage(module: 'pa_circulation_procedures'),
+
+    // ═══════════════════════════════════════════════════════════════════
     //  GPX SCOLARITE — MODULE « DIMENSION HUMAINE »
     //
     //  Le module figurait dans le menu mais n'avait jamais ete code :
@@ -521,6 +541,22 @@ class RouteRegistry {
     ArmesPortTransportCDPage.routeName: (_) => const ArmesPortTransportCDPage(),
     ArmesReglesAcquisitionDetentionPage.routeName: (_) => const ArmesReglesAcquisitionDetentionPage(),
     ArmesReglesPortTransportPage.routeName: (_) => const ArmesReglesPortTransportPage(),
+    // PA — Armes & munitions (catégorie dédiée, câblée le 29/07/2026,
+    // séparation stricte PA/GPX)
+    PaArmesAcquisitionDetentionABPage.routeName: (_) =>
+        const PaArmesAcquisitionDetentionABPage(),
+    PaArmesClassificationPage.routeName: (_) =>
+        const PaArmesClassificationPage(),
+    PaArmesDefinitionsPage.routeName: (_) => const PaArmesDefinitionsPage(),
+    PaArmesIntroductionPage.routeName: (_) => const PaArmesIntroductionPage(),
+    PaArmesMaterielsGuerreElementsPage.routeName: (_) =>
+        const PaArmesMaterielsGuerreElementsPage(),
+    PaArmesPortTransportCDPage.routeName: (_) =>
+        const PaArmesPortTransportCDPage(),
+    PaArmesReglesAcquisitionDetentionPage.routeName: (_) =>
+        const PaArmesReglesAcquisitionDetentionPage(),
+    PaArmesReglesPortTransportPage.routeName: (_) =>
+        const PaArmesReglesPortTransportPage(),
     RecelNonJustificationContenuPage.routeName: (_) => const RecelNonJustificationContenuPage(),
     VolPage.routeName: (_) => const VolPage(),
     LibertesPubliquesIntroductionContenuPage.routeName: (_) => const LibertesPubliquesIntroductionContenuPage(),
@@ -894,6 +930,28 @@ class RouteRegistry {
     ClassificationInfractionsPage.routeName: (_) =>
         const ClassificationInfractionsPage(),
     HierarchieIntroPage.routeName: (_) => const HierarchieIntroPage(),
+    // PA — pages dédiées "Généralités" / "Hiérarchie" (séparation stricte PA/GPX)
+    PaClassificationInfractionsPage.routeName: (_) =>
+        const PaClassificationInfractionsPage(),
+    PaInfractionIntroPage.routeName: (_) => const PaInfractionIntroPage(),
+    PaTentativeIntroPage.routeName: (_) => const PaTentativeIntroPage(),
+    PaCompliciteIntroPage.routeName: (_) => const PaCompliciteIntroPage(),
+    PaLegitimeDefenseIntroPage.routeName: (_) =>
+        const PaLegitimeDefenseIntroPage(),
+    PaUsageArmesIntroPage.routeName: (_) => const PaUsageArmesIntroPage(),
+    PaLibertesPubliquesIntroPage.routeName: (_) =>
+        const PaLibertesPubliquesIntroPage(),
+    PaRetentionLocauxIntroPage.routeName: (_) =>
+        const PaRetentionLocauxIntroPage(),
+    PaHierarchieIntroPage.routeName: (_) => const PaHierarchieIntroPage(),
+    // PA — pages "Contenu" dédiées, câblées comme cibles des intro pages
+    // ci-dessus (audit du 29/07/2026 : ces intro pages redirigeaient encore
+    // vers le contenu GPX partagé au lieu de leur contenu PA existant)
+    PaClassificationInfractionsContenuPageLoiPenal.routeName: (_) =>
+        const PaClassificationInfractionsContenuPageLoiPenal(),
+    PaGPXSchoolElementsConstitutifsInfractionPage.routeName: (_) =>
+        const PaGPXSchoolElementsConstitutifsInfractionPage(),
+    TentativeContenuPagePA.routeName: (_) => const TentativeContenuPagePA(),
     HierarchieContenuPage.routeName: (_) => const HierarchieContenuPage(),
     HierarchieOpjPage.routeName: (_) => const HierarchieOpjPage(),
     HierarchieApjPage.routeName: (_) => const HierarchieApjPage(),
@@ -1045,16 +1103,35 @@ class RouteRegistry {
         const FormationInitialePolicierAdjointPage(),
     MementoPriseDeNotesMethodologiePage.routeName: (_) =>
         const MementoPriseDeNotesMethodologiePage(),
-    OrganigrammeMinistereInterieurPage.routeName: (_) =>
+    // GPX — pages dédiées "Organisation de la Police Nationale"
+    // (anciennement partagées avec PA ; séparation stricte PA/GPX)
+    '/gpx/institution/organisation_pn/organigramme_mi': (_) =>
         const OrganigrammeMinistereInterieurPage(),
-    OrganisationPoliceNationalePage.routeName: (_) =>
+    '/gpx/institution/organisation_pn/organisation': (_) =>
         const OrganisationPoliceNationalePage(),
-    DgsiPage.routeName: (_) => const DgsiPage(),
-    PrefecturePolicePage.routeName: (_) => const PrefecturePolicePage(),
-    OrganigrammesPnPage.routeName: (_) => const OrganigrammesPnPage(),
-    HierarchiePnPage.routeName: (_) => const HierarchiePnPage(),
-    ReglesEmploiPaPage.routeName: (_) => const ReglesEmploiPaPage(),
-    HorairesServiceSpPage.routeName: (_) => const HorairesServiceSpPage(),
+    '/gpx/institution/organisation_pn/dgsi': (_) => const DgsiPage(),
+    '/gpx/institution/organisation_pn/prefecture_police': (_) =>
+        const PrefecturePolicePage(),
+    '/gpx/institution/organisation_pn/organigrammes': (_) =>
+        const OrganigrammesPnPage(),
+    '/gpx/institution/organisation_pn/hierarchie': (_) =>
+        const HierarchiePnPage(),
+    '/gpx/institution/organisation_pn/regles_emploi_pa': (_) =>
+        const ReglesEmploiPaPage(),
+    '/gpx/institution/organisation_pn/horaires_service_sp': (_) =>
+        const HorairesServiceSpPage(),
+    // PA — pages dédiées "Organisation de la Police Nationale"
+    PaOrganigrammeMinistereInterieurPage.routeName: (_) =>
+        const PaOrganigrammeMinistereInterieurPage(),
+    PaOrganisationPoliceNationalePage.routeName: (_) =>
+        const PaOrganisationPoliceNationalePage(),
+    PaDgsiPage.routeName: (_) => const PaDgsiPage(),
+    PaPrefecturePolicePage.routeName: (_) => const PaPrefecturePolicePage(),
+    PaOrganigrammesPnPage.routeName: (_) => const PaOrganigrammesPnPage(),
+    PaHierarchiePnPage.routeName: (_) => const PaHierarchiePnPage(),
+    PaReglesEmploiPaPage.routeName: (_) => const PaReglesEmploiPaPage(),
+    PaHorairesServiceSpPage.routeName: (_) =>
+        const PaHorairesServiceSpPage(),
     CodeDeontologieCodeCommentePage.routeName: (_) =>
         const CodeDeontologieCodeCommentePage(),
     ClassificationInfractionsContenuPage.routeName: (_) =>
@@ -1793,13 +1870,25 @@ class RouteRegistry {
       final user = Supabase.instance.client.auth.currentUser;
       return QuiAccueilGpx(uid: user!.id, email: user.email!);
     },
+    '/pa/institution/accueil_public/quiz': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return PaQuizAccueilPublicPage(uid: user!.id, email: user.email!);
+    },
     '/gpx/institution/organisation_pn/quiz': (_) {
       final user = Supabase.instance.client.auth.currentUser;
       return QuizOrganisationPnGPX(uid: user!.id, email: user.email!);
     },
+    '/pa/institution/organisation_pn/quiz': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return PaQuizOrganisationPnPage(uid: user!.id, email: user.email!);
+    },
     '/gpx/institution/deontologie/quiz': (_) {
       final user = Supabase.instance.client.auth.currentUser;
       return QuizDeontologieGPX(uid: user!.id, email: user.email!);
+    },
+    '/pa/institution/deontologie/quiz': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return PaQuizDeontologiePage(uid: user!.id, email: user.email!);
     },
     '/gpx/stupéfiants_pages/quiz/quiz_stupéfiants': (_) {
       final user = Supabase.instance.client.auth.currentUser;

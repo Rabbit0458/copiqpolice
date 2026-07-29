@@ -1,0 +1,202 @@
+[
+  {
+    "label": "Formation initiale",
+    "route": "/gpx/institution/formation_initiale",
+    "resolved_class": "NOT_FOUND"
+  },
+  {
+    "label": "La formation initiale",
+    "route": "/gpx/institution/formation_initiale/formation",
+    "resolved_class": "GpxFormationInitialeFormationPage"
+  },
+  {
+    "label": "Mémento prise de notes & méthodologie",
+    "route": "/gpx/institution/formation_initiale/memento_notes",
+    "resolved_class": "GpxMementoPriseDeNoteMethodologiePage"
+  },
+  {
+    "label": "Organisation de la Police Nationale",
+    "route": "/pa/institution/organisation_pn",
+    "resolved_class": "NOT_FOUND"
+  },
+  {
+    "label": "Organigramme du Ministère de l’Intérieur",
+    "route": "/pa/institution/organisation_pn/organigramme_mi",
+    "resolved_class": "OrganigrammeMinistereInterieurPage"
+  },
+  {
+    "label": "Organisation & Direction de la Police Nationale",
+    "route": "/pa/institution/organisation_pn/organisation",
+    "resolved_class": "OrganisationPoliceNationalePage"
+  },
+  {
+    "label": "Direction générale de la sécurité intérieure",
+    "route": "/pa/institution/organisation_pn/dgsi",
+    "resolved_class": "DgsiPage"
+  },
+  {
+    "label": "Préfecture de police",
+    "route": "/pa/institution/organisation_pn/prefecture_police",
+    "resolved_class": "PrefecturePolicePage"
+  },
+  {
+    "label": "Organigrammes",
+    "route": "/pa/institution/organisation_pn/organigrammes",
+    "resolved_class": "OrganigrammesPnPage"
+  },
+  {
+    "label": "Hiérarchie des personnels de la Police Nationale",
+    "route": "/pa/institution/organisation_pn/hierarchie",
+    "resolved_class": "HierarchiePnPage"
+  },
+  {
+    "label": "Règles d’emploi des policiers adjoints",
+    "route": "/pa/institution/organisation_pn/regles_emploi_pa",
+    "resolved_class": "ReglesEmploiPaPage"
+  },
+  {
+    "label": "Horaires de service en sécurité publique",
+    "route": "/pa/institution/organisation_pn/horaires_service_sp",
+    "resolved_class": "HorairesServiceSpPage"
+  },
+  {
+    "label": "Quiz — Organisation (global)",
+    "route": "/gpx/institution/organisation_pn/quiz",
+    "resolved_class": "LITERAL:/gpx/institution/organisation_pn/quiz"
+  },
+  {
+    "label": "Déontologie",
+    "route": "/gpx/institution/deontologie",
+    "resolved_class": "NOT_FOUND"
+  },
+  {
+    "label": "Code de déontologie commenté (PN & GN)",
+    "route": "/gpx/institution/deontologie/code_commente",
+    "resolved_class": "CodeDeontologieCodeCommentePage"
+  },
+  {
+    "label": "Marques extérieures de respect (salut, présentation)",
+    "route": "/gpx/institution/deontologie/marques_respect",
+    "resolved_class": "MarquesExterieuresRespectPage"
+  },
+  {
+    "label": "Droits & obligations des policiers",
+    "route": "/gpx/institution/deontologie/droits_obligations",
+    "resolved_class": "DroitsObligationsPoliciersPage"
+  },
+  {
+    "label": "Policier hors service : dois-je intervenir ? (AMARIS)",
+    "route": "/gpx/institution/deontologie/hors_service_amaris",
+    "resolved_class": "HorsServiceAmarisPage"
+  },
+  {
+    "label": "Sanctions & récompenses",
+    "route": "/gpx/institution/deontologie/sanctions_recompenses",
+    "resolved_class": "SanctionsRecompensesPage"
+  },
+  {
+    "label": "Enquête administrative",
+    "route": "/gpx/institution/deontologie/enquete_administrative",
+    "resolved_class": "EnqueteAdministrativePage"
+  },
+  {
+    "label": "Usage des réseaux sociaux",
+    "route": "/gpx/institution/deontologie/reseaux_sociaux",
+    "resolved_class": "ReseauxSociauxPage"
+  },
+  {
+    "label": "Quiz — Déontologie",
+    "route": "/gpx/institution/deontologie/quiz",
+    "resolved_class": "LITERAL:/gpx/institution/deontologie/quiz"
+  },
+  {
+    "label": "Information de la hiérarchie",
+    "route": "/gpx/institution/hierarchie_info",
+    "resolved_class": "NOT_FOUND"
+  },
+  {
+    "label": "Le compte-rendu",
+    "route": "/gpx/institution/hierarchie_info/compte_rendu",
+    "resolved_class": "CompteRenduPage"
+  },
+  {
+    "label": "Le formalisme du rapport",
+    "route": "/gpx/institution/hierarchie_info/formalisme_rapport",
+    "resolved_class": "FormalismeRapportPage"
+  },
+  {
+    "label": "Modèles de rapports",
+    "route": "/gpx/institution/hierarchie_info/modeles",
+    "resolved_class": "ModelesRapportsPage"
+  },
+  {
+    "label": "Accueil du public",
+    "route": "/gpx/institution/accueil_public",
+    "resolved_class": "NOT_FOUND"
+  },
+  {
+    "label": "Charte de l’accueil du public & assistance aux victimes",
+    "route": "/gpx/institution/accueil_public/charte",
+    "resolved_class": "CharteAccueilPublicVictimesPage"
+  },
+  {
+    "label": "Référentiel Marianne",
+    "route": "/gpx/institution/accueil_public/marianne",
+    "resolved_class": "ReferentielMariannePage"
+  },
+  {
+    "label": "Dépliants & doctrine accueil / prise en charge",
+    "route": "/gpx/institution/accueil_public/doctrine",
+    "resolved_class": "GpxDoctrineAccueilVictimesVcPage"
+  },
+  {
+    "label": "Quelques démarches administratives",
+    "route": "/gpx/institution/accueil_public/demarches",
+    "resolved_class": "DemarchesAdministrativesPage"
+  },
+  {
+    "label": "Protection des locaux de police",
+    "route": "/gpx/institution/accueil_public/protection_locaux",
+    "resolved_class": "ProtectionLocauxPolicePage"
+  },
+  {
+    "label": "Quiz — Accueil du public",
+    "route": "/gpx/institution/accueil_public/quiz",
+    "resolved_class": "LITERAL:/gpx/institution/accueil_public/quiz"
+  },
+  {
+    "label": "Laïcité, police et religions",
+    "route": "/gpx/institution/laicite",
+    "resolved_class": "NOT_FOUND"
+  },
+  {
+    "label": "La laïcité (DLPAJ / bureau des cultes)",
+    "route": "/gpx/institution/laicite/laicite_dlpaj",
+    "resolved_class": "GpxLaiciteDlpajPage"
+  },
+  {
+    "label": "Charte de la laïcité dans les services publics",
+    "route": "/gpx/institution/laicite/charte",
+    "resolved_class": "CharteLaiciteServicesPublicsPage"
+  },
+  {
+    "label": "Principaux rites & pratiques des cultes en France",
+    "route": "/gpx/institution/laicite/rites_cultes",
+    "resolved_class": "RitesCultesFrancePage"
+  },
+  {
+    "label": "Quiz — Laïcité",
+    "route": "/gpx/institution/laicite/quiz",
+    "resolved_class": "LITERAL:/gpx/institution/laicite/quiz"
+  },
+  {
+    "label": "Histoire de la police",
+    "route": "/gpx/institution/histoire",
+    "resolved_class": "NOT_FOUND"
+  },
+  {
+    "label": "Points de repères chronologiques",
+    "route": "/gpx/institution/histoire/reperes",
+    "resolved_class": "HistoireReperesPage"
+  }
+]
