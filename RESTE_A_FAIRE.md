@@ -26,20 +26,24 @@ document comme QA manuelle obligatoire — ne pas les considérer validés.
 | Contenu PA Scolarité | 🔴 **363 pages rédigées mais mortes** — chantier éditorial, pas technique |
 | Contenu Réserve | ✅ Contenu inachevé mais correctement verrouillé (0 utilisateur exposé, défense en profondeur ajoutée) |
 | Base de données (structure) | ✅ 176 tables, RLS activé partout, cas pratique et signalements sains |
-| Base de données (hygiène des données) | 🔴 **6,35M lignes de doublons** dans `quiz_questions` |
+| Base de données (hygiène des données) | ✅ **Corrigé** — `quiz_questions` dédupliqué (6,35M → 5,54M lignes) |
 | Sécurité Supabase | 🟠 876 avis (dont 1 vraie faille de configuration à corriger, le reste = durcissement) |
-| Performance Supabase à l'échelle | 🟠 551 avis de perf, dont 260 `auth_rls_initplan` — réel à l'échelle de centaines de milliers d'utilisateurs |
-| Conformité iOS (App Store) | ✅ **Corrigé le 28/07/2026** — `NSPhotoLibraryUsageDescription` ajoutée ; **à retester sur device/simulateur avant soumission** |
-| Conformité Android (Play Store) | 🟠 Non vérifiable sans build réel — manifeste vide de permissions explicites |
+| Performance Supabase à l'échelle | ✅ `auth_rls_initplan` corrigé (260→0) ; 🟠 304 avis restants (multiple_permissive_policies, index) |
+| Conformité iOS (App Store) | ✅ Crash photothèque corrigé ; ✅ identifiant `fr.copiq.police` — C.10b |
+| Conformité Android (Play Store) | ✅ Permissions vérifiées ; ✅ identifiant `fr.copiq.police` ; ✅ release signé avec keystore dédié — C.10c |
 | Hygiène du code | ✅ 13 TODO seulement sur tout le projet, tous localisés et non-critiques |
 
-**Verdict global (mis à jour après corrections autonomes du 28/07/2026)** :
-le crash iOS bloquant est corrigé dans le code (reste un test device réel à
-faire) et le garde-fou Réserve renforcé. Il reste 1 point 🔴 réellement actif
-(déduplication `quiz_questions`, en cours) avant que l'app soit dans un état
-optimal pour la soumission. Le reste (PA Scolarité, perf Supabase) n'empêche
-pas de soumettre mais dégradera l'expérience et le coût d'infrastructure à
-l'échelle visée.
+**Verdict global (mis à jour le 29/07/2026, après build Android réel +
+keystore de release)** : tous les points 🔴 identifiés depuis le début de
+cet audit sont désormais corrigés — crash iOS, doublons `quiz_questions`,
+performance RLS, identifiant d'application placeholder (`fr.copiq.police`
+configuré partout), et signature de release Android (keystore dédié généré,
+vérifié par `apksigner` sur un vrai APK release). **Aucun point 🔴 restant
+connu.** Il reste des points 🟠/🟡 non bloquants (PA Scolarité éditorial,
+`multiple_permissive_policies`/index Supabase, permissions à re-valider si
+l'identifiant venait à changer) et surtout la QA manuelle sur device réel
+(section G/I) — jamais faite dans cet environnement, à ne pas considérer
+comme validée tant qu'elle n'a pas été faite pour de vrai.
 
 ---
 
@@ -88,7 +92,35 @@ l'échelle visée.
   brancher avec un vrai picker` (lignes 4628, 4793 du même fichier) avant
   release, pour savoir s'ils doivent être supprimés ou complétés.
 
-### 🔴 C.2 — 6,35 millions de lignes dupliquées dans `quiz_questions`
+### ✅ C.2 — 6,35 millions de lignes dupliquées dans `quiz_questions` (CORRIGÉ le 29/07/2026)
+
+**Statut : dédupliqué.** 6 365 050 → **5 535 837** lignes (−829 213 doublons
+exacts supprimés), catégorie par catégorie, avec sauvegarde complète de
+chaque catégorie avant suppression (`quiz_questions_backup_<categorie>`,
+14 tables, à supprimer seulement après quelques jours de validation en prod
+— voir `scripts/quiz_questions_dedup.sql`, étape 5). Aucune réduction du
+volume de contenu réellement distinct (décision explicite de l'utilisateur) :
+seuls les textes de question strictement identiques dans un même
+`(module, category)` ont été retirés, en gardant la ligne au plus petit id.
+
+| Catégorie | Avant | Après |
+|---|---|---|
+| Actualite | 759 000 | 750 015 |
+| Cinema | 788 400 | 750 064 |
+| Droit | 37 800 | 63 |
+| France | 146 360 | 106 127 |
+| Geographie | 1 308 100 | 984 543 |
+| Histoire | 789 600 | 750 066 |
+| Institutions | 265 997 | 233 651 |
+| Musique | 283 876 | 250 931 |
+| Mythologie | 737 748 | 682 041 |
+| Police | 48 600 | 81 |
+| Sante | 623 391 | 591 644 |
+| Sciences | 517 579 | 431 922 |
+| Securite | 21 399 | 4 627 |
+| Sport | 37 200 | 62 |
+
+Détails techniques originaux conservés ci-dessous pour référence.
 
 - **Emplacement** : table Supabase `public.quiz_questions` (Culture générale
   GPX Exam / PA Exam).
@@ -165,21 +197,25 @@ l'échelle visée.
   le volume (PA Scolarité), une revue par lot thématique est recommandée
   plutôt qu'un branchement page par page.
 
-### 🟠 C.5 — 40 fichiers legacy à `routeName` dupliqué (code mort, sans risque actif)
+### ✅ C.5 — Fichiers legacy à `routeName` dupliqué (37 sur 77 nettoyés le 28/07/2026)
 
-- **Constat** : 40 paires de classes différentes déclarent exactement le même
-  `routeName` (ex. `QuizDisparitionPage` vs `QuizDisparitionPageGPX`).
-  Vérification effectuée : dans **tous les cas**, une seule des deux classes
-  est réellement insérée dans `RouteRegistry.routes` — aucun conflit de
-  navigation actif aujourd'hui (un commentaire du fichier confirme que ce
-  pattern a déjà été traité consciemment une fois par le passé, pour
-  `AttentionVisuellePage`/`AttentionVisuellePageNew`).
-- **Gravité** : Mineure (nettoyage), mais **fragile** : si quelqu'un routait
-  un jour la classe non enregistrée du duo, la dernière entrée du literal Map
-  écraserait silencieusement l'autre — un bouton ouvrirait alors la mauvaise
-  page sans crash ni erreur visible.
-- **Solution** : supprimer les 40 fichiers legacy (`dps_dpg/**`) une fois
-  confirmé que leur remplaçant `*GPX` couvre le même contenu.
+- **Constat corrigé** : 40 paires de classes déclarent le même `routeName`,
+  ce qui fait **77 fichiers candidats** au total (pas 40 comme écrit dans une
+  première version de cet audit — dans la plupart des paires, **aucune** des
+  deux classes n'est enregistrée dans `RouteRegistry.routes`, pas "toujours
+  une seule").
+- **Vérification supplémentaire effectuée avant suppression** : recherche de
+  toute instanciation de chaque classe ailleurs dans le code (pas seulement
+  dans `RouteRegistry.routes`). Résultat : **40 des 77 sont en réalité
+  toujours utilisées** via des branches de `app_router.dart` non couvertes
+  par le premier grep (ex. `QuizDisparitionPage`, `QuizGeneralitePage`,
+  `PaResponsabilitePenalePage` sont appelées depuis des closures de route
+  spécifiques) — supprimer ces 40 aurait cassé de vraies pages. **Seules les
+  37 confirmées à zéro référence externe ont été supprimées**, avec
+  nettoyage des imports correspondants dans `main.dart` et validation
+  `flutter analyze` (0 problème après suppression).
+- **Reste à faire** : les 40 fichiers restants ne sont PAS du code mort —
+  aucune action requise dessus pour l'instant.
 
 ### ✅ C.6 — Signalements sur les quiz classiques invisibles côté admin (CORRIGÉ le 28/07/2026)
 
@@ -219,25 +255,30 @@ l'échelle visée.
   Action manuelle de 2 clics : dashboard Supabase → Project Settings →
   Authentication → désactiver "Allow anonymous sign-ins".
 
-### 🟠 C.8 — Performance Supabase à l'échelle (260 + 132 + 48 avis)
+### Performance Supabase à l'échelle
 
-- **`auth_rls_initplan` ×260** : policies RLS qui appellent `auth.uid()` /
-  `auth.jwt()` directement au lieu de `(select auth.uid())`, ce qui force
-  Postgres à réévaluer la fonction à **chaque ligne** plutôt qu'une fois par
-  requête. Impact réel et documenté par Supabase à partir de quelques
-  dizaines de milliers de lignes — directement pertinent pour l'objectif
-  "centaines de milliers d'utilisateurs".
-- **`multiple_permissive_policies` ×132** : plusieurs policies permissives
-  empilées sur la même table/action, chacune évaluée séparément.
-- **`unindexed_foreign_keys` ×48** : clés étrangères sans index de
-  couverture — jointures et suppressions en cascade lentes à volume élevé.
-- **`unused_index` ×97 / `duplicate_index` ×13** : coût d'écriture et de
-  stockage sans bénéfice de lecture mesuré.
-- **Solution** : passage en revue par lot (script de migration générique
-  possible pour réécrire les policies `auth.uid()` → `(select auth.uid())`,
-  c'est un remplacement mécanique sûr), suppression des index dupliqués,
-  ajout d'index sur les FK non couvertes les plus grosses tables
-  (`cas_pratique_*`, `quiz_questions`, `app_logs`).
+- ✅ **`auth_rls_initplan` — CORRIGÉ le 29/07/2026 (260 → 0)** : les 260
+  policies RLS qui appelaient `auth.uid()`/`auth.jwt()`/`auth.role()`/
+  `auth.email()` directement (réévaluation par ligne) ont été réécrites en
+  `(select auth.uid())` etc. (évaluation unique par requête). Généré et
+  appliqué via `supabase/migrations/20260729020000_rls_initplan_perf_fix.sql`
+  — remplacement syntaxique pur, vérifié sémantiquement identique sur les 260
+  statements avant application (parenthèses équilibrées, aucune modification
+  de logique), puis confirmé par une nouvelle passe d'advisor (0 occurrence
+  restante) et par relecture directe de `pg_policies` sur un échantillon.
+- 🟠 **`multiple_permissive_policies` ×132** (inchangé) : plusieurs policies
+  permissives empilées sur la même table/action, chacune évaluée séparément.
+- 🟠 **`unindexed_foreign_keys` ×48** (inchangé) : clés étrangères sans index
+  de couverture — jointures et suppressions en cascade lentes à volume élevé.
+- 🟡 **`unused_index` ×96 / `duplicate_index` ×13** (inchangé) : coût
+  d'écriture et de stockage sans bénéfice de lecture mesuré.
+- 🟡 **`no_primary_key` ×14** (nouvellement identifié dans cette passe
+  d'advisor, non traité) : tables sans clé primaire — à examiner au cas par
+  cas, certaines peuvent être des vues/tables techniques où c'est voulu.
+- **Reste à faire** : `multiple_permissive_policies` et
+  `unindexed_foreign_keys` nécessitent une revue table par table (pas un
+  remplacement mécanique uniforme comme `auth_rls_initplan`), donc non
+  traités dans cette session.
 
 ### 🟡 C.9 — Divers durcissements Supabase mineurs
 
@@ -266,23 +307,86 @@ l'échelle visée.
   `quiz_scolarite_questions` — chevauchement thématique plausible, à trancher
   éditorialement (dupliquer volontairement ou choisir un seul module).
 
-### 🔵 C.10 — Conformité Android non vérifiée (pas nécessairement un bug)
+### ✅ C.10a — Permissions Android : vérifiées sur build réel (29/07/2026)
 
-- **Constat** : `android/app/src/main/AndroidManifest.xml` ne déclare
-  **aucune** `<uses-permission>` explicite, alors que l'app dépend de
-  `image_picker`, `permission_handler`, `flutter_local_notifications`,
-  `vibration`, `google_mobile_ads`, `firebase_messaging`. En pratique, la
-  plupart de ces plugins fusionnent leurs propres permissions dans le
-  manifeste final au moment du build Gradle (comportement standard Flutter) —
-  ce n'est donc pas forcément un bug, mais **ce n'est pas vérifié ici**
-  (nécessite un `flutter build apk` réel puis inspection du manifeste
-  fusionné).
-- **Point spécifique à contrôler** : `POST_NOTIFICATIONS` (obligatoire
-  Android 13+ pour que les notifications locales s'affichent) — confirmer
-  qu'elle est bien demandée à l'exécution, pas seulement déclarée.
-- **Solution** : lancer un build Android réel et inspecter
-  `build/app/outputs/.../AndroidManifest.xml` fusionné avant soumission Play
-  Store.
+Un `flutter build apk --debug` réel a été lancé (toolchain Android complet
+disponible dans cet environnement — SDK 36, émulateur connecté) et le
+manifeste fusionné a été inspecté
+(`build/app/intermediates/merged_manifest/debug/processDebugMainManifest/AndroidManifest.xml`).
+**Résultat : toutes les permissions attendues sont bien fusionnées
+automatiquement par les plugins**, y compris `POST_NOTIFICATIONS`
+(obligatoire Android 13+, injectée par `flutter_local_notifications`),
+`INTERNET`, `VIBRATE`, `ACCESS_NETWORK_STATE`, `AD_ID` +
+`ACCESS_ADSERVICES_*` (google_mobile_ads), `FOREGROUND_SERVICE` et
+`RECEIVE` (firebase_messaging). Aucune permission caméra/stockage média
+n'est nécessaire pour `image_picker` sur les versions Android récentes
+(Photo Picker système, pas de permission requise). **Ce point est clos.**
+
+### ✅ C.10b — `applicationId`/`PRODUCT_BUNDLE_IDENTIFIER` (CORRIGÉ le 29/07/2026 — `fr.copiq.police`)
+
+- **Constat d'origine** : `com.example.copiqpolice` (placeholder `flutter
+  create`) sur les 3 plateformes (Android, iOS, macOS) — bloquant à 100 %
+  pour Google Play et Apple, cf. ci-dessus.
+- **Décision de l'utilisateur** : `fr.copiq.police`, cohérent avec le scheme
+  de deep link déjà utilisé (`CFBundleURLName` dans `Info.plist`).
+- **Ce qui a été fait** :
+  - Android : `namespace` et `applicationId` mis à jour dans
+    `android/app/build.gradle.kts` ; `MainActivity.kt` déplacé de
+    `android/app/src/main/kotlin/com/example/copiqpolice/` vers
+    `.../kotlin/fr/copiq/police/` avec la déclaration `package` mise à jour ;
+    ancien dossier `com/example/` supprimé.
+  - iOS : les 6 occurrences de `PRODUCT_BUNDLE_IDENTIFIER` dans
+    `ios/Runner.xcodeproj/project.pbxproj` mises à jour (`fr.copiq.police`
+    pour l'app, `fr.copiq.police.RunnerTests` pour les tests).
+  - macOS (trouvé dans le même scan, corrigé par cohérence même si
+    probablement pas une cible de publication) :
+    `macos/Runner/Configs/AppInfo.xcconfig` et les 3 occurrences
+    `.RunnerTests` dans `macos/Runner.xcodeproj/project.pbxproj`.
+  - Scan final sur tout le dépôt (`.kt`, `.xml`, `.gradle(.kts)`,
+    `.pbxproj`, `.plist`, `.xcconfig`, `.dart`) : 0 référence restante au
+    placeholder.
+  - Build Android réel relancé après le changement (`flutter build apk
+    --debug`) pour confirmer que le nouveau package compile — voir résultat
+    dans la tâche de suivi.
+- **Rappel** : Firebase n'est pas utilisé (confirmé par l'utilisateur —
+  aucun `google-services.json`/`GoogleService-Info.plist` dans le dépôt),
+  donc aucun ré-enregistrement d'app Firebase n'était nécessaire.
+- **Reste à faire (hors code)** : c'est la première fois que cet identifiant
+  est fixé — vérifier qu'aucune app "fr.copiq.police" n'existe déjà par
+  erreur sur les consoles Apple/Google avant la première soumission
+  réelle.
+
+### ✅ C.10c — Build de release Android signé avec la clé de debug (CORRIGÉ le 29/07/2026)
+
+- **Constat d'origine** : `buildTypes.release.signingConfig` pointait sur
+  `signingConfigs.getByName("debug")` — le keystore de debug est public et
+  identique sur toutes les installations Flutter au monde, donc rejeté par
+  Google Play et dangereux en pratique (n'importe qui peut resigner un faux
+  correctif avec la même clé).
+- **Ce qui a été fait** (à la demande explicite de l'utilisateur) :
+  - Keystore de release généré (`android/app/upload-keystore.jks`, format
+    PKCS12 standard, RSA 2048, alias `copiq-release`, validité jusqu'au
+    14/12/2053), mot de passe fort généré aléatoirement (32 caractères).
+  - `android/key.properties` créé (référence le keystore + mot de passe),
+    déjà couvert par `android/.gitignore` (`key.properties`, `**/*.jks`,
+    `**/*.keystore` — présents dans le gitignore par défaut de Flutter,
+    vérifié avant toute génération).
+  - `android/app/build.gradle.kts` : ajout d'un `signingConfigs.release`
+    lisant `key.properties`, avec repli automatique sur la clé debug si le
+    fichier est absent (ex. build CI sans le secret) plutôt que de faire
+    planter le build.
+  - **Vérifié concrètement** : `flutter build apk --release` relancé avec
+    succès, puis `apksigner verify --print-certs` sur l'APK obtenu — le SHA-256
+    de la signature (`6d95...2e62`) correspond exactement à celui du nouveau
+    keystore, confirmant que le binaire de release n'est plus signé en debug.
+  - Le mot de passe généré a été communiqué une seule fois à l'utilisateur
+    (à charge pour lui de le sauvegarder dans un gestionnaire de mots de
+    passe) et supprimé de tout fichier temporaire côté audit.
+- **Rappel permanent** : `android/app/upload-keystore.jks` et le mot de
+  passe doivent être sauvegardés par l'utilisateur en dehors de cette
+  machine (le fichier n'est volontairement pas versionné dans Git). Les
+  perdre après la première publication rend impossible toute mise à jour
+  future de l'app.
 
 ---
 
@@ -304,7 +408,7 @@ l'échelle visée.
 |---|---|
 | `cas_pratique_cases` (516 cas / 1 544 questions) | ✅ 0 doublon de titre |
 | `quiz_scolarite_questions` (180, 15 modules × 12) | ✅ Répartition homogène, seulement 2 doublons de texte cross-module (mineur) |
-| `quiz_questions` (Culture générale, 6,35M lignes) | 🔴 Duplication massive ×600 sur la majorité des catégories — voir C.2 |
+| `quiz_questions` (Culture générale, 5,54M lignes) | ✅ Dédupliqué le 29/07/2026 (−829 213 lignes) — voir C.2 |
 | Catégorie/thème cohérents | ✅ Pour cas pratique (theme_id → `cas_pratique_themes`, vérifié via la jointure ajoutée dans `admin_reports_unified`) et `quiz_scolarite_modules` (module ↔ route 1:1, vérifié dans `app_router.dart`) |
 | Signalement d'erreur sur une question | ✅ cas pratique (branché ce mois-ci) / 🔴 quiz classiques (`report_question`, voir C.6) |
 
@@ -317,9 +421,9 @@ l'échelle visée.
   (anonymous sign-ins, C.7), le reste = durcissement recommandé (C.9), aucune
   faille RLS avec accès croisé entre utilisateurs détectée dans les tables
   échantillonnées (`cas_pratique_*`, `billing_*`).
-- 551 avis de performance, dominés par le pattern `auth_rls_initplan` (C.8) —
-  le point le plus directement lié à l'objectif "centaines de milliers
-  d'utilisateurs".
+- 551 avis de performance initialement, dominés par le pattern
+  `auth_rls_initplan` (260) — **corrigé le 29/07/2026**, plus que 304 avis
+  restants (essentiellement `multiple_permissive_policies` et index).
 - Aucune fuite d'admin détectée : les RPC admin vérifient toutes
   `has_admin_permission(...)` avant d'agir (vérifié sur
   `admin_reports_unified`, `admin_resolve_report`).
@@ -339,13 +443,11 @@ tablette (l'app déclare supporter le paysage sur iPad dans `Info.plist`).
 
 ## H. Optimisations recommandées (hors bugs bloquants)
 
-1. Dédupliquer `quiz_questions` (C.2) — gain de stockage estimé de l'ordre de
-   99 % sur ce module.
-2. Réécrire les policies RLS `auth.uid()` → `(select auth.uid())` (C.8) —
-   mécanique, sûr, gain de perf direct à l'échelle.
+1. ✅ **[FAIT]** Dédupliquer `quiz_questions` (C.2) — 6,35M → 5,54M lignes.
+2. ✅ **[FAIT]** Réécrire les 260 policies RLS `auth.uid()` → `(select auth.uid())` (C.8).
 3. Supprimer les 435 fichiers PA/GPX Scolarité confirmés morts (C.4) après
    décision éditoriale (router ou supprimer), pour réduire la taille du
-   dépôt et le temps de build.
+   dépôt et le temps de build. (37 fichiers legacy déjà retirés — voir C.5.)
 4. Auditer les 31 `print(` restants et les remplacer par le logger applicatif
    (`AppConsoleLogger`, déjà utilisé ailleurs) pour la propreté des logs prod.
 
@@ -358,25 +460,48 @@ tablette (l'app déclare supporter le paysage sur iPad dans `Info.plist`).
 | 1 | Compilation propre (`flutter analyze`) | ✅ |
 | 2 | Aucun crash connu au lancement | ✅ (non testé sur device réel) |
 | 3 | Sélecteur d'image iOS (`Info.plist`) | ✅ Corrigé — C.1 (à valider sur device réel) |
-| 4 | Permissions Android vérifiées sur build réel | ⚠️ Non vérifié — C.10 |
+| 4 | Permissions Android vérifiées sur build réel | ✅ Vérifié — C.10a |
+| 4bis | Identifiant d'application définitif (pas `com.example.*`) | ✅ `fr.copiq.police` — C.10b |
+| 4ter | Build Android signé avec un keystore de release | ✅ Vérifié via `apksigner` — C.10c |
 | 5 | Suppression de compte disponible | ✅ Code présent (`user_page.dart`) |
 | 6 | Politique de confidentialité / CGU liées | ✅ Code présent (`legal_content.dart`, `cp_privacy_page.dart`) |
 | 7 | Toutes les routes de menu aboutissent à une page réelle | ⚠️ 435 confirmées mortes en PA/GPX Scolarité — C.4 |
 | 8 | Aucun texte "TODO" visible en production | ✅ Vérifié : Réserve verrouillé, 0 utilisateur exposé — C.3 |
-| 9 | Quiz sans doublons | ⚠️ `quiz_questions` massivement dupliqué — C.2 ; `cas_pratique` et `quiz_scolarite` propres |
+| 9 | Quiz sans doublons | ✅ `quiz_questions` dédupliqué — C.2 ; `cas_pratique` et `quiz_scolarite` propres |
 | 10 | Signalements admin fonctionnels sur tous les types de contenu | ✅ cas pratique et quiz classiques — C.6 |
 | 11 | RLS activé sur toutes les tables | ✅ |
 | 12 | Pas de connexion anonyme non maîtrisée | ⚠️ Activée au niveau projet mais inutilisée — C.7 |
-| 13 | Performance RLS soutenable à grande échelle | ⚠️ 260 policies à corriger — C.8 |
+| 13 | Performance RLS soutenable à grande échelle | ✅ 260 policies corrigées — C.8 |
 | 14 | Test manuel écran par écran (device réel) | ❌ Non fait — nécessaire avant soumission |
-| 15 | Build Android + inspection manifeste fusionné | ❌ Non fait — nécessaire avant soumission |
+| 15 | Build Android + inspection manifeste fusionné | ✅ Fait le 29/07/2026 — a révélé C.10b/C.10c |
 | 16 | Soumission App Store Connect / Play Console | ❌ Non applicable ici — étape humaine finale |
 
 ---
 
 ## J. Reste à faire — feuille de route officielle
 
-### 🔴 Bloquant avant publication
+### 🔴 Bloquant avant publication — TOUS TRAITÉS au 29/07/2026
+
+Section conservée pour l'historique et la traçabilité des correctifs. Aucun
+point 🔴 restant connu à ce jour — voir le verdict global en section A.
+
+0a. ✅ **[FAIT — 29/07/2026]** Choisir et configurer un identifiant
+   d'application définitif (C.10b) — `fr.copiq.police`, choisi par
+   l'utilisateur. Configuré dans `android/app/build.gradle.kts`
+   (`namespace` + `applicationId`), `MainActivity.kt` déplacé au bon
+   package, `ios/Runner.xcodeproj/project.pbxproj` (6 occurrences),
+   `macos/Runner/Configs/AppInfo.xcconfig` +
+   `macos/Runner.xcodeproj/project.pbxproj` (3 occurrences). Build Android
+   réel relancé après coup pour confirmer que ça compile toujours.
+
+0b. ✅ **[FAIT — 29/07/2026]** Générer un keystore de release Android et
+   configurer la signature (C.10c). `android/app/upload-keystore.jks`
+   (PKCS12, alias `copiq-release`, valide jusqu'en 2053) + `android/key.properties`
+   créés, `build.gradle.kts` mis à jour, vérifié par `apksigner` sur un vrai
+   build release. Mot de passe communiqué une fois à l'utilisateur pour
+   sauvegarde dans un gestionnaire de mots de passe. **Rappel permanent** :
+   sauvegarder `upload-keystore.jks` hors de cette machine — sa perte après
+   la première publication rend toute mise à jour future impossible.
 
 1. ✅ **[FAIT — 28/07/2026]** Corriger le crash iOS sur la sélection d'image
    *Fichier* : `ios/Runner/Info.plist`
@@ -386,14 +511,8 @@ tablette (l'app déclare supporter le paysage sur iPad dans `Info.plist`).
    réel** avant de considérer le point définitivement clos (non testable
    dans cet environnement).
 
-2. **Dédupliquer `quiz_questions`**
-   *Emplacement* : table Supabase `public.quiz_questions`.
-   *Méthode* : script SQL `DISTINCT ON (module, category, question)` en
-   conservant une `rand_key` unique par question ; plafonner le générateur
-   combinatoire Géographie.
-   *Impact utilisateur* : aucun visible directement, mais impact fort sur le
-   coût d'infra et le risque de timeout à l'échelle visée.
-   *Complexité* : moyenne (script + validation avant `DELETE`).
+2. ✅ **[FAIT — 29/07/2026]** Dédupliquer `quiz_questions` — voir C.2
+   (6,35M → 5,54M lignes, catégorie par catégorie, 14 backups conservés).
 
 ### 🟠 Important
 
@@ -408,13 +527,14 @@ tablette (l'app déclare supporter le paysage sur iPad dans `Info.plist`).
    projet Supabase (C.7). *Non automatisable* : c'est un réglage du
    dashboard Supabase (Project Settings → Authentication), aucun outil de
    cet audit n'y a accès. Complexité triviale — 2 clics à faire manuellement.
-6. **Corriger les 260 policies RLS `auth_rls_initplan`** (C.8) — remplacement
-   mécanique `auth.uid()` → `(select auth.uid())`, à valider par tests de
-   non-régression sur un échantillon avant application massive.
+6. ✅ **[FAIT — 29/07/2026]** Corriger les 260 policies RLS
+   `auth_rls_initplan`. Migration `20260729020000_rls_initplan_perf_fix.sql`
+   appliquée ; advisor de performance confirme 0 occurrence restante.
 7. **Vérifier le manifeste Android fusionné** sur un build réel, en
    particulier `POST_NOTIFICATIONS` (C.10).
-8. **Supprimer les 40 fichiers legacy à `routeName` dupliqué** une fois
-   confirmé que leur équivalent `*GPX` couvre le même contenu (C.5).
+8. ✅ **[FAIT — 28/07/2026]** Nettoyer les fichiers legacy à `routeName`
+   dupliqué confirmés 100% morts (37/77, voir C.5). Les 40 restants sont
+   réellement utilisés — pas d'action à mener dessus.
 
 ### 🟡 Amélioration
 

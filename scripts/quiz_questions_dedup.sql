@@ -14,24 +14,21 @@
 --      d'un générateur de variantes (pays/départements). Ce script ne touche
 --      PAS à ce contenu au-delà de retirer les VRAIS doublons de texte exact.
 --
---  POURQUOI CE SCRIPT N'A PAS ÉTÉ EXÉCUTÉ AUTOMATIQUEMENT
---  La table dispose déjà de 9 index (dont `quiz_questions_mod_cat_idx` sur
---  (module, category), `quiz_questions_category_id_idx`, un index partiel
---  dédié à Géographie...) — l'hypothèse initiale "pas d'index" était fausse
---  et a été corrigée après vérification (un index dupliqué créé par erreur
---  pendant cet audit a été supprimé immédiatement après coup). Le vrai
---  facteur bloquant est la taille brute de l'opération : sur 6,35M lignes
---  avec colonnes jsonb/text potentiellement TOASTées, un CREATE TABLE AS
---  SELECT ou un DELETE de masse dépasse systématiquement le timeout de
---  l'outil SQL utilisé pour cet audit. Confirmé via pg_stat_activity : la
---  requête tourne réellement plusieurs dizaines de secondes côté serveur
---  avant d'être abandonnée avec la connexion — ce n'est pas un verrou, c'est
---  un vrai temps d'exécution qui dépasse ce que cet outil peut attendre.
---  À exécuter directement depuis le SQL Editor du dashboard Supabase
---  (timeout beaucoup plus généreux) ou via `psql` / la CLI Supabase.
+--  STATUT : EXÉCUTÉ le 29/07/2026, catégorie par catégorie (l'exécution
+--  d'un coup se heurtait au timeout de l'outil SQL utilisé pour cet audit
+--  sur les plus grosses catégories — contourné en isolant chaque catégorie,
+--  et pour Géographie en séparant le calcul des doublons (CTAS) de la
+--  suppression proprement dite). Résultat : 6 365 050 -> 5 535 837 lignes
+--  (-829 213 doublons stricts), détail par catégorie dans RESTE_A_FAIRE.md
+--  section C.2. Aucune réduction du volume de contenu distinct (choix
+--  explicite de l'utilisateur).
 --
---  MÉTHODE : exécuter chaque étape SÉPARÉMENT (pas tout le fichier d'un
---  coup), et vérifier le résultat avant de passer à la suivante.
+--  Les 14 tables `quiz_questions_backup_<categorie>` créées avant chaque
+--  suppression sont TOUJOURS EN BASE (filet de sécurité) — à supprimer
+--  uniquement après validation en conditions réelles (voir étape 5
+--  ci-dessous), pas avant.
+--
+--  Ce fichier est conservé comme documentation de la méthode utilisée.
 -- ════════════════════════════════════════════════════════════════════════════
 
 
@@ -105,7 +102,20 @@ LIMIT 10;  -- doit renvoyer 0 ligne
 -- ─────────────────────────────────────────────────────────────────────────
 -- ÉTAPE 5 (à faire seulement après avoir confirmé que l'app fonctionne
 -- normalement en production pendant quelques jours) — libérer l'espace
--- disque du backup une fois la déduplication validée en conditions réelles.
--- NE PAS exécuter en même temps que les étapes précédentes.
+-- disque des 14 backups par catégorie une fois la déduplication validée en
+-- conditions réelles. NE PAS exécuter tant que la validation n'est pas faite.
 -- ─────────────────────────────────────────────────────────────────────────
--- DROP TABLE public.quiz_questions_backup_20260728;
+-- DROP TABLE public.quiz_questions_backup_sport;
+-- DROP TABLE public.quiz_questions_backup_police;
+-- DROP TABLE public.quiz_questions_backup_droit;
+-- DROP TABLE public.quiz_questions_backup_securite;
+-- DROP TABLE public.quiz_questions_backup_institutions;
+-- DROP TABLE public.quiz_questions_backup_france;
+-- DROP TABLE public.quiz_questions_backup_musique;
+-- DROP TABLE public.quiz_questions_backup_sciences;
+-- DROP TABLE public.quiz_questions_backup_sante;
+-- DROP TABLE public.quiz_questions_backup_mythologie;
+-- DROP TABLE public.quiz_questions_backup_actualite;
+-- DROP TABLE public.quiz_questions_backup_cinema;
+-- DROP TABLE public.quiz_questions_backup_histoire;
+-- DROP TABLE public.quiz_questions_backup_geographie;
