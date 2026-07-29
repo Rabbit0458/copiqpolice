@@ -3879,6 +3879,36 @@ const Map<PaSchoolProgram, List<CategoryConfig>> paSchoolCategoriesConfig = {
     ),
 
     CategoryConfig(
+      label: 'Atteintes aux mineurs & à la famille',
+      badge: 'Protection des mineurs',
+      image: 'assets/images/mineurs_famille.jpeg',
+      route: '/pa/dps_dpg/mineurs_famille',
+      subcategories: [
+        SubCategoryConfig(
+          label: 'La mise en péril des mineurs',
+          route:
+              '/pa/dps_dpg/socle_initial/atteintes_personnes/mineurs_mise_en_peril',
+        ),
+        SubCategoryConfig(
+          label: 'Violation d’ordonnances JAF (violences)',
+          route: '/pa/dps_dpg/mineurs_famille_pages/violation_ordonnances_jaf',
+        ),
+        SubCategoryConfig(
+          label: 'Atteintes à l’exercice de l’autorité parentale',
+          route: '/pa/dps_dpg/mineurs_famille_pages/autorite_parentale',
+        ),
+        SubCategoryConfig(
+          label: 'L’abandon de famille',
+          route: '/pa/dps_dpg/mineurs_famille_pages/abandon_famille',
+        ),
+        SubCategoryConfig(
+          label: 'Quiz — L’abandon de famille',
+          route: '/pa/mineurs_famille_pages/quiz/pa_quiz_mineurs_famille',
+        ),
+      ],
+    ),
+
+    CategoryConfig(
       label: "Contrôle d'identité",
       badge: 'Socle initial',
       image: 'assets/images/controle_identite.jpeg',

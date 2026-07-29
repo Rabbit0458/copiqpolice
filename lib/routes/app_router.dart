@@ -977,6 +977,12 @@ class RouteRegistry {
     ViolencesSurFsiPage.routeName: (_) => const ViolencesSurFsiPage(),
     AutoriteParentalePage.routeName: (_) => const AutoriteParentalePage(),
     AbandonFamillePage.routeName: (_) => const AbandonFamillePage(),
+    // PA — Atteintes aux mineurs & à la famille (catégorie dédiée, câblée le
+    // 29/07/2026, séparation stricte PA/GPX)
+    PaAutoriteParentalePage.routeName: (_) => const PaAutoriteParentalePage(),
+    PaAbandonFamillePage.routeName: (_) => const PaAbandonFamillePage(),
+    PaViolationOrdonnancesJafPage.routeName: (_) =>
+        const PaViolationOrdonnancesJafPage(),
     CorruptionMineurPage.routeName: (_) => const CorruptionMineurPage(),
     DiffusionMessageViolentMineurPage.routeName: (_) =>
         const DiffusionMessageViolentMineurPage(),
