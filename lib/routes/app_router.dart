@@ -964,6 +964,18 @@ class RouteRegistry {
     JuridictionContenuPage.routeName: (_) => const JuridictionContenuPage(),
     JuridictionsPrincipesGenerauxPage.routeName: (_) =>
         const JuridictionsPrincipesGenerauxPage(),
+    // PA — Procédure Pénale (catégorie dédiée, câblée le 29/07/2026,
+    // séparation stricte PA/GPX)
+    PaJuridictionContenuPage.routeName: (_) => const PaJuridictionContenuPage(),
+    PaActionPubliqueIntroPage.routeName: (_) =>
+        const PaActionPubliqueIntroPage(),
+    PaPPActionPubliqueActionCivilePage.routeName: (_) =>
+        const PaPPActionPubliqueActionCivilePage(),
+    PaNulliteIntroPage.routeName: (_) => const PaNulliteIntroPage(),
+    PaPPNulliteActesProcedureContenuPage.routeName: (_) =>
+        const PaPPNulliteActesProcedureContenuPage(),
+    PaInstructionIntroPage.routeName: (_) => const PaInstructionIntroPage(),
+    PaInstructionContenuPage.routeName: (_) => const PaInstructionContenuPage(),
     EmbuscadePage.routeName: (_) => const EmbuscadePage(),
     AppelsMessagesMalveillantsAgressionsSonoresPage.routeName: (_) =>
         const AppelsMessagesMalveillantsAgressionsSonoresPage(),

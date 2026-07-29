@@ -3909,6 +3909,52 @@ const Map<PaSchoolProgram, List<CategoryConfig>> paSchoolCategoriesConfig = {
     ),
 
     CategoryConfig(
+      label: 'Procédure Pénale',
+      badge: 'Cours & cas pratiques',
+      image: 'assets/images/procedure_penale.jpg',
+      route: '/pa/dps_dpg/procedure_penale',
+      subcategories: [
+        SubCategoryConfig(
+          label:
+              'Action publique, action civile, autorités & contrôle de la PJ',
+          route:
+              '/pa/dps_dpg/procedure_penale/pp_action_publique_action_civile_intro',
+        ),
+        SubCategoryConfig(
+          label: 'Nullité des actes de procédure',
+          route: '/pa/dps_dpg/procedure_penale/nullite_intro_page',
+        ),
+        SubCategoryConfig(
+          label: 'Juridictions de jugement & exécution des décisions',
+          route: '/pa/dps_dpg/procedure_penale/juridictions_contenu',
+        ),
+        SubCategoryConfig(
+          label:
+              'Instruction préparatoire, mandats, contrôle jud., détention provisoire',
+          route:
+              '/pa/dps_dpg/procedure_penale/pp_instruction_mandats_controle_detention',
+        ),
+        SubCategoryConfig(
+          label: 'Quiz — Action publique',
+          route: '/pa/procedure_penale/quiz/action_publique',
+        ),
+        SubCategoryConfig(
+          label: 'Quiz — Nullité des actes de procédure',
+          route: '/pa/procedure_penale/quiz/nullite',
+        ),
+        SubCategoryConfig(
+          label: 'Quiz — Juridictions pénales',
+          route: '/pa/procedure_penale/quiz/juridictions_penales',
+        ),
+        SubCategoryConfig(
+          label:
+              'Quiz — Instruction préparatoire, mandats & détention provisoire',
+          route: '/pa/procedure_penale/quiz/instruction_preparatoire',
+        ),
+      ],
+    ),
+
+    CategoryConfig(
       label: "Contrôle d'identité",
       badge: 'Socle initial',
       image: 'assets/images/controle_identite.jpeg',
