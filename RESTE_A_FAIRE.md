@@ -571,6 +571,46 @@ point 🔴 restant connu à ce jour — voir le verdict global en section A.
     par l'audit du menu principal (recherche interne notamment, non
     vérifiée).
 
+### ✅ C.11 — Câblage du menu PA Scolarité : 5 catégories entières ajoutées (FAIT le 29/07/2026)
+
+Suite à un audit exhaustif du module `dpsDpg` (85 topics GPX comparés au menu
+PA live, cf. `scripts/_dpsdpg_full_audit.md`), la quasi-totalité du contenu
+manquant côté PA existait déjà en fichier mais n'était reliée à aucun menu
+(pur travail de câblage, pas de rédaction). Traité dans cette session :
+
+- 3 des 9 pages "Généralités" pointent maintenant vers leur vrai contenu PA
+  dédié au lieu du contenu GPX partagé (Classification des infractions,
+  L'infraction, La tentative). Les 5 restantes n'ont pas d'équivalent PA
+  "Contenu" trouvé et restent sur le contenu GPX partagé (non régressif).
+- **Armes & munitions** (8 pages + 1 quiz) — catégorie créée.
+- **La sanction** (3 pages + 1 quiz) — catégorie créée.
+- **Crimes & délits contre la nation** (6 pages + 5 quiz) — catégorie créée.
+- **Atteintes aux mineurs & à la famille** (4 pages + 1 quiz) — catégorie
+  créée.
+- **Procédure Pénale** (4 pages + 4 quiz) — catégorie créée.
+- Vérifié au passage : "Cadres juridiques" (9 sujets) et la granularité de
+  "Circulation routière" (ivresse / état alcoolique / défaut d'assurance /
+  refus de vérifications comme 4 pages distinctes, pas 1 page bundlée)
+  étaient en réalité déjà câblés — l'audit initial les avait signalés à tort
+  comme manquants ou groupés.
+- **Vérification finale par script** (résout les `routeName` symboliques,
+  pas seulement les chaînes littérales) : sur les **181 routes `/pa/...`**
+  navigables depuis le menu PA Scolarité, **0 route cassée**. `flutter
+  analyze` : 0 problème après chaque lot.
+
+**Reste à faire (non bloquant)** :
+- Réconcilier la catégorie "Crimes & délits contre la personne" : les
+  libellés PA et GPX ne correspondent pas 1:1 (PA a des rubriques
+  supplémentaires — discriminations, harcèlement sexuel... — et regroupe
+  autrement viol/agressions). Nécessite une comparaison manuelle
+  sujet-par-sujet avant tout remaniement, pas fait dans cette session.
+- Les 66 quiz PA mentionnés dans l'audit initial comme "non câblés" sont en
+  réalité très majoritairement déjà câblés en route (117 routes
+  `/pa/.../quiz/...` recensées) — seule une minorité restait à exposer dans
+  un menu, ce qui a été fait pour les 5 catégories ci-dessus. Pas
+  d'inventaire exhaustif restant fait de tous les quiz PA existants vs
+  menus.
+
 ### 🔵 Évolutions futures
 
 17. Crawl automatisé des menus (y compris recherche interne) pour détecter
