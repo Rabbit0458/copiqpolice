@@ -1,10 +1,16 @@
-# COP'IQ — Audit final avant publication (28 juillet 2026)
+# COP'IQ — Audit final avant publication (28 juillet 2026, révisé le 30/07)
 
 **Méthode** : chaque ligne de ce document est issue d'une vérification réelle —
 lecture de code, requête SQL exécutée sur la base de production, sortie de
 `flutter analyze`, ou lecture des manifestes `AndroidManifest.xml` /
 `Info.plist`. Rien n'est estimé ni supposé. Ce document **remplace** la
 version du 26/07/2026.
+
+**Dernière mise à jour : 30/07/2026** — refonte visuelle et fonctionnelle des
+cas pratiques puis des 212 quiz de l'application (section K). C'est la première
+session menée **avec un appareil réel sous les yeux** : plusieurs anomalies que
+les audits précédents ne pouvaient pas voir — la section G le disait
+explicitement — ont été trouvées et corrigées à cette occasion.
 
 **Ce qui n'a PAS pu être vérifié ici** (nécessite un device/simulateur réel,
 absent de cet environnement) : rendu visuel écran par écran, fluidité des
@@ -19,7 +25,8 @@ document comme QA manuelle obligatoire — ne pas les considérer validés.
 
 | Axe | Statut |
 |---|---|
-| Compilation / lint (`flutter analyze`) | ✅ **0 problème** sur 1 673 fichiers Dart (2,39 M lignes) |
+| Compilation / lint (`flutter analyze`) | 🟠 **À relancer** — 0 problème au 29/07 ; la refonte des 212 quiz du 30/07 a introduit puis corrigé 2 familles d'erreurs (K.4). Dernier `analyze` connu : 428 issues, toutes traitées, **non revérifié** |
+| Rendu visuel sur appareil réel | 🟠 Première session de test réel le 30/07 (cas pratiques + quiz culture générale). 9 anomalies visuelles trouvées et corrigées — K.1 à K.3. Les autres écrans restent non testés |
 | Routing (boutons → pages) | ✅ 0 route de menu cassée (vérifié exhaustivement sur PA Scolarité) ; ~359 fichiers `.dart` inutilisés = code mort, pas un trou de contenu — C.4 |
 | Contenu GPX Exam / GPX Scolarité | ✅ Fonctionnellement complet, routé, quiz alimentés |
 | Contenu PA Exam | ✅ Fonctionnellement complet |
@@ -104,6 +111,14 @@ chaque catégorie avant suppression (`quiz_questions_backup_<categorie>`,
 volume de contenu réellement distinct (décision explicite de l'utilisateur) :
 seuls les textes de question strictement identiques dans un même
 `(module, category)` ont été retirés, en gardant la ligne au plus petit id.
+
+**Correctif du 30/07/2026** : l'auditeur de sécurité Supabase a signalé que
+ces 14 tables de sauvegarde avaient RLS désactivé — lisibles/modifiables par
+n'importe qui possédant la clé publique de l'app. RLS activé sans policy
+(migration `20260730020000_enable_rls_quiz_backups.sql`) : accès client
+totalement bloqué, accès dashboard/service_role inchangé. **Reste à faire** :
+supprimer ces 14 tables une fois le dédoublonnage validé quelques jours de
+plus en prod (décision utilisateur à prendre, pas automatisée).
 
 | Catégorie | Avant | Après |
 |---|---|---|
@@ -423,6 +438,8 @@ n'est nécessaire pour `image_picker` sur les versions Android récentes
 
 | Élément | Statut |
 |---|---|
+| Interface des 212 quiz (4 zones) | ✅ Refondue et homogénéisée le 30/07 — voir K |
+| Énoncés qui répètent leurs propres réponses | 🟡 Contourné à l'affichage (K.3), **pas corrigé en base** — voir K.5 |
 | `cas_pratique_cases` (516 cas / 1 544 questions) | ✅ 0 doublon de titre |
 | `quiz_scolarite_questions` (180, 15 modules × 12) | ✅ Répartition homogène, seulement 2 doublons de texte cross-module (mineur) |
 | `quiz_questions` (Culture générale, 5,54M lignes) | ✅ Dédupliqué le 29/07/2026 (−829 213 lignes) — voir C.2 |
@@ -449,12 +466,20 @@ n'est nécessaire pour `image_picker` sur les versions Android récentes
 
 ## G. Audit UX/UI
 
-**Non réalisable dans cet environnement** (pas de device/simulateur
-disponible). Aucune anomalie visuelle n'a été "trouvée" faute de pouvoir
-regarder l'app tourner — ne pas interpréter l'absence de mention comme une
-validation. À faire manuellement avant soumission : test sur au moins un
-appareil iOS et un Android, thème clair et sombre, en portrait et paysage sur
-tablette (l'app déclare supporter le paysage sur iPad dans `Info.plist`).
+**Partiellement réalisé le 30/07/2026** — première session sur appareil Android
+réel, écrans « Cas pratiques » et « Quiz culture générale » uniquement.
+
+Ce que cette session a démontré : l'avertissement ci-dessous était fondé. Neuf
+anomalies visuelles ou fonctionnelles ont été trouvées **en regardant l'app
+tourner**, dont deux qui empêchaient purement et simplement l'affichage du
+contenu (assertion de rendu, cartes vides) et une qui gelait l'application. Aucun
+audit statique ne les avait vues. Détail en section K.
+
+**Reste non testé** : tout le reste de l'application (PA Exam, PA Scolarité,
+GPX Scolarité hors quiz, panel admin, parcours d'abonnement), iOS dans son
+intégralité, le thème clair sur appareil réel, le paysage sur tablette
+(l'app déclare le supporter sur iPad dans `Info.plist`), et le comportement au
+clavier. Ne pas interpréter l'absence de mention comme une validation.
 
 ---
 
@@ -474,7 +499,7 @@ tablette (l'app déclare supporter le paysage sur iPad dans `Info.plist`).
 
 | # | Point | Statut |
 |---|---|---|
-| 1 | Compilation propre (`flutter analyze`) | ✅ |
+| 1 | Compilation propre (`flutter analyze`) | 🟠 **À relancer** — la refonte des 212 quiz du 30/07 a introduit puis corrigé 2 familles d'erreurs, non revérifiées — K.4 |
 | 2 | Aucun crash connu au lancement | ✅ (non testé sur device réel) |
 | 3 | Sélecteur d'image iOS (`Info.plist`) | ✅ Corrigé — C.1 (à valider sur device réel) |
 | 4 | Permissions Android vérifiées sur build réel | ✅ Vérifié — C.10a |
@@ -489,7 +514,8 @@ tablette (l'app déclare supporter le paysage sur iPad dans `Info.plist`).
 | 11 | RLS activé sur toutes les tables | ✅ |
 | 12 | Pas de connexion anonyme non maîtrisée | ⚠️ Activée au niveau projet mais inutilisée — C.7 |
 | 13 | Performance RLS soutenable à grande échelle | ✅ 260 policies corrigées — C.8 |
-| 14 | Test manuel écran par écran (device réel) | ❌ Non fait — nécessaire avant soumission |
+| 14 | Test manuel écran par écran (device réel) | 🟠 Partiel — cas pratiques et quiz culture générale testés le 30/07 sur Android (9 anomalies trouvées, K.1-K.3). Tout le reste, et iOS en entier, non testé |
+| 14bis | Quiz propagés vérifiés à l'écran (2 thèmes) | ❌ Non fait — 211 des 212 fichiers n'ont été validés que **statiquement** (équilibrage, appels, cycles de vie). Priorité après le point 1 |
 | 15 | Build Android + inspection manifeste fusionné | ✅ Fait le 29/07/2026 — a révélé C.10b/C.10c |
 | 16 | Soumission App Store Connect / Play Console | ❌ Non applicable ici — étape humaine finale |
 
@@ -613,6 +639,20 @@ manquant côté PA existait déjà en fichier mais n'était reliée à aucun men
 
 ### 🔵 Évolutions futures
 
+20. **Chrono d'épreuve persistant** (K.1) — le compte à rebours des cas
+    pratiques vit en mémoire : si l'app est tuée en pleine épreuve, il repart
+    à zéro au retour. Le rendre incassable demande de stocker l'échéance sur
+    la ligne `attempt` en base et de la relire au montage.
+21. **Sous-libellé des niveaux de difficulté** (K.2) — les cartes Facile /
+    Moyen / Difficile mesurent 112 px pour afficher une icône et un mot. Une
+    seconde ligne (« Notions de base », « Le niveau du concours », « Pièges et
+    détails ») justifierait cette hauteur et dirait à l'utilisateur ce qu'il
+    choisit. Proposé, non réalisé.
+22. **Détail chiffré du dialogue de sortie** — dans les 211 quiz propagés, le
+    message est générique (« Tes réponses déjà validées sont enregistrées »).
+    Seul `quiz_culture_generale_france.dart` affiche le compte exact, la
+    famille allégée stockant ses réponses dans une liste et non une map.
+
 17. Crawl automatisé des menus (y compris recherche interne) pour détecter
     d'éventuelles pages routées mais jamais liées depuis aucun point d'entrée
     (« orphelines » au sens inverse de C.4) — l'audit du 29/07 n'a couvert
@@ -626,8 +666,157 @@ manquant côté PA existait déjà en fichier mais n'était reliée à aucun men
 
 ---
 
-*Statut au 28/07/2026, 2ᵉ passe : le crash iOS (C.1) est corrigé et le
-garde-fou Réserve (C.3) renforcé. Reste 1 point 🔴 (déduplication
-`quiz_questions`) puis les points 🟠, en cours de traitement autonome.
-Prochaine étape : un premier build réel iOS + Android pour la QA manuelle
-listée en section G/I avant toute soumission aux stores.*
+## K. Session du 30/07/2026 — cas pratiques et refonte des 212 quiz
+
+Première session menée sur appareil Android réel. Les anomalies ci-dessous ont
+toutes été constatées à l'écran, pas déduites du code.
+
+### ✅ K.1 — Cas pratiques : 6 correctifs
+
+**Cartes de la liste invisibles** — assertion `A borderRadius can only be given
+on borders with uniform colors` levée pendant `paint()`, à chaque frame. La
+`BoxDecoration` combinait un `Border` non uniforme (liseré gauche opaque de 5 px,
+trois autres côtés à 30 % d'opacité) avec un `borderRadius`. Flutter interrompait
+le rendu : les cartes s'affichaient vides, seul le fond était peint. Corrigé par
+un `Border.all` uniforme, le liseré passant dans un `Stack`.
+
+**Bouton « Retour » inerte à l'ouverture d'un cas** — `showBack` valait
+`_index > 0`, or sur la page d'intro il n'existe pas de page précédente : le
+bouton était rendu désactivé. Séparé en deux intentions, reculer dans le
+`PageView` ou quitter vers la liste.
+
+**Bouton « Retour » définitivement mort sur la liste** — piège plus ancien,
+révélé par la suppression de rebuilds parasites. `onTap: _navBusy ? () {} :
+_goBack` lisait un état de navigation **dans `build`**, et `_navBusy` restait
+vrai pendant toute la visite d'un cas (le `await pushNamed` ne se résout qu'au
+retour). Le rebuild de la liste pendant l'animation de sortie figeait
+`onTap: () {}`. Remplacé par un anti-rebond temporel de 400 ms, hors `build`.
+
+**Compteur de cas faux** — le sous-titre affichait `cases.length`, soit la page
+courante (40 → 79 → 118 au fil du scroll). Nouveau `countCases()` au repository,
+via `count(CountOption.exact)` : requête `HEAD`, total dans l'en-tête
+`Content-Range`, zéro ligne transférée. **516 cas publiés** vérifiés en base.
+
+**Verrou anti-triche** — plus aucun retour possible dès la première question,
+`PopScope` inclus, avec dialogue de confirmation. Bouton cahier ajouté pour
+relire l'énoncé (seul accès au texte, puisque le retour est verrouillé).
+
+**Chrono d'épreuve** — durée = `estimated_minutes` du cas (20/25/30 min),
+démarré au clic sur « Je commence », donc la lecture de l'énoncé n'est pas
+décomptée. Le temps restant est **recalculé depuis une échéance**, jamais
+décrémenté : un compteur décrémenté dérive (frames sautées, app en arrière-plan)
+et finirait par mentir sur une épreuve chronométrée. À 00:00, flush des
+brouillons puis envoi automatique en correction. Limite connue → point 20.
+
+### ✅ K.2 — Quiz culture générale : refonte visuelle
+
+Travaillée sur `quiz_culture_generale_france.dart` avant propagation.
+
+- **Fond** : le noir plat devient un dégradé navy avec halo et trois masses
+  colorées dérivantes, décliné dans les **deux thèmes** (le clair a la même
+  construction en lumineux, pas un aplat). Le splash de difficulté ne peint plus
+  son propre fond : il laisse voir celui de la page, ce qui supprime une rupture
+  de teinte et trois `AnimatedBuilder`.
+- **Croix de feedback superposée au texte** : overlay flottant de 240 px
+  supprimé. L'animation vit dans l'icône du bandeau, bornée, dimensionnée selon
+  la largeur d'écran **et** le réglage de texte système. La réserve de 240 px
+  sous la carte est récupérée.
+- **Liseré fantôme au-dessus du bandeau** : le contour venait du `shape` d'un
+  `Material`, le fond d'un `Container` enfant avec `margin: top 10`. Deux boîtes
+  décalées de 10 px. Fusionnées en une seule `BoxDecoration`.
+- **Cascades d'apparition** : splash (7 éléments, 920 ms) et questions
+  (420 ms par élément, décalage 130 ms). Un contrôleur par écran, chaque élément
+  lisant un `Interval` — pas un `Timer` par élément.
+- **Clé de sous-arbre** : `page_${i}_${animVisible}_${_isCorrect}_${_currentChoice}`
+  changeait **à chaque tap sur une option**, détruisant et recréant tout le
+  sous-arbre. Réduite à `ValueKey('page_$i')`. Effet de bord gratuit : les
+  options animent enfin leur passage au vert/rouge.
+- **Couleurs des niveaux** alignées sur `_difficultyStyle` des cas pratiques
+  (`#22C55E` / `#F59E0B` / `#EF4444`) : un « Difficile » a la même couleur
+  partout dans l'app. Emojis 🌱🏅🏆 remplacés par des icônes Material, dont le
+  dessin ne dépend plus de la police système.
+- **Sécurité des sorties** : « Mettre fin » et la croix clôturaient sans rien
+  demander. Confirmation ajoutée sur les deux, plus le geste retour système.
+- **Bug de sauvegarde** : `_updateHistoryOnAbandon` écrivait `score: 0,
+  correct_count: 0, total_questions: 0`. Répondre à 5 questions puis fermer
+  effaçait les 5 résultats de l'historique. Supprimée ; tous les chemins passent
+  par `_updateHistoryOnFinish`.
+- **ANR corrigé** (introduit puis résolu dans la session) : `PopScope(canPop:
+  false)` + `Navigator.maybePop()` → `maybePop` consulte les `PopScope`, se
+  faisait refuser, rappelait la confirmation, en boucle synchrone. Gel de l'UI
+  (« COP'IQ isn't responding »). Toutes les sorties utilisent `pop()`.
+- Divers : compteur `Question x / y`, haptique à la sélection, défilement vers
+  la correction, drapeau de signalement masqué hors quiz, contour et rayon du
+  bouton secondaire alignés sur le principal, `width: 360` fixe de l'overlay de
+  chargement (débordait sous 320 dp) passé en contrainte, `WillPopScope`
+  déprécié → `PopScope`, accessibilité (`Semantics` radio, respect de
+  « Réduire les animations »), deux `AnimationController` fantômes supprimés —
+  dont un qui planifiait un tick à chaque frame pour repeindre zéro pixel.
+
+### ✅ K.3 — Propagation aux 212 quiz de l'application
+
+| Zone | Quiz modifiés |
+|---|---|
+| GPX Scolarité | 107 |
+| PA Scolarité | 69 |
+| PA Exam | 19 |
+| GPX Exam | 17 |
+| **Total** | **212** |
+
+Deux familles de template identifiées — 27 fichiers complets (historique
+Supabase, pagination, overlay de chargement) et 185 allégés (questions en dur) —
+mais architecture UI commune. Propagation par **huit scripts successifs**, chacun
+en tout-ou-rien par fichier, avec un parseur qui trouve les vraies parenthèses
+fermantes en ignorant chaînes et commentaires. Tout fichier dont l'équilibrage
+des délimiteurs cassait était **rejeté plutôt qu'écrit**. Scripts conservés dans
+`/tmp/prop/` (non versionnés — à recréer si une propagation similaire est
+nécessaire).
+
+### ✅ K.4 — Erreurs introduites par la propagation, puis corrigées
+
+Signalées par `flutter analyze` (428 issues), deux familles :
+
+1. **`dispose()` dupliqué, ~211 fichiers.** Le splash avait un `dispose()` qui
+   libérait deux contrôleurs ; ceux-ci supprimés, la méthode s'est vidée
+   (`super.dispose()` seul) et l'injection du moteur de cascade en a ajouté une
+   seconde → `duplicate_definition` + `unnecessary_overrides` sur la même ligne.
+   Les `dispose()` vides ont été retirés.
+2. **`pa_quiz_tests_psycotechniques_suite_logiques.dart`, 3 erreurs.** Structure
+   atypique (une seule question à l'écran, pas de `PageView`, `pulseController`
+   au lieu de `_pulseCtrl`) : paramètres `estActive`/`pulse` manquants à l'appel,
+   et `question.sub` inexistant sur son modèle. Corrigé à la main.
+
+Trois audits statiques repassés à zéro sur les 212 fichiers : équilibrage et
+doublons de membres, paramètres requis des appels, cycles de vie des
+contrôleurs (mixin présent, bon type, `dispose()` systématique).
+
+⚠️ **`flutter analyze` doit être relancé** pour confirmer — non disponible dans
+l'environnement où les correctifs ont été écrits.
+
+### 🟡 K.5 — Énoncés qui répètent leurs propres réponses (non corrigé en base)
+
+Beaucoup de questions générées listent les options dans leur libellé : « Quelle
+région est réputée pour les vins de Bordeaux : Auvergne-Rhône-Alpes,
+Centre-Val de Loire, Martinique ou Nouvelle-Aquitaine ? », puis les quatre mêmes
+options s'affichent en dessous. Le titre double de hauteur et la question perd sa
+force.
+
+Un nettoyage **à l'affichage** a été posé, volontairement conservateur : coupe au
+dernier `:` seulement si toutes les options se retrouvent après lui, si la partie
+conservée fait au moins 15 caractères, et si aucune option ne fait moins de
+4 caractères (« oui », « non », « 12 » se retrouvent par hasard dans n'importe
+quelle phrase). Sinon le libellé passe intact.
+
+**C'est un filet, pas un remède.** La correction de fond est un `UPDATE` sur
+`quiz_questions` — non fait, volume non mesuré.
+
+---
+
+*Statut au 30/07/2026 : aucun point 🔴 connu. Les cas pratiques et les 212 quiz
+de l'application ont été refondus et homogénéisés, avec 9 anomalies visuelles ou
+fonctionnelles corrigées — dont deux qui empêchaient l'affichage du contenu et
+une qui gelait l'app. Deux actions immédiates avant toute soumission :
+**relancer `flutter analyze`** (K.4) et **tester les quiz sur appareil réel dans
+les deux thèmes**, la propagation n'ayant été vérifiée que statiquement sur 211
+des 212 fichiers. Le reste de l'application n'a jamais été regardé tourner
+(section G).*
