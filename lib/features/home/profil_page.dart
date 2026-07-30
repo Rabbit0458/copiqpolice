@@ -34,6 +34,8 @@ import 'package:copiqpolice/features/onboarding/onboarding_screen.dart';
 
 // <-- Logger centralisé (fourni par toi)
 import 'package:copiqpolice/core/services/app_console_logger.dart';
+import 'package:copiqpolice/core/services/entitlement_service.dart';
+import 'package:copiqpolice/core/widgets/user_verification_badge.dart';
 
 /// ===== Validators
 
@@ -705,6 +707,8 @@ class _ProfilPageState extends State<ProfilPage> {
       routeName: ProfilPage.routeName,
     );
 
+    unawaited(EntitlementService.instance.refresh());
+
     _authSub = _sb.auth.onAuthStateChange.listen((event) async {
       if (event.session?.user != null) {
         await AppConsoleLogger.info(
@@ -1033,10 +1037,31 @@ class _ProfilPageState extends State<ProfilPage> {
                         ),
                       ),
                       const SizedBox(height: 10),
-                      Text(
-                        displayName,
-                        style: Theme.of(context).textTheme.titleMedium
-                            ?.copyWith(fontWeight: FontWeight.w800),
+                      ValueListenableBuilder<Entitlement>(
+                        valueListenable: EntitlementService.instance.state,
+                        builder: (context, entitlement, _) {
+                          return Row(
+                            mainAxisSize: MainAxisSize.min,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Flexible(
+                                child: Text(
+                                  displayName,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: Theme.of(context).textTheme.titleMedium
+                                      ?.copyWith(fontWeight: FontWeight.w800),
+                                ),
+                              ),
+                              if (entitlement.badgeType != UserBadgeType.none) ...[
+                                const SizedBox(width: 5),
+                                UserVerificationBadge(
+                                  type: entitlement.badgeType,
+                                  size: 17,
+                                ),
+                              ],
+                            ],
+                          );
+                        },
                       ),
                       const SizedBox(height: 4),
                       if (_username.text.isNotEmpty)

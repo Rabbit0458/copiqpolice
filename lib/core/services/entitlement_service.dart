@@ -16,6 +16,8 @@ import 'dart:async';
 import 'package:flutter/foundation.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
+import 'package:copiqpolice/core/widgets/user_verification_badge.dart';
+
 class Entitlement {
   final bool authenticated;
   final String role; // 'owner' | 'admin' | 'moderator' | 'active' | 'user'
@@ -30,6 +32,8 @@ class Entitlement {
   final int freeLimit;
   final int freeRemaining;
   final DateTime? freeResetsAt;
+  final int quizAttemptsCount;
+  final UserBadgeType badgeType;
 
   const Entitlement({
     required this.authenticated,
@@ -45,6 +49,8 @@ class Entitlement {
     required this.freeLimit,
     required this.freeRemaining,
     required this.freeResetsAt,
+    this.quizAttemptsCount = 0,
+    this.badgeType = UserBadgeType.none,
   });
 
   static const Entitlement guest = Entitlement(
@@ -61,6 +67,8 @@ class Entitlement {
     freeLimit: 10,
     freeRemaining: 10,
     freeResetsAt: null,
+    quizAttemptsCount: 0,
+    badgeType: UserBadgeType.none,
   );
 
   factory Entitlement.fromJson(Map<String, dynamic> j) {
@@ -83,7 +91,22 @@ class Entitlement {
       freeLimit: (j['free_limit'] is num) ? (j['free_limit'] as num).toInt() : 10,
       freeRemaining: (j['free_remaining'] is num) ? (j['free_remaining'] as num).toInt() : 10,
       freeResetsAt: parse(j['free_resets_at']),
+      quizAttemptsCount: (j['quiz_attempts_count'] is num)
+          ? (j['quiz_attempts_count'] as num).toInt()
+          : 0,
+      badgeType: UserBadgeType.fromString(j['badge_type'] as String?),
     );
+  }
+
+  /// Progression vers le badge suivant, plafonnée à 1.0. Exploitable pour un
+  /// futur écran de récompenses ("57/100 quiz lancés") sans reconstruire la
+  /// logique — pas encore affichée faute d'emplacement dédié.
+  double get nextBadgeProgress {
+    if (badgeType == UserBadgeType.admin || badgeType == UserBadgeType.moderator) {
+      return 1.0;
+    }
+    final target = badgeType == UserBadgeType.active ? 2000 : 100;
+    return (quizAttemptsCount / target).clamp(0.0, 1.0);
   }
 
   /// Should the app show ads to this user? Premium users (incl. owner) get NO ads.

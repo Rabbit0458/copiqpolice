@@ -6,7 +6,38 @@ import 'package:image_picker/image_picker.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:copiqpolice/core/widgets/app_notifier.dart'
     show AppSettingsController, AppNotifier;
+import 'package:copiqpolice/core/widgets/user_verification_badge.dart';
 import 'package:copiqpolice/features/forum/forum_theme.dart';
+
+/// Récupère en un seul appel batché (anti N+1) le badge de vérification de
+/// chaque auteur — admin/modérateur/légende/actif/aucun, calculé côté
+/// serveur par `compute_badge_type()`. Ne fait jamais confiance à une valeur
+/// de rôle locale : c'est la RPC `get_public_profile_badges` qui fait foi.
+Future<Map<String, UserBadgeType>> _fetchForumBadges(
+  SupabaseClient sb,
+  Iterable<String> userIds,
+) async {
+  final ids = userIds.where((id) => id.isNotEmpty).toSet().toList();
+  if (ids.isEmpty) return const {};
+  try {
+    final rows = await sb.rpc(
+      'get_public_profile_badges',
+      params: {'p_user_ids': ids},
+    );
+    final map = <String, UserBadgeType>{};
+    for (final row in (rows as List)) {
+      final m = Map<String, dynamic>.from(row as Map);
+      final uid = m['user_id']?.toString();
+      if (uid == null) continue;
+      map[uid] = UserBadgeType.fromString(m['badge_type'] as String?);
+    }
+    return map;
+  } catch (_) {
+    // Le badge est décoratif : une erreur réseau ne doit jamais bloquer
+    // l'affichage du forum, on retombe simplement sur "aucun badge".
+    return const {};
+  }
+}
 
 /// ForumEspaceExamGPXPage
 /// ✅ Profil Supabase user_profiles (username + role)
@@ -337,6 +368,14 @@ class _ForumEspaceExamGPXPageState extends State<ForumEspaceExamGPXPage> {
 
     if (!mounted) return;
     setState(() => _posts = all);
+
+    final badges = await _fetchForumBadges(_sb, all.map((p) => p.authorId));
+    if (!mounted || badges.isEmpty) return;
+    setState(() {
+      _posts = _posts
+          .map((p) => p.copyWith(badgeType: badges[p.authorId]))
+          .toList();
+    });
   }
 
   // ─────────────────────────── LIKES ───────────────────────────
@@ -1238,6 +1277,7 @@ class _Post {
   final String authorId;
   final String username;
   final String authorRole;
+  final UserBadgeType badgeType;
   final int avatarIndex;
 
   final String title; // ✅ NEW
@@ -1254,6 +1294,7 @@ class _Post {
     required this.authorId,
     required this.username,
     required this.authorRole,
+    this.badgeType = UserBadgeType.none,
     required this.avatarIndex,
     required this.title,
     required this.content,
@@ -1269,6 +1310,7 @@ class _Post {
     String? authorId,
     String? username,
     String? authorRole,
+    UserBadgeType? badgeType,
     int? avatarIndex,
     String? title,
     String? content,
@@ -1283,6 +1325,7 @@ class _Post {
       authorId: authorId ?? this.authorId,
       username: username ?? this.username,
       authorRole: authorRole ?? this.authorRole,
+      badgeType: badgeType ?? this.badgeType,
       avatarIndex: avatarIndex ?? this.avatarIndex,
       title: title ?? this.title,
       content: content ?? this.content,
@@ -1747,7 +1790,7 @@ class _PostCard extends StatelessWidget {
             _PostHeader(
               username: post.username,
               time: _prettyTime(post.createdAt),
-              role: post.authorRole,
+              badgeType: post.badgeType,
               avatarIndex: post.avatarIndex,
               onMore: onMore,
             ),
@@ -3905,6 +3948,7 @@ class _CommentsSheetState extends State<_CommentsSheet> {
   String? _err;
 
   List<Map<String, dynamic>> _comments = <Map<String, dynamic>>[];
+  Map<String, UserBadgeType> _badges = <String, UserBadgeType>{};
 
   String? _replyToCommentId;
   String? _replyToLabel;
@@ -3953,6 +3997,12 @@ class _CommentsSheetState extends State<_CommentsSheet> {
 
       if (!mounted) return;
       setState(() => _comments = list);
+
+      final badges = await _fetchForumBadges(
+        widget.supabase,
+        list.map((c) => c['author_id'].toString()),
+      );
+      if (mounted && badges.isNotEmpty) setState(() => _badges = badges);
     } catch (e) {
       if (!mounted) return;
       setState(() => _err = e.toString());
@@ -4286,6 +4336,9 @@ class _CommentsSheetState extends State<_CommentsSheet> {
                                       _CommentTile(
                                         username: uname,
                                         avatarIndex: avatar,
+                                        badgeType:
+                                            _badges[authorId] ??
+                                            UserBadgeType.none,
                                         content:
                                             (c['content'] as String?) ?? '',
                                         onReply: () {
@@ -4335,6 +4388,9 @@ class _CommentsSheetState extends State<_CommentsSheet> {
                                                   isReply: true,
                                                   username: rName,
                                                   avatarIndex: rAvatar,
+                                                  badgeType:
+                                                      _badges[rAuthorId] ??
+                                                      UserBadgeType.none,
                                                   content:
                                                       (r['content']
                                                           as String?) ??
@@ -4930,6 +4986,7 @@ class _PostDetailPageState extends State<_PostDetailPage> {
   late _Post _post;
 
   List<Map<String, dynamic>> _comments = <Map<String, dynamic>>[];
+  Map<String, UserBadgeType> _badges = <String, UserBadgeType>{};
 
   @override
   void initState() {
@@ -4973,6 +5030,17 @@ class _PostDetailPageState extends State<_PostDetailPage> {
 
       // 2) Load comments
       await _loadComments();
+
+      // 3) Badges (auteur du post + auteurs des commentaires), batché
+      final ids = <String>{
+        _post.authorId,
+        ..._comments.map((c) => c['author_id'].toString()),
+      };
+      final badges = await _fetchForumBadges(_sb, ids);
+      if (badges.isNotEmpty) {
+        _badges = badges;
+        _post = _post.copyWith(badgeType: badges[_post.authorId]);
+      }
     } catch (e) {
       _err = e.toString();
     } finally {
@@ -5057,7 +5125,7 @@ class _PostDetailPageState extends State<_PostDetailPage> {
                     _PostHeader(
                       username: _post.username,
                       time: _prettyTime(_post.createdAt),
-                      role: _post.authorRole,
+                      badgeType: _post.badgeType,
                       avatarIndex: _post.avatarIndex,
                       onMore: widget.onOpenPostMenu,
                     ),
@@ -5191,6 +5259,7 @@ class _PostDetailPageState extends State<_PostDetailPage> {
     Map<String, List<Map<String, dynamic>>> repliesByParent,
   ) {
     final id = c['id'].toString();
+    final authorId = c['author_id'].toString();
     final profile = (c['user_profiles'] as Map<String, dynamic>?) ?? {};
     final uname = (profile['username'] as String?) ?? "Utilisateur";
     final avatar = (profile['avatar_index'] as int?) ?? 1;
@@ -5203,6 +5272,7 @@ class _PostDetailPageState extends State<_PostDetailPage> {
         _CommentTile(
           username: uname,
           avatarIndex: avatar,
+          badgeType: _badges[authorId] ?? UserBadgeType.none,
           content: (c['content'] as String?) ?? '',
           onReply: () {
             // ici tu peux ouvrir directement la sheet et pré-sélectionner le reply (si tu veux)
@@ -5230,6 +5300,9 @@ class _PostDetailPageState extends State<_PostDetailPage> {
                                 as Map<String, dynamic>?)?['avatar_index']
                             as int?) ??
                         1,
+                    badgeType:
+                        _badges[r['author_id'].toString()] ??
+                        UserBadgeType.none,
                     content: (r['content'] as String?) ?? '',
                     isReply: true,
                     onReply: () => widget.onOpenComments(),
@@ -5248,14 +5321,14 @@ class _PostDetailPageState extends State<_PostDetailPage> {
 class _PostHeader extends StatelessWidget {
   final String username;
   final String time;
-  final String role;
+  final UserBadgeType badgeType;
   final int avatarIndex;
   final VoidCallback onMore;
 
   const _PostHeader({
     required this.username,
     required this.time,
-    required this.role,
+    required this.badgeType,
     required this.avatarIndex,
     required this.onMore,
   });
@@ -5263,12 +5336,6 @@ class _PostHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final t = context.forum;
-
-    final Color badgeColor = switch (role.trim().toLowerCase()) {
-      'admin' => t.danger,
-      'moderator' => t.warning,
-      _ => t.primary,
-    };
 
     return Row(
       children: [
@@ -5294,8 +5361,10 @@ class _PostHeader extends StatelessWidget {
                       ),
                     ),
                   ),
-                  const SizedBox(width: 6),
-                  Icon(Icons.verified_rounded, size: 16, color: badgeColor),
+                  if (badgeType != UserBadgeType.none) ...[
+                    const SizedBox(width: 6),
+                    UserVerificationBadge(type: badgeType, size: 16),
+                  ],
                 ],
               ),
               const SizedBox(height: 2),
@@ -5419,6 +5488,7 @@ class _CommentTile extends StatelessWidget {
   final int avatarIndex;
   final String content;
   final bool isReply;
+  final UserBadgeType badgeType;
 
   final VoidCallback onReply;
   final VoidCallback onMore;
@@ -5430,6 +5500,7 @@ class _CommentTile extends StatelessWidget {
     required this.onReply,
     required this.onMore,
     this.isReply = false,
+    this.badgeType = UserBadgeType.none,
   });
 
   @override
@@ -5475,14 +5546,25 @@ class _CommentTile extends StatelessWidget {
                 Row(
                   children: [
                     Expanded(
-                      child: Text(
-                        username,
-                        style: const TextStyle(
-                          fontWeight: FontWeight.w900,
-                          color: _ForumTheme.text,
-                          fontSize: 13.5,
-                        ),
-                        overflow: TextOverflow.ellipsis,
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Flexible(
+                            child: Text(
+                              username,
+                              style: const TextStyle(
+                                fontWeight: FontWeight.w900,
+                                color: _ForumTheme.text,
+                                fontSize: 13.5,
+                              ),
+                              overflow: TextOverflow.ellipsis,
+                            ),
+                          ),
+                          if (badgeType != UserBadgeType.none) ...[
+                            const SizedBox(width: 4),
+                            UserVerificationBadge(type: badgeType, size: 14),
+                          ],
+                        ],
                       ),
                     ),
                     _Pressable(
