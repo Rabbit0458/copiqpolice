@@ -44,9 +44,6 @@ class _GpxCasPratiqueListPageState extends State<GpxCasPratiqueListPage>
   // La cascade d'apparition est gérée carte par carte (_ApparitionCascade),
   // sans contrôleur partagé : voir le commentaire dans l'itemBuilder.
 
-  /// ✅ Empêche les doubles taps / doubles navigations (fixe ! _debugLocked)
-  bool _navBusy = false;
-
   // ─── Supabase data ───────────────────────────────────────────────────────
   final _repo = CasPratiqueRepositoryImpl();
   List<CaseSummary>? _cases;
@@ -77,11 +74,75 @@ class _GpxCasPratiqueListPageState extends State<GpxCasPratiqueListPage>
   bool _hasMoreCases = true;
   bool _loadingMoreCases = false;
 
+  /// Taille réelle du catalogue publié, comptée côté base (`countCases`).
+  /// `null` tant que le compte n'est pas revenu : on n'affiche alors pas de
+  /// chiffre plutôt qu'un chiffre faux. Ne dépend pas de la pagination, donc
+  /// reste stable quand on scrolle et suit automatiquement l'ajout de cas.
+  int? _totalCases;
+
+  /// Instant d'arrivée de la première page de cas. Sert de point zéro à la
+  /// cascade d'apparition : seules les cartes construites dans la fenêtre
+  /// `_cascadeFenetre` qui suit s'animent. Toutes les autres — celles que le
+  /// scroll fait entrer à l'écran, et celles des pages suivantes — se peignent
+  /// immédiatement, sans délai ni fondu.
+  ///
+  /// Le point zéro est posé à l'arrivée des données et non dans `initState` :
+  /// sinon un fetch lent consommerait la fenêtre et la cascade ne se jouerait
+  /// jamais.
+  DateTime? _cascadeDepuis;
+
+  /// Durée pendant laquelle la cascade reste active après l'arrivée des cas.
+  /// Couvre le retard maximal appliqué aux rangs animés (7 × 70 = 490 ms) plus
+  /// une marge pour les cartes pré-construites par le `cacheExtent`.
+  static const Duration _cascadeFenetre = Duration(milliseconds: 700);
+
+  /// Au-delà de ce rang, aucune cascade : ces cartes sont hors du premier écran,
+  /// l'utilisateur ne les atteint qu'en scrollant — et là on veut de l'instantané.
+  static const int _cascadeRangMax = 8;
+
+  /// Retard d'apparition figé par rang. Mémorisé plutôt que recalculé car un
+  /// `itemBuilder` peut être appelé plusieurs fois pour un même index dans une
+  /// même passe de layout : le retard doit rester identique, sinon l'animation
+  /// redémarre en cours de route.
+  final Map<int, Duration> _retardApparition = <int, Duration>{};
+
+  /// Retard avant le fondu de la carte de ce rang.
+  ///
+  /// Cascade d'ouverture (premier écran, dans la fenêtre qui suit l'arrivée des
+  /// données) : retard en escalier, l'effet d'origine.
+  ///
+  /// Partout ailleurs — scroll, pages suivantes, remontée dans la liste — le
+  /// retard est **nul**. La carte s'anime quand même (fondu + glissement), mais
+  /// démarre au frame où elle est construite : d'où le « scroll fondu » sans les
+  /// cartes vides que produisait un retard jusqu'à 600 ms en scroll rapide.
+  Duration _retardPour(int rang) => _retardApparition.putIfAbsent(rang, () {
+        if (rang >= _cascadeRangMax) return Duration.zero;
+        final depuis = _cascadeDepuis;
+        if (depuis == null) return Duration.zero;
+        if (DateTime.now().difference(depuis) > _cascadeFenetre) {
+          return Duration.zero;
+        }
+        return Duration(milliseconds: math.min(600, rang * 70));
+      });
+
   @override
   void initState() {
     super.initState();
     _scrollController.addListener(_onScroll);
     _loadCases();
+    _loadTotalCases();
+  }
+
+  /// Compte le catalogue en parallèle de la première page : requête HEAD, donc
+  /// elle ne retarde pas l'affichage des cartes. Un échec est silencieux — le
+  /// sous-titre retombe simplement sur « Entraînement concours ».
+  Future<void> _loadTotalCases() async {
+    try {
+      final total = await _repo.countCases();
+      if (mounted) setState(() => _totalCases = total);
+    } catch (_) {
+      // Compteur décoratif : pas de raison de bloquer ou d'alerter l'écran.
+    }
   }
 
   void _onScroll() {
@@ -99,6 +160,9 @@ class _GpxCasPratiqueListPageState extends State<GpxCasPratiqueListPage>
         setState(() {
           _cases = cases;
           _loadingCases = false;
+          // Point zéro de la cascade : les cartes du premier écran sont sur le
+          // point d'être construites, ce sont les seules à animer.
+          _cascadeDepuis = DateTime.now();
           // Une première page incomplète = catalogue plus court qu'une page.
           _hasMoreCases = cases.length == _pageSize;
         });
@@ -167,59 +231,65 @@ class _GpxCasPratiqueListPageState extends State<GpxCasPratiqueListPage>
     super.dispose();
   }
 
-  Future<void> _safeNav(Future<void> Function() action) async {
-    if (_navBusy) return;
-    _navBusy = true;
-    try {
-      // ✅ attend la fin du frame courant avant de naviguer (évite le "locked")
-      await WidgetsBinding.instance.endOfFrame;
-      if (!mounted) return;
+  /// Anti-rebond de navigation : deux déclenchements à moins de 400 ms sont
+  /// ignorés, ce qui suffit à absorber le double-tap responsable des
+  /// « Navigator locked ».
+  ///
+  /// Remplace le booléen `_navBusy` qui encadrait `await pushNamed(...)`. Ce
+  /// `await` ne se résout qu'au **retour** du cas : le verrou restait donc levé
+  /// pendant toute la visite, et le `build` de la liste — qui le relisait pour
+  /// désactiver la pastille « Retour » — pouvait se produire pendant cette
+  /// fenêtre. Le bouton restait alors inerte jusqu'au prochain rebuild, c'est-à-
+  /// dire souvent jamais.
+  DateTime? _derniereNav;
 
-      await action();
-    } finally {
-      _navBusy = false;
+  bool _navTropRapide() {
+    final maintenant = DateTime.now();
+    final precedente = _derniereNav;
+    if (precedente != null &&
+        maintenant.difference(precedente) < const Duration(milliseconds: 400)) {
+      return true;
     }
+    _derniereNav = maintenant;
+    return false;
+  }
+
+  Future<void> _safeNav(Future<void> Function() action) async {
+    if (_navTropRapide()) return;
+    // Attend la fin du frame courant avant de naviguer (évite le "locked").
+    await WidgetsBinding.instance.endOfFrame;
+    if (!mounted) return;
+    await action();
   }
 
   void _goBack() {
-    if (_navBusy) return;
-    _navBusy = true;
+    if (_navTropRapide()) return;
 
     HapticFeedback.selectionClick();
 
     // On laisse Flutter finir les transitions / pops précédents
     WidgetsBinding.instance.addPostFrameCallback((_) async {
-      if (!mounted) {
-        _navBusy = false;
-        return;
-      }
+      if (!mounted) return;
 
       // micro délai = laisse finir l'unlock interne du Navigator
       await Future<void>.delayed(const Duration(milliseconds: 1));
-      if (!mounted) {
-        _navBusy = false;
-        return;
-      }
+      if (!mounted) return;
 
       final nav = Navigator.of(context, rootNavigator: true);
 
-      try {
-        if (nav.canPop()) {
-          nav.pop();
-        } else {
-          // Cas fréquent : la page a été atteinte par pushReplacement, ou via un
-          // deep link / une notification. La pile est alors vide, `canPop()`
-          // renvoie false et l'ancien code ne faisait STRICTEMENT RIEN — le
-          // bouton « Retour » paraissait mort.
-          // On renvoie donc explicitement vers l'accueil « Préparation au
-          // concours de Gardien de la Paix ».
-          nav.pushNamedAndRemoveUntil(
-            HomePageGpxExam.routeName,
-            (route) => false,
-          );
-        }
-      } finally {
-        _navBusy = false;
+      if (nav.canPop()) {
+        nav.pop();
+      } else {
+        // Cas fréquent : la page a été atteinte par pushReplacement, ou via un
+        // deep link / une notification. La pile est alors vide, `canPop()`
+        // renvoie false et l'ancien code ne faisait STRICTEMENT RIEN — le
+        // bouton « Retour » paraissait mort.
+        // On renvoie donc explicitement vers l'accueil « Préparation au
+        // concours de Gardien de la Paix ».
+        nav.pushNamedAndRemoveUntil(
+          HomePageGpxExam.routeName,
+          (route) => false,
+        );
       }
     });
   }
@@ -379,9 +449,12 @@ class _GpxCasPratiqueListPageState extends State<GpxCasPratiqueListPage>
                         padding: const EdgeInsets.fromLTRB(14, 12, 14, 6),
                         child: Row(
                           children: [
-                            // ✅ bouton retour SAFE (désactivé pendant nav)
+                            // Toujours actif. L'anti-rebond vit dans `_goBack`,
+                            // pas dans le `build` : un état de navigation lu
+                            // pendant la construction se figeait au dernier
+                            // rebuild et rendait la pastille morte pour de bon.
                             _BackButtonPill(
-                              onTap: _navBusy ? () {} : _goBack,
+                              onTap: _goBack,
                               fg: Colors.white.withValues(alpha: 0.92),
                               stroke: Colors.white.withValues(alpha: 0.18),
                               bg: Colors.white.withValues(alpha: 0.12),
@@ -402,9 +475,13 @@ class _GpxCasPratiqueListPageState extends State<GpxCasPratiqueListPage>
                                   ),
                                   const SizedBox(height: 2),
                                   Text(
-                                    cases.isEmpty
+                                    // Total du catalogue (compté côté base),
+                                    // pas le nombre de cartes déjà paginées :
+                                    // sinon le compteur montait au fil du
+                                    // scroll (40 → 79 → …).
+                                    _totalCases == null || _totalCases == 0
                                         ? "Entraînement concours"
-                                        : "${cases.length} cas · entraînement concours",
+                                        : "$_totalCases cas · entraînement concours",
                                     textAlign: TextAlign.center,
                                     style: GoogleFonts.montserrat(
                                       color: Colors.white.withValues(alpha: 0.78),
@@ -484,8 +561,11 @@ class _GpxCasPratiqueListPageState extends State<GpxCasPratiqueListPage>
                                     setState(() {
                                       _loadingCases = true;
                                       _casesError = null;
+                                      // Nouvelle tentative = nouvelle cascade.
+                                      _retardApparition.clear();
                                     });
                                     _loadCases();
+                                    _loadTotalCases();
                                   },
                                   child: Text(
                                     'Réessayer',
@@ -549,23 +629,31 @@ class _GpxCasPratiqueListPageState extends State<GpxCasPratiqueListPage>
 
                             if (reduceMotion) return child;
 
-                            // Chaque carte anime la sienne, via un
-                            // TweenAnimationBuilder autonome.
+                            final retard = _retardPour(i);
+
+                            // Chaque carte possède son propre contrôleur.
                             //
                             // ⚠️ Choix délibéré : NE PAS repasser par un
-                            // AnimationController partagé. Une cascade pilotée
-                            // par un contrôleur unique a un défaut grave — si le
-                            // contrôleur ne démarre pas (ordre d'initialisation,
-                            // rebuild, données arrivées trop tôt ou trop tard),
-                            // l'opacité reste à 0 et **toutes les cartes
-                            // deviennent invisibles** alors que les données sont
-                            // bien là. C'est exactement ce qui s'est produit.
+                            // AnimationController partagé pour toute la liste.
+                            // Une cascade pilotée par un contrôleur unique a un
+                            // défaut grave — s'il ne démarre pas (ordre
+                            // d'initialisation, rebuild, données arrivées trop
+                            // tôt ou trop tard), l'opacité reste à 0 et
+                            // **toutes les cartes deviennent invisibles** alors
+                            // que les données sont bien là. C'est exactement ce
+                            // qui s'était produit.
                             //
-                            // Ici l'état final (opaque, en place) est garanti :
-                            // au pire l'animation ne se joue pas, mais la carte
-                            // s'affiche toujours.
+                            // Ici chaque contrôleur est lancé dans le
+                            // `initState` de sa propre carte : une carte qui
+                            // s'affiche est une carte qui s'anime.
                             return _ApparitionCascade(
-                              rang: i,
+                              retard: retard,
+                              // Cascade d'ouverture : timing d'origine, plus
+                              // ample. Apparition au scroll : plus nerveuse,
+                              // la carte doit être lisible tout de suite.
+                              duree: retard == Duration.zero
+                                  ? const Duration(milliseconds: 280)
+                                  : const Duration(milliseconds: 460),
                               child: child,
                             );
                           },
@@ -590,39 +678,75 @@ class _GpxCasPratiqueListPageState extends State<GpxCasPratiqueListPage>
 /// Autonome par carte : aucun AnimationController partagé, donc aucun risque
 /// qu'un problème d'ordonnancement laisse la liste entière invisible.
 class _ApparitionCascade extends StatefulWidget {
-  const _ApparitionCascade({required this.rang, required this.child});
+  const _ApparitionCascade({
+    required this.retard,
+    required this.duree,
+    required this.child,
+  });
 
-  final int rang;
+  /// Retard avant le démarrage. `Duration.zero` → l'animation part au frame
+  /// courant, ce qui est le cas au scroll.
+  final Duration retard;
+
+  final Duration duree;
   final Widget child;
 
   @override
   State<_ApparitionCascade> createState() => _ApparitionCascadeState();
 }
 
-class _ApparitionCascadeState extends State<_ApparitionCascade> {
-  bool _pret = false;
+class _ApparitionCascadeState extends State<_ApparitionCascade>
+    with SingleTickerProviderStateMixin {
+  /// Un seul contrôleur pilote fondu **et** glissement, via `FadeTransition` /
+  /// `SlideTransition`. Deux gains par rapport aux `AnimatedOpacity` +
+  /// `AnimatedSlide` précédents :
+  ///
+  /// 1. `forward()` est appelé dans `initState`, donc l'animation avance dès le
+  ///    premier frame. Les widgets implicites, eux, exigeaient un `setState`
+  ///    après coup : la carte restait à `opacity: 0` jusqu'au rebuild.
+  /// 2. Chaque tick repeint sans reconstruire le sous-arbre — le `_CaseTile`
+  ///    (gradient, ombre, clip antialiasé) n'est pas rebâti 60 fois.
+  late final AnimationController _ctrl = AnimationController(
+    vsync: this,
+    duration: widget.duree,
+  );
+
+  late final Animation<double> _fondu = CurvedAnimation(
+    parent: _ctrl,
+    curve: Curves.easeOut,
+  );
+
+  late final Animation<Offset> _glisse = Tween<Offset>(
+    begin: const Offset(0.06, 0.10),
+    end: Offset.zero,
+  ).animate(CurvedAnimation(parent: _ctrl, curve: Curves.easeOutCubic));
 
   @override
   void initState() {
     super.initState();
-    // Retard plafonné : sur une longue liste, la dernière carte ne doit pas
-    // attendre plusieurs secondes.
-    final retard = Duration(milliseconds: math.min(600, widget.rang * 70));
-    Future<void>.delayed(retard, () {
-      if (mounted) setState(() => _pret = true);
-    });
+    if (widget.retard == Duration.zero) {
+      _ctrl.forward();
+    } else {
+      // Retard plafonné en amont par `_retardPour` : sur une longue liste,
+      // aucune carte n'attend plusieurs secondes.
+      Future<void>.delayed(widget.retard, () {
+        if (mounted) _ctrl.forward();
+      });
+    }
+  }
+
+  @override
+  void dispose() {
+    _ctrl.dispose();
+    super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
-    return AnimatedOpacity(
-      opacity: _pret ? 1 : 0,
-      duration: const Duration(milliseconds: 420),
-      curve: Curves.easeOut,
-      child: AnimatedSlide(
-        offset: _pret ? Offset.zero : const Offset(0.06, 0.10),
-        duration: const Duration(milliseconds: 460),
-        curve: Curves.easeOutCubic,
+    return FadeTransition(
+      opacity: _fondu,
+      child: SlideTransition(
+        position: _glisse,
         child: widget.child,
       ),
     );
@@ -1034,59 +1158,69 @@ class _CaseTile extends StatelessWidget {
     final accent = data.themeColor;
     final diff = _difficultyStyle(data.difficulty);
 
+    final stroke = accent.withValues(alpha: isDark ? 0.42 : 0.30);
+
     return Opacity(
       opacity: locked ? 0.55 : 1.0,
-      child: Material(
-        color: cs.surface,
-        borderRadius: BorderRadius.circular(20),
-        clipBehavior: Clip.antiAlias,
-        child: InkWell(
-          onTap: locked ? null : onTap,
-          splashColor: accent.withValues(alpha: 0.12),
-          highlightColor: accent.withValues(alpha: 0.06),
-          child: Ink(
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(20),
-              // Halo teinté du thème : la carte prend la couleur de sa matière
-              // au lieu du gris uniforme précédent.
-              gradient: LinearGradient(
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
-                colors: [
-                  Color.alphaBlend(
-                    accent.withValues(alpha: isDark ? 0.16 : 0.09),
-                    cs.surface,
-                  ),
-                  cs.surface,
-                ],
-                stops: const [0.0, 0.72],
-              ),
-              // Liseré épais à gauche + contour fin : porté par la décoration
-              // et non par un Container dans un Row en CrossAxisAlignment
-              // .stretch, qui exigeait une hauteur que la Row ne pouvait pas
-              // fournir (contrainte verticale non bornée).
-              border: Border(
-                left: BorderSide(color: accent, width: 5),
-                top: BorderSide(
-                    color: accent.withValues(alpha: isDark ? 0.42 : 0.30),
-                    width: 1.2),
-                right: BorderSide(
-                    color: accent.withValues(alpha: isDark ? 0.42 : 0.30),
-                    width: 1.2),
-                bottom: BorderSide(
-                    color: accent.withValues(alpha: isDark ? 0.42 : 0.30),
-                    width: 1.2),
-              ),
-              boxShadow: [
-                BoxShadow(
-                  color: accent.withValues(alpha: isDark ? 0.22 : 0.14),
-                  blurRadius: 20,
-                  offset: const Offset(0, 10),
-                ),
-              ],
+      // L'ombre est portée par un calque externe : posée sur la décoration de
+      // l'`Ink`, elle était rognée par le `clipBehavior` du Material au-dessus.
+      child: DecoratedBox(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(20),
+          boxShadow: [
+            BoxShadow(
+              color: accent.withValues(alpha: isDark ? 0.22 : 0.14),
+              blurRadius: 20,
+              offset: const Offset(0, 10),
             ),
-            child: Padding(
-                    padding: const EdgeInsets.fromLTRB(13, 14, 13, 14),
+          ],
+        ),
+        child: Material(
+          color: cs.surface,
+          borderRadius: BorderRadius.circular(20),
+          clipBehavior: Clip.antiAlias,
+          child: InkWell(
+            onTap: locked ? null : onTap,
+            splashColor: accent.withValues(alpha: 0.12),
+            highlightColor: accent.withValues(alpha: 0.06),
+            child: Ink(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(20),
+                // Halo teinté du thème : la carte prend la couleur de sa matière
+                // au lieu du gris uniforme précédent.
+                gradient: LinearGradient(
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                  colors: [
+                    Color.alphaBlend(
+                      accent.withValues(alpha: isDark ? 0.16 : 0.09),
+                      cs.surface,
+                    ),
+                    cs.surface,
+                  ],
+                  stops: const [0.0, 0.72],
+                ),
+                // Contour STRICTEMENT uniforme : un `Border` aux côtés de
+                // couleurs différentes est incompatible avec un `borderRadius`
+                // (assertion « A borderRadius can only be given on borders with
+                // uniform colors » → la carte ne se peignait plus du tout).
+                // Le liseré épais à gauche est donc dessiné comme un calque
+                // dans le Stack ci-dessous, rogné par le Material arrondi.
+                border: Border.all(color: stroke, width: 1.2),
+              ),
+              child: Stack(
+                children: [
+                  // Liseré d'accent, aligné sur la hauteur réelle de la carte
+                  // grâce au Stack (pas de contrainte verticale non bornée
+                  // comme dans une Row en CrossAxisAlignment.stretch).
+                  Positioned(
+                    left: 0,
+                    top: 0,
+                    bottom: 0,
+                    child: Container(width: 5, color: accent),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(18, 14, 13, 14),
                     child: Row(
                       children: [
                         _NumberBadge(
@@ -1169,12 +1303,15 @@ class _CaseTile extends StatelessWidget {
                           ),
                         ),
                       ],
-                    ),   // Row interne
-            ),           // Padding
-          ),             // Ink
-        ),               // InkWell
-      ),                 // Material
-    );                   // Opacity
+                    ),         // Row interne
+                  ),           // Padding
+                ],             // Stack children
+              ),               // Stack
+            ),                 // Ink
+          ),                   // InkWell
+        ),                     // Material
+      ),                       // DecoratedBox
+    );                         // Opacity
   }
 }
 

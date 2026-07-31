@@ -49,7 +49,7 @@ class _LoadingOverlay extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final bg = isDark ? Colors.black : _Brand.bgLight;
+    final bg = isDark ? const Color(0xFF000B36) : _Brand.bgLight;
     final card = isDark ? _opa(Colors.white, .08) : _Brand.white;
     final text = isDark ? _opa(Colors.white, .92) : _Brand.textDark;
     final sub = isDark ? _opa(Colors.white, .70) : _opa(_Brand.textDark, .72);
@@ -74,7 +74,9 @@ class _LoadingOverlay extends StatelessWidget {
           ),
           Center(
             child: Container(
-              width: 360,
+              // `width: 360` fixe débordait sur un écran de 320 dp : avec les
+              // marges de 22, il ne reste que 276 dp exploitables.
+              constraints: const BoxConstraints(maxWidth: 360),
               padding: const EdgeInsets.all(18),
               margin: const EdgeInsets.symmetric(horizontal: 22),
               decoration: BoxDecoration(
@@ -747,6 +749,10 @@ class _QuizCultureGeneralFranceState extends State<QuizCultureGeneralFrance>
 
   void _select(String v) {
     if (_validated) return;
+    // Le tap sur une option ne produisait aucun retour : seule la validation
+    // vibrait. `selectionClick` est la vibration la plus légère du système,
+    // faite exactement pour un changement de choix.
+    HapticFeedback.selectionClick();
     setState(() => _currentChoice = v);
   }
 
@@ -811,7 +817,10 @@ class _QuizCultureGeneralFranceState extends State<QuizCultureGeneralFrance>
 
       if (mounted && _page.hasClients) {
         await _page.nextPage(
-          duration: const Duration(milliseconds: 300),
+          // Aligné sur la durée d'un élément de la cascade : le glissement se
+          // termine pendant que les options continuent d'apparaître, au lieu
+          // d'être fini depuis longtemps.
+          duration: const Duration(milliseconds: 420),
           curve: Curves.easeOutCubic,
         );
       }
@@ -851,6 +860,15 @@ class _QuizCultureGeneralFranceState extends State<QuizCultureGeneralFrance>
   Future<void> _endQuizNow() async {
     if (!_hasQuiz) return;
 
+    // Confirmation obligatoire : l'action est irréversible — elle finalise
+    // l'historique et ouvre le score. Le bouton étant voisin de « Suivant », un
+    // appui accidenté à la question 18 coûtait tout le reste du quiz.
+    final confirme = await _confirmerSortie(
+      titre: 'Mettre fin au quiz ?',
+      actionLabel: 'Mettre fin',
+    );
+    if (!confirme || !mounted) return;
+
     final int answered = _answers.length;
     final int totalForScore = answered <= 0 ? 1 : answered;
 
@@ -858,6 +876,126 @@ class _QuizCultureGeneralFranceState extends State<QuizCultureGeneralFrance>
     if (!mounted) return;
 
     _openResultDialog(_score, totalForScore);
+  }
+
+  /// Garde de réentrance des sorties.
+  ///
+  /// Sans elle, deux dialogues de confirmation pouvaient se superposer (croix
+  /// tapée deux fois, ou croix pendant un geste retour).
+  bool _sortieEnCours = false;
+
+  /// Ferme le quiz après confirmation, en enregistrant les réponses déjà
+  /// données. Chemin unique de la croix et du geste retour système : sans ça, le
+  /// geste contournerait la confirmation.
+  Future<void> _fermerQuiz() async {
+    if (_sortieEnCours) return;
+    _sortieEnCours = true;
+    try {
+      // Sur l'écran de choix de difficulté, ou après un quiz déjà clôturé, rien
+      // n'est engagé : on sort sans demander.
+      if (!_hasQuiz || _historyFinished) {
+        if (mounted) _quitterEcran();
+        return;
+      }
+
+      final confirme = await _confirmerSortie(
+        titre: 'Quitter le quiz ?',
+        actionLabel: 'Quitter',
+      );
+      if (!confirme || !mounted) return;
+
+      await _updateHistoryOnFinish();
+      if (!mounted) return;
+      _quitterEcran();
+    } finally {
+      _sortieEnCours = false;
+    }
+  }
+
+  /// Sortie effective de l'écran.
+  ///
+  /// **`pop()` et non `maybePop()`.** C'est la cause de l'ANR « COP'IQ isn't
+  /// responding » : `maybePop` consulte les `PopScope` de la route avant de
+  /// dépiler. Le `PopScope` de cette page étant à `canPop: false` pendant un
+  /// quiz, il refusait le pop et rappelait `_fermerQuiz`, qui rappelait
+  /// `maybePop`… boucle synchrone infinie sur le thread UI, donc gel de l'app.
+  ///
+  /// `pop()` dépile directement, sans repasser par les gardes — ce qui est
+  /// exactement ce qu'on veut ici : la décision de sortir vient d'être prise et
+  /// confirmée.
+  void _quitterEcran() {
+    final nav = Navigator.of(context);
+    if (nav.canPop()) nav.pop();
+  }
+
+  /// Dialogue commun à « Mettre fin » et à la fermeture.
+  ///
+  /// Le message est calculé ici pour les deux : ce qui compte, dans les deux
+  /// cas, c'est que l'utilisateur sache combien de questions il laisse et sur
+  /// quelle base son score sera établi.
+  Future<bool> _confirmerSortie({
+    required String titre,
+    required String actionLabel,
+  }) async {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final restantes = _total - (_index + 1);
+    final repondues = _answers.length;
+
+    final message = [
+      if (restantes > 0)
+        'Il te reste $restantes question${restantes > 1 ? 's' : ''}.',
+      if (repondues > 1)
+        'Tes $repondues réponses sont enregistrées et ton score sera '
+            'calculé sur cette base.'
+      else if (repondues == 1)
+        'Ta réponse est enregistrée et ton score sera calculé sur cette base.'
+      else
+        'Aucune réponse validée pour le moment : rien ne sera comptabilisé.',
+    ].join(' ');
+
+    // `showGeneralDialog` et non `showDialog` : on reprend exactement la mise en
+    // scène de la carte de résultat — flou d'arrière-plan, fondu et léger
+    // agrandissement — au lieu de l'`AlertDialog` Material par défaut, qui
+    // détonnait avec le reste de l'écran.
+    final reponse = await showGeneralDialog<bool>(
+      context: context,
+      barrierDismissible: true,
+      barrierLabel: 'Confirmation',
+      barrierColor: Colors.black.withValues(alpha: 0.35),
+      transitionDuration: const Duration(milliseconds: 260),
+      pageBuilder: (ctx, __, ___) => Stack(
+        children: [
+          Positioned.fill(
+            child: BackdropFilter(
+              filter: ImageFilter.blur(sigmaX: 16, sigmaY: 16),
+              child: const SizedBox.expand(),
+            ),
+          ),
+          Center(
+            child: _ConfirmCard(
+              isDark: isDark,
+              titre: titre,
+              message: message,
+              actionLabel: actionLabel,
+              onConfirmer: () => Navigator.of(ctx).pop(true),
+              onAnnuler: () => Navigator.of(ctx).pop(false),
+            ),
+          ),
+        ],
+      ),
+      transitionBuilder: (_, anim, __, child) => FadeTransition(
+        opacity: CurvedAnimation(parent: anim, curve: Curves.easeOutCubic),
+        child: ScaleTransition(
+          scale: Tween(
+            begin: .96,
+            end: 1.0,
+          ).chain(CurveTween(curve: Curves.easeOutBack)).animate(anim),
+          child: child,
+        ),
+      ),
+    );
+
+    return reponse ?? false;
   }
 
   // ===========================================================================
@@ -939,6 +1077,9 @@ class _QuizCultureGeneralFranceState extends State<QuizCultureGeneralFrance>
           .eq('uid', widget.uid);
 
       _historyFinished = true;
+      // Rebuild nécessaire : `canPop` du `PopScope` dépend de ce drapeau. Sans
+      // ce `setState`, le geste retour restait bloqué après la clôture.
+      if (mounted) setState(() {});
 
       debugPrint('✅ quiz_history (finish) updated id=$_historyRowId');
     } catch (e) {
@@ -946,34 +1087,17 @@ class _QuizCultureGeneralFranceState extends State<QuizCultureGeneralFrance>
     }
   }
 
-  Future<void> _updateHistoryOnAbandon() async {
-    if (_historyFinished) return;
-    if (_historyRowId == null) return;
-
-    try {
-      final nowUtc = DateTime.now().toUtc().toIso8601String();
-
-      await _sb
-          .from('quiz_history')
-          .update({
-            'score': 0,
-            'correct_count': 0,
-            'total_questions': 0, // ✅ ton repère 0/0
-            'finished_at': nowUtc,
-            'completed_at': nowUtc,
-
-            'mode': 'exam',
-            'track': 'gpx',
-          })
-          .eq('id', _historyRowId!)
-          .eq('uid', widget.uid);
-
-      _historyFinished = true;
-      debugPrint('✅ quiz_history (abandon) updated id=$_historyRowId');
-    } catch (e) {
-      debugPrint('❌ quiz_history (abandon) update failed: $e');
-    }
-  }
+  // `_updateHistoryOnAbandon` a été supprimée.
+  //
+  // Elle écrivait `score: 0, correct_count: 0, total_questions: 0` : répondre à
+  // cinq questions puis fermer effaçait donc les cinq résultats de l'historique.
+  // Les réponses individuelles étaient bien en base — `_saveAnswer` les insère à
+  // chaque validation — mais l'agrégat affiché à l'utilisateur repartait à zéro.
+  //
+  // Une sortie et un « Mettre fin » sont la même chose du point de vue des
+  // données : on comptabilise ce qui a été répondu. Tous les chemins de sortie
+  // passent donc par `_updateHistoryOnFinish`. Le cas « fermé sans aucune
+  // réponse » est déjà couvert : `_answers` étant vide, l'agrégat vaut 0/0.
 
   Future<void> _saveAnswer({
     required String question,
@@ -1343,7 +1467,7 @@ class _QuizCultureGeneralFranceState extends State<QuizCultureGeneralFrance>
           ThemeMode.system => sysDark,
         };
 
-        final bg = isDark ? Colors.black : _Brand.bgLight;
+        final bg = isDark ? const Color(0xFF000B36) : _Brand.bgLight;
         final textCol = isDark ? Colors.white : _Brand.textDark;
         final base = isDark ? ThemeData.dark() : ThemeData.light();
 
@@ -1380,252 +1504,279 @@ class _QuizCultureGeneralFranceState extends State<QuizCultureGeneralFrance>
                 surface: bg,
               ),
             ),
-            child: WillPopScope(
-              onWillPop: () async {
-                if (_hasQuiz && !_historyFinished) {
-                  await _updateHistoryOnAbandon();
-                }
-                return true;
+            // `PopScope` remplace `WillPopScope`, déprécié.
+            //
+            // Le geste retour est bloqué pendant un quiz en cours et renvoyé
+            // vers `_fermerQuiz` : sans ça il contournerait la confirmation que
+            // la croix impose, et l'utilisateur pourrait sortir d'un balayage
+            // involontaire.
+            child: PopScope<Object?>(
+              canPop: !_hasQuiz || _historyFinished,
+              onPopInvokedWithResult: (didPop, _) {
+                if (!didPop) unawaited(_fermerQuiz());
               },
-              child: Scaffold(
-                backgroundColor: bg,
-                extendBody: true,
-                extendBodyBehindAppBar: true,
-                appBar: AppBar(
-                  backgroundColor: Colors.transparent,
-                  elevation: 0,
-                  scrolledUnderElevation: 0,
-                  leading: IconButton(
-                    icon: Icon(Icons.close_rounded, color: textCol),
-                    onPressed: () async {
-                      if (_hasQuiz && !_historyFinished) {
-                        await _updateHistoryOnAbandon();
-                      }
-                      if (mounted) Navigator.maybePop(context);
-                    },
-                    tooltip: 'Fermer',
-                  ),
-                  actions: [
-                    IconButton(
-                      tooltip: 'Signaler',
-                      onPressed: _hasQuiz
-                          ? () => _openReportDialog(isDark: isDark)
-                          : null,
-                      icon: Icon(
-                        Icons.flag_outlined,
-                        color: _hasQuiz ? textCol : _opa(textCol, .35),
+              // Le fond est peint sous le Scaffold, et non par lui : ainsi il
+              // couvre aussi les zones système (status bar, barre de gestes) que
+              // le `SafeArea` du body laisserait au noir.
+              child: Stack(
+                children: [
+                  Positioned.fill(child: _QuizBackdrop(isDark: isDark)),
+                  Scaffold(
+                    backgroundColor: Colors.transparent,
+                    extendBody: true,
+                    extendBodyBehindAppBar: true,
+                    appBar: AppBar(
+                      backgroundColor: Colors.transparent,
+                      elevation: 0,
+                      scrolledUnderElevation: 0,
+                      leading: IconButton(
+                        icon: Icon(Icons.close_rounded, color: textCol),
+                        onPressed: _fermerQuiz,
+                        tooltip: 'Fermer',
                       ),
+                      actions: [
+                        // Masqué hors quiz plutôt que grisé : sur l'écran de choix
+                        // de difficulté il n'y a rien à signaler, et un bouton
+                        // visible mais inerte n'est qu'une question sans réponse
+                        // posée à l'utilisateur.
+                        if (_hasQuiz && !_showSplash)
+                          IconButton(
+                            tooltip: 'Signaler',
+                            onPressed: () => _openReportDialog(isDark: isDark),
+                            icon: Icon(Icons.flag_outlined, color: textCol),
+                          ),
+                        const SizedBox(width: 6),
+                      ],
                     ),
-                    const SizedBox(width: 6),
-                  ],
-                ),
 
-                // ✅ ton UI inchangé dessous
-                body: SafeArea(
-                  top: false,
-                  child: LayoutBuilder(
-                    builder: (context, viewport) {
-                      final double animSize = (viewport.maxWidth * 0.56).clamp(
-                        140.0,
-                        240.0,
-                      );
-
-                      return Stack(
-                        clipBehavior: Clip.none,
-                        children: [
-                          Column(
+                    // ✅ ton UI inchangé dessous
+                    body: SafeArea(
+                      top: false,
+                      child: LayoutBuilder(
+                        builder: (context, _) {
+                          return Stack(
+                            clipBehavior: Clip.none,
                             children: [
-                              SizedBox(height: topInset),
+                              // L'interface de quiz n'est construite qu'une fois le
+                              // niveau choisi.
+                              //
+                              // Elle était auparavant toujours présente et se
+                              // trouvait simplement *cachée* par le fond opaque du
+                              // splash. En rendant celui-ci transparent pour unifier
+                              // les fonds, la barre « Question 1 / 1 », le texte de
+                              // repli et le bouton « Valider » désactivé sont
+                              // devenus visibles à travers. Les masquer à la source
+                              // est plus juste que de les recouvrir : on ne construit
+                              // pas une interface pour la dissimuler.
+                              if (!_showSplash)
+                                Column(
+                                  children: [
+                                    SizedBox(height: topInset),
 
-                              Padding(
-                                padding: const EdgeInsets.fromLTRB(
-                                  20,
-                                  0,
-                                  20,
-                                  8,
-                                ),
-                                child: _TopProgressBar(
-                                  index: _hasQuiz ? _index : 0,
-                                  total: totalSafe,
-                                  accent: isDark ? _Brand.white : _Brand.accent,
-                                ),
-                              ),
-                              Expanded(
-                                child: PageView.builder(
-                                  controller: _page,
-                                  physics: const NeverScrollableScrollPhysics(),
-                                  itemCount: _hasQuiz ? totalSafe : 1,
-                                  itemBuilder: (_, i) {
-                                    if (!_hasQuiz) {
-                                      return Center(
-                                        child: _loading
-                                            ? const CircularProgressIndicator()
-                                            : const Text(
-                                                'Sélectionne une difficulté pour commencer.',
+                                    Padding(
+                                      padding: const EdgeInsets.fromLTRB(
+                                        20,
+                                        0,
+                                        20,
+                                        8,
+                                      ),
+                                      child: _TopProgressBar(
+                                        index: _hasQuiz ? _index : 0,
+                                        total: totalSafe,
+                                        accent: isDark
+                                            ? _Brand.white
+                                            : _Brand.accent,
+                                      ),
+                                    ),
+                                    Expanded(
+                                      child: PageView.builder(
+                                        controller: _page,
+                                        physics:
+                                            const NeverScrollableScrollPhysics(),
+                                        itemCount: _hasQuiz ? totalSafe : 1,
+                                        itemBuilder: (_, i) {
+                                          if (!_hasQuiz) {
+                                            return Center(
+                                              child: _loading
+                                                  ? const CircularProgressIndicator()
+                                                  : const Text(
+                                                      'Sélectionne une difficulté pour commencer.',
+                                                    ),
+                                            );
+                                          }
+
+                                          final q = _cache[i];
+                                          final opts = _optsCache[i];
+
+                                          final bool animVisible =
+                                              i == _index && _validated;
+
+                                          // L'ancienne réserve ajoutait jusqu'à 240 px
+                                          // de vide sous la carte pour loger la grosse
+                                          // croix flottante. Le feedback vivant
+                                          // désormais dans le bandeau lui-même, on ne
+                                          // réserve plus que la barre de boutons.
+                                          const double bottomInsetForThisPage =
+                                              bottomBarReserved;
+
+                                          if (q == null || opts == null) {
+                                            _requestEnsure(i);
+                                            return Center(
+                                              child: Column(
+                                                mainAxisSize: MainAxisSize.min,
+                                                children: [
+                                                  const CircularProgressIndicator(),
+                                                  const SizedBox(height: 12),
+                                                  Text(
+                                                    'Chargement des questions…',
+                                                    style: TextStyle(
+                                                      color: textCol.withAlpha(
+                                                        200,
+                                                      ),
+                                                      fontWeight:
+                                                          FontWeight.w600,
+                                                    ),
+                                                  ),
+                                                ],
                                               ),
-                                      );
-                                    }
+                                            );
+                                          }
 
-                                    final q = _cache[i];
-                                    final opts = _optsCache[i];
-
-                                    final bool animVisible =
-                                        i == _index && _validated;
-
-                                    final double bottomInsetForThisPage =
-                                        (animVisible ? animSize : 0) +
-                                        bottomBarReserved;
-
-                                    if (q == null || opts == null) {
-                                      _requestEnsure(i);
-                                      return Center(
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.min,
-                                          children: [
-                                            const CircularProgressIndicator(),
-                                            const SizedBox(height: 12),
-                                            Text(
-                                              'Chargement des questions…',
-                                              style: TextStyle(
-                                                color: textCol.withAlpha(200),
-                                                fontWeight: FontWeight.w600,
+                                          return Padding(
+                                            padding: const EdgeInsets.fromLTRB(
+                                              20,
+                                              8,
+                                              20,
+                                              0,
+                                            ),
+                                            // Clé sur le seul index de la page.
+                                            //
+                                            // Elle intégrait auparavant le choix
+                                            // courant et le résultat : le sous-arbre
+                                            // était donc **détruit et recréé à chaque
+                                            // tap sur une option**. Deux conséquences
+                                            // — la cascade d'apparition rejouerait à
+                                            // chaque sélection, et les `AnimatedContainer`
+                                            // des options ne pouvaient pas animer leur
+                                            // changement de couleur, faute d'état
+                                            // conservé. Un `StatelessWidget` se
+                                            // reconstruit de toute façon quand son
+                                            // parent change : cette clé composite
+                                            // n'apportait rien.
+                                            child: KeyedSubtree(
+                                              key: ValueKey('page_$i'),
+                                              child: _QuestionCard(
+                                                question: q,
+                                                options: opts,
+                                                selected: i == _index
+                                                    ? _currentChoice
+                                                    : null,
+                                                onSelect: _select,
+                                                locked: _validated,
+                                                showOutcome: animVisible,
+                                                isCorrect: _isCorrect,
+                                                pulse: _pulseCtrl,
+                                                estActive: i == _index,
+                                                bottomSafeInset:
+                                                    bottomInsetForThisPage,
                                               ),
                                             ),
-                                          ],
-                                        ),
-                                      );
-                                    }
-
-                                    return Padding(
-                                      padding: const EdgeInsets.fromLTRB(
+                                          );
+                                        },
+                                      ),
+                                    ),
+                                    SafeArea(
+                                      top: false,
+                                      minimum: const EdgeInsets.fromLTRB(
                                         20,
                                         8,
                                         20,
-                                        0,
+                                        16,
                                       ),
-                                      child: KeyedSubtree(
-                                        key: ValueKey(
-                                          'page_${i}_${animVisible}_${_isCorrect}_${_currentChoice ?? ''}',
-                                        ),
-                                        child: _QuestionCard(
-                                          question: q,
-                                          options: opts,
-                                          selected: i == _index
-                                              ? _currentChoice
-                                              : null,
-                                          onSelect: _select,
-                                          locked: _validated,
-                                          showOutcome: animVisible,
-                                          isCorrect: _isCorrect,
-                                          bottomSafeInset:
-                                              bottomInsetForThisPage,
-                                        ),
-                                      ),
-                                    );
-                                  },
-                                ),
-                              ),
-                              SafeArea(
-                                top: false,
-                                minimum: const EdgeInsets.fromLTRB(
-                                  20,
-                                  8,
-                                  20,
-                                  16,
-                                ),
-                                child: Row(
-                                  children: [
-                                    Expanded(
-                                      child: SizedBox(
-                                        height: kButtonHeight,
-                                        child: _PrimaryButton(
-                                          label: !_validated
-                                              ? 'Valider'
-                                              : (_index == totalSafe - 1
-                                                    ? 'Terminer'
-                                                    : 'Suivant'),
-                                          onTap: !_hasQuiz
-                                              ? null
-                                              : (!_validated
-                                                    ? (_currentChoice == null
-                                                          ? null
-                                                          : _validate)
-                                                    : _next),
-                                        ),
+                                      child: Row(
+                                        children: [
+                                          Expanded(
+                                            child: SizedBox(
+                                              height: kButtonHeight,
+                                              child: _PrimaryButton(
+                                                label: !_validated
+                                                    ? 'Valider'
+                                                    : (_index == totalSafe - 1
+                                                          ? 'Terminer'
+                                                          : 'Suivant'),
+                                                onTap: !_hasQuiz
+                                                    ? null
+                                                    : (!_validated
+                                                          ? (_currentChoice ==
+                                                                    null
+                                                                ? null
+                                                                : _validate)
+                                                          : _next),
+                                              ),
+                                            ),
+                                          ),
+                                          if (_hasQuiz) ...[
+                                            const SizedBox(width: 12),
+                                            SizedBox(
+                                              height: kButtonHeight,
+                                              child: _DangerButton(
+                                                label: 'Mettre fin',
+                                                onTap: _endQuizNow,
+                                              ),
+                                            ),
+                                          ],
+                                        ],
                                       ),
                                     ),
-                                    if (_hasQuiz) ...[
-                                      const SizedBox(width: 12),
-                                      SizedBox(
-                                        height: kButtonHeight,
-                                        child: _DangerButton(
-                                          label: 'Mettre fin',
-                                          onTap: _endQuizNow,
-                                        ),
-                                      ),
-                                    ],
                                   ],
                                 ),
-                              ),
-                            ],
-                          ),
 
-                          if (_validated)
-                            Positioned(
-                              left: 0,
-                              right: 0,
-                              bottom: bottomBarReserved,
-                              child: IgnorePointer(
-                                child: SizedBox(
-                                  height: animSize,
-                                  child: Center(
-                                    child: _FeedbackStrip(
-                                      controller: _pulseCtrl,
-                                      good: _isCorrect,
+                              // Plus d'overlay de feedback ici : il se superposait au
+                              // bandeau d'explication dès que la question était
+                              // longue. L'animation a été déplacée dans
+                              // `_OutcomeCard`, autour de son icône.
+                              if (_showSplash)
+                                _DifficultySplash(
+                                  fade: _splashFade,
+                                  isDark: isDark,
+                                  selected: _selectedDifficulty,
+                                  onSelect: (d) => setState(() {
+                                    _selectedDifficulty = d;
+                                    _mixMode = false;
+                                  }),
+                                  onStart: () => _startQuiz(mix: false),
+                                  onStartRandom: () => _startQuiz(mix: true),
+                                ),
+
+                              if (_loading)
+                                Positioned.fill(
+                                  child: _LoadingOverlay(
+                                    isDark: isDark,
+                                    total: _total,
+                                    animated: _animatedCount,
+                                    loaded: _loadedCount,
+                                    readyTarget: math.min(
+                                      23,
+                                      (_total <= 0 ? 23 : _total),
                                     ),
+                                    onRetry: () {
+                                      if (!_hasQuiz) {
+                                        unawaited(_startQuiz(mix: _mixMode));
+                                        return;
+                                      }
+                                      unawaited(
+                                        _ensureBatchForQuizIndex(_index),
+                                      );
+                                    },
                                   ),
                                 ),
-                              ),
-                            ),
-
-                          if (_showSplash)
-                            _DifficultySplash(
-                              fade: _splashFade,
-                              isDark: isDark,
-                              selected: _selectedDifficulty,
-                              onSelect: (d) => setState(() {
-                                _selectedDifficulty = d;
-                                _mixMode = false;
-                              }),
-                              onStart: () => _startQuiz(mix: false),
-                              onStartRandom: () => _startQuiz(mix: true),
-                            ),
-
-                          if (_loading)
-                            Positioned.fill(
-                              child: _LoadingOverlay(
-                                isDark: isDark,
-                                total: _total,
-                                animated: _animatedCount,
-                                loaded: _loadedCount,
-                                readyTarget: math.min(
-                                  23,
-                                  (_total <= 0 ? 23 : _total),
-                                ),
-                                onRetry: () {
-                                  if (!_hasQuiz) {
-                                    unawaited(_startQuiz(mix: _mixMode));
-                                    return;
-                                  }
-                                  unawaited(_ensureBatchForQuizIndex(_index));
-                                },
-                              ),
-                            ),
-                        ],
-                      );
-                    },
+                            ],
+                          );
+                        },
+                      ),
+                    ),
                   ),
-                ),
+                ],
               ),
             ),
           ),
@@ -1665,8 +1816,11 @@ class _QuizCultureGeneralFranceState extends State<QuizCultureGeneralFrance>
                   _restart();
                 },
                 onQuit: () {
+                  // Ferme la carte de résultat, puis l'écran. `pop()` et non
+                  // `maybePop()` : sous le `PopScope` de la page, `maybePop`
+                  // relançait la confirmation de sortie en boucle.
                   Navigator.of(context).pop();
-                  Navigator.of(context).maybePop();
+                  _quitterEcran();
                 },
               ),
             ),
@@ -1713,6 +1867,330 @@ class _QuizCultureGeneralFranceState extends State<QuizCultureGeneralFrance>
 // WIDGETS (UI inchangée)
 // ============================================================================
 
+/// Carte de confirmation avant une sortie.
+///
+/// Sert la croix comme le bouton « Mettre fin » : même mise en page, seuls le
+/// titre et le libellé de l'action changent.
+///
+/// Hiérarchie assumée — l'action sûre (« Continuer le quiz ») est en bas, pleine
+/// et dans l'accent de l'app : c'est la plus atteignable au pouce et la plus
+/// visible. L'action destructive est au-dessus, en contour rouge : identifiable,
+/// jamais tentante.
+class _ConfirmCard extends StatelessWidget {
+  const _ConfirmCard({
+    required this.isDark,
+    required this.titre,
+    required this.message,
+    required this.actionLabel,
+    required this.onConfirmer,
+    required this.onAnnuler,
+  });
+
+  final bool isDark;
+  final String titre;
+  final String message;
+  final String actionLabel;
+  final VoidCallback onConfirmer;
+  final VoidCallback onAnnuler;
+
+  @override
+  Widget build(BuildContext context) {
+    final fond = isDark ? const Color(0xFF11131A) : Colors.white;
+    final texte = isDark ? Colors.white : _Brand.textDark;
+    final secondaire = _opa(texte, .70);
+
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 24),
+      child: ConstrainedBox(
+        constraints: const BoxConstraints(maxWidth: 380),
+        child: Material(
+          color: Colors.transparent,
+          child: Container(
+            padding: const EdgeInsets.fromLTRB(22, 24, 22, 18),
+            decoration: BoxDecoration(
+              color: fond,
+              borderRadius: BorderRadius.circular(28),
+              border: Border.all(
+                color: isDark
+                    ? _opa(Colors.white, .10)
+                    : _opa(Colors.black, .06),
+              ),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black.withValues(alpha: isDark ? .45 : .12),
+                  blurRadius: 34,
+                  offset: const Offset(0, 16),
+                ),
+              ],
+            ),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                // Pastille d'avertissement : donne un point d'entrée au regard
+                // et annonce la nature de l'action avant même la lecture.
+                Container(
+                  width: 54,
+                  height: 54,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: _opa(_Brand.bad, .12),
+                    border: Border.all(color: _opa(_Brand.bad, .30)),
+                  ),
+                  child: const Icon(
+                    Icons.logout_rounded,
+                    color: _Brand.bad,
+                    size: 24,
+                  ),
+                ),
+                const SizedBox(height: 16),
+                Text(
+                  titre,
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontFamily: 'InstrumentSans',
+                    color: texte,
+                    fontWeight: FontWeight.w800,
+                    fontSize: 20,
+                    height: 1.2,
+                    decoration: TextDecoration.none,
+                  ),
+                ),
+                const SizedBox(height: 10),
+                Text(
+                  message,
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontFamily: 'InstrumentSans',
+                    color: secondaire,
+                    fontWeight: FontWeight.w600,
+                    fontSize: 14,
+                    height: 1.45,
+                    decoration: TextDecoration.none,
+                  ),
+                ),
+                const SizedBox(height: 22),
+                SizedBox(
+                  width: double.infinity,
+                  height: 52,
+                  child: OutlinedButton(
+                    onPressed: onConfirmer,
+                    style: OutlinedButton.styleFrom(
+                      backgroundColor: _opa(_Brand.bad, .10),
+                      foregroundColor: _Brand.bad,
+                      side: BorderSide(
+                        color: _opa(_Brand.bad, .55),
+                        width: 1.4,
+                      ),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(26),
+                      ),
+                      textStyle: const TextStyle(
+                        fontFamily: 'InstrumentSans',
+                        fontWeight: FontWeight.w800,
+                        fontSize: 16,
+                      ),
+                    ),
+                    child: Text(actionLabel),
+                  ),
+                ),
+                const SizedBox(height: 10),
+                SizedBox(
+                  width: double.infinity,
+                  height: 52,
+                  child: ElevatedButton(
+                    onPressed: onAnnuler,
+                    style: ElevatedButton.styleFrom(
+                      elevation: 0,
+                      backgroundColor: _Brand.accent,
+                      foregroundColor: Colors.white,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(26),
+                      ),
+                      textStyle: const TextStyle(
+                        fontFamily: 'InstrumentSans',
+                        fontWeight: FontWeight.w800,
+                        fontSize: 16,
+                      ),
+                    ),
+                    child: const Text('Continuer le quiz'),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+/// Fond du quiz.
+///
+/// Le noir plat précédent (`Colors.black`) était le seul écran du parcours sans
+/// aucune matière : le splash de difficulté, lui, avait déjà son dégradé et ses
+/// halos. On reprend donc ici le vocabulaire visuel du module Cas pratiques —
+/// navy COP'IQ, halo haut, masses colorées dérivantes — pour que les deux
+/// parcours se ressemblent.
+///
+/// Trois précautions de performance, parce que ce fond vit sous un `PageView` :
+///  * `RepaintBoundary` isole la couche : son repaint ne touche pas les
+///    questions ni les options au-dessus.
+///  * un seul `AnimationController` de 26 s pour les trois halos, à très basse
+///    fréquence visuelle.
+///  * aucun flou (`BackdropFilter`, `ImageFiltered`) — coûteux sur mobile
+///    d'entrée de gamme. Les halos sont des `RadialGradient`, déjà diffus.
+class _QuizBackdrop extends StatefulWidget {
+  const _QuizBackdrop({required this.isDark});
+
+  final bool isDark;
+
+  @override
+  State<_QuizBackdrop> createState() => _QuizBackdropState();
+}
+
+class _QuizBackdropState extends State<_QuizBackdrop>
+    with SingleTickerProviderStateMixin {
+  // Navy COP'IQ, aligné sur CpTokens.darkNavy / darkNavyMid / darkNavyDeep.
+  // Valeurs recopiées plutôt qu'importées : ce fichier de quiz n'a aucune
+  // dépendance au module Cas pratiques, et n'a pas à en gagner une.
+  static const Color _navyTop = Color(0xFF000B36);
+  static const Color _navyMid = Color(0xFF000A33);
+  static const Color _navyBot = Color(0xFF00082D);
+
+  // Pendant clair : même construction, valeurs inversées. Le texte du quiz est
+  // sombre en thème clair, le fond doit donc rester très lumineux — un bleu
+  // lavé, jamais le bleu brand saturé, qui rendrait la question illisible.
+  static const Color _clairTop = Color(0xFFF8FAFF);
+  static const Color _clairMid = Color(0xFFEFF3FD);
+  static const Color _clairBot = Color(0xFFE6ECFB);
+
+  late final AnimationController _ctrl = AnimationController(
+    vsync: this,
+    duration: const Duration(seconds: 26),
+  );
+
+  @override
+  void initState() {
+    super.initState();
+    // Respecte « Réduire les animations » du système : le dégradé reste, la
+    // dérive s'arrête.
+    final reduit = WidgetsBinding
+        .instance
+        .platformDispatcher
+        .accessibilityFeatures
+        .disableAnimations;
+    if (!reduit) _ctrl.repeat();
+  }
+
+  @override
+  void dispose() {
+    _ctrl.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final sombre = widget.isDark;
+
+    // Même construction dans les deux thèmes — dégradé, halo de lumière, masses
+    // dérivantes, vignette — seules les valeurs changent. Le thème clair n'est
+    // donc pas un fond « au rabais » : il a la même matière, en lumineux.
+    final degrade = sombre
+        ? const [_navyTop, _navyMid, _navyBot]
+        : const [_clairTop, _clairMid, _clairBot];
+
+    // En clair, un halo blanc serait invisible sur un fond déjà blanc : la
+    // lumière vient donc du bleu brand, en très faible densité.
+    final halo = sombre ? Colors.white : _Brand.accent;
+    final haloFort = sombre ? 0.10 : 0.07;
+    final haloFaible = sombre ? 0.035 : 0.025;
+
+    // La vignette assombrit en sombre, mais doit *aussi* fonctionner en clair :
+    // du noir y salirait le fond, on referme donc avec un bleu très dilué.
+    final vignette = sombre
+        ? Colors.black.withValues(alpha: 0.42)
+        : _Brand.accent.withValues(alpha: 0.10);
+
+    return RepaintBoundary(
+      child: Stack(
+        fit: StackFit.expand,
+        children: [
+          // 1) Dégradé de base
+          DecoratedBox(
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+                colors: degrade,
+              ),
+            ),
+          ),
+
+          // 2) Halo haut : donne un point de lumière derrière la question.
+          DecoratedBox(
+            decoration: BoxDecoration(
+              gradient: RadialGradient(
+                center: const Alignment(0.0, -0.72),
+                radius: 1.15,
+                colors: [
+                  halo.withValues(alpha: haloFort),
+                  halo.withValues(alpha: haloFaible),
+                  Colors.transparent,
+                ],
+                stops: const [0.0, 0.55, 1.0],
+              ),
+            ),
+          ),
+
+          // 3) Masses colorées dérivantes. Réutilise le `_Halo` du splash de
+          //    difficulté : même mouvement, donc continuité entre les écrans.
+          //    En clair elles sont deux fois plus discrètes — sur fond lumineux,
+          //    la même densité donnerait des taches franches.
+          _Halo(
+            color: _Brand.accent,
+            size: 300,
+            dx: -130,
+            dy: -180,
+            ctrl: _ctrl,
+            strength: sombre ? 0.16 : 0.09,
+          ),
+          _Halo(
+            color: const Color(0xFF1A55E6),
+            size: 260,
+            dx: 140,
+            dy: 200,
+            ctrl: _ctrl,
+            strength: sombre ? 0.14 : 0.08,
+          ),
+          _Halo(
+            color: _Brand.good,
+            size: 200,
+            dx: 30,
+            dy: 420,
+            ctrl: _ctrl,
+            strength: sombre ? 0.08 : 0.05,
+          ),
+
+          // 4) Vignette : referme les bords et empêche les halos de baver dans
+          //    les coins.
+          IgnorePointer(
+            child: DecoratedBox(
+              decoration: BoxDecoration(
+                gradient: RadialGradient(
+                  center: const Alignment(0.0, -0.15),
+                  radius: 1.10,
+                  colors: [Colors.transparent, vignette],
+                  stops: const [0.55, 1.0],
+                ),
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
 class _TopProgressBar extends StatelessWidget {
   final int index, total;
   final Color accent;
@@ -1735,7 +2213,9 @@ class _TopProgressBar extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          'Question ${index + 1}',
+          // Le total était déjà disponible ici : l'afficher situe l'effort
+          // restant, ce qu'une barre seule ne dit pas précisément.
+          'Question ${index + 1} / $totalSafe',
           style: _Brand.small(
             context,
           ).copyWith(color: labelColor, fontWeight: FontWeight.w800),
@@ -1784,6 +2264,12 @@ class _TopProgressBar extends StatelessWidget {
   }
 }
 
+/// Action destructive, volontairement en retrait.
+///
+/// En rouge plein, ce bouton pesait autant que « Suivant » alors qu'il n'est
+/// utilisé qu'exceptionnellement : deux aplats saturés côte à côte, aucune
+/// hiérarchie. Il passe en contour, ce qui le laisse identifiable comme
+/// dangereux — la couleur reste — sans attirer le pouce.
 class _DangerButton extends StatelessWidget {
   final String label;
   final VoidCallback? onTap;
@@ -1792,14 +2278,17 @@ class _DangerButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final isEnabled = onTap != null;
+    final couleur = isEnabled ? _Brand.bad : _opa(_Brand.bad, .35);
+
     return SizedBox(
       height: 56,
-      child: ElevatedButton(
+      child: OutlinedButton(
         onPressed: onTap,
-        style: ElevatedButton.styleFrom(
+        style: OutlinedButton.styleFrom(
           elevation: 0,
-          backgroundColor: isEnabled ? _Brand.bad : _Brand.radioTrack(context),
-          foregroundColor: Colors.white,
+          backgroundColor: _opa(_Brand.bad, .10),
+          foregroundColor: couleur,
+          side: BorderSide(color: _opa(couleur, .55), width: 1.4),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(28),
           ),
@@ -1815,7 +2304,7 @@ class _DangerButton extends StatelessWidget {
   }
 }
 
-class _QuestionCard extends StatelessWidget {
+class _QuestionCard extends StatefulWidget {
   final QuizQuestion question;
   final List<String> options;
   final String? selected;
@@ -1823,9 +2312,24 @@ class _QuestionCard extends StatelessWidget {
   final bool locked;
   final bool showOutcome;
   final bool isCorrect;
+
+  /// Contrôleur du feedback, relancé à chaque validation par `_validate`.
+  /// Piloté depuis la page plutôt que recréé ici : l'animation doit partir au
+  /// moment exact de la validation, pas à la construction du bandeau.
+  final AnimationController pulse;
+
+  /// `true` quand cette page est celle que l'utilisateur regarde.
+  ///
+  /// Indispensable : `PageView.builder` construit aussi les pages voisines à
+  /// l'avance. Sans ce garde-fou, la cascade de la question suivante se jouerait
+  /// hors écran et serait déjà terminée à l'arrivée — l'utilisateur ne verrait
+  /// jamais l'animation.
+  final bool estActive;
+
   final double bottomSafeInset;
 
   const _QuestionCard({
+    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -1833,8 +2337,184 @@ class _QuestionCard extends StatelessWidget {
     required this.locked,
     required this.showOutcome,
     required this.isCorrect,
+    required this.pulse,
+    required this.estActive,
     this.bottomSafeInset = 0,
   });
+
+  @override
+  State<_QuestionCard> createState() => _QuestionCardState();
+}
+
+class _QuestionCardState extends State<_QuestionCard>
+    with SingleTickerProviderStateMixin {
+  // ─── Cascade d'apparition ────────────────────────────────────────────────
+  //
+  // Un seul `AnimationController` pilote toute la séquence ; chaque élément lit
+  // une fenêtre différente de sa progression via un `Interval`. L'alternative —
+  // un contrôleur et un `Timer` par élément — multiplierait les tickers par le
+  // nombre d'options, sur chaque page vivante du `PageView`.
+  // Les deux seuls réglages du rythme.
+  //   `_msElement`  : durée du fondu d'un élément.
+  //   `_msDecalage` : écart entre le départ de deux éléments consécutifs.
+  // Total = _msDecalage × (nombre d'éléments − 1) + _msElement.
+  // Sur un QCM à 4 choix : 3 × 130 + 420 = 940 ms.
+  static const int _msElement = 420;
+  static const int _msDecalage = 130;
+
+  /// Titre + sous-titre éventuel + options.
+  int get _nbElements =>
+      1 + (_shouldShowSub(widget.question.sub) ? 1 : 0) + widget.options.length;
+
+  int get _msTotal => _msDecalage * (_nbElements - 1) + _msElement;
+
+  late final AnimationController _cascade = AnimationController(
+    vsync: this,
+    duration: Duration(milliseconds: _msTotal),
+  );
+
+  bool get _mouvementReduit => WidgetsBinding
+      .instance
+      .platformDispatcher
+      .accessibilityFeatures
+      .disableAnimations;
+
+  @override
+  void initState() {
+    super.initState();
+    if (_mouvementReduit) {
+      // Accessibilité : on saute directement à l'état final, jamais à un état
+      // invisible.
+      _cascade.value = 1;
+    } else if (widget.estActive) {
+      _cascade.forward();
+    }
+  }
+
+  @override
+  void didUpdateWidget(_QuestionCard old) {
+    super.didUpdateWidget(old);
+
+    // Le nombre d'options peut changer si la question est remplacée sur le même
+    // index : la durée totale doit suivre, sinon les intervalles se décalent.
+    final duree = Duration(milliseconds: _msTotal);
+    if (_cascade.duration != duree) _cascade.duration = duree;
+
+    if (_mouvementReduit) {
+      _cascade.value = 1;
+      return;
+    }
+
+    // La page vient de devenir celle qu'on regarde : la cascade démarre en même
+    // temps que le glissement horizontal du PageView, puisque `_index` est mis à
+    // jour avant l'appel à `nextPage`.
+    if (!old.estActive && widget.estActive) {
+      _cascade
+        ..reset()
+        ..forward();
+    }
+
+    // Le bandeau vient d'apparaître sur la page qu'on regarde.
+    if (!old.showOutcome && widget.showOutcome && widget.estActive) {
+      _revelerBandeau();
+    }
+  }
+
+  @override
+  void dispose() {
+    _cascade.dispose();
+    _colonne.dispose();
+    super.dispose();
+  }
+
+  /// Contrôleur de la colonne, pour amener le bandeau de correction dans le
+  /// champ de vision. Sans lui, sur un énoncé long, l'explication naissait sous
+  /// le pli : l'utilisateur devait scroller au moment précis où il veut savoir
+  /// pourquoi il s'est trompé.
+  final ScrollController _colonne = ScrollController();
+
+  /// Ancre posée sur le bandeau, cible du défilement.
+  final GlobalKey _ancreBandeau = GlobalKey();
+
+  void _revelerBandeau() {
+    // Après la frame qui vient d'insérer le bandeau : avant, sa position
+    // n'existe pas encore.
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      final ctx = _ancreBandeau.currentContext;
+      if (ctx == null || !_colonne.hasClients) return;
+      Scrollable.ensureVisible(
+        ctx,
+        duration: const Duration(milliseconds: 420),
+        curve: Curves.easeOutCubic,
+        // 0.9 plutôt que 1.0 : le bandeau se cale vers le bas de la zone
+        // visible, en gardant les options au-dessus dans le champ. L'utilisateur
+        // voit sa réponse et l'explication d'un même coup d'œil.
+        alignment: 0.9,
+      );
+    });
+  }
+
+  /// Fenêtre d'animation du n-ième élément de la séquence.
+  Animation<double> _fenetre(int rang) {
+    final total = _msTotal;
+    final debut = (_msDecalage * rang) / total;
+    final fin = (_msDecalage * rang + _msElement) / total;
+    return CurvedAnimation(
+      parent: _cascade,
+      curve: Interval(
+        debut.clamp(0.0, 1.0),
+        fin.clamp(0.0, 1.0),
+        curve: Curves.easeOutCubic,
+      ),
+    );
+  }
+
+  /// Énoncé nettoyé de l'énumération des options.
+  ///
+  /// Beaucoup de questions générées répètent les réponses dans leur libellé :
+  /// « Quelle région est réputée pour les vins de Bordeaux : Auvergne-Rhône-Alpes,
+  /// Centre-Val de Loire, Martinique ou Nouvelle-Aquitaine ? » — puis les quatre
+  /// mêmes options s'affichent juste en dessous. Le titre double de hauteur et la
+  /// question perd sa force.
+  ///
+  /// La coupe est **conservatrice**, parce qu'on touche à du contenu :
+  ///  * il faut un `:` et du texte après ;
+  ///  * **toutes** les options doivent apparaître dans ce qui suit le `:` ;
+  ///  * la partie conservée doit rester une vraie question (≥ 15 caractères) ;
+  ///  * aucune option ne doit faire moins de 4 caractères — « oui », « non »,
+  ///    « 12 » se retrouvent par hasard dans n'importe quelle phrase, et une
+  ///    correspondance fortuite couperait un énoncé légitime.
+  /// Si une seule condition manque, le libellé est rendu intact.
+  String get _enonceAffiche {
+    final brut = widget.question.question.trim();
+    final coupe = brut.lastIndexOf(':');
+    if (coupe <= 0 || coupe >= brut.length - 1) return brut;
+
+    final avant = brut.substring(0, coupe).trim();
+    final apres = brut.substring(coupe + 1).toLowerCase();
+    if (avant.length < 15) return brut;
+
+    for (final o in widget.options) {
+      final option = o.trim();
+      if (option.length < 4) return brut;
+      if (!apres.contains(option.toLowerCase())) return brut;
+    }
+
+    // On restitue la ponctuation interrogative, que la coupe vient d'emporter.
+    return avant.endsWith('?') ? avant : '$avant ?';
+  }
+
+  /// Taille du titre, réduite quand l'énoncé s'allonge.
+  ///
+  /// `_Brand.h1` impose 28 px. Combiné à un énoncé long et à un réglage système
+  /// de texte à 130 %, les options passaient sous le pli, voire hors écran. On
+  /// dégrade par palier plutôt que d'autoriser un débordement.
+  double _tailleTitre(String enonce) {
+    if (enonce.length > 150) return 21;
+    if (enonce.length > 110) return 23;
+    if (enonce.length > 75) return 25;
+    return 28;
+  }
 
   bool _shouldShowSub(String? raw) {
     final s = raw?.trim();
@@ -1853,57 +2533,84 @@ class _QuestionCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Rang dans la cascade : le titre ouvre, le sous-titre suit s'il
+    // existe, puis les options dans l'ordre d'affichage.
+    var rangCascade = 0;
     final textCol = Theme.of(context).brightness == Brightness.dark
         ? Colors.white
         : _Brand.textDark;
 
-    final sub = question.sub?.trim();
+    final sub = widget.question.sub?.trim();
+    final afficheSub = _shouldShowSub(sub);
+    final enonce = _enonceAffiche;
+
+    // Rang dans la cascade : le titre ouvre, le sous-titre suit s'il existe,
+    // puis les widget.options dans l'ordre d'affichage.
+    var rang = 0;
 
     return SingleChildScrollView(
+      controller: _colonne,
       physics: const BouncingScrollPhysics(),
-      padding: EdgeInsets.only(top: 8, bottom: 12 + bottomSafeInset),
+      padding: EdgeInsets.only(top: 8, bottom: 12 + widget.bottomSafeInset),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Text(
-            question.question,
-            style: _Brand.h1(context).copyWith(color: textCol),
+          _ElementCascade(
+            animation: _fenetre(rang++),
+            child: Text(
+              enonce,
+              style: _Brand.h1(
+                context,
+              ).copyWith(color: textCol, fontSize: _tailleTitre(enonce)),
+            ),
           ),
 
           // ✅ Sous-titre uniquement si pertinent (et pas un tag technique)
-          if (_shouldShowSub(sub)) ...[
+          if (afficheSub) ...[
             const SizedBox(height: 6),
-            Text(
-              sub!, // safe car _shouldShowSub(sub) => sub non null & non vide
-              style: TextStyle(
-                color: textCol.withAlpha(180),
-                fontWeight: FontWeight.w600,
-                decoration: TextDecoration.none,
+            _ElementCascade(
+              animation: _fenetre(rang++),
+              child: Text(
+                sub!, // safe car _shouldShowSub(sub) => sub non null & non vide
+                style: TextStyle(
+                  color: textCol.withAlpha(180),
+                  fontWeight: FontWeight.w600,
+                  decoration: TextDecoration.none,
+                ),
               ),
             ),
           ],
 
           const SizedBox(height: 16),
 
-          ...options.map((o) {
-            final isSel = selected == o;
-            final correctShown = showOutcome && o == question.answer;
-            final wrongShown = showOutcome && isSel && o != question.answer;
+          ...widget.options.map((o) {
+            final isSel = widget.selected == o;
+            final correctShown =
+                widget.showOutcome && o == widget.question.answer;
+            final wrongShown =
+                widget.showOutcome && isSel && o != widget.question.answer;
 
-            return Padding(
-              padding: const EdgeInsets.only(bottom: 12),
-              child: _OptionTile(
-                label: o,
-                selected: isSel,
-                locked: locked,
-                correct: correctShown,
-                wrong: wrongShown,
-                onTap: () => onSelect(o),
+            return _ElementCascade(
+              animation: _fenetre(rang++),
+              child: Padding(
+                padding: const EdgeInsets.only(bottom: 12),
+                child: _OptionTile(
+                  label: o,
+                  selected: isSel,
+                  locked: widget.locked,
+                  correct: correctShown,
+                  wrong: wrongShown,
+                  onTap: () => widget.onSelect(o),
+                ),
               ),
             );
           }),
 
+          // Hors cascade : le bandeau appartient au moment de la validation, pas
+          // à l'arrivée de la widget.question. Il garde son fondu propre et son icône
+          // qui rebondit.
           AnimatedSwitcher(
+            key: _ancreBandeau,
             duration: const Duration(milliseconds: 280),
             switchInCurve: Curves.easeOutCubic,
             layoutBuilder: (currentChild, previousChildren) => Column(
@@ -1913,15 +2620,49 @@ class _QuestionCard extends StatelessWidget {
                 ...previousChildren,
               ],
             ),
-            child: showOutcome
+            child: widget.showOutcome
                 ? _OutcomeCard(
-                    key: ValueKey<bool>(isCorrect),
-                    good: isCorrect,
-                    explanation: question.explanation,
+                    key: ValueKey<bool>(widget.isCorrect),
+                    good: widget.isCorrect,
+                    explanation: widget.question.explanation,
+                    pulse: widget.pulse,
                   )
                 : const SizedBox.shrink(),
           ),
         ],
+      ),
+    );
+  }
+}
+
+/// Un élément de la cascade : fondu simultané d'une montée de 10 px.
+///
+/// `FadeTransition` gère l'opacité sans reconstruire quoi que ce soit, et
+/// l'`AnimatedBuilder` reçoit son enfant via `child:` — seul le `Transform` est
+/// rebâti à chaque frame, jamais l'option ni son texte.
+///
+/// Le décalage est en pixels et non en fraction de hauteur (ce que ferait un
+/// `SlideTransition`) : le titre et une option n'ont pas la même hauteur, et une
+/// fraction commune produirait des amplitudes différentes.
+class _ElementCascade extends StatelessWidget {
+  const _ElementCascade({required this.animation, required this.child});
+
+  final Animation<double> animation;
+  final Widget child;
+
+  static const double _monteeDepart = 10.0;
+
+  @override
+  Widget build(BuildContext context) {
+    return FadeTransition(
+      opacity: animation,
+      child: AnimatedBuilder(
+        animation: animation,
+        child: child,
+        builder: (_, enfant) => Transform.translate(
+          offset: Offset(0, _monteeDepart * (1 - animation.value)),
+          child: enfant,
+        ),
       ),
     );
   }
@@ -2044,10 +2785,18 @@ class _OptionTile extends StatelessWidget {
 class _OutcomeCard extends StatelessWidget {
   final bool good;
   final String explanation;
+
+  /// Animation du feedback, partagée avec la page : elle doit partir au
+  /// moment exact de la validation, pas à la construction du bandeau.
+  final AnimationController pulse;
+
+  /// Animation du feedback (0 → 1 sur 700 ms), partagée avec la page.
+
   const _OutcomeCard({
     super.key,
     required this.good,
     required this.explanation,
+    required this.pulse,
   });
 
   @override
@@ -2055,41 +2804,161 @@ class _OutcomeCard extends StatelessWidget {
     final color = good ? _Brand.good : _Brand.bad;
     final icon = good ? Icons.check_circle_rounded : Icons.cancel_rounded;
 
-    return Material(
-      type: MaterialType.transparency,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(16),
-        side: BorderSide(color: _opa(color, .55), width: 1.2),
-      ),
+    // Dimensionnement adaptatif demandé, sur deux axes :
+    //  * la largeur d'écran — 28 px fixes paraissaient gros sur un petit
+    //    téléphone et perdus sur une tablette ;
+    //  * le réglage de taille de texte du système — l'icône doit grandir avec
+    //    l'explication qu'elle accompagne, sinon elle décroche visuellement.
+    // Les deux bornes évitent qu'un réglage extrême ne casse la mise en page.
+    final largeur = MediaQuery.sizeOf(context).width;
+    final scaler = MediaQuery.textScalerOf(context);
+    final double tailleIcone = scaler
+        .scale((largeur / 13.5).clamp(24.0, 34.0))
+        .clamp(24.0, 52.0);
+
+    // La zone du feedback est carrée et un peu plus large que l'icône : les
+    // étincelles s'y déploient sans jamais empiéter sur le texte, puisqu'elles
+    // sont bornées par ce `SizedBox` et non posées en overlay.
+    final zone = tailleIcone * 1.7;
+
+    // Alignement optique du texte sur l'icône.
+    //
+    // L'icône est centrée dans une zone de `zone` px ; son centre est donc à
+    // `zone / 2`. Pour que la **première ligne** du texte soit à la même
+    // hauteur, on la décale de ce centre moins sa demi-hauteur de ligne
+    // (`fontSize × height`). `fontSize` est déclaré explicitement plus bas au
+    // lieu d'être hérité, sans quoi ce calcul reposerait sur une valeur de
+    // thème invisible ici.
+    const double tailleTexte = 14.0;
+    const double hauteurLigne = 1.32;
+    final double demiLigne = scaler.scale(tailleTexte) * hauteurLigne / 2;
+    final double decalageTexte = (zone / 2 - demiLigne).clamp(0.0, 24.0);
+
+    // Un seul objet peint, une seule boîte.
+    //
+    // Avant, le contour venait du `shape` d'un `Material` et le fond d'un
+    // `Container` enfant portant `margin: top 10`. Deux boîtes différentes,
+    // décalées de 10 px : le `Material` dessinait donc son bord *autour de la
+    // marge*, ce qui produisait un liseré vide au-dessus de la carte colorée —
+    // le « bandeau hors de la carte ». La marge est maintenant à l'extérieur du
+    // widget bordé, et bord + fond partagent la même `BoxDecoration`.
+    return Padding(
+      padding: const EdgeInsets.only(top: 10),
       child: Container(
         width: double.infinity,
-        margin: const EdgeInsets.only(top: 10),
         padding: const EdgeInsets.all(14),
         decoration: BoxDecoration(
           color: _opa(color, .10),
-          borderRadius: BorderRadius.circular(16),
+          // 22 comme `_OptionTile` : le bandeau est collé sous la dernière
+          // option, à largeur identique. Avec 16, la rupture de rayon se voyait
+          // sur les quatre coins.
+          borderRadius: BorderRadius.circular(22),
+          // Contour strictement uniforme : indispensable avec un borderRadius.
+          border: Border.all(color: _opa(color, .55), width: 1.2),
         ),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Icon(icon, color: color, size: 28),
+            SizedBox(
+              width: zone,
+              height: zone,
+              child: _OutcomeIcon(
+                controller: pulse,
+                icon: icon,
+                color: color,
+                tailleIcone: tailleIcone,
+              ),
+            ),
             const SizedBox(width: 12),
             Expanded(
-              child: Text(
-                explanation,
-                softWrap: true,
-                style: TextStyle(
-                  color: Theme.of(context).brightness == Brightness.dark
-                      ? Colors.white
-                      : _Brand.textDark,
-                  fontWeight: FontWeight.w600,
-                  height: 1.32,
-                  decoration: TextDecoration.none,
+              child: Padding(
+                padding: EdgeInsets.only(top: decalageTexte),
+                child: Text(
+                  explanation,
+                  softWrap: true,
+                  style: TextStyle(
+                    color: Theme.of(context).brightness == Brightness.dark
+                        ? Colors.white
+                        : _Brand.textDark,
+                    fontWeight: FontWeight.w600,
+                    fontSize: tailleTexte,
+                    height: hauteurLigne,
+                    decoration: TextDecoration.none,
+                  ),
                 ),
               ),
             ),
           ],
         ),
+      ),
+    );
+  }
+}
+
+/// Icône de résultat animée : rebond à l'apparition, puis étincelles qui
+/// s'écartent et s'effacent. Remplace l'ancienne croix flottante de 240 px, qui
+/// se posait en overlay au-dessus de la page et chevauchait l'explication.
+class _OutcomeIcon extends StatelessWidget {
+  const _OutcomeIcon({
+    required this.controller,
+    required this.icon,
+    required this.color,
+    required this.tailleIcone,
+  });
+
+  final AnimationController controller;
+  final IconData icon;
+  final Color color;
+  final double tailleIcone;
+
+  @override
+  Widget build(BuildContext context) {
+    return RepaintBoundary(
+      child: AnimatedBuilder(
+        animation: controller,
+        builder: (_, __) {
+          final t = controller.value.clamp(0.0, 1.0);
+
+          const n = 6;
+          final rayonMax = tailleIcone * 0.72;
+          final etincelles = <Widget>[];
+
+          // Au repos (animation terminée) on ne peint plus que l'icône : aucune
+          // couche inutile ne subsiste dans l'arbre de rendu.
+          if (t < 0.999) {
+            for (var i = 0; i < n; i++) {
+              final angle = (i / n) * 2 * math.pi;
+              final r = rayonMax * t;
+              etincelles.add(
+                Transform.translate(
+                  offset: Offset(r * math.cos(angle), r * math.sin(angle)),
+                  child: Transform.scale(
+                    scale: 0.3 + t * 0.7,
+                    child: Opacity(
+                      opacity: (1 - t).clamp(0.0, 1.0),
+                      child: _Star(color: color, size: tailleIcone * 0.22),
+                    ),
+                  ),
+                ),
+              );
+            }
+          }
+
+          // Rebond : dépassement à ~1,18 puis retour à 1. `Curves.elasticOut`
+          // serait trop remuant à côté d'un texte qu'on veut lire.
+          final echelle = 0.7 + Curves.easeOutBack.transform(t) * 0.3;
+
+          return Stack(
+            alignment: Alignment.center,
+            children: [
+              ...etincelles,
+              Transform.scale(
+                scale: echelle,
+                child: Icon(icon, color: color, size: tailleIcone),
+              ),
+            ],
+          );
+        },
       ),
     );
   }
@@ -2128,102 +2997,9 @@ class _PrimaryButton extends StatelessWidget {
   }
 }
 
-// Feedback widgets (identiques à ton fichier)
-class _FeedbackStrip extends StatelessWidget {
-  final AnimationController controller;
-  final bool good;
-
-  const _FeedbackStrip({required this.controller, required this.good});
-
-  @override
-  Widget build(BuildContext context) {
-    return LayoutBuilder(
-      builder: (_, constraints) {
-        final maxW = constraints.maxWidth;
-        final size = (maxW * 0.4).clamp(80.0, 160.0);
-
-        return SizedBox(
-          height: size * 1.1,
-          child: Center(
-            child: _FeedbackSparkles(
-              controller: controller,
-              good: good,
-              size: size,
-            ),
-          ),
-        );
-      },
-    );
-  }
-}
-
-class _FeedbackSparkles extends StatelessWidget {
-  final AnimationController controller;
-  final bool good;
-  final double size;
-
-  const _FeedbackSparkles({
-    required this.controller,
-    required this.good,
-    required this.size,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final base = good ? _Brand.good : _Brand.bad;
-
-    return AnimatedBuilder(
-      animation: controller,
-      builder: (_, __) {
-        final t = controller.value.clamp(0.0, 1.0);
-        final icon = good ? Icons.check_rounded : Icons.close_rounded;
-        final iconSize = size * .30;
-
-        const n = 8;
-        final maxR = size * .58;
-        final showStars = t < 0.999;
-
-        final kids = <Widget>[];
-        if (showStars) {
-          for (var i = 0; i < n; i++) {
-            final ang = (i / n) * 2 * math.pi;
-            final r = maxR * t;
-            final dx = r * math.cos(ang);
-            final dy = r * math.sin(ang);
-
-            final scale = 0.2 + t * 0.8;
-            final op = (1 - t * 0.9).clamp(0.0, 1.0);
-
-            kids.add(
-              Transform.translate(
-                offset: Offset(dx, dy),
-                child: Transform.scale(
-                  scale: scale,
-                  child: Opacity(
-                    opacity: op,
-                    child: _Star(color: base, size: size * .10),
-                  ),
-                ),
-              ),
-            );
-          }
-        }
-
-        return Stack(
-          alignment: Alignment.center,
-          children: [
-            ...kids,
-            Transform.scale(
-              scale: 0.86 + t * 0.24,
-              child: Icon(icon, size: iconSize, color: base),
-            ),
-          ],
-        );
-      },
-    );
-  }
-}
-
+// `_FeedbackStrip` et `_FeedbackSparkles` ont été supprimés : l'animation de
+// résultat vit désormais dans `_OutcomeIcon`, à l'intérieur du bandeau
+// d'explication. `_Star` est conservé, il sert aux étincelles.
 class _Star extends StatelessWidget {
   final Color color;
   final double size;
@@ -2529,23 +3305,89 @@ class _DifficultySplash extends StatefulWidget {
 }
 
 class _DifficultySplashState extends State<_DifficultySplash>
-    with TickerProviderStateMixin {
-  late final AnimationController _bgCtrl = AnimationController(
-    vsync: this,
-    duration: const Duration(seconds: 10),
-  )..repeat(reverse: true);
+    with SingleTickerProviderStateMixin {
+  // ─── Cascade d'ouverture ─────────────────────────────────────────────────
+  //
+  // Même mécanique et même widget (`_ElementCascade`) que l'arrivée d'une
+  // question : un seul contrôleur, chaque élément lisant une fenêtre différente
+  // de sa progression via un `Interval`. Les deux écrans partagent donc
+  // exactement le même geste — fondu plus montée de 10 px.
+  //
+  // Rythme légèrement plus serré qu'en question (380/90 contre 420/130) : ici la
+  // séquence compte sept éléments, et une ouverture d'écran ne doit pas se faire
+  // attendre.
+  static const int _msElement = 380;
+  static const int _msDecalage = 90;
 
-  late final AnimationController _floatCtrl = AnimationController(
+  // Rangs explicites plutôt qu'un compteur incrémenté pendant le build : le
+  // `LayoutBuilder` des cartes peut être rappelé à chaque relayout, et un
+  // compteur mutable y dériverait à chaque passe.
+  static const int _rangTitre = 0;
+  static const int _rangSousTitre = 1;
+  static const int _rangFacile = 2;
+  static const int _rangMoyen = 3;
+  static const int _rangDifficile = 4;
+  static const int _rangCommencer = 5;
+  static const int _rangMelanger = 6;
+  static const int _nbElements = 7;
+
+  late final AnimationController _entree = AnimationController(
     vsync: this,
-    duration: const Duration(seconds: 5),
-  )..repeat(reverse: true);
+    duration: const Duration(
+      milliseconds: _msDecalage * (_nbElements - 1) + _msElement,
+    ),
+  );
+
+  @override
+  void initState() {
+    super.initState();
+    final reduit = WidgetsBinding
+        .instance
+        .platformDispatcher
+        .accessibilityFeatures
+        .disableAnimations;
+    // Comme ailleurs : on saute à l'état final, jamais à un écran vide.
+    if (reduit) {
+      _entree.value = 1;
+    } else {
+      _entree.forward();
+    }
+  }
 
   @override
   void dispose() {
-    _bgCtrl.dispose();
-    _floatCtrl.dispose();
+    _entree.dispose();
     super.dispose();
   }
+
+  Animation<double> _fenetre(int rang) {
+    final total = _msDecalage * (_nbElements - 1) + _msElement;
+    final debut = (_msDecalage * rang) / total;
+    final fin = (_msDecalage * rang + _msElement) / total;
+    return CurvedAnimation(
+      parent: _entree,
+      curve: Interval(
+        debut.clamp(0.0, 1.0),
+        fin.clamp(0.0, 1.0),
+        curve: Curves.easeOutCubic,
+      ),
+    );
+  }
+
+  // Deux contrôleurs ont été supprimés de cet écran.
+  //
+  // `_bgCtrl` pilotait le dégradé et les halos propres au splash, remplacés par
+  // le `_QuizBackdrop` de la page : plus aucun widget ne l'écoutait, mais il
+  // restait en `repeat()` et planifiait un tick à chaque frame pour repeindre
+  // zéro pixel.
+  //
+  // `_floatCtrl` faisait osciller les trois cartes de ±2 px en continu. Un
+  // mouvement permanent sur des éléments qu'on doit comparer avant de choisir :
+  // les écarts entre cartes variaient en permanence, et rien n'était jamais
+  // aligné. Les cartes sont désormais fixes, à espacement constant.
+  //
+  // Conséquence directe : plus aucun ticker ne tourne sur cet écran une fois le
+  // fondu d'entrée terminé.
 
   @override
   Widget build(BuildContext context) {
@@ -2560,32 +3402,23 @@ class _DifficultySplashState extends State<_DifficultySplash>
         opacity: widget.fade,
         child: Stack(
           children: [
+            // Aucun fond propre : le splash laisse voir le `_QuizBackdrop` de la
+            // page, qu'il recouvre.
+            //
+            // Il empilait auparavant son propre dégradé anthracite
+            // (`#0B0C10 → #11131A`) et trois halos, par-dessus le navy du quiz :
+            // deux systèmes d'animation de fond superposés, et une rupture de
+            // teinte au démarrage du quiz. Un seul fond pour tout l'écran, donc
+            // aucune transition de couleur — et trois `AnimatedBuilder` de moins
+            // qui repeignent en continu.
+            //
+            // Un voile très léger détache malgré tout le contenu du fond.
             Positioned.fill(
-              child: _AnimatedBackground(ctrl: _bgCtrl, isDark: isDark),
-            ),
-            _Halo(
-              color: _Brand.accent,
-              size: 260,
-              dx: -140,
-              dy: -160,
-              ctrl: _bgCtrl,
-              strength: isDark ? .18 : .14,
-            ),
-            _Halo(
-              color: _Brand.good,
-              size: 220,
-              dx: 120,
-              dy: 260,
-              ctrl: _bgCtrl,
-              strength: isDark ? .15 : .12,
-            ),
-            _Halo(
-              color: _Brand.bad,
-              size: 180,
-              dx: -10,
-              dy: 120,
-              ctrl: _bgCtrl,
-              strength: isDark ? .12 : .10,
+              child: IgnorePointer(
+                child: ColoredBox(
+                  color: Colors.black.withValues(alpha: isDark ? .28 : .04),
+                ),
+              ),
             ),
 
             // ✅ MODIF: on ne protège plus le bas (zone geste),
@@ -2600,22 +3433,34 @@ class _DifficultySplashState extends State<_DifficultySplash>
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        Text(
-                          'Sélectionne le niveau de difficulté',
-                          textAlign: TextAlign.center,
-                          style: _Brand.h1(
-                            context,
-                          ).copyWith(color: textMain, fontSize: 24),
+                        _ElementCascade(
+                          animation: _fenetre(_rangTitre),
+                          child: Text(
+                            'Sélectionne le niveau de difficulté',
+                            textAlign: TextAlign.center,
+                            style: _Brand.h1(
+                              context,
+                            ).copyWith(color: textMain, fontSize: 24),
+                          ),
                         ),
                         const SizedBox(height: 8),
-                        Text(
-                          'Choisis Facile, Moyen ou Difficile pour adapter les questions à ton niveau.',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            color: sub,
-                            fontWeight: FontWeight.w600,
-                            height: 1.3,
-                            decoration: TextDecoration.none,
+                        _ElementCascade(
+                          animation: _fenetre(_rangSousTitre),
+                          child: Text(
+                            // L'ancien sous-titre énumérait « Facile, Moyen ou
+                            // Difficile » juste au-dessus des trois cartes qui
+                            // portent ces mêmes mots. On dit maintenant ce que les
+                            // cartes ne disent pas : la banque est immense, donc
+                            // les questions ne se répètent pas d'une partie à
+                            // l'autre.
+                            'Nouvelles questions à chaque partie.',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              color: sub,
+                              fontWeight: FontWeight.w600,
+                              height: 1.3,
+                              decoration: TextDecoration.none,
+                            ),
                           ),
                         ),
                         const SizedBox(height: 20),
@@ -2628,34 +3473,47 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 : c.maxWidth;
 
                             final children = [
-                              _LevelCard(
-                                label: 'Facile',
-                                emoji: '🌱',
-                                tint: const Color(0xFFB7F0C1),
-                                active: widget.selected == 'Facile',
-                                onTap: () => widget.onSelect('Facile'),
-                                isDark: isDark,
-                                floatCtrl: _floatCtrl,
+                              // Teintes franches, et surtout **les mêmes que
+                              // celles des cas pratiques** (`_difficultyStyle`) :
+                              // vert #22C55E, ambre #F59E0B, rouge #EF4444. Un
+                              // niveau « Difficile » a désormais la même couleur
+                              // dans tout COP'IQ, quiz comme cas pratiques.
+                              //
+                              // Les pastels précédents (#B7F0C1, #FCE7B2,
+                              // #F8C2BE) étaient trop lavés pour distinguer les
+                              // trois cartes d'un coup d'œil sur fond navy.
+                              _ElementCascade(
+                                animation: _fenetre(_rangFacile),
+                                child: _LevelCard(
+                                  label: 'Facile',
+                                  icon: Icons.eco_rounded,
+                                  tint: const Color(0xFF22C55E),
+                                  active: widget.selected == 'Facile',
+                                  onTap: () => widget.onSelect('Facile'),
+                                  isDark: isDark,
+                                ),
                               ),
-                              _LevelCard(
-                                label: 'Moyen',
-                                emoji: '🏅',
-                                tint: const Color(0xFFFCE7B2),
-                                active: widget.selected == 'Moyenne',
-                                onTap: () => widget.onSelect('Moyenne'),
-                                isDark: isDark,
-                                floatCtrl: _floatCtrl,
-                                floatDelay: .15,
+                              _ElementCascade(
+                                animation: _fenetre(_rangMoyen),
+                                child: _LevelCard(
+                                  label: 'Moyen',
+                                  icon: Icons.military_tech_rounded,
+                                  tint: const Color(0xFFF59E0B),
+                                  active: widget.selected == 'Moyenne',
+                                  onTap: () => widget.onSelect('Moyenne'),
+                                  isDark: isDark,
+                                ),
                               ),
-                              _LevelCard(
-                                label: 'Difficile',
-                                emoji: '🏆',
-                                tint: const Color(0xFFF8C2BE),
-                                active: widget.selected == 'Difficile',
-                                onTap: () => widget.onSelect('Difficile'),
-                                isDark: isDark,
-                                floatCtrl: _floatCtrl,
-                                floatDelay: .30,
+                              _ElementCascade(
+                                animation: _fenetre(_rangDifficile),
+                                child: _LevelCard(
+                                  label: 'Difficile',
+                                  icon: Icons.emoji_events_rounded,
+                                  tint: const Color(0xFFEF4444),
+                                  active: widget.selected == 'Difficile',
+                                  onTap: () => widget.onSelect('Difficile'),
+                                  isDark: isDark,
+                                ),
                               ),
                             ];
 
@@ -2673,10 +3531,13 @@ class _DifficultySplashState extends State<_DifficultySplash>
                             } else {
                               return Column(
                                 children: [
+                                  // 12 comme `spacing` du mode large et comme
+                                  // l'écart entre les options du quiz : un seul
+                                  // pas d'espacement sur tout l'écran.
                                   children[0],
-                                  const SizedBox(height: 10),
+                                  const SizedBox(height: spacing),
                                   children[1],
-                                  const SizedBox(height: 10),
+                                  const SizedBox(height: spacing),
                                   children[2],
                                 ],
                               );
@@ -2684,61 +3545,105 @@ class _DifficultySplashState extends State<_DifficultySplash>
                           },
                         ),
                         const SizedBox(height: 20),
-                        SizedBox(
-                          height: 56,
-                          width: double.infinity,
-                          child: ElevatedButton(
-                            onPressed: widget.selected == null
-                                ? null
-                                : widget.onStart,
-                            style: ElevatedButton.styleFrom(
-                              elevation: 0,
-                              backgroundColor: widget.selected == null
-                                  ? _Brand.radioTrack(context)
-                                  : (isDark ? Colors.white : _Brand.textDark),
-                              foregroundColor: widget.selected == null
-                                  ? (isDark
-                                        ? Colors.white.withAlpha(180)
-                                        : _Brand.textDark.withAlpha(180))
-                                  : (isDark ? Colors.black : Colors.white),
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(28),
+                        _ElementCascade(
+                          animation: _fenetre(_rangCommencer),
+                          child: SizedBox(
+                            height: 56,
+                            width: double.infinity,
+                            child: ElevatedButton(
+                              onPressed: widget.selected == null
+                                  ? null
+                                  : widget.onStart,
+                              style: ElevatedButton.styleFrom(
+                                elevation: 0,
+                                backgroundColor: widget.selected == null
+                                    ? _Brand.radioTrack(context)
+                                    : (isDark ? Colors.white : _Brand.textDark),
+                                foregroundColor: widget.selected == null
+                                    ? (isDark
+                                          ? Colors.white.withAlpha(180)
+                                          : _Brand.textDark.withAlpha(180))
+                                    : (isDark ? Colors.black : Colors.white),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(28),
+                                ),
+                                textStyle: const TextStyle(
+                                  fontFamily: 'InstrumentSans',
+                                  fontWeight: FontWeight.w800,
+                                  fontSize: 18,
+                                  decoration: TextDecoration.none,
+                                ),
                               ),
-                              textStyle: const TextStyle(
-                                fontFamily: 'InstrumentSans',
-                                fontWeight: FontWeight.w800,
-                                fontSize: 18,
-                                decoration: TextDecoration.none,
+                              // Le verrou reste : pas de départ sans niveau. Mais
+                              // un bouton gris muet laissait croire à un écran
+                              // cassé — il énonce désormais ce qu'il attend, et
+                              // devient « Commencer » dès qu'un niveau est choisi.
+                              child: Text(
+                                widget.selected == null
+                                    ? 'Choisis un niveau'
+                                    : 'Commencer',
                               ),
                             ),
-                            child: const Text('Commencer'),
                           ),
                         ),
-                        const SizedBox(height: 10),
-                        SizedBox(
-                          height: 52,
-                          width: double.infinity,
-                          child: OutlinedButton.icon(
-                            onPressed: widget.onStartRandom,
-                            icon: const Icon(Icons.shuffle_rounded, size: 20),
-                            label: const Text('Aléatoire'),
-                            style: OutlinedButton.styleFrom(
-                              foregroundColor: isDark
-                                  ? Colors.white
-                                  : _Brand.textDark,
-                              side: BorderSide(
-                                color: isDark
-                                    ? Colors.white.withAlpha(160)
-                                    : _Brand.textDark.withAlpha(160),
-                              ),
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(26),
-                              ),
-                              textStyle: const TextStyle(
-                                fontFamily: 'InstrumentSans',
-                                fontWeight: FontWeight.w800,
-                                fontSize: 16,
-                                decoration: TextDecoration.none,
+                        const SizedBox(height: 12),
+                        _ElementCascade(
+                          animation: _fenetre(_rangMelanger),
+                          child: _ElementCascade(
+                            animation: _fenetre(_rangMelanger),
+                            child: SizedBox(
+                              // 56 comme « Commencer ».
+                              //
+                              // Le bouton mesurait 52 de haut pour un rayon de 26, et
+                              // son voisin 56 pour un rayon de 28. Deux pilules aux
+                              // courbures différentes, empilées et de même largeur :
+                              // les arcs ne se répondaient pas, ce qui donnait ce
+                              // contour « faux » à l'œil. Hauteur et rayon sont
+                              // maintenant identiques, 56 et 28 — exactement la
+                              // moitié de la hauteur, donc une pilule parfaite.
+                              height: 56,
+                              width: double.infinity,
+                              child: OutlinedButton.icon(
+                                onPressed: widget.onStartRandom,
+                                icon: const Icon(
+                                  Icons.shuffle_rounded,
+                                  size: 20,
+                                ),
+                                // « Aléatoire » ne disait pas ce qui était tiré au
+                                // hasard : les questions, ou les niveaux ?
+                                label: const Text('Mélanger les 3 niveaux'),
+                                style: OutlinedButton.styleFrom(
+                                  foregroundColor: isDark
+                                      ? Colors.white
+                                      : _Brand.textDark,
+                                  // Léger fond : sans lui, le bouton n'était qu'un
+                                  // trait posé sur le dégradé, et son contour
+                                  // paraissait sale là où un halo passait derrière.
+                                  backgroundColor: isDark
+                                      ? _opa(Colors.white, .06)
+                                      : _opa(_Brand.textDark, .03),
+                                  // Contour affaibli et épaissi : à 63 % d'opacité il
+                                  // pesait autant que le bouton principal alors qu'il
+                                  // est l'action secondaire. À 32 % sur 1,4 px il se
+                                  // lit franchement sans concurrencer « Commencer »,
+                                  // et reprend l'épaisseur des autres contours du
+                                  // fichier.
+                                  side: BorderSide(
+                                    color: isDark
+                                        ? _opa(Colors.white, .32)
+                                        : _opa(_Brand.textDark, .28),
+                                    width: 1.4,
+                                  ),
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(28),
+                                  ),
+                                  textStyle: const TextStyle(
+                                    fontFamily: 'InstrumentSans',
+                                    fontWeight: FontWeight.w800,
+                                    fontSize: 16,
+                                    decoration: TextDecoration.none,
+                                  ),
+                                ),
                               ),
                             ),
                           ),
@@ -2756,44 +3661,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
   }
 }
 
-class _AnimatedBackground extends StatelessWidget {
-  final AnimationController ctrl;
-  final bool isDark;
-  const _AnimatedBackground({required this.ctrl, required this.isDark});
-
-  @override
-  Widget build(BuildContext context) {
-    final base1 = isDark ? const Color(0xFF0B0C10) : const Color(0xFFF7F8FA);
-    final base2 = isDark ? const Color(0xFF11131A) : const Color(0xFFFFFFFF);
-
-    return AnimatedBuilder(
-      animation: ctrl,
-      builder: (_, __) {
-        final t = ctrl.value;
-        final a1 = Alignment.lerp(
-          const Alignment(-0.9, -1.0),
-          const Alignment(0.6, -0.6),
-          t,
-        )!;
-        final a2 = Alignment.lerp(
-          const Alignment(0.9, 1.0),
-          const Alignment(-0.6, 0.6),
-          t,
-        )!;
-
-        return Container(
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              begin: a1,
-              end: a2,
-              colors: [base1, base2],
-            ),
-          ),
-        );
-      },
-    );
-  }
-}
+// `_AnimatedBackground` a été supprimé : c'était le dégradé anthracite propre au
+// splash de difficulté, devenu inutile depuis que celui-ci laisse voir le
+// `_QuizBackdrop` de la page. Un seul fond pour tout l'écran.
 
 class _Halo extends StatelessWidget {
   final Color color;
@@ -2846,123 +3716,147 @@ class _Halo extends StatelessWidget {
 
 class _LevelCard extends StatelessWidget {
   final String label;
-  final String emoji;
+
+  /// Icône du niveau.
+  ///
+  /// Remplace un emoji (🌱 🏅 🏆) : celui-ci se rend avec la police du système,
+  /// donc avec un dessin différent sur Samsung, Pixel ou iOS, sans aucun
+  /// contrôle sur sa couleur ni sur son poids optique. Il jurait par ailleurs
+  /// avec l'icône Material `shuffle` du bouton juste en dessous.
+  final IconData icon;
+
   final Color tint;
   final bool active;
   final bool isDark;
   final VoidCallback onTap;
-  final AnimationController floatCtrl;
-  final double floatDelay;
 
   const _LevelCard({
     required this.label,
-    required this.emoji,
+    required this.icon,
     required this.tint,
     required this.active,
     required this.onTap,
     required this.isDark,
-    required this.floatCtrl,
-    this.floatDelay = 0.0,
   });
 
   @override
   Widget build(BuildContext context) {
     final track = _Brand.radioTrack(context);
 
-    return AnimatedBuilder(
-      animation: floatCtrl,
-      builder: (_, __) {
-        final t = ((floatCtrl.value + floatDelay) % 1.0);
-        final y = 2.0 * math.sin(2 * math.pi * t);
-        final scale = active ? 1.02 : 1.0;
-
-        return Transform.translate(
-          offset: Offset(0, y),
-          child: AnimatedScale(
-            duration: const Duration(milliseconds: 180),
-            scale: scale,
+    // Carte fixe. Le `AnimatedBuilder` + `Transform.translate` qui la faisait
+    // osciller de ±2 px a été retiré : sur trois cartes à comparer, ce
+    // balancement désalignait les bords en permanence.
+    //
+    // L'agrandissement au clic est conservé — lui répond à une action de
+    // l'utilisateur, il n'est pas gratuit.
+    return AnimatedScale(
+      duration: const Duration(milliseconds: 180),
+      scale: active ? 1.02 : 1.0,
+      curve: Curves.easeOutCubic,
+      // Les trois cartes forment un groupe à choix unique : un lecteur
+      // d'écran annonce désormais « Facile, bouton radio, non sélectionné »
+      // au lieu du seul mot « Facile », sans indication d'état.
+      child: Semantics(
+        inMutuallyExclusiveGroup: true,
+        selected: active,
+        button: true,
+        label: label,
+        child: InkWell(
+          onTap: onTap,
+          borderRadius: BorderRadius.circular(20),
+          child: AnimatedContainer(
+            duration: const Duration(milliseconds: 220),
             curve: Curves.easeOutCubic,
-            child: InkWell(
-              onTap: onTap,
-              borderRadius: BorderRadius.circular(20),
-              child: AnimatedContainer(
-                duration: const Duration(milliseconds: 220),
-                curve: Curves.easeOutCubic,
-                height: 112,
-                padding: const EdgeInsets.symmetric(horizontal: 16),
-                decoration: BoxDecoration(
-                  color: _opa(tint, isDark ? .18 : .16),
-                  borderRadius: BorderRadius.circular(20),
-                  border: Border.all(
-                    color: active ? tint : track,
-                    width: active ? 2 : 1,
-                  ),
-                  boxShadow: [
-                    if (!isDark)
-                      BoxShadow(
-                        color: tint.withValues(alpha: .18),
-                        blurRadius: 18,
-                        offset: const Offset(0, 8),
-                      ),
-                  ],
-                ),
-                child: Row(
-                  children: [
-                    Container(
-                      width: 48,
-                      height: 48,
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        color: _opa(tint, isDark ? .35 : .32),
-                        border: Border.all(
-                          color: active ? tint : _opa(Colors.white, .25),
-                        ),
-                      ),
-                      child: Center(
-                        child: Text(
-                          emoji,
-                          style: const TextStyle(fontSize: 26),
-                        ),
-                      ),
-                    ),
-                    const SizedBox(width: 14),
-                    Expanded(
-                      child: Text(
-                        label,
-                        style: _Brand.option(context).copyWith(
-                          color: isDark ? Colors.white : _Brand.textDark,
-                          fontSize: 20,
-                          fontWeight: FontWeight.w800,
-                          decoration: TextDecoration.none,
-                        ),
-                      ),
-                    ),
-                    Container(
-                      width: 24,
-                      height: 24,
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        border: Border.all(
-                          color: active ? tint : track,
-                          width: 2,
-                        ),
-                      ),
-                      child: AnimatedContainer(
-                        duration: const Duration(milliseconds: 200),
-                        margin: const EdgeInsets.all(4),
-                        decoration: BoxDecoration(
-                          shape: BoxShape.circle,
-                          color: active ? tint : Colors.transparent,
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
+            height: 112,
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            decoration: BoxDecoration(
+              // Densité revue à la baisse : avec des teintes franches, les
+              // 18 % d'origine donnaient trois aplats criards. La carte
+              // sélectionnée monte en revanche à 22 % pour se détacher
+              // nettement des deux autres — la bordure de 2 px ne suffisait
+              // pas à porter seule l'état actif.
+              color: _opa(
+                tint,
+                isDark ? (active ? .22 : .13) : (active ? .18 : .10),
               ),
+              borderRadius: BorderRadius.circular(20),
+              border: Border.all(
+                color: active ? tint : track,
+                width: active ? 2 : 1,
+              ),
+              boxShadow: [
+                if (!isDark)
+                  BoxShadow(
+                    color: tint.withValues(alpha: .18),
+                    blurRadius: 18,
+                    offset: const Offset(0, 8),
+                  ),
+              ],
+            ),
+            child: Row(
+              children: [
+                Container(
+                  width: 48,
+                  height: 48,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: _opa(tint, isDark ? .22 : .18),
+                    border: Border.all(color: active ? tint : _opa(tint, .45)),
+                  ),
+                  child: Center(
+                    child: Icon(
+                      icon,
+                      size: 24,
+                      // Teinte pleine : sur la pastille translucide, une
+                      // icône blanche perdrait l'identité du niveau. Les
+                      // teintes étant désormais franches, l'assombrissement
+                      // en thème clair n'a plus qu'à corriger le contraste.
+                      color: isDark ? tint : _assombrir(tint, .22),
+                    ),
+                  ),
+                ),
+                const SizedBox(width: 14),
+                Expanded(
+                  child: Text(
+                    label,
+                    style: _Brand.option(context).copyWith(
+                      color: isDark ? Colors.white : _Brand.textDark,
+                      fontSize: 20,
+                      fontWeight: FontWeight.w800,
+                      decoration: TextDecoration.none,
+                    ),
+                  ),
+                ),
+                Container(
+                  width: 24,
+                  height: 24,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    border: Border.all(color: active ? tint : track, width: 2),
+                  ),
+                  child: AnimatedContainer(
+                    duration: const Duration(milliseconds: 200),
+                    margin: const EdgeInsets.all(4),
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: active ? tint : Colors.transparent,
+                    ),
+                  ),
+                ),
+              ],
             ),
           ),
-        );
-      },
+        ),
+      ),
     );
   }
 }
+
+/// Assombrit une teinte pâle pour qu'elle reste lisible sur fond clair.
+///
+/// Les trois teintes de niveau sont des pastels (`#B7F0C1`, `#FCE7B2`,
+/// `#F8C2BE`) : parfaites sur le navy, illisibles en thème clair où elles
+/// disparaissent dans le blanc. On les rabat vers le noir plutôt que d'entretenir
+/// une seconde palette à maintenir en parallèle.
+Color _assombrir(Color c, [double facteur = .45]) =>
+    Color.lerp(c, Colors.black, facteur)!;

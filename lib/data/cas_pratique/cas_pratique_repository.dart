@@ -37,6 +37,19 @@ abstract class CasPratiqueRepository {
     int offset = 0,
   });
 
+  /// Nombre total de cas publiés correspondant aux filtres, **indépendamment**
+  /// de la pagination.
+  ///
+  /// `listCases` ne peut pas répondre à cette question : elle renvoie une page.
+  /// Le compteur affiché en tête de liste doit annoncer la taille du catalogue,
+  /// pas celle de ce qui a déjà été téléchargé.
+  Future<int> countCases({
+    Set<String>? themeSlugs,
+    Set<int>? years,
+    Set<CpDifficulty>? difficulties,
+    String? searchQuery,
+  });
+
   Future<CaseDetail> getCaseDetail(String slugOrId);
 
   /// Force le rafraîchissement du cache.

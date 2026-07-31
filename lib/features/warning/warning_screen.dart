@@ -7,7 +7,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-import 'package:copiqpolice/core/widgets/app_notifier.dart' show AppSettingsController;
+import 'package:copiqpolice/core/widgets/app_notifier.dart'
+    show AppSettingsController;
 
 class WarningScreen extends StatefulWidget {
   final VoidCallback onAccepted;
@@ -105,7 +106,7 @@ class _WarningScreenState extends State<WarningScreen>
 
   Future<void> _openPrivacy() async {
     HapticFeedback.selectionClick();
-    final uri = Uri.parse('https://copiq.fr/politique-de-confidentialite/');
+    final uri = Uri.parse('https://copiq.fr/legal/');
     final ok = await launchUrl(uri, mode: LaunchMode.externalApplication);
     if (!ok && mounted) {
       ScaffoldMessenger.of(context).showSnackBar(
@@ -285,7 +286,10 @@ class _GlassCardPremium extends StatelessWidget {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
         color: Colors.white.withValues(alpha: 0.075),
-        border: Border.all(color: Colors.white.withValues(alpha: 0.10), width: 1),
+        border: Border.all(
+          color: Colors.white.withValues(alpha: 0.10),
+          width: 1,
+        ),
         boxShadow: [
           BoxShadow(
             blurRadius: 28,
@@ -494,7 +498,10 @@ class _CardContent extends StatelessWidget {
             onPressed: onOpenPrivacy,
             style: OutlinedButton.styleFrom(
               foregroundColor: Colors.white,
-              side: BorderSide(color: Colors.white.withValues(alpha: 0.25), width: 1),
+              side: BorderSide(
+                color: Colors.white.withValues(alpha: 0.25),
+                width: 1,
+              ),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(16),
               ),

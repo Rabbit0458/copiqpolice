@@ -29,6 +29,7 @@ class CasPratiqueScaffold extends StatelessWidget {
     this.canGoBack = true,
     this.rightAction,
     this.bottomAction,
+    this.bottomBar,
     this.bottomPadding = 16.0,
     this.showBackdrop = true,
   });
@@ -53,6 +54,14 @@ class CasPratiqueScaffold extends StatelessWidget {
 
   /// Widget sticky en bas (typiquement le CTA "Suivant" / "Valider").
   final Widget? bottomAction;
+
+  /// Bandeau libre tout en bas de l'écran, sous [bottomAction].
+  ///
+  /// Contrairement à [bottomAction], aucune hauteur n'est imposée : le widget
+  /// prend sa taille intrinsèque. Pensé pour un élément d'information discret
+  /// et permanent — le chrono d'épreuve — qui doit rester visible quel que soit
+  /// le défilement du corps de page, et remonter au-dessus du clavier.
+  final Widget? bottomBar;
 
   /// Padding bottom pour le bottomAction.
   final double bottomPadding;
@@ -93,6 +102,7 @@ class CasPratiqueScaffold extends StatelessWidget {
                       child: bottomAction!,
                     ),
                   ),
+                if (bottomBar != null) bottomBar!,
               ],
             ),
           ),

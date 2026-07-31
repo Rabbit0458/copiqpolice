@@ -201,6 +201,49 @@ class CasPratiqueRepositoryImpl implements CasPratiqueRepository {
     }
   }
 
+  @override
+  Future<int> countCases({
+    Set<String>? themeSlugs,
+    Set<int>? years,
+    Set<CpDifficulty>? difficulties,
+    String? searchQuery,
+  }) async {
+    try {
+      // `count(CountOption.exact)` émet un HEAD avec `Prefer: count=exact` :
+      // PostgREST renvoie le total dans l'en-tête Content-Range et **aucune
+      // ligne**. Coût réseau constant, quelle que soit la taille du catalogue.
+      var query = _sb
+          .from('cas_pratique_cases')
+          .count(CountOption.exact)
+          .eq('status', 'published');
+
+      // Mêmes filtres que `listCases`, sinon le compteur et la liste
+      // raconteraient deux histoires différentes.
+      if (themeSlugs != null && themeSlugs.isNotEmpty) {
+        final themeIds = await _resolveThemeIds(themeSlugs);
+        if (themeIds.isEmpty) return 0;
+        query = query.inFilter('theme_id', themeIds);
+      }
+      if (years != null && years.isNotEmpty) {
+        query = query.inFilter('year', years.toList());
+      }
+      if (difficulties != null && difficulties.isNotEmpty) {
+        query = query.inFilter(
+          'difficulty',
+          difficulties.map(difficultyToString).toList(),
+        );
+      }
+      if (searchQuery != null && searchQuery.trim().isNotEmpty) {
+        final q = searchQuery.trim();
+        query = query.or('title.ilike.%$q%,situation_text.ilike.%$q%');
+      }
+
+      return await query;
+    } catch (e, st) {
+      _rethrow(e, st, context: 'countCases');
+    }
+  }
+
   Future<List<String>> _resolveThemeIds(Set<String> slugs) async {
     final rows = await _sb
         .from('cas_pratique_themes')

@@ -15,6 +15,9 @@
 // ╚════════════════════════════════════════════════════════════════════════╝
 
 import 'dart:async';
+// `FontFeature` n'est pas réexporté par material : nécessaire pour les chiffres
+// à largeur fixe du chrono.
+import 'dart:ui' show FontFeature;
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -102,6 +105,30 @@ class _CasPratiqueDynamicPageState extends State<CasPratiqueDynamicPage> {
   /// Détails en cours d'envoi (spinner).
   final Set<String> _appealInFlightIds = <String>{};
 
+  // ─── Chrono d'épreuve ───────────────────────────────────────────────────
+  /// Instant de fin de l'épreuve. `null` tant que l'utilisateur n'a pas appuyé
+  /// sur « Je commence » : la lecture de l'énoncé n'est pas décomptée.
+  ///
+  /// Le temps restant est **recalculé** depuis cette échéance à chaque tick,
+  /// jamais décrémenté. Un compteur décrémenté dérive (frames sautées, app en
+  /// arrière-plan, throttling) et finirait par mentir sur une épreuve de 20 min.
+  DateTime? _finEpreuve;
+
+  Timer? _ticker;
+
+  /// Temps restant, exposé en `ValueNotifier` pour que le tick d'une seconde
+  /// ne reconstruise **que** l'afficheur du chrono. Un `setState` ici
+  /// rebâtirait le `PageView` entier — questions, textarea et tout — chaque
+  /// seconde.
+  final ValueNotifier<Duration?> _tempsRestant = ValueNotifier<Duration?>(null);
+
+  /// Empêche un double envoi automatique si le ticker et un autre chemin
+  /// arrivaient à l'expiration en même temps.
+  bool _envoiAutoDeclenche = false;
+
+  /// Durée de repli si le cas n'annonce pas de durée exploitable.
+  static const int _kDureeParDefautMinutes = 20;
+
   // ─── Constantes locales ─────────────────────────────────────────────────
   static const Duration _kAutosaveDebounce = Duration(milliseconds: 1500);
 
@@ -114,6 +141,8 @@ class _CasPratiqueDynamicPageState extends State<CasPratiqueDynamicPage> {
   @override
   void dispose() {
     _stopwatch.stop();
+    _ticker?.cancel();
+    _tempsRestant.dispose();
     for (final t in _debouncers.values) {
       t?.cancel();
     }
@@ -520,6 +549,93 @@ class _CasPratiqueDynamicPageState extends State<CasPratiqueDynamicPage> {
   }
 
   // ═══════════════════════════════════════════════════════════════════════
+  //  CHRONO D'ÉPREUVE
+  // ═══════════════════════════════════════════════════════════════════════
+
+  /// Durée allouée à ce cas : celle annoncée sur sa carte
+  /// (`estimated_minutes`), donc pilotable depuis le panel admin sans toucher
+  /// au code. L'utilisateur a lu « ~25 min » avant d'entrer : le chrono doit
+  /// dire la même chose.
+  int get _dureeEpreuveMinutes {
+    final annonce = _detail?.summary.estimatedMinutes ?? 0;
+    return annonce > 0 ? annonce : _kDureeParDefautMinutes;
+  }
+
+  bool get _chronoActif => _finEpreuve != null;
+
+  /// Appelé par « Je commence ». Lance le décompte **et** passe à la première
+  /// question. Le temps de lecture de l'énoncé n'est donc pas décompté.
+  void _commencerEpreuve() {
+    if (!_chronoActif) {
+      final fin = DateTime.now().add(Duration(minutes: _dureeEpreuveMinutes));
+      _finEpreuve = fin;
+      _tempsRestant.value = fin.difference(DateTime.now());
+      _ticker?.cancel();
+      _ticker = Timer.periodic(const Duration(seconds: 1), (_) => _tick());
+    }
+    _goNext();
+  }
+
+  void _tick() {
+    final fin = _finEpreuve;
+    if (fin == null) return;
+    final reste = fin.difference(DateTime.now());
+    if (reste.isNegative || reste == Duration.zero) {
+      _tempsRestant.value = Duration.zero;
+      _ticker?.cancel();
+      _ticker = null;
+      _onTempsEcoule();
+      return;
+    }
+    _tempsRestant.value = reste;
+  }
+
+  void _arreterChrono() {
+    _ticker?.cancel();
+    _ticker = null;
+    _finEpreuve = null;
+  }
+
+  /// Expiration : on part en correction avec ce qui est écrit, conditions de
+  /// concours. Rien n'est perdu — `_runCorrectionIfNeeded` lit directement les
+  /// controllers, donc même une réponse jamais validée est corrigée.
+  Future<void> _onTempsEcoule() async {
+    if (_envoiAutoDeclenche) return;
+    _envoiAutoDeclenche = true;
+
+    final detail = _detail;
+    if (detail == null || !mounted) return;
+
+    // Déjà sur la correction : le chrono n'a plus d'objet.
+    final pageCorrection = detail.questions.length + 2;
+    if (_index >= pageCorrection) return;
+
+    HapticFeedback.heavyImpact();
+
+    // Les brouillons sont debouncés à 1,5 s : on force l'écriture des textes en
+    // cours de frappe avant de basculer, pour que le serveur ait la même chose
+    // que le moteur de correction.
+    for (final q in detail.questions) {
+      _debouncers[q.id]?.cancel();
+      final texte = _controllers[q.id]?.text.trim() ?? '';
+      if (texte.isNotEmpty && !(_validatedByQuestionId[q.id] ?? false)) {
+        await _doSave(q.id, q.position);
+      }
+    }
+
+    if (!mounted) return;
+    AppNotifier.warning(
+      context,
+      title: 'Temps écoulé',
+      message: 'Tes réponses partent en correction en l’état.',
+    );
+
+    // `jumpToPage` plutôt qu'une animation : à 00:00 on ne négocie pas, et
+    // `onPageChanged` déclenchera la correction.
+    _pc.jumpToPage(pageCorrection);
+  }
+
+  // ═══════════════════════════════════════════════════════════════════════
   //  NAVIGATION
   // ═══════════════════════════════════════════════════════════════════════
 
@@ -529,6 +645,13 @@ class _CasPratiqueDynamicPageState extends State<CasPratiqueDynamicPage> {
       duration: CpTokens.animPage,
       curve: Curves.easeOutCubic,
     );
+  }
+
+  /// Quitte le cas et rend la main à la liste. Utilisé par le bouton « Retour »
+  /// de la page d'intro, où il n'existe pas de page précédente dans le PageView.
+  void _exitToList() {
+    HapticFeedback.selectionClick();
+    Navigator.of(context).maybePop();
   }
 
   void _goPrev() {
@@ -563,19 +686,133 @@ class _CasPratiqueDynamicPageState extends State<CasPratiqueDynamicPage> {
     final detail = _detail!;
     final pages = _buildPageList(detail);
     final qCount = detail.questions.length;
-    final isOnCorrection = _index == qCount + 2;
-    // Pas de bouton retour sur la page de correction (lock par design).
-    // Sinon, on n'affiche le retour que si la page précédente est encore
-    // accessible (au-dessus du verrou de validation).
-    final showBack =
-        _index > 0 && !isOnCorrection && (_index - 1) >= _minBackIndex;
+    final pageCorrection = qCount + 2;
+    final isOnCorrection = _index == pageCorrection;
 
+    // L'épreuve commence à la première question. À partir de là, **plus aucun
+    // retour** : revenir sur l'énoncé après avoir lu les questions permettrait
+    // de préparer ses réponses hors chrono, ou de découvrir les questions puis
+    // de ressortir pour les travailler ailleurs.
+    final epreuveEnCours = _index >= 2 && !isOnCorrection;
+
+    // Avant le départ (intro, énoncé) la navigation reste libre : rien n'est
+    // encore joué. `_minBackIndex` continue de verrouiller les questions déjà
+    // validées, pour le cas où cette règle évoluerait.
+    final canStepBack = !epreuveEnCours &&
+        !isOnCorrection &&
+        _index > 0 &&
+        (_index - 1) >= _minBackIndex;
+    // Sur la page d'intro (_index == 0) il n'y a pas de page précédente : le
+    // retour doit quitter le cas et revenir à la liste. Sans ça le bouton
+    // « Retour » était rendu inerte dès l'ouverture du cas.
+    final canExitToList =
+        _index == 0 && !isOnCorrection && Navigator.of(context).canPop();
+    final showBack = canStepBack || canExitToList;
+
+    return PopScope<Object?>(
+      // Le geste retour système contournerait sinon tout le verrouillage de la
+      // barre du haut.
+      canPop: !epreuveEnCours,
+      onPopInvokedWithResult: (didPop, _) {
+        if (!didPop) _confirmerAbandon();
+      },
+      child: _buildScaffold(
+        detail: detail,
+        pages: pages,
+        pageCorrection: pageCorrection,
+        isOnCorrection: isOnCorrection,
+        epreuveEnCours: epreuveEnCours,
+        showBack: showBack,
+        canStepBack: canStepBack,
+      ),
+    );
+  }
+
+  /// Demande confirmation avant de quitter une épreuve en cours. Le chrono
+  /// continue de tourner pendant le dialogue : c'est voulu, une hésitation ne
+  /// doit pas offrir du temps gratuit.
+  Future<void> _confirmerAbandon() async {
+    if (!mounted) return;
+    final theme = Theme.of(context);
+    final isDark = theme.brightness == Brightness.dark;
+
+    final quitter = await showDialog<bool>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        backgroundColor: CpTokens.surfaceContainer(isDark),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(CpTokens.r4),
+        ),
+        title: Text(
+          'Quitter l’épreuve ?',
+          style: GoogleFonts.montserrat(
+            color: CpTokens.onSurface(isDark),
+            fontWeight: FontWeight.w900,
+            fontSize: 17,
+          ),
+        ),
+        content: Text(
+          'Tes réponses écrites sont conservées, mais le chrono continue de '
+          'tourner. Tu ne pourras pas revenir sur l’énoncé.',
+          style: GoogleFonts.montserrat(
+            color: CpTokens.onSurfaceMuted(isDark),
+            fontWeight: FontWeight.w600,
+            fontSize: 13.5,
+            height: 1.45,
+          ),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(ctx).pop(false),
+            child: Text(
+              'Rester',
+              style: GoogleFonts.montserrat(
+                color: CpTokens.onSurface(isDark),
+                fontWeight: FontWeight.w800,
+              ),
+            ),
+          ),
+          TextButton(
+            onPressed: () => Navigator.of(ctx).pop(true),
+            child: Text(
+              'Quitter',
+              style: GoogleFonts.montserrat(
+                color: CpTokens.dangerFor(isDark),
+                fontWeight: FontWeight.w900,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+
+    if (quitter == true && mounted) {
+      _arreterChrono();
+      Navigator.of(context).pop();
+    }
+  }
+
+  Widget _buildScaffold({
+    required CaseDetail detail,
+    required List<Widget> pages,
+    required int pageCorrection,
+    required bool isOnCorrection,
+    required bool epreuveEnCours,
+    required bool showBack,
+    required bool canStepBack,
+  }) {
     return CasPratiqueScaffold(
       title: _titleForIndex(_index, detail),
       subtitle: _subtitleForIndex(_index, detail),
       canGoBack: showBack,
-      onBack: showBack ? _goPrev : null,
+      onBack: !showBack
+          ? null
+          : canStepBack
+              ? _goPrev
+              : _exitToList,
       // CODE-045 : sur la page correction, on offre un raccourci vers "Mes appels".
+      // Pendant l'épreuve, la place est prise par la relecture de l'énoncé :
+      // le retour en arrière étant verrouillé, c'est le seul accès au texte.
       rightAction: isOnCorrection
           ? _MyAppealsTopAction(
               onTap: () {
@@ -585,6 +822,14 @@ class _CasPratiqueDynamicPageState extends State<CasPratiqueDynamicPage> {
                 );
               },
             )
+          : epreuveEnCours
+              ? _RelireEnonceButton(
+                  onTap: () => _EnonceSheet.show(context, detail),
+                )
+              : null,
+      // Chrono : uniquement pendant l'épreuve, et seulement s'il a démarré.
+      bottomBar: epreuveEnCours && _chronoActif
+          ? _ChronoBar(tempsRestant: _tempsRestant)
           : null,
       body: PageView(
         controller: _pc,
@@ -592,7 +837,8 @@ class _CasPratiqueDynamicPageState extends State<CasPratiqueDynamicPage> {
         onPageChanged: (i) {
           setState(() => _index = i);
           // Arrivée sur la page correction → on déclenche
-          if (i == qCount + 2) {
+          if (i == pageCorrection) {
+            _arreterChrono();
             _runCorrectionIfNeeded();
           }
         },
@@ -624,7 +870,13 @@ class _CasPratiqueDynamicPageState extends State<CasPratiqueDynamicPage> {
   List<Widget> _buildPageList(CaseDetail d) {
     return [
       _IntroPage(detail: d, onStart: _goNext),
-      _TextPage(detail: d, onStart: _goNext),
+      // « Je commence » démarre le chrono : le temps de lecture de l'énoncé
+      // n'est pas décompté.
+      _TextPage(
+        detail: d,
+        onStart: _commencerEpreuve,
+        dureeMinutes: _dureeEpreuveMinutes,
+      ),
       for (int i = 0; i < d.questions.length; i++)
         _QuestionPage(
           question: d.questions[i],
@@ -986,9 +1238,18 @@ class _InfoLine extends StatelessWidget {
 // ═══════════════════════════════════════════════════════════════════════════
 
 class _TextPage extends StatelessWidget {
-  const _TextPage({required this.detail, required this.onStart});
+  const _TextPage({
+    required this.detail,
+    required this.onStart,
+    required this.dureeMinutes,
+  });
+
   final CaseDetail detail;
   final VoidCallback onStart;
+
+  /// Annoncée avant le départ : l'utilisateur doit savoir dans quoi il entre,
+  /// puisque le chrono se déclenche au moment où il appuie.
+  final int dureeMinutes;
 
   @override
   Widget build(BuildContext context) {
@@ -1033,7 +1294,248 @@ class _TextPage extends StatelessWidget {
               ),
             ),
           ),
+          const SizedBox(height: CpTokens.s3),
+          Text(
+            'Le chrono de $dureeMinutes min démarre maintenant. '
+            'Retour en arrière impossible.',
+            textAlign: TextAlign.center,
+            style: GoogleFonts.montserrat(
+              color: Colors.white.withValues(alpha: 0.62),
+              fontWeight: FontWeight.w600,
+              fontSize: 11.5,
+              height: 1.4,
+            ),
+          ),
         ],
+      ),
+    );
+  }
+}
+
+// ═══════════════════════════════════════════════════════════════════════════
+//  CHRONO D'ÉPREUVE — bandeau bas, minimaliste
+// ═══════════════════════════════════════════════════════════════════════════
+
+/// Compteur dégressif, réduit à l'essentiel : le temps, rien d'autre.
+///
+/// Écoute un `ValueNotifier` au lieu de dépendre d'un `setState` du parent :
+/// seul le texte se reconstruit à chaque seconde, pas la question ni la zone de
+/// saisie. Sur une épreuve de 20 minutes, cela représente 1 200 rebuilds
+/// évités.
+class _ChronoBar extends StatelessWidget {
+  const _ChronoBar({required this.tempsRestant});
+
+  final ValueNotifier<Duration?> tempsRestant;
+
+  static String _format(Duration d) {
+    final total = d.inSeconds < 0 ? 0 : d.inSeconds;
+    final m = (total ~/ 60).toString().padLeft(2, '0');
+    final s = (total % 60).toString().padLeft(2, '0');
+    return '$m:$s';
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    // `sizeOf` plutôt que `MediaQuery.of` : ne réabonne le widget qu'aux
+    // changements de taille, pas à toute variation de padding ou de clavier.
+    final taille2d = MediaQuery.sizeOf(context);
+
+    // Le fond de l'épreuve est bleu vif en clair, navy en sombre : le texte est
+    // blanc dans les deux cas. On ne fait donc pas varier la teinte mais
+    // l'opacité, plus lisible sur le bleu que sur le navy.
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final couleurNormale = Colors.white.withValues(alpha: isDark ? 0.62 : 0.72);
+
+    // Échelle : rapportée à la largeur, bornée. Un petit écran (SE, 320 dp) ne
+    // doit pas voir le chrono manger la place du clavier ; une tablette ne doit
+    // pas se retrouver avec un chiffre minuscule.
+    final taille = (taille2d.width / 24).clamp(13.0, 19.0);
+
+    // Écran court : on resserre l'espacement vertical plutôt que de rogner le
+    // texte, qui doit rester lisible d'un coup d'œil.
+    final ecranCourt = taille2d.height < 700;
+    final padVertical = ecranCourt ? CpTokens.s2 : CpTokens.s3;
+
+    return ValueListenableBuilder<Duration?>(
+      valueListenable: tempsRestant,
+      builder: (context, reste, _) {
+        if (reste == null) return const SizedBox.shrink();
+
+        // Dernières deux minutes : le chiffre passe en rouge. Seule entorse au
+        // minimalisme, et la seule information réellement utile à signaler.
+        final urgence = reste.inSeconds <= 120;
+        final couleur = urgence ? CpTokens.dangerFor(isDark) : couleurNormale;
+
+        return Padding(
+          padding: EdgeInsets.only(
+            top: CpTokens.s1,
+            bottom: padVertical,
+          ),
+          child: Text(
+            _format(reste),
+            textAlign: TextAlign.center,
+            style: GoogleFonts.montserrat(
+              color: couleur,
+              fontWeight: urgence ? FontWeight.w900 : FontWeight.w800,
+              fontSize: taille,
+              letterSpacing: 0.5,
+              // Chiffres à largeur fixe : sans ça, la ligne tremble à chaque
+              // seconde parce que le « 1 » est plus étroit que le « 8 ».
+              fontFeatures: const [FontFeature.tabularFigures()],
+            ),
+          ),
+        );
+      },
+    );
+  }
+}
+
+// ═══════════════════════════════════════════════════════════════════════════
+//  RELECTURE DE L'ÉNONCÉ — bouton cahier + feuille
+// ═══════════════════════════════════════════════════════════════════════════
+
+/// Bouton cahier de la barre du haut. Discret, mais toujours au même endroit :
+/// pendant l'épreuve, c'est le seul chemin vers l'énoncé.
+class _RelireEnonceButton extends StatelessWidget {
+  const _RelireEnonceButton({required this.onTap});
+
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    return Semantics(
+      button: true,
+      label: 'Relire l’énoncé du cas',
+      child: InkWell(
+        onTap: () {
+          HapticFeedback.selectionClick();
+          onTap();
+        },
+        borderRadius: BorderRadius.circular(CpTokens.rPill),
+        child: Container(
+          padding: const EdgeInsets.all(9),
+          decoration: BoxDecoration(
+            shape: BoxShape.circle,
+            color: Colors.white.withValues(alpha: 0.12),
+            border: Border.all(
+              color: Colors.white.withValues(alpha: 0.22),
+            ),
+          ),
+          child: const Icon(
+            Icons.menu_book_rounded,
+            color: Colors.white,
+            size: 18,
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+/// Feuille de relecture de l'énoncé.
+///
+/// Volontairement en lecture seule et sans bouton de navigation : relire ne doit
+/// jamais devenir un moyen de sortir de l'épreuve.
+class _EnonceSheet extends StatelessWidget {
+  const _EnonceSheet({required this.detail});
+
+  final CaseDetail detail;
+
+  static Future<void> show(BuildContext context, CaseDetail detail) {
+    return showModalBottomSheet<void>(
+      context: context,
+      isScrollControlled: true,
+      backgroundColor: Colors.transparent,
+      // Le chrono du fond reste visible : l'utilisateur garde la notion du
+      // temps pendant qu'il relit.
+      barrierColor: Colors.black.withValues(alpha: 0.55),
+      builder: (_) => _EnonceSheet(detail: detail),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final ecran = MediaQuery.sizeOf(context);
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+
+    // Hauteur relative : sur un petit écran la feuille prend presque tout,
+    // sur un grand elle laisse voir le contexte derrière.
+    final hauteurMax = ecran.height * (ecran.height < 700 ? 0.9 : 0.8);
+
+    return Container(
+      constraints: BoxConstraints(maxHeight: hauteurMax),
+      decoration: BoxDecoration(
+        color: CpTokens.surfaceContainer(isDark),
+        borderRadius: const BorderRadius.vertical(
+          top: Radius.circular(CpTokens.r6),
+        ),
+      ),
+      child: SafeArea(
+        top: false,
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            // Poignée
+            Container(
+              margin: const EdgeInsets.only(top: CpTokens.s3),
+              width: 42,
+              height: 4,
+              decoration: BoxDecoration(
+                color: CpTokens.onSurfaceFaint(isDark),
+                borderRadius: BorderRadius.circular(CpTokens.rPill),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(
+                CpTokens.s6, CpTokens.s4, CpTokens.s6, CpTokens.s2,
+              ),
+              child: Row(
+                children: [
+                  Icon(
+                    Icons.menu_book_rounded,
+                    size: 18,
+                    color: CpTokens.brandFor(isDark),
+                  ),
+                  const SizedBox(width: CpTokens.s2),
+                  Expanded(
+                    child: Text(
+                      'L’énoncé',
+                      style: GoogleFonts.montserrat(
+                        color: CpTokens.onSurface(isDark),
+                        fontWeight: FontWeight.w900,
+                        fontSize: 16.5,
+                      ),
+                    ),
+                  ),
+                  IconButton(
+                    onPressed: () => Navigator.of(context).pop(),
+                    icon: Icon(
+                      Icons.close_rounded,
+                      color: CpTokens.onSurfaceMuted(isDark),
+                      size: 20,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Flexible(
+              child: SingleChildScrollView(
+                padding: const EdgeInsets.fromLTRB(
+                  CpTokens.s6, 0, CpTokens.s6, CpTokens.s6,
+                ),
+                child: Text(
+                  detail.situationText,
+                  style: GoogleFonts.montserrat(
+                    color: CpTokens.onSurface(isDark).withValues(alpha: 0.92),
+                    fontSize: 15.5,
+                    fontWeight: FontWeight.w600,
+                    height: 1.55,
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
