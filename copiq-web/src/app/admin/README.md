@@ -8,9 +8,10 @@ qui est réutilisé ici — aucune donnée n'a été perdue.
 
 ## Comment y accéder
 
-1. `npm run build` dans `copiq-web/` → génère `out/`
-2. Copier le contenu de `out/` chez l'hébergeur (comme d'habitude)
-3. Ouvrir `https://copiq.fr/admin/`
+1. Double-cliquer sur `PUBLIER_SITE.command` à la racine du projet.
+2. Attendre le message confirmant que les routes critiques sont validées.
+3. Glisser le dossier `fae16dc1/` chez l'hébergeur.
+4. Ouvrir `https://copiq.fr/admin/`.
 
 En local : `npm run dev` puis `http://localhost:3000/admin`
 

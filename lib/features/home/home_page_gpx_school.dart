@@ -19,6 +19,8 @@ import 'package:copiqpolice/features/home/home_page.dart'
 
 // ==== Pages existantes ====
 import 'package:copiqpolice/features/home/journal_gpx_school.dart';
+import 'package:copiqpolice/features/forum/community_models.dart';
+import 'package:copiqpolice/features/forum/community_page.dart';
 import 'package:copiqpolice/features/home/favoris_home.dart';
 import 'package:copiqpolice/core/services/favorites.dart';
 import 'package:copiqpolice/features/home/details_page.dart';
@@ -546,6 +548,19 @@ class _HomePageGpxSchoolState extends State<HomePageGpxSchool>
                       ],
                     ),
                   ),
+                  _IconCircle(
+                    icon: Icons.forum_rounded,
+                    onTap: widget.tutorialLock
+                        ? null
+                        : () => Navigator.of(context).push(
+                            MaterialPageRoute(
+                              builder: (_) => const CommunityPage(
+                                initialScope: CommunityScope.gpxSchool,
+                              ),
+                            ),
+                          ),
+                  ),
+                  const SizedBox(width: 8),
                   _IconCircle(
                     key: widget.modeGradeButtonKey,
                     icon: Icons.school_rounded,

@@ -10,6 +10,28 @@ export type CopiqPlan = 'week' | 'month' | 'year'
 export interface Database {
   public: {
     Tables: {
+      user_profiles: {
+        Row: {
+          user_id: string
+          user_track: string | null
+          user_mode: string | null
+          first_name: string | null
+          last_name: string | null
+          username: string | null
+          role: string | null
+        }
+        Insert: {
+          user_id: string
+          user_track?: string | null
+          user_mode?: string | null
+          first_name?: string | null
+          last_name?: string | null
+          username?: string | null
+          role?: string | null
+        }
+        Update: Partial<Database['public']['Tables']['user_profiles']['Insert']>
+        Relationships: []
+      }
       cas_pratique_subscriptions: {
         Row: {
           user_id: string
@@ -30,6 +52,7 @@ export interface Database {
         }
         Insert: Omit<Database['public']['Tables']['cas_pratique_subscriptions']['Row'], 'created_at' | 'updated_at'>
         Update: Partial<Database['public']['Tables']['cas_pratique_subscriptions']['Insert']>
+        Relationships: []
       }
       cas_pratique_attempts: {
         Row: {
@@ -44,6 +67,7 @@ export interface Database {
         }
         Insert: Omit<Database['public']['Tables']['cas_pratique_attempts']['Row'], 'id' | 'created_at'>
         Update: Partial<Database['public']['Tables']['cas_pratique_attempts']['Insert']>
+        Relationships: []
       }
       cas_pratique_cases: {
         Row: {
@@ -58,6 +82,7 @@ export interface Database {
         }
         Insert: Omit<Database['public']['Tables']['cas_pratique_cases']['Row'], 'id' | 'created_at' | 'updated_at'>
         Update: Partial<Database['public']['Tables']['cas_pratique_cases']['Insert']>
+        Relationships: []
       }
       cas_pratique_themes: {
         Row: {
@@ -69,6 +94,7 @@ export interface Database {
         }
         Insert: Omit<Database['public']['Tables']['cas_pratique_themes']['Row'], 'id'>
         Update: Partial<Database['public']['Tables']['cas_pratique_themes']['Insert']>
+        Relationships: []
       }
       cas_pratique_user_progress: {
         Row: {
@@ -81,6 +107,7 @@ export interface Database {
         }
         Insert: Omit<Database['public']['Tables']['cas_pratique_user_progress']['Row'], 'id'>
         Update: Partial<Database['public']['Tables']['cas_pratique_user_progress']['Insert']>
+        Relationships: []
       }
       cas_pratique_user_bookmarks: {
         Row: {
@@ -91,6 +118,7 @@ export interface Database {
         }
         Insert: Omit<Database['public']['Tables']['cas_pratique_user_bookmarks']['Row'], 'id' | 'created_at'>
         Update: Partial<Database['public']['Tables']['cas_pratique_user_bookmarks']['Insert']>
+        Relationships: []
       }
       cas_pratique_xp_ledger: {
         Row: {
@@ -102,6 +130,7 @@ export interface Database {
         }
         Insert: Omit<Database['public']['Tables']['cas_pratique_xp_ledger']['Row'], 'id' | 'created_at'>
         Update: Partial<Database['public']['Tables']['cas_pratique_xp_ledger']['Insert']>
+        Relationships: []
       }
       cas_pratique_user_badges: {
         Row: {
@@ -112,6 +141,7 @@ export interface Database {
         }
         Insert: Omit<Database['public']['Tables']['cas_pratique_user_badges']['Row'], 'id'>
         Update: Partial<Database['public']['Tables']['cas_pratique_user_badges']['Insert']>
+        Relationships: []
       }
       free_weekly_usage: {
         Row: {
@@ -122,6 +152,7 @@ export interface Database {
         }
         Insert: Omit<Database['public']['Tables']['free_weekly_usage']['Row'], 'updated_at'>
         Update: Partial<Database['public']['Tables']['free_weekly_usage']['Insert']>
+        Relationships: []
       }
     }
     Views: {

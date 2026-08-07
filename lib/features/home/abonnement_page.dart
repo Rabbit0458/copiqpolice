@@ -4,6 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 import 'package:copiqpolice/core/widgets/app_notifier.dart';
 import 'package:copiqpolice/features/home/annulation_conditions_page.dart';
+import 'package:copiqpolice/core/services/stripe_payment_service.dart';
 
 class AbonnementPage extends StatefulWidget {
   const AbonnementPage({super.key});
@@ -67,6 +68,22 @@ class _AbonnementPageState extends State<AbonnementPage>
     );
   }
 
+  Future<void> _subscribe(CopiqPlan plan) async {
+    final result = await StripePaymentService.instance.startCheckout(plan);
+    if (!mounted) return;
+    if (!result.ok) {
+      final message = switch (result.reason) {
+        'not_authenticated' =>
+          "Reconnecte-toi à ton compte avant de choisir un abonnement.",
+        'cannot_launch_browser' =>
+          "Le navigateur de paiement ne peut pas être ouvert sur cet appareil.",
+        _ =>
+          "Le paiement ne peut pas être ouvert pour le moment. Réessaie dans quelques secondes.",
+      };
+      _info(message);
+    }
+  }
+
   // ===================== UI =====================
 
   @override
@@ -78,7 +95,9 @@ class _AbonnementPageState extends State<AbonnementPage>
         ? Colors.white.withValues(alpha: 0.10)
         : Colors.black.withValues(alpha: 0.08);
 
-    final subtle = t.colorScheme.onSurface.withValues(alpha: isDark ? 0.72 : 0.66);
+    final subtle = t.colorScheme.onSurface.withValues(
+      alpha: isDark ? 0.72 : 0.66,
+    );
 
     return Scaffold(
       backgroundColor: t.scaffoldBackgroundColor,
@@ -182,13 +201,7 @@ class _AbonnementPageState extends State<AbonnementPage>
                   "Entraînements illimités (culture G + psycho + langues)",
                   "Annulable à tout moment (effet fin de période)",
                 ],
-                onTap: () {
-                  HapticFeedback.lightImpact();
-                  _success(
-                    "Offre sélectionnée",
-                    "Abonnement semaine sélectionné.",
-                  );
-                },
+                onTap: () => _subscribe(CopiqPlan.week),
               ),
 
               const SizedBox(height: 12),
@@ -209,13 +222,7 @@ class _AbonnementPageState extends State<AbonnementPage>
                   "Mises à jour incluses — chaque semaine",
                   "Annulable à tout moment (effet fin de période)",
                 ],
-                onTap: () {
-                  HapticFeedback.lightImpact();
-                  _success(
-                    "Offre sélectionnée",
-                    "Abonnement mensuel sélectionné.",
-                  );
-                },
+                onTap: () => _subscribe(CopiqPlan.month),
               ),
 
               const SizedBox(height: 12),
@@ -236,13 +243,7 @@ class _AbonnementPageState extends State<AbonnementPage>
                   "Le meilleur rapport valeur / prix",
                   "Annulable à tout moment (effet fin de période)",
                 ],
-                onTap: () {
-                  HapticFeedback.lightImpact();
-                  _success(
-                    "Offre sélectionnée",
-                    "Abonnement annuel sélectionné.",
-                  );
-                },
+                onTap: () => _subscribe(CopiqPlan.year),
               ),
 
               // ================= LÉGAL =================
@@ -784,8 +785,8 @@ class _PlanCardState extends State<_PlanCard>
                         Icon(
                           Icons.receipt_long_rounded,
                           size: 16,
-                          color: t.colorScheme.onSurface.withValues(alpha: 
-                            isDark ? .60 : .55,
+                          color: t.colorScheme.onSurface.withValues(
+                            alpha: isDark ? .60 : .55,
                           ),
                         ),
                         const SizedBox(width: 8),

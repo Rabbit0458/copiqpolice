@@ -5,26 +5,60 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useEffect, useState } from "react"
+import {
+  Activity,
+  BadgeEuro,
+  BookOpenText,
+  ChevronLeft,
+  ChevronRight,
+  ClipboardCheck,
+  FileClock,
+  FilePenLine,
+  Flag,
+  GraduationCap,
+  HeartPulse,
+  LayoutDashboard,
+  LibraryBig,
+  LogOut,
+  Menu,
+  MessageSquareMore,
+  MoonStar,
+  ShieldCheck,
+  Sun,
+  Users,
+  X,
+  type LucideIcon,
+} from "lucide-react"
+import { useTheme } from "next-themes"
 import { adminAuth, type AdminSession } from "@/lib/admin/api"
 
 /* ────────────────────────────────────────────────────────────────────────── */
 /*  Navigation                                                                */
 /* ────────────────────────────────────────────────────────────────────────── */
 
-const NAV: { href: string; label: string; icon: string; perm?: string }[] = [
-  { href: "/admin/", label: "Vue d'ensemble", icon: "◧", perm: "dashboard" },
-  { href: "/admin/cas-pratiques/", label: "Cas pratiques", icon: "▤", perm: "cas_pratiques" },
-  { href: "/admin/appels/", label: "Appels élèves", icon: "⚖", perm: "cas_pratiques" },
-  { href: "/admin/quiz/", label: "Quiz de scolarité", icon: "◈", perm: "quiz.write" },
-  { href: "/admin/cours/", label: "Fiches de cours", icon: "▦", perm: "quiz.write" },
-  { href: "/admin/sante/", label: "Santé du contenu", icon: "✚", perm: "cas_pratiques" },
-  { href: "/admin/signalements/", label: "Signalements", icon: "⚑", perm: "flags" },
-  { href: "/admin/forum/", label: "Modération forum", icon: "◉", perm: "flags" },
-  { href: "/admin/utilisateurs/", label: "Utilisateurs", icon: "◍", perm: "users" },
-  { href: "/admin/abonnements/", label: "Abonnements", icon: "◎", perm: "subscriptions" },
-  { href: "/admin/patch-notes/", label: "Notes de patch", icon: "✎", perm: "dashboard" },
-  { href: "/admin/administrateurs/", label: "Administrateurs", icon: "⚿", perm: "admin_security" },
-  { href: "/admin/journal/", label: "Journal d'audit", icon: "☰", perm: "admin_security" },
+type NavItem = {
+  href: string
+  label: string
+  icon: LucideIcon
+  group: "Pilotage" | "Contenus" | "Communauté" | "Système"
+  perm?: string
+}
+
+const NAV: NavItem[] = [
+  { href: "/admin/", label: "Vue d'ensemble", icon: LayoutDashboard, group: "Pilotage", perm: "dashboard" },
+  { href: "/admin/signalements/", label: "Signalements", icon: Flag, group: "Pilotage", perm: "flags" },
+  { href: "/admin/cas-pratiques/", label: "Cas pratiques", icon: ClipboardCheck, group: "Contenus", perm: "cas_pratiques" },
+  { href: "/admin/appels/", label: "Appels élèves", icon: FileClock, group: "Contenus", perm: "cas_pratiques" },
+  { href: "/admin/contenus/", label: "Pilotage pédagogique", icon: LibraryBig, group: "Contenus", perm: "quiz.write" },
+  { href: "/admin/quiz/", label: "Quiz de scolarité", icon: GraduationCap, group: "Contenus", perm: "quiz.write" },
+  { href: "/admin/cours/", label: "Fiches de cours", icon: BookOpenText, group: "Contenus", perm: "quiz.write" },
+  { href: "/admin/sante/", label: "Santé du contenu", icon: HeartPulse, group: "Contenus", perm: "cas_pratiques" },
+  { href: "/admin/forum/", label: "Modération forum", icon: MessageSquareMore, group: "Communauté", perm: "flags" },
+  { href: "/admin/utilisateurs/", label: "Utilisateurs", icon: Users, group: "Communauté", perm: "users" },
+  { href: "/admin/abonnements/", label: "Abonnements", icon: BadgeEuro, group: "Communauté", perm: "subscriptions" },
+  { href: "/admin/patch-notes/", label: "Notes de patch", icon: FilePenLine, group: "Système", perm: "dashboard" },
+  { href: "/admin/administrateurs/", label: "Administrateurs", icon: ShieldCheck, group: "Système", perm: "admin_security" },
+  { href: "/admin/journal/", label: "Journal d'audit", icon: Activity, group: "Système", perm: "admin_security" },
 ]
 
 export function AdminShell({
@@ -36,34 +70,37 @@ export function AdminShell({
 }) {
   const pathname = usePathname()
   const [open, setOpen] = useState(false)
+  const [collapsed, setCollapsed] = useState(false)
+  const { resolvedTheme, setTheme } = useTheme()
   const perms = session.permissions ?? {}
   const isOwner = session.role === "owner"
   const visible = NAV.filter((n) => !n.perm || isOwner || perms[n.perm])
 
   return (
-    <div className="min-h-screen bg-[var(--surface-container)]">
+    <div className="min-h-screen bg-[var(--surface-container)] selection:bg-[var(--brand)]/20">
       {/* Barre supérieure */}
-      <header className="sticky top-0 z-30 flex h-14 items-center justify-between border-b border-[var(--outline-variant)] bg-[var(--surface)] px-4">
+      <header className="sticky top-0 z-40 flex h-16 items-center justify-between border-b border-[var(--outline-variant)] bg-[var(--surface)]/95 px-4 backdrop-blur-xl md:px-5">
         <div className="flex items-center gap-3">
           <button
             onClick={() => setOpen((v) => !v)}
-            className="rounded-lg p-1.5 text-lg hover:bg-[var(--surface-container)] md:hidden"
-            aria-label="Menu"
+            className="rounded-xl p-2 transition hover:bg-[var(--surface-container)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--brand)] md:hidden"
+            aria-label={open ? "Fermer le menu" : "Ouvrir le menu"}
+            aria-expanded={open}
           >
-            ☰
+            {open ? <X size={20} /> : <Menu size={20} />}
           </button>
           <Link href="/admin/" className="flex items-center gap-2.5">
-            <span className="grid h-8 w-8 place-items-center rounded-lg bg-[var(--brand)] text-xs font-bold text-white">
+            <span className="grid h-9 w-9 place-items-center rounded-xl bg-[var(--brand)] text-xs font-bold text-white shadow-[0_8px_20px_rgba(17,71,217,.25)]">
               CQ
             </span>
-            <span className="text-sm font-semibold">
+            <span className="text-sm font-semibold tracking-tight">
               COP&apos;IQ{" "}
               <span className="font-normal text-[var(--on-surface-faint)]">Admin</span>
             </span>
           </Link>
         </div>
         <div className="flex items-center gap-3">
-          <span className="hidden text-xs text-[var(--on-surface-muted)] sm:inline">
+          <span className="hidden max-w-48 truncate text-xs text-[var(--on-surface-muted)] lg:inline">
             {session.email}
           </span>
           <span className="rounded-full bg-[var(--brand)]/10 px-2.5 py-1 text-[11px] font-medium uppercase tracking-wide text-[var(--brand)]">
@@ -78,48 +115,65 @@ export function AdminShell({
             </span>
           )}
           <button
+            onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
+            className="rounded-xl p-2 text-[var(--on-surface-muted)] transition hover:bg-[var(--surface-container)] hover:text-[var(--on-surface)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--brand)]"
+            aria-label={resolvedTheme === "dark" ? "Activer le thème clair" : "Activer le thème sombre"}
+          >
+            {resolvedTheme === "dark" ? <Sun size={18} /> : <MoonStar size={18} />}
+          </button>
+          <button
             onClick={async () => {
               sessionStorage.removeItem("copiq_admin_code_ok")
               await adminAuth.signOut()
               location.href = "/admin/"
             }}
-            className="rounded-lg px-2.5 py-1.5 text-xs text-[var(--on-surface-muted)] hover:bg-[var(--surface-container)]"
+            className="inline-flex items-center gap-2 rounded-xl px-2.5 py-2 text-xs text-[var(--on-surface-muted)] transition hover:bg-[var(--surface-container)] hover:text-[var(--danger)]"
           >
-            Quitter
+            <LogOut size={16} /> <span className="hidden sm:inline">Quitter</span>
           </button>
         </div>
       </header>
 
-      <div className="flex">
+      <div className="flex items-start">
         {/* Barre latérale */}
         <aside
-          className={`${
-            open ? "block" : "hidden"
-          } fixed inset-x-0 top-14 z-20 border-b border-[var(--outline-variant)] bg-[var(--surface)] p-3 md:sticky md:top-14 md:block md:h-[calc(100vh-3.5rem)] md:w-60 md:shrink-0 md:border-b-0 md:border-r`}
+          className={`${open ? "block" : "hidden"} fixed inset-x-0 top-16 z-30 max-h-[calc(100vh-4rem)] overflow-y-auto border-b border-[var(--outline-variant)] bg-[var(--surface)] p-3 shadow-2xl md:sticky md:top-16 md:block md:h-[calc(100vh-4rem)] md:max-h-none md:shrink-0 md:border-b-0 md:border-r md:shadow-none ${collapsed ? "md:w-20" : "md:w-64"} transition-[width] duration-200`}
         >
-          <nav className="space-y-0.5">
-            {visible.map((n) => {
+          <nav aria-label="Navigation d'administration" className="space-y-5">
+            {(["Pilotage", "Contenus", "Communauté", "Système"] as const).map((group) => {
+              const items = visible.filter((item) => item.group === group)
+              if (items.length === 0) return null
+              return <div key={group}>
+                {!collapsed && <p className="mb-1.5 px-3 text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--on-surface-faint)]">{group}</p>}
+                <div className="space-y-1">{items.map((n) => {
               const active = pathname === n.href || pathname === n.href.slice(0, -1)
+              const Icon = n.icon
               return (
                 <Link
                   key={n.href}
                   href={n.href}
                   onClick={() => setOpen(false)}
-                  className={`flex items-center gap-2.5 rounded-lg px-3 py-2 text-sm transition ${
+                  title={collapsed ? n.label : undefined}
+                  className={`group flex min-h-10 items-center rounded-xl px-3 text-sm transition duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--brand)] ${collapsed ? "justify-center" : "gap-3"} ${
                     active
-                      ? "bg-[var(--brand)] font-medium text-white"
-                      : "text-[var(--on-surface-muted)] hover:bg-[var(--surface-container)]"
+                      ? "bg-[var(--brand)] font-semibold text-white shadow-[0_8px_18px_rgba(17,71,217,.18)]"
+                      : "text-[var(--on-surface-muted)] hover:bg-[var(--surface-container)] hover:text-[var(--on-surface)]"
                   }`}
                 >
-                  <span className="w-4 text-center opacity-70">{n.icon}</span>
-                  {n.label}
+                  <Icon size={18} strokeWidth={active ? 2.3 : 1.8} aria-hidden="true" />
+                  {!collapsed && <span className="truncate">{n.label}</span>}
                 </Link>
               )
-            })}
+            })}</div></div>})}
           </nav>
+          <button onClick={() => setCollapsed((value) => !value)} className="absolute bottom-4 right-3 hidden rounded-xl border border-[var(--outline-variant)] bg-[var(--surface)] p-2 text-[var(--on-surface-muted)] transition hover:bg-[var(--surface-container)] hover:text-[var(--on-surface)] md:block" aria-label={collapsed ? "Agrandir la navigation" : "Réduire la navigation"}>
+            {collapsed ? <ChevronRight size={17} /> : <ChevronLeft size={17} />}
+          </button>
         </aside>
 
-        <main className="min-w-0 flex-1 p-4 md:p-6">{children}</main>
+        <main className="min-w-0 flex-1 p-4 md:p-6 lg:p-8">
+          <div className="mx-auto w-full max-w-[1500px] animate-fade-in">{children}</div>
+        </main>
       </div>
     </div>
   )
@@ -276,6 +330,8 @@ export function useAsync<T>(fn: () => Promise<T>, deps: React.DependencyList = [
 
   useEffect(() => {
     let alive = true
+    // L'état doit repasser en chargement dès qu'une dépendance ou un rechargement change.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setLoading(true)
     setError(null)
     fn()

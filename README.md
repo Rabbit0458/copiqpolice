@@ -18,8 +18,13 @@ flutter run
 cd copiq-web
 npm install
 npm run dev          # http://localhost:3000
-npm run build        # génère out/ — à déposer chez l'hébergeur
+npm run build        # génère l'export intermédiaire out/
 ```
+
+Pour préparer automatiquement la livraison, double-cliquer sur
+`PUBLIER_SITE.command`. Le script compile le site, contrôle les routes critiques,
+reprend la configuration publique Supabase de l'app Flutter et remplace de façon
+sûre `fae16dc1/`. **Seul le dossier `fae16dc1` est à glisser chez l'hébergeur.**
 
 ---
 
@@ -38,7 +43,8 @@ npm run build        # génère out/ — à déposer chez l'hébergeur
 | `lib/data/cas_pratique/` | Repository Supabase du module cas pratique |
 | `copiq-web/` | Site Next.js — **source** (export statique) |
 | `copiq-web/src/app/admin/` | **Panel administrateur** → `copiq.fr/admin` |
-| `fae16dc1/` | Sortie de build du site — à déposer telle quelle chez l'hébergeur |
+| `fae16dc1/` | Dossier final vérifié — à déposer tel quel chez l'hébergeur |
+| `PUBLIER_SITE.command` | Compilation et régénération automatique de `fae16dc1/` |
 | `supabase/migrations/` | Migrations SQL |
 | `docs/` | Spécifications et annales PDF |
 | `_archive/` | Fichiers retirés de la racine (ignoré par git) — voir `_archive/INDEX.md` |

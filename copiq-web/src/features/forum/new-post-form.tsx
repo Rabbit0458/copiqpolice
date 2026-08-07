@@ -20,7 +20,7 @@ export default function NewPostForm({ categories, userId }: { categories: any[];
     setLoading(false)
     if (error) { toast.error("Erreur lors de la création du sujet"); return }
     toast.success("Sujet créé !")
-    router.push(`/forum/${data.id}`)
+    router.push(`/forum/post/?id=${encodeURIComponent(data.id)}`)
   }
   return (
     <form onSubmit={handleSubmit} className="rounded-2xl border border-[var(--outline)] bg-[var(--surface)] p-6 space-y-4">

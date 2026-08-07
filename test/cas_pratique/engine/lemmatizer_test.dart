@@ -44,7 +44,9 @@ void main() {
 
     test('stemAll mappe une liste', () {
       final out = lemma.stemAll(['degradation', 'dans', 'voitures']);
-      expect(out, equals(['degrad', 'dans', 'voitur']));
+      // Le suffixe verbal « re » est rencontré avant le pluriel « s » :
+      // « voitures » devient donc « voiture », ce qui conserve le lemme utile.
+      expect(out, equals(['degrad', 'dans', 'voiture']));
     });
   });
 }

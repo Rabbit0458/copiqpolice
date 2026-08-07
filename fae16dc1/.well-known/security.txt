@@ -1,0 +1,32 @@
+# Politique de divulgation des vulnérabilités — COP'IQ
+# https://copiq.fr/.well-known/security.txt
+# Format : RFC 9116
+
+Contact: mailto:security@copiq.fr
+Contact: https://copiq.fr/contact
+
+# Date au-delà de laquelle ce fichier doit être considéré comme périmé.
+# À mettre à jour au moins une fois par an.
+Expires: 2027-07-26T00:00:00.000Z
+
+Preferred-Languages: fr, en
+
+Canonical: https://copiq.fr/.well-known/security.txt
+
+Policy: https://copiq.fr/cgu
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Si vous avez découvert une faille de sécurité
+#
+# Merci de nous écrire à security@copiq.fr avant toute divulgation publique.
+# Nous nous engageons à :
+#   • accuser réception sous 72 heures ;
+#   • vous tenir informé de l'avancement de la correction ;
+#   • ne pas engager de poursuites contre les chercheurs agissant de bonne foi.
+#
+# Merci de ne pas :
+#   • accéder, modifier ou supprimer des données appartenant à d'autres
+#     utilisateurs ;
+#   • dégrader la disponibilité du service (déni de service, test de charge) ;
+#   • exploiter la faille au-delà de ce qui est nécessaire pour la démontrer.
+# ─────────────────────────────────────────────────────────────────────────────

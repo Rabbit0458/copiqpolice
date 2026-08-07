@@ -3,12 +3,20 @@ import { useState, useEffect } from "react"
 import { useRouter } from "next/navigation"
 import { createClient } from "@/lib/supabase/client"
 import { Crown, CheckCircle, Zap } from "lucide-react"
+import toast from "react-hot-toast"
+
+const PLANS = [
+  { id: "week", label: "Semaine", price: "4,99 €", suffix: "/ semaine", recommended: false },
+  { id: "month", label: "Mensuel", price: "8,99 €", suffix: "/ mois", recommended: true },
+  { id: "year", label: "Annuel", price: "86,99 €", suffix: "/ an", recommended: false },
+] as const
 
 export default function AbonnementPage() {
   const router = useRouter()
   const [user, setUser] = useState<any>(null)
   const [sub, setSub] = useState<any>(null)
   const [loading, setLoading] = useState(true)
+  const [busy, setBusy] = useState<string | null>(null)
   const supabase = createClient()
 
   useEffect(() => {
@@ -25,6 +33,40 @@ export default function AbonnementPage() {
 
   const tier = sub?.tier ?? "free"
   const isPremium = tier === "premium" || tier === "premium_trial"
+
+  async function openCheckout(plan: "week" | "month" | "year") {
+    setBusy(plan)
+    try {
+      const { data, error } = await supabase.functions.invoke("cas_pratique_create_checkout", {
+        body: {
+          plan,
+          success_url: `${window.location.origin}/abonnement/?success=true`,
+          cancel_url: `${window.location.origin}/abonnement/?canceled=true`,
+        },
+      })
+      if (error) throw error
+      if (!data?.url) throw new Error("Lien de paiement indisponible")
+      window.location.assign(data.url)
+    } catch (error) {
+      toast.error(error instanceof Error ? error.message : "Le paiement ne peut pas être ouvert")
+      setBusy(null)
+    }
+  }
+
+  async function openPortal() {
+    setBusy("portal")
+    try {
+      const { data, error } = await supabase.functions.invoke("cas_pratique_customer_portal", {
+        body: { return_url: `${window.location.origin}/abonnement/` },
+      })
+      if (error) throw error
+      if (!data?.url) throw new Error("Portail de facturation indisponible")
+      window.location.assign(data.url)
+    } catch (error) {
+      toast.error(error instanceof Error ? error.message : "Le portail ne peut pas être ouvert")
+      setBusy(null)
+    }
+  }
 
   return (
     <div className="max-w-2xl mx-auto px-4 py-8">
@@ -51,15 +93,24 @@ export default function AbonnementPage() {
               <li key={f} className="flex items-center gap-2 text-sm text-[var(--on-surface)]"><CheckCircle size={14} className="text-[#1147D9]" />{f}</li>
             ))}
           </ul>
-          <a href="/api/stripe/checkout" className="block w-full text-center py-3 rounded-xl bg-[#1147D9] text-white font-bold text-sm hover:bg-[#1A55E6] transition-all">
-            S'abonner — 9,99€/mois
-          </a>
+          <div className="grid gap-3 sm:grid-cols-3">
+            {PLANS.map((plan) => (
+              <button key={plan.id} type="button" disabled={busy !== null}
+                onClick={() => openCheckout(plan.id)}
+                className={`min-h-24 cursor-pointer rounded-xl border p-3 text-left transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1147D9] disabled:cursor-wait disabled:opacity-60 ${plan.recommended ? "border-[#1147D9] bg-[#1147D9] text-white" : "border-[var(--outline)] hover:border-[#1147D9]"}`}>
+                <span className="block text-xs font-semibold opacity-80">{plan.label}</span>
+                <span className="mt-1 block text-lg font-bold">{busy === plan.id ? "Ouverture…" : plan.price}</span>
+                <span className="text-xs opacity-75">{plan.suffix}</span>
+              </button>
+            ))}
+          </div>
         </div>
       )}
       {isPremium && (
-        <a href="/api/stripe/portal" className="block w-full text-center py-3 rounded-xl border border-[var(--outline)] text-[var(--on-surface-muted)] text-sm hover:border-[var(--outline-dark)] transition-all">
-          Gérer mon abonnement
-        </a>
+        <button type="button" onClick={openPortal} disabled={busy !== null}
+          className="min-h-11 w-full cursor-pointer rounded-xl border border-[var(--outline)] px-4 py-3 text-sm font-semibold text-[var(--on-surface-muted)] transition-colors hover:border-[var(--outline-dark)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1147D9] disabled:cursor-wait disabled:opacity-60">
+          {busy === "portal" ? "Ouverture…" : "Gérer mon abonnement et mes factures"}
+        </button>
       )}
     </div>
   )

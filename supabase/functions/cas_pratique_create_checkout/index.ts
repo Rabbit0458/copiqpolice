@@ -27,7 +27,7 @@ import { createClient } from "https://esm.sh/@supabase/supabase-js@2.39.0";
 import Stripe from "https://esm.sh/stripe@14.21.0?target=deno";
 
 interface CheckoutRequest {
-  price_id: string;
+  plan: "week" | "month" | "year";
   success_url?: string;
   cancel_url?: string;
   allow_promotion_codes?: boolean;
@@ -47,6 +47,11 @@ const DEFAULT_CANCEL_URL = "copiqpolice://paywall/cancel";
 const SUPABASE_URL = Deno.env.get("SUPABASE_URL")!;
 const SERVICE_KEY = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
 const STRIPE_SECRET_KEY = Deno.env.get("STRIPE_SECRET_KEY")!;
+const PRICE_IDS = {
+  week: Deno.env.get("STRIPE_PRICE_WEEK") ?? "",
+  month: Deno.env.get("STRIPE_PRICE_MONTH") ?? "",
+  year: Deno.env.get("STRIPE_PRICE_YEAR") ?? "",
+} as const;
 
 const stripe = new Stripe(STRIPE_SECRET_KEY, {
   apiVersion: "2023-10-16",
@@ -133,8 +138,13 @@ serve(async (req: Request) => {
     return jsonResponse({ error: "invalid_json_body" }, 400);
   }
 
-  if (!body.price_id || typeof body.price_id !== "string") {
-    return jsonResponse({ error: "price_id_required" }, 400);
+  if (!body.plan || !["week", "month", "year"].includes(body.plan)) {
+    return jsonResponse({ error: "invalid_plan" }, 400);
+  }
+  const priceId = PRICE_IDS[body.plan];
+  if (!priceId) {
+    console.error(`[create_checkout] missing Stripe price for ${body.plan}`);
+    return jsonResponse({ error: "plan_not_configured" }, 503);
   }
 
   // ── Identification du user ─────────────────────────────────────────────
@@ -168,17 +178,25 @@ serve(async (req: Request) => {
     const session = await stripe.checkout.sessions.create({
       mode: "subscription",
       customer: customerId,
-      line_items: [{ price: body.price_id, quantity: 1 }],
+      line_items: [{ price: priceId, quantity: 1 }],
       success_url: body.success_url ?? DEFAULT_SUCCESS_URL,
       cancel_url: body.cancel_url ?? DEFAULT_CANCEL_URL,
       allow_promotion_codes: body.allow_promotion_codes ?? true,
+      // Automatic Tax needs a billing location. New COP'IQ customers only
+      // have an email at this point, so let Checkout collect and persist the
+      // address instead of rejecting session creation.
+      customer_update: { address: "auto" },
       automatic_tax: { enabled: true },
       subscription_data: {
-        trial_period_days: body.trial_period_days,
+        trial_period_days:
+          body.plan === "month" || body.plan === "year"
+            ? (body.trial_period_days ?? 7)
+            : undefined,
         metadata: { supabase_user_id: userId },
       },
       metadata: {
         supabase_user_id: userId,
+        plan: body.plan,
         source: "copiq_mobile",
       },
       // Localization

@@ -14,10 +14,13 @@ import 'package:copiqpolice/features/onboarding/mode_picker.dart';
 
 // ==== Types publics exportés par ta home ====
 import 'package:copiqpolice/features/home/home_page.dart'
-    show CategoryConfig, SubCategoryConfig, Track, UserMode;
+    show CategoryConfig, SubCategoryConfig, Track, UserMode, resolveHomeRoute;
 
 // ==== Pages existantes ====
-import 'package:copiqpolice/features/home/journal_gpx_school.dart';
+import 'package:copiqpolice/features/forum/community_models.dart';
+import 'package:copiqpolice/features/forum/community_page.dart';
+import 'package:copiqpolice/features/home/pa_exam_progress_page.dart';
+import 'package:copiqpolice/features/home/pa_school_progress_service.dart';
 import 'package:copiqpolice/features/home/favoris_home.dart';
 import 'package:copiqpolice/core/services/favorites.dart';
 import 'package:copiqpolice/features/home/details_page.dart';
@@ -29,6 +32,7 @@ import 'package:copiqpolice/features/onboarding/pa_school.dart'
 import 'package:copiqpolice/core/services/subscription_service.dart';
 import 'package:copiqpolice/core/services/premium_guard.dart';
 import 'package:copiqpolice/features/home/premium_required_page.dart';
+
 class _T {
   static const ink = Color(0xFF1C1C1C);
   static const g300 = Color(0xFFE0E0E0);
@@ -88,6 +92,7 @@ class _HomePageGpxSchoolState extends State<HomePagePaSchool>
   late final List<CategoryConfig> _cats =
       (paSchoolCategoriesConfig[HomePagePaSchool.program] ??
       const <CategoryConfig>[]);
+  late final _PaSchoolNextStep? _randomNextStep = _pickRandomNextStep();
 
   // =====================  PERSISTENCE DE L'INDEX DU DECK  =====================
 
@@ -226,6 +231,27 @@ class _HomePageGpxSchoolState extends State<HomePagePaSchool>
       }
     }
     return total;
+  }
+
+  _PaSchoolNextStep? _pickRandomNextStep() {
+    final candidates = <_PaSchoolNextStep>[];
+    for (final category in _cats) {
+      final subcategories = category.subcategories;
+      if (subcategories == null || subcategories.isEmpty) continue;
+      for (final subcategory in subcategories) {
+        if (subcategory.route.trim().isEmpty) continue;
+        candidates.add(
+          _PaSchoolNextStep(
+            category: category.label,
+            title: subcategory.label,
+            route: subcategory.route,
+            image: subcategory.image ?? category.image,
+          ),
+        );
+      }
+    }
+    if (candidates.isEmpty) return null;
+    return candidates[math.Random().nextInt(candidates.length)];
   }
 
   late final SupabaseClient _sb = Supabase.instance.client;
@@ -403,8 +429,8 @@ class _HomePageGpxSchoolState extends State<HomePagePaSchool>
         return;
       }
       _saveLastOpened(route: route, label: label);
-      final redirectRoute = redirectConfigPaSchool[route];
-      final target = redirectRoute ?? route;
+      final redirectRoute = redirectConfigPaSchool[route] ?? route;
+      final target = resolveHomeRoute(redirectRoute);
       await Navigator.of(context).pushNamed(target);
     }
 
@@ -441,6 +467,7 @@ class _HomePageGpxSchoolState extends State<HomePagePaSchool>
     }
 
     final theme = Theme.of(context);
+    final nextStep = _randomNextStep;
 
     final deckItems = _cats
         .map(
@@ -458,8 +485,8 @@ class _HomePageGpxSchoolState extends State<HomePagePaSchool>
 
     const icons = [
       Icons.home_rounded,
-      Icons.article_rounded,
-      Icons.grid_view_rounded, // Changer de catégorie PA
+      Icons.insights_rounded,
+      Icons.forum_rounded,
       Icons.favorite_rounded,
       Icons.person_rounded,
     ];
@@ -505,15 +532,15 @@ class _HomePageGpxSchoolState extends State<HomePagePaSchool>
                       ],
                     ),
                   ),
+                  _SpacePaButton(onTap: _pickNewPaProgram),
+                  const SizedBox(width: 8),
                   _IconCircle(
                     icon: Icons.school_rounded,
-                    onTap: () {
-                      Navigator.of(context).push(
-                        MaterialPageRoute(
-                          builder: (_) => const ModePickerScreen(),
-                        ),
-                      );
-                    },
+                    onTap: () => Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (_) => const ModePickerScreen(),
+                      ),
+                    ),
                   ),
                 ],
               ),
@@ -639,81 +666,39 @@ class _HomePageGpxSchoolState extends State<HomePagePaSchool>
               ),
             ),
 
-            const SizedBox(height: 14),
-
-            // ✅ PROGRESSION
-            FutureBuilder<ProgressSummary>(
-              future: _progressFuture,
-              builder: (context, snap) {
-                if (snap.connectionState == ConnectionState.waiting) {
-                  return Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 20),
-                    child: Container(
-                      height: 170,
-                      decoration: BoxDecoration(
-                        color: theme.cardColor,
-                        borderRadius: BorderRadius.circular(20),
-                        boxShadow: const [_T.shadow],
-                      ),
-                      child: const Center(child: CircularProgressIndicator()),
-                    ),
-                  );
-                }
-
-                if (snap.hasError) {
-                  return Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 20),
-                    child: Container(
-                      padding: const EdgeInsets.all(16),
-                      decoration: BoxDecoration(
-                        color: theme.cardColor,
-                        borderRadius: BorderRadius.circular(20),
-                        boxShadow: const [_T.shadow],
-                      ),
-                      child: Text(
-                        'Impossible de charger la progression.',
-                        style: GoogleFonts.poppins(
-                          fontWeight: FontWeight.w700,
-                          color: _muted(context, .75),
-                        ),
-                      ),
-                    ),
-                  );
-                }
-
-                final data =
-                    snap.data ??
-                    ProgressSummary(
-                      seenModules: 0,
-                      totalModules: _computeTotalModules(),
-                      finishedQuizzes: 0, // ✅ AJOUT
-                      streakDays: 0,
-                      weeklyStudy: Duration.zero,
-                      recentDone: const [],
-                    );
-
-                return ProgressCardV4(
-                  data: data,
-                  onTapDetails: () {
-                    final uid = Supabase.instance.client.auth.currentUser?.id;
-                    if (uid == null) return;
-
-                    Navigator.of(context).push(
-                      MaterialPageRoute(builder: (_) => DetailsPage(uid: uid)),
-                    );
-                  },
-                );
-              },
-            ),
-
             const SizedBox(height: 18),
+
+            if (nextStep != null)
+              _PaSchoolNextStepCard(
+                data: nextStep,
+                onTap: () => _openRouteOrDetails(
+                  label: nextStep.title,
+                  route: nextStep.route,
+                ),
+              ),
+
             const SizedBox(height: 24),
           ],
         ),
       ),
 
-      const JournalGpxSchoolPage(),
-      const _StubPage(title: 'QR'),
+      PaExamProgressPage(
+        onStart: () {
+          if (_cats.isEmpty) return;
+          final first = _cats.first;
+          _openRouteOrDetails(
+            label: first.label,
+            route: first.route,
+            subs: first.subcategories,
+          );
+        },
+        dataSource: PaSchoolProgressService(),
+        subtitle: 'Ton suivi pendant la scolarité de Policier Adjoint',
+        emptyMessage:
+            'Termine un premier quiz de scolarité pour débloquer tes statistiques, ta régularité et tes recommandations.',
+        moduleMetaResolver: paSchoolModuleMeta,
+      ),
+      const CommunityPage(initialScope: CommunityScope.paSchool),
       const FavorisHomePage(),
       const ProfilPage(),
     ];
@@ -727,14 +712,7 @@ class _HomePageGpxSchoolState extends State<HomePagePaSchool>
       ),
       bottomNavigationBar: _SlidingPillNavBar(
         currentIndex: _currentTab,
-        onTap: (i) {
-          if (i == 2) {
-            HapticFeedback.selectionClick();
-            _pickNewPaProgram();
-            return;
-          }
-          _goToTab(i);
-        },
+        onTap: _goToTab,
         height: 64,
         icons: icons,
       ),
@@ -772,6 +750,54 @@ class _IconCircle extends StatelessWidget {
   }
 }
 
+class _SpacePaButton extends StatelessWidget {
+  const _SpacePaButton({required this.onTap});
+
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final isDark = theme.brightness == Brightness.dark;
+    final foreground = isDark ? Colors.white : _T.ink;
+    return Semantics(
+      button: true,
+      label: 'Revenir à l’espace PA',
+      child: Material(
+        color: theme.cardColor,
+        borderRadius: BorderRadius.circular(14),
+        child: InkWell(
+          onTap: onTap,
+          borderRadius: BorderRadius.circular(14),
+          child: Container(
+            constraints: const BoxConstraints(minHeight: 44),
+            padding: const EdgeInsets.symmetric(horizontal: 12),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(14),
+              border: Border.all(color: foreground.withValues(alpha: .10)),
+            ),
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Icon(Icons.arrow_back_rounded, size: 18, color: foreground),
+                const SizedBox(width: 6),
+                Text(
+                  'Espace PA',
+                  style: GoogleFonts.poppins(
+                    fontSize: 12,
+                    fontWeight: FontWeight.w800,
+                    color: foreground,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
 class _ModeBubble extends StatelessWidget {
   final UserMode mode;
   const _ModeBubble({required this.mode});
@@ -789,6 +815,183 @@ class _ModeBubble extends StatelessWidget {
         boxShadow: const [_T.shadow],
       ),
       child: Icon(Icons.school_rounded, color: isDark ? Colors.white : _T.ink),
+    );
+  }
+}
+
+class _PaSchoolNextStep {
+  const _PaSchoolNextStep({
+    required this.category,
+    required this.title,
+    required this.route,
+    required this.image,
+  });
+
+  final String category;
+  final String title;
+  final String route;
+  final String image;
+}
+
+class _PaSchoolNextStepCard extends StatelessWidget {
+  const _PaSchoolNextStepCard({required this.data, required this.onTap});
+
+  final _PaSchoolNextStep data;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    const accent = Color(0xFF2D6CDF);
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 20),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              const Icon(Icons.auto_awesome_rounded, size: 19, color: accent),
+              const SizedBox(width: 8),
+              Expanded(
+                child: Text(
+                  'Ta prochaine étape',
+                  style: GoogleFonts.poppins(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w900,
+                  ),
+                ),
+              ),
+              Text(
+                'Aujourd’hui',
+                style: GoogleFonts.instrumentSans(
+                  fontSize: 12,
+                  fontWeight: FontWeight.w700,
+                  color: _muted(context, .58),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 10),
+          Semantics(
+            button: true,
+            label: 'Commencer ${data.title}',
+            child: Material(
+              color: Colors.transparent,
+              child: InkWell(
+                onTap: () {
+                  HapticFeedback.selectionClick();
+                  onTap();
+                },
+                borderRadius: BorderRadius.circular(24),
+                child: Ink(
+                  height: 148,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(24),
+                    boxShadow: const [_T.shadow],
+                  ),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(24),
+                    child: Stack(
+                      fit: StackFit.expand,
+                      children: [
+                        Image.asset(
+                          data.image,
+                          fit: BoxFit.cover,
+                          alignment: Alignment.centerRight,
+                          errorBuilder: (_, __, ___) => ColoredBox(
+                            color: isDark
+                                ? const Color(0xFF121D31)
+                                : const Color(0xFFEAF1FF),
+                          ),
+                        ),
+                        DecoratedBox(
+                          decoration: BoxDecoration(
+                            gradient: LinearGradient(
+                              begin: Alignment.centerLeft,
+                              end: Alignment.centerRight,
+                              colors: [
+                                isDark
+                                    ? const Color(0xFF0B1220)
+                                    : const Color(0xFF101C31),
+                                const Color(0xE6101C31),
+                                const Color(0x5C101C31),
+                              ],
+                              stops: const [0, .54, 1],
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(16),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                data.category.toUpperCase(),
+                                maxLines: 1,
+                                overflow: TextOverflow.ellipsis,
+                                style: GoogleFonts.instrumentSans(
+                                  color: const Color(0xFF9FC0FF),
+                                  fontSize: 11,
+                                  letterSpacing: .7,
+                                  fontWeight: FontWeight.w800,
+                                ),
+                              ),
+                              const SizedBox(height: 7),
+                              ConstrainedBox(
+                                constraints: const BoxConstraints(
+                                  maxWidth: 240,
+                                ),
+                                child: Text(
+                                  data.title,
+                                  maxLines: 2,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: GoogleFonts.poppins(
+                                    color: Colors.white,
+                                    fontSize: 18,
+                                    height: 1.12,
+                                    fontWeight: FontWeight.w900,
+                                  ),
+                                ),
+                              ),
+                              const Spacer(),
+                              Row(
+                                children: [
+                                  Text(
+                                    'Commencer',
+                                    style: GoogleFonts.instrumentSans(
+                                      color: Colors.white,
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.w800,
+                                    ),
+                                  ),
+                                  const SizedBox(width: 8),
+                                  Container(
+                                    width: 30,
+                                    height: 30,
+                                    decoration: const BoxDecoration(
+                                      color: Colors.white,
+                                      shape: BoxShape.circle,
+                                    ),
+                                    child: const Icon(
+                                      Icons.arrow_forward_rounded,
+                                      size: 18,
+                                      color: Color(0xFF101C31),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
@@ -1145,8 +1348,9 @@ class _HeroCardState extends State<_HeroCard> with TickerProviderStateMixin {
     }
 
     // Fallback direct
-    final redirectRoute = redirectConfigPaSchool[widget.item.route];
-    final targetRoute = redirectRoute ?? widget.item.route;
+    final redirectRoute =
+        redirectConfigPaSchool[widget.item.route] ?? widget.item.route;
+    final targetRoute = resolveHomeRoute(redirectRoute);
     final subs = widget.item.subcategories;
 
     if (subs != null && subs.isNotEmpty) {
@@ -1751,7 +1955,10 @@ class _CategoryDetailPage extends StatelessWidget {
             title: sub.label,
             subtitle: _subtitleFor(sub.label),
             imagePath: sub.image ?? _imageFor(sub.label),
-            onTap: () => Navigator.of(context).pushNamed(sub.route),
+            onTap: () {
+              final paRoute = redirectConfigPaSchool[sub.route] ?? sub.route;
+              Navigator.of(context).pushNamed(resolveHomeRoute(paRoute));
+            },
           );
         },
       ),
@@ -2252,190 +2459,196 @@ class _ModuleCard extends StatelessWidget {
         final locked = s.isLocked;
         final isDark = Theme.of(context).brightness == Brightness.dark;
 
-        final Color badgeBg = Colors.white.withValues(alpha: isDark ? 0.14 : 0.10);
-        final Color borderClr = Colors.white.withValues(alpha: isDark ? 0.18 : 0.14);
+        final Color badgeBg = Colors.white.withValues(
+          alpha: isDark ? 0.14 : 0.10,
+        );
+        final Color borderClr = Colors.white.withValues(
+          alpha: isDark ? 0.18 : 0.14,
+        );
 
         return LayoutBuilder(
           builder: (context, c) {
-        // ---- Layout constants (doivent matcher ton design) ----
-        const double pad = 16;
-        const double badgeHApprox = 28; // approx (12px font + padding)
-        const double gapAfterBadge = 10;
-        const double gapTitleSub = 6;
+            // ---- Layout constants (doivent matcher ton design) ----
+            const double pad = 16;
+            const double badgeHApprox = 28; // approx (12px font + padding)
+            const double gapAfterBadge = 10;
+            const double gapTitleSub = 6;
 
-        // CTA : on réserve de la place à droite pour ne jamais masquer le texte
-        const double ctaApproxW = 118; // approx largeur "Découvrir"
-        const double ctaApproxH = 44; // approx hauteur CTA
-        const double gapBetweenTextAndCta = 12;
+            // CTA : on réserve de la place à droite pour ne jamais masquer le texte
+            const double ctaApproxW = 118; // approx largeur "Découvrir"
+            const double ctaApproxH = 44; // approx hauteur CTA
+            const double gapBetweenTextAndCta = 12;
 
-        // Largeur dispo pour le texte (on réserve la place du CTA)
-        final double textMaxWidth =
-            (c.maxWidth - (pad * 2) - ctaApproxW - gapBetweenTextAndCta).clamp(
-              140.0,
-              c.maxWidth,
+            // Largeur dispo pour le texte (on réserve la place du CTA)
+            final double textMaxWidth =
+                (c.maxWidth - (pad * 2) - ctaApproxW - gapBetweenTextAndCta)
+                    .clamp(140.0, c.maxWidth);
+
+            final titleStyle = GoogleFonts.fustat(
+              fontWeight: FontWeight.w900,
+              fontSize: 24,
+              color: Colors.white,
+              height: 1.06,
             );
 
-        final titleStyle = GoogleFonts.fustat(
-          fontWeight: FontWeight.w900,
-          fontSize: 24,
-          color: Colors.white,
-          height: 1.06,
-        );
+            final subtitleStyle = GoogleFonts.fustat(
+              fontWeight: FontWeight.w600,
+              fontSize: 14,
+              color: Colors.white.withValues(alpha: .85),
+              height: 1.15,
+            );
 
-        final subtitleStyle = GoogleFonts.fustat(
-          fontWeight: FontWeight.w600,
-          fontSize: 14,
-          color: Colors.white.withValues(alpha: .85),
-          height: 1.15,
-        );
+            final double titleH = _measureTextHeight(
+              text: title,
+              style: titleStyle,
+              maxWidth: textMaxWidth,
+            );
 
-        final double titleH = _measureTextHeight(
-          text: title,
-          style: titleStyle,
-          maxWidth: textMaxWidth,
-        );
+            final double subH = subtitle.trim().isEmpty
+                ? 0
+                : _measureTextHeight(
+                    text: subtitle,
+                    style: subtitleStyle,
+                    maxWidth: textMaxWidth,
+                  );
 
-        final double subH = subtitle.trim().isEmpty
-            ? 0
-            : _measureTextHeight(
-                text: subtitle,
-                style: subtitleStyle,
-                maxWidth: textMaxWidth,
-              );
+            // Hauteur nécessaire du bloc bas (texte + CTA)
+            // On prend le max entre (hauteur texte) et (hauteur CTA) pour que tout rentre.
+            final double bottomBlockH = math.max(
+              titleH + (subH > 0 ? (gapTitleSub + subH) : 0),
+              ctaApproxH,
+            );
 
-        // Hauteur nécessaire du bloc bas (texte + CTA)
-        // On prend le max entre (hauteur texte) et (hauteur CTA) pour que tout rentre.
-        final double bottomBlockH = math.max(
-          titleH + (subH > 0 ? (gapTitleSub + subH) : 0),
-          ctaApproxH,
-        );
+            final double computedHeight =
+                pad + badgeHApprox + gapAfterBadge + bottomBlockH + pad;
 
-        final double computedHeight =
-            pad + badgeHApprox + gapAfterBadge + bottomBlockH + pad;
+            final double cardHeight = computedHeight < _minHeight
+                ? _minHeight
+                : computedHeight;
 
-        final double cardHeight = computedHeight < _minHeight
-            ? _minHeight
-            : computedHeight;
-
-        return GestureDetector(
-          onTap: () => _guardedOpen(context),
-          child: Semantics(
-            button: true,
-            label: '$title — découvrir',
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(18),
-              child: SizedBox(
-                height: cardHeight,
-                child: Stack(
-                  fit: StackFit.expand,
-                  children: [
-                    Hero(
-                      tag: 'hero_$tag',
-                      child: Image.asset(
-                        imagePath,
-                        fit: BoxFit.cover,
-                        alignment: Alignment.center,
-                        filterQuality: FilterQuality.high,
-                      ),
-                    ),
-
-                    // gradient
-                    DecoratedBox(
-                      decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                          begin: Alignment.topCenter,
-                          end: Alignment.bottomCenter,
-                          colors: [
-                            Colors.black.withValues(alpha: .10),
-                            Colors.black.withValues(alpha: .55),
-                            Colors.black.withValues(alpha: .78),
-                          ],
-                          stops: const [0.0, 0.55, 1.0],
+            return GestureDetector(
+              onTap: () => _guardedOpen(context),
+              child: Semantics(
+                button: true,
+                label: '$title — découvrir',
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(18),
+                  child: SizedBox(
+                    height: cardHeight,
+                    child: Stack(
+                      fit: StackFit.expand,
+                      children: [
+                        Hero(
+                          tag: 'hero_$tag',
+                          child: Image.asset(
+                            imagePath,
+                            fit: BoxFit.cover,
+                            alignment: Alignment.center,
+                            filterQuality: FilterQuality.high,
+                          ),
                         ),
-                      ),
-                    ),
 
-                    // contenu
-                    Padding(
-                      padding: const EdgeInsets.all(pad),
-                      child: Stack(
-                        children: [
-                          // Badge "Module" (haut gauche)
-                          Align(
-                            alignment: Alignment.topLeft,
-                            child: Container(
-                              padding: const EdgeInsets.symmetric(
-                                horizontal: 10,
-                                vertical: 6,
-                              ),
-                              decoration: BoxDecoration(
-                                color: badgeBg,
-                                borderRadius: BorderRadius.circular(999),
-                                border: Border.all(color: borderClr),
-                              ),
-                              child: Text(
-                                'Module',
-                                style: GoogleFonts.fustat(
-                                  fontWeight: FontWeight.w800,
-                                  fontSize: 12,
-                                  color: Colors.white,
-                                ),
-                              ),
-                            ),
-                          ),
-
-                          // Badge Premium (haut droite)
-                          if (locked)
-                            Align(
-                              alignment: Alignment.topRight,
-                              child: _PremiumBadge(
-                                onTap: () => Navigator.of(context).pushNamed('/abonnement'),
-                              ),
-                            ),
-
-                          // Texte (bas gauche)
-                          Positioned(
-                            left: 0,
-                            right: ctaApproxW + gapBetweenTextAndCta,
-                            bottom: 0,
-                            child: Column(
-                              mainAxisSize: MainAxisSize.min,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  title,
-                                  softWrap: true,
-                                  overflow: TextOverflow.visible,
-                                  style: titleStyle,
-                                ),
-                                if (subtitle.trim().isNotEmpty) ...[
-                                  const SizedBox(height: gapTitleSub),
-                                  Text(
-                                    subtitle,
-                                    softWrap: true,
-                                    overflow: TextOverflow.visible,
-                                    style: subtitleStyle,
-                                  ),
-                                ],
+                        // gradient
+                        DecoratedBox(
+                          decoration: BoxDecoration(
+                            gradient: LinearGradient(
+                              begin: Alignment.topCenter,
+                              end: Alignment.bottomCenter,
+                              colors: [
+                                Colors.black.withValues(alpha: .10),
+                                Colors.black.withValues(alpha: .55),
+                                Colors.black.withValues(alpha: .78),
                               ],
+                              stops: const [0.0, 0.55, 1.0],
                             ),
                           ),
+                        ),
 
-                          // CTA (bas droite)
-                          Positioned(
-                            right: 0,
-                            bottom: 0,
-                            child: _RoundCTA(onTap: () => _guardedOpen(context)),
+                        // contenu
+                        Padding(
+                          padding: const EdgeInsets.all(pad),
+                          child: Stack(
+                            children: [
+                              // Badge "Module" (haut gauche)
+                              Align(
+                                alignment: Alignment.topLeft,
+                                child: Container(
+                                  padding: const EdgeInsets.symmetric(
+                                    horizontal: 10,
+                                    vertical: 6,
+                                  ),
+                                  decoration: BoxDecoration(
+                                    color: badgeBg,
+                                    borderRadius: BorderRadius.circular(999),
+                                    border: Border.all(color: borderClr),
+                                  ),
+                                  child: Text(
+                                    'Module',
+                                    style: GoogleFonts.fustat(
+                                      fontWeight: FontWeight.w800,
+                                      fontSize: 12,
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                ),
+                              ),
+
+                              // Badge Premium (haut droite)
+                              if (locked)
+                                Align(
+                                  alignment: Alignment.topRight,
+                                  child: _PremiumBadge(
+                                    onTap: () => Navigator.of(
+                                      context,
+                                    ).pushNamed('/abonnement'),
+                                  ),
+                                ),
+
+                              // Texte (bas gauche)
+                              Positioned(
+                                left: 0,
+                                right: ctaApproxW + gapBetweenTextAndCta,
+                                bottom: 0,
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.min,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      title,
+                                      softWrap: true,
+                                      overflow: TextOverflow.visible,
+                                      style: titleStyle,
+                                    ),
+                                    if (subtitle.trim().isNotEmpty) ...[
+                                      const SizedBox(height: gapTitleSub),
+                                      Text(
+                                        subtitle,
+                                        softWrap: true,
+                                        overflow: TextOverflow.visible,
+                                        style: subtitleStyle,
+                                      ),
+                                    ],
+                                  ],
+                                ),
+                              ),
+
+                              // CTA (bas droite)
+                              Positioned(
+                                right: 0,
+                                bottom: 0,
+                                child: _RoundCTA(
+                                  onTap: () => _guardedOpen(context),
+                                ),
+                              ),
+                            ],
                           ),
-                        ],
-                      ),
+                        ),
+                      ],
                     ),
-                  ],
+                  ),
                 ),
               ),
-            ),
-          ),
-        );
+            );
           },
         );
       },
@@ -2454,9 +2667,16 @@ class _PremiumBadge extends StatelessWidget {
       decoration: BoxDecoration(
         color: Colors.black.withValues(alpha: 0.36),
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: Colors.white.withValues(alpha: 0.24), width: 1),
+        border: Border.all(
+          color: Colors.white.withValues(alpha: 0.24),
+          width: 1,
+        ),
         boxShadow: const [
-          BoxShadow(blurRadius: 18, offset: Offset(0, 10), color: Color(0x22000000)),
+          BoxShadow(
+            blurRadius: 18,
+            offset: Offset(0, 10),
+            color: Color(0x22000000),
+          ),
         ],
       ),
       child: Row(
@@ -3657,7 +3877,8 @@ const Map<PaSchoolProgram, List<CategoryConfig>> paSchoolCategoriesConfig = {
       subcategories: [
         SubCategoryConfig(
           label: 'Classification des infractions',
-          route: '/pa/dps_dpg/socle_initial/generalites/classification_infractions',
+          route:
+              '/pa/dps_dpg/socle_initial/generalites/classification_infractions',
         ),
         SubCategoryConfig(
           label: 'L’infraction',
@@ -3685,7 +3906,8 @@ const Map<PaSchoolProgram, List<CategoryConfig>> paSchoolCategoriesConfig = {
         ),
         SubCategoryConfig(
           label: 'Rétention dans les locaux de police',
-          route: '/pa/dps_dpg/socle_initial/generalites/retention_locaux_police_intro',
+          route:
+              '/pa/dps_dpg/socle_initial/generalites/retention_locaux_police_intro',
         ),
       ],
     ),
@@ -4428,7 +4650,8 @@ const Map<PaSchoolProgram, List<CategoryConfig>> paSchoolCategoriesConfig = {
         ),
         SubCategoryConfig(
           label: 'L’amende forfaitaire délictuelle',
-          route: '/pa/memento_circulation/procedures/amende_forfaitaire_delictuelle',
+          route:
+              '/pa/memento_circulation/procedures/amende_forfaitaire_delictuelle',
           image: 'assets/images/amende_forfaitaire_delictuelle.jpeg',
         ),
         SubCategoryConfig(
@@ -4500,7 +4723,8 @@ const Map<PaSchoolProgram, List<CategoryConfig>> paSchoolCategoriesConfig = {
         ),
         SubCategoryConfig(
           label: 'Les certificats d’immatriculation',
-          route: '/pa/memento_circulation/controle_routier/certificat_immatriculation',
+          route:
+              '/pa/memento_circulation/controle_routier/certificat_immatriculation',
           image: 'assets/images/certificat_immatriculation.jpeg',
         ),
         SubCategoryConfig(
@@ -4510,7 +4734,8 @@ const Map<PaSchoolProgram, List<CategoryConfig>> paSchoolCategoriesConfig = {
         ),
         SubCategoryConfig(
           label: 'L’assurance',
-          route: '/pa/memento_circulation/controle_routier/assurance_obligatoire',
+          route:
+              '/pa/memento_circulation/controle_routier/assurance_obligatoire',
           image: 'assets/images/assurance_obligatoire.jpeg',
         ),
         SubCategoryConfig(

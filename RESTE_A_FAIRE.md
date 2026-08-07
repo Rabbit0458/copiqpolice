@@ -6,7 +6,9 @@ lecture de code, requête SQL exécutée sur la base de production, sortie de
 `Info.plist`. Rien n'est estimé ni supposé. Ce document **remplace** la
 version du 26/07/2026.
 
-**Dernière mise à jour : 30/07/2026** — refonte visuelle et fonctionnelle des
+**Dernière mise à jour : 31/07/2026** — optimisations Supabase sûres,
+normalisation des quiz, suppression des sauvegardes temporaires, nettoyage des
+logs et ajout des tests automatisés de routes. La refonte des
 cas pratiques puis des 212 quiz de l'application (section K). C'est la première
 session menée **avec un appareil réel sous les yeux** : plusieurs anomalies que
 les audits précédents ne pouvaient pas voir — la section G le disait
@@ -25,7 +27,7 @@ document comme QA manuelle obligatoire — ne pas les considérer validés.
 
 | Axe | Statut |
 |---|---|
-| Compilation / lint (`flutter analyze`) | 🟠 **À relancer** — 0 problème au 29/07 ; la refonte des 212 quiz du 30/07 a introduit puis corrigé 2 familles d'erreurs (K.4). Dernier `analyze` connu : 428 issues, toutes traitées, **non revérifié** |
+| Compilation / lint (`flutter analyze`) | ✅ **0 problème** — relancé le 31/07 après les nettoyages |
 | Rendu visuel sur appareil réel | 🟠 Première session de test réel le 30/07 (cas pratiques + quiz culture générale). 9 anomalies visuelles trouvées et corrigées — K.1 à K.3. Les autres écrans restent non testés |
 | Routing (boutons → pages) | ✅ 0 route de menu cassée (vérifié exhaustivement sur PA Scolarité) ; ~359 fichiers `.dart` inutilisés = code mort, pas un trou de contenu — C.4 |
 | Contenu GPX Exam / GPX Scolarité | ✅ Fonctionnellement complet, routé, quiz alimentés |
@@ -34,22 +36,22 @@ document comme QA manuelle obligatoire — ne pas les considérer validés.
 | Contenu Réserve | ✅ Contenu inachevé mais correctement verrouillé (0 utilisateur exposé, défense en profondeur ajoutée) |
 | Base de données (structure) | ✅ 176 tables, RLS activé partout, cas pratique et signalements sains |
 | Base de données (hygiène des données) | ✅ **Corrigé** — `quiz_questions` dédupliqué (6,35M → 5,54M lignes) |
-| Sécurité Supabase | 🟠 876 avis (dont 1 vraie faille de configuration à corriger, le reste = durcissement) |
-| Performance Supabase à l'échelle | ✅ `auth_rls_initplan` corrigé (260→0) ; 🟠 304 avis restants (multiple_permissive_policies, index) |
-| Conformité iOS (App Store) | ✅ Crash photothèque corrigé ; ✅ identifiant `fr.copiq.police` — C.10b |
-| Conformité Android (Play Store) | ✅ Permissions vérifiées ; ✅ identifiant `fr.copiq.police` ; ✅ release signé avec keystore dédié — C.10c |
+| Sécurité Supabase | ✅ Connexions anonymes désactivées ; `search_path` et vue admin durcis. 689 avis de durcissement restent |
+| Performance Supabase à l'échelle | ✅ `auth_rls_initplan` 260→0 ; FK sans index 48→0 ; index dupliqués 13→0 |
+| Conformité iOS (App Store) | ✅ Crash photothèque corrigé ; ✅ identifiant Apple enregistré `fr.copiq.app` — C.10b |
+| Conformité Android (Play Store) | ✅ Permissions vérifiées ; ✅ identifiant `fr.copiq.app` ; ✅ release signé avec keystore dédié — C.10c |
 | Hygiène du code | ✅ 13 TODO seulement sur tout le projet, tous localisés et non-critiques |
 
 **Verdict global (mis à jour le 29/07/2026, après build Android réel +
 keystore de release)** : tous les points 🔴 identifiés depuis le début de
 cet audit sont désormais corrigés — crash iOS, doublons `quiz_questions`,
-performance RLS, identifiant d'application placeholder (`fr.copiq.police`
+performance RLS, identifiant d'application définitif (`fr.copiq.app`
 configuré partout), et signature de release Android (keystore dédié généré,
 vérifié par `apksigner` sur un vrai APK release). **Aucun point 🔴 restant
 connu.** Il reste des points 🟠/🟡 non bloquants (nettoyage de code mort
 PA Scolarité — 0 impact utilisateur, rectifié le 29/07 après signalement de
 l'utilisateur, voir C.4 — `multiple_permissive_policies`/index Supabase,
-anonymous sign-ins Supabase à désactiver manuellement, permissions à re-valider si
+permissions à re-valider si
 l'identifiant venait à changer) et surtout la QA manuelle sur device réel
 (section G/I) — jamais faite dans cet environnement, à ne pas considérer
 comme validée tant qu'elle n'a pas été faite pour de vrai.
@@ -79,6 +81,33 @@ comme validée tant qu'elle n'a pas été faite pour de vrai.
 - Cas pratique : XP, badges (20 catalogués), streak freezes, leaderboard,
   parrainage, mock exams — schéma complet et cohérent.
 
+### 🟠 « Mon suivi » — Concours Policier Adjoint (codé le 01/08/2026)
+
+- ✅ Onglet Journal remplacé localement par **Mon suivi** avec score pondéré,
+  objectif quotidien personnalisable, streak, calendrier sur 28 jours,
+  évolution 7/30 jours, progression par matière, recommandation explicable,
+  positionnement séparé, erreurs détaillées et historique triable.
+- ✅ Sources strictes : `quiz_history` (`track='pa'`, `mode='exam'`),
+  `tests_psychotechnique_history` (`module='pa_psychotechnique'`,
+  `mode='concours'`) et photolangage explicitement PA Exam. Les réponses
+  individuelles ne sont jamais comptées comme des sessions.
+- ✅ Incohérences de quatre noms de tables Culture générale corrigées dans le
+  code ; `history_id` est désormais envoyé par les QCM PA disposant d'une
+  session canonique.
+- ✅ 12 tests ciblés réussis (calculs + états UI + largeur 320 px) et analyse
+  Flutter sans erreur sur le périmètre.
+- 🟠 **À appliquer après autorisation explicite** : migration
+  `20260801030000_pa_exam_progress_answer_history.sql`. Elle crée l'historique
+  canonique des réponses, active une RLS propriétaire, reprend uniquement les
+  anciennes réponses explicitement `exam_type='pa'`, harmonise les tables
+  historiques et ajoute les discriminants PA Exam au photolangage. La
+  protection d'exécution a refusé son application automatique en production ;
+  tant qu'elle n'est pas appliquée, la page fonctionne avec les sessions
+  principales mais affiche les détails secondaires comme indisponibles.
+- 🟠 Après application : exécuter les advisors Supabase, vérifier une insertion
+  réelle Culture générale/psychotechnique, puis effectuer la QA visuelle sur
+  simulateur et appareil réel.
+
 ---
 
 ## C. Anomalies détectées
@@ -106,7 +135,7 @@ comme validée tant qu'elle n'a pas été faite pour de vrai.
 **Statut : dédupliqué.** 6 365 050 → **5 535 837** lignes (−829 213 doublons
 exacts supprimés), catégorie par catégorie, avec sauvegarde complète de
 chaque catégorie avant suppression (`quiz_questions_backup_<categorie>`,
-14 tables, à supprimer seulement après quelques jours de validation en prod
+14 tables, supprimées le 31/07 après validation en production
 — voir `scripts/quiz_questions_dedup.sql`, étape 5). Aucune réduction du
 volume de contenu réellement distinct (décision explicite de l'utilisateur) :
 seuls les textes de question strictement identiques dans un même
@@ -116,9 +145,9 @@ seuls les textes de question strictement identiques dans un même
 ces 14 tables de sauvegarde avaient RLS désactivé — lisibles/modifiables par
 n'importe qui possédant la clé publique de l'app. RLS activé sans policy
 (migration `20260730020000_enable_rls_quiz_backups.sql`) : accès client
-totalement bloqué, accès dashboard/service_role inchangé. **Reste à faire** :
-supprimer ces 14 tables une fois le dédoublonnage validé quelques jours de
-plus en prod (décision utilisateur à prendre, pas automatisée).
+totalement bloqué, accès dashboard/service_role inchangé. **Fait le 31/07** :
+les 14 tables ont été supprimées après vérification des volumes par catégorie,
+de l'index unique `(module, category, question)` et de l'absence de régression.
 
 | Catégorie | Avant | Après |
 |---|---|---|
@@ -188,9 +217,8 @@ Détails techniques originaux conservés ci-dessous pour référence.
   garde-fou à ce niveau. **Corrigé** : `home_bootstrap.dart` redirige
   désormais ce cas vers `/grade_picker` au lieu de `/reserve`.
 - **Reste à faire (non bloquant)** : finaliser le contenu Réserve
-  (`reserve_introduction_page.dart` et les modules associés) pour une future
-  release, ou supprimer le code mort de navigation dans `grade_picker.dart`
-  (lignes 109-115) si la fonctionnalité est abandonnée.
+  (`reserve_introduction_page.dart` et les modules associés). Le code mort de
+  navigation dans `grade_picker.dart` a été supprimé le 31/07.
 
 ### 🟡 C.4 — ~359 fichiers PA Scolarité non utilisés (CORRIGÉ/RECTIFIÉ le 29/07/2026 — 0 impact utilisateur confirmé)
 
@@ -267,9 +295,9 @@ Détails techniques originaux conservés ci-dessous pour référence.
   ajouter une branche `question` dans `admin_reports_unified` et
   `admin_resolve_report` pointant sur `report_question`.
 
-### 🟠 C.7 — Sécurité Supabase : réglage "connexions anonymes" actif mais inutilisé
+### ✅ C.7 — Connexions anonymes Supabase désactivées le 31/07/2026
 
-- **Constat** : l'avis `auth_allow_anonymous_sign_ins` est remonté sur 182
+- **Constat** : l'avis `auth_allow_anonymous_sign_ins` était remonté sur 183
   tables (dont `admin_users`, `admin_audit_logs`, `billing_*`). Vérifié par
   grep : **aucun appel** à `signInAnonymously()` n'existe dans tout le code
   Flutter — la fonctionnalité "connexions anonymes" est activée au niveau du
@@ -279,13 +307,9 @@ Détails techniques originaux conservés ci-dessous pour référence.
   un `auth.uid()` anonyme valide, et tester les policies RLS qui vérifient
   seulement `auth.uid() IS NOT NULL` sans exclure `is_anonymous`), nulle en
   exploitation confirmée.
-- **Solution** : désactiver "Allow anonymous sign-ins" dans Project Settings
-  → Authentication. Aucune perte fonctionnelle attendue.
-- **Non automatisable depuis cet audit** : ce réglage vit dans la
-  configuration Auth du projet Supabase (dashboard ou Management API), pas
-  dans le schéma SQL — aucun outil disponible ici ne permet de le modifier.
-  Action manuelle de 2 clics : dashboard Supabase → Project Settings →
-  Authentication → désactiver "Allow anonymous sign-ins".
+- **Correction** : "Allow anonymous sign-ins" désactivé dans Authentication →
+  Sign In / Providers. L'advisor confirme `auth_allow_anonymous_sign_ins`
+  **183→0**.
 
 ### Performance Supabase à l'échelle
 
@@ -300,40 +324,37 @@ Détails techniques originaux conservés ci-dessous pour référence.
   restante) et par relecture directe de `pg_policies` sur un échantillon.
 - 🟠 **`multiple_permissive_policies` ×132** (inchangé) : plusieurs policies
   permissives empilées sur la même table/action, chacune évaluée séparément.
-- 🟠 **`unindexed_foreign_keys` ×48** (inchangé) : clés étrangères sans index
-  de couverture — jointures et suppressions en cascade lentes à volume élevé.
-- 🟡 **`unused_index` ×96 / `duplicate_index` ×13** (inchangé) : coût
-  d'écriture et de stockage sans bénéfice de lecture mesuré.
+- ✅ **`unindexed_foreign_keys` — CORRIGÉ le 31/07 (48→0)** : index de
+  couverture ajoutés sans modifier les contraintes ni les données.
+- ✅ **`duplicate_index` — CORRIGÉ le 31/07 (13→0)** : seuls les index
+  strictement identiques ont été retirés.
+- 🟡 **`unused_index`** : conservés jusqu'à disposer d'un historique de trafic
+  suffisant ; les supprimer immédiatement aurait été risqué.
 - 🟡 **`no_primary_key` ×14** (nouvellement identifié dans cette passe
   d'advisor, non traité) : tables sans clé primaire — à examiner au cas par
   cas, certaines peuvent être des vues/tables techniques où c'est voulu.
-- **Reste à faire** : `multiple_permissive_policies` et
-  `unindexed_foreign_keys` nécessitent une revue table par table (pas un
-  remplacement mécanique uniforme comme `auth_rls_initplan`), donc non
-  traités dans cette session.
+- **Reste à faire** : `multiple_permissive_policies` nécessite une revue table
+  par table ; une fusion mécanique pourrait modifier les droits effectifs.
 
 ### 🟡 C.9 — Divers durcissements Supabase mineurs
 
-- `function_search_path_mutable` ×7 : fonctions sans `SET search_path`
-  explicite (risque théorique d'injection de search_path).
+- ✅ `function_search_path_mutable` ×7 : corrigé le 31/07 sans modifier les
+  corps de fonction.
 - `extension_in_public` ×2 (`citext`, `pg_trgm`) : à déplacer hors du schéma
   `public` par convention de sécurité Supabase.
 - `rls_enabled_no_policy` ×1 : `cp_rate_limit_buckets` a RLS activé sans
   aucune policy (bloque tout accès direct — probablement voulu puisque
   cette table n'est manipulée que par des fonctions `SECURITY DEFINER`, mais
   aucune policy explicite ne documente cette intention).
-- `materialized_view_in_api` ×1 : `mv_admin_dashboard_stats` est
-  sélectionnable par `anon`/`authenticated` via l'API — à vérifier qu'aucune
-  donnée sensible n'y transite, ou à retirer de l'exposition PostgREST.
+- ✅ `materialized_view_in_api` ×1 : accès `anon`/`authenticated` révoqué le
+  31/07 ; les chemins privilégiés restent disponibles.
 - `auth_otp_long_expiry`, `auth_leaked_password_protection`,
   `vulnerable_postgres_version` : recommandations standards Supabase
   (raccourcir l'expiration OTP, activer la protection mots de passe compromis
   via HaveIBeenPwned, mettre à jour la version Postgres du projet).
-- 822 000 lignes (12,9 %) de `quiz_questions.options` stockées en JSON
-  double-encodé (string au lieu de array). **Vérifié non-bloquant** : le
-  parseur `QuizQuestion.fromJson` gère déjà ce cas défensivement
-  (`jsonDecode` si `options` est une String). Reste une dette de propreté de
-  données à corriger à la source lors du nettoyage de C.2.
+- ✅ Après dédoublonnage, 1 370 lignes de `quiz_questions.options` restaient
+  double-encodées. Normalisées le 31/07 (1 370→0), puis protégées par une
+  contrainte imposant un tableau JSON.
 - 2 questions strictement identiques entre modules `gpx_dh_ethique` et
   `gpx_intervention_malades_mentaux` / `gpx_intervention_autres` dans
   `quiz_scolarite_questions` — chevauchement thématique plausible, à trancher
@@ -354,22 +375,23 @@ automatiquement par les plugins**, y compris `POST_NOTIFICATIONS`
 n'est nécessaire pour `image_picker` sur les versions Android récentes
 (Photo Picker système, pas de permission requise). **Ce point est clos.**
 
-### ✅ C.10b — `applicationId`/`PRODUCT_BUNDLE_IDENTIFIER` (CORRIGÉ le 29/07/2026 — `fr.copiq.police`)
+### ✅ C.10b — `applicationId`/`PRODUCT_BUNDLE_IDENTIFIER` (`fr.copiq.app`, aligné le 01/08/2026)
 
 - **Constat d'origine** : `com.example.copiqpolice` (placeholder `flutter
   create`) sur les 3 plateformes (Android, iOS, macOS) — bloquant à 100 %
   pour Google Play et Apple, cf. ci-dessus.
-- **Décision de l'utilisateur** : `fr.copiq.police`, cohérent avec le scheme
-  de deep link déjà utilisé (`CFBundleURLName` dans `Info.plist`).
+- **Décision finale de l'utilisateur** : `fr.copiq.app`, identifiant déjà
+  enregistré dans Apple Developer. Le schéma de deep link applicatif
+  `copiqpolice://` reste inchangé.
 - **Ce qui a été fait** :
   - Android : `namespace` et `applicationId` mis à jour dans
     `android/app/build.gradle.kts` ; `MainActivity.kt` déplacé de
-    `android/app/src/main/kotlin/com/example/copiqpolice/` vers
-    `.../kotlin/fr/copiq/police/` avec la déclaration `package` mise à jour ;
-    ancien dossier `com/example/` supprimé.
+    `android/app/src/main/kotlin/fr/copiq/police/` vers
+    `.../kotlin/fr/copiq/app/` avec la déclaration `package` mise à jour.
   - iOS : les 6 occurrences de `PRODUCT_BUNDLE_IDENTIFIER` dans
-    `ios/Runner.xcodeproj/project.pbxproj` mises à jour (`fr.copiq.police`
-    pour l'app, `fr.copiq.police.RunnerTests` pour les tests).
+    `ios/Runner.xcodeproj/project.pbxproj` mises à jour (`fr.copiq.app`
+    pour l'app, `fr.copiq.app.RunnerTests` pour les tests).
+    `CFBundleDisplayName` et `CFBundleName` valent désormais `COP'IQ`.
   - macOS (trouvé dans le même scan, corrigé par cohérence même si
     probablement pas une cible de publication) :
     `macos/Runner/Configs/AppInfo.xcconfig` et les 3 occurrences
@@ -383,10 +405,9 @@ n'est nécessaire pour `image_picker` sur les versions Android récentes
 - **Rappel** : Firebase n'est pas utilisé (confirmé par l'utilisateur —
   aucun `google-services.json`/`GoogleService-Info.plist` dans le dépôt),
   donc aucun ré-enregistrement d'app Firebase n'était nécessaire.
-- **Reste à faire (hors code)** : c'est la première fois que cet identifiant
-  est fixé — vérifier qu'aucune app "fr.copiq.police" n'existe déjà par
-  erreur sur les consoles Apple/Google avant la première soumission
-  réelle.
+- **Vérification Apple faite le 01/08** : l'identifiant `fr.copiq.app` est
+  enregistré dans le compte Apple Developer sous le nom COPIQ. Reste à
+  associer/importer le premier bundle dans Google Play Console.
 
 ### ✅ C.10c — Build de release Android signé avec la clé de debug (CORRIGÉ le 29/07/2026)
 
@@ -451,13 +472,14 @@ n'est nécessaire pour `image_picker` sur les versions Android récentes
 ## F. Audit Supabase (résumé)
 
 - 176 tables, RLS activé sur 100 % d'entre elles.
-- 876 avis de sécurité : 1 point de configuration à corriger réellement
-  (anonymous sign-ins, C.7), le reste = durcissement recommandé (C.9), aucune
+- 689 avis de sécurité après désactivation des connexions anonymes et les
+  durcissements du 31/07 ; le reste = durcissement recommandé (C.9), aucune
   faille RLS avec accès croisé entre utilisateurs détectée dans les tables
   échantillonnées (`cas_pratique_*`, `billing_*`).
 - 551 avis de performance initialement, dominés par le pattern
-  `auth_rls_initplan` (260) — **corrigé le 29/07/2026**, plus que 304 avis
-  restants (essentiellement `multiple_permissive_policies` et index).
+  `auth_rls_initplan` (260) — **corrigé le 29/07/2026**. Passe du 31/07 :
+  `unindexed_foreign_keys` 48→0 et `duplicate_index` 13→0 ; les policies
+  superposées et index sans usage mesuré restent à examiner prudemment.
 - Aucune fuite d'admin détectée : les RPC admin vérifient toutes
   `has_admin_permission(...)` avant d'agir (vérifié sur
   `admin_reports_unified`, `admin_resolve_report`).
@@ -490,8 +512,9 @@ clavier. Ne pas interpréter l'absence de mention comme une validation.
 3. Supprimer les 435 fichiers PA/GPX Scolarité confirmés morts (C.4) après
    décision éditoriale (router ou supprimer), pour réduire la taille du
    dépôt et le temps de build. (37 fichiers legacy déjà retirés — voir C.5.)
-4. Auditer les 31 `print(` restants et les remplacer par le logger applicatif
-   (`AppConsoleLogger`, déjà utilisé ailleurs) pour la propreté des logs prod.
+4. ✅ **[FAIT — 31/07]** Les 30 appels `print(` applicatifs sont remplacés par
+   `debugPrint`. Seule l'implémentation interne de `AppConsoleLogger` conserve
+   volontairement un `print`.
 
 ---
 
@@ -499,11 +522,11 @@ clavier. Ne pas interpréter l'absence de mention comme une validation.
 
 | # | Point | Statut |
 |---|---|---|
-| 1 | Compilation propre (`flutter analyze`) | 🟠 **À relancer** — la refonte des 212 quiz du 30/07 a introduit puis corrigé 2 familles d'erreurs, non revérifiées — K.4 |
+| 1 | Compilation propre (`flutter analyze`) | ✅ 0 problème le 31/07 |
 | 2 | Aucun crash connu au lancement | ✅ (non testé sur device réel) |
 | 3 | Sélecteur d'image iOS (`Info.plist`) | ✅ Corrigé — C.1 (à valider sur device réel) |
 | 4 | Permissions Android vérifiées sur build réel | ✅ Vérifié — C.10a |
-| 4bis | Identifiant d'application définitif (pas `com.example.*`) | ✅ `fr.copiq.police` — C.10b |
+| 4bis | Identifiant d'application définitif (pas `com.example.*`) | ✅ `fr.copiq.app` — C.10b |
 | 4ter | Build Android signé avec un keystore de release | ✅ Vérifié via `apksigner` — C.10c |
 | 5 | Suppression de compte disponible | ✅ Code présent (`user_page.dart`) |
 | 6 | Politique de confidentialité / CGU liées | ✅ Code présent (`legal_content.dart`, `cp_privacy_page.dart`) |
@@ -512,7 +535,7 @@ clavier. Ne pas interpréter l'absence de mention comme une validation.
 | 9 | Quiz sans doublons | ✅ `quiz_questions` dédupliqué — C.2 ; `cas_pratique` et `quiz_scolarite` propres |
 | 10 | Signalements admin fonctionnels sur tous les types de contenu | ✅ cas pratique et quiz classiques — C.6 |
 | 11 | RLS activé sur toutes les tables | ✅ |
-| 12 | Pas de connexion anonyme non maîtrisée | ⚠️ Activée au niveau projet mais inutilisée — C.7 |
+| 12 | Pas de connexion anonyme non maîtrisée | ✅ Désactivée et confirmée par l'advisor — C.7 |
 | 13 | Performance RLS soutenable à grande échelle | ✅ 260 policies corrigées — C.8 |
 | 14 | Test manuel écran par écran (device réel) | 🟠 Partiel — cas pratiques et quiz culture générale testés le 30/07 sur Android (9 anomalies trouvées, K.1-K.3). Tout le reste, et iOS en entier, non testé |
 | 14bis | Quiz propagés vérifiés à l'écran (2 thèmes) | ❌ Non fait — 211 des 212 fichiers n'ont été validés que **statiquement** (équilibrage, appels, cycles de vie). Priorité après le point 1 |
@@ -529,8 +552,8 @@ Section conservée pour l'historique et la traçabilité des correctifs. Aucun
 point 🔴 restant connu à ce jour — voir le verdict global en section A.
 
 0a. ✅ **[FAIT — 29/07/2026]** Choisir et configurer un identifiant
-   d'application définitif (C.10b) — `fr.copiq.police`, choisi par
-   l'utilisateur. Configuré dans `android/app/build.gradle.kts`
+   d'application définitif (C.10b) — `fr.copiq.app`, aligné le 01/08 sur
+   l'identifiant Apple existant. Configuré dans `android/app/build.gradle.kts`
    (`namespace` + `applicationId`), `MainActivity.kt` déplacé au bon
    package, `ios/Runner.xcodeproj/project.pbxproj` (6 occurrences),
    `macos/Runner/Configs/AppInfo.xcconfig` +
@@ -555,7 +578,8 @@ point 🔴 restant connu à ce jour — voir le verdict global en section A.
    dans cet environnement).
 
 2. ✅ **[FAIT — 29/07/2026]** Dédupliquer `quiz_questions` — voir C.2
-   (6,35M → 5,54M lignes, catégorie par catégorie, 14 backups conservés).
+   (6,35M → 5,54M lignes, catégorie par catégorie). Les 14 backups ont été
+   validés puis supprimés le 31/07/2026.
 
 ### 🟠 Important
 
@@ -564,10 +588,8 @@ point 🔴 restant connu à ce jour — voir le verdict global en section A.
    Migration `20260729010000_admin_reports_report_question.sql` appliquée et
    vérifiée (colonnes `archived`/`updated_at` ajoutées, branche `question`
    testée directement en SQL).
-5. **Désactiver "Allow anonymous sign-ins"** dans les paramètres Auth du
-   projet Supabase (C.7). *Non automatisable* : c'est un réglage du
-   dashboard Supabase (Project Settings → Authentication), aucun outil de
-   cet audit n'y a accès. Complexité triviale — 2 clics à faire manuellement.
+5. ✅ **[FAIT — 31/07/2026]** Désactiver "Allow anonymous sign-ins".
+   Advisor : `auth_allow_anonymous_sign_ins` 183→0.
 6. ✅ **[FAIT — 29/07/2026]** Corriger les 260 policies RLS
    `auth_rls_initplan`. Migration `20260729020000_rls_initplan_perf_fix.sql`
    appliquée ; advisor de performance confirme 0 occurrence restante.
@@ -580,14 +602,16 @@ point 🔴 restant connu à ce jour — voir le verdict global en section A.
 
 ### 🟡 Amélioration
 
-9. Indexer les 48 clés étrangères non couvertes et supprimer les 13 index
-    dupliqués + 97 index inutilisés (C.8).
-10. Ajouter `SET search_path` sur les 7 fonctions qui n'en ont pas (C.9).
+9. ✅ **[FAIT — 31/07]** Indexer les 48 clés étrangères et supprimer les 13
+    index strictement dupliqués. Les index seulement marqués « inutilisés »
+    restent conservés jusqu'à disposer d'un historique fiable.
+10. ✅ **[FAIT — 31/07]** Ajouter `SET search_path` sur les 7 fonctions.
 11. Déplacer `citext` et `pg_trgm` hors du schéma `public` (C.9).
 12. Documenter/clarifier `cp_rate_limit_buckets` (RLS sans policy — C.9).
 13. Raccourcir l'expiration OTP, activer la protection mots de passe
     compromis, mettre à jour la version Postgres du projet (C.9).
-14. Nettoyer les 31 `print(` restants vers le logger applicatif.
+14. ✅ **[FAIT — 31/07]** Nettoyer les 30 `print(` applicatifs ; seul le
+    backend interne de `AppConsoleLogger` conserve volontairement `print`.
 15. Trancher les 2 doublons de questions cross-module dans
     `quiz_scolarite_questions` (C.9).
 16. **Nettoyer les ~359 fichiers PA Scolarité confirmés inutilisés** (C.4,
@@ -653,13 +677,12 @@ manquant côté PA existait déjà en fichier mais n'était reliée à aucun men
     Seul `quiz_culture_generale_france.dart` affiche le compte exact, la
     famille allégée stockant ses réponses dans une liste et non une map.
 
-17. Crawl automatisé des menus (y compris recherche interne) pour détecter
-    d'éventuelles pages routées mais jamais liées depuis aucun point d'entrée
-    (« orphelines » au sens inverse de C.4) — l'audit du 29/07 n'a couvert
-    que le menu principal PA Scolarité.
-18. Mettre en place un test de non-régression automatisé sur le routing
-    (script similaire à celui utilisé pour cet audit, à intégrer en CI) pour
-    empêcher qu'une future page reparte non routée.
+17. ✅ **[FAIT — 31/07]** Test automatisé des menus principaux GPX/PA et des
+    redirections PA Scolarité. Il a détecté puis permis de corriger les
+    redirections qui n'étaient pas appliquées aux sous-rubriques. Le crawl de
+    la recherche interne reste une amélioration distincte.
+18. ✅ **[FAIT — 31/07]** Test de non-régression ajouté dans
+    `test/core/menu_routes_test.dart` ; suite complète : **111 tests réussis**.
 19. Étendre la déduplication `quiz_questions` à une politique d'insertion qui
     empêche la réintroduction de doublons (contrainte `UNIQUE(module,
     category, question)` ou vérification applicative avant insert).
@@ -790,8 +813,7 @@ Trois audits statiques repassés à zéro sur les 212 fichiers : équilibrage et
 doublons de membres, paramètres requis des appels, cycles de vie des
 contrôleurs (mixin présent, bon type, `dispose()` systématique).
 
-⚠️ **`flutter analyze` doit être relancé** pour confirmer — non disponible dans
-l'environnement où les correctifs ont été écrits.
+✅ **`flutter analyze` relancé le 31/07** : 0 problème.
 
 ### 🟡 K.5 — Énoncés qui répètent leurs propres réponses (non corrigé en base)
 
@@ -809,6 +831,49 @@ quelle phrase). Sinon le libellé passe intact.
 
 **C'est un filet, pas un remède.** La correction de fond est un `UPDATE` sur
 `quiz_questions` — non fait, volume non mesuré.
+
+---
+
+## ✅ L — Communauté globale COP’IQ (01/08/2026)
+
+- Forum Flutter partagé entre `pa_exam`, `gpx_exam`, `pa_school` et
+  `gpx_school`, avec fil global ou spécialisé.
+- Publications, commentaires, réactions, favoris, signalements et compteurs
+  atomiques reliés à Supabase.
+- Profils communautaires détaillés et réglages de confidentialité. Les fonctions
+  publiques n'exposent jamais email, téléphone, ville ou anniversaire.
+- Recherche PostgreSQL plein texte en français pour les publications, recherche
+  de membres, filtres par espace et pagination limitée côté serveur.
+- Création atomique d'une conversation depuis un profil, blocages vérifiés en
+  base, messagerie Flutter et réception Realtime.
+- Partage natif et partage interne vers une conversation, avec comptage
+  idempotent.
+- Abonnement/désabonnement aux discussions et notifications des réponses.
+- Centre visuel de notifications avec états lus/non lus et navigation vers la
+  publication, la conversation ou le commentaire précis concerné.
+- Discussions hiérarchiques paginées : tri pertinent/récent/ancien, réponses
+  imbriquées chargées par lots, retour au parent et indicateur Realtime des
+  nouvelles réponses sans déplacement brutal du fil.
+- Réactions sur les commentaires avec liste des membres, mentions de profils,
+  brouillons automatiques et choix d'une réponse comme solution par l'auteur.
+- Gestion complète des commentaires : modification, suppression conservant le
+  fil, copie, signalement, blocage et états visuels de modération.
+- Protections anti-spam en base (doublons rapprochés et rafales), compteur de
+  réactions atomique et index dédiés aux fils volumineux.
+- Liens profonds `/forum/<uuid>` pris en charge.
+- 19 tables `community_*` protégées par RLS ; rôle `anon` sans privilège sur
+  les données communautaires ; journal de modération immuable.
+- Tests transactionnels Supabase réussis sans conserver de données de test :
+  propriété, compteurs, recherche, profil public, partage, abonnements,
+  notifications, messagerie, solution et anti-spam. `flutter analyze` :
+  0 problème ; tests modèles : 7/7 réussis.
+
+### 🟡 L.1 — Panel administrateur web séparé
+
+Le code du panel web n'est volontairement pas inclus dans Flutter. Son cahier
+des charges se trouve dans
+`progression/PROMPT_PANEL_ADMIN_FORUM.md` et doit être exécuté dans le projet web
+source avant de régénérer l'export destiné à l'hébergeur.
 
 ---
 

@@ -14,7 +14,9 @@ import 'package:copiqpolice/features/home/home_page.dart'
     show CategoryConfig, SubCategoryConfig, Track, UserMode;
 
 // ==== Pages existantes ====
-import 'package:copiqpolice/features/home/journal_pa_school.dart';
+import 'package:copiqpolice/features/home/pa_exam_progress_page.dart';
+import 'package:copiqpolice/features/forum/community_models.dart';
+import 'package:copiqpolice/features/forum/community_page.dart';
 import 'package:copiqpolice/features/home/pa_progression_service.dart';
 import 'package:copiqpolice/features/home/favoris_home.dart';
 import 'package:copiqpolice/core/services/favorites.dart';
@@ -69,8 +71,11 @@ class HomePagePaExam extends StatefulWidget {
   State<HomePagePaExam> createState() => _HomePagePaExamState();
 }
 
-class _HomePagePaExamState extends State<HomePagePaExam> {
+class _HomePagePaExamState extends State<HomePagePaExam>
+    with SingleTickerProviderStateMixin {
   int _currentTab = 0;
+  late final AnimationController _entryController;
+  bool _entryStarted = false;
 
   // ✅ Mémorisation du scroll + états enfants (deck, listes, etc.)
   final PageStorageBucket _bucket = PageStorageBucket();
@@ -98,7 +103,53 @@ class _HomePagePaExamState extends State<HomePagePaExam> {
   @override
   void initState() {
     super.initState();
+    _entryController = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 760),
+    );
     _loadUsername(); // charge {username} éventuellement
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    if (_entryStarted) return;
+    _entryStarted = true;
+    if (MediaQuery.disableAnimationsOf(context)) {
+      _entryController.value = 1;
+    } else {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (mounted) _entryController.forward();
+      });
+    }
+  }
+
+  @override
+  void dispose() {
+    _entryController.dispose();
+    super.dispose();
+  }
+
+  Widget _entrance({
+    required Widget child,
+    required double begin,
+    required double end,
+  }) {
+    if (MediaQuery.disableAnimationsOf(context)) return child;
+    final animation = CurvedAnimation(
+      parent: _entryController,
+      curve: Interval(begin, end, curve: Curves.easeOutCubic),
+    );
+    return FadeTransition(
+      opacity: animation,
+      child: SlideTransition(
+        position: Tween<Offset>(
+          begin: const Offset(0, .045),
+          end: Offset.zero,
+        ).animate(animation),
+        child: child,
+      ),
+    );
   }
 
   Future<void> _loadUsername() async {
@@ -243,8 +294,8 @@ class _HomePagePaExamState extends State<HomePagePaExam> {
     // Onglets
     final icons = const [
       Icons.home_rounded, // 0
-      Icons.article_rounded, // 1 = Journal
-      Icons.qr_code_rounded,
+      Icons.insights_rounded, // 1 = Mon suivi
+      Icons.forum_rounded,
       Icons.favorite_rounded,
       Icons.person_rounded,
     ];
@@ -259,154 +310,178 @@ class _HomePagePaExamState extends State<HomePagePaExam> {
             const SizedBox(height: 14),
 
             // Header
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20),
-              child: Row(
-                children: [
-                  Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Row(
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            Expanded(
-                              child: Text(
-                                _isLoadingUsername
-                                    ? 'Bonjour 👋'
-                                    : (_username != null
-                                          ? 'Bonjour ${_username!}'
-                                          : 'Bonjour 👋'),
-                                maxLines: 1,
-                                overflow: TextOverflow.ellipsis,
-                                style: GoogleFonts.poppins(
-                                  fontSize: 22,
-                                  fontWeight: FontWeight.w900,
+            _entrance(
+              begin: 0,
+              end: .34,
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20),
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Expanded(
+                                child: Text(
+                                  _isLoadingUsername
+                                      ? 'Bonjour 👋'
+                                      : (_username != null
+                                            ? 'Bonjour ${_username!}'
+                                            : 'Bonjour 👋'),
+                                  maxLines: 1,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: GoogleFonts.poppins(
+                                    fontSize: 22,
+                                    fontWeight: FontWeight.w900,
+                                  ),
                                 ),
                               ),
-                            ),
-                          ],
-                        ),
-                        const SizedBox(height: 4),
-                        Text(
-                          'Bienvenue sur COP’IQ',
-                          style: theme.textTheme.bodySmall?.copyWith(
-                            color: _muted(context, .7),
-                            fontWeight: FontWeight.w600,
+                            ],
                           ),
-                        ),
-                      ],
+                          const SizedBox(height: 4),
+                          Text(
+                            'Prêt à préparer ton concours ?',
+                            style: theme.textTheme.bodySmall?.copyWith(
+                              color: _muted(context, .7),
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
-                  ),
-                  _IconCircle(
-                    icon: Icons.school_rounded,
-                    onTap: () {
-                      Navigator.of(context).push(
-                        MaterialPageRoute(
-                          builder: (_) => const ModePickerScreen(),
-                        ),
-                      );
-                    },
-                  ),
-                ],
+                    _IconCircle(
+                      icon: Icons.school_rounded,
+                      onTap: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (_) => const ModePickerScreen(),
+                          ),
+                        );
+                      },
+                    ),
+                  ],
+                ),
               ),
             ),
 
             const SizedBox(height: 12),
 
             // Recherche + réglages
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20),
-              child: Row(
-                children: [
-                  Expanded(
-                    child: Container(
-                      height: 44,
-                      decoration: BoxDecoration(
-                        color: theme.cardColor,
-                        borderRadius: BorderRadius.circular(14),
-                        boxShadow: const [_T.shadow],
-                      ),
-                      padding: const EdgeInsets.symmetric(horizontal: 12),
-                      child: Row(
-                        children: [
-                          const Icon(Icons.search_rounded, size: 20),
-                          const SizedBox(width: 8),
-                          Expanded(
-                            child: TextField(
-                              decoration: InputDecoration(
-                                border: InputBorder.none,
-                                hintText: 'Rechercher',
-                                hintStyle: theme.textTheme.bodyMedium?.copyWith(
-                                  color: _muted(context, .6),
+            _entrance(
+              begin: .08,
+              end: .44,
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20),
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: Container(
+                        height: 44,
+                        decoration: BoxDecoration(
+                          color: theme.cardColor,
+                          borderRadius: BorderRadius.circular(14),
+                          boxShadow: const [_T.shadow],
+                        ),
+                        padding: const EdgeInsets.symmetric(horizontal: 12),
+                        child: Row(
+                          children: [
+                            const Icon(Icons.search_rounded, size: 20),
+                            const SizedBox(width: 8),
+                            Expanded(
+                              child: TextField(
+                                decoration: InputDecoration(
+                                  border: InputBorder.none,
+                                  hintText: 'Rechercher un cours, un quiz…',
+                                  hintStyle: theme.textTheme.bodyMedium
+                                      ?.copyWith(color: _muted(context, .6)),
                                 ),
                               ),
                             ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
                     ),
-                  ),
-                  const SizedBox(width: 10),
-                  _IconCircle(
-                    icon: Icons.settings_rounded,
-                    onTap: () {
-                      Navigator.of(context).push(
-                        MaterialPageRoute(
-                          builder: (_) => const ParametreHomePage(),
-                        ),
-                      );
-                    },
-                  ),
-                ],
+                    const SizedBox(width: 10),
+                    _IconCircle(
+                      icon: Icons.settings_rounded,
+                      onTap: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (_) => const ParametreHomePage(),
+                          ),
+                        );
+                      },
+                    ),
+                  ],
+                ),
               ),
             ),
 
             const SizedBox(height: 22),
 
-            // Titres
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20),
-              child: Text(
-                'Concours — Policier Adjoint',
-                style: theme.textTheme.titleLarge?.copyWith(
-                  fontWeight: FontWeight.w900,
+            // Concours préparé
+            _entrance(
+              begin: .18,
+              end: .54,
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20),
+                child: Text(
+                  'Concours Policier adjoint',
+                  style: theme.textTheme.titleMedium?.copyWith(
+                    color: theme.colorScheme.onSurfaceVariant,
+                    fontWeight: FontWeight.w700,
+                  ),
                 ),
               ),
             ),
             const SizedBox(height: 8),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20),
-              child: Text(
-                'Sélection de contenu',
-                style: theme.textTheme.titleMedium?.copyWith(
-                  fontWeight: FontWeight.w800,
+            _entrance(
+              begin: .24,
+              end: .60,
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20),
+                child: Text(
+                  'À découvrir',
+                  style: theme.textTheme.titleMedium?.copyWith(
+                    fontWeight: FontWeight.w800,
+                  ),
                 ),
               ),
             ),
             const SizedBox(height: 10),
 
             // ===== HÉRO CAROUSEL =====
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20),
-              child: _HeroDeck(
-                key: const PageStorageKey('pa-hero-deck'),
-                height: 330,
-                items: deckItems,
-                initialIndex: _initialDeckIndex,
+            _entrance(
+              begin: .32,
+              end: .78,
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20),
+                child: _HeroDeck(
+                  key: const PageStorageKey('pa-hero-deck'),
+                  height: 330,
+                  items: deckItems,
+                  initialIndex: _initialDeckIndex,
+                ),
               ),
             ),
 
             const SizedBox(height: 26),
 
             // ===== Continue ta préparation (progression perso PA) =====
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20),
-              child: _ContinuePreparationSection(
-                key: const PageStorageKey('pa-continue-section'),
-                onOpenResume: _openResume,
-                onStart: _openFirstCategory,
-                onSeeAll: () => _goToTab(1),
+            _entrance(
+              begin: .48,
+              end: 1,
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20),
+                child: _ContinuePreparationSection(
+                  key: const PageStorageKey('pa-continue-section'),
+                  onOpenResume: _openResume,
+                  onStart: _openFirstCategory,
+                  onSeeAll: () => _goToTab(1),
+                ),
               ),
             ),
 
@@ -416,8 +491,8 @@ class _HomePagePaExamState extends State<HomePagePaExam> {
       ),
 
       // ===== Autres onglets =====
-      const JournalPaSchoolPage(), // index 1
-      const _StubPage(title: 'QR'),
+      PaExamProgressPage(onStart: _openFirstCategory), // index 1
+      const CommunityPage(initialScope: CommunityScope.paExam),
       const FavorisHomePage(),
       const ProfilPage(),
     ];
@@ -985,7 +1060,7 @@ class _ContinuePreparationSectionState
               child: Padding(
                 padding: const EdgeInsets.all(6.0),
                 child: Text(
-                  'Tout voir',
+                  'Voir mon parcours',
                   style: TextStyle(
                     fontWeight: FontWeight.w700,
                     color: _muted(context, .7),
@@ -1018,7 +1093,9 @@ class _ContinuePreparationSectionState
                   icon: Icons.local_fire_department_rounded,
                   iconColor: const Color(0xFFF5A623),
                   value: '${snap.streakDays}',
-                  label: snap.streakDays <= 1 ? 'jour de suite' : 'jours de suite',
+                  label: snap.streakDays <= 1
+                      ? 'jour de suite'
+                      : 'jours de suite',
                 ),
               ),
               const SizedBox(width: 10),
@@ -1426,9 +1503,7 @@ class _ChipsSkeleton extends StatelessWidget {
         ),
       ),
     );
-    return Row(
-      children: [chip(), const SizedBox(width: 10), chip()],
-    );
+    return Row(children: [chip(), const SizedBox(width: 10), chip()]);
   }
 }
 
@@ -1980,7 +2055,7 @@ const Map<UserMode, Map<Track, List<CategoryConfig>>> categoriesConfigPA = {
       // ------------------------------------------------------------------
       CategoryConfig(
         label: 'Les épreuves du concours PA',
-        badge: 'Vue d’ensemble',
+        badge: 'Bien démarrer',
         image: 'assets/images/concours_pa_epreuves.jpeg',
         route: '/pa_exam/concours/epreuves',
         subcategories: [
@@ -2131,4 +2206,3 @@ class _DeckItem {
     this.subcategories,
   });
 }
-

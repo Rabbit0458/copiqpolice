@@ -93,6 +93,36 @@ Future<bool> _ensureSessionHydrated({String origin = ''}) async {
 // =============================================================================
 
 Route<dynamic>? appOnGenerateRoute(RouteSettings settings) {
+  if (settings.name?.startsWith('/forum/') == true) {
+    final postId = settings.name!.substring('/forum/'.length);
+    final arguments = settings.arguments is Map
+        ? settings.arguments as Map
+        : const <dynamic, dynamic>{};
+    final initialCommentId = arguments['commentId'] as String?;
+    return MaterialPageRoute(
+      settings: settings,
+      builder: (_) => FutureBuilder(
+        future: CommunityRepository().post(postId),
+        builder: (context, snapshot) {
+          if (snapshot.connectionState == ConnectionState.waiting) {
+            return const Scaffold(
+              body: Center(child: CircularProgressIndicator()),
+            );
+          }
+          if (!snapshot.hasData) {
+            return const Scaffold(
+              body: Center(child: Text('Publication indisponible')),
+            );
+          }
+          return CommunityPostPage(
+            post: snapshot.data!,
+            repository: CommunityRepository(),
+            initialCommentId: initialCommentId,
+          );
+        },
+      ),
+    );
+  }
   switch (settings.name) {
     case '/signup':
       return MaterialPageRoute(
@@ -139,7 +169,12 @@ Route<dynamic>? appOnGenerateRoute(RouteSettings settings) {
       );
 
     default:
-      final builder = RouteRegistry.routes[settings.name];
+      // Les écrans PA les plus sensibles (quiz, écrans avec arguments, etc.)
+      // restent prioritaires dans le registre principal. Le registre généré
+      // couvre ensuite toutes les fiches et sous-fiches de la scolarité PA.
+      final builder =
+          RouteRegistry.routes[settings.name] ??
+          PaSchoolRouteRegistry.routes[settings.name];
       if (builder != null) {
         return MaterialPageRoute(builder: builder, settings: settings);
       }
@@ -178,6 +213,13 @@ class RouteRegistry {
     // Alias historique : plusieurs écrans poussent encore '/subscription'.
     '/subscription': (_) => const AbonnementPage(),
     "/premium-required": (_) => const PremiumRequiredPage(),
+    // Retour de paiement Stripe Checkout (deep links copiqpolice://paywall/success
+    // et copiqpolice://paywall/cancel — voir deep_links_service.dart). Donne accès
+    // à toute l'app (PA/GPX exam & school) une fois l'utilisateur passé par cet écran.
+    PaymentResultPage.routeNameSuccess: (_) =>
+        const PaymentResultPage(status: PaymentResultStatus.success),
+    PaymentResultPage.routeNameCancel: (_) =>
+        const PaymentResultPage(status: PaymentResultStatus.cancel),
 
     // ================== GPX : Généralités ==================
     '/gpx/generalites/classification_infractions': (_) =>
@@ -199,33 +241,58 @@ class RouteRegistry {
     '/gpx/generalites/complicite/repression': (_) =>
         const CompliciteRepressionPage(),
     // ===== ROUTES PA MÉMENTO CIRCULATION ROUTIÈRE =====
-    '/pa/memento_circulation/procedures/amende_forfaitaire': (_) => const AmendeForfaitairePage(),
-    '/pa/memento_circulation/procedures/amende_forfaitaire_delictuelle': (_) => const AmendeForfaitaireDelictuellePage(),
-    '/pa/memento_circulation/procedures/consignation': (_) => const ConsignationPage(),
-    '/pa/memento_circulation/procedures/immobilisation': (_) => const ImmobilisationPage(),
-    '/pa/memento_circulation/procedures/mise_en_fourriere': (_) => const MiseEnFourrierePage(),
-    '/pa/memento_circulation/procedures/conduite_alcool': (_) => const ConduiteAlcoolPage(),
-    '/pa/memento_circulation/procedures/conduite_stupefiants': (_) => const ConduiteApresUsageStupefiantsPage(),
-    '/pa/memento_circulation/procedures/retention_permis': (_) => const RetentionPermisConduirePage(),
-    '/pa/memento_circulation/procedures/permis_a_points': (_) => const PermisAPointsPage(),
-    '/pa/memento_circulation/controle_routier/cadre_legal': (_) => const CadreLegalControleRoutierPage(),
-    '/pa/memento_circulation/controle_routier/permis_conduire': (_) => const PermisConduirePage(),
+    '/pa/memento_circulation/procedures/amende_forfaitaire': (_) =>
+        const AmendeForfaitairePage(),
+    '/pa/memento_circulation/procedures/amende_forfaitaire_delictuelle': (_) =>
+        const AmendeForfaitaireDelictuellePage(),
+    '/pa/memento_circulation/procedures/consignation': (_) =>
+        const ConsignationPage(),
+    '/pa/memento_circulation/procedures/immobilisation': (_) =>
+        const ImmobilisationPage(),
+    '/pa/memento_circulation/procedures/mise_en_fourriere': (_) =>
+        const MiseEnFourrierePage(),
+    '/pa/memento_circulation/procedures/conduite_alcool': (_) =>
+        const ConduiteAlcoolPage(),
+    '/pa/memento_circulation/procedures/conduite_stupefiants': (_) =>
+        const ConduiteApresUsageStupefiantsPage(),
+    '/pa/memento_circulation/procedures/retention_permis': (_) =>
+        const RetentionPermisConduirePage(),
+    '/pa/memento_circulation/procedures/permis_a_points': (_) =>
+        const PermisAPointsPage(),
+    '/pa/memento_circulation/controle_routier/cadre_legal': (_) =>
+        const CadreLegalControleRoutierPage(),
+    '/pa/memento_circulation/controle_routier/permis_conduire': (_) =>
+        const PermisConduirePage(),
     '/pa/memento_circulation/controle_routier/bsr': (_) => const BsrPage(),
-    '/pa/memento_circulation/controle_routier/certificat_immatriculation': (_) => const CertificatImmatriculationPage(),
-    '/pa/memento_circulation/controle_routier/controle_technique': (_) => const ControleTechniquePage(),
-    '/pa/memento_circulation/controle_routier/assurance_obligatoire': (_) => const AssuranceObligatoirePage(),
-    '/pa/memento_circulation/equipements/pneumatiques': (_) => const PneumatiquesPage(),
-    '/pa/memento_circulation/equipements/eclairage_signalisation': (_) => const EclairageSignalisationPage(),
-    '/pa/memento_circulation/equipements/chargement': (_) => const ChargementPage(),
+    '/pa/memento_circulation/controle_routier/certificat_immatriculation':
+        (_) => const CertificatImmatriculationPage(),
+    '/pa/memento_circulation/controle_routier/controle_technique': (_) =>
+        const ControleTechniquePage(),
+    '/pa/memento_circulation/controle_routier/assurance_obligatoire': (_) =>
+        const AssuranceObligatoirePage(),
+    '/pa/memento_circulation/equipements/pneumatiques': (_) =>
+        const PneumatiquesPage(),
+    '/pa/memento_circulation/equipements/eclairage_signalisation': (_) =>
+        const EclairageSignalisationPage(),
+    '/pa/memento_circulation/equipements/chargement': (_) =>
+        const ChargementPage(),
     '/pa/memento_circulation/equipements/plaques': (_) => const PlaquesPage(),
-    '/pa/memento_circulation/equipements/retroviseurs_vision': (_) => const RetroviseursVisionPage(),
-    '/pa/memento_circulation/equipements/essuie_glace': (_) => const EssuieGlacePage(),
-    '/pa/memento_circulation/equipements/nuisances': (_) => const NuisancesVehiculesPage(),
-    '/pa/memento_circulation/equipements/ceinture_retenue_enfant': (_) => const CeintureRetenueEnfantPage(),
-    '/pa/memento_circulation/equipements/casque_gants': (_) => const CasqueGantsPage(),
-    '/pa/memento_circulation/equipements/casque_cycliste': (_) => const CasqueCyclistePage(),
-    '/pa/memento_circulation/equipements/gilet_haute_visibilite': (_) => const GiletHauteVisibilitePage(),
-    '/gpx/pv_apj20/ipm/pv_ipm_remise_tiers': (_) => const PvIpmRemiseTiersPage(),
+    '/pa/memento_circulation/equipements/retroviseurs_vision': (_) =>
+        const RetroviseursVisionPage(),
+    '/pa/memento_circulation/equipements/essuie_glace': (_) =>
+        const EssuieGlacePage(),
+    '/pa/memento_circulation/equipements/nuisances': (_) =>
+        const NuisancesVehiculesPage(),
+    '/pa/memento_circulation/equipements/ceinture_retenue_enfant': (_) =>
+        const CeintureRetenueEnfantPage(),
+    '/pa/memento_circulation/equipements/casque_gants': (_) =>
+        const CasqueGantsPage(),
+    '/pa/memento_circulation/equipements/casque_cycliste': (_) =>
+        const CasqueCyclistePage(),
+    '/pa/memento_circulation/equipements/gilet_haute_visibilite': (_) =>
+        const GiletHauteVisibilitePage(),
+    '/gpx/pv_apj20/ipm/pv_ipm_remise_tiers': (_) =>
+        const PvIpmRemiseTiersPage(),
     GpxExamCultureGeneralePage.routeName: (_) =>
         const GpxExamCultureGeneralePage(),
     ResetPasswordPage.routeName: (_) => const ResetPasswordPage(),
@@ -287,7 +354,9 @@ class RouteRegistry {
     '/gpx/intervention/mineurs/quiz': (_) =>
         const QuizScolariteDynamiquePage(module: 'gpx_intervention_mineurs'),
     '/gpx/intervention/stupefiants/quiz': (_) =>
-        const QuizScolariteDynamiquePage(module: 'gpx_intervention_stupefiants'),
+        const QuizScolariteDynamiquePage(
+          module: 'gpx_intervention_stupefiants',
+        ),
     '/gpx/intervention/autres/quiz': (_) =>
         const QuizScolariteDynamiquePage(module: 'gpx_intervention_autres'),
     '/gpx/memento_circulation/controle_routier/quiz': (_) =>
@@ -295,9 +364,7 @@ class RouteRegistry {
           module: 'gpx_circulation_controle_routier',
         ),
     '/gpx/memento_circulation/equipements/quiz': (_) =>
-        const QuizScolariteDynamiquePage(
-          module: 'gpx_circulation_equipements',
-        ),
+        const QuizScolariteDynamiquePage(module: 'gpx_circulation_equipements'),
     '/gpx/memento_circulation/procedures/quiz': (_) =>
         const QuizScolariteDynamiquePage(module: 'gpx_circulation_procedures'),
 
@@ -336,7 +403,8 @@ class RouteRegistry {
     // Communication & posture
     '/gpx/dimension_humaine/communication/dh1_fonctionnement': (_) =>
         const CoursScolaritePage(
-          courseRoute: '/gpx/dimension_humaine/communication/dh1_fonctionnement',
+          courseRoute:
+              '/gpx/dimension_humaine/communication/dh1_fonctionnement',
         ),
     '/gpx/dimension_humaine/communication/dh3_strategies_public': (_) =>
         const CoursScolaritePage(
@@ -353,8 +421,8 @@ class RouteRegistry {
           courseRoute:
               '/gpx/dimension_humaine/communication/adh2_posture_victime',
         ),
-    '/gpx/dimension_humaine/communication/s3_2_violences_intrafamiliales': (_) =>
-        const CoursScolaritePage(
+    '/gpx/dimension_humaine/communication/s3_2_violences_intrafamiliales':
+        (_) => const CoursScolaritePage(
           courseRoute:
               '/gpx/dimension_humaine/communication/s3_2_violences_intrafamiliales',
         ),
@@ -375,7 +443,8 @@ class RouteRegistry {
         ),
     '/gpx/dimension_humaine/stress/ac6_conduites_suicidaires': (_) =>
         const CoursScolaritePage(
-          courseRoute: '/gpx/dimension_humaine/stress/ac6_conduites_suicidaires',
+          courseRoute:
+              '/gpx/dimension_humaine/stress/ac6_conduites_suicidaires',
         ),
     '/gpx/dimension_humaine/stress/quiz': (_) =>
         const QuizScolariteDynamiquePage(module: 'gpx_dh_stress'),
@@ -416,20 +485,14 @@ class RouteRegistry {
     '/gpx_exam/concours/culture_generale_langue': (_) {
       final user = Supabase.instance.client.auth.currentUser;
       if (user == null) return const SignInPage();
-      return QuizCultureGeneralFrance(
-        uid: user.id,
-        email: user.email ?? '',
-      );
+      return QuizCultureGeneralFrance(uid: user.id, email: user.email ?? '');
     },
 
     // PA SCOLARITE — le quiz existait sous un autre chemin.
     '/pa/dps_dpg/quiz/quiz_circulation_routiere': (_) {
       final user = Supabase.instance.client.auth.currentUser;
       if (user == null) return const SignInPage();
-      return QuizCirculationRoutierePA(
-        uid: user.id,
-        email: user.email ?? '',
-      );
+      return QuizCirculationRoutierePA(uid: user.id, email: user.email ?? '');
     },
 
     // ─────────────────────────────────────────────────────────────────────
@@ -453,10 +516,7 @@ class RouteRegistry {
     QuizLibertesPubliquesPage.routeName: (_) {
       final user = Supabase.instance.client.auth.currentUser;
       if (user == null) return const SignInPage();
-      return QuizLibertesPubliquesPage(
-        uid: user.id,
-        email: user.email ?? '',
-      );
+      return QuizLibertesPubliquesPage(uid: user.id, email: user.email ?? '');
     },
 
     CasPratiqueMyAppealsPage.routeName: (_) => const CasPratiqueMyAppealsPage(),
@@ -534,13 +594,17 @@ class RouteRegistry {
     AutresCadresEnquetePage.routeName: (_) => const AutresCadresEnquetePage(),
     CadresEnquetePage.routeName: (_) => const CadresEnquetePage(),
     EnquetePreliminairePage.routeName: (_) => const EnquetePreliminairePage(),
-    ArmesAcquisitionDetentionABPage.routeName: (_) => const ArmesAcquisitionDetentionABPage(),
+    ArmesAcquisitionDetentionABPage.routeName: (_) =>
+        const ArmesAcquisitionDetentionABPage(),
     ArmesClassificationPage.routeName: (_) => const ArmesClassificationPage(),
     ArmesDefinitionsPage.routeName: (_) => const ArmesDefinitionsPage(),
-    ArmesMaterielsGuerreElementsPage.routeName: (_) => const ArmesMaterielsGuerreElementsPage(),
+    ArmesMaterielsGuerreElementsPage.routeName: (_) =>
+        const ArmesMaterielsGuerreElementsPage(),
     ArmesPortTransportCDPage.routeName: (_) => const ArmesPortTransportCDPage(),
-    ArmesReglesAcquisitionDetentionPage.routeName: (_) => const ArmesReglesAcquisitionDetentionPage(),
-    ArmesReglesPortTransportPage.routeName: (_) => const ArmesReglesPortTransportPage(),
+    ArmesReglesAcquisitionDetentionPage.routeName: (_) =>
+        const ArmesReglesAcquisitionDetentionPage(),
+    ArmesReglesPortTransportPage.routeName: (_) =>
+        const ArmesReglesPortTransportPage(),
     // PA — Armes & munitions (catégorie dédiée, câblée le 29/07/2026,
     // séparation stricte PA/GPX)
     PaArmesAcquisitionDetentionABPage.routeName: (_) =>
@@ -557,60 +621,92 @@ class RouteRegistry {
         const PaArmesReglesAcquisitionDetentionPage(),
     PaArmesReglesPortTransportPage.routeName: (_) =>
         const PaArmesReglesPortTransportPage(),
-    RecelNonJustificationContenuPage.routeName: (_) => const RecelNonJustificationContenuPage(),
+    RecelNonJustificationContenuPage.routeName: (_) =>
+        const RecelNonJustificationContenuPage(),
     VolPage.routeName: (_) => const VolPage(),
-    LibertesPubliquesIntroductionContenuPage.routeName: (_) => const LibertesPubliquesIntroductionContenuPage(),
-    StupefiantsBlanchimentProduitPage.routeName: (_) => const StupefiantsBlanchimentProduitPage(),
-    StupefiantsCessionOffrePage.routeName: (_) => const StupefiantsCessionOffrePage(),
-    StupefiantsDirectionOrganisationPage.routeName: (_) => const StupefiantsDirectionOrganisationPage(),
-    StupefiantsFacilitationUsagePage.routeName: (_) => const StupefiantsFacilitationUsagePage(),
-    StupefiantsImportExportPage.routeName: (_) => const StupefiantsImportExportPage(),
-    StupefiantsIntroductionPage.routeName: (_) => const StupefiantsIntroductionPage(),
-    StupefiantsProductionFabricationPage.routeName: (_) => const StupefiantsProductionFabricationPage(),
-    StupefiantsProvocationMajeurPage.routeName: (_) => const StupefiantsProvocationMajeurPage(),
-    StupefiantsTransportDetentionOffrePage.routeName: (_) => const StupefiantsTransportDetentionOffrePage(),
-    StupefiantsUsageIllicitePage.routeName: (_) => const StupefiantsUsageIllicitePage(),
+    LibertesPubliquesIntroductionContenuPage.routeName: (_) =>
+        const LibertesPubliquesIntroductionContenuPage(),
+    StupefiantsBlanchimentProduitPage.routeName: (_) =>
+        const StupefiantsBlanchimentProduitPage(),
+    StupefiantsCessionOffrePage.routeName: (_) =>
+        const StupefiantsCessionOffrePage(),
+    StupefiantsDirectionOrganisationPage.routeName: (_) =>
+        const StupefiantsDirectionOrganisationPage(),
+    StupefiantsFacilitationUsagePage.routeName: (_) =>
+        const StupefiantsFacilitationUsagePage(),
+    StupefiantsImportExportPage.routeName: (_) =>
+        const StupefiantsImportExportPage(),
+    StupefiantsIntroductionPage.routeName: (_) =>
+        const StupefiantsIntroductionPage(),
+    StupefiantsProductionFabricationPage.routeName: (_) =>
+        const StupefiantsProductionFabricationPage(),
+    StupefiantsProvocationMajeurPage.routeName: (_) =>
+        const StupefiantsProvocationMajeurPage(),
+    StupefiantsTransportDetentionOffrePage.routeName: (_) =>
+        const StupefiantsTransportDetentionOffrePage(),
+    StupefiantsUsageIllicitePage.routeName: (_) =>
+        const StupefiantsUsageIllicitePage(),
 
     // ── PA SCOLARITE — pages existantes qui n'etaient pas routees (41) ──
     PaCadresEnqueteIntroPage.routeName: (_) => const PaCadresEnqueteIntroPage(),
-    PaCommissionRogatoireIntroPage.routeName: (_) => const PaCommissionRogatoireIntroPage(),
-    PaControleIdentiteContenuPage.routeName: (_) => const PaControleIdentiteContenuPage(),
-    PaCriminaliteOrganiseeContenuPage.routeName: (_) => const PaCriminaliteOrganiseeContenuPage(),
+    PaCommissionRogatoireIntroPage.routeName: (_) =>
+        const PaCommissionRogatoireIntroPage(),
+    PaControleIdentiteContenuPage.routeName: (_) =>
+        const PaControleIdentiteContenuPage(),
+    PaCriminaliteOrganiseeContenuPage.routeName: (_) =>
+        const PaCriminaliteOrganiseeContenuPage(),
     PaDisparitionIntroPage.routeName: (_) => const PaDisparitionIntroPage(),
-    PaEnquetePreliminaireIntroPage.routeName: (_) => const PaEnquetePreliminaireIntroPage(),
+    PaEnquetePreliminaireIntroPage.routeName: (_) =>
+        const PaEnquetePreliminaireIntroPage(),
     PaFlagrantDelitIntroPage.routeName: (_) => const PaFlagrantDelitIntroPage(),
     PaMortInconnueIntroPage.routeName: (_) => const PaMortInconnueIntroPage(),
-    PaPersonneBlesseGrievementntroPage.routeName: (_) => const PaPersonneBlesseGrievementntroPage(),
-    PaPersonnesFuiteIntroGpxSchool.routeName: (_) => const PaPersonnesFuiteIntroGpxSchool(),
-    PaConduiteStupefiantsPage.routeName: (_) => const PaConduiteStupefiantsPage(),
+    PaPersonneBlesseGrievementntroPage.routeName: (_) =>
+        const PaPersonneBlesseGrievementntroPage(),
+    PaPersonnesFuiteIntroGpxSchool.routeName: (_) =>
+        const PaPersonnesFuiteIntroGpxSchool(),
+    PaConduiteStupefiantsPage.routeName: (_) =>
+        const PaConduiteStupefiantsPage(),
     PaDefautAssurancePage.routeName: (_) => const PaDefautAssurancePage(),
     PaDefautPermisPage.routeName: (_) => const PaDefautPermisPage(),
     PaDelitFuitePage.routeName: (_) => const PaDelitFuitePage(),
     PaEtatAlcooliquePage.routeName: (_) => const PaEtatAlcooliquePage(),
     PaGrandExcesVitessePage.routeName: (_) => const PaGrandExcesVitessePage(),
-    PaIncitationOrganisationPromotionPage.routeName: (_) => const PaIncitationOrganisationPromotionPage(),
+    PaIncitationOrganisationPromotionPage.routeName: (_) =>
+        const PaIncitationOrganisationPromotionPage(),
     PaIvressePage.routeName: (_) => const PaIvressePage(),
-    PaPlaquesInscriptionsPage.routeName: (_) => const PaPlaquesInscriptionsPage(),
+    PaPlaquesInscriptionsPage.routeName: (_) =>
+        const PaPlaquesInscriptionsPage(),
     PaRefusObtempererPage.routeName: (_) => const PaRefusObtempererPage(),
     PaRefusVerificationsPage.routeName: (_) => const PaRefusVerificationsPage(),
     PaRodeoMotorisePage.routeName: (_) => const PaRodeoMotorisePage(),
-    PaCharteAccueilPublicVictimesPage.routeName: (_) => const PaCharteAccueilPublicVictimesPage(),
-    PaDemarchesAdministrativesPage.routeName: (_) => const PaDemarchesAdministrativesPage(),
-    PaGpxDoctrineAccueilVictimesVcPage.routeName: (_) => const PaGpxDoctrineAccueilVictimesVcPage(),
-    PaReferentielMariannePage.routeName: (_) => const PaReferentielMariannePage(),
-    PaProtectionLocauxPolicePage.routeName: (_) => const PaProtectionLocauxPolicePage(),
-    PaCodeDeontologieCodeCommentePage.routeName: (_) => const PaCodeDeontologieCodeCommentePage(),
-    PaDroitsObligationsPoliciersPage.routeName: (_) => const PaDroitsObligationsPoliciersPage(),
-    PaEnqueteAdministrativePage.routeName: (_) => const PaEnqueteAdministrativePage(),
+    PaCharteAccueilPublicVictimesPage.routeName: (_) =>
+        const PaCharteAccueilPublicVictimesPage(),
+    PaDemarchesAdministrativesPage.routeName: (_) =>
+        const PaDemarchesAdministrativesPage(),
+    PaGpxDoctrineAccueilVictimesVcPage.routeName: (_) =>
+        const PaGpxDoctrineAccueilVictimesVcPage(),
+    PaReferentielMariannePage.routeName: (_) =>
+        const PaReferentielMariannePage(),
+    PaProtectionLocauxPolicePage.routeName: (_) =>
+        const PaProtectionLocauxPolicePage(),
+    PaCodeDeontologieCodeCommentePage.routeName: (_) =>
+        const PaCodeDeontologieCodeCommentePage(),
+    PaDroitsObligationsPoliciersPage.routeName: (_) =>
+        const PaDroitsObligationsPoliciersPage(),
+    PaEnqueteAdministrativePage.routeName: (_) =>
+        const PaEnqueteAdministrativePage(),
     PaHorsServiceAmarisPage.routeName: (_) => const PaHorsServiceAmarisPage(),
-    PaMarquesExterieuresRespectPage.routeName: (_) => const PaMarquesExterieuresRespectPage(),
+    PaMarquesExterieuresRespectPage.routeName: (_) =>
+        const PaMarquesExterieuresRespectPage(),
     PaReseauxSociauxPage.routeName: (_) => const PaReseauxSociauxPage(),
-    PaSanctionsRecompensesPage.routeName: (_) => const PaSanctionsRecompensesPage(),
+    PaSanctionsRecompensesPage.routeName: (_) =>
+        const PaSanctionsRecompensesPage(),
     PaCompteRenduPage.routeName: (_) => const PaCompteRenduPage(),
     PaFormalismeRapportPage.routeName: (_) => const PaFormalismeRapportPage(),
     PaModelesRapportsPage.routeName: (_) => const PaModelesRapportsPage(),
     PaHistoireReperesPage.routeName: (_) => const PaHistoireReperesPage(),
-    PaCharteLaiciteServicesPublicsPage.routeName: (_) => const PaCharteLaiciteServicesPublicsPage(),
+    PaCharteLaiciteServicesPublicsPage.routeName: (_) =>
+        const PaCharteLaiciteServicesPublicsPage(),
     PaGpxLaiciteDlpajPage.routeName: (_) => const PaGpxLaiciteDlpajPage(),
     PaRitesCultesFrancePage.routeName: (_) => const PaRitesCultesFrancePage(),
 
@@ -1159,8 +1255,7 @@ class RouteRegistry {
     PaOrganigrammesPnPage.routeName: (_) => const PaOrganigrammesPnPage(),
     PaHierarchiePnPage.routeName: (_) => const PaHierarchiePnPage(),
     PaReglesEmploiPaPage.routeName: (_) => const PaReglesEmploiPaPage(),
-    PaHorairesServiceSpPage.routeName: (_) =>
-        const PaHorairesServiceSpPage(),
+    PaHorairesServiceSpPage.routeName: (_) => const PaHorairesServiceSpPage(),
     CodeDeontologieCodeCommentePage.routeName: (_) =>
         const CodeDeontologieCodeCommentePage(),
     ClassificationInfractionsContenuPage.routeName: (_) =>
@@ -1762,10 +1857,7 @@ class RouteRegistry {
     },
     PaCgRoutes.exGeographie: (_) {
       final user = Supabase.instance.client.auth.currentUser;
-      return PaQuizCultureGeneraleGeographie(
-        uid: user!.id,
-        email: user.email!,
-      );
+      return PaQuizCultureGeneraleGeographie(uid: user!.id, email: user.email!);
     },
     PaCgRoutes.exFrancais: (_) {
       final user = Supabase.instance.client.auth.currentUser;
@@ -1789,10 +1881,7 @@ class RouteRegistry {
     },
     PaCgRoutes.exMythologie: (_) {
       final user = Supabase.instance.client.auth.currentUser;
-      return PaQuizCultureGeneraleMythologie(
-        uid: user!.id,
-        email: user.email!,
-      );
+      return PaQuizCultureGeneraleMythologie(uid: user!.id, email: user.email!);
     },
     PaCgRoutes.exMusique: (_) {
       final user = Supabase.instance.client.auth.currentUser;
@@ -1820,8 +1909,7 @@ class RouteRegistry {
     PaPhotolangageHubPage.routeName: (_) => const PaPhotolangageHubPage(),
     PaPhotolangageAnalysePage.routeName: (_) =>
         const PaPhotolangageAnalysePage(),
-    PaPhotolangageEtapesPage.routeName: (_) =>
-        const PaPhotolangageEtapesPage(),
+    PaPhotolangageEtapesPage.routeName: (_) => const PaPhotolangageEtapesPage(),
     PaPhotolangageTrainingListPage.routeName: (_) =>
         const PaPhotolangageTrainingListPage(),
     PaPhotolangageHistoryPage.routeName: (_) =>
@@ -2049,13 +2137,17 @@ class RouteRegistry {
       final user = Supabase.instance.client.auth.currentUser;
       return QuizBraceletElectroniquePagePA(uid: user!.id, email: user.email!);
     },
-    '/pa/infraction_circulation_routière_pages/quiz/pa_quiz_circulation_routiere': (_) {
-      final user = Supabase.instance.client.auth.currentUser;
-      return QuizCirculationRoutierePA(uid: user!.id, email: user.email!);
-    },
+    '/pa/infraction_circulation_routière_pages/quiz/pa_quiz_circulation_routiere':
+        (_) {
+          final user = Supabase.instance.client.auth.currentUser;
+          return QuizCirculationRoutierePA(uid: user!.id, email: user.email!);
+        },
     '/pa/generalites/quiz/classification_infractions': (_) {
       final user = Supabase.instance.client.auth.currentUser;
-      return QuizClassificationInfractionsPagePA(uid: user!.id, email: user.email!);
+      return QuizClassificationInfractionsPagePA(
+        uid: user!.id,
+        email: user.email!,
+      );
     },
     '/pa/generalites/quiz/commission_rogatoire': (_) {
       final user = Supabase.instance.client.auth.currentUser;
@@ -2107,7 +2199,10 @@ class RouteRegistry {
     },
     '/pa/procedure_penale/quiz/dispositions_applicables_mineurs': (_) {
       final user = Supabase.instance.client.auth.currentUser;
-      return QuizDispositionsApplicablesMineursPA(uid: user!.id, email: user.email!);
+      return QuizDispositionsApplicablesMineursPA(
+        uid: user!.id,
+        email: user.email!,
+      );
     },
     '/pa/droit_penal/quiz/droit_penal_general': (_) {
       final user = Supabase.instance.client.auth.currentUser;
@@ -2119,7 +2214,10 @@ class RouteRegistry {
     },
     '/pa/crimes_personne/quiz/enregistrement_diffusion_images': (_) {
       final user = Supabase.instance.client.auth.currentUser;
-      return QuizEnregistrementDiffusionImagesPA(uid: user!.id, email: user.email!);
+      return QuizEnregistrementDiffusionImagesPA(
+        uid: user!.id,
+        email: user.email!,
+      );
     },
     '/pa/nation/quiz/faux_usage_faux': (_) {
       final user = Supabase.instance.client.auth.currentUser;
@@ -2159,7 +2257,10 @@ class RouteRegistry {
     },
     '/pa/generalites/quiz/libertes_publiques_collectives': (_) {
       final user = Supabase.instance.client.auth.currentUser;
-      return QuizLibertesPubliquesCollectivesPagePA(uid: user!.id, email: user.email!);
+      return QuizLibertesPubliquesCollectivesPagePA(
+        uid: user!.id,
+        email: user.email!,
+      );
     },
     '/pa/generalites/quiz/garanties_libertes_publiques': (_) {
       final user = Supabase.instance.client.auth.currentUser;
@@ -2167,7 +2268,10 @@ class RouteRegistry {
     },
     '/pa/generalites/quiz/libertes_publiques_individuelles': (_) {
       final user = Supabase.instance.client.auth.currentUser;
-      return QuizLibertesPubliquesIndividuellesPagePA(uid: user!.id, email: user.email!);
+      return QuizLibertesPubliquesIndividuellesPagePA(
+        uid: user!.id,
+        email: user.email!,
+      );
     },
     '/pa/generalites/quiz/libertes_publiques': (_) {
       final user = Supabase.instance.client.auth.currentUser;
@@ -2356,13 +2460,40 @@ class RouteRegistry {
     '/pa_scolarite_pages/mineurs_famille_pages/violation_ordonnances_jaf/quiz_ordonnances_jaf':
         (_) {
           final user = Supabase.instance.client.auth.currentUser;
-          return QuizViolationOrdonnancesJafPA(uid: user!.id, email: user.email!);
+          return QuizViolationOrdonnancesJafPA(
+            uid: user!.id,
+            email: user.email!,
+          );
         },
     '/pa_scolarite_pages/mineurs_famille_pages/mise_en_peril/quiz_mise_en_peril':
         (_) {
           final user = Supabase.instance.client.auth.currentUser;
           return QuizMisePerilMineurPA(uid: user!.id, email: user.email!);
         },
+    // Alias canoniques utilisés par les cartes de cours PA. Les anciens
+    // chemins /pa_scolarite_pages restent disponibles pour compatibilité.
+    '/pa/dps_dpg/mineurs_famille_pages/abandon_famille/quiz_abandon_famille':
+        (_) {
+          final user = Supabase.instance.client.auth.currentUser;
+          return QuizAbandonFamillePA(uid: user!.id, email: user.email!);
+        },
+    '/pa/dps_dpg/mineurs_famille_pages/autorite_parentale/quiz_autorite_parentale':
+        (_) {
+          final user = Supabase.instance.client.auth.currentUser;
+          return QuizAutoriteParentalePA(uid: user!.id, email: user.email!);
+        },
+    '/pa/dps_dpg/mineurs_famille_pages/violation_ordonnances_jaf/quiz_ordonnances_jaf':
+        (_) {
+          final user = Supabase.instance.client.auth.currentUser;
+          return QuizViolationOrdonnancesJafPA(
+            uid: user!.id,
+            email: user.email!,
+          );
+        },
+    '/pa/dps_dpg/mineurs_famille_pages/mise_en_peril/quiz_mise_en_peril': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizMisePerilMineurPA(uid: user!.id, email: user.email!);
+    },
     // GPX sanction pages standalone (routes /gpx/sanction/...)
     CausesAggravationPage.routeName: (_) => const CausesAggravationPage(),
     ClassificationPeinesPage.routeName: (_) => const ClassificationPeinesPage(),
@@ -2528,8 +2659,7 @@ class RouteRegistry {
     '/pa/dps_dpg/socle_initial/organisation_judiciaire/magistrature': (_) =>
         const JuridictionsPenalesPage(),
     // Socle initial : Atteintes aux biens
-    '/pa/dps_dpg/socle_initial/atteintes_biens/vol': (_) =>
-        const PaVolPage(),
+    '/pa/dps_dpg/socle_initial/atteintes_biens/vol': (_) => const PaVolPage(),
     '/pa/dps_dpg/socle_initial/atteintes_biens/destructions': (_) =>
         const PaDestructionsDegradationsContenuPage(),
     '/pa/dps_dpg/socle_initial/atteintes_biens/sans_danger_personnes': (_) =>
@@ -2541,10 +2671,10 @@ class RouteRegistry {
     // Socle initial : Atteintes aux personnes
     '/pa/dps_dpg/socle_initial/atteintes_personnes/discriminations': (_) =>
         const PaDiscriminationsPage(),
-    '/pa/dps_dpg/socle_initial/atteintes_personnes/violences_volontaires': (_) =>
-        const PaAtteintesVolontairesIntegriteContenuPage(),
-    '/pa/dps_dpg/socle_initial/atteintes_personnes/violences_habituelles': (_) =>
-        const PaViolencesHabituellesCoupleExPage(),
+    '/pa/dps_dpg/socle_initial/atteintes_personnes/violences_volontaires':
+        (_) => const PaAtteintesVolontairesIntegriteContenuPage(),
+    '/pa/dps_dpg/socle_initial/atteintes_personnes/violences_habituelles':
+        (_) => const PaViolencesHabituellesCoupleExPage(),
     '/pa/dps_dpg/socle_initial/atteintes_personnes/violences_fsi': (_) =>
         const PaViolencesSurFsiPage(),
     '/pa/dps_dpg/socle_initial/atteintes_personnes/atteintes_vie': (_) =>
@@ -2557,8 +2687,8 @@ class RouteRegistry {
         const PaHarcelementSexuelPage(),
     '/pa/dps_dpg/socle_initial/atteintes_personnes/exhibition': (_) =>
         const PaExhibitionSexuellePage(),
-    '/pa/dps_dpg/socle_initial/atteintes_personnes/mineurs_mise_en_peril': (_) =>
-        const PaMiseEnPerilDesMineursPage(),
+    '/pa/dps_dpg/socle_initial/atteintes_personnes/mineurs_mise_en_peril':
+        (_) => const PaMiseEnPerilDesMineursPage(),
     '/pa/dps_dpg/socle_initial/atteintes_personnes/atteinte_intimite': (_) =>
         const PaAtteintePersonnaliteContenuPage(),
     '/pa/dps_dpg/socle_initial/atteintes_personnes/outrage_sexiste': (_) =>
@@ -2580,10 +2710,8 @@ class RouteRegistry {
     '/pa/dps_dpg/socle_avance/generalites/responsabilite_penale': (_) =>
         const PaResponsabilitePenalePage(),
     // Socle avance : Acteurs de la Police Judiciaire
-    '/pa/dps_dpg/socle_avance/acteurs_pj/opj': (_) =>
-        const HierarchieOpjPage(),
-    '/pa/dps_dpg/socle_avance/acteurs_pj/apj': (_) =>
-        const HierarchieApjPage(),
+    '/pa/dps_dpg/socle_avance/acteurs_pj/opj': (_) => const HierarchieOpjPage(),
+    '/pa/dps_dpg/socle_avance/acteurs_pj/apj': (_) => const HierarchieApjPage(),
     '/pa/dps_dpg/socle_avance/acteurs_pj/assistants_enquete': (_) =>
         const HierarchieAssistantsEnquetePage(),
     '/pa/dps_dpg/socle_avance/acteurs_pj/prerogatives': (_) =>

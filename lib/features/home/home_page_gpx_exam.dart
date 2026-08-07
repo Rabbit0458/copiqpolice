@@ -10,9 +10,13 @@ import 'package:copiqpolice/features/onboarding/mode_picker.dart';
 // ==== Modèles partagés depuis home_page.dart ====
 import 'package:copiqpolice/features/home/home_page.dart'
     show CategoryConfig, SubCategoryConfig, Track, UserMode;
-import 'package:copiqpolice/features/forum/forum_espace_exam_gpx.dart';
+import 'package:copiqpolice/features/forum/community_models.dart';
+import 'package:copiqpolice/features/forum/community_page.dart';
 // ==== Pages existantes ====
-import 'package:copiqpolice/features/home/journal_pa_exam_page.dart';
+import 'package:copiqpolice/features/home/gpx_exam_progress_service.dart';
+import 'package:copiqpolice/features/home/gpx_exam_progress_source_registry.dart';
+import 'package:copiqpolice/features/home/pa_exam_progress_models.dart';
+import 'package:copiqpolice/features/home/pa_exam_progress_page.dart';
 import 'package:copiqpolice/features/home/favoris_home.dart';
 import 'package:copiqpolice/core/services/favorites.dart';
 import 'package:copiqpolice/features/home/profil_page.dart';
@@ -83,6 +87,8 @@ class _HomePageGpxExamState extends State<HomePageGpxExam>
   // ✅ Profil / prénom (user_profiles.first_name)
   String? _firstName;
   bool _isLoadingProfile = true;
+  PaProgressSnapshot? _homeProgress;
+  bool _isLoadingHomeProgress = true;
 
   // Contexte : Exam + GPX
   static const _mode = UserMode.exam;
@@ -95,13 +101,11 @@ class _HomePageGpxExamState extends State<HomePageGpxExam>
   // ===================== 💾 PERSISTENCE HERO DECK =====================
 
   static const String _kDeckIndexKey = 'gpx_exam_hero_deck_index';
-  static const String _kLastFocusRouteKey = 'gpx_exam_last_focus_route';
 
   int _initialDeckIndex = 0;
   bool _hasLoadedDeckIndex = false;
 
   int _heroIndex = 0;
-  String? _lastFocusRoute;
 
   int _computeDefaultDeckIndex() {
     final i = _cats.indexWhere(
@@ -114,8 +118,6 @@ class _HomePageGpxExamState extends State<HomePageGpxExam>
     try {
       final prefs = await SharedPreferences.getInstance();
       final saved = prefs.getInt(_kDeckIndexKey);
-      _lastFocusRoute = prefs.getString(_kLastFocusRouteKey);
-
       if (!mounted) return;
 
       final computed = (saved != null && saved >= 0 && saved < _cats.length)
@@ -142,17 +144,6 @@ class _HomePageGpxExamState extends State<HomePageGpxExam>
     try {
       final prefs = await SharedPreferences.getInstance();
       await prefs.setInt(_kDeckIndexKey, index);
-    } catch (_) {}
-  }
-
-  Future<void> _persistLastFocusRoute(String? route) async {
-    try {
-      final prefs = await SharedPreferences.getInstance();
-      if (route == null || route.trim().isEmpty) {
-        await prefs.remove(_kLastFocusRouteKey);
-      } else {
-        await prefs.setString(_kLastFocusRouteKey, route);
-      }
     } catch (_) {}
   }
 
@@ -185,7 +176,8 @@ class _HomePageGpxExamState extends State<HomePageGpxExam>
     // Non quiz => accès direct
     if (!_isQuizLeafRoute(route)) {
       if (!mounted) return;
-      Navigator.of(context).pushNamed(route);
+      await Navigator.of(context).pushNamed(route);
+      if (mounted) unawaited(_loadHomeProgress());
       return;
     }
 
@@ -230,7 +222,8 @@ class _HomePageGpxExamState extends State<HomePageGpxExam>
     }
 
     if (!mounted) return;
-    Navigator.of(context).pushNamed(route);
+    await Navigator.of(context).pushNamed(route);
+    if (mounted) unawaited(_loadHomeProgress());
   }
 
   // ===================== 👤 PROFIL (first_name depuis user_profiles) =====================
@@ -286,6 +279,7 @@ class _HomePageGpxExamState extends State<HomePageGpxExam>
   void didChangeAppLifecycleState(AppLifecycleState state) {
     if (state == AppLifecycleState.resumed) {
       unawaited(_loadFirstName());
+      unawaited(_loadHomeProgress());
     }
   }
 
@@ -371,58 +365,6 @@ class _HomePageGpxExamState extends State<HomePageGpxExam>
     setState(() {});
   }
 
-  // ===================== 🎯 FOCUS ENGINE (AUTORITÉ + CONTRÔLE) =====================
-
-  CategoryConfig? _pickFocus({
-    required int heroIndex,
-    required List<CategoryConfig> cats,
-  }) {
-    if (cats.isEmpty) return null;
-
-    final safeHero = heroIndex.clamp(0, cats.length - 1);
-    final heroRoute = cats[safeHero].route;
-
-    const priorities = <String>[
-      'structure',
-      'cas',
-      'psychotech',
-      'psycho',
-      'culture',
-      'langue',
-    ];
-
-    CategoryConfig? pickByNeedle(String needle) {
-      final n = needle.toLowerCase();
-      for (final c in cats) {
-        if (c.route == heroRoute) continue;
-        if (_lastFocusRoute != null && c.route == _lastFocusRoute) continue;
-        final label = c.label.toLowerCase();
-        final route = c.route.toLowerCase();
-        if (label.contains(n) || route.contains(n)) return c;
-      }
-      return null;
-    }
-
-    for (final needle in priorities) {
-      final c = pickByNeedle(needle);
-      if (c != null) return c;
-    }
-
-    for (int step = 1; step <= cats.length; step++) {
-      final idx = (safeHero + step) % cats.length;
-      final c = cats[idx];
-      if (c.route == heroRoute) continue;
-      if (_lastFocusRoute != null && c.route == _lastFocusRoute) continue;
-      return c;
-    }
-
-    for (final c in cats) {
-      if (c.route != heroRoute) return c;
-    }
-
-    return null;
-  }
-
   // ===================== NAV =====================
 
   void _openRouteOrDetails({
@@ -451,6 +393,16 @@ class _HomePageGpxExamState extends State<HomePageGpxExam>
   void _goToTab(int index) {
     HapticFeedback.selectionClick();
     setState(() => _currentTab = index);
+  }
+
+  void _openFirstTraining() {
+    if (_cats.isEmpty) return;
+    final category = _cats.first;
+    _openRouteOrDetails(
+      label: category.label,
+      route: category.route,
+      subs: category.subcategories,
+    );
   }
 
   // ===================== UI UTIL =====================
@@ -515,6 +467,65 @@ class _HomePageGpxExamState extends State<HomePageGpxExam>
 
     // ✅ Prénom depuis user_profiles
     unawaited(_loadFirstName());
+    unawaited(_loadHomeProgress());
+  }
+
+  Future<void> _loadHomeProgress() async {
+    final result = await GpxExamProgressService().load();
+    if (!mounted) return;
+    setState(() {
+      _homeProgress = result is PaProgressLoaded ? result.snapshot : null;
+      _isLoadingHomeProgress = false;
+    });
+  }
+
+  _NextStepData _nextStep() {
+    final snapshot = _homeProgress;
+    if (snapshot == null || snapshot.activities.isEmpty) {
+      return const _NextStepData(
+        eyebrow: 'Bien démarrer',
+        title: 'Découvre ton niveau',
+        subtitle:
+            'Commence par un exercice court pour personnaliser tes prochaines recommandations.',
+        action: 'Commencer',
+        route: '/gpx_exam/concours/tests_psychotechniques/calcul_rapide',
+        icon: Icons.rocket_launch_rounded,
+        progress: 0,
+      );
+    }
+
+    final recommendation = snapshot.recommendation;
+    if (recommendation != null) {
+      final subject = recommendation.subject;
+      return _NextStepData(
+        eyebrow: 'Priorité personnalisée',
+        title: 'Renforce ${subject.label.toLowerCase()}',
+        subtitle:
+            '${subject.averagePercent} % de moyenne · ${subject.activities} activité${subject.activities > 1 ? 's' : ''}. Une session ciblée peut faire la différence.',
+        action: 'M’entraîner',
+        route:
+            subject.route ??
+            '/gpx_exam/concours/tests_psychotechniques/calcul_rapide',
+        icon: gpxModuleMeta(subject.key).icon,
+        progress: subject.averagePercent / 100,
+      );
+    }
+
+    final latest = snapshot.activities.first;
+    return _NextStepData(
+      eyebrow: 'Continuer sur ta lancée',
+      title: latest.title,
+      subtitle:
+          'Dernier résultat : ${latest.percent} % · ${snapshot.doneToday}/${snapshot.dailyGoal} objectif du jour.',
+      action: 'Continuer',
+      route:
+          latest.route ??
+          '/gpx_exam/concours/tests_psychotechniques/calcul_rapide',
+      icon: Icons.play_arrow_rounded,
+      progress: snapshot.dailyGoal <= 0
+          ? 0
+          : (snapshot.doneToday / snapshot.dailyGoal).clamp(0, 1),
+    );
   }
 
   @override
@@ -550,24 +561,10 @@ class _HomePageGpxExamState extends State<HomePageGpxExam>
         )
         .toList(growable: false);
 
-    final focusCat = _pickFocus(
-      heroIndex: _heroIndexSafe(_cats.length),
-      cats: _cats,
-    );
-
-    // Persist focus route (anti répétition)
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      final route = focusCat?.route;
-      if (route != null && route != _lastFocusRoute) {
-        _lastFocusRoute = route;
-        _persistLastFocusRoute(route);
-      }
-    });
-
     final icons = const [
       Icons.home_rounded,
-      Icons.article_rounded,
-      Icons.qr_code_rounded,
+      Icons.insights_rounded,
+      Icons.forum_rounded,
       Icons.favorite_rounded,
       Icons.person_rounded,
     ];
@@ -728,45 +725,40 @@ class _HomePageGpxExamState extends State<HomePageGpxExam>
 
             _sectionHeader(
               context,
-              title: 'Focus du jour',
-              actionText: 'Explorer',
+              title: 'Ta prochaine étape',
+              actionText: 'Mon suivi',
               onAction: () => _goToTab(1),
             ),
             const SizedBox(height: 10),
 
-            if (focusCat != null)
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20),
-                child: _MiniHeroCard(
-                  title: focusCat.label,
-                  subtitle: focusCat.badge,
-                  image: focusCat.image,
-                  onTap: () => _openRouteOrDetails(
-                    label: focusCat.label,
-                    route: focusCat.route,
-                    subs: focusCat.subcategories,
-                  ),
-                ),
-              )
-            else
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20),
-                child: Text(
-                  'Aucun focus disponible pour le moment.',
-                  style: theme.textTheme.bodyMedium?.copyWith(
-                    color: _muted(context, .65),
-                    fontWeight: FontWeight.w700,
-                  ),
-                ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: AnimatedSwitcher(
+                duration: _T.med,
+                child: _isLoadingHomeProgress
+                    ? const _NextStepSkeleton(key: ValueKey('loading'))
+                    : _NextStepCard(
+                        key: const ValueKey('ready'),
+                        data: _nextStep(),
+                        onTap: () => _openRouteWithQuota(_nextStep().route),
+                      ),
               ),
+            ),
 
             const SizedBox(height: 18),
           ],
         ),
       ),
 
-      const JournalGpxExamPage(),
-      const ForumEspaceExamGPXPage(),
+      PaExamProgressPage(
+        onStart: _openFirstTraining,
+        dataSource: GpxExamProgressService(),
+        subtitle: 'Ta progression vers le concours de Gardien de la paix',
+        emptyMessage:
+            'Termine un premier entraînement GPX pour débloquer tes statistiques, ta régularité et tes recommandations.',
+        moduleMetaResolver: gpxModuleMeta,
+      ),
+      const CommunityPage(initialScope: CommunityScope.gpxExam),
       const FavorisHomePage(),
       const ProfilPage(),
     ];
@@ -1639,8 +1631,8 @@ class _QuickActionsGrid extends StatelessWidget {
     final theme = Theme.of(context);
     final isDark = theme.brightness == Brightness.dark;
 
-    final soft = (isDark ? Colors.white : Colors.black).withValues(alpha: 
-      isDark ? .08 : .04,
+    final soft = (isDark ? Colors.white : Colors.black).withValues(
+      alpha: isDark ? .08 : .04,
     );
 
     return GridView.builder(
@@ -1674,8 +1666,8 @@ class _QuickActionsGrid extends StatelessWidget {
                   ),
                 ],
                 border: Border.all(
-                  color: (isDark ? Colors.white : Colors.black).withValues(alpha: 
-                    0.06,
+                  color: (isDark ? Colors.white : Colors.black).withValues(
+                    alpha: 0.06,
                   ),
                 ),
               ),
@@ -1731,6 +1723,216 @@ class _QuickActionsGrid extends StatelessWidget {
       },
     );
   }
+}
+
+class _NextStepData {
+  const _NextStepData({
+    required this.eyebrow,
+    required this.title,
+    required this.subtitle,
+    required this.action,
+    required this.route,
+    required this.icon,
+    required this.progress,
+  });
+
+  final String eyebrow;
+  final String title;
+  final String subtitle;
+  final String action;
+  final String route;
+  final IconData icon;
+  final double progress;
+}
+
+class _NextStepCard extends StatelessWidget {
+  const _NextStepCard({super.key, required this.data, required this.onTap});
+
+  final _NextStepData data;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final dark = Theme.of(context).brightness == Brightness.dark;
+    const accent = Color(0xFF2563EB);
+    return Semantics(
+      button: true,
+      label: '${data.eyebrow}. ${data.title}. ${data.action}',
+      child: Material(
+        color: Colors.transparent,
+        child: InkWell(
+          onTap: () {
+            HapticFeedback.selectionClick();
+            onTap();
+          },
+          borderRadius: BorderRadius.circular(24),
+          child: Ink(
+            padding: const EdgeInsets.all(18),
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: dark
+                    ? const [Color(0xFF152238), Color(0xFF0E1726)]
+                    : const [Color(0xFFF3F7FF), Color(0xFFE8F0FF)],
+              ),
+              borderRadius: BorderRadius.circular(24),
+              border: Border.all(
+                color: accent.withValues(alpha: dark ? .30 : .16),
+              ),
+              boxShadow: const [_T.shadow],
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  children: [
+                    Container(
+                      width: 42,
+                      height: 42,
+                      decoration: BoxDecoration(
+                        color: accent,
+                        borderRadius: BorderRadius.circular(14),
+                      ),
+                      child: Icon(data.icon, color: Colors.white, size: 22),
+                    ),
+                    const SizedBox(width: 12),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            data.eyebrow,
+                            style: GoogleFonts.instrumentSans(
+                              color: accent,
+                              fontSize: 12,
+                              fontWeight: FontWeight.w800,
+                            ),
+                          ),
+                          const SizedBox(height: 2),
+                          Text(
+                            data.title,
+                            maxLines: 2,
+                            overflow: TextOverflow.ellipsis,
+                            style: GoogleFonts.poppins(
+                              fontSize: 17,
+                              height: 1.15,
+                              fontWeight: FontWeight.w900,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 13),
+                Text(
+                  data.subtitle,
+                  maxLines: 3,
+                  overflow: TextOverflow.ellipsis,
+                  style: GoogleFonts.instrumentSans(
+                    color: _muted(context, .70),
+                    fontSize: 13,
+                    height: 1.4,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+                const SizedBox(height: 14),
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(99),
+                  child: LinearProgressIndicator(
+                    minHeight: 6,
+                    value: data.progress.clamp(0, 1),
+                    color: accent,
+                    backgroundColor: accent.withValues(alpha: .12),
+                  ),
+                ),
+                const SizedBox(height: 14),
+                Row(
+                  children: [
+                    Container(
+                      constraints: const BoxConstraints(minHeight: 44),
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                      decoration: BoxDecoration(
+                        color: accent,
+                        borderRadius: BorderRadius.circular(15),
+                      ),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Text(
+                            data.action,
+                            style: GoogleFonts.instrumentSans(
+                              color: Colors.white,
+                              fontWeight: FontWeight.w800,
+                            ),
+                          ),
+                          const SizedBox(width: 7),
+                          const Icon(
+                            Icons.arrow_forward_rounded,
+                            size: 18,
+                            color: Colors.white,
+                          ),
+                        ],
+                      ),
+                    ),
+                    const Spacer(),
+                    const Icon(
+                      Icons.auto_awesome_rounded,
+                      color: accent,
+                      size: 20,
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _NextStepSkeleton extends StatelessWidget {
+  const _NextStepSkeleton({super.key});
+
+  @override
+  Widget build(BuildContext context) => Container(
+    height: 210,
+    decoration: BoxDecoration(
+      color: Theme.of(context).cardColor,
+      borderRadius: BorderRadius.circular(24),
+      boxShadow: const [_T.shadow],
+    ),
+    padding: const EdgeInsets.all(18),
+    child: const Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        _NextStepSkeletonBar(width: 180, height: 22),
+        SizedBox(height: 14),
+        _NextStepSkeletonBar(width: double.infinity, height: 14),
+        SizedBox(height: 8),
+        _NextStepSkeletonBar(width: 240, height: 14),
+        Spacer(),
+        _NextStepSkeletonBar(width: 130, height: 44),
+      ],
+    ),
+  );
+}
+
+class _NextStepSkeletonBar extends StatelessWidget {
+  const _NextStepSkeletonBar({required this.width, required this.height});
+  final double width;
+  final double height;
+  @override
+  Widget build(BuildContext context) => Container(
+    width: width,
+    height: height,
+    decoration: BoxDecoration(
+      color: Theme.of(context).dividerColor.withValues(alpha: .16),
+      borderRadius: BorderRadius.circular(12),
+    ),
+  );
 }
 
 class _MiniHeroCard extends StatelessWidget {
@@ -1952,8 +2154,12 @@ class _ModuleCard extends StatelessWidget {
         final locked = s.isLocked;
         final isDark = Theme.of(context).brightness == Brightness.dark;
 
-        final Color badgeBg = Colors.white.withValues(alpha: isDark ? 0.14 : 0.10);
-        final Color borderClr = Colors.white.withValues(alpha: isDark ? 0.18 : 0.14);
+        final Color badgeBg = Colors.white.withValues(
+          alpha: isDark ? 0.14 : 0.10,
+        );
+        final Color borderClr = Colors.white.withValues(
+          alpha: isDark ? 0.18 : 0.14,
+        );
 
         return LayoutBuilder(
           builder: (context, c) {
@@ -2212,7 +2418,10 @@ class _PremiumBadge extends StatelessWidget {
       decoration: BoxDecoration(
         color: Colors.black.withValues(alpha: 0.36),
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: Colors.white.withValues(alpha: 0.24), width: 1),
+        border: Border.all(
+          color: Colors.white.withValues(alpha: 0.24),
+          width: 1,
+        ),
         boxShadow: const [
           BoxShadow(
             blurRadius: 18,

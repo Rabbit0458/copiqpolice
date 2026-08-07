@@ -14,9 +14,10 @@ import toast from "react-hot-toast"
 interface HeaderProps {
   user: User
   tier: CpTier
+  onOpenMenu?: () => void
 }
 
-export function Header({ user, tier }: HeaderProps) {
+export function Header({ user, tier, onOpenMenu }: HeaderProps) {
   const { theme, setTheme } = useTheme()
   const router = useRouter()
   const [menuOpen, setMenuOpen] = useState(false)
@@ -32,8 +33,13 @@ export function Header({ user, tier }: HeaderProps) {
   return (
     <header className="h-[var(--header-h,64px)] border-b border-[var(--outline)] bg-[var(--surface)] flex items-center px-4 sm:px-6 gap-4 shrink-0 sticky top-0 z-30">
       {/* Mobile menu button */}
-      <button className="lg:hidden p-2 rounded-lg hover:bg-[var(--surface-container)] transition-colors text-[var(--on-surface-muted)]">
-        <Menu size={20} />
+      <button
+        type="button"
+        onClick={onOpenMenu}
+        aria-label="Ouvrir le menu principal"
+        className="flex h-11 w-11 items-center justify-center rounded-xl text-[var(--on-surface-muted)] transition-colors hover:bg-[var(--surface-container)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand lg:hidden"
+      >
+        <Menu size={20} aria-hidden="true" />
       </button>
 
       {/* Breadcrumb / titre — injecté par les sous-layouts */}
@@ -43,8 +49,10 @@ export function Header({ user, tier }: HeaderProps) {
       <div className="flex items-center gap-2">
         {/* Dark mode */}
         <button
+          type="button"
           onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-          className="p-2 rounded-xl text-[var(--on-surface-faint)] hover:text-[var(--on-surface-muted)] hover:bg-[var(--surface-container)] transition-all"
+          aria-label={theme === "dark" ? "Activer le mode clair" : "Activer le mode sombre"}
+          className="flex h-11 w-11 items-center justify-center rounded-xl text-[var(--on-surface-faint)] transition-all hover:bg-[var(--surface-container)] hover:text-[var(--on-surface-muted)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand"
           title={theme === "dark" ? "Mode clair" : "Mode sombre"}
         >
           {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
@@ -53,7 +61,8 @@ export function Header({ user, tier }: HeaderProps) {
         {/* Notifications */}
         <Link
           href="/notifications"
-          className="p-2 rounded-xl text-[var(--on-surface-faint)] hover:text-[var(--on-surface-muted)] hover:bg-[var(--surface-container)] transition-all relative"
+          aria-label="Voir les notifications"
+          className="relative flex h-11 w-11 items-center justify-center rounded-xl text-[var(--on-surface-faint)] transition-all hover:bg-[var(--surface-container)] hover:text-[var(--on-surface-muted)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand"
         >
           <Bell size={18} />
         </Link>
@@ -72,7 +81,10 @@ export function Header({ user, tier }: HeaderProps) {
         {/* User avatar / menu */}
         <div className="relative">
           <button
+            type="button"
             onClick={() => setMenuOpen(!menuOpen)}
+            aria-expanded={menuOpen}
+            aria-label="Ouvrir le menu du compte"
             className={cn(
               "flex items-center gap-2 pl-2 pr-3 py-1.5 rounded-xl",
               "hover:bg-[var(--surface-container)] transition-colors text-sm",

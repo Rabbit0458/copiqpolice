@@ -45,7 +45,7 @@ Tu as besoin d'un compte **Apple Developer Program** (99 $/an).
    coche **Sign In with Apple**, enregistre.
 2. **Identifiants → Services IDs** → « + »
    - Description : `COP'IQ Web Auth`
-   - Identifier : `fr.copiq.police.signin` *(exemple — note-le)*
+   - Identifier : `fr.copiq.app.signin` *(exemple — note-le)*
    - Coche **Sign In with Apple** → **Configure** :
      - Primary App ID : ton App ID
      - Domains : `nuoonagnkhbeeymtvrcn.supabase.co`
@@ -59,7 +59,7 @@ Tu as besoin d'un compte **Apple Developer Program** (99 $/an).
 
 Tu dois donc repartir avec quatre informations :
 
-- Services ID (ex. `fr.copiq.police.signin`)
+- Services ID (ex. `fr.copiq.app.signin`)
 - Team ID
 - Key ID
 - Contenu du fichier `.p8`

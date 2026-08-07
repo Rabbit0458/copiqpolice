@@ -54,16 +54,11 @@ export function AdminGate({ children }: { children: (s: AdminSession) => React.R
 
       const factors = await adminAuth.listFactors()
       const totp = factors?.totp?.find((f) => f.status === "verified")
-      const pending = factors?.totp?.find((f) => f.status === "unverified")
 
       if (!totp) {
-        // Aucun facteur validé : on enrôle (on réutilise un enrôlement en attente)
-        if (pending) {
-          factorIdRef.current = pending.id
-          setStep("totp-verify")
-        } else {
-          setStep("totp-enroll")
-        }
+        // L'API ne renvoie ici que les facteurs vérifiés : un facteur absent
+        // doit donc passer par l'écran d'enrôlement guidé.
+        setStep("totp-enroll")
         return
       }
 
@@ -81,6 +76,8 @@ export function AdminGate({ children }: { children: (s: AdminSession) => React.R
   }, [])
 
   useEffect(() => {
+    // Le contrôle de session est précisément l'effet d'initialisation de cette porte.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     void refresh()
   }, [refresh])
 

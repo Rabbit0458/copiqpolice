@@ -9,7 +9,9 @@
 // Routes mappées :
 //   copiqpolice://quiz/<topic>          -> /gpx/<topic>/quiz/<topic>
 //   copiqpolice://module/<module>       -> route directe vers la page de cours
-//   copiqpolice://payment-success       -> /abonnement (refresh subscription)
+//   copiqpolice://paywall/success       -> /payment-success (écran de confirmation)
+//   copiqpolice://paywall/cancel        -> /payment-cancel (écran d'échec/annulation)
+//   copiqpolice://payment-success       -> /payment-success (alias historique)
 //   copiqpolice://abonnement            -> /abonnement
 //   copiqpolice://compte                -> /user
 //
@@ -127,7 +129,20 @@ class DeepLinksService {
 
     if (scheme == 'copiqpolice') {
       switch (host) {
+        // copiqpolice://paywall/success | copiqpolice://paywall/cancel
+        // -> URLs réellement utilisées par Stripe Checkout (voir
+        // supabase/functions/cas_pratique_create_checkout, DEFAULT_SUCCESS_URL /
+        // DEFAULT_CANCEL_URL). Sans cette route, le retour de paiement était
+        // silencieusement ignoré (URI non reconnue).
+        case 'paywall':
+          if (segs.isNotEmpty && segs.first == 'cancel') {
+            return '/payment-cancel';
+          }
+          return '/payment-success';
         case 'payment-success':
+          return '/payment-success';
+        case 'payment-cancel':
+          return '/payment-cancel';
         case 'abonnement':
           return '/abonnement';
         case 'compte':
@@ -143,6 +158,9 @@ class DeepLinksService {
           if (segs.isNotEmpty) {
             return '/gpx/${segs.join('/')}';
           }
+          return null;
+        case 'forum':
+          if (segs.isNotEmpty) return '/forum/${segs.first}';
           return null;
         default:
           return null;

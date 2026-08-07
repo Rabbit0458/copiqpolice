@@ -87,6 +87,7 @@ function StaffCard({ a, onChanged }: { a: AdminStaff; onChanged: () => void }) {
   const [busy, setBusy] = useState(false)
   const [err, setErr] = useState<unknown>(null)
   const [open, setOpen] = useState(false)
+  const [scopesOpen, setScopesOpen] = useState(false)
   const [code, setCode] = useState("")
 
   const locked =
@@ -203,6 +204,13 @@ function StaffCard({ a, onChanged }: { a: AdminStaff; onChanged: () => void }) {
         >
           Réinitialiser le code staff
         </Button>
+        <Button
+          variant="ghost"
+          onClick={() => setScopesOpen((value) => !value)}
+          className="!py-1.5 !text-xs"
+        >
+          Périmètres du forum
+        </Button>
       </div>
 
       {open && (
@@ -229,8 +237,91 @@ function StaffCard({ a, onChanged }: { a: AdminStaff; onChanged: () => void }) {
           </Button>
         </div>
       )}
+      {scopesOpen && <ScopeEditor staff={a} onSaved={onChanged} />}
     </Card>
   )
+}
+
+const COMMUNITY_SPACES = [
+  ["global", "Toute la communauté"],
+  ["pa_exam", "Concours policier adjoint"],
+  ["gpx_exam", "Concours gardien de la paix"],
+  ["pa_school", "École policier adjoint"],
+  ["gpx_school", "École gardien de la paix"],
+] as const
+
+type ScopeDraft = {
+  space_id: string
+  role: "helper" | "moderator" | "admin" | "owner"
+  expires_at: string | null
+}
+
+function ScopeEditor({ staff, onSaved }: { staff: AdminStaff; onSaved: () => void }) {
+  const query = useAsync(() => staffApi.communityScopes(staff.id), [staff.id])
+  if (query.loading) return <Loading label="Chargement des périmètres…" />
+  if (query.error != null) return <ErrorBox error={query.error} />
+  if (staff.role === "owner") {
+    return <div className="mt-3 rounded-xl border border-[var(--brand)]/20 bg-[var(--brand)]/5 p-3 text-sm text-[var(--on-surface-muted)]">Le propriétaire conserve automatiquement le périmètre global. Il ne peut pas modifier ses propres droits depuis cette page.</div>
+  }
+
+  return <ScopeEditorForm key={JSON.stringify(query.data ?? [])} staff={staff} initial={(query.data ?? []).map((scope) => ({ ...scope }))} onSaved={onSaved} />
+}
+
+function ScopeEditorForm({ staff, initial, onSaved }: { staff: AdminStaff; initial: ScopeDraft[]; onSaved: () => void }) {
+  const [draft, setDraft] = useState<ScopeDraft[]>(initial)
+  const [reason, setReason] = useState("")
+  const [busy, setBusy] = useState(false)
+  const [error, setError] = useState<unknown>(null)
+  const allowedRoles = staff.role === "moderator"
+    ? [["helper", "Assistant"], ["moderator", "Modérateur"]] as const
+    : [["helper", "Assistant"], ["moderator", "Modérateur"], ["admin", "Administrateur"]] as const
+
+  function toggle(spaceId: string, enabled: boolean) {
+    setDraft((current) => enabled
+      ? [...current, { space_id: spaceId, role: staff.role === "moderator" ? "moderator" : "admin", expires_at: null }]
+      : current.filter((scope) => scope.space_id !== spaceId))
+  }
+
+  function update(spaceId: string, patch: Partial<ScopeDraft>) {
+    setDraft((current) => current.map((scope) => scope.space_id === spaceId ? { ...scope, ...patch } : scope))
+  }
+
+  async function save() {
+    if (reason.trim().length < 10) return setError(new Error("Le motif doit contenir au moins 10 caractères."))
+    if (!confirm(`Remplacer les périmètres de ${staff.email} ?`)) return
+    setBusy(true)
+    setError(null)
+    try {
+      await staffApi.setCommunityScopes(staff.id, draft.map((scope) => ({ ...scope, expires_at: scope.expires_at ? new Date(scope.expires_at).toISOString() : null })), reason.trim())
+      setReason("")
+      onSaved()
+    } catch (cause) {
+      setError(cause)
+    } finally {
+      setBusy(false)
+    }
+  }
+
+  return (
+    <div className="mt-3 space-y-3 rounded-xl border border-[var(--outline-variant)] bg-[var(--surface-container)]/35 p-4">
+      <div><h3 className="text-sm font-semibold">Périmètres de modération</h3><p className="text-xs text-[var(--on-surface-muted)]">Seuls les espaces cochés seront accessibles. Une expiration peut être définie par mission.</p></div>
+      <div className="space-y-2">
+        {COMMUNITY_SPACES.map(([spaceId, label]) => {
+          const scope = draft.find((item) => item.space_id === spaceId)
+          return <div key={spaceId} className="grid gap-2 rounded-xl border border-[var(--outline-variant)] bg-[var(--surface)] p-3 sm:grid-cols-[minmax(180px,1fr)_150px_210px] sm:items-center"><label className="flex min-h-10 items-center gap-2 text-sm"><input type="checkbox" checked={Boolean(scope)} onChange={(event) => toggle(spaceId, event.target.checked)} className="h-4 w-4 accent-[var(--brand)]" />{label}</label><select aria-label={`Rôle pour ${label}`} disabled={!scope} value={scope?.role ?? "moderator"} onChange={(event) => update(spaceId, { role: event.target.value as ScopeDraft["role"] })} className="min-h-10 rounded-lg border border-[var(--outline)] bg-[var(--surface)] px-2 text-sm disabled:opacity-40">{allowedRoles.map(([value, text]) => <option key={value} value={value}>{text}</option>)}</select><input aria-label={`Expiration pour ${label}`} type="datetime-local" disabled={!scope} value={scope?.expires_at ? localDateTime(scope.expires_at) : ""} onChange={(event) => update(spaceId, { expires_at: event.target.value || null })} className="min-h-10 rounded-lg border border-[var(--outline)] bg-[var(--surface)] px-2 text-sm disabled:opacity-40" /></div>
+        })}
+      </div>
+      <textarea value={reason} onChange={(event) => setReason(event.target.value)} rows={2} placeholder="Motif de l'attribution ou du retrait (journalisé)" className="w-full rounded-xl border border-[var(--outline)] bg-[var(--surface)] px-3 py-2 text-sm outline-none focus:border-[var(--brand)]" />
+      {error != null && <ErrorBox error={error} />}
+      <div className="flex justify-end"><Button disabled={busy} onClick={save}>{busy ? "Enregistrement…" : "Enregistrer les périmètres"}</Button></div>
+    </div>
+  )
+}
+
+function localDateTime(value: string) {
+  const date = new Date(value)
+  const local = new Date(date.getTime() - date.getTimezoneOffset() * 60_000)
+  return local.toISOString().slice(0, 16)
 }
 
 function StaffForm({

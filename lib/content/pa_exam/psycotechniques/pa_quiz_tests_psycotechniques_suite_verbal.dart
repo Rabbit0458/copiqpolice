@@ -27875,6 +27875,7 @@ class _PaQuizPsycotechniquesVerbalState
     try {
       await _sb.from('quiz_psycotechniques_verbal_pages').insert({
         'exam_type': 'pa',
+        'history_id': _historyRowId,
         'user_uid': widget.uid,
         'email': widget.email,
         'question': question,

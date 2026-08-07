@@ -2,10 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 	<dict>
+		<key>CADisableMinimumFrameDurationOnPhone</key>
+		<true/>
 		<key>CFBundleDevelopmentRegion</key>
 		<string>$(DEVELOPMENT_LANGUAGE)</string>
 		<key>CFBundleDisplayName</key>
-		<string>Copiqpolice</string>
+		<string>COP'IQ</string>
 		<key>CFBundleExecutable</key>
 		<string>$(EXECUTABLE_NAME)</string>
 		<key>CFBundleIdentifier</key>
@@ -13,21 +15,79 @@
 		<key>CFBundleInfoDictionaryVersion</key>
 		<string>6.0</string>
 		<key>CFBundleName</key>
-		<string>copiqpolice</string>
+		<string>COP'IQ</string>
 		<key>CFBundlePackageType</key>
 		<string>APPL</string>
 		<key>CFBundleShortVersionString</key>
 		<string>$(FLUTTER_BUILD_NAME)</string>
 		<key>CFBundleSignature</key>
 		<string>????</string>
+		<key>CFBundleURLTypes</key>
+		<array>
+			<dict>
+				<key>CFBundleTypeRole</key>
+				<string>Editor</string>
+				<key>CFBundleURLName</key>
+				<string>fr.copiq.app</string>
+				<key>CFBundleURLSchemes</key>
+				<array>
+					<string>copiqpolice</string>
+				</array>
+			</dict>
+		</array>
 		<key>CFBundleVersion</key>
 		<string>$(FLUTTER_BUILD_NUMBER)</string>
+		<key>GADApplicationIdentifier</key>
+		<string>ca-app-pub-3940256099942544~1458002511</string>
+		<key>LSApplicationQueriesSchemes</key>
+		<array>
+			<string>https</string>
+			<string>http</string>
+			<string>mailto</string>
+			<string>tel</string>
+		</array>
 		<key>LSRequiresIPhoneOS</key>
+		<true/>
+		<key>NSPhotoLibraryAddUsageDescription</key>
+		<string>COP'IQ peut enregistrer une image dans votre photothèque, par exemple lors du partage de votre score.</string>
+		<key>NSPhotoLibraryUsageDescription</key>
+		<string>COP'IQ a besoin d'accéder à vos photos pour vous permettre de joindre une image à vos messages sur le forum.</string>
+		<key>SKAdNetworkItems</key>
+		<array>
+			<dict>
+				<key>SKAdNetworkIdentifier</key>
+				<string>cstr6suwn9.skadnetwork</string>
+			</dict>
+		</array>
+		<key>UIApplicationSceneManifest</key>
+		<dict>
+			<key>UIApplicationSupportsMultipleScenes</key>
+			<false/>
+			<key>UISceneConfigurations</key>
+			<dict>
+				<key>UIWindowSceneSessionRoleApplication</key>
+				<array>
+					<dict>
+						<key>UISceneClassName</key>
+						<string>UIWindowScene</string>
+						<key>UISceneConfigurationName</key>
+						<string>flutter</string>
+						<key>UISceneDelegateClassName</key>
+						<string>FlutterSceneDelegate</string>
+						<key>UISceneStoryboardFile</key>
+						<string>Main</string>
+					</dict>
+				</array>
+			</dict>
+		</dict>
+		<key>UIApplicationSupportsIndirectInputEvents</key>
 		<true/>
 		<key>UILaunchStoryboardName</key>
 		<string>LaunchScreen</string>
 		<key>UIMainStoryboardFile</key>
 		<string>Main</string>
+		<key>UIStatusBarHidden</key>
+		<false/>
 		<key>UISupportedInterfaceOrientations</key>
 		<array>
 			<string>UIInterfaceOrientationPortrait</string>
@@ -41,68 +101,7 @@
 			<string>UIInterfaceOrientationLandscapeLeft</string>
 			<string>UIInterfaceOrientationLandscapeRight</string>
 		</array>
-		<key>CADisableMinimumFrameDurationOnPhone</key>
-		<true/>
-		<key>UIApplicationSupportsIndirectInputEvents</key>
-		<true/>
-		<key>UIStatusBarHidden</key>
-		<false/>
 		<key>UIViewControllerBasedStatusBarAppearance</key>
 		<false/>
-		<!-- Google AdMob App ID (iOS).
-		     Le test ID ci-dessous fonctionne en debug.
-		     EN PROD : remplace par ton App ID AdMob (console.admob.com). -->
-		<key>GADApplicationIdentifier</key>
-		<string>ca-app-pub-3940256099942544~1458002511</string>
-		<key>SKAdNetworkItems</key>
-		<array>
-			<dict>
-				<key>SKAdNetworkIdentifier</key>
-				<string>cstr6suwn9.skadnetwork</string>
-			</dict>
-		</array>
-		<!-- ================================================================
-		     DEEP LINKS — schema custom copiqpolice://
-		     Ajoute le 2026-07-26.
-
-		     Le service deep_links_service.dart documentait ce schema depuis
-		     des mois sans qu'il soit declare ici : sur iOS, les liens
-		     copiqpolice://... n'ouvraient jamais l'application.
-
-		     Indispensable aussi au retour de connexion OAuth (Sign in with
-		     Apple / Google) : Supabase renvoie vers
-		     copiqpolice://login-callback apres authentification.
-		     ================================================================ -->
-		<key>CFBundleURLTypes</key>
-		<array>
-			<dict>
-				<key>CFBundleTypeRole</key>
-				<string>Editor</string>
-				<key>CFBundleURLName</key>
-				<string>fr.copiq.police</string>
-				<key>CFBundleURLSchemes</key>
-				<array>
-					<string>copiqpolice</string>
-				</array>
-			</dict>
-		</array>
-		<!-- Permet a l'application d'ouvrir des liens externes (CGU, support). -->
-		<key>LSApplicationQueriesSchemes</key>
-		<array>
-			<string>https</string>
-			<string>http</string>
-			<string>mailto</string>
-			<string>tel</string>
-		</array>
-		<!-- ================================================================
-		     Audit du 28/07/2026 (RESTE_A_FAIRE.md, point C.1) — sans ces deux
-		     cles, iOS tue l'application des le premier acces a la phototheque
-		     (ImagePicker, bouton photo du forum) : crash garanti et rejet
-		     App Store automatique.
-		     ================================================================ -->
-		<key>NSPhotoLibraryUsageDescription</key>
-		<string>COP'IQ a besoin d'accéder à vos photos pour vous permettre de joindre une image à vos messages sur le forum.</string>
-		<key>NSPhotoLibraryAddUsageDescription</key>
-		<string>COP'IQ peut enregistrer une image dans votre photothèque, par exemple lors du partage de votre score.</string>
 	</dict>
 </plist>

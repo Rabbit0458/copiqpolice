@@ -2,6 +2,7 @@
 <resources>
     <!-- Android 12+ dark : fond #06111F pur, icône transparent = aucun logo natif -->
     <style name="LaunchTheme" parent="@android:style/Theme.Black.NoTitleBar">
+        <item name="android:windowSplashScreenAnimationDuration">0</item>
         <item name="android:forceDarkAllowed">false</item>
         <item name="android:windowFullscreen">false</item>
         <item name="android:windowDrawsSystemBarBackgrounds">false</item>
@@ -9,7 +10,6 @@
         <item name="android:windowSplashScreenBackground">#06111F</item>
         <item name="android:windowSplashScreenAnimatedIcon">@drawable/android12splash</item>
         <item name="android:windowSplashScreenIconBackgroundColor">#06111F</item>
-        <item name="android:windowSplashScreenAnimationDuration">0</item>
     </style>
     <style name="NormalTheme" parent="@android:style/Theme.Black.NoTitleBar">
         <item name="android:windowBackground">?android:colorBackground</item>

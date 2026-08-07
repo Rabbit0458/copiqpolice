@@ -94,7 +94,7 @@ export default function JournalPage() {
             {l.comment && (
               <div className="mt-1 text-xs text-[var(--on-surface-muted)]">{l.comment}</div>
             )}
-            {(l.old_value || l.new_value) && (
+            {(l.old_value != null || l.new_value != null) && (
               <details className="mt-1.5">
                 <summary className="cursor-pointer text-[11px] text-[var(--on-surface-faint)]">
                   Voir le détail

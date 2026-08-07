@@ -6,6 +6,8 @@ Allow: /contact
 Allow: /beta
 Allow: /cgu
 Allow: /privacy
+Allow: /mentions-legales
+Disallow: /admin/
 Disallow: /dashboard/
 Disallow: /pa/
 Disallow: /gpx/
@@ -23,4 +25,4 @@ Disallow: /historique/
 Disallow: /favoris/
 Disallow: /notifications/
 
-Sitemap: https://copiq.fr/sitemap.xml
+Sitemap: https://copiqpolice.app/sitemap.xml

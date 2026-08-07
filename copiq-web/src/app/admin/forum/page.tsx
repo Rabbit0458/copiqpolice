@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { forumApi, type ForumReport } from "@/lib/admin/api"
+import { CommunityModeration } from "./community-moderation"
 import {
   Badge,
   Button,
@@ -14,19 +15,20 @@ import {
 } from "@/components/admin/admin-ui"
 
 export default function ForumPage() {
-  const [tab, setTab] = useState<"reports" | "bans">("reports")
+  const [tab, setTab] = useState<"community" | "reports" | "bans">("community")
 
   return (
     <>
       <PageHeader
         title="Modération du forum"
-        subtitle="Signalements de contenus et bannissements en cours"
+        subtitle="File communautaire globale, preuves privées auditées et ancien forum"
       />
 
       <div className="mb-4 flex gap-1 border-b border-[var(--outline-variant)]">
         {(
           [
-            ["reports", "Signalements"],
+            ["community", "Communauté globale"],
+            ["reports", "Ancien forum"],
             ["bans", "Bannissements"],
           ] as const
         ).map(([k, l]) => (
@@ -44,7 +46,13 @@ export default function ForumPage() {
         ))}
       </div>
 
-      {tab === "reports" ? <Reports /> : <Bans />}
+      {tab === "community" ? (
+        <CommunityModeration />
+      ) : tab === "reports" ? (
+        <Reports />
+      ) : (
+        <Bans />
+      )}
     </>
   )
 }

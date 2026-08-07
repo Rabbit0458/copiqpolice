@@ -17,6 +17,9 @@ library copiqpolice_app;
 // lib/main.dart
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:copiqpolice/features/forum/community_page.dart';
+import 'package:copiqpolice/features/forum/community_repository.dart';
+import 'package:copiqpolice/features/forum/community_notification_service.dart';
 import 'package:flutter/foundation.dart'
     show kDebugMode, kIsWeb, defaultTargetPlatform, FlutterErrorDetails;
 import 'package:google_fonts/google_fonts.dart';
@@ -25,8 +28,10 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:copiqpolice/features/home/home_bootstrap.dart';
 import 'package:copiqpolice/features/home/abonnement_page.dart';
 import 'package:copiqpolice/features/home/premium_required_page.dart';
+import 'package:copiqpolice/features/home/payment_result_page.dart';
 import 'package:copiqpolice/core/services/subscription_gate.dart';
 import 'package:copiqpolice/core/services/subscription_service.dart';
+import 'package:copiqpolice/core/services/ad_service.dart';
 
 // === Écrans (imports unifiés) ===
 import 'package:copiqpolice/features/warning/warning_screen.dart';
@@ -815,7 +820,6 @@ import 'package:copiqpolice/features/memos/cp_memos_page.dart';
 import 'package:copiqpolice/content/paywall/cp_paywall_page.dart';
 import 'package:copiqpolice/core/notifications/cp_notif_prefs_page.dart';
 
-
 // ═══════════════════════════════════════════════════════════════════
 //  PAGES EXISTANTES REMISES DANS LE ROUTEUR (audit 2026-07-26)
 //  Ces pages existaient dans lib/ mais n'etaient reliees a aucune
@@ -829,7 +833,6 @@ import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/cadres_juridiques_page
 // plus haut (lignes ~552 et ~558-567) via des chemins dont les accents sont
 // encodes en URI (stup%C3%A9fiants_pages). Dart resout les deux graphies vers
 // le meme fichier : les reimporter ici produisait 11 duplicate_import.
-
 
 // GPX EXAM — Tests psychotechniques (module features/gpx_exam/psychotechniques)
 import 'package:copiqpolice/features/gpx_exam/psychotechniques/pages/comprendre_epreuve_psycho_page.dart';
@@ -931,11 +934,13 @@ import 'package:copiqpolice/content/pa_scolarite/organisation_pn/pa_organigramme
 import 'package:copiqpolice/content/pa_scolarite/organisation_pn/pa_hierarchie_pn_page.dart';
 import 'package:copiqpolice/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart';
 import 'package:copiqpolice/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart';
-import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/autres_cadres_enquete/autres_cadres_enquete_page.dart' hide PaAutresCadresEnquetePage;
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/autres_cadres_enquete/autres_cadres_enquete_page.dart'
+    hide PaAutresCadresEnquetePage;
 import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/autres_cadres_enquete_page.dart';
 import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/cadres_enquete/cadres_enquete_contenu_page.dart';
 import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/cadres_enquete/cadres_enquete_intro_page.dart';
-import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/cadres_enquete/cadres_enquete_page.dart' hide PaCadresEnquetePage;
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/cadres_enquete/cadres_enquete_page.dart'
+    hide PaCadresEnquetePage;
 import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/cadres_enquete_page.dart';
 import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/cadres_juridiques_page.dart';
 import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart';
@@ -986,7 +991,8 @@ import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/dispari
 import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/disparition/disparitions_inquietantes_enquete_gpx_school.dart';
 import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/disparition/disparitions_inquietantes_intro.dart';
 import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/disparition/disparitions_inquietantes_procedure_gpx_school.dart';
-import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/enquete_flagrant_delit/enquete_flagrant_delit_page.dart' hide PaEnqueteFlagrantDelitPage;
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/enquete_flagrant_delit/enquete_flagrant_delit_page.dart'
+    hide PaEnqueteFlagrantDelitPage;
 import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/enquete_flagrant_delit_page.dart';
 import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/audition_enquete_preliminaire_gpx_school.dart';
 import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_prelim_saisie_comptes_bancaires_page.dart';
@@ -1480,7 +1486,6 @@ import 'package:copiqpolice/content/pa_scolarite/stupefiants_pages/provocation_m
 import 'package:copiqpolice/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart';
 import 'package:copiqpolice/content/pa_scolarite/stupefiants_pages/usage_illicite_contenu_page.dart';
 
-
 import 'package:copiqpolice/features/home/gpx_exam_concours_home_page.dart';
 import 'package:copiqpolice/features/home/gpx_exam_culture_generale_page.dart';
 
@@ -1496,6 +1501,7 @@ import 'package:copiqpolice/core/widgets/app_notifier.dart'
 
 // === Le routing (RouteRegistry, appOnGenerateRoute) est dans app_router.dart ===
 part 'routes/app_router.dart';
+part 'routes/pa_school_routes.dart';
 
 /// ====== CONFIG SUPABASE ======
 const String kSupabaseUrl = 'https://nuoonagnkhbeeymtvrcn.supabase.co';
@@ -1639,6 +1645,8 @@ Future<void> _installUsernameLoader() async {
   HomePageGpxSchool.usernameLoader = usernameLoader;
   // ✅ PA exam : accueil personnalisé avec le prénom (first_name).
   HomePagePaExam.usernameLoader = firstNameLoader;
+  // ✅ PA school : même accueil familier, basé sur user_profiles.first_name.
+  HomePagePaSchool.usernameLoader = firstNameLoader;
   await AppConsoleLogger.success('username_loader:installed');
 }
 
@@ -1687,9 +1695,9 @@ Future<void> main() async {
       // ═══════════════════════════════════════════════════════════════════
       if (kDebugMode) {
         // ignore: avoid_print
-        print('$_red[COP\'IQ] [FATAL] $error$_rst');
+        debugPrint('$_red[COP\'IQ] [FATAL] $error$_rst');
         // ignore: avoid_print
-        print('$_red$stack$_rst');
+        debugPrint('$_red$stack$_rst');
       }
 
       unawaited(
@@ -1731,7 +1739,7 @@ Future<void> _initBackend() async {
     await Supabase.instance.client.auth.recoverSessionFromStorage();
 
     // ignore: avoid_print
-    print('$_green[COP\'IQ] [SUCCESS] Supabase initialisé ✅$_rst');
+    debugPrint('$_green[COP\'IQ] [SUCCESS] Supabase initialisé ✅$_rst');
 
     await _installUsernameLoader();
 
@@ -1741,6 +1749,9 @@ Future<void> _initBackend() async {
       batchSize: 25,
       flushEvery: const Duration(seconds: 5),
     );
+
+    // Alertes communautaires temps réel (respecte la sourdine Supabase).
+    await CommunityNotificationService.I.init();
 
     // Réactive le handler d'erreur complet maintenant que le logger est dispo
     FlutterError.onError = (FlutterErrorDetails details) async {
@@ -1770,31 +1781,36 @@ Future<void> _initBackend() async {
     if (kDebugMode) {
       final supa = Supabase.instance.client;
       final token = supa.auth.currentSession?.accessToken ?? '';
-      final platform =
-          kIsWeb ? 'web' : defaultTargetPlatform.toString().split('.').last;
+      final platform = kIsWeb
+          ? 'web'
+          : defaultTargetPlatform.toString().split('.').last;
       // ignore: avoid_print
-      print('$_cyan[COP\'IQ] [INFO]  Supabase URL: $kSupabaseUrl$_rst');
+      debugPrint('$_cyan[COP\'IQ] [INFO]  Supabase URL: $kSupabaseUrl$_rst');
       // ignore: avoid_print
-      print(
-          '$_cyan[COP\'IQ] [INFO]  Anon key: ${_mask(kSupabaseAnonKey)}$_rst');
+      debugPrint(
+        '$_cyan[COP\'IQ] [INFO]  Anon key: ${_mask(kSupabaseAnonKey)}$_rst',
+      );
       if (token.isNotEmpty) {
         // ignore: avoid_print
-        print(
-            '$_cyan[COP\'IQ] [INFO]  Access token: ${_mask(token)}$_rst');
+        debugPrint(
+          '$_cyan[COP\'IQ] [INFO]  Access token: ${_mask(token)}$_rst',
+        );
       }
       // ignore: avoid_print
-      print(
-          '$_cyan[COP\'IQ] [BOOT]  Platform=$platform  Debug=$kDebugMode  DevMode=$kDeveloperMode$_rst');
+      debugPrint(
+        '$_cyan[COP\'IQ] [BOOT]  Platform=$platform  Debug=$kDebugMode  DevMode=$kDeveloperMode$_rst',
+      );
       // ignore: avoid_print
-      print(
-          '$_cyan[COP\'IQ] [ROUTES] ${RouteRegistry.routes.keys.toList()}$_rst');
+      debugPrint(
+        '$_cyan[COP\'IQ] [ROUTES] ${RouteRegistry.routes.keys.toList()}$_rst',
+      );
     }
 
     _backendReady.complete();
   } catch (e, st) {
     if (kDebugMode) {
       // ignore: avoid_print
-      print('$_red[COP\'IQ] [ERROR] Échec init backend: $e$_rst');
+      debugPrint('$_red[COP\'IQ] [ERROR] Échec init backend: $e$_rst');
     }
     if (!_backendReady.isCompleted) _backendReady.completeError(e, st);
   }
@@ -1842,7 +1858,7 @@ class _MyAppState extends State<MyApp> {
     } catch (e) {
       if (kDebugMode) {
         // ignore: avoid_print
-        print('$_red[COP\'IQ] [BOOT] Backend init failed: $e$_rst');
+        debugPrint('$_red[COP\'IQ] [BOOT] Backend init failed: $e$_rst');
       }
       // On continue quand même pour ne pas bloquer l'app
     }
@@ -1856,36 +1872,42 @@ class _MyAppState extends State<MyApp> {
       switch (e) {
         case AuthChangeEvent.signedIn:
           // ignore: avoid_print
-          print(
-              '$_green[COP\'IQ] [AUTH] signedIn - user=${u?.id} email=${u?.email}$_rst');
-          await AppConsoleLogger.info('auth:signed_in',
-              context: {'user_id': u?.id, 'email': u?.email});
+          debugPrint(
+            '$_green[COP\'IQ] [AUTH] signedIn - user=${u?.id} email=${u?.email}$_rst',
+          );
+          await AppConsoleLogger.info(
+            'auth:signed_in',
+            context: {'user_id': u?.id, 'email': u?.email},
+          );
           break;
         case AuthChangeEvent.signedOut:
           // ignore: avoid_print
-          print('$_yellow[COP\'IQ] [AUTH] signedOut$_rst');
+          debugPrint('$_yellow[COP\'IQ] [AUTH] signedOut$_rst');
           await AppConsoleLogger.info('auth:signed_out');
           break;
         case AuthChangeEvent.tokenRefreshed:
           // ignore: avoid_print
-          print('$_green[COP\'IQ] [AUTH] tokenRefreshed$_rst');
+          debugPrint('$_green[COP\'IQ] [AUTH] tokenRefreshed$_rst');
           await AppConsoleLogger.debug('auth:token_refreshed');
           break;
         case AuthChangeEvent.userUpdated:
           // ignore: avoid_print
-          print('$_cyan[COP\'IQ] [AUTH] userUpdated - user=${u?.id}$_rst');
-          await AppConsoleLogger.debug('auth:user_updated',
-              context: {'user_id': u?.id});
+          debugPrint('$_cyan[COP\'IQ] [AUTH] userUpdated - user=${u?.id}$_rst');
+          await AppConsoleLogger.debug(
+            'auth:user_updated',
+            context: {'user_id': u?.id},
+          );
           break;
         default:
           // ignore: avoid_print
-          print('$_cyan[COP\'IQ] [AUTH] ${e.name}$_rst');
+          debugPrint('$_cyan[COP\'IQ] [AUTH] ${e.name}$_rst');
           await AppConsoleLogger.debug('auth:${e.name}');
       }
     });
 
     // ── 3. Démarrer la synchro abonnements ───────────────────────────────────
     SubscriptionService.instance.startAutoSync();
+    await AdService.instance.init();
 
     await AppConsoleLogger.info('app:bootstrap:start');
 
@@ -1899,8 +1921,9 @@ class _MyAppState extends State<MyApp> {
       ack = false;
       obDone = false;
       // ignore: avoid_print
-      print(
-          '$_yellow[COP\'IQ] [BOOT] Mode production: reset des flags warning/onboarding$_rst');
+      debugPrint(
+        '$_yellow[COP\'IQ] [BOOT] Mode production: reset des flags warning/onboarding$_rst',
+      );
       await AppConsoleLogger.warn('app:bootstrap:reset_flags');
     }
 
@@ -1910,17 +1933,17 @@ class _MyAppState extends State<MyApp> {
     if (!ack) {
       setState(() => _route = _Route.warning);
       // ignore: avoid_print
-      print("$_cyan[COP'IQ] [NAV] -> /warning$_rst");
+      debugPrint("$_cyan[COP'IQ] [NAV] -> /warning$_rst");
       await AppConsoleLogger.info('nav:goto', message: '/warning');
     } else if (!obDone) {
       setState(() => _route = _Route.onboarding);
       // ignore: avoid_print
-      print("$_cyan[COP'IQ] [NAV] -> /onboarding$_rst");
+      debugPrint("$_cyan[COP'IQ] [NAV] -> /onboarding$_rst");
       await AppConsoleLogger.info('nav:goto', message: '/onboarding');
     } else {
       setState(() => _route = _Route.home);
       // ignore: avoid_print
-      print("$_cyan[COP'IQ] [NAV] -> /home$_rst");
+      debugPrint("$_cyan[COP'IQ] [NAV] -> /home$_rst");
       await AppConsoleLogger.info('nav:goto', message: '/home');
     }
 
@@ -2018,25 +2041,23 @@ class _MyAppState extends State<MyApp> {
             duration: const Duration(milliseconds: 300),
             child: switch (_route) {
               _Route.loading => _BootSplash(
-                  key: const ValueKey('splash'),
-                  onAnimationComplete: _onSplashComplete,
-                ),
+                key: const ValueKey('splash'),
+                onAnimationComplete: _onSplashComplete,
+              ),
 
               _Route.warning => WarningScreen(
-                  key: const ValueKey('warning'),
-                  onAccepted: _onWarningAccepted,
-                ),
+                key: const ValueKey('warning'),
+                onAccepted: _onWarningAccepted,
+              ),
 
               _Route.onboarding => OnboardingScreen(
-                  key: const ValueKey('onboarding'),
-                  onSkip: _goToSignupAfterOnboarding,
-                  onFinish: _goToSignupAfterOnboarding,
-                  onLogin: _goToLoginAfterOnboarding,
-                ),
+                key: const ValueKey('onboarding'),
+                onSkip: _goToSignupAfterOnboarding,
+                onFinish: _goToSignupAfterOnboarding,
+                onLogin: _goToLoginAfterOnboarding,
+              ),
 
-              _Route.home => const ModePickerScreen(
-                  key: ValueKey('home'),
-                ),
+              _Route.home => const ModePickerScreen(key: ValueKey('home')),
             },
           ),
         );
@@ -2088,12 +2109,14 @@ class _BootSplashState extends State<_BootSplash>
       duration: const Duration(milliseconds: 800),
     );
 
-    _logoOpacity = Tween<double>(begin: 0.0, end: 1.0).animate(
-      CurvedAnimation(parent: _logoCtrl, curve: Curves.easeOut),
-    );
-    _logoScale = Tween<double>(begin: 0.90, end: 1.0).animate(
-      CurvedAnimation(parent: _logoCtrl, curve: Curves.easeOutCubic),
-    );
+    _logoOpacity = Tween<double>(
+      begin: 0.0,
+      end: 1.0,
+    ).animate(CurvedAnimation(parent: _logoCtrl, curve: Curves.easeOut));
+    _logoScale = Tween<double>(
+      begin: 0.90,
+      end: 1.0,
+    ).animate(CurvedAnimation(parent: _logoCtrl, curve: Curves.easeOutCubic));
 
     // ── TEXTE : 700 ms de fondu, démarre 400 ms après la fin du logo ─────
     // → logo visible seul de 800 ms à 1200 ms, texte apparaît à 1200 ms.
@@ -2133,22 +2156,22 @@ class _BootSplashState extends State<_BootSplash>
   @override
   Widget build(BuildContext context) {
     // ── Source de vérité unique : AppSettingsController ──────────────────
-    final isDark =
-        AppSettingsController.I.themeMode.value == ThemeMode.dark;
+    final isDark = AppSettingsController.I.themeMode.value == ThemeMode.dark;
 
     // Palettes selon les specs
-    const Color bgLight   = Color(0xFFFFFFFF);
-    const Color altLight  = Color(0xFFF6F8FF);
-    const Color bgDark    = Color(0xFF06111F);
-    const Color altDark   = Color(0xFF0B1B33);
+    const Color bgLight = Color(0xFFFFFFFF);
+    const Color altLight = Color(0xFFF6F8FF);
+    const Color bgDark = Color(0xFF06111F);
+    const Color altDark = Color(0xFF0B1B33);
     const Color textLight = Color(0xFF5F6472);
-    const Color textDark  = Color(0xFFD7DCE8);
+    const Color textDark = Color(0xFFD7DCE8);
 
-    final Color bg         = isDark ? bgDark   : bgLight;
-    final Color altBg      = isDark ? altDark  : altLight;
+    final Color bg = isDark ? bgDark : bgLight;
+    final Color altBg = isDark ? altDark : altLight;
     final Color legalColor = isDark ? textDark : textLight;
-    final Color glowColor  =
-        const Color(0xFF4DA3FF).withOpacity(isDark ? 0.14 : 0.06);
+    final Color glowColor = const Color(
+      0xFF4DA3FF,
+    ).withOpacity(isDark ? 0.14 : 0.06);
 
     return Scaffold(
       backgroundColor: bg,

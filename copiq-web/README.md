@@ -1,6 +1,26 @@
 # COP'IQ — Plateforme Web
 
-Plateforme web Next.js 15 de préparation aux concours de la Police Nationale (PA & GPX).
+Plateforme web Next.js 16 de préparation aux concours de la Police Nationale (PA & GPX).
+
+## Publication chez l'hébergeur
+
+Le code source reste dans `copiq-web/`. Le dossier frère `fae16dc1/` est le seul
+dossier destiné à l'hébergeur et ne doit pas être retouché manuellement.
+
+Depuis la racine du dépôt, double-cliquer sur `PUBLIER_SITE.command`, ou lancer :
+
+```bash
+npm run release:hosting
+```
+
+La procédure compile les pages statiques, vérifie notamment `/admin/`, conserve
+une configuration Supabase déjà renseignée et publie atomiquement le résultat.
+Le fichier `fae16dc1/deployment-manifest.json` indique quand le dossier a été créé
+et quelles routes critiques ont été validées.
+
+> Un hébergement statique ne peut pas exécuter les routes Next.js sous `src/app/api`.
+> Les opérations Stripe et de suppression de compte doivent être hébergées dans
+> les Supabase Edge Functions prévues à cet effet avant leur mise en production.
 
 ## Stack technique
 

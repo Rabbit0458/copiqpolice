@@ -2,7 +2,7 @@
 // Choix du grade : Réserviste / Policier adjoint / Gardien de la paix
 // - Upsert Supabase (user_profiles.user_track)
 // - Persistance locale + live controllers (si exposés)
-// - Redirection Home (ou Réserve)
+// - Redirection Home (le module Réserve reste verrouillé)
 
 import 'dart:ui'; // pour ImageFilter.blur
 import 'package:flutter/services.dart';
@@ -14,7 +14,6 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 // Si tu as exposé le contrôleur du grade depuis home_page.dart
 import 'package:copiqpolice/features/home/home_page.dart'
     show UserTrackController, UserTrack;
-import 'package:copiqpolice/features/reserve/accueil_reserve.dart';
 import 'package:copiqpolice/core/widgets/app_notifier.dart'
     show AppNotifier;
 
@@ -105,15 +104,6 @@ class _GradePickerScreenState extends State<GradePickerScreen> {
 
     try {
       final sp = await SharedPreferences.getInstance();
-
-      if (g == GradeChoice.reserve) {
-        await _upsertProfile(userTrack: 'reserve');
-        if (!mounted) return;
-        Navigator.of(
-          context,
-        ).pushReplacementNamed(ReserveAccueilPage.routeName);
-        return;
-      }
 
       if (g == GradeChoice.pa) {
         await sp.setString('selected_track', 'pa');

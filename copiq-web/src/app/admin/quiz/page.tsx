@@ -3,10 +3,12 @@
 import { Suspense, useState } from "react"
 import { useRouter, useSearchParams } from "next/navigation"
 import {
-  quizApi,
+  contentLifecycleApi, quizApi,
   type QuizModuleRow,
   type QuizQuestionRow,
 } from "@/lib/admin/api"
+import { ContentLifecycleControl } from "@/components/admin/content-lifecycle-control"
+import { lifecycleError, lifecycleLabels, publicationStatusOf, toIsoDateTime, toLocalDateTime, type PublicationStatus } from "@/lib/admin/content-lifecycle"
 import {
   Badge,
   Button,
@@ -17,6 +19,9 @@ import {
   PageHeader,
   useAsync,
 } from "@/components/admin/admin-ui"
+import { QuizContentPreview } from "@/components/admin/content-preview"
+import { EditorialReadiness } from "@/components/admin/editorial-readiness"
+import { blockingIssues, validateQuiz } from "@/lib/admin/content-validation"
 
 export default function Page() {
   return (
@@ -28,15 +33,18 @@ export default function Page() {
 
 function QuizScreen() {
   const params = useSearchParams()
-  const module = params.get("module")
-  return module ? <QuestionList module={module} /> : <ModuleList />
+  const selectedModule = params.get("module")
+  return selectedModule ? <QuestionList module={selectedModule} /> : <ModuleList />
 }
 
 /* ══════════════════════════════════════════════════════════════════════════ */
 
 function ModuleList() {
   const router = useRouter()
+  const params = useSearchParams()
+  const quality = params.get("quality")
   const { data, error, loading } = useAsync(() => quizApi.listModules(), [])
+  const visibleModules = (data ?? []).filter((row) => quality !== "missing-explanation" || row.nb_sans_explication > 0)
 
   return (
     <>
@@ -47,10 +55,16 @@ function ModuleList() {
 
       {error && <ErrorBox error={error} />}
       {loading && <Loading />}
-      {data && data.length === 0 && <Empty>Aucun quiz configuré.</Empty>}
+      {quality === "missing-explanation" && (
+        <div className="mb-4 flex flex-wrap items-center justify-between gap-2 rounded-xl border border-[var(--warning)]/25 bg-[var(--warning)]/[.07] px-3.5 py-3 text-xs">
+          <span><strong>File de contrôle :</strong> modules contenant des questions sans correction.</span>
+          <button type="button" onClick={() => router.push("/admin/quiz/")} className="min-h-9 cursor-pointer rounded-lg px-2.5 font-semibold text-[var(--brand)] hover:bg-[var(--brand)]/10">Voir tous les quiz</button>
+        </div>
+      )}
+      {data && visibleModules.length === 0 && <Empty>Aucun quiz dans cette sélection.</Empty>}
 
       <div className="grid gap-3 md:grid-cols-2">
-        {(data ?? []).map((m) => (
+        {visibleModules.map((m) => (
           <ModuleCard
             key={m.module}
             m={m}
@@ -173,7 +187,7 @@ function QuestionList({ module }: { module: string }) {
                     {q.difficulty}
                   </Badge>
                   {q.category && <Badge>{q.category}</Badge>}
-                  {!q.is_active && <Badge tone="bad">désactivée</Badge>}
+                  <Badge tone={publicationStatusOf(q) === "published" ? "good" : publicationStatusOf(q) === "archived" ? "bad" : publicationStatusOf(q) === "scheduled" ? "brand" : "warn"}>{lifecycleLabels[publicationStatusOf(q)]}</Badge>
                   {!q.explanation && <Badge tone="warn">sans explication</Badge>}
                 </div>
                 <p className="text-sm font-medium">{q.question}</p>
@@ -243,7 +257,8 @@ function QuestionForm({
     difficulty: initial?.difficulty ?? "Moyenne",
     explanation: initial?.explanation ?? "",
     legal_ref: initial?.legal_ref ?? "",
-    is_active: initial?.is_active ?? true,
+    publication_status: (initial ? publicationStatusOf(initial) : "draft") as PublicationStatus,
+    scheduled_at: toLocalDateTime(initial?.scheduled_at),
   })
   const [busy, setBusy] = useState(false)
   const [err, setErr] = useState<unknown>(null)
@@ -253,13 +268,30 @@ function QuestionForm({
     .map((s) => s.trim())
     .filter(Boolean)
   const answerValid = options.includes(f.answer.trim())
+  const editorialIssues = validateQuiz({
+    question: f.question,
+    options,
+    answer: f.answer,
+    category: f.category,
+    explanation: f.explanation,
+    legalRef: f.legal_ref,
+  })
+  const blockers = blockingIssues(editorialIssues)
 
   async function submit(e: React.FormEvent) {
     e.preventDefault()
     setBusy(true)
     setErr(null)
+    const goingLive = f.publication_status === "published" || f.publication_status === "scheduled"
+    const scheduleIssue = lifecycleError(f.publication_status, f.scheduled_at)
+    if (scheduleIssue) { setErr(new Error(scheduleIssue)); setBusy(false); return }
+    if (goingLive && blockers.length > 0) {
+      setErr(new Error(`Activation impossible : ${blockers.map((issue) => issue.label.toLocaleLowerCase("fr-FR")).join(", ")}.`))
+      setBusy(false)
+      return
+    }
     try {
-      await quizApi.upsertQuestion({
+      const saved = await quizApi.upsertQuestion({
         id: initial?.id,
         module,
         question: f.question,
@@ -269,8 +301,9 @@ function QuestionForm({
         difficulty: f.difficulty,
         explanation: f.explanation || null,
         legal_ref: f.legal_ref || null,
-        is_active: f.is_active,
+        is_active: f.publication_status === "published",
       })
+      await contentLifecycleApi.set("quiz_question", initial?.id ?? saved.id, f.publication_status, toIsoDateTime(f.scheduled_at))
       onSaved()
     } catch (e2) {
       setErr(e2)
@@ -280,11 +313,12 @@ function QuestionForm({
   }
 
   return (
-    <Card className="mb-4 p-5">
-      <h2 className="mb-3 text-sm font-semibold">
-        {initial ? "Modifier la question" : "Nouvelle question"}
-      </h2>
-      <form onSubmit={submit} className="space-y-3">
+    <div className="mb-5 grid items-start gap-4 xl:grid-cols-[minmax(0,1fr)_minmax(340px,.82fr)]">
+      <Card className="p-5">
+        <h2 className="mb-3 text-sm font-semibold">
+          {initial ? "Modifier la question" : "Nouvelle question"}
+        </h2>
+        <form onSubmit={submit} className="space-y-3">
         <Field label="Question">
           <textarea
             value={f.question}
@@ -360,27 +394,36 @@ function QuestionForm({
           />
         </Field>
 
-        <label className="flex items-center gap-2 text-sm">
-          <input
-            type="checkbox"
-            checked={f.is_active}
-            onChange={(e) => setF({ ...f, is_active: e.target.checked })}
-            className="h-4 w-4"
-          />
-          Question active (visible dans l&apos;application)
-        </label>
+        <EditorialReadiness issues={editorialIssues} activeLabel="activation" />
+
+        <ContentLifecycleControl status={f.publication_status} scheduledAt={f.scheduled_at} onStatusChange={(value) => setF({ ...f, publication_status: value })} onScheduledAtChange={(value) => setF({ ...f, scheduled_at: value })} onRestore={initial && publicationStatusOf(initial) === "archived" ? async () => { setBusy(true); try { await contentLifecycleApi.set("quiz_question", initial.id, "restore"); onSaved() } catch (e) { setErr(e) } finally { setBusy(false) } } : undefined} />
 
         <ErrorBox error={err} />
         <div className="flex gap-2">
-          <Button type="submit" disabled={busy || !answerValid}>
+          <Button type="submit" disabled={busy || ((f.publication_status === "published" || f.publication_status === "scheduled") && blockers.length > 0)}>
             {busy ? "Enregistrement…" : "Enregistrer"}
           </Button>
           <Button type="button" variant="ghost" onClick={onCancel}>
             Annuler
           </Button>
         </div>
-      </form>
-    </Card>
+        {(f.publication_status === "published" || f.publication_status === "scheduled") && blockers.length > 0 && <p className="text-xs text-[var(--danger)]">Conserve la question en brouillon, ou corrige les erreurs avant sa diffusion.</p>}
+        </form>
+      </Card>
+
+      <div className="xl:sticky xl:top-20">
+        <QuizContentPreview
+          module={module}
+          question={f.question}
+          options={options}
+          answer={f.answer.trim()}
+          category={f.category}
+          difficulty={f.difficulty}
+          explanation={f.explanation}
+          legalRef={f.legal_ref}
+        />
+      </div>
+    </div>
   )
 }
 

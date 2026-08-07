@@ -1,0 +1,14 @@
+{
+  "product": "COP’IQ",
+  "generatedAt": "2026-08-04T20:07:25.749Z",
+  "source": "copiq-web/out",
+  "uploadFolder": "fae16dc1",
+  "verifiedRoutes": [
+    "/",
+    "/404.html",
+    "/admin/",
+    "/login/",
+    "/signup/",
+    "/auth/callback/"
+  ]
+}

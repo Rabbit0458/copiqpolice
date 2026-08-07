@@ -42,7 +42,7 @@ export default function ForumList({ posts, categories, currentUserId }: Props) {
             <p className="text-sm text-[var(--on-surface-muted)]">Aucun sujet pour le moment. Soyez le premier à lancer une discussion !</p>
           </div>
         ) : filtered.map((post: any) => (
-          <Link key={post.id} href={`/forum/${post.id}`} className="flex items-start gap-4 p-4 hover:bg-[var(--surface-dark)] transition-colors group">
+          <Link key={post.id} href={`/forum/post/?id=${encodeURIComponent(post.id)}`} className="flex items-start gap-4 p-4 hover:bg-[var(--surface-dark)] transition-colors group">
             <div className={`w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5 ${post.pinned ? "bg-[#1147D9]/10" : "bg-[var(--surface-dark)]"}`}>
               {post.pinned ? <Pin size={15} className="text-[#1147D9]" /> : <MessageCircle size={15} className="text-[var(--on-surface-muted)]" />}
             </div>

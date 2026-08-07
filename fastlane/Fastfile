@@ -159,7 +159,7 @@ platform :ios do
         uploadSymbols:                 true,
         teamID:                        ENV["APPLE_TEAM_ID"],
         provisioningProfiles: {
-          "fr.copiq.police" => "match AppStore fr.copiq.police"
+          "fr.copiq.app" => "match AppStore fr.copiq.app"
         }
       }
     )

@@ -1074,8 +1074,7 @@ class _PaQuizCultureGeneraleMythologieState
         'created_at': DateTime.now().toUtc().toIso8601String(),
         'exam_type': 'pa',
 
-        // 🔥 si tu ajoutes cette colonne dans la table :
-        // 'history_id': _historyRowId,
+        'history_id': _historyRowId,
       };
 
       await _sb.from('quiz_culture_generale_mythologie_pages').insert(payload);

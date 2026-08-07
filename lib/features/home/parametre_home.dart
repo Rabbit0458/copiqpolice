@@ -2,6 +2,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:copiqpolice/core/widgets/app_notifier.dart'; // AppNotifier + AppSettingsController
+import 'package:copiqpolice/features/forum/community_models.dart';
+import 'package:copiqpolice/features/forum/community_repository.dart';
+import 'package:copiqpolice/features/forum/community_notification_service.dart';
 
 // ---- Style helpers
 const double _r16 = 16;
@@ -21,6 +24,49 @@ class ParametreHomePage extends StatefulWidget {
 
 class _ParametreHomePageState extends State<ParametreHomePage> {
   final ctrl = AppSettingsController.I;
+  final _communityRepository = CommunityRepository();
+  late Future<CommunityNotificationPreferences> _communityPreferences =
+      _communityRepository.notificationPreferences();
+  bool _savingCommunityPreferences = false;
+
+  Future<void> _saveCommunityPreferences(
+    CommunityNotificationPreferences value,
+  ) async {
+    if (_savingCommunityPreferences) return;
+    setState(() {
+      _savingCommunityPreferences = true;
+      _communityPreferences = Future.value(value);
+    });
+    try {
+      if (value.enabled) {
+        final allowed = await CommunityNotificationService.I
+            .requestPermission();
+        if (!allowed && mounted) {
+          AppNotifier.info(
+            context,
+            title: 'Autorisation nécessaire',
+            message:
+                'Active les notifications dans les réglages du téléphone pour recevoir les alertes.',
+          );
+        }
+      }
+      await _communityRepository.updateNotificationPreferences(value);
+    } catch (_) {
+      if (mounted) {
+        setState(
+          () => _communityPreferences = _communityRepository
+              .notificationPreferences(),
+        );
+        AppNotifier.error(
+          context,
+          title: 'Préférences non enregistrées',
+          message: 'Réessaie dans quelques instants.',
+        );
+      }
+    } finally {
+      if (mounted) setState(() => _savingCommunityPreferences = false);
+    }
+  }
 
   /// Applique immédiatement (UI instantanée via ValueNotifier) + persiste.
   Future<void> _applyAndToast(ThemeMode mode) async {
@@ -127,6 +173,128 @@ class _ParametreHomePageState extends State<ParametreHomePage> {
 
             const SizedBox(height: 28),
 
+            // ============ Notifications communautaires ============
+            Text(
+              'Notifications',
+              style: theme.textTheme.titleMedium?.copyWith(
+                fontWeight: FontWeight.w800,
+              ),
+            ),
+            const SizedBox(height: 12),
+            FutureBuilder<CommunityNotificationPreferences>(
+              future: _communityPreferences,
+              builder: (context, snapshot) {
+                if (!snapshot.hasData) {
+                  return Container(
+                    height: 112,
+                    alignment: Alignment.center,
+                    decoration: BoxDecoration(
+                      color: theme.colorScheme.surface,
+                      borderRadius: BorderRadius.circular(_r16),
+                      border: Border.all(
+                        color: theme.dividerColor.withValues(alpha: .10),
+                      ),
+                    ),
+                    child: const CircularProgressIndicator(),
+                  );
+                }
+                final preferences = snapshot.data!;
+                return Container(
+                  decoration: BoxDecoration(
+                    color: theme.colorScheme.surface,
+                    borderRadius: BorderRadius.circular(_r16),
+                    boxShadow: [_cardShadow],
+                    border: Border.all(
+                      color: theme.dividerColor.withValues(alpha: .10),
+                    ),
+                  ),
+                  clipBehavior: Clip.antiAlias,
+                  child: Column(
+                    children: [
+                      Semantics(
+                        label: 'Mettre toutes les notifications en sourdine',
+                        child: SwitchListTile.adaptive(
+                          secondary: Icon(
+                            preferences.enabled
+                                ? Icons.notifications_active_outlined
+                                : Icons.notifications_off_outlined,
+                          ),
+                          title: const Text('Alertes communautaires'),
+                          subtitle: Text(
+                            preferences.enabled
+                                ? 'Bannières et sons activés'
+                                : 'Sourdine activée',
+                          ),
+                          value: preferences.enabled,
+                          onChanged: _savingCommunityPreferences
+                              ? null
+                              : (enabled) => _saveCommunityPreferences(
+                                  CommunityNotificationPreferences(
+                                    enabled: enabled,
+                                    messagesEnabled:
+                                        preferences.messagesEnabled,
+                                    forumEnabled: preferences.forumEnabled,
+                                  ),
+                                ),
+                        ),
+                      ),
+                      Divider(
+                        height: 1,
+                        indent: 58,
+                        color: theme.dividerColor.withValues(alpha: .12),
+                      ),
+                      SwitchListTile.adaptive(
+                        secondary: const Icon(
+                          Icons.chat_bubble_outline_rounded,
+                        ),
+                        title: const Text('Messages privés'),
+                        subtitle: const Text('Alerte quand un membre t’écrit'),
+                        value: preferences.messagesEnabled,
+                        onChanged:
+                            !preferences.enabled || _savingCommunityPreferences
+                            ? null
+                            : (enabled) => _saveCommunityPreferences(
+                                CommunityNotificationPreferences(
+                                  enabled: preferences.enabled,
+                                  messagesEnabled: enabled,
+                                  forumEnabled: preferences.forumEnabled,
+                                ),
+                              ),
+                      ),
+                      SwitchListTile.adaptive(
+                        secondary: const Icon(Icons.forum_outlined),
+                        title: const Text('Activité du forum'),
+                        subtitle: const Text('Réponses et réactions'),
+                        value: preferences.forumEnabled,
+                        onChanged:
+                            !preferences.enabled || _savingCommunityPreferences
+                            ? null
+                            : (enabled) => _saveCommunityPreferences(
+                                CommunityNotificationPreferences(
+                                  enabled: preferences.enabled,
+                                  messagesEnabled: preferences.messagesEnabled,
+                                  forumEnabled: enabled,
+                                ),
+                              ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(16, 2, 16, 14),
+                        child: Text(
+                          'La sourdine coupe les alertes, mais conserve les activités dans le centre de notifications.',
+                          style: theme.textTheme.bodySmall?.copyWith(
+                            color: theme.colorScheme.onSurfaceVariant,
+                            height: 1.4,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                );
+              },
+            ),
+
+            const SizedBox(height: 28),
+
             // ============ Barre de navigation ============
             Text(
               'Barre de navigation',
@@ -142,7 +310,9 @@ class _ParametreHomePageState extends State<ParametreHomePage> {
                 color: theme.colorScheme.surface,
                 borderRadius: BorderRadius.circular(_r16),
                 boxShadow: [_cardShadow],
-                border: Border.all(color: theme.dividerColor.withValues(alpha: .10)),
+                border: Border.all(
+                  color: theme.dividerColor.withValues(alpha: .10),
+                ),
               ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -185,8 +355,8 @@ class _ParametreHomePageState extends State<ParametreHomePage> {
                             decoration: BoxDecoration(
                               color: isDark
                                   ? Colors.white.withValues(alpha: .08)
-                                  : theme.colorScheme.onSurface.withValues(alpha: 
-                                      .90,
+                                  : theme.colorScheme.onSurface.withValues(
+                                      alpha: .90,
                                     ),
                               borderRadius: BorderRadius.circular(value / 2),
                               border: Border.all(

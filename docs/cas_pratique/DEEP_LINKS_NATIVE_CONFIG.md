@@ -74,7 +74,7 @@ Créer `https://app.copiq.fr/.well-known/assetlinks.json` :
   "relation": ["delegate_permission/common.handle_all_urls"],
   "target": {
     "namespace": "android_app",
-    "package_name": "fr.copiq.police",
+    "package_name": "fr.copiq.app",
     "sha256_cert_fingerprints": [
       "REMPLACER_PAR_SHA256_DU_KEYSTORE_RELEASE"
     ]
@@ -93,7 +93,7 @@ Créer `https://app.copiq.fr/.well-known/apple-app-site-association` :
   "applinks": {
     "apps": [],
     "details": [{
-      "appID": "TEAMID.fr.copiq.police",
+      "appID": "TEAMID.fr.copiq.app",
       "paths": ["/c/*"]
     }]
   }
@@ -132,7 +132,7 @@ Si `copiqpolice://cas/<slug>` doit fonctionner aussi (scheme custom) :
 adb shell am start \
   -W -a android.intent.action.VIEW \
   -d "https://app.copiq.fr/c/case_1?utm_source=test" \
-  fr.copiq.police
+  fr.copiq.app
 ```
 
 ### iOS (simulateur)

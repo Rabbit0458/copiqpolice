@@ -2,231 +2,225 @@
 
 import { useEffect, useRef, useState, Suspense } from "react"
 import { useRouter, useSearchParams } from "next/navigation"
-import Link from "next/link"
-import { createClient } from "@/lib/supabase/client"
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
-type ConfirmStatus = "loading" | "success" | "error" | "expired" | "no-params"
+type Status = "loading" | "success" | "error"
 
-// ─── Icons ────────────────────────────────────────────────────────────────────
+const LOGO_URL =
+  "https://nuoonagnkhbeeymtvrcn.supabase.co/storage/v1/object/public/assets/logo_gris.png"
 
-function IconSuccess() {
+// ─── Icône animée (cercle + coche / croix qui se dessinent) ──────────────────
+
+function AnimatedIcon({ status }: { status: Status }) {
+  const ok = status === "success"
+  const color = status === "loading" ? "var(--brand)" : ok ? "#22C55E" : "#EF4444"
+
   return (
-    <div className="w-16 h-16 rounded-full flex items-center justify-center mb-6"
-      style={{ background: "color-mix(in srgb, #22C55E 12%, transparent)" }}>
-      <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-        <path d="M7 16.5L13 22.5L25 10" stroke="#22C55E" strokeWidth="2.5"
-          strokeLinecap="round" strokeLinejoin="round" />
+    <div className="copiq-icon-pop" style={{ width: 96, height: 96, position: "relative" }}>
+      {status !== "loading" && (
+        <div
+          className="copiq-glow"
+          style={{
+            background: `radial-gradient(circle, ${ok ? "rgba(34,197,94,.4)" : "rgba(239,68,68,.4)"}, transparent 70%)`,
+          }}
+        />
+      )}
+      <svg width="96" height="96" viewBox="0 0 96 96" fill="none">
+        <circle
+          cx="48"
+          cy="48"
+          r="42"
+          stroke={color}
+          strokeWidth="3"
+          strokeLinecap="round"
+          className={status === "loading" ? "copiq-circle-spin" : "copiq-circle-draw"}
+          style={{ opacity: status === "loading" ? 0.25 : 1 }}
+        />
+        {status === "loading" && (
+          <path
+            d="M48 6a42 42 0 0 1 42 42"
+            stroke={color}
+            strokeWidth="3"
+            strokeLinecap="round"
+            className="copiq-arc-spin"
+          />
+        )}
+        {ok && (
+          <path
+            d="M30 49l12 12 24-26"
+            stroke={color}
+            strokeWidth="4.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="copiq-check-draw"
+          />
+        )}
+        {status === "error" && (
+          <>
+            <path d="M34 34l28 28" stroke={color} strokeWidth="4.5" strokeLinecap="round" className="copiq-cross-draw-1" />
+            <path d="M62 34L34 62" stroke={color} strokeWidth="4.5" strokeLinecap="round" className="copiq-cross-draw-2" />
+          </>
+        )}
       </svg>
     </div>
   )
 }
 
-function IconError() {
+// ─── Styles (animations) ──────────────────────────────────────────────────────
+
+function AnimStyles() {
   return (
-    <div className="w-16 h-16 rounded-full flex items-center justify-center mb-6"
-      style={{ background: "color-mix(in srgb, #EF4444 12%, transparent)" }}>
-      <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-        <path d="M11 11l10 10M21 11L11 21" stroke="#EF4444" strokeWidth="2.5"
-          strokeLinecap="round" />
-      </svg>
-    </div>
+    <style>{`
+      @keyframes copiq-fade-up {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes copiq-pop {
+        0% { opacity: 0; transform: scale(.7); }
+        60% { opacity: 1; transform: scale(1.06); }
+        100% { opacity: 1; transform: scale(1); }
+      }
+      @keyframes copiq-draw { to { stroke-dashoffset: 0; } }
+      @keyframes copiq-spin { to { transform: rotate(360deg); } }
+      @keyframes copiq-glow-pulse {
+        0% { opacity: 0; transform: scale(.6); }
+        45% { opacity: 1; transform: scale(1.05); }
+        100% { opacity: 0; transform: scale(1.7); }
+      }
+      @keyframes copiq-settle {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.08); }
+        100% { transform: scale(1); }
+      }
+
+      .copiq-card { animation: copiq-fade-up .5s cubic-bezier(.16,1,.3,1) both; }
+      .copiq-logo { animation: copiq-fade-up .5s cubic-bezier(.16,1,.3,1) both; }
+      .copiq-icon-pop {
+        animation: copiq-pop .55s cubic-bezier(.16,1,.3,1) both .1s,
+                   copiq-settle .4s cubic-bezier(.34,1.56,.64,1) both .85s;
+        opacity: 0;
+      }
+      .copiq-glow {
+        position: absolute;
+        inset: -24px;
+        border-radius: 50%;
+        opacity: 0;
+        animation: copiq-glow-pulse 1.1s ease-out .5s forwards;
+        pointer-events: none;
+      }
+
+      .copiq-circle-draw {
+        stroke-dasharray: 264;
+        stroke-dashoffset: 264;
+        animation: copiq-draw .6s ease-out .15s forwards;
+      }
+      .copiq-check-draw {
+        stroke-dasharray: 50;
+        stroke-dashoffset: 50;
+        animation: copiq-draw .35s ease-out .55s forwards;
+      }
+      .copiq-cross-draw-1, .copiq-cross-draw-2 {
+        stroke-dasharray: 40;
+        stroke-dashoffset: 40;
+        animation: copiq-draw .3s ease-out forwards;
+      }
+      .copiq-cross-draw-1 { animation-delay: .5s; }
+      .copiq-cross-draw-2 { animation-delay: .68s; }
+
+      .copiq-circle-spin, .copiq-arc-spin {
+        transform-origin: 48px 48px;
+        animation: copiq-spin 1s linear infinite;
+      }
+    `}</style>
   )
 }
 
-function IconExpired() {
-  return (
-    <div className="w-16 h-16 rounded-full flex items-center justify-center mb-6"
-      style={{ background: "color-mix(in srgb, #F59E0B 12%, transparent)" }}>
-      <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-        <circle cx="16" cy="16" r="10" stroke="#F59E0B" strokeWidth="2" />
-        <path d="M16 10v7" stroke="#F59E0B" strokeWidth="2" strokeLinecap="round" />
-        <circle cx="16" cy="21.5" r="1.25" fill="#F59E0B" />
-      </svg>
-    </div>
-  )
-}
+// ─── Boutons ──────────────────────────────────────────────────────────────────
 
-function IconInfo() {
-  return (
-    <div className="w-16 h-16 rounded-full flex items-center justify-center mb-6"
-      style={{ background: "color-mix(in srgb, #1147D9 12%, transparent)" }}>
-      <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-        <circle cx="16" cy="16" r="10" stroke="#1147D9" strokeWidth="2" />
-        <path d="M16 15v7" stroke="#1147D9" strokeWidth="2" strokeLinecap="round" />
-        <circle cx="16" cy="11" r="1.25" fill="#1147D9" />
-      </svg>
-    </div>
-  )
-}
+function Btn({ href, onClick, children, variant = "primary" }: {
+  href?: string
+  onClick?: () => void
+  children: React.ReactNode
+  variant?: "primary" | "ghost"
+}) {
+  const cls =
+    variant === "primary"
+      ? "w-full h-12 rounded-full bg-brand text-white text-[15px] font-semibold flex items-center justify-center hover:bg-brand-mid active:scale-[.98] transition-all"
+      : "w-full h-12 rounded-full text-[var(--on-surface-muted)] text-[15px] font-medium flex items-center justify-center hover:text-[var(--on-surface)] transition-colors"
 
-function IconSpinner() {
+  if (href) {
+    return (
+      <a href={href} className={cls}>
+        {children}
+      </a>
+    )
+  }
   return (
-    <div className="w-16 h-16 rounded-full flex items-center justify-center mb-6"
-      style={{ background: "color-mix(in srgb, #1147D9 10%, transparent)" }}>
-      <div className="w-8 h-8 border-2 border-[#1147D9] border-t-transparent rounded-full animate-spin" />
-    </div>
-  )
-}
-
-// ─── Boutons réutilisables ────────────────────────────────────────────────────
-
-function BtnPrimary({ href, children }: { href: string; children: React.ReactNode }) {
-  return (
-    <Link
-      href={href}
-      className="w-full h-11 rounded-xl bg-brand text-white text-sm font-semibold
-        flex items-center justify-center gap-2
-        hover:bg-brand-mid active:scale-[.98] transition-all"
-    >
-      {children}
-    </Link>
-  )
-}
-
-function BtnSecondary({ href, children }: { href: string; children: React.ReactNode }) {
-  return (
-    <Link
-      href={href}
-      className="text-[var(--on-surface-muted)] text-sm text-center
-        hover:text-[var(--on-surface)] transition-colors"
-    >
-      {children}
-    </Link>
-  )
-}
-
-function BtnOutline({ onClick, children }: { onClick: () => void; children: React.ReactNode }) {
-  return (
-    <button
-      onClick={onClick}
-      className="w-full h-11 rounded-xl border border-[var(--outline)] text-[var(--on-surface)]
-        text-sm font-semibold flex items-center justify-center gap-2
-        hover:bg-[var(--surface-container)] active:scale-[.98] transition-all"
-    >
+    <button type="button" onClick={onClick} className={cls}>
       {children}
     </button>
   )
 }
 
-// ─── États ───────────────────────────────────────────────────────────────────
+// ─── Écran unique ─────────────────────────────────────────────────────────────
 
-function StateLoading() {
+function Screen({
+  status,
+  title,
+  message,
+  detail,
+  primary,
+}: {
+  status: Status
+  title: string
+  message: string
+  detail?: string
+  primary?: React.ReactNode
+}) {
   return (
-    <div className="flex flex-col items-center text-center py-8">
-      <IconSpinner />
-      <h1 className="text-[var(--on-surface)] text-2xl font-bold mb-2 tracking-tight">
-        Vérification en cours
-      </h1>
-      <p className="text-[var(--on-surface-muted)] text-sm leading-relaxed">
-        Vérification de votre lien de confirmation…
-      </p>
-      <p className="text-[var(--on-surface-faint)] text-sm mt-1">
-        Merci de patienter quelques secondes.
-      </p>
-    </div>
-  )
-}
+    <div
+      className="fixed inset-0 z-[999] flex items-center justify-center px-6"
+      style={{ background: "var(--surface)" }}
+    >
+      <AnimStyles />
+      <div className="w-full max-w-[340px] flex flex-col items-center text-center">
+        <img
+          src={LOGO_URL}
+          alt="COP'IQ"
+          width={64}
+          height={64}
+          className="copiq-logo w-16 h-16 object-contain mb-10"
+        />
 
-function StateSuccess() {
-  return (
-    <div className="flex flex-col items-center text-center py-8">
-      <IconSuccess />
-      <h1 className="text-[var(--on-surface)] text-2xl font-bold mb-2 tracking-tight">
-        Email confirmé&nbsp;!
-      </h1>
-      <p className="text-[var(--on-surface-muted)] text-sm leading-relaxed mb-1">
-        Votre adresse email est confirmée.
-      </p>
-      <p className="text-[var(--on-surface-muted)] text-sm leading-relaxed mb-8">
-        Votre compte COP&apos;IQ est maintenant activé.
-        Vous pouvez vous connecter à l&apos;application.
-      </p>
-      <div className="flex flex-col gap-3 w-full">
-        <BtnPrimary href="/login">Se connecter</BtnPrimary>
-        <BtnOutline onClick={() => { window.location.href = "copiq://" }}>
-          {/* Icône téléphone */}
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-            <rect x="4" y="1" width="8" height="14" rx="2" stroke="currentColor" strokeWidth="1.5" />
-            <circle cx="8" cy="12" r="1" fill="currentColor" />
-          </svg>
-          Ouvrir l&apos;application
-        </BtnOutline>
-        <BtnSecondary href="/">Retour à l&apos;accueil</BtnSecondary>
-      </div>
-    </div>
-  )
-}
+        <AnimatedIcon status={status} />
 
-function StateExpired() {
-  return (
-    <div className="flex flex-col items-center text-center py-8">
-      <IconExpired />
-      <h1 className="text-[var(--on-surface)] text-2xl font-bold mb-2 tracking-tight">
-        Lien expiré
-      </h1>
-      <p className="text-[var(--on-surface-muted)] text-sm leading-relaxed mb-1">
-        Ce lien de confirmation n&apos;est plus valide.
-      </p>
-      <p className="text-[var(--on-surface-muted)] text-sm leading-relaxed mb-8">
-        Vous pouvez demander l&apos;envoi d&apos;un nouveau lien
-        depuis l&apos;écran de connexion.
-      </p>
-      <div className="flex flex-col gap-3 w-full">
-        <BtnPrimary href="/login">Se connecter</BtnPrimary>
-        <BtnSecondary href="/">Retour à l&apos;accueil</BtnSecondary>
-      </div>
-    </div>
-  )
-}
-
-function StateNoParams() {
-  return (
-    <div className="flex flex-col items-center text-center py-8">
-      <IconInfo />
-      <h1 className="text-[var(--on-surface)] text-2xl font-bold mb-2 tracking-tight">
-        Lien invalide
-      </h1>
-      <p className="text-[var(--on-surface-muted)] text-sm leading-relaxed mb-8">
-        Aucun paramètre de confirmation trouvé dans l&apos;URL.
-        Veuillez cliquer sur le lien reçu par email.
-      </p>
-      <div className="flex flex-col gap-3 w-full">
-        <BtnPrimary href="/login">Se connecter</BtnPrimary>
-        <BtnSecondary href="/">Retour à l&apos;accueil</BtnSecondary>
-      </div>
-    </div>
-  )
-}
-
-function StateError({ message }: { message: string }) {
-  return (
-    <div className="flex flex-col items-center text-center py-8">
-      <IconError />
-      <h1 className="text-[var(--on-surface)] text-2xl font-bold mb-2 tracking-tight">
-        Confirmation impossible
-      </h1>
-      <p className="text-[var(--on-surface-muted)] text-sm leading-relaxed mb-1">
-        Impossible de confirmer votre adresse email.
-      </p>
-      <p className="text-[var(--on-surface-muted)] text-sm leading-relaxed mb-4">
-        Le lien est invalide, expiré ou a déjà été utilisé.
-      </p>
-      {message && (
-        <div className="w-full rounded-lg px-4 py-3 mb-6 text-left"
-          style={{
-            background: "color-mix(in srgb, #EF4444 8%, transparent)",
-            border: "1px solid color-mix(in srgb, #EF4444 25%, transparent)",
-          }}>
-          <p className="text-[#EF4444] text-xs font-mono break-words leading-relaxed">
-            {message}
+        <h1
+          className="copiq-card text-[var(--on-surface)] text-[22px] font-bold tracking-tight mt-7 mb-2"
+          style={{ animationDelay: ".2s" }}
+        >
+          {title}
+        </h1>
+        <p
+          className="copiq-card text-[var(--on-surface-muted)] text-[14px] leading-relaxed mb-1"
+          style={{ animationDelay: ".28s" }}
+        >
+          {message}
+        </p>
+        {detail && (
+          <p
+            className="copiq-card text-[var(--on-surface-faint)] text-[12px] leading-relaxed mb-2"
+            style={{ animationDelay: ".32s" }}
+          >
+            {detail}
           </p>
-        </div>
-      )}
-      <div className="flex flex-col gap-3 w-full">
-        <BtnPrimary href="/login">Retour à la connexion</BtnPrimary>
-        <BtnSecondary href="/">Retour à l&apos;accueil</BtnSecondary>
+        )}
+
+        {primary && (
+          <div className="copiq-card w-full mt-8 flex flex-col gap-2" style={{ animationDelay: ".38s" }}>
+            {primary}
+          </div>
+        )}
       </div>
     </div>
   )
@@ -237,7 +231,7 @@ function StateError({ message }: { message: string }) {
 function ConfirmHandler() {
   const router = useRouter()
   const searchParams = useSearchParams()
-  const [status, setStatus] = useState<ConfirmStatus>("loading")
+  const [status, setStatus] = useState<Status>("loading")
   const [errorMsg, setErrorMsg] = useState<string>("")
   const called = useRef(false)
 
@@ -252,90 +246,103 @@ function ConfirmHandler() {
     const error_description = searchParams.get("error_description")
     const urlStatus = searchParams.get("status")
 
-    // URL déjà nettoyée après traitement
-    if (urlStatus === "success") { setStatus("success"); return }
-    if (urlStatus === "error")   { setStatus("error");   return }
-    if (urlStatus === "expired") { setStatus("expired"); return }
+    const hashParams = new URLSearchParams(window.location.hash.replace(/^#/, ""))
+    const accessToken = hashParams.get("access_token")
+    const hashError = hashParams.get("error")
+    const hashErrorDescription = hashParams.get("error_description")
 
-    // Supabase a renvoyé une erreur dans l'URL
-    if (error || error_description) {
-      const raw = error_description ?? error ?? "Erreur inconnue"
-      const msg = decodeURIComponent(raw)
-      if (msg.toLowerCase().includes("expir") || error === "access_denied") {
-        setStatus("expired")
-        router.replace("/confirm?status=expired")
-      } else {
-        setErrorMsg(msg)
-        setStatus("error")
-        router.replace("/confirm?status=error")
-      }
+    // Retour de GoTrue après redirection native (voir plus bas) : succès si un
+    // access_token est présent dans le hash, échec si error/error_description.
+    const anyError = error || error_description || hashError || hashErrorDescription
+    if (anyError) {
+      const raw = error_description ?? error ?? hashErrorDescription ?? hashError ?? "Erreur inconnue"
+      setErrorMsg(decodeURIComponent(raw))
+      setStatus("error")
+      router.replace("/confirm")
+      return
+    }
+    if (accessToken || urlStatus === "success") {
+      setStatus("success")
+      router.replace("/confirm?status=success")
       return
     }
 
-    // Aucun paramètre de confirmation
-    if (!token_hash && !code) {
-      setStatus("no-params")
+    // Flux PKCE : le lien de l'email pointe vers l'endpoint GoTrue de Supabase,
+    // qui confirme l'email CÔTÉ SERVEUR puis redirige ici avec ?code=... AVANT
+    // qu'on arrive sur cette page. Ce code sert uniquement à établir une session
+    // web (exchangeCodeForSession) — impossible ici puisque l'inscription vient
+    // de l'app mobile, pas de ce navigateur (le code_verifier PKCE est stocké
+    // côté app). Mais la confirmation d'email a déjà réussi avant cette
+    // redirection : sa seule présence (sans erreur) suffit à afficher le succès.
+    // Vérifié en base : confirmed_at est posé dès le clic sur le lien, avant
+    // même le chargement de cette page.
+    if (code) {
+      setStatus("success")
+      router.replace("/confirm?status=success")
       return
     }
 
-    // Vérification Supabase
-    const supabase = createClient()
-
-    async function verify() {
-      try {
-        if (token_hash && type) {
-          // Flux email OTP (lien Supabase standard)
-          const { error } = await supabase.auth.verifyOtp({
-            token_hash,
-            type: type as "email" | "recovery" | "invite" | "email_change" | "magiclink",
-          })
-          if (error) {
-            const isExpired =
-              error.message.toLowerCase().includes("expir") ||
-              error.status === 403 ||
-              error.status === 401
-            if (isExpired) {
-              setStatus("expired")
-              router.replace("/confirm?status=expired")
-            } else {
-              setErrorMsg(error.message)
-              setStatus("error")
-              router.replace("/confirm?status=error")
-            }
-          } else {
-            setStatus("success")
-            router.replace("/confirm?status=success")
-          }
-        } else if (code) {
-          // Flux PKCE (Auth Code Flow)
-          const { error } = await supabase.auth.exchangeCodeForSession(code)
-          if (error) {
-            setErrorMsg(error.message)
-            setStatus("error")
-            router.replace("/confirm?status=error")
-          } else {
-            setStatus("success")
-            router.replace("/confirm?status=success")
-          }
-        }
-      } catch (e: unknown) {
-        const msg = e instanceof Error ? e.message : "Erreur inattendue"
-        setErrorMsg(msg)
-        setStatus("error")
-      }
+    if (!token_hash || !type) {
+      setErrorMsg("Aucun paramètre de confirmation dans le lien.")
+      setStatus("error")
+      return
     }
 
-    verify()
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // Redirection native (pas d'appel supabase-js/fetch) vers l'endpoint GoTrue
+    // qui vérifie le token côté serveur puis redirige ici avec le résultat.
+    // Évite les soucis de CORS/preflight rencontrés avec un appel fetch/SDK
+    // direct à /auth/v1/verify (verifyOtp côté client passait par ce même
+    // endpoint et échouait de façon intermittente malgré une vérification
+    // server-side réussie).
+    const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL ?? "https://nuoonagnkhbeeymtvrcn.supabase.co"
+    const redirectTo = window.location.origin + "/confirm"
+    window.location.replace(
+      `${supabaseUrl}/auth/v1/verify?token_hash=${encodeURIComponent(token_hash)}` +
+        `&type=${encodeURIComponent(type)}&redirect_to=${encodeURIComponent(redirectTo)}`,
+    )
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
-  switch (status) {
-    case "loading":   return <StateLoading />
-    case "success":   return <StateSuccess />
-    case "expired":   return <StateExpired />
-    case "no-params": return <StateNoParams />
-    case "error":     return <StateError message={errorMsg} />
+  if (status === "loading") {
+    return (
+      <Screen
+        status="loading"
+        title="Vérification…"
+        message="Un instant, on confirme ton adresse email."
+      />
+    )
   }
+
+  if (status === "success") {
+    return (
+      <Screen
+        status="success"
+        title="Email confirmé"
+        message="Ton compte COP'IQ est activé."
+        primary={
+          <>
+            <Btn href="copiq://" variant="primary">Ouvrir l’application</Btn>
+            <Btn href="/login" variant="ghost">Se connecter sur le web</Btn>
+          </>
+        }
+      />
+    )
+  }
+
+  return (
+    <Screen
+      status="error"
+      title="Échec de la confirmation"
+      message="Ce lien est invalide, expiré, ou déjà utilisé."
+      detail={errorMsg || undefined}
+      primary={
+        <>
+          <Btn href="copiq://" variant="primary">Ouvrir l’application</Btn>
+          <Btn href="/login" variant="ghost">Se connecter sur le web</Btn>
+        </>
+      }
+    />
+  )
 }
 
 // ─── Export public ────────────────────────────────────────────────────────────
@@ -344,12 +351,8 @@ export function ConfirmEmailPage() {
   return (
     <Suspense
       fallback={
-        <div className="flex flex-col items-center text-center py-8">
-          <div className="w-16 h-16 rounded-full flex items-center justify-center mb-6"
-            style={{ background: "color-mix(in srgb, #1147D9 10%, transparent)" }}>
-            <div className="w-8 h-8 border-2 border-[#1147D9] border-t-transparent rounded-full animate-spin" />
-          </div>
-          <p className="text-[var(--on-surface-muted)] text-sm">Chargement…</p>
+        <div className="fixed inset-0 z-[999] flex items-center justify-center" style={{ background: "var(--surface)" }}>
+          <div className="w-9 h-9 rounded-full border-2 border-brand border-t-transparent animate-spin" />
         </div>
       }
     >

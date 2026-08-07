@@ -8,9 +8,12 @@ import { Progress } from "@/components/ui/progress"
 import { Button } from "@/components/ui/button"
 import {
   Crown, Target, GraduationCap, Brain, FileText,
-  Globe, Zap, TrendingUp, BookOpen, ArrowRight
+  Globe, ClipboardCheck, TrendingUp, BookOpen, ArrowRight,
+  Languages, StickyNote, NotebookPen, ShieldCheck
 } from "lucide-react"
 import { cn, TIER_LABELS } from "@/lib/utils"
+import { usePathway } from "@/features/pathway/pathway-provider"
+import type { PathwayIconKey } from "@/config/pathways"
 
 interface DashboardContentProps {
   user: User
@@ -19,59 +22,24 @@ interface DashboardContentProps {
   freeQuota: { used: number; window_start: string; updated_at: string } | null
 }
 
-const MODULES = [
-  {
-    title: "Policier Adjoint",
-    description: "Scolarité et préparation concours PA",
-    icon: <GraduationCap size={20} />,
-    color: "#1147D9",
-    href: "/pa/scolarite",
-    badge: "PA",
-  },
-  {
-    title: "Gardien de la Paix",
-    description: "Scolarité et préparation concours GPX",
-    icon: <GraduationCap size={20} />,
-    color: "#22C55E",
-    href: "/gpx/scolarite",
-    badge: "GPX",
-  },
-  {
-    title: "Cas Pratiques",
-    description: "Rédaction et correction par IA",
-    icon: <FileText size={20} />,
-    color: "#EF4444",
-    href: "/gpx/cas-pratiques",
-    isPremium: true,
-  },
-  {
-    title: "Culture Générale",
-    description: "14 thèmes de culture générale",
-    icon: <Globe size={20} />,
-    color: "#F59E0B",
-    href: "/gpx/culture-generale",
-  },
-  {
-    title: "Psychotechniques",
-    description: "Tests psy (calcul, logique, concentration)",
-    icon: <Brain size={20} />,
-    color: "#A855F7",
-    href: "/gpx/psychotechniques",
-  },
-  {
-    title: "Concours Blanc",
-    description: "Examen complet en conditions réelles",
-    icon: <Zap size={20} />,
-    color: "#06B6D4",
-    href: "/gpx/concours-blanc",
-    isPremium: true,
-  },
-]
+const moduleIcons: Record<PathwayIconKey, React.ReactNode> = {
+  dashboard: <ShieldCheck size={20} />,
+  graduation: <GraduationCap size={20} />,
+  quiz: <Target size={20} />,
+  knowledge: <Globe size={20} />,
+  brain: <Brain size={20} />,
+  languages: <Languages size={20} />,
+  caseStudies: <FileText size={20} />,
+  mockExam: <ClipboardCheck size={20} />,
+  memos: <StickyNote size={20} />,
+  notes: <NotebookPen size={20} />,
+}
 
 export function DashboardContent({ user, sub, totalXp, freeQuota }: DashboardContentProps) {
+  const { profile, pathway, loading: pathwayLoading, error: pathwayError, refresh } = usePathway()
   const tier = sub?.tier ?? "free"
   const isPremium = tier === "premium" || tier === "premium_trial"
-  const firstName = user.email?.split("@")[0] ?? "là"
+  const firstName = profile?.first_name?.trim() || profile?.username?.trim() || user.email?.split("@")[0] || "là"
   const used = freeQuota?.used ?? 0
   const freeLimit = 10
   const freeRemaining = Math.max(0, freeLimit - used)
@@ -81,12 +49,11 @@ export function DashboardContent({ user, sub, totalXp, freeQuota }: DashboardCon
       {/* En-tête */}
       <div className="flex items-start justify-between gap-4 flex-wrap">
         <div>
-          <h1 className="text-2xl font-bold text-[var(--on-surface)]">
-            Bonjour, {firstName} 👋
-          </h1>
+          <h1 className="text-2xl font-bold text-[var(--on-surface)]">Bonjour, {firstName}</h1>
           <p className="text-[var(--on-surface-muted)] mt-1">
-            Prêt à réviser aujourd&apos;hui ?
+            {pathway?.title ?? "Préparez votre prochaine session."}
           </p>
+          {pathway && <Link href="/choisir-parcours" className="mt-2 inline-flex min-h-11 items-center text-sm font-semibold text-brand hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand">Changer de parcours</Link>}
         </div>
         {!isPremium && (
           <Link href="/abonnement">
@@ -124,7 +91,7 @@ export function DashboardContent({ user, sub, totalXp, freeQuota }: DashboardCon
           },
           {
             label: "Modules",
-            value: "6 disponibles",
+            value: pathway ? `${pathway.navigation.length} disponible${pathway.navigation.length > 1 ? "s" : ""}` : "À choisir",
             icon: <BookOpen size={18} />,
             color: "text-[var(--on-surface-muted)]",
             bg: "bg-[var(--surface-container)]",
@@ -162,27 +129,35 @@ export function DashboardContent({ user, sub, totalXp, freeQuota }: DashboardCon
         </Card>
       )}
 
-      {/* Modules */}
+      {pathwayError && (
+        <Card className="border-danger/20 bg-danger/5">
+          <p className="text-sm text-danger">{pathwayError.message}</p>
+          <button type="button" onClick={() => void refresh()} className="mt-2 min-h-11 text-sm font-semibold text-danger hover:underline">Réessayer</button>
+        </Card>
+      )}
+
+      {/* Modules du parcours actif */}
       <div>
-        <h2 className="text-base font-semibold text-[var(--on-surface)] mb-4">
-          Vos modules de préparation
-        </h2>
+        <div className="mb-4 flex flex-wrap items-end justify-between gap-3">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.14em]" style={{ color: pathway?.color }}>Votre sélection</p>
+            <h2 className="mt-1 text-lg font-semibold text-[var(--on-surface)]">{pathway?.shortLabel ?? "Vos modules"}</h2>
+          </div>
+        </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {MODULES.map((mod) => (
+          {pathwayLoading && [0, 1, 2].map((item) => <div key={item} className="h-44 animate-pulse rounded-2xl bg-[var(--surface-container)]" />)}
+          {pathway?.navigation.map((mod) => (
             <Link key={mod.href} href={mod.href}>
               <Card hover className="h-full">
                 <div className="flex items-start justify-between mb-3">
                   <div
                     className="w-10 h-10 rounded-xl flex items-center justify-center text-white"
-                    style={{ backgroundColor: mod.color }}
+                    style={{ backgroundColor: pathway.color }}
                   >
-                    {mod.icon}
+                    {moduleIcons[mod.iconKey]}
                   </div>
                   <div className="flex items-center gap-1.5">
-                    {mod.badge && (
-                      <Badge variant="muted" className="text-[10px]">{mod.badge}</Badge>
-                    )}
-                    {mod.isPremium && !isPremium && (
+                    {mod.premium && !isPremium && (
                       <Badge variant="premium">
                         <Crown size={10} />
                         Premium
@@ -190,7 +165,7 @@ export function DashboardContent({ user, sub, totalXp, freeQuota }: DashboardCon
                     )}
                   </div>
                 </div>
-                <h3 className="font-semibold text-[var(--on-surface)] mb-1">{mod.title}</h3>
+                <h3 className="font-semibold text-[var(--on-surface)] mb-1">{mod.label}</h3>
                 <p className="text-xs text-[var(--on-surface-muted)] leading-relaxed">{mod.description}</p>
                 <div className="flex items-center gap-1 mt-4 text-brand text-xs font-medium">
                   Accéder

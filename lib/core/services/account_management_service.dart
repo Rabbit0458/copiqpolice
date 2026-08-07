@@ -6,7 +6,9 @@
 //   - Export RGPD des données utilisateur (toutes les tables)
 //   - Switch de track / mode (avec mise à jour user_profiles + cache)
 //
-// Pour la suppression de compte, voir AccountDeletionService.
+// Pour la suppression de compte, voir UserPage._deleteAccountCascade
+// (lib/features/home/user_page.dart), qui appelle l'edge function
+// delete-user-cascade + la RPC purge_user.
 
 import 'dart:convert';
 

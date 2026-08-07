@@ -149,7 +149,7 @@ class EntitlementService {
     } catch (e) {
       if (kDebugMode) {
         // ignore: avoid_print
-        print('[ENTITLEMENT] refresh error: $e');
+        debugPrint('[ENTITLEMENT] refresh error: $e');
       }
       _inflight!.complete(state.value);
       return state.value;

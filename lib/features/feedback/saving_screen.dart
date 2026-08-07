@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import '../home/home_page.dart';
+import '../../core/services/ad_service.dart';
 
 class SavingScreen extends StatefulWidget {
   static const routeName = '/saving';
@@ -150,6 +151,7 @@ class _SavingScreenState extends State<SavingScreen>
         _error = null;
       });
       await Future.delayed(const Duration(milliseconds: 700));
+      await AdService.instance.maybeShowInterstitial();
       if (!mounted) return;
       Navigator.of(context).pushAndRemoveUntil(_homeTransition(), (_) => false);
     } catch (e) {
@@ -170,7 +172,7 @@ class _SavingScreenState extends State<SavingScreen>
         _done = false;
       });
       // ignore: avoid_print
-      print("[SavingScreen] Insert error: $e");
+      debugPrint("[SavingScreen] Insert error: $e");
     }
   }
 

@@ -214,14 +214,17 @@ class ProfileRepository {
   }
 
   Future<bool> isUsernameTaken(String username, String exceptUserId) async {
+    // ⚠️ NE PAS revenir à une requête .select() directe ici : la RLS
+    // (select_own_profile: auth.uid() = user_id) empêche de voir les lignes
+    // des autres utilisateurs, donc ce check renverrait toujours "libre".
+    // Le RPC est SECURITY DEFINER et contourne ça sans exposer de données.
     final res = await sb
-        .from(table)
-        .select('user_id')
-        .ilike('username', username)
-        .neq('user_id', exceptUserId)
-        .maybeSingle()
+        .rpc(
+          'is_username_taken',
+          params: {'p_username': username, 'p_except_user_id': exceptUserId},
+        )
         .timeout(const Duration(seconds: 8));
-    return res != null;
+    return res == true;
   }
 
   Future<Profile> upsert(Profile p) async {
@@ -255,6 +258,10 @@ class FirstTimeWelcomeDialog extends StatefulWidget {
   })
   onSubmit;
 
+  /// Retourne `true` si le username est DISPONIBLE (pas déjà pris par un
+  /// autre compte). Appelé avec un debounce pendant la saisie.
+  final Future<bool> Function(String username) checkUsernameAvailable;
+
   const FirstTimeWelcomeDialog({
     super.key,
     required this.firstName,
@@ -264,6 +271,7 @@ class FirstTimeWelcomeDialog extends StatefulWidget {
     required this.username,
     required this.initialBirthday,
     required this.onSubmit,
+    required this.checkUsernameAvailable,
   });
 
   @override
@@ -274,10 +282,72 @@ class _FirstTimeWelcomeDialogState extends State<FirstTimeWelcomeDialog> {
   bool _saving = false;
   DateTime? _birthday;
 
+  // ── Vérification live de disponibilité du username ──────────────────────
+  Timer? _usernameDebounce;
+  int _usernameCheckGen = 0;
+  bool _checkingUsername = false;
+  bool _usernameAvailable = false;
+  String? _usernameError;
+
   @override
   void initState() {
     super.initState();
     _birthday = widget.initialBirthday;
+    widget.username.addListener(_onUsernameChanged);
+    if (widget.username.text.trim().isNotEmpty) _onUsernameChanged();
+  }
+
+  @override
+  void dispose() {
+    widget.username.removeListener(_onUsernameChanged);
+    _usernameDebounce?.cancel();
+    super.dispose();
+  }
+
+  void _onUsernameChanged() {
+    final raw = widget.username.text.trim();
+    _usernameDebounce?.cancel();
+
+    if (raw.isEmpty) {
+      setState(() {
+        _checkingUsername = false;
+        _usernameAvailable = false;
+        _usernameError = null;
+      });
+      return;
+    }
+
+    if (!isValidUsernameFormat(raw)) {
+      setState(() {
+        _checkingUsername = false;
+        _usernameAvailable = false;
+        _usernameError =
+            '3–20 caractères, lettres/chiffres/underscore, commence par une lettre.';
+      });
+      return;
+    }
+
+    setState(() {
+      _checkingUsername = true;
+      _usernameAvailable = false;
+      _usernameError = null;
+    });
+
+    final gen = ++_usernameCheckGen;
+    _usernameDebounce = Timer(const Duration(milliseconds: 450), () async {
+      bool available;
+      try {
+        available = await widget.checkUsernameAvailable(raw);
+      } catch (_) {
+        available = true; // best-effort : ne bloque pas sur une erreur réseau
+      }
+      if (!mounted || gen != _usernameCheckGen) return; // réponse obsolète
+      setState(() {
+        _checkingUsername = false;
+        _usernameAvailable = available;
+        _usernameError = available ? null : 'Ce username est déjà pris.';
+      });
+    });
   }
 
   Future<void> _pickBirthday() async {
@@ -390,6 +460,22 @@ class _FirstTimeWelcomeDialogState extends State<FirstTimeWelcomeDialog> {
       );
       return;
     }
+    if (_checkingUsername) {
+      AppNotifier.error(
+        context,
+        title: 'Vérification en cours',
+        message: 'Patiente une seconde le temps de vérifier le username.',
+      );
+      return;
+    }
+    if (_usernameError != null) {
+      AppNotifier.error(
+        context,
+        title: 'Username indisponible',
+        message: _usernameError!,
+      );
+      return;
+    }
 
     setState(() => _saving = true);
     final ok = await widget.onSubmit(
@@ -417,8 +503,14 @@ class _FirstTimeWelcomeDialogState extends State<FirstTimeWelcomeDialog> {
     String hint = '',
     TextInputType? keyboardType,
     List<TextInputFormatter>? inputFormatters,
+    Widget? trailing,
+    Color? statusColor,
+    String? statusText,
   }) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
+    final defaultBorder = isDark
+        ? Colors.white.withValues(alpha: 0.16)
+        : Colors.black.withValues(alpha: 0.08);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -430,16 +522,17 @@ class _FirstTimeWelcomeDialogState extends State<FirstTimeWelcomeDialog> {
           ),
         ),
         const SizedBox(height: 6),
-        Container(
+        AnimatedContainer(
+          duration: const Duration(milliseconds: 220),
+          curve: Curves.easeOut,
           decoration: BoxDecoration(
             color: isDark
                 ? Colors.white.withValues(alpha: 0.08)
                 : Colors.black.withValues(alpha: 0.04),
             borderRadius: BorderRadius.circular(16),
             border: Border.all(
-              color: isDark
-                  ? Colors.white.withValues(alpha: 0.16)
-                  : Colors.black.withValues(alpha: 0.08),
+              color: statusColor ?? defaultBorder,
+              width: statusColor != null ? 1.6 : 1,
             ),
           ),
           child: Row(
@@ -459,9 +552,35 @@ class _FirstTimeWelcomeDialogState extends State<FirstTimeWelcomeDialog> {
                   decoration: _inputDecoration(hint),
                 ),
               ),
+              if (trailing != null) ...[
+                const SizedBox(width: 8),
+                AnimatedSwitcher(
+                  duration: const Duration(milliseconds: 200),
+                  transitionBuilder: (child, anim) => ScaleTransition(
+                    scale: anim,
+                    child: FadeTransition(opacity: anim, child: child),
+                  ),
+                  child: trailing,
+                ),
+                const SizedBox(width: 14),
+              ],
             ],
           ),
         ),
+        if (statusText != null) ...[
+          const SizedBox(height: 5),
+          Padding(
+            padding: const EdgeInsets.only(left: 2),
+            child: Text(
+              statusText,
+              style: TextStyle(
+                color: statusColor,
+                fontSize: 12,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+          ),
+        ],
         const SizedBox(height: 10),
       ],
     );
@@ -553,6 +672,36 @@ class _FirstTimeWelcomeDialogState extends State<FirstTimeWelcomeDialog> {
                   inputFormatters: [
                     FilteringTextInputFormatter.allow(RegExp(r'[A-Za-z0-9_]')),
                   ],
+                  trailing: _checkingUsername
+                      ? const SizedBox(
+                          key: ValueKey('checking'),
+                          width: 18,
+                          height: 18,
+                          child: CircularProgressIndicator(strokeWidth: 2),
+                        )
+                      : _usernameAvailable
+                      ? const Icon(
+                          key: ValueKey('available'),
+                          Icons.check_circle_rounded,
+                          color: Color(0xFF22C55E),
+                          size: 22,
+                        )
+                      : _usernameError != null
+                      ? const Icon(
+                          key: ValueKey('taken'),
+                          Icons.cancel_rounded,
+                          color: Color(0xFFEF4444),
+                          size: 22,
+                        )
+                      : const SizedBox.shrink(key: ValueKey('idle')),
+                  statusColor: _usernameAvailable
+                      ? const Color(0xFF22C55E)
+                      : _usernameError != null
+                      ? const Color(0xFFEF4444)
+                      : null,
+                  statusText: _usernameAvailable
+                      ? 'Disponible !'
+                      : _usernameError,
                 ),
 
                 Text(
@@ -608,7 +757,9 @@ class _FirstTimeWelcomeDialogState extends State<FirstTimeWelcomeDialog> {
                   width: double.infinity,
                   height: 56,
                   child: ElevatedButton(
-                    onPressed: _saving ? null : _save,
+                    onPressed: (_saving || _checkingUsername || _usernameError != null)
+                        ? null
+                        : _save,
                     style: ElevatedButton.styleFrom(
                       backgroundColor:
                           Theme.of(context).brightness == Brightness.dark
@@ -626,7 +777,7 @@ class _FirstTimeWelcomeDialogState extends State<FirstTimeWelcomeDialog> {
                     child: _saving
                         ? const _AppleLikeLoader(size: 20)
                         : const Text(
-                            'Confirm',
+                            'Confirmer',
                             style: TextStyle(fontWeight: FontWeight.w800),
                           ),
                   ),
@@ -981,6 +1132,12 @@ class _ProfilPageState extends State<ProfilPage> {
               );
               return ok;
             },
+        checkUsernameAvailable: (username) async {
+          final user = _sb.auth.currentUser;
+          if (user == null) return true;
+          final taken = await _repo.isUsernameTaken(username, user.id);
+          return !taken;
+        },
       ),
     );
   }

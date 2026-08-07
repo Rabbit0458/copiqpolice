@@ -1,8 +1,10 @@
 "use client"
 
-import { Suspense, useState } from "react"
+import { Suspense, useCallback, useState } from "react"
 import { useRouter, useSearchParams } from "next/navigation"
-import { coursApi, type CoursRow } from "@/lib/admin/api"
+import { contentLifecycleApi, coursApi, type CoursRow } from "@/lib/admin/api"
+import { ContentLifecycleControl } from "@/components/admin/content-lifecycle-control"
+import { lifecycleError, lifecycleLabels, publicationStatusOf, toIsoDateTime, toLocalDateTime, type PublicationStatus } from "@/lib/admin/content-lifecycle"
 import {
   Badge,
   Button,
@@ -13,6 +15,11 @@ import {
   PageHeader,
   useAsync,
 } from "@/components/admin/admin-ui"
+import { CourseContentPreview } from "@/components/admin/content-preview"
+import { EditorialReadiness } from "@/components/admin/editorial-readiness"
+import { MediaReadiness } from "@/components/admin/media-readiness"
+import { blockingIssues, validateCourse, validateCourseMedia } from "@/lib/admin/content-validation"
+import type { EditorialIssue } from "@/lib/admin/content-validation"
 
 export default function Page() {
   return (
@@ -30,6 +37,9 @@ function CoursScreen() {
 
 function CoursList() {
   const router = useRouter()
+  const params = useSearchParams()
+  const status = params.get("status")
+  const quality = params.get("quality")
   const [search, setSearch] = useState("")
   const [track, setTrack] = useState("")
   const { data, error, loading } = useAsync(
@@ -37,7 +47,8 @@ function CoursList() {
     [search, track],
   )
 
-  const grouped = (data ?? []).reduce<Record<string, CoursRow[]>>((acc, c) => {
+  const visibleRows = (data ?? []).filter((row) => status !== "draft" || publicationStatusOf(row) === "draft")
+  const grouped = visibleRows.reduce<Record<string, CoursRow[]>>((acc, c) => {
     const key = `${c.track} · ${c.module}${c.section ? ` · ${c.section}` : ""}`
     ;(acc[key] ??= []).push(c)
     return acc
@@ -76,9 +87,22 @@ function CoursList() {
         ))}
       </div>
 
+      {status === "draft" && (
+        <div className="mb-4 flex flex-wrap items-center justify-between gap-2 rounded-xl border border-[var(--warning)]/25 bg-[var(--warning)]/[.07] px-3.5 py-3 text-xs">
+          <span><strong>File de contrôle :</strong> seules les fiches en brouillon sont affichées.</span>
+          <button type="button" onClick={() => router.push("/admin/cours/")} className="min-h-9 cursor-pointer rounded-lg px-2.5 font-semibold text-[var(--brand)] hover:bg-[var(--brand)]/10">Voir toutes les fiches</button>
+        </div>
+      )}
+      {quality === "media" && (
+        <div className="mb-4 flex flex-wrap items-center justify-between gap-2 rounded-xl border border-[var(--brand)]/20 bg-[var(--brand)]/[.06] px-3.5 py-3 text-xs">
+          <span><strong>Contrôle des médias :</strong> ouvre une fiche pour vérifier automatiquement descriptions, formats et disponibilité.</span>
+          <button type="button" onClick={() => router.push("/admin/cours/")} className="min-h-9 cursor-pointer rounded-lg px-2.5 font-semibold text-[var(--brand)] hover:bg-[var(--brand)]/10">Quitter la file</button>
+        </div>
+      )}
+
       {error && <ErrorBox error={error} />}
       {loading && <Loading />}
-      {data && data.length === 0 && <Empty>Aucune fiche.</Empty>}
+      {data && visibleRows.length === 0 && <Empty>Aucune fiche dans cette sélection.</Empty>}
 
       {(Object.entries(grouped) as [string, CoursRow[]][]).map(([group, rows]) => (
         <div key={group} className="mb-5">
@@ -108,7 +132,7 @@ function CoursList() {
                   </span>
                 </span>
                 <span className="flex shrink-0 items-center gap-1.5">
-                  {!c.is_published && <Badge tone="warn">brouillon</Badge>}
+                  <Badge tone={publicationStatusOf(c) === "published" ? "good" : publicationStatusOf(c) === "archived" ? "bad" : publicationStatusOf(c) === "scheduled" ? "brand" : "warn"}>{lifecycleLabels[publicationStatusOf(c)]}</Badge>
                   {c.quiz_module && <Badge tone="brand">quiz</Badge>}
                   <span className="text-[11px] tabular-nums text-[var(--on-surface-faint)]">
                     {(c.taille / 1000).toFixed(1)} k
@@ -155,6 +179,7 @@ function EditorForm({
   onSaved: () => void
 }) {
   const d = data as Record<string, string | boolean | string[] | null>
+  const initialStatus = publicationStatusOf({ publication_status: String(d.publication_status ?? ""), is_published: Boolean(d.is_published) })
   const [f, setF] = useState({
     title: String(d.title ?? ""),
     subtitle: String(d.subtitle ?? ""),
@@ -163,17 +188,45 @@ function EditorForm({
     key_points: (Array.isArray(d.key_points) ? d.key_points : []).join("\n"),
     legal_refs: (Array.isArray(d.legal_refs) ? d.legal_refs : []).join("\n"),
     color_hex: String(d.color_hex ?? "#1147D9"),
-    is_published: Boolean(d.is_published),
+    publication_status: initialStatus as PublicationStatus,
+    scheduled_at: toLocalDateTime(String(d.scheduled_at ?? "")),
   })
   const [busy, setBusy] = useState(false)
   const [ok, setOk] = useState(false)
   const [err, setErr] = useState<unknown>(null)
-  const [preview, setPreview] = useState(false)
+  const [mediaState, setMediaState] = useState<{ checking: boolean; issues: EditorialIssue[] }>({ checking: false, issues: [] })
+  const keyPoints = f.key_points.split("\n").map((item) => item.trim()).filter(Boolean)
+  const legalRefs = f.legal_refs.split("\n").map((item) => item.trim()).filter(Boolean)
+  const staticMediaIssues = validateCourseMedia(f.body_md)
+  const networkMediaIssues = mediaState.issues.filter((issue) => issue.code.startsWith("course-media-unavailable-"))
+  const editorialIssues = [...validateCourse({
+    title: f.title,
+    subtitle: f.subtitle,
+    body: f.body_md,
+    keyPoints,
+    legalRefs,
+    color: f.color_hex,
+  }), ...staticMediaIssues, ...networkMediaIssues]
+  const blockers = blockingIssues(editorialIssues)
+  const onMediaChange = useCallback((state: { checking: boolean; issues: EditorialIssue[] }) => setMediaState(state), [])
 
   async function save() {
     setBusy(true)
     setErr(null)
     setOk(false)
+    const goingLive = f.publication_status === "published" || f.publication_status === "scheduled"
+    const scheduleIssue = lifecycleError(f.publication_status, f.scheduled_at)
+    if (scheduleIssue) { setErr(new Error(scheduleIssue)); setBusy(false); return }
+    if (goingLive && (mediaState.checking || blockers.length > 0)) {
+      if (mediaState.checking) {
+        setErr(new Error("Publication impossible tant que la vérification des médias n’est pas terminée."))
+        setBusy(false)
+        return
+      }
+      setErr(new Error(`Publication impossible : ${blockers.map((issue) => issue.label.toLocaleLowerCase("fr-FR")).join(", ")}.`))
+      setBusy(false)
+      return
+    }
     try {
       await coursApi.upsert({
         route: d.route,
@@ -181,11 +234,12 @@ function EditorForm({
         subtitle: f.subtitle || null,
         code: f.code || null,
         body_md: f.body_md,
-        key_points: f.key_points.split("\n").map((s) => s.trim()).filter(Boolean),
-        legal_refs: f.legal_refs.split("\n").map((s) => s.trim()).filter(Boolean),
+        key_points: keyPoints,
+        legal_refs: legalRefs,
         color_hex: f.color_hex,
-        is_published: f.is_published,
+        is_published: f.publication_status === "published",
       })
+      await contentLifecycleApi.set("course", String(d.route), f.publication_status, toIsoDateTime(f.scheduled_at))
       setOk(true)
       onSaved()
     } catch (e) {
@@ -255,21 +309,18 @@ function EditorForm({
               />
             </L>
           </div>
-          <label className="mt-3 flex items-center gap-2 text-sm">
-            <input
-              type="checkbox"
-              checked={f.is_published}
-              onChange={(e) => setF({ ...f, is_published: e.target.checked })}
-              className="h-4 w-4"
-            />
-            Publiée (visible dans l&apos;application)
-          </label>
+          <div className="mt-4">
+            <EditorialReadiness issues={editorialIssues} />
+            <MediaReadiness markdown={f.body_md} onChange={onMediaChange} />
+          </div>
+          <div className="mt-4"><ContentLifecycleControl status={f.publication_status} scheduledAt={f.scheduled_at} onStatusChange={(value) => setF({ ...f, publication_status: value })} onScheduledAtChange={(value) => setF({ ...f, scheduled_at: value })} onRestore={initialStatus === "archived" ? async () => { setBusy(true); try { await contentLifecycleApi.set("course", String(d.route), "restore"); onSaved() } catch (e) { setErr(e) } finally { setBusy(false) } } : undefined} /></div>
 
           <ErrorBox error={err} />
-          <div className="mt-4 flex items-center gap-3">
-            <Button onClick={save} disabled={busy}>
+          <div className="mt-4 flex flex-wrap items-center gap-3">
+            <Button onClick={save} disabled={busy || ((f.publication_status === "published" || f.publication_status === "scheduled") && (mediaState.checking || blockers.length > 0))}>
               {busy ? "Enregistrement…" : "Enregistrer"}
             </Button>
+            {(f.publication_status === "published" || f.publication_status === "scheduled") && (mediaState.checking || blockers.length > 0) && <span className="text-xs text-[var(--danger)]">{mediaState.checking ? "Contrôle des médias en cours…" : "Repasse en brouillon ou corrige les erreurs."}</span>}
             {ok && <span className="text-sm text-[var(--success)]">✓ Enregistré</span>}
           </div>
         </Card>
@@ -277,33 +328,37 @@ function EditorForm({
         <Card className="p-5">
           <div className="mb-2 flex items-center justify-between">
             <h3 className="text-sm font-semibold">Contenu (Markdown)</h3>
-            <button
-              onClick={() => setPreview((v) => !v)}
-              className="text-xs text-[var(--brand)] hover:underline"
-            >
-              {preview ? "Éditer" : "Aperçu"}
-            </button>
+            <a href="#apercu" className="text-xs font-medium text-[var(--brand)] hover:underline">
+              Voir le rendu
+            </a>
           </div>
-          {preview ? (
-            <div className="max-h-[70vh] overflow-auto whitespace-pre-wrap rounded-lg bg-[var(--surface-container)] p-3 text-sm leading-relaxed">
-              {f.body_md}
-            </div>
-          ) : (
-            <textarea
-              value={f.body_md}
-              onChange={(e) => setF({ ...f, body_md: e.target.value })}
-              rows={30}
-              spellCheck={false}
-              className={`${ic} font-mono text-[11px] leading-relaxed`}
-            />
-          )}
+          <textarea
+            value={f.body_md}
+            onChange={(e) => setF({ ...f, body_md: e.target.value })}
+            rows={30}
+            spellCheck={false}
+            className={`${ic} font-mono text-[11px] leading-relaxed`}
+          />
           <p className="mt-2 text-xs text-[var(--on-surface-faint)]">
             Markdown supporté par l&apos;application : titres <code>#</code> à{" "}
             <code>####</code>, listes, tableaux <code>|</code>, citations{" "}
             <code>&gt;</code>, séparateurs <code>---</code>, <code>**gras**</code>,{" "}
             <code>*italique*</code>, <code>`code`</code>.
+            Images : <code>![Description accessible](https://…/image.webp)</code>.
           </p>
         </Card>
+      </div>
+
+      <div className="mt-5">
+        <CourseContentPreview
+          title={f.title}
+          subtitle={f.subtitle}
+          code={f.code}
+          body={f.body_md}
+          keyPoints={keyPoints}
+          legalRefs={legalRefs}
+          color={f.color_hex}
+        />
       </div>
     </>
   )

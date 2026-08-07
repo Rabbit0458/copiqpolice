@@ -175,7 +175,7 @@ class SubscriptionService {
 
   static const int freeLimit = 10;
 
-  static const String kPremiumTable = 'subscription_payement';
+  static const String kPremiumTable = 'cas_pratique_subscriptions';
   static const String kQuotaTable = 'free_weekly_usage';
 
   final ValueNotifier<SubscriptionState> state =
@@ -575,27 +575,27 @@ class _Ansi {
 class _SubLog {
   static void ok(String tag, [Map<String, Object?>? ctx]) {
     // ignore: avoid_print
-    print('${_Ansi.green}[SUB] ✅ $tag${_Ansi.rst}${_fmt(ctx)}');
+    debugPrint('${_Ansi.green}[SUB] ✅ $tag${_Ansi.rst}${_fmt(ctx)}');
   }
 
   static void err(String tag, Object err, [Map<String, Object?>? ctx]) {
     // ignore: avoid_print
-    print('${_Ansi.red}[SUB] ❌ $tag → $err${_Ansi.rst}${_fmt(ctx)}');
+    debugPrint('${_Ansi.red}[SUB] ❌ $tag → $err${_Ansi.rst}${_fmt(ctx)}');
   }
 
   static void w(String tag, [Map<String, Object?>? ctx]) {
     // ignore: avoid_print
-    print('${_Ansi.yellow}[SUB] ⚠️ $tag${_Ansi.rst}${_fmt(ctx)}');
+    debugPrint('${_Ansi.yellow}[SUB] ⚠️ $tag${_Ansi.rst}${_fmt(ctx)}');
   }
 
   static void i(String tag, [Map<String, Object?>? ctx]) {
     // ignore: avoid_print
-    print('${_Ansi.cyan}[SUB] ℹ️ $tag${_Ansi.rst}${_fmt(ctx)}');
+    debugPrint('${_Ansi.cyan}[SUB] ℹ️ $tag${_Ansi.rst}${_fmt(ctx)}');
   }
 
   static void d(String tag, [Map<String, Object?>? ctx]) {
     // ignore: avoid_print
-    print('${_Ansi.cyan}[SUB] • $tag${_Ansi.rst}${_fmt(ctx)}');
+    debugPrint('${_Ansi.cyan}[SUB] • $tag${_Ansi.rst}${_fmt(ctx)}');
   }
 
   static String _fmt(Map<String, Object?>? ctx) {

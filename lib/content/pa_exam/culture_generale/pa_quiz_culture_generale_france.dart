@@ -1072,13 +1072,12 @@ class _PaQuizCultureGeneralFranceState extends State<PaQuizCultureGeneralFrance>
         'created_at': DateTime.now().toUtc().toIso8601String(),
         'exam_type': 'pa',
 
-        // 🔥 si tu ajoutes cette colonne dans la table :
-        // 'history_id': _historyRowId,
+        'history_id': _historyRowId,
       };
 
-      await _sb.from('quiz_culture_generale_france_pages').insert(payload);
+      await _sb.from('quiz_culture_generale_pages').insert(payload);
     } catch (e, st) {
-      debugPrint('❌ quiz_culture_generale_france_pages insert failed: $e');
+      debugPrint('❌ quiz_culture_generale_pages insert failed: $e');
       debugPrint('STACK: $st');
     }
   }

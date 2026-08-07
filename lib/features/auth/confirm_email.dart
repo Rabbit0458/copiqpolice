@@ -27,6 +27,10 @@ class _ConfirmEmailPageState extends State<ConfirmEmailPage>
     with SingleTickerProviderStateMixin {
   bool _checking = false;
   String? _error;
+  bool _resending = false;
+  String? _resendMessage;
+  int _resendCooldown = 0;
+  Timer? _cooldownTimer;
 
   late final AnimationController _ctl = AnimationController(
     vsync: this,
@@ -40,7 +44,52 @@ class _ConfirmEmailPageState extends State<ConfirmEmailPage>
   @override
   void dispose() {
     _ctl.dispose();
+    _cooldownTimer?.cancel();
     super.dispose();
+  }
+
+  void _startCooldown() {
+    _cooldownTimer?.cancel();
+    setState(() => _resendCooldown = 45);
+    _cooldownTimer = Timer.periodic(const Duration(seconds: 1), (t) {
+      if (!mounted) {
+        t.cancel();
+        return;
+      }
+      setState(() {
+        _resendCooldown--;
+        if (_resendCooldown <= 0) t.cancel();
+      });
+    });
+  }
+
+  Future<void> _resendEmail() async {
+    if (_resending || _resendCooldown > 0) return;
+    setState(() {
+      _resending = true;
+      _resendMessage = null;
+    });
+
+    try {
+      await Supabase.instance.client.auth.resend(
+        type: OtpType.signup,
+        email: widget.email,
+      );
+      if (!mounted) return;
+      setState(() => _resendMessage = "Un nouveau lien a été envoyé à ${widget.email}.");
+      _startCooldown();
+    } on AuthException catch (e) {
+      if (!mounted) return;
+      setState(() => _resendMessage = e.message.isNotEmpty
+          ? e.message
+          : "Impossible de renvoyer l’email pour l’instant.");
+    } catch (_) {
+      if (!mounted) return;
+      setState(() => _resendMessage =
+          "Impossible de renvoyer l’email pour l’instant. Réessaie dans quelques secondes.");
+    } finally {
+      if (mounted) setState(() => _resending = false);
+    }
   }
 
   Future<void> _checkNow() async {
@@ -222,6 +271,52 @@ class _ConfirmEmailPageState extends State<ConfirmEmailPage>
                             fontSize: 12.5,
                           ),
                         ),
+
+                        const SizedBox(height: 18),
+
+                        // Renvoyer l'email
+                        TextButton(
+                          onPressed: (_resending || _resendCooldown > 0)
+                              ? null
+                              : _resendEmail,
+                          style: TextButton.styleFrom(
+                            foregroundColor: bodyColor,
+                            disabledForegroundColor: hintColor,
+                          ),
+                          child: _resending
+                              ? SizedBox(
+                                  width: 18,
+                                  height: 18,
+                                  child: CircularProgressIndicator(
+                                    strokeWidth: 2,
+                                    color: hintColor,
+                                  ),
+                                )
+                              : Text(
+                                  _resendCooldown > 0
+                                      ? "Renvoyer l’email (${_resendCooldown}s)"
+                                      : "Renvoyer l’email",
+                                  style: GoogleFonts.montserrat(
+                                    fontWeight: FontWeight.w700,
+                                    fontSize: 13.5,
+                                    decoration: _resendCooldown > 0
+                                        ? TextDecoration.none
+                                        : TextDecoration.underline,
+                                  ),
+                                ),
+                        ),
+                        if (_resendMessage != null) ...[
+                          const SizedBox(height: 6),
+                          Text(
+                            _resendMessage!,
+                            textAlign: TextAlign.center,
+                            style: GoogleFonts.montserrat(
+                              color: bodyColor,
+                              fontSize: 12.5,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                        ],
                       ],
                     ),
                   ),

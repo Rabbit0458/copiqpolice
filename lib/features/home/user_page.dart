@@ -8,6 +8,7 @@ import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:copiqpolice/core/widgets/app_notifier.dart';
+import 'package:copiqpolice/core/services/user_context_service.dart';
 import 'package:copiqpolice/features/onboarding/onboarding_screen.dart';
 
 /// Mini style util partagé
@@ -118,10 +119,41 @@ class _UserPageState extends State<UserPage> with WidgetsBindingObserver {
     await showDialog(
       context: context,
       builder: (ctx) => AlertDialog(
-        title: const Text('Supprimer le compte ?'),
+        title: const Text('Supprimer définitivement le compte ?'),
         content: const Text(
-          'Cette action est définitive et supprimera vos données.\n'
-          'Vous serez déconnecté et redirigé vers l’onboarding.',
+          'Toutes tes données seront supprimées de nos serveurs : progression, '
+          'messages, abonnement, tout. Cette action est IRRÉVERSIBLE — impossible '
+          'de récupérer ton compte ensuite.\n\n'
+          'Tu seras déconnecté et redirigé vers l’onboarding.',
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(ctx),
+            child: const Text('Annuler'),
+          ),
+          TextButton(
+            onPressed: () {
+              Navigator.pop(ctx);
+              _confirmDeleteAccountFinal();
+            },
+            child: const Text(
+              'Continuer',
+              style: TextStyle(color: Color(0xFFE53935)),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Future<void> _confirmDeleteAccountFinal() async {
+    await showDialog(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: const Text('Dernière confirmation'),
+        content: const Text(
+          'Es-tu vraiment sûr(e) ? Il n’y aura aucun moyen de revenir en arrière '
+          'une fois la suppression lancée.',
         ),
         actions: [
           TextButton(
@@ -134,8 +166,11 @@ class _UserPageState extends State<UserPage> with WidgetsBindingObserver {
               _deleteAccountCascade();
             },
             child: const Text(
-              'Supprimer',
-              style: TextStyle(color: Color(0xFFE53935)),
+              'Supprimer définitivement',
+              style: TextStyle(
+                color: Color(0xFFE53935),
+                fontWeight: FontWeight.bold,
+              ),
             ),
           ),
         ],
@@ -166,45 +201,81 @@ class _UserPageState extends State<UserPage> with WidgetsBindingObserver {
     String? errorMsg;
 
     try {
+      // La session peut avoir expiré (app restée ouverte longtemps) : on force
+      // un rafraîchissement AVANT d'appeler l'edge function. On passe le
+      // token retourné directement dans le header — sans ça, on a vu en prod
+      // un 401 pile au moment du refresh (rotation du refresh token) car
+      // functions.invoke() peut lire une session pas encore synchronisée.
+      String accessToken;
+      try {
+        final authResponse = await _sb.auth.refreshSession();
+        final token = authResponse.session?.accessToken;
+        if (token == null) {
+          throw Exception('Session absente après rafraîchissement.');
+        }
+        accessToken = token;
+      } on AuthException catch (e) {
+        throw Exception(
+          'Session expirée — reconnecte-toi puis réessaie. (${e.message})',
+        );
+      }
+
       final res = await _sb.functions.invoke(
         'delete-user-cascade',
         body: {'user_id': user.id},
+        headers: {'Authorization': 'Bearer $accessToken'},
       );
 
       final ok =
           res.status == 200 && (res.data is Map && res.data['ok'] == true);
-      if (!ok) throw Exception('Edge Function error ${res.status}');
-    } catch (e) {
-      try {
-        await _sb.from('user_profiles').delete().eq('user_id', user.id);
-        try {
-          await _sb.rpc('purge_user', params: {'uid': user.id});
-        } catch (_) {}
-        errorMsg = 'Suppression partielle côté client : $e';
-      } catch (e2) {
-        errorMsg = 'Suppression échouée : $e2';
+      if (!ok) {
+        final serverError = (res.data is Map) ? res.data['error'] : null;
+        throw Exception(serverError?.toString() ?? 'Edge Function error ${res.status}');
       }
+    } catch (e, st) {
+      errorMsg = e.toString();
+      // ignore: avoid_print
+      debugPrint('[DELETE-ACCOUNT] échec : $e\n$st');
     } finally {
       if (mounted) Navigator.of(context).pop();
     }
-
-    try {
-      await _sb.auth.signOut();
-    } catch (_) {}
 
     if (!mounted) {
       _deleting = false;
       return;
     }
 
-    if (errorMsg == null) {
-      AppNotifier.success(context, title: 'Compte supprimé');
-    } else {
-      AppNotifier.error(context, title: 'Avertissement', message: errorMsg);
+    if (errorMsg != null) {
+      // La suppression a échoué : on NE déconnecte PAS l'utilisateur — son
+      // compte et ses données sont toujours intacts (la RPC purge_user est
+      // transactionnelle et n'efface auth.users qu'après son succès complet).
+      AppNotifier.error(
+        context,
+        title: 'Suppression impossible',
+        message:
+            'Une erreur est survenue, ton compte n’a pas été supprimé. '
+            'Réessaie plus tard ou contacte le support.\n\n$errorMsg',
+      );
+      _deleting = false;
+      return;
     }
 
+    // Succès : nettoyage complet de l'état local avant de rediriger.
+    try {
+      final sp = await SharedPreferences.getInstance();
+      await sp.clear();
+    } catch (_) {}
+    try {
+      await UserContextService.I.clear();
+    } catch (_) {}
+    try {
+      await _sb.auth.signOut();
+    } catch (_) {}
+
+    AppNotifier.success(context, title: 'Compte supprimé');
+
     _deleting = false;
-    _goOnboarding();
+    _goSignUp();
   }
 
   void _goOnboarding() {
@@ -213,6 +284,14 @@ class _UserPageState extends State<UserPage> with WidgetsBindingObserver {
       MaterialPageRoute(builder: (_) => const OnboardingScreen()),
       (_) => false,
     );
+  }
+
+  /// Après une suppression de compte réussie, direct vers la création de
+  /// compte (pas l'onboarding marketing) : c'est ce que l'utilisateur veut
+  /// faire ensuite.
+  void _goSignUp() {
+    if (!mounted) return;
+    Navigator.of(context).pushNamedAndRemoveUntil('/signup', (_) => false);
   }
 
   // -------------------------------------------------------

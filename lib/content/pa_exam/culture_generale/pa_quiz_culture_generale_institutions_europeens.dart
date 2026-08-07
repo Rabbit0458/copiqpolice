@@ -1074,16 +1074,15 @@ class _PaQuizCultureGeneralInstitutionsEuropeenesState
         'created_at': DateTime.now().toUtc().toIso8601String(),
         'exam_type': 'pa',
 
-        // 🔥 si tu ajoutes cette colonne dans la table :
-        // 'history_id': _historyRowId,
+        'history_id': _historyRowId,
       };
 
       await _sb
-          .from('quiz_culture_generale_institutions_pages')
+          .from('quiz_culture_generale_institutions_europeennes_pages')
           .insert(payload);
     } catch (e, st) {
       debugPrint(
-        '❌ quiz_culture_generale_institutions_pages insert failed: $e',
+        '❌ quiz_culture_generale_institutions_europeennes_pages insert failed: $e',
       );
       debugPrint('STACK: $st');
     }

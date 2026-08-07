@@ -13,6 +13,21 @@ class PaAutresCadresEnquetePage extends StatelessWidget {
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     return Scaffold(
+      backgroundColor: isDark
+          ? const Color(0xFF0B1016)
+          : const Color(0xFFF5F7FA),
+      appBar: AppBar(
+        backgroundColor: isDark
+            ? const Color(0xFF0B1016)
+            : const Color(0xFFF5F7FA),
+        surfaceTintColor: Colors.transparent,
+        elevation: 0,
+        leading: IconButton(
+          tooltip: "Retour",
+          onPressed: () => Navigator.of(context).maybePop(),
+          icon: const Icon(Icons.arrow_back_ios_new_rounded, size: 20),
+        ),
+      ),
       body: CustomScrollView(
         physics: const BouncingScrollPhysics(),
         slivers: [
@@ -185,15 +200,12 @@ class _HeroHeader extends StatelessWidget {
     final dark = Theme.of(context).brightness == Brightness.dark;
     return SliverToBoxAdapter(
       child: Padding(
-        padding: const EdgeInsets.fromLTRB(20, 14, 20, 8),
+        padding: const EdgeInsets.fromLTRB(16, 6, 16, 8),
         child: Container(
-          height: (MediaQuery.of(context).size.height * .30).clamp(
-            220.0,
-            300.0,
-          ),
+          height: 218,
           clipBehavior: Clip.antiAlias,
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(_Token.r24),
+            borderRadius: BorderRadius.circular(26),
             boxShadow: [_Token.shadow],
           ),
           child: Stack(
@@ -283,9 +295,13 @@ class _SectionCard extends StatelessWidget {
     final dark = Theme.of(context).brightness == Brightness.dark;
     return Container(
       decoration: BoxDecoration(
-        color: Theme.of(context).cardColor,
-        borderRadius: BorderRadius.circular(_Token.r20),
-        boxShadow: [_Token.shadow],
+        color: dark ? const Color(0xFF151D27) : Colors.white,
+        borderRadius: BorderRadius.circular(18),
+        border: Border.all(
+          color: dark
+              ? Colors.white.withValues(alpha: .07)
+              : const Color(0xFFE4E9F0),
+        ),
       ),
       padding: const EdgeInsets.fromLTRB(16, 14, 16, 14),
       child: Column(

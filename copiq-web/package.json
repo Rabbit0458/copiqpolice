@@ -5,6 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "publish:folder": "node scripts/publish-static.mjs",
+    "release:hosting": "next build && node scripts/publish-static.mjs",
+    "test:content-validation": "node --experimental-strip-types --test tests/content-validation.test.ts",
     "start": "next start",
     "lint": "eslint"
   },

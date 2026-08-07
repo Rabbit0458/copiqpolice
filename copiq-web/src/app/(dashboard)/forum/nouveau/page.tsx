@@ -170,7 +170,7 @@ function NouveauSujetContent() {
         .single()
 
       if (!error && post) {
-        router.push(`/forum/${post.id}`)
+        router.push(`/forum/post/?id=${encodeURIComponent(post.id)}`)
         return
       }
     } catch {

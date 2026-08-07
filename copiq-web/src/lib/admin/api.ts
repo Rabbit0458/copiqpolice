@@ -12,6 +12,7 @@
  */
 
 import { createClient } from "@/lib/supabase/client"
+import type { LifecycleAction, PublicationStatus } from "@/lib/admin/content-lifecycle"
 
 /* ────────────────────────────────────────────────────────────────────────── */
 /*  Types                                                                     */
@@ -47,6 +48,27 @@ export interface CpDashboard {
   appeals_total: number
   cases_sans_rubric: number
   questions_sans_modele: number
+}
+
+export interface AdminDashboardStats {
+  users_total: number
+  users_active_30d: number
+  users_24h: number
+  users_premium: number
+  users_trial: number
+  subs_expired_30d: number
+  reports_open_cg: number
+  reports_open_psy: number
+  bug_reports_open: number
+  contact_open: number
+  forum_reports_open: number
+  staff_total: number
+  staff_locked: number
+  audit_logs_24h: number
+  critical_events_7d: number
+  quiz_questions: number
+  app_logs_total: number
+  refreshed_at: string | null
 }
 
 export interface CpCaseRow {
@@ -383,6 +405,11 @@ export interface QuizQuestionRow {
   explanation: string | null
   legal_ref: string | null
   is_active: boolean
+  publication_status: PublicationStatus
+  scheduled_at: string | null
+  published_at: string | null
+  archived_at: string | null
+  archived_previous_status: PublicationStatus | null
   updated_at: string
 }
 
@@ -422,6 +449,11 @@ export interface CoursRow {
   subtitle: string | null
   quiz_module: string | null
   is_published: boolean
+  publication_status: PublicationStatus
+  scheduled_at: string | null
+  published_at: string | null
+  archived_at: string | null
+  archived_previous_status: PublicationStatus | null
   taille: number
   updated_at: string
 }
@@ -439,6 +471,16 @@ export const coursApi = {
 
   upsert: (data: Record<string, unknown>) =>
     rpc<{ ok: boolean; id: number }>("cours_admin_upsert", { p_data: data }),
+}
+
+export const contentLifecycleApi = {
+  set: (contentType: "course" | "quiz_question", contentKey: string | number, status: LifecycleAction, scheduledAt?: string | null) =>
+    rpc<{ ok: boolean; publication_status: PublicationStatus }>("content_admin_set_lifecycle", {
+      p_content_type: contentType,
+      p_content_key: String(contentKey),
+      p_status: status,
+      p_scheduled_at: scheduledAt ?? null,
+    }),
 }
 
 /* ────────────────────────────────────────────────────────────────────────── */
@@ -468,6 +510,122 @@ export interface ForumBan {
   reason: string | null
   expires_at: string | null
   created_at: string
+}
+
+export type CommunityReportStatus =
+  | "new"
+  | "triaged"
+  | "in_progress"
+  | "resolved"
+  | "rejected"
+  | "appealed"
+
+export type CommunityReportPriority = "normal" | "high" | "urgent"
+export type CommunityReportTarget =
+  | "post"
+  | "comment"
+  | "message"
+  | "profile"
+  | "attachment"
+  | "room"
+
+export interface CommunityModerationDashboard {
+  posts_today: number
+  comments_today: number
+  open_reports: number
+  active_sanctions: number
+}
+
+export interface CommunityAdminReport {
+  id: string
+  created_at: string
+  status: CommunityReportStatus
+  priority: CommunityReportPriority
+  space_id: string | null
+  space_label: string
+  target_type: CommunityReportTarget
+  target_id: string
+  reason: string
+  details: string | null
+  reporter_id: string
+  reporter_name: string | null
+  reporter_username: string | null
+  reporter_avatar_index: number | null
+  subject_user_id: string | null
+  subject_name: string | null
+  subject_username: string | null
+  subject_avatar_index: number | null
+  target_title: string
+  target_content: string | null
+  target_status: string | null
+  resolution: string | null
+  resolved_at: string | null
+  appealed_at: string | null
+  appeal_text: string | null
+  total_count: number
+}
+
+export interface CommunityMessageEvidence {
+  context_position: number
+  message_id: string
+  sender_id: string
+  content: string
+  created_at: string
+  is_reported: boolean
+}
+
+export const communityForumApi = {
+  dashboard: (spaceId?: string) =>
+    rpc<CommunityModerationDashboard>("community_admin_dashboard", {
+      p_space_id: spaceId || null,
+    }),
+
+  listReports: (opts: {
+    status?: CommunityReportStatus
+    targetType?: CommunityReportTarget
+    spaceId?: string
+    priority?: CommunityReportPriority
+    search?: string
+    limit?: number
+    offset?: number
+  } = {}) =>
+    rpc<CommunityAdminReport[]>("community_admin_list_reports", {
+      p_status: opts.status || null,
+      p_target_type: opts.targetType || null,
+      p_space_id: opts.spaceId || null,
+      p_priority: opts.priority || null,
+      p_search: opts.search || null,
+      p_limit: opts.limit ?? 30,
+      p_offset: opts.offset ?? 0,
+    }),
+
+  resolveReport: (
+    reportId: string,
+    status: "resolved" | "rejected",
+    resolution: string,
+  ) =>
+    rpc<void>("community_resolve_report", {
+      p_report_id: reportId,
+      p_status: status,
+      p_resolution: resolution,
+    }),
+
+  moderatePost: (
+    postId: string,
+    action: "hide" | "restore" | "lock" | "remove" | "pin" | "unpin",
+    reason: string,
+  ) =>
+    rpc<void>("community_moderate_post", {
+      p_post_id: postId,
+      p_action: action,
+      p_reason: reason,
+    }),
+
+  openMessageEvidence: (reportId: string, accessReason: string) =>
+    rpc<CommunityMessageEvidence[]>("community_open_message_report", {
+      p_report_id: reportId,
+      p_access_reason: accessReason,
+    }),
 }
 
 export const forumApi = {
@@ -569,6 +727,13 @@ export interface AdminStaff {
   updated_at: string
 }
 
+export interface CommunityModeratorScope {
+  space_id: string
+  space_label: string
+  role: "helper" | "moderator" | "admin" | "owner"
+  expires_at: string | null
+}
+
 export const staffApi = {
   list: (search?: string, role?: string, status?: string) =>
     rpc<AdminStaff[]>("list_admin_staff", {
@@ -634,6 +799,22 @@ export const staffApi = {
       p_new_code: newCode,
       p_reason: reason ?? null,
     }),
+
+  communityScopes: (staffId: string) =>
+    rpc<CommunityModeratorScope[]>("community_admin_staff_scopes", {
+      p_admin_id: staffId,
+    }),
+
+  setCommunityScopes: (
+    staffId: string,
+    scopes: { space_id: string; role: string; expires_at: string | null }[],
+    reason: string,
+  ) =>
+    rpc<void>("community_admin_set_staff_scopes", {
+      p_admin_id: staffId,
+      p_scopes: scopes,
+      p_reason: reason,
+    }),
 }
 
 /* ────────────────────────────────────────────────────────────────────────── */
@@ -673,7 +854,7 @@ export const supportApi = {
       p_offset: 0,
     }),
 
-  dashboardStats: () => rpc<Record<string, unknown>>("admin_dashboard_stats_fast"),
+  dashboardStats: () => rpc<AdminDashboardStats>("admin_dashboard_stats_fast"),
 
   users: (search?: string) =>
     rpc<Record<string, unknown>[]>("admin_users_overview", {
@@ -682,5 +863,130 @@ export const supportApi = {
       p_role: null,
       p_limit: 60,
       p_offset: 0,
+    }),
+}
+
+/* ────────────────────────────────────────────────────────────────────────── */
+/*  Utilisateurs & sanctions communautaires                                   */
+/* ────────────────────────────────────────────────────────────────────────── */
+
+export type CommunitySanctionKind =
+  | "warning"
+  | "post_restriction"
+  | "comment_restriction"
+  | "message_restriction"
+  | "suspension"
+  | "ban"
+
+export interface CommunityAdminUserRow {
+  user_id: string
+  email: string | null
+  username: string | null
+  first_name: string | null
+  last_name: string | null
+  avatar_index: number | null
+  user_role: string | null
+  user_track: string | null
+  user_mode: string | null
+  plan: string | null
+  subscription_status: string | null
+  current_period_end: string | null
+  posts_count: number
+  comments_count: number
+  reports_received: number
+  active_sanctions: number
+  last_seen: string | null
+  created_at: string | null
+  total_count: number
+}
+
+export interface CommunitySanction {
+  id: string
+  space_id: string
+  kind: CommunitySanctionKind
+  reason: string
+  starts_at: string
+  ends_at: string | null
+  status: "active" | "expired" | "revoked" | "appealed"
+  created_at: string
+  revoked_at: string | null
+  imposed_by: string
+  revoked_by: string | null
+}
+
+export interface CommunityAdminUserDetail {
+  profile: {
+    user_id: string
+    email: string | null
+    username: string | null
+    first_name: string | null
+    last_name: string | null
+    avatar_index: number | null
+    city: string | null
+    user_role: string | null
+    user_track: string | null
+    user_mode: string | null
+    created_at: string
+    updated_at: string
+  }
+  subscription: {
+    plan?: string
+    status?: string
+    current_period_end?: string
+  }
+  activity: {
+    posts: number
+    comments: number
+    messages: number
+    reports_received: number
+    reports_sent: number
+  }
+  sanctions: CommunitySanction[]
+}
+
+export const communityUsersApi = {
+  list: (opts: {
+    search?: string
+    track?: string
+    mode?: string
+    subscription?: string
+    sanctioned?: boolean
+    limit?: number
+    offset?: number
+  } = {}) =>
+    rpc<CommunityAdminUserRow[]>("community_admin_list_users", {
+      p_search: opts.search || null,
+      p_track: opts.track || null,
+      p_mode: opts.mode || null,
+      p_subscription: opts.subscription || null,
+      p_sanctioned: opts.sanctioned ?? null,
+      p_limit: opts.limit ?? 40,
+      p_offset: opts.offset ?? 0,
+    }),
+
+  detail: (userId: string) =>
+    rpc<CommunityAdminUserDetail>("community_admin_user_detail", {
+      p_user_id: userId,
+    }),
+
+  imposeSanction: (data: {
+    userId: string
+    kind: CommunitySanctionKind
+    reason: string
+    spaceId: string
+    endsAt?: string | null
+  }) =>
+    rpc<string>("community_admin_impose_sanction", {
+      p_user_id: data.userId,
+      p_kind: data.kind,
+      p_reason: data.reason,
+      p_space_id: data.spaceId,
+      p_ends_at: data.endsAt ?? null,
+    }),
+
+  revokeSanction: (sanctionId: string, reason: string) =>
+    rpc<void>("community_admin_revoke_sanction", {
+      p_sanction_id: sanctionId,
+      p_reason: reason,
     }),
 }

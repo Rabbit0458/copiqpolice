@@ -64,12 +64,18 @@ class StripePaymentService {
 
     try {
       final res = await _sb.functions.invoke(
-        'stripe-create-checkout',
+        'cas_pratique_create_checkout',
         body: {'plan': plan.id},
       );
 
       if (res.status != 200 || res.data is! Map) {
-        return StripeLaunchResult.failure('server_error_${res.status}');
+        final data = res.data;
+        final serverReason = data is Map ? data['error'] : null;
+        return StripeLaunchResult.failure(
+          serverReason is String && serverReason.isNotEmpty
+              ? serverReason
+              : 'server_error_${res.status}',
+        );
       }
 
       final data = (res.data as Map).cast<String, dynamic>();
@@ -91,7 +97,7 @@ class StripePaymentService {
     } catch (e, st) {
       if (kDebugMode) {
         // ignore: avoid_print
-        print('[STRIPE] checkout error: $e\n$st');
+        debugPrint('[STRIPE] checkout error: $e\n$st');
       }
       return StripeLaunchResult.failure('exception:$e');
     }
@@ -103,13 +109,19 @@ class StripePaymentService {
       return StripeLaunchResult.failure('not_authenticated');
     }
     try {
-      final res = await _sb.functions.invoke('stripe-portal');
+      final res = await _sb.functions.invoke(
+        'cas_pratique_customer_portal',
+        body: {'return_url': 'copiqpolice://settings'},
+      );
       if (res.status != 200 || res.data is! Map) {
         return StripeLaunchResult.failure('server_error_${res.status}');
       }
       final url = (res.data as Map)['url'] as String?;
       if (url == null) return StripeLaunchResult.failure('no_portal_url');
-      final ok = await launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication);
+      final ok = await launchUrl(
+        Uri.parse(url),
+        mode: LaunchMode.externalApplication,
+      );
       if (!ok) return StripeLaunchResult.failure('cannot_launch_browser');
       _scheduleRefreshOnResume();
       return StripeLaunchResult.success(url);
@@ -125,18 +137,24 @@ class StripePaymentService {
       return const CancelResult(ok: false, reason: 'not_authenticated');
     }
     try {
-      final res = await _sb.functions.invoke('stripe-cancel-subscription');
+      final res = await _sb.functions.invoke(
+        'cas_pratique_customer_portal',
+        body: {'return_url': 'copiqpolice://settings'},
+      );
       if (res.status != 200 || res.data is! Map) {
-        if (res.status == 404) return const CancelResult(ok: false, reason: 'no_active_subscription');
+        if (res.status == 404)
+          return const CancelResult(
+            ok: false,
+            reason: 'no_active_subscription',
+          );
         return CancelResult(ok: false, reason: 'server_error_${res.status}');
       }
       final data = (res.data as Map).cast<String, dynamic>();
-      final endIso = data['current_period_end'] as String?;
-      DateTime? end;
-      if (endIso != null) end = DateTime.tryParse(endIso);
-      // Refresh entitlement to reflect cancel_at_period_end immediately
-      await SubscriptionService.instance.refresh(force: true, withQuota: true);
-      return CancelResult(ok: true, periodEnd: end);
+      final url = data['url'] as String?;
+      if (url == null)
+        return const CancelResult(ok: false, reason: 'no_portal_url');
+      await launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication);
+      return const CancelResult(ok: true);
     } catch (e) {
       return CancelResult(ok: false, reason: 'exception:$e');
     }
@@ -161,8 +179,10 @@ class StripeLaunchResult {
   final String? url;
   final String? reason;
   const StripeLaunchResult._({required this.ok, this.url, this.reason});
-  factory StripeLaunchResult.success(String url) => StripeLaunchResult._(ok: true, url: url);
-  factory StripeLaunchResult.failure(String reason) => StripeLaunchResult._(ok: false, reason: reason);
+  factory StripeLaunchResult.success(String url) =>
+      StripeLaunchResult._(ok: true, url: url);
+  factory StripeLaunchResult.failure(String reason) =>
+      StripeLaunchResult._(ok: false, reason: reason);
 }
 
 class CancelResult {

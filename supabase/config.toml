@@ -4,6 +4,15 @@
 # working directory name when running `supabase init`.
 project_id = "copiqpolice"
 
+[functions.cas_pratique_stripe_webhook]
+verify_jwt = false
+
+[functions.cas_pratique_create_checkout]
+verify_jwt = true
+
+[functions.cas_pratique_customer_portal]
+verify_jwt = true
+
 [api]
 enabled = true
 # Port to use for the API URL.

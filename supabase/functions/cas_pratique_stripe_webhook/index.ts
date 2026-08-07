@@ -217,6 +217,17 @@ serve(async (req: Request) => {
 
   console.log(`[stripe_webhook] received event: ${event.type} (${event.id})`);
 
+  const { error: eventInsertError } = await adminClient
+    .from("cp_stripe_webhook_events")
+    .insert({ stripe_event_id: event.id, event_type: event.type });
+  if (eventInsertError) {
+    if (eventInsertError.code === "23505") {
+      return jsonResponse({ received: true, duplicate: true }, 200);
+    }
+    console.error("[stripe_webhook] idempotency insert failed:", eventInsertError);
+    return jsonResponse({ error: "idempotency_failed" }, 500);
+  }
+
   // ── 3. Routage par type d'event ────────────────────────────────────────
   try {
     switch (event.type) {
@@ -264,6 +275,7 @@ serve(async (req: Request) => {
         await adminClient
           .from("cas_pratique_subscriptions")
           .update({
+            tier: "free",
             status: "past_due",
             updated_at: new Date().toISOString(),
           })
@@ -294,6 +306,8 @@ serve(async (req: Request) => {
     }
   } catch (e) {
     console.error("[stripe_webhook] handler error:", e);
+    await adminClient.from("cp_stripe_webhook_events")
+      .delete().eq("stripe_event_id", event.id);
     return jsonResponse({ error: "handler_failed", details: String(e) }, 500);
   }
 

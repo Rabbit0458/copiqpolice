@@ -805,6 +805,9 @@ const Map<String, String> redirectConfigHome = {
       '/gpx_scolarite_pages/stupéfiants_pages/usage_illicite',
 };
 
+/// Résout les alias historiques avant toute navigation depuis un menu.
+String resolveHomeRoute(String route) => redirectConfigHome[route] ?? route;
+
 // ========================= CONFIG DEV =========================
 const bool kDevForceModePicker = false;
 
@@ -1239,7 +1242,7 @@ class UserModeController {
   void _log(String event, Map<String, dynamic> data) {
     // Remplace par ton système d’analytics si besoin
     // ignore: avoid_print
-    print("[UserModeController][$event] $data");
+    debugPrint("[UserModeController][$event] $data");
   }
 }
 // =========================== HOME SHELL (root) ===========================
@@ -1894,8 +1897,7 @@ class _TrackChipsAndPages extends StatelessWidget {
 
   void _handleCategoryTap(BuildContext context, _DeckItem item) {
     // Gestion des redirections
-    final redirectRoute = redirectConfigHome[item.route];
-    final targetRoute = redirectRoute ?? item.route;
+    final targetRoute = resolveHomeRoute(item.route);
 
     if (item.subcategories != null && item.subcategories!.isNotEmpty) {
       // Si la catégorie a des sous-catégories, naviguer vers une page de détail
@@ -1972,7 +1974,9 @@ class _CategoryDetailPage extends StatelessWidget {
                 color: _T.g500,
               ),
               onTap: () {
-                Navigator.of(context).pushNamed(subcategory.route);
+                Navigator.of(context).pushNamed(
+                  resolveHomeRoute(subcategory.route),
+                );
               },
             ),
           );
@@ -2408,8 +2412,7 @@ class _HeroCardState extends State<_HeroCard> with TickerProviderStateMixin {
     }
 
     // Gestion des redirections
-    final redirectRoute = redirectConfigHome[widget.item.route];
-    final targetRoute = redirectRoute ?? widget.item.route;
+    final targetRoute = resolveHomeRoute(widget.item.route);
 
     if (widget.item.subcategories != null &&
         widget.item.subcategories!.isNotEmpty) {

@@ -28,15 +28,9 @@
 import 'dart:async';
 import 'package:flutter/foundation.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 import 'subscription_service.dart';
-
-// google_mobile_ads is a soft dependency until you run `flutter pub add google_mobile_ads`.
-// We dynamically import via `package:google_mobile_ads/google_mobile_ads.dart`
-// using deferred-style guards: missing package → ads simply no-op.
-//
-// To enable: uncomment the import below and `flutter pub add google_mobile_ads`.
-// import 'package:google_mobile_ads/google_mobile_ads.dart' as gma;
 
 class AdIds {
   // Google's official test units (use in debug):
@@ -46,10 +40,10 @@ class AdIds {
   static const _testRewardedIos = 'ca-app-pub-3940256099942544/1712485313';
 
   // 🔁 REPLACE WITH YOUR REAL AD UNIT IDS BEFORE RELEASE 🔁
-  static const _realInterstitialAndroid = 'REPLACE_ME_INTERSTITIAL_ANDROID';
-  static const _realInterstitialIos = 'REPLACE_ME_INTERSTITIAL_IOS';
-  static const _realRewardedAndroid = 'REPLACE_ME_REWARDED_ANDROID';
-  static const _realRewardedIos = 'REPLACE_ME_REWARDED_IOS';
+  static const _realInterstitialAndroid = String.fromEnvironment('ADMOB_INTERSTITIAL_ANDROID');
+  static const _realInterstitialIos = String.fromEnvironment('ADMOB_INTERSTITIAL_IOS');
+  static const _realRewardedAndroid = String.fromEnvironment('ADMOB_REWARDED_ANDROID');
+  static const _realRewardedIos = String.fromEnvironment('ADMOB_REWARDED_IOS');
 
   static String interstitial({required bool isAndroid}) {
     if (kDebugMode) {
@@ -77,10 +71,12 @@ class AdService {
   /// Call once at app boot, AFTER MobileAds.instance.initialize().
   Future<void> init() async {
     if (_initialized) return;
+    if (kIsWeb) return;
+    await MobileAds.instance.initialize();
     _initialized = true;
     if (kDebugMode) {
       // ignore: avoid_print
-      print('[ADS] AdService initialized (debug=$kDebugMode).');
+      debugPrint('[ADS] AdService initialized (debug=$kDebugMode).');
     }
   }
 
@@ -97,33 +93,41 @@ class AdService {
   /// • Respects the 5-minute cooldown.
   /// • Awaits dismissal so the caller can navigate after.
   Future<void> maybeShowInterstitial() async {
+    if (kIsWeb) return;
     if (_hasPremium) return;
     if (!_cooldownElapsed()) return;
 
     try {
-      // Lazy load ad. If google_mobile_ads is not installed yet, this is a no-op.
-      // Once the package is available, replace the body below with the real impl
-      // (kept inline below for clarity).
-      //
-      //   InterstitialAd.load(
-      //     adUnitId: AdIds.interstitial(isAndroid: defaultTargetPlatform == TargetPlatform.android),
-      //     request: const AdRequest(),
-      //     adLoadCallback: InterstitialAdLoadCallback(
-      //       onAdLoaded: (ad) {
-      //         ad.fullScreenContentCallback = FullScreenContentCallback(
-      //           onAdDismissedFullScreenContent: (ad) { ad.dispose(); _completer.complete(); },
-      //           onAdFailedToShowFullScreenContent: (ad, _) { ad.dispose(); _completer.complete(); },
-      //         );
-      //         ad.show();
-      //       },
-      //       onAdFailedToLoad: (_) => _completer.complete(),
-      //     ),
-      //   );
-      _lastInterstitialAt = DateTime.now();
+      if (!_initialized) await init();
+      if (_hasPremium) return;
+      final completer = Completer<void>();
+      InterstitialAd.load(
+        adUnitId: AdIds.interstitial(
+          isAndroid: defaultTargetPlatform == TargetPlatform.android,
+        ),
+        request: const AdRequest(),
+        adLoadCallback: InterstitialAdLoadCallback(
+          onAdLoaded: (ad) {
+            if (_hasPremium) {
+              ad.dispose();
+              completer.complete();
+              return;
+            }
+            ad.fullScreenContentCallback = FullScreenContentCallback(
+              onAdDismissedFullScreenContent: (ad) { ad.dispose(); completer.complete(); },
+              onAdFailedToShowFullScreenContent: (ad, _) { ad.dispose(); completer.complete(); },
+            );
+            _lastInterstitialAt = DateTime.now();
+            ad.show();
+          },
+          onAdFailedToLoad: (_) => completer.complete(),
+        ),
+      );
+      await completer.future.timeout(const Duration(seconds: 12), onTimeout: () {});
     } catch (e) {
       if (kDebugMode) {
         // ignore: avoid_print
-        print('[ADS] interstitial failed: $e');
+        debugPrint('[ADS] interstitial failed: $e');
       }
     }
   }
@@ -131,31 +135,32 @@ class AdService {
   /// Show a rewarded ad to grant +1 free request.
   /// Returns true if the user fully watched it AND the server granted credit.
   Future<bool> showRewardedAndGrant() async {
+    if (kIsWeb) return false;
     if (_hasPremium) return false; // premium has unlimited, no need
     final user = Supabase.instance.client.auth.currentUser;
     if (user == null) return false;
 
     bool watched = false;
     try {
-      // Real impl (with google_mobile_ads):
-      //
-      //   final completer = Completer<bool>();
-      //   RewardedAd.load(
-      //     adUnitId: AdIds.rewarded(isAndroid: defaultTargetPlatform == TargetPlatform.android),
-      //     request: const AdRequest(),
-      //     rewardedAdLoadCallback: RewardedAdLoadCallback(
-      //       onAdLoaded: (ad) {
-      //         ad.fullScreenContentCallback = FullScreenContentCallback(
-      //           onAdDismissedFullScreenContent: (ad) { ad.dispose(); if (!completer.isCompleted) completer.complete(false); },
-      //           onAdFailedToShowFullScreenContent: (ad, _) { ad.dispose(); if (!completer.isCompleted) completer.complete(false); },
-      //         );
-      //         ad.show(onUserEarnedReward: (_, __) { if (!completer.isCompleted) completer.complete(true); });
-      //       },
-      //       onAdFailedToLoad: (_) => completer.complete(false),
-      //     ),
-      //   );
-      //   watched = await completer.future;
-      watched = false; // until package is installed
+      if (!_initialized) await init();
+      final completer = Completer<bool>();
+      RewardedAd.load(
+        adUnitId: AdIds.rewarded(
+          isAndroid: defaultTargetPlatform == TargetPlatform.android,
+        ),
+        request: const AdRequest(),
+        rewardedAdLoadCallback: RewardedAdLoadCallback(
+          onAdLoaded: (ad) {
+            ad.fullScreenContentCallback = FullScreenContentCallback(
+              onAdDismissedFullScreenContent: (ad) { ad.dispose(); if (!completer.isCompleted) completer.complete(false); },
+              onAdFailedToShowFullScreenContent: (ad, _) { ad.dispose(); if (!completer.isCompleted) completer.complete(false); },
+            );
+            ad.show(onUserEarnedReward: (_, __) { if (!completer.isCompleted) completer.complete(true); });
+          },
+          onAdFailedToLoad: (_) => completer.complete(false),
+        ),
+      );
+      watched = await completer.future.timeout(const Duration(seconds: 20), onTimeout: () => false);
     } catch (_) {
       watched = false;
     }

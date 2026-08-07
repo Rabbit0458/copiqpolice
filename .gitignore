@@ -63,6 +63,10 @@ docs/.env
 # Archives locales (audit 2026-07-26)
 _archive/
 
+# Dossiers temporaires de publication web atomique
+.fae16dc1-next/
+.fae16dc1-backup/
+
 # Logs et sorties de generation
 *.log
 erreurs*.txt

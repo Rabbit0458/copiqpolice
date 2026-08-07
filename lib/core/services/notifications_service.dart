@@ -44,6 +44,11 @@ class NotificationsService {
   static const _quizFeedbackChannelId = 'copiq_quiz_feedback';
   static const _quizFeedbackChannelName = 'Retour quiz';
 
+  static const _communityChannelId = 'copiq_community_messages';
+  static const _communityChannelName = 'Communauté et messages';
+  static const _communityChannelDesc =
+      'Messages privés et activités de la communauté COP’IQ.';
+
   // ---------------------------------------------------------------------------
   // Init
   // ---------------------------------------------------------------------------
@@ -77,14 +82,24 @@ class NotificationsService {
     );
 
     // Channels Android.
-    final android = _plugin.resolvePlatformSpecificImplementation<
-        AndroidFlutterLocalNotificationsPlugin>();
+    final android = _plugin
+        .resolvePlatformSpecificImplementation<
+          AndroidFlutterLocalNotificationsPlugin
+        >();
     if (android != null) {
       await android.createNotificationChannel(
         const AndroidNotificationChannel(
           _dailyChannelId,
           _dailyChannelName,
           description: _dailyChannelDesc,
+          importance: Importance.high,
+        ),
+      );
+      await android.createNotificationChannel(
+        const AndroidNotificationChannel(
+          _communityChannelId,
+          _communityChannelName,
+          description: _communityChannelDesc,
           importance: Importance.high,
         ),
       );
@@ -102,8 +117,10 @@ class NotificationsService {
   Future<bool> requestPermissions() async {
     if (!_initialized) await init();
 
-    final ios = _plugin.resolvePlatformSpecificImplementation<
-        IOSFlutterLocalNotificationsPlugin>();
+    final ios = _plugin
+        .resolvePlatformSpecificImplementation<
+          IOSFlutterLocalNotificationsPlugin
+        >();
     if (ios != null) {
       final ok = await ios.requestPermissions(
         alert: true,
@@ -113,8 +130,10 @@ class NotificationsService {
       return ok ?? false;
     }
 
-    final android = _plugin.resolvePlatformSpecificImplementation<
-        AndroidFlutterLocalNotificationsPlugin>();
+    final android = _plugin
+        .resolvePlatformSpecificImplementation<
+          AndroidFlutterLocalNotificationsPlugin
+        >();
     if (android != null) {
       final ok = await android.requestNotificationsPermission();
       return ok ?? true;
@@ -173,7 +192,8 @@ class NotificationsService {
       androidScheduleMode: AndroidScheduleMode.exactAllowWhileIdle,
       uiLocalNotificationDateInterpretation:
           UILocalNotificationDateInterpretation.absoluteTime,
-      matchDateTimeComponents: DateTimeComponents.time, // récurrence quotidienne
+      matchDateTimeComponents:
+          DateTimeComponents.time, // récurrence quotidienne
     );
 
     final sp = await SharedPreferences.getInstance();
@@ -189,7 +209,8 @@ class NotificationsService {
     await sp.setBool('daily_reminder_enabled', false);
   }
 
-  Future<({bool enabled, int hour, int minute})> getDailyReminderConfig() async {
+  Future<({bool enabled, int hour, int minute})>
+  getDailyReminderConfig() async {
     final sp = await SharedPreferences.getInstance();
     return (
       enabled: sp.getBool('daily_reminder_enabled') ?? false,
@@ -219,6 +240,34 @@ class NotificationsService {
         ),
         iOS: DarwinNotificationDetails(),
       ),
+    );
+  }
+
+  Future<void> notifyCommunityActivity({
+    required String title,
+    required String body,
+    String? payload,
+  }) async {
+    if (!_initialized) await init();
+    await _plugin.show(
+      DateTime.now().millisecondsSinceEpoch.remainder(100000),
+      title,
+      body,
+      const NotificationDetails(
+        android: AndroidNotificationDetails(
+          _communityChannelId,
+          _communityChannelName,
+          channelDescription: _communityChannelDesc,
+          importance: Importance.high,
+          priority: Priority.high,
+        ),
+        iOS: DarwinNotificationDetails(
+          presentAlert: true,
+          presentBadge: true,
+          presentSound: true,
+        ),
+      ),
+      payload: payload,
     );
   }
 
