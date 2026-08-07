@@ -1,9 +1,11 @@
 import Link from "next/link"
 import { ThemeToggle } from "@/components/ui/theme-toggle"
 import { ConsentLink } from "@/components/cookie-banner"
+import { SmoothScrollProvider } from "@/animations/smooth-scroll-provider"
 
 export default function PublicLayout({ children }: { children: React.ReactNode }) {
   return (
+    <SmoothScrollProvider>
     <div className="min-h-screen bg-[var(--surface)] text-[var(--on-surface)]">
       <header className="sticky top-0 z-50 border-b border-[var(--outline)] bg-[var(--surface)]/90 backdrop-blur-xl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
@@ -64,5 +66,6 @@ export default function PublicLayout({ children }: { children: React.ReactNode }
         </div>
       </footer>
     </div>
+    </SmoothScrollProvider>
   )
 }

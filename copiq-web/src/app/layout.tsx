@@ -1,6 +1,15 @@
 import type { Metadata, Viewport } from "next"
+import { Instrument_Sans } from "next/font/google"
+import Script from "next/script"
 import { Providers } from "@/components/providers"
 import "@/styles/globals.css"
+
+const instrumentSans = Instrument_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-instrument-sans",
+  display: "swap",
+})
 
 export const metadata: Metadata = {
   title: {
@@ -53,12 +62,12 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="fr" suppressHydrationWarning>
+    <html lang="fr" suppressHydrationWarning className={instrumentSans.variable}>
       <head>
         <link rel="icon" href="/favicon.ico" />
-        <script src="/copiq-config.js" />
       </head>
       <body>
+        <Script src="/copiq-config.js" strategy="beforeInteractive" />
         <Providers>{children}</Providers>
       </body>
     </html>

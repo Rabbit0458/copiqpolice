@@ -1,35 +1,5 @@
 @import "tailwindcss";
 
-/* ─── Instrument Sans (local) ─────────────────────────────────────────────── */
-@font-face {
-  font-family: "Instrument Sans";
-  src: url("/fonts/InstrumentSans-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Instrument Sans";
-  src: url("/fonts/InstrumentSans-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Instrument Sans";
-  src: url("/fonts/InstrumentSans-SemiBold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Instrument Sans";
-  src: url("/fonts/InstrumentSans-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
 /* ─── Design Tokens CSS ──────────────────────────────────────────────────── */
 :root {
   /* Brand */
@@ -96,7 +66,7 @@ html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Instrument Sans", system-ui, sans-serif;
+  font-family: var(--font-instrument-sans), system-ui, sans-serif;
 }
 
 body {
